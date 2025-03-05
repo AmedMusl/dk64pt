@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Donkey Kong",
+    "type": "toggle",
+    "img": "images/items/dk.png",
+    "codes": "donkey"
+  },
+  {
+    "name": "Diddy Kong",
+    "type": "toggle",
+    "img": "images/items/diddy.png",
+    "codes": "diddy"
+  },
+  {
+    "name": "Lanky Kong",
+    "type": "toggle",
+    "img": "images/items/lanky.png",
+    "codes": "lanky"
+  },
+  {
+    "name": "Tiny Kong",
+    "type": "toggle",
+    "img": "images/items/tiny.png",
+    "codes": "tiny"
+  },
+  {
+    "name": "Chunky Kong",
+    "type": "toggle",
+    "img": "images/items/chunky.png",
+    "codes": "chunky"
+  }
+]

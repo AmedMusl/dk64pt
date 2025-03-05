@@ -1,0 +1,170 @@
+[
+  {
+    "name": "isles",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/isles.png"
+  },
+  {
+    "name": "japeslobby",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/map/japes_lobby.png"
+  },
+  {
+    "name": "azteclobby",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/aztec_lobby.png"
+  },
+  {
+    "name": "factorylobby",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/factory_lobby.png"
+  },
+  {
+    "name": "galleonlobby",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/galleon_lobby.png"
+  },
+  {
+    "name": "forestlobby",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/forest_lobby.png"
+  },
+  {
+    "name": "caveslobby",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/caves_lobby.png"
+  },
+  {
+    "name": "castlelobby",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/castle_lobby.png"
+  },
+  {
+    "name": "helmlobby",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/helm_lobby.png"
+  },
+  {
+    "name": "japes",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/japes.png"
+  },
+  {
+    "name": "japesunder",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/japes_underground.png"
+  },
+  {
+    "name": "japesmountain",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/diddy_mountain.png"
+  },
+  {
+    "name": "aztec",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/aztec.png"
+  },
+  {
+    "name": "tinytemple",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/tiny_temple.png"
+  },
+  {
+    "name": "llamatemple",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/llama.png"
+  },
+  {
+    "name": "factory",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/factory.png"
+  },
+  {
+    "name": "galleon",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/tiny_temple.png"
+  },
+  {
+    "name": "forest",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/forest.png"
+  },
+  {
+    "name": "frontmill",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/front_mill.png"
+  },
+  {
+    "name": "rearmill",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/rear_mill.png"
+  },
+  {
+    "name": "mushroom",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/mushroom.png"
+  },
+  {
+    "name": "caves",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/caves.png"
+  },
+  {
+    "name": "castle",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/castle.png"
+  },
+  {
+    "name": "crypthub",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/crypt_hub.png"
+  },
+  {
+    "name": "crypt",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/kong_crypt.png"
+  },
+  {
+    "name": "dungeon",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/dungeon.png"
+  },
+  {
+    "name": "dungeontunnel",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/dungeon_tunnel.png"
+  },
+  {
+    "name": "helm",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/helm.png"
+  }
+]

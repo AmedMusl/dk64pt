@@ -8,16 +8,16 @@
       "content": [
         {
           "type": "dock",
-          "dock": "left",
+          "dock": "bottom",
           "v_alignment": "stretch",
           "content": [
             {
               "type": "group",
               "header": "Items",
-              "dock": "top",
+              "dock": "left",
               "content": {
                 "type": "layout",
-                "key": "shared_item_grid"
+                "key": "items_grid"
               }
             }
           ]
@@ -45,7 +45,7 @@
                 "type": "layout",
                 "h_alignment": "center",
                 "v_alignment": "center",
-                "key": "shared_item_grid"
+                "key": "item_grid"
               }
             },
             /*{

@@ -1,0 +1,75 @@
+{
+	"maps_isles": {
+		"type": "tabbed",
+		"tabs": [
+			{ "title": "DK Isles", "content": { "type": "map", "maps": ["isles"] } },
+			{ "title": "Japes Lobby", "content": { "type": "map", "maps": ["japeslobby"] } },
+			{ "title": "Aztec Lobby", "content": { "type": "map", "maps": ["azteclobby"] } },
+			{ "title": "Factory Lobby", "content": { "type": "map", "maps": ["factorylobby"] } },
+			{ "title": "Galleon Lobby", "content": { "type": "map", "maps": ["galleonlobby"] } },
+			{ "title": "Forest Lobby", "content": { "type": "map", "maps": ["forestlobby"] } },
+			{ "title": "Caves Lobby", "content": { "type": "map", "maps": ["wl"] } },
+			{ "title": "Castle Lobby", "content": { "type": "map", "maps": ["castlelobby"] } },
+			{ "title": "Helm Lobby", "content": { "type": "map", "maps": ["helmlobby"] } }
+		]
+	},
+	"maps_japes": {
+		"type": "tabbed",
+		"tabs": [
+			{ "title": "Main Area", "content": { "type": "map", "maps": ["japes"] } },
+			{ "title": "Japes Underground", "content": { "type": "map", "maps": ["japesunder"] } },
+			{ "title": "Japes Diddy Mountain", "content": { "type": "map", "maps": ["japesmountain"] } }
+		]
+	},
+	"maps_aztec": {
+		"type": "tabbed",
+		"tabs": [
+			{ "title": "Main Area", "content": { "type": "map", "maps": ["aztec"] } },
+			{ "title": "Tiny Temple", "content": { "type": "map", "maps": ["tinytemple"] } },
+			{ "title": "Llama Temple", "content": { "type": "map", "maps": ["llama"] } }
+		]
+	},
+	"maps_factory": {
+		"type": "tabbed",
+		"tabs": [
+			{ "title": "Main Area", "content": { "type": "map", "maps": ["factory"] } }
+		]
+	},
+	"maps_galleon": {
+		"type": "tabbed",
+		"tabs": [
+			{ "title": "Main Area", "content": { "type": "map", "maps": ["galleon"] } }
+		]
+	},
+	"maps_forest": {
+		"type": "tabbed",
+		"tabs": [
+			{ "title": "Main Area", "content": { "type": "map", "maps": ["forest"] } },
+			{ "title": "Front Mill", "content": { "type": "map", "maps": ["frontmill"] } },
+			{ "title": "Rear Mill", "content": { "type": "map", "maps": ["rearmill"] } },
+			{ "title": "Giant Mushroom Insides", "content": { "type": "map", "maps": ["mushroom"] } }
+		]
+	},
+	"maps_caves": {
+		"type": "tabbed",
+		"tabs": [
+			{ "title": "Main Area", "content": { "type": "map", "maps": ["caves"] } }
+		]
+	},
+	"maps_castle": {
+		"type": "tabbed",
+		"tabs": [
+			{ "title": "Exterior", "content": { "type": "map", "maps": ["castle"] } },
+			{ "title": "Dungeon Tunnel", "content": { "type": "map", "maps": ["dungeontunnel"] } },
+			{ "title": "DK - Diddy - Lanky Dungeon", "content": { "type": "map", "maps": ["dungeon"] } },
+			{ "title": "Crypt Hub", "content": { "type": "map", "maps": ["crypthub"] } },
+			{ "title": "DK - Diddy - Chunky Crypt", "content": { "type": "map", "maps": ["crypt"] } }
+		]
+	},
+	"maps_helm": {
+		"type": "tabbed",
+		"tabs": [
+			{ "title": "Hideout Helm", "content": { "type": "map", "maps": ["helm"] } }
+		]
+	}
+}

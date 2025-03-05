@@ -1,0 +1,168 @@
+[
+    {
+        "name": "Golden Banana",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 201,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/GB.png",
+        "codes": "gb"
+    },
+    {
+        "name": "Donkey Blueprints",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 8,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/dk_bp.png",
+        "codes": "dkbp"
+    },
+    {
+        "name": "Diddy Blueprints",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 8,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/diddy_bp.png",
+        "codes": "diddybp"
+    },
+    {
+        "name": "Lanky Blueprints",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 8,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/lanky_bp.png",
+        "codes": "lankybp"
+    },
+    {
+        "name": "Tiny Blueprints",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 8,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/tiny_bp.png",
+        "codes": "tinybp"
+    },
+    {
+        "name": "Chunky Blueprints",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 8,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/chunky_bp.png",
+        "codes": "chunkybp"
+    },
+    {
+        "name": "Crowns",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 10,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/crown.png",
+        "codes": "crowns"
+    },
+    {
+        "name": "Fairies",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 20,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/tiny_bp.png",
+        "codes": "fairies"
+    },
+    {
+        "name": "Banana Medals",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 45,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/bananamedals.png",
+        "codes": "medals"
+    },
+    {
+        "name": "Rainbow Coins",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 16,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/rainbowcoin.png",
+        "codes": "rainbow"
+    },
+    {
+        
+        "name": "Pearls",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "increment": 1,
+        "overlay_background": "#000000",
+        "img": "images/items/pearl.png",
+        "codes": "pearl"
+
+    },
+    {
+        "name": "Bean",
+        "type": "toggle",
+        "img": "images/items/bean.png",
+        "codes": "bean"
+    },
+    {
+        "name": "Key 1",
+        "type": "toggle",
+        "img": "images/keys/k1.png",
+        "codes": "key1"
+    },
+    {
+        "name": "Key 2",
+        "type": "toggle",
+        "img": "images/keys/k2.png",
+        "codes": "key2"
+    },
+    {
+        "name": "Key 3",
+        "type": "toggle",
+        "img": "images/keys/k3.png",
+        "codes": "key3"
+    },
+    {
+        "name": "Key 4",
+        "type": "toggle",
+        "img": "images/keys/k4.png",
+        "codes": "key 4"
+    },
+    {
+        "name": "Key 5",
+        "type": "toggle",
+        "img": "images/keys/k5.png",
+        "codes": "key5"
+    },
+    {
+        "name": "Key 6",
+        "type": "toggle",
+        "img": "images/keys/k6.png",
+        "codes": "key6"
+    },
+    {
+        "name": "Key 7",
+        "type": "toggle",
+        "img": "images/keys/k7.png",
+        "codes": "key7"
+    },
+    {
+        "name": "Key 8",
+        "type": "toggle",
+        "img": "images/keys/k8.png",
+        "codes": "key8"
+    }
+]

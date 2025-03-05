@@ -1,0 +1,105 @@
+{
+	"tabbed_maps": {
+		"type": "tabbed",
+		"tabs": [
+			{
+				"title": "Maps",
+				"content": {
+					"type": "tabbed",
+					"tabs": [
+            {
+							"title": "DK Isles",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "maps_isles"
+								}
+							}
+						},
+            {
+							"title": "Jungle Japes",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "maps_japes"
+								}
+							}
+						},
+            {
+							"title": "Angry Aztec",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "maps_aztec"
+								}
+							}
+						},
+            {
+							"title": "Frantic Factory",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "maps_factory"
+								}
+							}
+						},
+            {
+							"title": "Gloomy Galleon",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "maps_galleon"
+								}
+							}
+						},
+            {
+							"title": "Fungi Forest",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "maps_forest"
+								}
+							}
+						},
+            {
+							"title": "Crystal Caves",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "maps_caves"
+								}
+							}
+						},
+            {
+							"title": "Creepy Castle",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "maps_castle"
+								}
+							}
+						},
+            {
+							"title": "Hideout Helm",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "maps_helm"
+								}
+							}
+						}
+          ]
+        }
+			}
+		]
+	}
+}
