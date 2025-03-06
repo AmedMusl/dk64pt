@@ -1,12 +1,12 @@
 {
-    "items_grid": {
+    "keys_grid": {
       "type": "array",
       "orientation": "vertical",
       "margin": "0,0",
       "content": [
         {
           "type": "array",
-          "orientation": "vertical",
+          "orientation": "horizontal",
           "margin": "0,0",
           "content": [
             {
@@ -15,19 +15,20 @@
               "h_alignment": "left",
               "rows": [
                 [
-                    "gb",
-                    "crowns",
-                    "pearl"
+                  "key1",
+                  "key2"
                 ],
                 [
-                    "fairies",
-                    "medals",
-                    "rainbow"
+                  "key3",
+                  "key4"
                 ],
                 [
-                    "bean",
-                    "nintendo",
-                    "rareware"
+                  "key5",
+                  "key6"
+                ],
+                [
+                  "key7",
+                  "key8"
                 ]
               ]
             }

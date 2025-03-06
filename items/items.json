@@ -76,7 +76,7 @@
         "max_quantity": 20,
         "increment": 1,
         "overlay_background": "#000000",
-        "img": "images/items/tiny_bp.png",
+        "img": "images/items/fairy.png",
         "codes": "fairies"
     },
     {
@@ -86,7 +86,7 @@
         "max_quantity": 45,
         "increment": 1,
         "overlay_background": "#000000",
-        "img": "images/items/bananamedals.png",
+        "img": "images/items/bananamedal.png",
         "codes": "medals"
     },
     {
@@ -139,7 +139,7 @@
         "name": "Key 4",
         "type": "toggle",
         "img": "images/keys/k4.png",
-        "codes": "key 4"
+        "codes": "key4"
     },
     {
         "name": "Key 5",
@@ -164,5 +164,41 @@
         "type": "toggle",
         "img": "images/keys/k8.png",
         "codes": "key8"
+    },
+    {
+        "name": "Nintendo Coin",
+        "type": "toggle",
+        "img": "images/items/n64_coin.png",
+        "codes": "nintendo"
+    },
+    {
+        "name": "Rareware Coin",
+        "type": "toggle",
+        "img": "images/items/rareware_coin.png",
+        "codes": "rareware"
+    },
+    {
+        "name": "Cranky",
+        "type": "toggle",
+        "img": "images/items/cranky.png",
+        "codes": "cranky"
+    },
+    {
+        "name": "Candy",
+        "type": "toggle",
+        "img": "images/items/candy.png",
+        "codes": "candy"
+    },
+    {
+        "name": "Funky",
+        "type": "toggle",
+        "img": "images/items/funky.png",
+        "codes": "funky"
+    },
+    {
+        "name": "Snide",
+        "type": "toggle",
+        "img": "images/items/snides.png",
+        "codes": "snide"
     }
 ]

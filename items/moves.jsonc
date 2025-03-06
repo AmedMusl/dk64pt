@@ -237,5 +237,11 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Climbing",
+        "type": "toggle",
+        "img": "images/items/climb.png",
+        "codes": "climb"
     }
 ]

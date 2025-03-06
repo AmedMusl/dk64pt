@@ -1,0 +1,83 @@
+{
+  "moves_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "8, 2",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "donkey",
+                "coconut",
+                "grab",
+                "blast",
+                "strong",
+                "dkbp"
+              ],
+              [
+                "diddy",
+                "peanuts",
+                "charge",
+                "spring",
+                "rocket",
+                "diddybp"
+              ],
+              [
+                "lanky",
+                "grape",
+                "orangstand",
+                "balloon",
+                "sprint",
+                "lankybp"
+              ],
+              [
+                "tiny",
+                "feather",
+                "twirl",
+                "port",
+                "mini",
+                "tinybp"
+              ],
+              [
+                "chunky",
+                "pineapple",
+                "punch",
+                "gone",
+                "big",
+                "chunkybp"
+              ],
+              [
+                "climb",
+                "dive",
+                "oranges",
+                "barrel",
+                "vine"
+              ],
+              [
+                "slam",
+                "camera",
+                "shockwave",
+                "homing",
+                "sniper"
+              ],
+              [
+                "cranky",
+                "funky",
+                "candy",
+                "snide"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
