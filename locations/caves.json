@@ -1,0 +1,554 @@
+[
+    {
+        "name": "Crystal Caves",
+        "chest_unopened_img": "images/items/GB.png",
+        "chest_opened_img": "images/items/GBbw.png",
+        "children": [
+            {
+                "name": "Medals",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Caves DK Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Caves Diddy Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Caves Lanky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Caves Tiny Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Caves Chunky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 859,
+                        "y": 32,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Caves Diddy Jetpack Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 190,
+                        "y": 615,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Kasplat: Near Ice Castle",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/dk_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 500,
+                        "y": 773,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Chunky Gorilla Gone",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 297,
+                        "y": 890,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Kasplat: Mini Room by Funky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/diddy_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 84,
+                        "y": 781,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Tiny Mini Cave Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 780,
+                        "y": 376,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Kasplat: On the Pillar",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/lanky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 255,
+                        "y": 725,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves DK Baboon Blast",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 580,
+                        "y": 430,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Lanky Beetle Race",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 383,
+                        "y": 720,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Lanky Ice Castle Slam Challenge",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 367,
+                        "y": 703,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Tiny Monkeyport Igloo",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 819,
+                        "y": 542,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Chunky Transparent Igloo",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 798,
+                        "y": 721,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Kasplat: On 5-Door Igloo",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/chunky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 756,
+                        "y": 647,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Dirt: Giant Kosha",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Rainbow Coin",
+                        "chest_unopened_img": "images/items/rainbowcoin.png",
+                        "chest_opened_img": "images/items/rainbowcoinbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 471,
+                        "y": 116,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves DK 5 Door Igloo",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 772,
+                        "y": 616,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Diddy 5 Door Igloo",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 732,
+                        "y": 616,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Lanky 5 Door Igloo",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 792,
+                        "y": 658,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Tiny 5 Door Igloo",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    },
+                    {
+                        "name": "Fairy",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 721,
+                        "y": 658,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Chunky 5 Door Igloo",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 756,
+                        "y": 685,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Kasplat: By the Far Warp 2",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/tiny_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 220,
+                        "y": 514,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Rotating Cabin",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Caves DK Rotating Cabin"
+                    },
+                    {
+                        "name": "Caves Battle Arena",
+                        "chest_unopened_img": "images/items/crown.png",
+                        "chest_opened_img": "images/items/crownbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 253,
+                        "y": 401,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves DK 5 Door Cabin",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 105,
+                        "y": 581,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Diddy 5 Door Cabin Lower",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 88,
+                        "y": 565,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Diddy 5 Door Cabin Upper",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    },
+                    {
+                        "name": "Fairy",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 72,
+                        "y": 553,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Lanky Sprint Cabin",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 370,
+                        "y": 469,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Tiny 5 Door Cabin",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 88,
+                        "y": 526,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Chunky 5 Door Cabin",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 99,
+                        "y": 523,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Boss Defeated",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 856,
+                        "y": 688,
+                        "size": 12
+                    },
+                    {
+                        "map": "caves",
+                        "x": 630,
+                        "y": 812,
+                        "size": 12
+                    },
+                    {
+                        "map": "caves",
+                        "x": 397,
+                        "y": 334,
+                        "size": 12
+                    },
+                    {
+                        "map": "caves",
+                        "x": 381,
+                        "y": 503,
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    }
+]

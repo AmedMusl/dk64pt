@@ -6,10 +6,22 @@
     "img": "/images/maps/isles.png"
   },
   {
+    "name": "training",
+    "location_size": 35,
+    "location_border_thickness": 3,
+    "img": "images/maps/training.PNG"
+  },
+  {
+    "name": "snidelobby",
+    "location_size": 35,
+    "location_border_thickness": 3,
+    "img": "images/maps/snideisles.PNG"
+  },
+  {
     "name": "japeslobby",
     "location_size": 35,
     "location_border_thickness": 2,
-    "img": "/images/map/japes_lobby.png"
+    "img": "/images/maps/japes_lobby.png"
   },
   {
     "name": "azteclobby",
@@ -33,7 +45,7 @@
     "name": "forestlobby",
     "location_size": 35,
     "location_border_thickness": 2,
-    "img": "/images/maps/forest_lobby.png"
+    "img": "/images/maps/fungi_lobby.png"
   },
   {
     "name": "caveslobby",
@@ -99,7 +111,7 @@
     "name": "galleon",
     "location_size": 35,
     "location_border_thickness": 2,
-    "img": "/images/maps/tiny_temple.png"
+    "img": "/images/maps/galleon.png"
   },
   {
     "name": "forest",
@@ -120,10 +132,10 @@
     "img": "/images/maps/rear_mill.png"
   },
   {
-    "name": "mushroom",
+    "name": "barn",
     "location_size": 35,
     "location_border_thickness": 2,
-    "img": "/images/maps/mushroom.png"
+    "img": "/images/maps/barn.png"
   },
   {
     "name": "caves",
@@ -160,6 +172,18 @@
     "location_size": 35,
     "location_border_thickness": 2,
     "img": "/images/maps/dungeon_tunnel.png"
+  },
+  {
+    "name": "ballroom",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/ballroom.png"
+  },
+  {
+    "name": "museum",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "/images/maps/museum.png"
   },
   {
     "name": "helm",

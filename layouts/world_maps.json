@@ -3,14 +3,16 @@
 		"type": "tabbed",
 		"tabs": [
 			{ "title": "DK Isles", "content": { "type": "map", "maps": ["isles"] } },
+			{ "title": "Training Grounds", "content": { "type": "map", "maps": ["training"] } },
 			{ "title": "Japes Lobby", "content": { "type": "map", "maps": ["japeslobby"] } },
 			{ "title": "Aztec Lobby", "content": { "type": "map", "maps": ["azteclobby"] } },
 			{ "title": "Factory Lobby", "content": { "type": "map", "maps": ["factorylobby"] } },
 			{ "title": "Galleon Lobby", "content": { "type": "map", "maps": ["galleonlobby"] } },
 			{ "title": "Forest Lobby", "content": { "type": "map", "maps": ["forestlobby"] } },
-			{ "title": "Caves Lobby", "content": { "type": "map", "maps": ["wl"] } },
+			{ "title": "Caves Lobby", "content": { "type": "map", "maps": ["caveslobby"] } },
 			{ "title": "Castle Lobby", "content": { "type": "map", "maps": ["castlelobby"] } },
-			{ "title": "Helm Lobby", "content": { "type": "map", "maps": ["helmlobby"] } }
+			{ "title": "Helm Lobby", "content": { "type": "map", "maps": ["helmlobby"] } },
+			{ "title": "Snide's Room", "content": { "type": "map", "maps": ["snidelobby"] } }
 		]
 	},
 	"maps_japes": {
@@ -26,7 +28,7 @@
 		"tabs": [
 			{ "title": "Main Area", "content": { "type": "map", "maps": ["aztec"] } },
 			{ "title": "Tiny Temple", "content": { "type": "map", "maps": ["tinytemple"] } },
-			{ "title": "Llama Temple", "content": { "type": "map", "maps": ["llama"] } }
+			{ "title": "Llama Temple", "content": { "type": "map", "maps": ["llamatemple"] } }
 		]
 	},
 	"maps_factory": {
@@ -47,7 +49,7 @@
 			{ "title": "Main Area", "content": { "type": "map", "maps": ["forest"] } },
 			{ "title": "Front Mill", "content": { "type": "map", "maps": ["frontmill"] } },
 			{ "title": "Rear Mill", "content": { "type": "map", "maps": ["rearmill"] } },
-			{ "title": "Giant Mushroom Insides", "content": { "type": "map", "maps": ["mushroom"] } }
+			{ "title": "Barn", "content": { "type": "map", "maps": ["barn"] } }
 		]
 	},
 	"maps_caves": {
@@ -63,7 +65,9 @@
 			{ "title": "Dungeon Tunnel", "content": { "type": "map", "maps": ["dungeontunnel"] } },
 			{ "title": "DK - Diddy - Lanky Dungeon", "content": { "type": "map", "maps": ["dungeon"] } },
 			{ "title": "Crypt Hub", "content": { "type": "map", "maps": ["crypthub"] } },
-			{ "title": "DK - Diddy - Chunky Crypt", "content": { "type": "map", "maps": ["crypt"] } }
+			{ "title": "DK - Diddy - Chunky Crypt", "content": { "type": "map", "maps": ["crypt"] } },
+			{ "title": "Ballroom", "content": { "type": "map", "maps": ["ballroom"] } },
+			{ "title": "Museum", "content": { "type": "map", "maps": ["museum"] } }
 		]
 	},
 	"maps_helm": {

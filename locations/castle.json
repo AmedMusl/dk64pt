@@ -1,0 +1,551 @@
+[
+    {
+        "name": "Creepy Castle",
+        "chest_unopened_img": "images/items/GB.png",
+        "chest_opened_img": "images/items/GBbw.png",
+        "children": [
+            {
+                "name": "Medals",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Castle DK Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Castle Diddy Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Castle Lanky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Castle Tiny Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Castle Chunky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 871,
+                        "y": 42,
+                        "size": 25
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Diddy Above Castle",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 676,
+                        "y": 570,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Kasplat: Near Upper Warp 2",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/lanky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 829,
+                        "y": 655,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Dirt: Top Floor",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/rainbowcoin.png",
+                        "chest_opened_img": "images/items/rainbowcoinbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 286,
+                        "y": 595,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Kasplat: On a Lone Platform",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/tiny_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 53,
+                        "y": 393,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Inside the Tree",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Castle DK Tree Sniping"
+                    },
+                    {
+                        "name": "Castle Chunky Tree Sniping Barrel"
+                    },
+                    {
+                        "name": "Castle Kasplat: Inside the Tree",
+                        "chest_unopened_img": "images/items/dk_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    },
+                    {
+                        "name": "Castle Fairy (Tree Sniping Room)",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 562,
+                        "y": 142,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Castle DK Library",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 271,
+                        "y": 664,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Diddy Ballroom",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ballroom",
+                        "x": 249,
+                        "y": 389,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Fairy (Near Car Race)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Fairy",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "museum",
+                        "x": 37,
+                        "y": 509,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Tiny Car Race",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "museum",
+                        "x": 100,
+                        "y": 505,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Lanky Tower",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 642,
+                        "y": 540,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Greenhouse",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Castle Lanky Greenhouse"
+                    },
+                    {
+                        "name": "Castle Battle Arena (Greenhouse Center)",
+                        "chest_unopened_img": "images/items/crown.png",
+                        "chest_opened_img": "images/items/crownbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 671,
+                        "y": 819,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Tiny Trashcan",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 614,
+                        "y": 803,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Chunky Shed",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 729,
+                        "y": 794,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Chunky Museum",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "museum",
+                        "x": 212,
+                        "y": 195,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Kasplat: Lower Cave Center",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/diddy_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypthub",
+                        "x": 645,
+                        "y": 625,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Crate: Behind Mausoleum Entrance",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/crate.png",
+                        "chest_opened_img": "images/items/cratebw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypthub",
+                        "x": 1066,
+                        "y": 625,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Diddy Crypt",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypt",
+                        "x": 592,
+                        "y": 127,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Chunky Crypt",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypt",
+                        "x": 305,
+                        "y": 839,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle DK Minecart",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypt",
+                        "x": 431,
+                        "y": 691,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Mausoleum",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Castle Lanky Mausoleum"
+                    },
+                    {
+                        "name": "Castle Tiny Mausoleum"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypthub",
+                        "x": 929,
+                        "y": 624,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Tiny Over Chasm",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeontunnel",
+                        "x": 442,
+                        "y": 258,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Kasplat: Near Candy's",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/chunky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeontunnel",
+                        "x": 247,
+                        "y": 673,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle DK Dungeon",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeon",
+                        "x": 323,
+                        "y": 472,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Diddy Dungeon",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeon",
+                        "x": 117,
+                        "y": 712,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Castle Lanky Dungeon",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeon",
+                        "x": 118,
+                        "y": 236,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Castle Boss Defeated",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 202,
+                        "y": 596,
+                        "size": 10
+                    },
+                    {
+                        "map": "castle",
+                        "x": 760,
+                        "y": 864,
+                        "size": 10
+                    },
+                    {
+                        "map": "castle",
+                        "x": 670,
+                        "y": 755,
+                        "size": 10
+                    },
+                    {
+                        "map": "dungeontunnel",
+                        "x": 395,
+                        "y": 616,
+                        "size": 16
+                    },
+                    {
+                        "map": "crypthub",
+                        "x": 913,
+                        "y": 93,
+                        "size": 16
+                    }
+                ]
+            }
+        ]
+    }    
+]

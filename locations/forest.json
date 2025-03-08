@@ -1,0 +1,660 @@
+[
+    {
+        "name": "Fungi Forest",
+        "chest_unopened_img": "images/items/GB.png",
+        "chest_opened_img": "images/items/GBbw.png",
+        "children": [
+            {
+                "name": "Medals",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Forest DK Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Forest Diddy Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Forest Lanky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Forest Tiny Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Forest Chunky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 1023,
+                        "y": 30,
+                        "size": 25
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Chunky Minecart",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 618,
+                        "y": 340,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Diddy Top of Mushroom Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 851,
+                        "y": 739,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Inside the Mushroom",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Forest DK Mushroom Cannons"
+                    },
+                    {
+                        "name": "Forest Tiny Mushroom Barrel"
+                    },
+                    {
+                        "name": "Forest Kasplat: Inside Giant Mushroom",
+                        "chest_unopened_img": "images/items/diddy_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 824,
+                        "y": 713,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Kasplat: Lower Mushroom Exterior",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/tiny_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 790,
+                        "y": 816,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest DK Baboon Blast",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 970,
+                        "y": 751,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Kasplat: Mushroom Night Door",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/chunky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 890,
+                        "y": 828,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Battle Arena: High Ladder Platform",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/crown.png",
+                        "chest_opened_img": "images/items/crownbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 774,
+                        "y": 675,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Chunky Face Puzzle",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 775,
+                        "y": 765,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Lanky Zinger Bounce",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 841,
+                        "y": 819,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Lanky Coloured Mushroom Slam",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 865,
+                        "y": 655,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Diddy Owl Race",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 785,
+                        "y": 161,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Lanky Rabbit Race",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 613,
+                        "y": 221,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Kasplat: Under Owl Tree",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/lanky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 785,
+                        "y": 218,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Crate: Near Owl Tree",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crate",
+                        "chest_unopened_img": "images/items/crate.png",
+                        "chest_opened_img": "images/items/cratebw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 940,
+                        "y": 197,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Anthill",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Forest Tiny Anthill Banana"
+                    },
+                    {
+                        "name": "Forest Tiny Bean",
+                        "chest_unopened_img": "images/items/bean.png",
+                        "chest_opened_img": "images/items/beanbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 782,
+                        "y": 49,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest DK Mill Levels",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "frontmill",
+                        "x": 594,
+                        "y": 175,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Diddy Winch Cage",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 188,
+                        "y": 261,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Dirt: Near Mills Grass",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Rainbow Coin",
+                        "chest_unopened_img": "images/items/rainbowcoin.png",
+                        "chest_opened_img": "images/items/rainbowcoinbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 151,
+                        "y": 155,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Crate: Behind Dark Attic",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crate",
+                        "chest_unopened_img": "images/items/crate.png",
+                        "chest_opened_img": "images/items/cratebw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 433,
+                        "y": 104,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Tiny Spider Boss",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "rearmill",
+                        "x": 114,
+                        "y": 141,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Chunky Keg Crushing",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "frontmill",
+                        "x": 443,
+                        "y": 689,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Dark Rafters",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Forest Diddy Dark Rafters"
+                    },
+                    {
+                        "name": "Forest Fairy (Dark Rafters)",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 381,
+                        "y": 88,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Lanky Attic Shooting",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 243,
+                        "y": 246,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Kasplat: Behind DK's Barn",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/dk_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 336,
+                        "y": 643,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Crate: Near Thornvine Barn",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crate",
+                        "chest_unopened_img": "images/items/crate.png",
+                        "chest_opened_img": "images/items/cratebw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 184,
+                        "y": 486,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Donkey Thornvine Barn Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "barn",
+                        "x": 370,
+                        "y": 88,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Crate: In Thornvine Barn",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crate",
+                        "chest_unopened_img": "images/items/crate.png",
+                        "chest_opened_img": "images/items/cratebw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "barn",
+                        "x": 118,
+                        "y": 158,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Fairy (Thornvine Barn)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "fairy",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "barn",
+                        "x": 169,
+                        "y": 79,
+                        "size": 16
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Tiny Top of Beanstalk",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 638,
+                        "y": 815,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Dirt: Beanstalk",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Rainbow Coin",
+                        "chest_unopened_img": "images/items/rainbowcoin.png",
+                        "chest_opened_img": "images/items/rainbowcoinbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 610,
+                        "y": 807,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Forest Chunky Apple Rescue",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 449,
+                        "y": 548,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Forest Boss Defeated",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 800,
+                        "y": 696,
+                        "size": 10
+                    },
+                    {
+                        "map": "forest",
+                        "x": 360,
+                        "y": 754,
+                        "size": 10
+                    },
+                    {
+                        "map": "forest",
+                        "x": 359,
+                        "y": 676,
+                        "size": 10
+                    },
+                    {
+                        "map": "forest",
+                        "x": 423,
+                        "y": 241,
+                        "size": 10
+                    },
+                    {
+                        "map": "forest",
+                        "x": 964,
+                        "y": 252,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    }
+]

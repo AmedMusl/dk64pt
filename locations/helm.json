@@ -1,0 +1,156 @@
+[
+    {
+        "name": "Hideout Helm",
+        "chest_unopened_img": "images/items/bananamedal.png",
+        "chest_opened_img": "images/items/bananamedalbw.png",
+        "children": [
+            {
+                "name": "Helm Battle Arena",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crown",
+                        "chest_unopened_img": "images/items/crown.png",
+                        "chest_opened_img": "images/items/crownbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 206,
+                        "y": 347,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Helm DK Medal",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Medal"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 321,
+                        "y": 234,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Helm Diddy Medal",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Medal"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 323,
+                        "y": 460,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Helm Lanky Medal",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Medal"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 43,
+                        "y": 347,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Helm Tiny Medal",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Medal"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 364,
+                        "y": 347,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Helm Chunky Medal",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Medal"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 92,
+                        "y": 459,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "The End of Helm",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Key",
+                        "chest_unopened_img": "images/items/key.png",
+                        "chest_opened_img": "images/items/keybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 359,
+                        "y": 67,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Helm Fairy (Key 8 Room)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Fairy 1",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    },
+                    {
+                        "name": "Fairy 2",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 359,
+                        "y": 40,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    }
+]

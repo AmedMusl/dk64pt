@@ -1,0 +1,574 @@
+[
+    {
+        "name": "Angry Aztec",
+        "chest_unopened_img": "images/items/GB.png",
+        "chest_opened_img": "images/items/GBbw.png",
+        "children": [
+            {
+                "name": "Medals",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Aztec DK Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Aztec Diddy Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Aztec Lanky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Aztec Tiny Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Aztec Chunky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 1000,
+                        "y": 25,
+                        "size": 25
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Chunky Vases",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 976,
+                        "y": 810,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Kasplat: Behind DK Stone Door",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/dk_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 785,
+                        "y": 804,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec DK Free Llama Blast",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 627,
+                        "y": 665,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Kasplat: On Tiny Temple",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/diddy_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 452,
+                        "y": 821,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Dirt: Oasis",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Rainbow Coin",
+                        "chest_unopened_img": "images/items/rainbowcoin.png",
+                        "chest_opened_img": "images/items/rainbowcoinbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 587,
+                        "y": 760,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Chunky Klaptrap Room",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 75,
+                        "y": 97,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Klaptrap Room",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 273,
+                        "y": 157,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Lanky Vulture Shooting",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 844,
+                        "y": 195,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Battle Arena (Tiny Temple: Vulture Room)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crown",
+                        "chest_unopened_img": "images/items/crown.png",
+                        "chest_opened_img": "images/items/crownbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 909,
+                        "y": 195,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Free Tiny Item",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 353,
+                        "y": 637,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Chunky Giant Caged Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 265,
+                        "y": 489,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Kasplat: Hunky Chunky Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/tiny_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 440,
+                        "y": 591,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Diddy Ram Gongs",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 226,
+                        "y": 345,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Diddy Vulture Race",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 342,
+                        "y": 274,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Crate: On Llama Temple",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crate",
+                        "chest_unopened_img": "images/items/crate.png",
+                        "chest_opened_img": "images/items/cratebw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 500,
+                        "y": 395,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Crate: Near Gong Tower",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crate",
+                        "chest_unopened_img": "images/items/crate.png",
+                        "chest_opened_img": "images/items/cratebw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 170,
+                        "y": 334,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec DK Sealed Quicksand Tunnel Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 800,
+                        "y": 386,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "5 Door Temple",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Aztec DK 5DT"
+                    },
+                    {
+                        "name": "Aztec Diddy 5DT"
+                    },
+                    {
+                        "name": "Aztec Lanky 5DT"
+                    },
+                    {
+                        "name": "Aztec Tiny 5DT"
+                    },
+                    {
+                        "name": "Aztec Chunky 5DT"
+                    },
+                    {
+                        "name": "Aztec Fairy (Inside Tiny 5DT)",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    },
+                    {
+                        "name": "Aztec Kasplat: Chunky 5DT",
+                        "chest_unopened_img": "images/items/chunky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    },
+                    {
+                        "name": "Aztec Dirt: Chunky 5DT",
+                        "chest_unopened_img": "images/items/rainbowcoin.png",
+                        "chest_opened_img": "images/items/rainbowcoinbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 625,
+                        "y": 251,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Beetle Race",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 236,
+                        "y": 329,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Free Lanky Item",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 863,
+                        "y": 575,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Lanky Llama Temple Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 346,
+                        "y": 579,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Fairy (Llama Temple)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Fairy",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 391,
+                        "y": 383,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Crate: Llama Temple",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Fairy",
+                        "chest_unopened_img": "images/items/crate.png",
+                        "chest_opened_img": "images/items/cratebw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 600,
+                        "y": 706,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Aztec Lanky Matching Game",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 604,
+                        "y": 169,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Aztec Tiny Llama Temple Lava Pedestals",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 30,
+                        "y": 175,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Kasplat: Llama Temple Lava",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/lanky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 173,
+                        "y": 296,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Boss Defeated",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 618,
+                        "y": 851,
+                        "size": 10
+                    },
+                    {
+                        "map": "aztec",
+                        "x": 674,
+                        "y": 289,
+                        "size": 10
+                    },
+                    {
+                        "map": "aztec",
+                        "x": 386,
+                        "y": 94,
+                        "size": 10
+                    },
+                    {
+                        "map": "aztec",
+                        "x": 517,
+                        "y": 107,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    }
+]
