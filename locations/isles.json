@@ -824,7 +824,7 @@
         "access_rules": [],
         "sections": [
           {
-            "name": "Rainbow Coin",
+            "name": "Crown",
             "chest_unopened_img": "images/items/crown.png",
             "chest_opened_img": "images/items/crownbw.png",
             "access_rules": []

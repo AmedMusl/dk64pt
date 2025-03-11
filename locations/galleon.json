@@ -1,0 +1,603 @@
+[
+    {
+        "name": "Gloomy Galleon",
+        "chest_unopened_img": "images/items/GB.png",
+        "chest_opened_img": "images/items/GBbw.png",
+        "children": [
+            {
+                "name": "Medals",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Galleon DK Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Galleon Diddy Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Galleon Lanky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Galleon Tiny Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Galleon Chunky Medal",
+                        "chest_unopened_img": "images/items/bananamedal.png",
+                        "chest_opened_img": "images/items/bananamedalbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 915,
+                        "y": 35,
+                        "size": 25
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Chunky Chest",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 679,
+                        "y": 197,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Battle Arena (Under Cranky)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crown",
+                        "chest_unopened_img": "images/items/crown.png",
+                        "chest_opened_img": "images/items/crownbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 435,
+                        "y": 242,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Fairy (In Punch Chest)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crown",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 435,
+                        "y": 242,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Kasplat: Past Vines",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/tiny_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 514,
+                        "y": 335,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Chunky Cannon Game",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 447,
+                        "y": 590,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Kasplat: Cannon Game Room",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/lanky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 487,
+                        "y": 590,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Kasplat: Lighthouse Alcove",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/diddy_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 699,
+                        "y": 697,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Diddy Top of Lighthouse",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 702,
+                        "y": 554,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Lanky Enguarde Chest",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 783,
+                        "y": 586,
+                        "size": 10
+                    }
+                ]
+            },            {            
+                "name": "Lighthouse",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Galleon DK Lighthouse"
+                    },
+                    {
+                        "name": "Galleon Dirt: Lighthouse",
+                        "chest_unopened_img": "images/items/rainbowcoin.png",
+                        "chest_opened_img": "images/items/rainbowcoinbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 680,
+                        "y": 556,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Tiny Mermaid Reward",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 771,
+                        "y": 671,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Chunky Seasick",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 614,
+                        "y": 465,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Seal",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Free the Seal"
+                    },
+                    {
+                        "name": "Seal Race"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 21,
+                        "y": 235,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Kasplat: Musical Cactus",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/chunky_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 182,
+                        "y": 65,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Crate: Near Cactus",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Crate",
+                        "chest_unopened_img": "images/items/crate.png",
+                        "chest_opened_img": "images/items/cratebw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 229,
+                        "y": 179,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Lanky Gold Tower Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 99,
+                        "y": 536,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Diddy Gold Tower Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 144,
+                        "y": 453,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Kasplat: Diddy Gold Tower",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Kasplat",
+                        "chest_unopened_img": "images/items/dk_bp.png",
+                        "chest_opened_img": "images/items/blueprintbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 138,
+                        "y": 466,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Treasure Chest",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Treasure Chest Far Left Clam",
+                        "chest_unopened_img": "images/items/pearl.png",
+                        "chest_opened_img": "images/items/pearlbw.png"
+                    },
+                    {
+                        "name": "Treasure Chest Center Clam",
+                        "chest_unopened_img": "images/items/pearl.png",
+                        "chest_opened_img": "images/items/pearlbw.png"
+                    },
+                    {
+                        "name": "Treasure Chest Far Right Clam",
+                        "chest_unopened_img": "images/items/pearl.png",
+                        "chest_opened_img": "images/items/pearlbw.png"
+                    },
+                    {
+                        "name": "Treasure Chest Close Right Clam",
+                        "chest_unopened_img": "images/items/pearl.png",
+                        "chest_opened_img": "images/items/pearlbw.png"
+                    },
+                    {
+                        "name": "Treasure Chest Close Left Clam",
+                        "chest_unopened_img": "images/items/pearl.png",
+                        "chest_opened_img": "images/items/pearlbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 95,
+                        "y": 481,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Tiny Submarine Barrel",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 235,
+                        "y": 142,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Diddy Mechfish",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 94,
+                        "y": 291,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "2-Door Ship",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Lanky 2DS"
+                    },
+                    {
+                        "name": "Tiny 2DS"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 347,
+                        "y": 619,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon DK 5-Door Ship",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 319,
+                        "y": 426,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Diddy 5-Door Ship",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 319,
+                        "y": 384,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Lanky 5-Door Ship",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 382,
+                        "y": 384,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Tiny 5-Door Ship",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    },
+                    {
+                        "name": "Fairy",
+                        "chest_unopened_img": "images/items/fairy.png",
+                        "chest_opened_img": "images/items/fairybw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 382,
+                        "y": 426,
+                        "size": 10
+                    }
+                ]
+            },
+            {            
+                "name": "Galleon Chunky 5-Door Ship",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 353,
+                        "y": 422,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Boss Defeated",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 537,
+                        "y": 229,
+                        "size": 10
+                    },
+                    {
+                        "map": "galleon",
+                        "x": 854,
+                        "y": 703,
+                        "size": 10
+                    },
+                    {
+                        "map": "galleon",
+                        "x": 778,
+                        "y": 506,
+                        "size": 10
+                    },
+                    {
+                        "map": "galleon",
+                        "x": 346,
+                        "y": 674,
+                        "size": 10
+                    },
+                    {
+                        "map": "galleon",
+                        "x": 160,
+                        "y": 41,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    }
+]
