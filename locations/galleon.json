@@ -84,7 +84,7 @@
                 "access_rules": [],
                 "sections": [
                     {
-                        "name": "Crown",
+                        "name": "Fairy",
                         "chest_unopened_img": "images/items/fairy.png",
                         "chest_opened_img": "images/items/fairybw.png"
                     }
@@ -92,8 +92,8 @@
                 "map_locations": [
                     {
                         "map": "galleon",
-                        "x": 435,
-                        "y": 242,
+                        "x": 640,
+                        "y": 197,
                         "size": 10
                     }
                 ]

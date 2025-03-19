@@ -162,7 +162,7 @@
                 "access_rules": [],
                 "sections": [
                     {
-                        "name": "Kasplat",
+                        "name": "Crown",
                         "chest_unopened_img": "images/items/crown.png",
                         "chest_opened_img": "images/items/crownbw.png"
                     }
@@ -545,7 +545,7 @@
                 "access_rules": [],
                 "sections": [
                     {
-                        "name": "fairy",
+                        "name": "Fairy",
                         "chest_unopened_img": "images/items/fairy.png",
                         "chest_opened_img": "images/items/fairybw.png"
                     }

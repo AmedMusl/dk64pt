@@ -36,7 +36,7 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "Factory",
+                        "map": "factory",
                         "x": 1876,
                         "y": 36,
                         "size": 25
@@ -426,7 +426,7 @@
                         "name": "DK Arcade Round 1"
                     },
                     {
-                        "name": "DK Arcade Round 2",
+                        "name": "DK Arcade Nintendo Coin",
                         "chest_unopened_img": "images/items/n64rw_coin.png",
                         "chest_opened_img": "images/items/n64rwbw.png"
                     }

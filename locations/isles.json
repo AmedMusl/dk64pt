@@ -23,7 +23,7 @@
       },
       {
         "name": "Chunky Pineapple Cage",
-        "access_rules": [],
+        "access_rules": ["$pineapple"],
         "sections": [
           {
             "name": "Golden Banana",
@@ -41,7 +41,7 @@
       },
       {
         "name": "Tiny Feather Cage",
-        "access_rules": [],
+        "access_rules": ["$feather"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -58,7 +58,7 @@
       },
       {
         "name": "Chunky Pound the X",
-        "access_rules": [],
+        "access_rules": ["$port, $sax, $hunky"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -75,7 +75,7 @@
       },
       {
         "name": "Isles Chunky Triangle Pad",
-        "access_rules": [],
+        "access_rules": ["barrel, $triangle"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -98,13 +98,13 @@
             "name": "Isles Lanky Sprint Cage",
             "chest_unopened_img": "images/items/GB.png",
             "chest_opened_img": "images/items/GBbw.png",
-            "access_rules": []
+            "access_rules": ["$sprint"]
           },
           {
             "name": "Isles Dirt: Back of Prison",
             "chest_unopened_img": "images/items/rainbowcoin.png",
             "chest_opened_img": "images/items/rainbowcoinbw.png",
-            "access_rules": []
+            "access_rules": ["shockwave"]
           }
         ],
         "map_locations": [
@@ -118,7 +118,7 @@
       },
       {
         "name": "Banana Fairy Island",
-        "access_rules": [],
+        "access_rules": ["$mini"],
         "sections": [
           {
             "name": "The Banana Fairy's Gift",

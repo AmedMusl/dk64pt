@@ -11,12 +11,13 @@
         "content": [
           {
             "type": "itemgrid",
-            "item_margin": "8, 2",
+            "item_margin": "5, 2",
             "h_alignment": "left",
             "rows": [
               [
                 "donkey",
                 "coconut",
+                "bongos",
                 "grab",
                 "blast",
                 "strong",
@@ -25,6 +26,7 @@
               [
                 "diddy",
                 "peanuts",
+                "guitar",
                 "charge",
                 "spring",
                 "rocket",
@@ -33,6 +35,7 @@
               [
                 "lanky",
                 "grape",
+                "trombone",
                 "orangstand",
                 "balloon",
                 "sprint",
@@ -41,6 +44,7 @@
               [
                 "tiny",
                 "feather",
+                "sax",
                 "twirl",
                 "port",
                 "mini",
@@ -49,6 +53,7 @@
               [
                 "chunky",
                 "pineapple",
+                "triangle",
                 "punch",
                 "gone",
                 "big",

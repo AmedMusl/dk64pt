@@ -465,7 +465,7 @@
                 "access_rules": [],
                 "sections": [
                     {
-                        "name": "Fairy",
+                        "name": "Crate",
                         "chest_unopened_img": "images/items/crate.png",
                         "chest_opened_img": "images/items/cratebw.png"
                     }

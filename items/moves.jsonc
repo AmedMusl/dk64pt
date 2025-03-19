@@ -60,7 +60,8 @@
     {
         "name": "Triangle Trample",
         "type": "toggle",
-        "img": "images/items/chunky_inst.png"
+        "img": "images/items/chunky_inst.png",
+        "codes": "triangle"
     },
 
     // Active Moves

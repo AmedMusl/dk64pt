@@ -84,7 +84,7 @@
                 "access_rules": [],
                 "sections": [
                     {
-                        "name": "Kasplat",
+                        "name": "Rainbow Coin",
                         "chest_unopened_img": "images/items/rainbowcoin.png",
                         "chest_opened_img": "images/items/rainbowcoinbw.png"
                     }
@@ -331,7 +331,7 @@
                 "access_rules": [],
                 "sections": [
                     {
-                        "name": "Kasplat",
+                        "name": "Crate",
                         "chest_unopened_img": "images/items/crate.png",
                         "chest_opened_img": "images/items/cratebw.png"
                     }

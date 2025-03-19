@@ -83,7 +83,7 @@
         "name": "Banana Medals",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 45,
+        "max_quantity": 40,
         "increment": 1,
         "overlay_background": "#000000",
         "img": "images/items/bananamedal.png",
