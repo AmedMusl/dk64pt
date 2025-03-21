@@ -370,7 +370,7 @@
             },
             {            
                 "name": "Japes Chunky Giant Bonus Barrel",
-                "access_rules": ["$hunky, $feather, $climb"],
+                "access_rules": ["$hunky, $feather, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -501,7 +501,7 @@
                 "sections": [
                     {
                         "name": "Japes Lanky Zingers",
-                        "access_rules": ["greenslam, $grape", "$greenslam, $trombone"]
+                        "access_rules": ["greenslam, $grape", "greenslam, $trombone"]
                     },
                     {
                         "name": "Japes Fairy (Painting Room)",
