@@ -123,3 +123,28 @@ end
 function hunky()
     return has("chunky") and has("big")
 end
+
+-- Other logic
+function canEnterTinyTemple()
+    return pineapple() or peanuts() or feather() or grape()
+end
+
+function canEnterLlamaTemple()
+    return blast() and (coconut() or grape() or feather())
+end
+
+function canChangeTime()
+    return coconut() or peanuts() or grape() or feather() or pineapple()
+end
+
+function topOfMushroom()
+    return (rocket() or has("climb")) and ostand() or rocket()
+end
+
+function canClearGauntlet()
+    return has("orange") or coconut() or peanuts() or grape() or feather() or pineapple() or bongos() or guitar() or trombone() or sax() or triangle()
+end
+
+function canEnterSprintCabin()
+    return trombone() and (rocket() or balloon())
+end

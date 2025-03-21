@@ -45,7 +45,7 @@
             },
             {            
                 "name": "Forest Chunky Minecart",
-                "access_rules": [],
+                "access_rules": ["greenslam, chunky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -62,7 +62,7 @@
             },
             {            
                 "name": "Forest Diddy Top of Mushroom Barrel",
-                "access_rules": [],
+                "access_rules": ["$rocket"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -82,13 +82,20 @@
                 "access_rules": [],
                 "sections": [
                     {
-                        "name": "Forest DK Mushroom Cannons"
+                        "name": "Forest DK Mushroom Cannons",
+                        "access_rules": ["blueslam, $coconut, $peanuts, $grape, $feather, $pineapple"]
                     },
                     {
-                        "name": "Forest Tiny Mushroom Barrel"
+                        "name": "Forest Tiny Mushroom Barrel",
+                        "access_rules": ["blueslam, tiny"]
                     },
                     {
                         "name": "Forest Kasplat: Inside Giant Mushroom",
+                        "access_rules": [
+                        "climb",
+                        "$rocket",
+                         "@Fungi Forest/Inside the Mushroom/Forest DK Mushroom Cannons"
+                        ],
                         "chest_unopened_img": "images/items/diddy_bp.png",
                         "chest_opened_img": "images/items/blueprintbw.png"
                     }
@@ -104,7 +111,7 @@
             },
             {            
                 "name": "Forest Kasplat: Lower Mushroom Exterior",
-                "access_rules": [],
+                "access_rules": ["climb", "$rocket"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -123,7 +130,7 @@
             },
             {            
                 "name": "Forest DK Baboon Blast",
-                "access_rules": [],
+                "access_rules": ["$blast, climb", "$blast, $rocket"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -140,7 +147,7 @@
             },
             {            
                 "name": "Forest Kasplat: Mushroom Night Door",
-                "access_rules": [],
+                "access_rules": ["climb", "$rocket"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -159,7 +166,7 @@
             },
             {            
                 "name": "Forest Battle Arena: High Ladder Platform",
-                "access_rules": [],
+                "access_rules": ["climb", "$rocket"],
                 "sections": [
                     {
                         "name": "Crown",
@@ -178,7 +185,7 @@
             },
             {            
                 "name": "Forest Chunky Face Puzzle",
-                "access_rules": [],
+                "access_rules": ["blueslam, $pineapple, climb", "blueslam, $pineapple, $rocket"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -195,7 +202,7 @@
             },
             {            
                 "name": "Forest Lanky Zinger Bounce",
-                "access_rules": [],
+                "access_rules": ["$topOfMushroom, blueslam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -212,7 +219,7 @@
             },
             {            
                 "name": "Forest Lanky Coloured Mushroom Slam",
-                "access_rules": [],
+                "access_rules": ["$topOfMushroom, blueslam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -229,7 +236,7 @@
             },
             {            
                 "name": "Forest Diddy Owl Race",
-                "access_rules": [],
+                "access_rules": ["$grape, $rocket, $guitar, $canChangeTime"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -246,7 +253,7 @@
             },
             {            
                 "name": "Forest Lanky Rabbit Race",
-                "access_rules": [],
+                "access_rules": ["$grape, $trombone, $sprint"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -263,7 +270,7 @@
             },
             {            
                 "name": "Forest Kasplat: Under Owl Tree",
-                "access_rules": [],
+                "access_rules": ["$grape"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -282,7 +289,7 @@
             },
             {            
                 "name": "Forest Crate: Near Owl Tree",
-                "access_rules": [],
+                "access_rules": ["$grape"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -301,7 +308,7 @@
             },
             {            
                 "name": "Forest Anthill",
-                "access_rules": [],
+                "access_rules": ["$grape, $mini, $sax"],
                 "sections": [
                     {
                         "name": "Forest Tiny Anthill Banana"
@@ -323,7 +330,7 @@
             },
             {            
                 "name": "Forest DK Mill Levels",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime, $grab, blueslam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -340,7 +347,7 @@
             },
             {            
                 "name": "Forest Diddy Winch Cage",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime, blueslam, $charge, $guitar"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -395,7 +402,7 @@
             },
             {            
                 "name": "Forest Tiny Spider Boss",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime, $punch, $triangle, $mini"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -412,7 +419,7 @@
             },
             {            
                 "name": "Forest Chunky Keg Crushing",
-                "access_rules": [],
+                "access_rules": ["barrel, $punch, $triangle"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -429,13 +436,14 @@
             },
             {            
                 "name": "Dark Rafters",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime, $spring, $guitar"],
                 "sections": [
                     {
                         "name": "Forest Diddy Dark Rafters"
                     },
                     {
                         "name": "Forest Fairy (Dark Rafters)",
+                        "access_rules": ["camera"],
                         "chest_unopened_img": "images/items/fairy.png",
                         "chest_opened_img": "images/items/fairybw.png"
                     }
@@ -451,7 +459,7 @@
             },
             {            
                 "name": "Forest Lanky Attic Shooting",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime, blueslam, lanky, homing"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -468,7 +476,7 @@
             },
             {            
                 "name": "Forest Kasplat: Behind DK's Barn",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -487,7 +495,7 @@
             },
             {            
                 "name": "Forest Crate: Near Thornvine Barn",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -506,7 +514,7 @@
             },
             {            
                 "name": "Forest Donkey Thornvine Barn Barrel",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime, blueslam, $strong, climb, vine"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -523,7 +531,7 @@
             },
             {            
                 "name": "Forest Crate: In Thornvine Barn",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime, $strong, blueslam"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -542,7 +550,7 @@
             },
             {            
                 "name": "Forest Fairy (Thornvine Barn)",
-                "access_rules": [],
+                "access_rules": ["$canChangeTime, $strong, blueslam, climb, camera"],
                 "sections": [
                     {
                         "name": "Fairy",
@@ -561,7 +569,7 @@
             },
             {            
                 "name": "Forest Tiny Top of Beanstalk",
-                "access_rules": [],
+                "access_rules": ["bean, $mini, $sax, $pineapple, $feather"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -578,7 +586,7 @@
             },
             {            
                 "name": "Forest Dirt: Beanstalk",
-                "access_rules": [],
+                "access_rules": ["$pineapple, $feather, shockwave"],
                 "sections": [
                     {
                         "name": "Rainbow Coin",
@@ -597,7 +605,7 @@
             },
             {            
                 "name": "Forest Chunky Apple Rescue",
-                "access_rules": [],
+                "access_rules": ["$feather, $pineapple, $hunky, barrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"

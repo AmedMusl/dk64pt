@@ -45,7 +45,7 @@
             },
             {            
                 "name": "Japes DK Floor Cage Banana",
-                "access_rules": [],
+                "access_rules": ["$coconut, greenslam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -62,7 +62,7 @@
             },
             {            
                 "name": "Japes Chunky Boulder",
-                "access_rules": [],
+                "access_rules": ["barrel, chunky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -79,7 +79,7 @@
             },
             {            
                 "name": "Japes Lanky Timed Cage Banana",
-                "access_rules": [],
+                "access_rules": ["$coconut, lanky, climb, greenslam, lanky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -96,7 +96,7 @@
             },
             {            
                 "name": "Diddy Cage",
-                "access_rules": [],
+                "access_rules": ["climb"],
                 "sections": [
                     {
                         "name": "Japes in Front of Diddy Cage"
@@ -116,7 +116,7 @@
             },
             {            
                 "name": "Japes Crate: Behind the Mountain",
-                "access_rules": [],
+                "access_rules": ["climb"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -135,7 +135,7 @@
             },
             {            
                 "name": "Japes Chunky Timed Cage Banana",
-                "access_rules": [],
+                "access_rules": ["$coconut, climb, greenslam, chunky, barrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -152,7 +152,7 @@
             },
             {            
                 "name": "Japes Diddy Timed Cage Banana",
-                "access_rules": [],
+                "access_rules": ["$coconut, climb, greenslam, diddy"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -169,7 +169,7 @@
             },
             {            
                 "name": "Japes Battle Arena (Near Funky)",
-                "access_rules": [],
+                "access_rules": ["climb"],
                 "sections": [
                     {
                         "name": "Crown",
@@ -188,7 +188,7 @@
             },
             {            
                 "name": "Japes Tiny Timed Cage Banana",
-                "access_rules": [],
+                "access_rules": ["$coconut, greenslam, tiny"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -205,7 +205,7 @@
             },
             {            
                 "name": "Japes Dirt: Painting Hill",
-                "access_rules": [],
+                "access_rules": ["$ostand, shockwave"],
                 "sections": [
                     {
                         "name": "Rainbow Coin",
@@ -224,7 +224,7 @@
             },
             {            
                 "name": "Japes Diddy Top of Mountain",
-                "access_rules": [],
+                "access_rules": ["$peanuts, greenslam, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -247,7 +247,7 @@
             },
             {            
                 "name": "Japes DK Baboon Blast",
-                "access_rules": [],
+                "access_rules": ["climb, vine, $blast"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -264,7 +264,7 @@
             },
             {            
                 "name": "Japes Diddy Peanut Tunnel",
-                "access_rules": [],
+                "access_rules": ["$peanuts"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -281,7 +281,7 @@
             },
             {            
                 "name": "Japes Lanky Grape Gate Barrel",
-                "access_rules": [],
+                "access_rules": ["$peanuts, $grape"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -298,7 +298,7 @@
             },
             {            
                 "name": "Japes Tiny Feather Gate Barrel",
-                "access_rules": [],
+                "access_rules": ["$peanuts, $feather"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -353,7 +353,7 @@
             },
             {            
                 "name": "Japes Tiny Stump",
-                "access_rules": [],
+                "access_rules": ["$feather, $mini"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -370,7 +370,7 @@
             },
             {            
                 "name": "Japes Chunky Giant Bonus Barrel",
-                "access_rules": [],
+                "access_rules": ["$hunky, $feather, $climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -387,7 +387,7 @@
             },
             {            
                 "name": "Japes Tiny Beehive",
-                "access_rules": [],
+                "access_rules": ["$feather, $mini, greenslam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -404,7 +404,7 @@
             },
             {            
                 "name": "Japes Lanky Slope Barrel",
-                "access_rules": [],
+                "access_rules": ["$ostand"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -459,7 +459,7 @@
             },
             {            
                 "name": "Japes Fairy (Rambi Door Pool)",
-                "access_rules": [],
+                "access_rules": ["$coconut, camera"],
                 "sections": [
                     {
                         "name": "Fairy",
@@ -478,7 +478,7 @@
             },
             {            
                 "name": "Japes Crate: In the Rambi Cave",
-                "access_rules": [],
+                "access_rules": ["$coconut"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -497,13 +497,15 @@
             },
             {            
                 "name": "Painting Room",
-                "access_rules": [],
+                "access_rules": ["$peanuts, $ostand"],
                 "sections": [
                     {
-                        "name": "Japes Lanky Zingers"
+                        "name": "Japes Lanky Zingers",
+                        "access_rules": ["greenslam, $grape", "$greenslam, $trombone"]
                     },
                     {
                         "name": "Japes Fairy (Painting Room)",
+                        "access_rules": ["@Jungle Japes/Painting Room/Japes Lanky Zingers, camera"],
                         "chest_unopened_img": "images/items/fairy.png",
                         "chest_opened_img": "images/items/fairybw.png"
                     }
@@ -519,7 +521,7 @@
             },
             {            
                 "name": "Japes Diddy Minecart",
-                "access_rules": [],
+                "access_rules": ["$charge, $peanuts, greenslam, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -536,7 +538,7 @@
             },
             {            
                 "name": "Japes Chunky Underground",
-                "access_rules": [],
+                "access_rules": ["barrel, vine, greenslam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -553,7 +555,7 @@
             },
             {            
                 "name": "Japes Kasplat: Underground",
-                "access_rules": [],
+                "access_rules": ["barrel, vine, greenslam"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -572,7 +574,7 @@
             },
             {
                 "name": "Japes Boss Defeated",
-                "access_rules": [],
+                "access_rules": ["barrel"],
                 "sections": [
                     {
                         "name": "Boss",

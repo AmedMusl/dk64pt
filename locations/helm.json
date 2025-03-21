@@ -1,12 +1,13 @@
 [
     {
         "name": "Hideout Helm",
+        "access_rules": ["key6, key7, $gone, $port, vine"],
         "chest_unopened_img": "images/items/bananamedal.png",
         "chest_opened_img": "images/items/bananamedalbw.png",
         "children": [
             {
                 "name": "Helm Battle Arena",
-                "access_rules": [],
+                "access_rules": ["$rocket"],
                 "sections": [
                     {
                         "name": "Crown",
@@ -25,7 +26,7 @@
             },
             {
                 "name": "Helm DK Medal",
-                "access_rules": [],
+                "access_rules": ["$bongos"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -42,7 +43,7 @@
             },
             {
                 "name": "Helm Diddy Medal",
-                "access_rules": [],
+                "access_rules": ["$guitar, $rocket"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -59,7 +60,7 @@
             },
             {
                 "name": "Helm Lanky Medal",
-                "access_rules": [],
+                "access_rules": ["$trombone"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -76,7 +77,7 @@
             },
             {
                 "name": "Helm Tiny Medal",
-                "access_rules": [],
+                "access_rules": ["$sax"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -93,7 +94,7 @@
             },
             {
                 "name": "Helm Chunky Medal",
-                "access_rules": [],
+                "access_rules": ["$triangle"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -129,7 +130,7 @@
             },
             {
                 "name": "Helm Fairy (Key 8 Room)",
-                "access_rules": [],
+                "access_rules": ["camera"],
                 "sections": [
                     {
                         "name": "Fairy 1",

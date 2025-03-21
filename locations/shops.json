@@ -1,0 +1,743 @@
+[
+    {
+        "name": "Isles Shops",
+        "chest_unopened_img": "images/items/soldoutbw.png",
+        "chest_opened_img": "images/items/soldout.png",
+        "children": [
+            {
+                "name": "Isles Cranky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Cranky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Cranky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Cranky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Cranky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Cranky Chunky",
+                        "access_rules": ["chunky"]
+                    },
+                    {
+                        "name": "Jetpac",
+                        "chest_unopened_img": "images/items/n64rw_coin.png",
+                        "chest_opened_img": "images/items/n64rwbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "training",
+                        "x": 862,
+                        "y": 214,
+                        "size": 16
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Japes Shops",
+        "chest_unopened_img": "images/items/soldoutbw.png",
+        "chest_opened_img": "images/items/soldout.png",
+        "children": [
+            {
+                "name": "Japes Cranky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Cranky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Cranky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Cranky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Cranky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Cranky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 364,
+                        "y": 134,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Funky",
+                "access_rules": ["climb"],
+                "sections": [
+                    {
+                        "name": "Funky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Funky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Funky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Funky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Funky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 288,
+                        "y": 493,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Aztec Shops",
+        "chest_unopened_img": "images/items/soldoutbw.png",
+        "chest_opened_img": "images/items/soldout.png",
+        "children": [
+            {
+                "name": "Aztec Cranky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Cranky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Cranky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Cranky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Cranky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Cranky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 429,
+                        "y": 571,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Funky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Funky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Funky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Funky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Funky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Funky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 495,
+                        "y": 102,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Candy",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Candy DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Candy Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Candy Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Candy Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Candy Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 600,
+                        "y": 858,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Factory Shops",
+        "chest_unopened_img": "images/items/soldoutbw.png",
+        "chest_opened_img": "images/items/soldout.png",
+        "children": [
+            {
+                "name": "Factory Cranky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Cranky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Cranky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Cranky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Cranky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Cranky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 205,
+                        "y": 300,
+                        "size": 8
+                    }
+                ]
+            },
+            {
+                "name": "Factory Candy",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Candy DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Candy Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Candy Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Candy Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Candy Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 205,
+                        "y": 185,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Factory Funky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Funky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Funky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Funky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Funky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Funky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 626,
+                        "y": 161,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Galleon Shops",
+        "chest_unopened_img": "images/items/soldoutbw.png",
+        "chest_opened_img": "images/items/soldout.png",
+        "children": [
+            {
+                "name": "Galleon Cranky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Cranky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Cranky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Cranky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Cranky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Cranky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 415,
+                        "y": 251,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Funky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Funky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Funky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Funky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Funky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Funky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 206,
+                        "y": 199,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Candy",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Candy DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Candy Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Candy Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Candy Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Candy Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 93,
+                        "y": 350,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Forest Shops",
+        "chest_unopened_img": "images/items/soldoutbw.png",
+        "chest_opened_img": "images/items/soldout.png",
+        "children": [
+            {
+                "name": "Forest Cranky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Cranky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Cranky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Cranky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Cranky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Cranky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 838,
+                        "y": 863,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Forest Funky",
+                "access_rules": ["$feather, $pineapple"],
+                "sections": [
+                    {
+                        "name": "Funky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Funky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Funky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Funky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Funky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "forest",
+                        "x": 414,
+                        "y": 907,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Caves Shops",
+        "chest_unopened_img": "images/items/soldoutbw.png",
+        "chest_opened_img": "images/items/soldout.png",
+        "children": [
+            {
+                "name": "Caves Cranky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Cranky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Cranky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Cranky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Cranky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Cranky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 638,
+                        "y": 580,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Funky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Funky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Funky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Funky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Funky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Funky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 258,
+                        "y": 627,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Candy",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Candy DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Candy Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Candy Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Candy Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Candy Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 129,
+                        "y": 447,
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Castle Shops",
+        "chest_unopened_img": "images/items/soldoutbw.png",
+        "chest_opened_img": "images/items/soldout.png",
+        "children": [
+            {
+                "name": "Castle Cranky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Cranky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Cranky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Cranky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Cranky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Cranky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 116,
+                        "y": 607,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Castle Funky",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Funky DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Funky Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Funky Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Funky Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Funky Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypthub",
+                        "x": 839,
+                        "y": 50,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Caves Candy",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Candy DK",
+                        "access_rules": ["donkey"]
+                    },
+                    {
+                        "name": "Candy Diddy",
+                        "access_rules": ["diddy"]
+                    },
+                    {
+                        "name": "Candy Lanky",
+                        "access_rules": ["lanky"]
+                    },
+                    {
+                        "name": "Candy Tiny",
+                        "access_rules": ["tiny"]
+                    },
+                    {
+                        "name": "Candy Chunky",
+                        "access_rules": ["chunky"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeontunnel",
+                        "x": 445,
+                        "y": 675,
+                        "size": 16
+                    }
+                ]
+            }
+        ]
+    }
+]
