@@ -3,7 +3,7 @@
         "name": "Golden Banana",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 201,
+        "max_quantity": 161,
         "increment": 1,
         "overlay_background": "#000000",
         "img": "images/items/GB.png",

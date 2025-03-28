@@ -1,6 +1,7 @@
 [
     {
         "name": "Crystal Caves",
+        "access_rules": ["$canEnterCaves"],
         "chest_unopened_img": "images/items/GB.png",
         "chest_opened_img": "images/items/GBbw.png",
         "children": [
@@ -10,26 +11,31 @@
                 "sections": [
                     {
                         "name": "Caves DK Medal",
+                        "access_rules": ["$cavesDKMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Caves Diddy Medal",
+                        "access_rules": ["$cavesDiddyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Caves Lanky Medal",
+                        "access_rules": ["$cavesLankyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Caves Tiny Medal",
+                        "access_rules": ["$cavesTinyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Caves Chunky Medal",
+                        "access_rules": ["$cavesChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     }
@@ -81,7 +87,7 @@
             },
             {
                 "name": "Caves Chunky Gorilla Gone",
-                "access_rules": ["$punch, $gone"],
+                "access_rules": ["$cavesIce, $gone"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -170,7 +176,7 @@
             },
             {
                 "name": "Caves Lanky Beetle Race",
-                "access_rules": ["blueslam, $balloon, $sprint"],
+                "access_rules": ["$cavesSlam, $balloon, $sprint"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -187,7 +193,7 @@
             },
             {
                 "name": "Caves Lanky Ice Castle Slam Challenge",
-                "access_rules": ["blueslam"],
+                "access_rules": ["$cavesSlam, lanky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -221,7 +227,7 @@
             },
             {
                 "name": "Caves Chunky Transparent Igloo",
-                "access_rules": ["barrel, $hunky, $punch"],
+                "access_rules": ["barrel, $hunky, $cavesIce"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -276,7 +282,7 @@
             },
             {
                 "name": "Caves DK 5 Door Igloo",
-                "access_rules": ["$bongos, $strong"],
+                "access_rules": ["$igloo, $bongos, $strong"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -293,7 +299,7 @@
             },
             {
                 "name": "Caves Diddy 5 Door Igloo",
-                "access_rules": ["$guitar, barrel"],
+                "access_rules": ["$igloo, $guitar, barrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -310,7 +316,7 @@
             },
             {
                 "name": "Caves Lanky 5 Door Igloo",
-                "access_rules": ["$trombone, $balloon"],
+                "access_rules": ["$igloo, $trombone, $balloon"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -327,7 +333,7 @@
             },
             {
                 "name": "Caves Tiny 5 Door Igloo",
-                "access_rules": ["$sax, greenslam"],
+                "access_rules": ["$igloo, $sax, slam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -350,7 +356,7 @@
             },
             {
                 "name": "Caves Chunky 5 Door Igloo",
-                "access_rules": ["$triangle"],
+                "access_rules": ["$igloo, $triangle"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -386,7 +392,7 @@
             },
             {
                 "name": "Rotating Cabin",
-                "access_rules": ["$bongos, greenslam"],
+                "access_rules": ["$bongos, slam"],
                 "sections": [
                     {
                         "name": "Caves DK Rotating Cabin"
@@ -500,7 +506,7 @@
             },
             {
                 "name": "Caves Chunky 5 Door Cabin",
-                "access_rules": ["$triangle, $gone, greenslam"],
+                "access_rules": ["$triangle, $gone, slam"],
                 "sections": [
                     {
                         "name": "Golden Banana"

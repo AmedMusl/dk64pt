@@ -12,7 +12,7 @@
           {
             "type": "itemgrid",
             "item_margin": "5, 2",
-            "h_alignment": "left",
+            "h_alignment": "center",
             "rows": [
               [
                 "donkey",
@@ -61,24 +61,39 @@
               ],
               [
                 "climb",
-                "dive",
+                "slam",
                 "oranges",
                 "barrel",
-                "vine"
+                "dive"
               ],
               [
-                "slam",
+                "vine",
                 "camera",
                 "shockwave",
-                "homing",
-                "sniper"
-              ],
-              [
-                "cranky",
-                "funky",
-                "candy",
-                "snide"
+                "sniper",
+                "homing"
               ]
+              // [
+              //   "cranky",
+              //   "funky",
+              //   "candy",
+              //   "snide"
+              // ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "content": [
+          {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_size": 32,
+            "item_margin": "0,0,7,5",
+            "rows": [
+              [ "pearl", "bean", "nintendo", "rareware", "rainbow", "crowns", "fairies", "medals", "gb"  ]
             ]
           }
         ]

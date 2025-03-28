@@ -1,6 +1,7 @@
 [
     {
         "name": "Creepy Castle",
+        "access_rules": ["$canEnterCastle"],
         "chest_unopened_img": "images/items/GB.png",
         "chest_opened_img": "images/items/GBbw.png",
         "children": [
@@ -10,26 +11,31 @@
                 "sections": [
                     {
                         "name": "Castle DK Medal",
+                        "access_rules": ["$castleDKMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Castle Diddy Medal",
+                        "access_rules": ["$castleDiddyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Castle Lanky Medal",
+                        "access_rules": ["$castleLankyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Castle Tiny Medal",
+                        "access_rules": ["$castleTinyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Castle Chunky Medal",
+                        "access_rules": ["$castleChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     }
@@ -153,7 +159,7 @@
             },
             {            
                 "name": "Castle DK Library",
-                "access_rules": ["redslam, $strong"],
+                "access_rules": ["$castleSlam, $strong"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -170,7 +176,7 @@
             },
             {            
                 "name": "Castle Diddy Ballroom",
-                "access_rules": ["redslam, $rocket"],
+                "access_rules": ["$castleSlam, $rocket"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -187,7 +193,7 @@
             },
             {            
                 "name": "Castle Fairy (Near Car Race)",
-                "access_rules": ["redslam, $port, camera"],
+                "access_rules": ["$castleSlam, $port, camera"],
                 "sections": [
                     {
                         "name": "Fairy",
@@ -206,7 +212,7 @@
             },
             {            
                 "name": "Castle Tiny Car Race",
-                "access_rules": ["redslam, $port, $mini"],
+                "access_rules": ["$castleSlam, $port, $mini"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -223,7 +229,7 @@
             },
             {            
                 "name": "Castle Lanky Tower",
-                "access_rules": ["redslam, $balloon, $grape, sniper"],
+                "access_rules": ["$castleSlam, $balloon, $grape, sniper"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -240,7 +246,7 @@
             },
             {            
                 "name": "Greenhouse",
-                "access_rules": ["redslam"],
+                "access_rules": ["$castleSlam"],
                 "sections": [
                     {
                         "name": "Castle Lanky Greenhouse"
@@ -296,7 +302,7 @@
             },
             {            
                 "name": "Castle Chunky Museum",
-                "access_rules": ["redslam, $punch, barrel"],
+                "access_rules": ["$castleSlam, $punch, barrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -351,7 +357,7 @@
             },
             {            
                 "name": "Castle Diddy Crypt",
-                "access_rules": ["$peanuts, $charge"],
+                "access_rules": ["$diddyCryptDoors, $charge"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -368,7 +374,7 @@
             },
             {            
                 "name": "Castle Chunky Crypt",
-                "access_rules": ["$pineapple, $punch"],
+                "access_rules": ["$chunkyCryptDoors, $punch"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -385,7 +391,7 @@
             },
             {            
                 "name": "Castle DK Minecart",
-                "access_rules": ["$coconut, $grab"],
+                "access_rules": ["$dkCryptDoors, $coconut, $grab"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -402,7 +408,7 @@
             },
             {            
                 "name": "Mausoleum",
-                "access_rules": ["$grape", "$feather"],
+                "access_rules": ["$mausoleumDoors"],
                 "sections": [
                     {
                         "name": "Castle Lanky Mausoleum",
@@ -410,7 +416,7 @@
                     },
                     {
                         "name": "Castle Tiny Mausoleum",
-                        "access_rules": ["$twirl, redslam"]
+                        "access_rules": ["$twirl, $castleSlam"]
                     }
                 ],
                 "map_locations": [
@@ -460,7 +466,7 @@
             },
             {            
                 "name": "Castle DK Dungeon",
-                "access_rules": ["redslam, donkey"],
+                "access_rules": ["$castleSlam, donkey"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -477,7 +483,7 @@
             },
             {            
                 "name": "Castle Diddy Dungeon",
-                "access_rules": ["redslam, $peanuts, sniper, vine"],
+                "access_rules": ["$castleSlam, $peanuts, sniper, vine"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -494,7 +500,7 @@
             },
             {            
                 "name": "Castle Lanky Dungeon",
-                "access_rules": ["redslam, $trombone, $balloon"],
+                "access_rules": ["$castleSlam, $trombone, $balloon"],
                 "sections": [
                     {
                         "name": "Golden Banana"

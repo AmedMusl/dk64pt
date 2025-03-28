@@ -47,6 +47,7 @@
     },
     {
         "name": "Japes Shops",
+        "access_rules": ["$canEnterJapes"],
         "chest_unopened_img": "images/items/soldoutbw.png",
         "chest_opened_img": "images/items/soldout.png",
         "children": [
@@ -122,6 +123,7 @@
     },
     {
         "name": "Aztec Shops",
+        "access_rules": ["$canEnterAztec, vine", "$canEnterAztec, $twirl"],
         "chest_unopened_img": "images/items/soldoutbw.png",
         "chest_opened_img": "images/items/soldout.png",
         "children": [
@@ -231,6 +233,7 @@
     },
     {
         "name": "Factory Shops",
+        "access_rules": ["$canEnterFactory"],
         "chest_unopened_img": "images/items/soldoutbw.png",
         "chest_opened_img": "images/items/soldout.png",
         "children": [
@@ -340,6 +343,7 @@
     },
     {
         "name": "Galleon Shops",
+        "access_rules": ["$canEnterGalleon"],
         "chest_unopened_img": "images/items/soldoutbw.png",
         "chest_opened_img": "images/items/soldout.png",
         "children": [
@@ -449,6 +453,7 @@
     },
     {
         "name": "Forest Shops",
+        "access_rules": ["$canEnterForest"],
         "chest_unopened_img": "images/items/soldoutbw.png",
         "chest_opened_img": "images/items/soldout.png",
         "children": [
@@ -524,6 +529,7 @@
     },
     {
         "name": "Caves Shops",
+        "access_rules": ["$canEnterCaves"],
         "chest_unopened_img": "images/items/soldoutbw.png",
         "chest_opened_img": "images/items/soldout.png",
         "children": [
@@ -633,6 +639,7 @@
     },
     {
         "name": "Castle Shops",
+        "access_rules": ["$canEnterCastle"],
         "chest_unopened_img": "images/items/soldoutbw.png",
         "chest_opened_img": "images/items/soldout.png",
         "children": [

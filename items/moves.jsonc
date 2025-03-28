@@ -223,19 +223,19 @@
                 "img": "images/items/slam1.png",
                 "name": "Simian Slam",
                 "codes": "slam,greenslam",
-                "inherit_codes": false
+                "inherit_codes": true
             },
             {
                 "img": "images/items/slam2.png",
                 "name": "Super Simian Slam",
                 "codes": "slam,blueslam",
-                "inherit_codes": false
+                "inherit_codes": true
             },
             {
                 "img": "images/items/slam3.png",
                 "name": "Super Duper Simian Slam",
                 "codes": "slam,redslam",
-                "inherit_codes": false
+                "inherit_codes": true
             }
         ]
     },

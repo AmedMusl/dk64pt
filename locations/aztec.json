@@ -1,6 +1,7 @@
 [
     {
         "name": "Angry Aztec",
+        "access_rules": ["$canEnterAztec, vine", "$canEnterAztec, $twirl"],
         "chest_unopened_img": "images/items/GB.png",
         "chest_opened_img": "images/items/GBbw.png",
         "children": [
@@ -10,26 +11,31 @@
                 "sections": [
                     {
                         "name": "Aztec DK Medal",
+                        "access_rules": ["$aztecDKMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Aztec Diddy Medal",
+                        "access_rules": ["$aztecDiddyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Aztec Lanky Medal",
+                        "access_rules": ["$aztecLankyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Aztec Tiny Medal",
+                        "access_rules": ["$aztecTinyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Aztec Chunky Medal",
+                        "access_rules": ["$aztecChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     }
@@ -81,7 +87,7 @@
             },
             {
                 "name": "Aztec DK Free Llama Blast",
-                "access_rules": ["$blast"],
+                "access_rules": ["$tunnelDoor, $blast"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -153,7 +159,7 @@
             },
             {
                 "name": "Aztec Tiny Klaptrap Room",
-                "access_rules": ["$canEnterTinyTemple, $mini, dive"],
+                "access_rules": ["$templeIce, $canEnterTinyTemple, $mini, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -170,7 +176,7 @@
             },
             {
                 "name": "Aztec Lanky Vulture Shooting",
-                "access_rules": ["$canEnterTinyTemple, dive, $grape, greenslam"],
+                "access_rules": ["$templeIce, $canEnterTinyTemple, dive, $grape, $aztecSlam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -187,7 +193,7 @@
             },
             {
                 "name": "Aztec Battle Arena (Tiny Temple: Vulture Room)",
-                "access_rules": ["$canEnterTinyTemple, dive, $grape, greenslam"],
+                "access_rules": ["$templeIce, $canEnterTinyTemple, dive, $grape, $aztecSlam"],
                 "sections": [
                     {
                         "name": "Crown",
@@ -206,7 +212,7 @@
             },
             {
                 "name": "Aztec Free Tiny Item",
-                "access_rules": ["$canEnterTinyTemple, dive"],
+                "access_rules": ["$templeIce, $canEnterTinyTemple, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -223,7 +229,7 @@
             },
             {
                 "name": "Aztec Chunky Giant Caged Barrel",
-                "access_rules": ["$hunky, barrel"],
+                "access_rules": ["$tunnelDoor, $hunky, barrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -240,7 +246,7 @@
             },
             {
                 "name": "Aztec Kasplat: Hunky Chunky Barrel",
-                "access_rules": [],
+                "access_rules": ["$tunnelDoor"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -259,7 +265,7 @@
             },
             {
                 "name": "Aztec Diddy Ram Gongs",
-                "access_rules": ["$charge, $rocket"],
+                "access_rules": ["$tunnelDoor, $charge, $rocket"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -276,7 +282,7 @@
             },
             {
                 "name": "Aztec Diddy Vulture Race",
-                "access_rules": ["$rocket"],
+                "access_rules": ["$tunnelDoor, $rocket"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -293,7 +299,7 @@
             },
             {
                 "name": "Aztec Crate: On Llama Temple",
-                "access_rules": ["$rocket"],
+                "access_rules": ["$tunnelDoor, $rocket"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -312,7 +318,7 @@
             },
             {
                 "name": "Aztec Crate: Near Gong Tower",
-                "access_rules": [],
+                "access_rules": ["$tunnelDoor"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -331,7 +337,7 @@
             },
             {
                 "name": "Aztec DK Sealed Quicksand Tunnel Barrel",
-                "access_rules": ["$canEnterLlamaTemple, greenslam"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $aztecSlam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -348,7 +354,7 @@
             },
             {
                 "name": "5 Door Temple",
-                "access_rules": [],
+                "access_rules": ["$aztec5DT"],
                 "sections": [
                     {
                         "name": "Aztec DK 5DT",
@@ -400,7 +406,7 @@
             },
             {
                 "name": "Aztec Tiny Beetle Race",
-                "access_rules": ["@Angry Aztec/Aztec Diddy Ram Gongs/Golden Banana, $mini, $sax"],
+                "access_rules": ["$tunnelDoor, @Angry Aztec/Aztec Diddy Ram Gongs/Golden Banana, $mini, $sax"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -417,7 +423,7 @@
             },
             {
                 "name": "Aztec Free Lanky Item",
-                "access_rules": ["$canEnterLlamaTemple, $bongos, $coconut, dive"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $bongos, $coconut, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -434,7 +440,7 @@
             },
             {
                 "name": "Aztec Lanky Llama Temple Barrel",
-                "access_rules": ["$trombone, $ostand, $canEnterLlamaTemple"],
+                "access_rules": ["$llamaSwitches, $trombone, $ostand, $canEnterLlamaTemple"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -451,7 +457,7 @@
             },
             {
                 "name": "Aztec Fairy (Llama Temple)",
-                "access_rules": ["$canEnterLlamaTemple, camera"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, camera"],
                 "sections": [
                     {
                         "name": "Fairy",
@@ -470,7 +476,7 @@
             },
             {
                 "name": "Aztec Crate: Llama Temple",
-                "access_rules": ["$canEnterLlamaTemple"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -489,7 +495,7 @@
             },
             {            
                 "name": "Aztec Lanky Matching Game",
-                "access_rules": ["$canEnterLlamaTemple, $grape, greenslam"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $grape, $aztecSlam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -506,7 +512,7 @@
             },
             {            
                 "name": "Aztec Tiny Llama Temple Lava Pedestals",
-                "access_rules": ["$canEnterLlamaTemple, $mini, greenslam"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $mini, $aztecSlam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -523,7 +529,7 @@
             },
             {
                 "name": "Aztec Kasplat: Llama Temple Lava",
-                "access_rules": ["$canEnterLlamaTemple, $mini"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $mini"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -542,7 +548,7 @@
             },
             {
                 "name": "Aztec Boss Defeated",
-                "access_rules": ["barrel"],
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Boss",

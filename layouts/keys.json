@@ -7,29 +7,87 @@
         {
           "type": "array",
           "orientation": "horizontal",
-          "margin": "0,0",
           "content": [
             {
               "type": "itemgrid",
-              "item_margin": "8, 2",
-              "h_alignment": "left",
+              "h_alignment": "right",
+              "item_margin": "0,1",
+              "item_height": 18,
+              "item_width": 8,
               "rows": [
-                [
-                  "key1",
-                  "key2"
-                ],
-                [
-                  "key3",
-                  "key4"
-                ],
-                [
-                  "key5",
-                  "key6"
-                ],
-                [
-                  "key7",
-                  "key8"
-                ]
+                [ "l1" ],
+                [ "l2" ],
+                [ "l3" ]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "0,2",
+              "item_height": 16,
+              "item_width": 56,
+              "rows": [
+                [ "level1" ],
+                [ "level2" ],
+                [ "level3" ]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "3,1",
+              "item_height": 18,
+              "item_width": 8,
+              "rows": [
+                [ "k1", "l4" ],
+                [ "k2", "l5" ],
+                [ "k3", "l6" ]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "5,2",
+              "item_height": 16,
+              "item_width": 56,
+              "rows": [
+                [ "level4" ],
+                [ "level5" ],
+                [ "level6" ]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "3,1",
+              "item_height": 18,
+              "item_width": 8,
+              "rows": [
+                [ "k4", "l7" ],
+                [ "k5", "l8" ],
+                [ "k6", "" ]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "-5,2,5,2",
+              "item_height": 16,
+              "item_width": 56,
+              "rows": [
+                [ "level7" ],
+                [ "level8" ]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "2,1",
+              "item_height": 18,
+              "item_width": 8,
+              "rows": [
+                [ "k7" ],
+                [ "k8" ]
               ]
             }
           ]
@@ -37,4 +95,5 @@
       ]
     }
   }
+
   

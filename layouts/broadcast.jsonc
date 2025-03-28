@@ -15,6 +15,28 @@
             "key": "moves_grid"
           }
         ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "layout",
+            "key": "items_grid"
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "layout",
+            "key": "keys_grid"
+          }
+        ]
       }
     ]
   }

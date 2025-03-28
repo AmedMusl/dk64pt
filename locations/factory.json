@@ -1,6 +1,7 @@
 [
     {
         "name": "Frantic Factory",
+        "access_rules": ["$canEnterFactory"],
         "chest_unopened_img": "images/items/GB.png",
         "chest_opened_img": "images/items/GBbw.png",
         "children": [
@@ -10,26 +11,31 @@
                 "sections": [
                     {
                         "name": "Factory DK Medal",
+                        "access_rules": ["$factoryDKMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Factory Diddy Medal",
+                        "access_rules": ["$factoryDiddyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Factory Lanky Medal",
+                        "access_rules": ["$factoryLankyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Factory Tiny Medal",
+                        "access_rules": ["$factoryTinyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Factory Chunky Medal",
+                        "access_rules": ["$factoryChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     }
@@ -45,7 +51,7 @@
             },
             {            
                 "name": "Factory DK Number Game",
-                "access_rules": ["greenslam, donkey, climb"],
+                "access_rules": ["$testing, $factorySlam, donkey, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -62,7 +68,7 @@
             },
             {            
                 "name": "Factory Diddy Block Tower",
-                "access_rules": ["$spring, climb"],
+                "access_rules": ["$testing, $spring, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -79,7 +85,7 @@
             },
             {            
                 "name": "Factory Lanky Testing Room Barrel",
-                "access_rules": ["$balloon, climb"],
+                "access_rules": ["$testing, $balloon, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -96,7 +102,7 @@
             },
             {            
                 "name": "Factory Tiny Dartboard",
-                "access_rules": ["$feather, $mini, greenslam, climb"],
+                "access_rules": ["$testing, $feather, $mini, $factorySlam, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -113,7 +119,7 @@
             },
             {            
                 "name": "Factory Kasplat: Block Tower",
-                "access_rules": ["climb"],
+                "access_rules": ["$testing, climb"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -132,7 +138,7 @@
             },
             {            
                 "name": "Factory Fairy (Number Game)",
-                "access_rules": ["climb, camera"],
+                "access_rules": ["$testing, climb, camera"],
                 "sections": [
                     {
                         "name": "Fairy",
@@ -170,7 +176,7 @@
             },
             {            
                 "name": "Factory Crate: Near Funky",
-                "access_rules": ["climb"],
+                "access_rules": ["$testing, climb"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -189,7 +195,7 @@
             },
             {            
                 "name": "Factory Diddy Charge Enemies",
-                "access_rules": ["$guitar, $charge, climb"],
+                "access_rules": ["$testing, $guitar, $charge, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -206,7 +212,7 @@
             },
             {            
                 "name": "Factory Chunky Toy Monster",
-                "access_rules": ["$hunky, $triangle, $punch, climb"],
+                "access_rules": ["$testing, $hunky, $triangle, $punch, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -223,7 +229,7 @@
             },
             {            
                 "name": "Factory Kasplat: R&D",
-                "access_rules": ["climb"],
+                "access_rules": ["$testing, climb"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -242,7 +248,7 @@
             },
             {            
                 "name": "Factory Battle Arena (Under Grate)",
-                "access_rules": ["$grab, climb"],
+                "access_rules": ["$testing, $grab, climb"],
                 "sections": [
                     {
                         "name": "Crown",
@@ -261,7 +267,7 @@
             },
             {            
                 "name": "Factory Lanky Piano Game",
-                "access_rules": ["$trombone, greenslam, climb"],
+                "access_rules": ["$testing, $trombone, $factorySlam, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -278,7 +284,7 @@
             },
             {            
                 "name": "Factory Tiny Car Race",
-                "access_rules": ["$mini, climb"],
+                "access_rules": ["$testing, $mini, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -295,7 +301,7 @@
             },
             {            
                 "name": "Factory Diddy Storage Room Barrel",
-                "access_rules": ["climb, greenslam, vine, diddy"],
+                "access_rules": ["$testing, climb, $factorySlam, vine, diddy"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -312,7 +318,7 @@
             },
             {            
                 "name": "Factory DK Power Hut",
-                "access_rules": ["climb, $coconut"],
+                "access_rules": ["$testing, climb, $coconut"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -329,7 +335,7 @@
             },
             {            
                 "name": "Factory Free Chunky Item",
-                "access_rules": ["greenslam, lanky"],
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -346,7 +352,7 @@
             },
             {            
                 "name": "Factory Chunky Dark Room",
-                "access_rules": ["$punch, greenslam"],
+                "access_rules": ["$punch, $factorySlam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -363,7 +369,7 @@
             },
             {            
                 "name": "Factory Dirt: Dark Room",
-                "access_rules": ["$punch"],
+                "access_rules": ["$punch, shockwave"],
                 "sections": [
                     {
                         "name": "Rainbow Coin",
@@ -496,7 +502,7 @@
             },
             {            
                 "name": "Factory DK Crusher Room",
-                "access_rules": ["$strong"],
+                "access_rules": ["$production, $strong"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -513,7 +519,7 @@
             },
             {            
                 "name": "Factory Chunky Production Timer",
-                "access_rules": ["climb, greenslam, chunky"],
+                "access_rules": ["$production, climb, $factorySlam, chunky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -530,7 +536,7 @@
             },
             {            
                 "name": "Factory Diddy Production Spring",
-                "access_rules": ["$spring, greenslam, climb"],
+                "access_rules": ["$production, $spring, $factorySlam, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -547,7 +553,7 @@
             },
             {            
                 "name": "Factory Lanky Production Handstand",
-                "access_rules": ["$ostand, greenslam, climb"],
+                "access_rules": ["$production, $ostand, $factorySlam, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -564,7 +570,7 @@
             },
             {            
                 "name": "Factory Tiny Production Twirl",
-                "access_rules": ["$twirl, greenslam, climb"],
+                "access_rules": ["$production, $twirl, $factorySlam, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -581,7 +587,7 @@
             },
             {            
                 "name": "Factory Kasplat: Upper Production Pipe",
-                "access_rules": ["climb"],
+                "access_rules": ["$production, climb"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -600,7 +606,7 @@
             },
             {
                 "name": "Factory Boss Defeated",
-                "access_rules": ["$twirl"],
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Boss",

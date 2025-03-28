@@ -1,6 +1,7 @@
 [
     {
         "name": "Gloomy Galleon",
+        "access_rules": ["$canEnterGalleon"],
         "chest_unopened_img": "images/items/GB.png",
         "chest_opened_img": "images/items/GBbw.png",
         "children": [
@@ -10,26 +11,31 @@
                 "sections": [
                     {
                         "name": "Galleon DK Medal",
+                        "access_rules": ["$galleonDKMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Galleon Diddy Medal",
+                        "access_rules": ["$galleonDiddyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Galleon Lanky Medal",
+                        "access_rules": ["$galleonLankyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Galleon Tiny Medal",
+                        "access_rules": ["$galleonTinyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
                         "name": "Galleon Chunky Medal",
+                        "access_rules": ["$galleonChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     }
@@ -119,7 +125,7 @@
             },
             {            
                 "name": "Galleon Chunky Cannon Game",
-                "access_rules": ["$pineapple"],
+                "access_rules": ["$pineapple, barrel, $raisedWater"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -136,7 +142,7 @@
             },
             {            
                 "name": "Galleon Kasplat: Cannon Game Room",
-                "access_rules": ["$pineapple"],
+                "access_rules": ["$pineapple, $raisedWater"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -155,7 +161,7 @@
             },
             {            
                 "name": "Galleon Kasplat: Lighthouse Alcove",
-                "access_rules": [],
+                "access_rules": ["$lighthouse"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -174,7 +180,7 @@
             },
             {            
                 "name": "Galleon Diddy Top of Lighthouse",
-                "access_rules": ["$rocket, greenslam"],
+                "access_rules": ["$raisedWater, $lighthouse, $seasick, $rocket, $galleonSlam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -191,7 +197,7 @@
             },
             {            
                 "name": "Galleon Lanky Enguarde Chest",
-                "access_rules": ["dive, lanky"],
+                "access_rules": ["$lighthouse, dive, lanky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -207,13 +213,14 @@
                 ]
             },            {            
                 "name": "Lighthouse",
-                "access_rules": ["greenslam, climb, donkey"],
+                "access_rules": ["$raisedWater, $lighthouse, $galleonSlam, climb, donkey"],
                 "sections": [
                     {
                         "name": "Galleon DK Lighthouse"
                     },
                     {
                         "name": "Galleon Dirt: Lighthouse",
+                        "access_rules": ["shockwave"],
                         "chest_unopened_img": "images/items/rainbowcoin.png",
                         "chest_opened_img": "images/items/rainbowcoinbw.png"
                     }
@@ -229,7 +236,7 @@
             },
             {            
                 "name": "Galleon Tiny Mermaid Reward",
-                "access_rules": ["dive, $mini, pearl"],
+                "access_rules": ["$lighthouse, dive, $mini, pearl"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -246,7 +253,7 @@
             },
             {            
                 "name": "Galleon Chunky Seasick",
-                "access_rules": ["greenslam, $punch"],
+                "access_rules": ["$raisedWater, $lighthouse, $seasick, slam, $punch"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -263,7 +270,7 @@
             },
             {            
                 "name": "Galleon Seal",
-                "access_rules": ["$blast"],
+                "access_rules": ["$lighthouse, $shipyard, $raisedWater, $blast"],
                 "sections": [
                     {
                         "name": "Free the Seal"
@@ -283,7 +290,7 @@
             },
             {            
                 "name": "Galleon Kasplat: Musical Cactus",
-                "access_rules": [],
+                "access_rules": ["$shipyard"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -302,7 +309,7 @@
             },
             {            
                 "name": "Galleon Crate: Near Cactus",
-                "access_rules": [],
+                "access_rules": ["$shipyard"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -321,7 +328,7 @@
             },
             {            
                 "name": "Galleon Lanky Gold Tower Barrel",
-                "access_rules": ["dive, $balloon"],
+                "access_rules": ["$treasure, dive, $balloon"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -338,7 +345,7 @@
             },
             {            
                 "name": "Galleon Diddy Gold Tower Barrel",
-                "access_rules": ["dive, lanky, $spring"],
+                "access_rules": ["$treasure, dive, $spring"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -355,7 +362,7 @@
             },
             {            
                 "name": "Galleon Kasplat: Diddy Gold Tower",
-                "access_rules": ["dive, lanky $spring"],
+                "access_rules": ["$treasure, dive, $spring"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -374,7 +381,7 @@
             },
             {            
                 "name": "Treasure Chest",
-                "access_rules": ["dive, lanky, $mini"],
+                "access_rules": ["$treasure, dive, $mini"],
                 "sections": [
                     {
                         "name": "Treasure Chest Far Left Clam",
@@ -413,7 +420,7 @@
             },
             {            
                 "name": "Galleon Tiny Submarine Barrel",
-                "access_rules": ["$mini, dive"],
+                "access_rules": ["$shipyard, $mini, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -430,7 +437,7 @@
             },
             {            
                 "name": "Galleon Diddy Mechfish",
-                "access_rules": ["$rocket, $guitar, dive, $peanuts"],
+                "access_rules": ["$lighthouse, $shipyard, $rocket, $guitar, dive, $peanuts"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -447,7 +454,7 @@
             },
             {            
                 "name": "2-Door Ship",
-                "access_rules": ["greenslam"],
+                "access_rules": ["$shipyard, $galleonSlam"],
                 "sections": [
                     {
                         "name": "Lanky 2DS",
@@ -469,7 +476,7 @@
             },
             {            
                 "name": "Galleon DK 5-Door Ship",
-                "access_rules": ["$bongos, dive"],
+                "access_rules": ["$shipyard, $bongos, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -486,7 +493,7 @@
             },
             {            
                 "name": "Galleon Diddy 5-Door Ship",
-                "access_rules": ["$guitar, dive"],
+                "access_rules": ["$shipyard, $loweredWater, $guitar, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -503,7 +510,7 @@
             },
             {            
                 "name": "Galleon Lanky 5-Door Ship",
-                "access_rules": ["$trombone, dive"],
+                "access_rules": ["$shipyard, $loweredWater, $trombone, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -520,7 +527,7 @@
             },
             {            
                 "name": "Galleon Tiny 5-Door Ship",
-                "access_rules": ["$sax, dive"],
+                "access_rules": ["$shipyard, $sax, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -543,7 +550,7 @@
             },
             {            
                 "name": "Galleon Chunky 5-Door Ship",
-                "access_rules": ["$triangle, dive"],
+                "access_rules": ["$shipyard, $lighthouse, $loweredWater, $triangle, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"

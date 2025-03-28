@@ -1,7 +1,7 @@
 [
     {
         "name": "Hideout Helm",
-        "access_rules": ["key6, key7, $gone, $port, vine"],
+        "access_rules": ["k6, k7, $gone, $port, vine"],
         "chest_unopened_img": "images/items/bananamedal.png",
         "chest_opened_img": "images/items/bananamedalbw.png",
         "children": [

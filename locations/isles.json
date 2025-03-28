@@ -144,7 +144,7 @@
       },
       {
         "name": "Isles Lanky Instrument Pad",
-        "access_rules": ["barrel, chunky, $trombone"],
+        "access_rules": ["$canEnterJapes, barrel, chunky, $trombone"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -159,104 +159,104 @@
           }
         ]
       },
-      {
-        "name": "Japes DK Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "japeslobby",
-            "x": 721,
-            "y": 380,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Japes Diddy Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "japeslobby",
-            "x": 283,
-            "y": 207,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Japes Lanky Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "japeslobby",
-            "x": 726,
-            "y": 484,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Japes Tiny Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "japeslobby",
-            "x": 648,
-            "y": 240,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Japes Chunky Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "japeslobby",
-            "x": 132,
-            "y": 363,
-            "size": 16
-          }
-        ]
-      },
+      // {
+      //   "name": "Japes DK Wrinkly Door",
+      //   "access_rules": [""],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "japeslobby",
+      //       "x": 721,
+      //       "y": 380,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Japes Diddy Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "japeslobby",
+      //       "x": 283,
+      //       "y": 207,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Japes Lanky Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "japeslobby",
+      //       "x": 726,
+      //       "y": 484,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Japes Tiny Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "japeslobby",
+      //       "x": 648,
+      //       "y": 240,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Japes Chunky Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "japeslobby",
+      //       "x": 132,
+      //       "y": 363,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
       {
         "name": "Isles Tiny Aztec Lobby Barrel",
-        "access_rules": ["$charge, $twirl"],
+        "access_rules": ["$canEnterAztec"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -271,101 +271,101 @@
           }
         ]
       },
-      {
-        "name": "Aztec DK Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "azteclobby",
-            "x": 806,
-            "y": 818,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Aztec Diddy Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "azteclobby",
-            "x": 890,
-            "y": 318,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Aztec Lanky Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "azteclobby",
-            "x": 658,
-            "y": 202,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Aztec Tiny Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "azteclobby",
-            "x": 944,
-            "y": 199,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Aztec Chunky Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "azteclobby",
-            "x": 684,
-            "y": 324,
-            "size": 16
-          }
-        ]
-      },
+      // {
+      //   "name": "Aztec DK Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "azteclobby",
+      //       "x": 806,
+      //       "y": 818,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Aztec Diddy Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "azteclobby",
+      //       "x": 890,
+      //       "y": 318,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Aztec Lanky Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "azteclobby",
+      //       "x": 658,
+      //       "y": 202,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Aztec Tiny Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "azteclobby",
+      //       "x": 944,
+      //       "y": 199,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Aztec Chunky Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "azteclobby",
+      //       "x": 684,
+      //       "y": 324,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
       {
         "name": "Isles Lanky Grape Cage",
         "access_rules": ["$grape"],
@@ -462,7 +462,7 @@
       },
       {
         "name": "Isles DK Bongo Pad",
-        "access_rules": ["$bongos, $grab"],
+        "access_rules": ["$canEnterFactory, $bongos, $grab"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -479,7 +479,7 @@
       },
       {
         "name": "Isles Factory Lobby Box",
-        "access_rules": ["$punch"],
+        "access_rules": ["$canEnterFactory, $punch"],
         "sections": [
           {
             "name": "Kasplat",
@@ -502,104 +502,104 @@
           }
         ]
       },
-      {
-        "name": "Factory DK Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "factorylobby",
-            "x": 443,
-            "y": 157,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Factory Diddy Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "factorylobby",
-            "x": 315,
-            "y": 157,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Factory Lanky Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "factorylobby",
-            "x": 527,
-            "y": 157,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Factory Tiny Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "factorylobby",
-            "x": 739,
-            "y": 157,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Factory Chunky Wrinkly Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "factorylobby",
-            "x": 610,
-            "y": 157,
-            "size": 16
-          }
-        ]
-      },
+      // {
+      //   "name": "Factory DK Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "factorylobby",
+      //       "x": 443,
+      //       "y": 157,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Factory Diddy Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "factorylobby",
+      //       "x": 315,
+      //       "y": 157,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Factory Lanky Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "factorylobby",
+      //       "x": 527,
+      //       "y": 157,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Factory Tiny Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "factorylobby",
+      //       "x": 739,
+      //       "y": 157,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Factory Chunky Wrinkly Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "factorylobby",
+      //       "x": 610,
+      //       "y": 157,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
       {
         "name": "Isles Tiny Galleon Lobby Swim",
-        "access_rules": ["$mini, blueslam, chunky, dive"],
+        "access_rules": ["$canEnterGalleon, $mini, $galleonSlam, chunky, dive"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -616,7 +616,7 @@
       },
       {
         "name": "Isles Kasplat: Galleon Lobby",
-        "access_rules": [],
+        "access_rules": ["$canEnterGalleon"],
         "sections": [
           {
             "name": "Kasplat",
@@ -633,104 +633,104 @@
           }
         ]
       },
-      {
-        "name": "Galleon DK Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "galleonlobby",
-            "x": 97,
-            "y": 331,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Galleon Diddy Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "galleonlobby",
-            "x": 568,
-            "y": 309,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Galleon Lanky Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "galleonlobby",
-            "x": 484,
-            "y": 187,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Galleon Tiny Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "galleonlobby",
-            "x": 408,
-            "y": 171,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Galleon Chunky Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "galleonlobby",
-            "x": 195,
-            "y": 187,
-            "size": 16
-          }
-        ]
-      },
+      // {
+      //   "name": "Galleon DK Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "galleonlobby",
+      //       "x": 97,
+      //       "y": 331,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Galleon Diddy Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "galleonlobby",
+      //       "x": 568,
+      //       "y": 309,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Galleon Lanky Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "galleonlobby",
+      //       "x": 484,
+      //       "y": 187,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Galleon Tiny Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "galleonlobby",
+      //       "x": 408,
+      //       "y": 171,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Galleon Chunky Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "galleonlobby",
+      //       "x": 195,
+      //       "y": 187,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
       {
         "name": "Isles Dirt: Cabin Isle",
-        "access_rules": ["key4, shockwave"],
+        "access_rules": ["k4, shockwave"],
         "sections": [
           {
             "name": "Rainbow Coin",
@@ -750,7 +750,7 @@
       },
       {
         "name": "Isles Diddy Peanut Cage",
-        "access_rules": ["key4, $peanuts"],
+        "access_rules": ["k4, $peanuts"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -767,7 +767,7 @@
       },
       {
         "name": "Isles Diddy Summit Barrel",
-        "access_rules": ["$rocket, barrel, chunky, $trombone, key4"],
+        "access_rules": ["$rocket, barrel, chunky, $trombone, k4"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -784,7 +784,7 @@
       },
       {
         "name": "Isles Dirt: Aztec Roof",
-        "access_rules": ["$rocket, shockwave, key4, barrel, chunky, $trombone"],
+        "access_rules": ["$rocket, shockwave, k4, barrel, chunky, $trombone"],
         "sections": [
           {
             "name": "Rainbow Coin",
@@ -804,7 +804,7 @@
       },
       {
         "name": "Isles Fairy (Fungi Lobby)",
-        "access_rules": ["$feather, camera"],
+        "access_rules": ["$canEnterForest, $feather, camera"],
         "sections": [
           {
             "name": "Fairy",
@@ -823,7 +823,7 @@
       },
       {
         "name": "Isles Battle Arena 2 (Fungi Lobby)",
-        "access_rules": ["$coconut, $peanuts, $grape, $feather, $pineapple, $gone"],
+        "access_rules": ["$canEnterForest, $coconut, $peanuts, $grape, $feather, $pineapple, $gone"],
         "sections": [
           {
             "name": "Crown",
@@ -841,104 +841,104 @@
           }
         ]
       },
-      {
-        "name": "Forest DK Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "forestlobby",
-            "x": 460,
-            "y": 227,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Forest Diddy Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "forestlobby",
-            "x": 125,
-            "y": 706,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Forest Lanky Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "forestlobby",
-            "x": 460,
-            "y": 711,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Forest Tiny Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "forestlobby",
-            "x": 293,
-            "y": 124,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Forest Chunky Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "forestlobby",
-            "x": 460,
-            "y": 626,
-            "size": 16
-          }
-        ]
-      },
+      // {
+      //   "name": "Forest DK Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "forestlobby",
+      //       "x": 460,
+      //       "y": 227,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Forest Diddy Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "forestlobby",
+      //       "x": 125,
+      //       "y": 706,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Forest Lanky Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "forestlobby",
+      //       "x": 460,
+      //       "y": 711,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Forest Tiny Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "forestlobby",
+      //       "x": 293,
+      //       "y": 124,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Forest Chunky Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "forestlobby",
+      //       "x": 460,
+      //       "y": 626,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
       {
         "name": "Isles DK Caves Lava",
-        "access_rules": ["$punch, $strong"],
+        "access_rules": ["$canEnterCaves, $punch, $strong"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -955,7 +955,7 @@
       },
       {
         "name": "Isles Diddy Guitar Pad",
-        "access_rules": ["$rocket, $guitar"],
+        "access_rules": ["$canEnterCaves, $rocket, $guitar"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -972,7 +972,7 @@
       },
       {
         "name": "Isles Kasplat: Caves Lobby Punch",
-        "access_rules": ["$punch"],
+        "access_rules": ["$canEnterCaves, $punch"],
         "sections": [
           {
             "name": "Kasplat",
@@ -989,199 +989,199 @@
           }
         ]
       },
-      {
-        "name": "Caves DK Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "caveslobby",
-            "x": 650,
-            "y": 110,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Caves Diddy Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "caveslobby",
-            "x": 957,
-            "y": 208,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Caves Lanky Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "caveslobby",
-            "x": 679,
-            "y": 412,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Caves Tiny Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "caveslobby",
-            "x": 774,
-            "y": 97,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Caves Chunky Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "caveslobby",
-            "x": 849,
-            "y": 380,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Castle DK Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "castlelobby",
-            "x": 500,
-            "y": 500,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Castle Diddy Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "castlelobby",
-            "x": 500,
-            "y": 400,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Castle Lanky Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "castlelobby",
-            "x": 335,
-            "y": 400,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Castle Tiny Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "castlelobby",
-            "x": 330,
-            "y": 500,
-            "size": 16
-          }
-        ]
-      },
-      {
-        "name": "Castle Chunky Hint Door",
-        "access_rules": [],
-        "sections": [
-          {
-            "name": "Wrinkly Door",
-            "chest_unopened_img": "images/items/wrinkly.png",
-            "chest_opened_img": "images/items/wrinklybw.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "castlelobby",
-            "x": 414,
-            "y": 548,
-            "size": 16
-          }
-        ]
-      },
+      // {
+      //   "name": "Caves DK Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "caveslobby",
+      //       "x": 650,
+      //       "y": 110,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Caves Diddy Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "caveslobby",
+      //       "x": 957,
+      //       "y": 208,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Caves Lanky Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "caveslobby",
+      //       "x": 679,
+      //       "y": 412,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Caves Tiny Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "caveslobby",
+      //       "x": 774,
+      //       "y": 97,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Caves Chunky Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "caveslobby",
+      //       "x": 849,
+      //       "y": 380,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Castle DK Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "castlelobby",
+      //       "x": 500,
+      //       "y": 500,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Castle Diddy Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "castlelobby",
+      //       "x": 500,
+      //       "y": 400,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Castle Lanky Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "castlelobby",
+      //       "x": 335,
+      //       "y": 400,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Castle Tiny Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "castlelobby",
+      //       "x": 330,
+      //       "y": 500,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
+      // {
+      //   "name": "Castle Chunky Hint Door",
+      //   "access_rules": [],
+      //   "sections": [
+      //     {
+      //       "name": "Wrinkly Door",
+      //       "chest_unopened_img": "images/items/wrinkly.png",
+      //       "chest_opened_img": "images/items/wrinklybw.png"
+      //     }
+      //   ],
+      //   "map_locations": [
+      //     {
+      //       "map": "castlelobby",
+      //       "x": 414,
+      //       "y": 548,
+      //       "size": 16
+      //     }
+      //   ]
+      // },
       {
         "name": "Upper Castle Lobby",
-        "access_rules": ["barrel, $balloon, chunky"],
+        "access_rules": ["$canEnterCastle, barrel, $balloon, chunky"],
         "sections": [
           {
             "name": "Isles Lanky Castle Lobby Barrel"
@@ -1204,7 +1204,7 @@
       },
       {
         "name": "Isles Kasplat: Castle Lobby",
-        "access_rules": ["$coconut"],
+        "access_rules": ["$canEnterCastle, $coconut"],
         "sections": [
           {
             "name": "Kasplat",
