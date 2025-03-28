@@ -29,7 +29,7 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Maps
     Tracker:AddMaps("maps/maps.json")
     -- Locations
-    Tracker:AddLocations("locations/isles.json")
+    Tracker:AddLocations("locations/isles.jsonc")
     Tracker:AddLocations("locations/aztec.json")
     Tracker:AddLocations("locations/castle.json")
     Tracker:AddLocations("locations/caves.json")

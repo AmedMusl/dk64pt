@@ -24,7 +24,7 @@
                       },
                       {
                         "type": "group",
-                        "header": "Keys",
+                        "header": "Level Order",
                         "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
