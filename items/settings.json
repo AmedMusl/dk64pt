@@ -1,586 +1,543 @@
 [
-    {
-        
-        "name": "Medal Color Banana Requirement",
-        "type": "consumable",
-        "min_quantity": 1,
-        "max_quantity": 100,
-        "increment": 1,
-        "overlay_background": "#000000",
-        "img": "images/items/bananamedal.png",
-        "codes": "medalamount"
+  {
+    "name": "Medal Color Banana Requirement",
+    "type": "consumable",
+    "min_quantity": 1,
+    "max_quantity": 100,
+    "increment": 1,
+    "overlay_background": "#000000",
+    "img": "images/items/bananamedal.png",
+    "codes": "medalamount"
+  },
+  {
+      "name": "Japes Coconut Gate",
+      "type": "toggle",
+      "img": "images/settings/coconut_gate.png",
+      "codes": "coconutgate"
+  },
+  {
+      "name": "Japes Shellhive",
+      "type": "toggle",
+      "img": "images/settings/shellhive.png",
+      "codes": "shellhive"
+  },
+  {
+      "name": "Aztec Tiny Temple Ice",
+      "type": "toggle",
+      "img": "images/settings/tiny_temple_ice.png",
+      "codes": "tinyice"
+  },
+  {
+      "name": "Aztec Tunnel Door",
+      "type": "toggle",
+      "img": "images/settings/aztec_tunnels.png",
+      "codes": "tunnels"
+  },
+  {
+      "name": "Aztec 5DTemple Switches",
+      "type": "toggle",
+      "img": "images/settings/5dt_switches.png",
+      "codes": "5dt"
+  },
+  {
+      "name": "Aztec Llama Switches",
+      "type": "toggle",
+      "img": "images/settings/llama_switches.png",
+      "codes": "llama"
+  },
+  {
+      "name": "Factory Production Room",
+      "type": "toggle",
+      "img": "images/settings/production.png",
+      "codes": "production"
+  },
+  {
+      "name": "Factory Testing Gate",
+      "type": "toggle",
+      "img": "images/settings/testing.png",
+      "codes": "testing"
+  },
+  {
+      "name": "Galleon Lighthouse Gate",
+      "type": "toggle",
+      "img": "images/settings/lighthouse.png",
+      "codes": "lighthouse"
+  },
+  {
+      "name": "Galleon Shipyard Gate",
+      "type": "toggle",
+      "img": "images/settings/shipyard.png",
+      "codes": "shipyard"
+  },
+  {
+      "name": "Galleon Seasick Ship",
+      "type": "toggle",
+      "img": "images/settings/seasick.png",
+      "codes": "seasick"
+  },
+  {
+      "name": "Galleon Treasure Room",
+      "type": "toggle",
+      "img": "images/settings/treasure.png",
+      "codes": "treasure"
+  },
+  {
+      "name": "Forest Green Tunnel",
+      "type": "toggle",
+      "img": "images/settings/green.png",
+      "codes": "green"
+  },
+  {
+    "name": "Forest Yellow Tunnel",
+    "type": "toggle",
+    "img": "images/settings/yellow.png",
+    "codes": "yellow"
+  },
+  {
+    "name": "Caves Igloo Pads",
+    "type": "toggle",
+    "img": "images/settings/igloo.png",
+    "codes": "igloo"
+  },
+  {
+    "name": "Caves Ice Walls",
+    "type": "toggle",
+    "img": "images/settings/ice.png",
+    "codes": "ice"
+  },
+  {
+    "name": "Castle Crypt Doors",
+    "type": "toggle",
+    "img": "images/settings/crypt.png",
+    "codes": "cryptdoors"
+  },
+  {
+    "name": "L1 Number",
+    "type": "static",
+    "img": "images/settings/1.png",
+    "codes": "num1"
     },
     {
-        "name": "Japes Coconut Gate",
-        "type": "toggle",
-        "img": "images/settings/coconut_gate.png",
-        "codes": "coconutgate"
+      "name": "Level 1",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/unknown.png",
+          "codes": "level1"
+        },
+        {
+          "img": "images/settings/japes.png",
+          "codes": "level1,l1_japes",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/aztec.png",
+          "codes": "level1,l1_aztec",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/factory.png",
+          "codes": "level1,l1_factory",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/galleon.png",
+          "codes": "level1,l1_galleon",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/forest.png",
+          "codes": "level1,l1_forest",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/caves.png",
+          "codes": "level1,l1_caves",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/castle.png",
+          "codes": "level1,l1_castle",
+          "inherit_codes": false
+        }
+      ]
     },
     {
-        "name": "Japes Shellhive",
-        "type": "toggle",
-        "img": "images/settings/shellhive.png",
-        "codes": "shellhive"
+      "name": "L2 Number",
+      "type": "static",
+      "img": "images/settings/2.png",
+      "codes": "num2"
     },
     {
-        "name": "Aztec Tiny Temple Ice",
-        "type": "toggle",
-        "img": "images/settings/tiny_temple_ice.png",
-        "codes": "tinyice"
+      "name": "Level 2",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/unknown.png",
+          "codes": "level2"
+        },
+        {
+          "img": "images/settings/japes.png",
+          "codes": "level2, l2_japes",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/aztec.png",
+          "codes": "level2, l2_aztec",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/factory.png",
+          "codes": "level2, l2_factory",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/galleon.png",
+          "codes": "level2, l2_galleon",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/forest.png",
+          "codes": "level2, l2_forest",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/caves.png",
+          "codes": "level2, l2_caves",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/castle.png",
+          "codes": "level2, l2_castle",
+          "inherit_codes": false
+        }
+      ]
     },
     {
-        "name": "Aztec Tunnel Door",
-        "type": "toggle",
-        "img": "images/settings/aztec_tunnels.png",
-        "codes": "tunnels"
+      "name": "L3 Number",
+      "type": "static",
+      "img": "images/settings/3.png",
+      "codes": "num3"
     },
     {
-        "name": "Aztec 5DTemple Switches",
-        "type": "toggle",
-        "img": "images/settings/5dt_switches.png",
-        "codes": "5dt"
+      "name": "Level 3",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/unknown.png",
+          "codes": "level3"
+        },
+        {
+          "img": "images/settings/japes.png",
+          "codes": "level3, l3_japes",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/aztec.png",
+          "codes": "level3, l3_aztec",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/factory.png",
+          "codes": "level3, l3_factory",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/galleon.png",
+          "codes": "level3, l3_galleon",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/forest.png",
+          "codes": "level3, l3_forest",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/caves.png",
+          "codes": "level3, l3_caves",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/castle.png",
+          "codes": "level3, l3_castle",
+          "inherit_codes": false
+        }
+      ]
     },
     {
-        "name": "Aztec Llama Switches",
-        "type": "toggle",
-        "img": "images/settings/llama_switches.png",
-        "codes": "llama"
+      "name": "L4 Number",
+      "type": "static",
+      "img": "images/settings/4.png",
+      "codes": "num4"
     },
     {
-        "name": "Factory Production Room",
-        "type": "toggle",
-        "img": "images/settings/production.png",
-        "codes": "production"
+      "name": "Level 4",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/unknown.png",
+          "codes": "level4"
+        },
+        {
+          "img": "images/settings/japes.png",
+          "codes": "level4, l4_japes",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/aztec.png",
+          "codes": "level4, l4_aztec",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/factory.png",
+          "codes": "level4, l4_factory",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/galleon.png",
+          "codes": "level4, l4_galleon",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/forest.png",
+          "codes": "level4, l4_forest",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/caves.png",
+          "codes": "level4, l4_caves",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/castle.png",
+          "codes": "level4, l4_castle",
+          "inherit_codes": false
+        }
+      ]
     },
     {
-        "name": "Factory Testing Gate",
-        "type": "toggle",
-        "img": "images/settings/testing.png",
-        "codes": "testing"
+      "name": "L5 Number",
+      "type": "static",
+      "img": "images/settings/5.png",
+      "codes": "num5"
     },
     {
-        "name": "Galleon Lighthouse Gate",
-        "type": "toggle",
-        "img": "images/settings/lighthouse.png",
-        "codes": "lighthouse"
+      "name": "Level 5",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/unknown.png",
+          "codes": "level5"
+        },
+        {
+          "img": "images/settings/japes.png",
+          "codes": "level5, l5_japes",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/aztec.png",
+          "codes": "level5, l5_aztec",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/factory.png",
+          "codes": "level5, l5_factory",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/galleon.png",
+          "codes": "level5, l5_galleon",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/forest.png",
+          "codes": "level5, l5_forest",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/caves.png",
+          "codes": "level5, l5_caves",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/castle.png",
+          "codes": "level5, l5_castle",
+          "inherit_codes": false
+        }
+      ]
     },
     {
-        "name": "Galleon Shipyard Gate",
-        "type": "toggle",
-        "img": "images/settings/shipyard.png",
-        "codes": "shipyard"
+      "name": "L6 Number",
+      "type": "static",
+      "img": "images/settings/6.png",
+      "codes": "num6"
     },
     {
-        "name": "Galleon Seasick Ship",
-        "type": "toggle",
-        "img": "images/settings/seasick.png",
-        "codes": "seasick"
+      "name": "Level 6",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/unknown.png",
+          "codes": "level6"
+        },
+        {
+          "img": "images/settings/japes.png",
+          "codes": "level6, l6_japes",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/aztec.png",
+          "codes": "level6, l6_aztec",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/factory.png",
+          "codes": "level6, l6_factory",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/galleon.png",
+          "codes": "level6, l6_galleon",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/forest.png",
+          "codes": "level6, l6_forest",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/caves.png",
+          "codes": "level6, l6_caves",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/castle.png",
+          "codes": "level6, l6_castle",
+          "inherit_codes": false
+        }
+      ]
     },
     {
-        "name": "Galleon Treasure Room",
-        "type": "toggle",
-        "img": "images/settings/treasure.png",
-        "codes": "treasure"
+      "name": "L7 Number",
+      "type": "static",
+      "img": "images/settings/7.png",
+      "codes": "num7"
     },
     {
-        "name": "Forest Green Tunnel",
-        "type": "toggle",
-        "img": "images/settings/green.png",
-        "codes": "green"
+      "name": "Level 7",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/unknown.png",
+          "codes": "level7"
+        },
+        {
+          "img": "images/settings/japes.png",
+          "codes": "level7, l7_japes",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/aztec.png",
+          "codes": "level7, l7_aztec",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/factory.png",
+          "codes": "level7, l7_factory",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/galleon.png",
+          "codes": "level7, l7_galleon",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/forest.png",
+          "codes": "level7, l7_forest",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/caves.png",
+          "codes": "level7, l7_caves",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/castle.png",
+          "codes": "level7, l7_castle",
+          "inherit_codes": false
+        }
+      ]
     },
     {
-        "name": "Forest Yellow Tunnel",
-        "type": "toggle",
-        "img": "images/settings/yellow.png",
-        "codes": "yellow"
+      "name": "L8 Number",
+      "type": "static",
+      "img": "images/settings/8.png",
+      "codes": "num8"
     },
     {
-        "name": "Caves Igloo Pads",
-        "type": "toggle",
-        "img": "images/settings/igloo.png",
-        "codes": "igloo"
+      "name": "Level 8",
+      "type": "static",
+      "img": "images/settings/helm.png",
+      "codes": "level8"
     },
     {
-        "name": "Caves Ice Walls",
-        "type": "toggle",
-        "img": "images/settings/ice.png",
-        "codes": "ice"
+      "name": "Water Level",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "name": "Lowered Water",
+          "img": "images/settings/lowered.png",
+          "codes": "water, waterlowered",
+          "inherit_codes": false
+        },
+        {
+          "name": "Raised Water",
+          "img": "images/settings/raised.png",
+          "codes": "water, waterraised",
+          "inherit_codes": false
+        }
+      ]
     },
     {
-        "name": "Castle Crypt Doors",
-        "type": "toggle",
-        "img": "images/settings/crypt.png",
-        "codes": "cryptdoors"
-    },
-    {
-        "type": "static",
-        "img": "images/settings/1.png",
-        "codes": "l1"
-      },
-      {
-        "name": "Level 1",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-          {
-            "img": "images/settings/unknown.png",
-            "codes": "level1"
-          },
-          {
-            "img": "images/settings/japes.png",
-            "codes": "level1,l1_japes",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/aztec.png",
-            "codes": "level1,l1_aztec",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/factory.png",
-            "codes": "level1,l1_factory",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/galleon.png",
-            "codes": "level1,l1_galleon",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/forest.png",
-            "codes": "level1,l1_forest",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/caves.png",
-            "codes": "level1,l1_caves",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/castle.png",
-            "codes": "level1,l1_castle",
-            "inherit_codes": false
-          }
-        ]
-      },
-      {
-        "name": "Level 1 Key",
-        "type": "toggle",
-        "img": "images/settings/key.png",
-        "codes": "k1"
-      },
-      {
-        "type": "static",
-        "img": "images/settings/2.png",
-        "codes": "l2"
-      },
-      {
-        "name": "Level 2",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-          {
-            "img": "images/settings/unknown.png",
-            "codes": "level2"
-          },
-          {
-            "img": "images/settings/japes.png",
-            "codes": "level2, l2_japes",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/aztec.png",
-            "codes": "level2, l2_aztec",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/factory.png",
-            "codes": "level2, l2_factory",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/galleon.png",
-            "codes": "level2, l2_galleon",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/forest.png",
-            "codes": "level2, l2_forest",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/caves.png",
-            "codes": "level2, l2_caves",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/castle.png",
-            "codes": "level2, l2_castle",
-            "inherit_codes": false
-          }
-        ]
-      },
-      {
-        "name": "Level 2 Key",
-        "type": "toggle",
-        "img": "images/settings/key.png",
-        "codes": "k2"
-      },
-      {
-        "type": "static",
-        "img": "images/settings/3.png",
-        "codes": "l3"
-      },
-      {
-        "name": "Level 3",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-          {
-            "img": "images/settings/unknown.png",
-            "codes": "level3"
-          },
-          {
-            "img": "images/settings/japes.png",
-            "codes": "level3, l3_japes",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/aztec.png",
-            "codes": "level3, l3_aztec",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/factory.png",
-            "codes": "level3, l3_factory",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/galleon.png",
-            "codes": "level3, l3_galleon",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/forest.png",
-            "codes": "level3, l3_forest",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/caves.png",
-            "codes": "level3, l3_caves",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/castle.png",
-            "codes": "level3, l3_castle",
-            "inherit_codes": false
-          }
-        ]
-      },
-      {
-        "name": "Level 3 Key",
-        "type": "toggle",
-        "img": "images/settings/key.png",
-        "codes": "k3"
-      },
-      {
-        "type": "static",
-        "img": "images/settings/4.png",
-        "codes": "l4"
-      },
-      {
-        "name": "Level 4",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-          {
-            "img": "images/settings/unknown.png",
-            "codes": "level4"
-          },
-          {
-            "img": "images/settings/japes.png",
-            "codes": "level4, l4_japes",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/aztec.png",
-            "codes": "level4, l4_aztec",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/factory.png",
-            "codes": "level4, l4_factory",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/galleon.png",
-            "codes": "level4, l4_galleon",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/forest.png",
-            "codes": "level4, l4_forest",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/caves.png",
-            "codes": "level4, l4_caves",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/castle.png",
-            "codes": "level4, l4_castle",
-            "inherit_codes": false
-          }
-        ]
-      },
-      {
-        "name": "Level 4 Key",
-        "type": "toggle",
-        "img": "images/settings/key.png",
-        "codes": "k4"
-      },
-      {
-        "type": "static",
-        "img": "images/settings/5.png",
-        "codes": "l5"
-      },
-      {
-        "name": "Level 5",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-          {
-            "img": "images/settings/unknown.png",
-            "codes": "level5"
-          },
-          {
-            "img": "images/settings/japes.png",
-            "codes": "level5, l5_japes",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/aztec.png",
-            "codes": "level5, l5_aztec",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/factory.png",
-            "codes": "level5, l5_factory",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/galleon.png",
-            "codes": "level5, l5_galleon",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/forest.png",
-            "codes": "level5, l5_forest",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/caves.png",
-            "codes": "level5, l5_caves",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/castle.png",
-            "codes": "level5, l5_castle",
-            "inherit_codes": false
-          }
-        ]
-      },
-      {
-        "name": "Level 5 Key",
-        "type": "toggle",
-        "img": "images/settings/key.png",
-        "codes": "k5"
-      },
-      {
-        "type": "static",
-        "img": "images/settings/6.png",
-        "codes": "l6"
-      },
-      {
-        "name": "Level 6",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-          {
-            "img": "images/settings/unknown.png",
-            "codes": "level6"
-          },
-          {
-            "img": "images/settings/japes.png",
-            "codes": "level6, l6_japes",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/aztec.png",
-            "codes": "level6, l6_aztec",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/factory.png",
-            "codes": "level6, l6_factory",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/galleon.png",
-            "codes": "level6, l6_galleon",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/forest.png",
-            "codes": "level6, l6_forest",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/caves.png",
-            "codes": "level6, l6_caves",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/castle.png",
-            "codes": "level6, l6_castle",
-            "inherit_codes": false
-          }
-        ]
-      },
-      {
-        "name": "Level 6 Key",
-        "type": "toggle",
-        "img": "images/settings/key.png",
-        "codes": "k6"
-      },
-    
-      {
-        "type": "static",
-        "img": "images/settings/7.png",
-        "codes": "l7"
-      },
-      {
-        "name": "Level 7",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-          {
-            "img": "images/settings/unknown.png",
-            "codes": "level7"
-          },
-          {
-            "img": "images/settings/japes.png",
-            "codes": "level7, l7_japes",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/aztec.png",
-            "codes": "level7, l7_aztec",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/factory.png",
-            "codes": "level7, l7_factory",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/galleon.png",
-            "codes": "level7, l7_galleon",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/forest.png",
-            "codes": "level7, l7_forest",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/caves.png",
-            "codes": "level7, l7_caves",
-            "inherit_codes": false
-          },
-          {
-            "img": "images/settings/castle.png",
-            "codes": "level7, l7_castle",
-            "inherit_codes": false
-          }
-        ]
-      },
-      {
-        "name": "Level 7 Key",
-        "type": "toggle",
-        "img": "images/settings/key.png",
-        "codes": "k7"
-      },
-      
-      {
-        "type": "static",
-        "img": "images/settings/8.png",
-        "codes": "l8"
-      },
-      {
-        "name": "Level 8",
-        "type": "static",
-        "img": "images/settings/helm.png",
-        "codes": "level8"
-      },
-      {
-        "name": "Level 8 Key",
-        "type": "toggle",
-        "img": "images/settings/key.png",
-        "codes": "k8"
-      },
-      {
-        "name": "Water Level",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-          {
-            "name": "Lowered Water",
-            "img": "images/settings/lowered.png",
-            "codes": "water, waterlowered",
-            "inherit_codes": false
-          },
-          {
-            "name": "Raised Water",
-            "img": "images/settings/raised.png",
-            "codes": "water, waterraised",
-            "inherit_codes": false
-          }
-        ]
-      },
-      {
-        "name": "Time of Day",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-          {
-            "name": "Day Time",
-            "img": "images/settings/daytime.png",
-            "codes": "time, daytime",
-            "inherit_codes": false
-          },
-          {
-            "name": "Night Time",
-            "img": "images/settings/nighttime.png",
-            "codes": "time, nighttime",
-            "inherit_codes": false
-          },
-          {
-            "name": "Dusk",
-            "img": "images/settings/dusk.png",
-            "codes": "time, dusk",
-            "inherit_codes": false
-          },
-        ]
-      }
+      "name": "Time of Day",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "name": "Day Time",
+          "img": "images/settings/daytime.png",
+          "codes": "time, daytime",
+          "inherit_codes": false
+        },
+        {
+          "name": "Night Time",
+          "img": "images/settings/nighttime.png",
+          "codes": "time, nighttime",
+          "inherit_codes": false
+        },
+        {
+          "name": "Dusk",
+          "img": "images/settings/dusk.png",
+          "codes": "time, dusk",
+          "inherit_codes": false
+        }
+      ]
+    }
 ]

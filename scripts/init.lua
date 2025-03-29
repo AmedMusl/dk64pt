@@ -5,6 +5,7 @@ ENABLE_DEBUG_LOG = true
 local variant = Tracker.ActiveVariantUID
 -- check variant info
 IS_ITEMS_ONLY = variant:find("itemsonly")
+IS_HORIZONTAL = variant:find("horizontal")
 
 print("-- DK64 Poptracker --")
 print("Loaded variant: ", variant)
@@ -23,6 +24,7 @@ ScriptHost:LoadScript("scripts/logic/logic.lua")
 Tracker:AddItems("items/kongs.json")
 Tracker:AddItems("items/moves.jsonc")
 Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/keys.json")
 Tracker:AddItems("items/settings.json")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
@@ -41,16 +43,25 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     Tracker:AddLocations("locations/shops.json")
 end
 
--- Layout
+-- Default Layout
 Tracker:AddLayouts("layouts/moves.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
 Tracker:AddLayouts("layouts/world_maps.json")
 Tracker:AddLayouts("layouts/tabs.json")
+Tracker:AddLayouts("layouts/shared.json")
 Tracker:AddLayouts("layouts/items.json")
-Tracker:AddLayouts("layouts/keys.json")
+Tracker:AddLayouts("layouts/level_order.json")
 Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddLayouts("layouts/barriers.json")
+
+-- Horizontal Layout
+if IS_HORIZONTAL then
+    Tracker:AddLayouts("horizontal/layouts/moves.json")
+    Tracker:AddLayouts("horizontal/layouts/tracker.json")
+    Tracker:AddLayouts("horizontal/layouts/shared.json")
+    Tracker:AddLayouts("horizontal/layouts/items.json")
+end
 
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then

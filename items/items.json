@@ -118,54 +118,6 @@
         "codes": "bean"
     },
     {
-        "name": "Key 1",
-        "type": "toggle",
-        "img": "images/keys/k1.png",
-        "codes": "key1"
-    },
-    {
-        "name": "Key 2",
-        "type": "toggle",
-        "img": "images/keys/k2.png",
-        "codes": "key2"
-    },
-    {
-        "name": "Key 3",
-        "type": "toggle",
-        "img": "images/keys/k3.png",
-        "codes": "key3"
-    },
-    {
-        "name": "Key 4",
-        "type": "toggle",
-        "img": "images/keys/k4.png",
-        "codes": "key4"
-    },
-    {
-        "name": "Key 5",
-        "type": "toggle",
-        "img": "images/keys/k5.png",
-        "codes": "key5"
-    },
-    {
-        "name": "Key 6",
-        "type": "toggle",
-        "img": "images/keys/k6.png",
-        "codes": "key6"
-    },
-    {
-        "name": "Key 7",
-        "type": "toggle",
-        "img": "images/keys/k7.png",
-        "codes": "key7"
-    },
-    {
-        "name": "Key 8",
-        "type": "toggle",
-        "img": "images/keys/k8.png",
-        "codes": "key8"
-    },
-    {
         "name": "Nintendo Coin",
         "type": "toggle",
         "img": "images/items/n64_coin.png",

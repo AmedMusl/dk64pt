@@ -8,46 +8,42 @@
           "content": [
               {
                   "type": "dock",
-                  "orientation": "vertical",
-                  "dock": "left",
+                  "dock": "bottom",
                   "content": [
                       {
                         "type": "group",
                         "header": "Kong-Specific Moves",
-                        "dock": "top",
+                        "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
-                            "key": "moves_grid",
-                            "item_size": 38
+                            "key": "moves_grid_h"
                         }
                       },
                       {
                         "type": "group",
                         "header": "Training & Shared Moves",
-                        "dock": "top",
+                        "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
-                            "key": "shared_grid",
-                            "item_size": 38
+                            "key": "shared_grid_h"
                         }
                       },
                       {
                         "type": "group",
                         "header": "Collectibles",
-                        "dock": "top",
+                        "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
-                            "key": "items_grid",
-                            "item_size": 36
+                            "key": "items_grid_h"
                         }
                       },
                       {
                         "type": "group",
                         "header": "Keys & Level Order",
-                        "dock": "top",
+                        "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
@@ -57,7 +53,7 @@
                       {
                         "type": "group",
                         "header": "Settings",
-                        "dock": "top",
+                        "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
