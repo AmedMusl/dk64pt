@@ -47,6 +47,8 @@
               "type": "itemgrid",
               "h_alignment": "left",
               "item_margin": "0,5",
+              "item_height": 24,
+              "item_width": 100,
               "rows": [
                 [ "level1" ],
                 [ "level3" ],
