@@ -9,7 +9,6 @@
         "content": [
           {
             "type": "itemgrid",
-            "h_alignment": "center",
             "item_size": 26,
             "rows": [
               [
@@ -29,7 +28,6 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "h_alignment": "center",
         "content": [
           {
             "type": "itemgrid",

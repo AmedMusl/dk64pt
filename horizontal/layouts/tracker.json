@@ -12,26 +12,32 @@
                   "content": [
                       {
                         "type": "group",
-                        "header": "Moves",
+                        "header": "Kong-Specific Moves",
                         "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
-                            "h_alignment": "center",
-                            "v_alignment": "center",
-                            "key": "moves_grid"
+                            "key": "moves_grid_h"
                         }
                       },
                       {
                         "type": "group",
-                        "header": "Moves",
+                        "header": "Training & Shared Moves",
                         "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
-                            "h_alignment": "center",
-                            "v_alignment": "center",
-                            "key": "items_grid"
+                            "key": "shared_grid_h"
+                        }
+                      },
+                      {
+                        "type": "group",
+                        "header": "Collectibles",
+                        "dock": "left",
+                        "margin": "0,0,3,0",
+                        "content": {
+                            "type": "layout",
+                            "key": "items_grid_h"
                         }
                       },
                       {
@@ -41,8 +47,6 @@
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
-                            "h_alignment": "center",
-                            "v_alignment": "center",
                             "key": "keys_grid"
                         }
                       },
@@ -53,8 +57,6 @@
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
-                            "h_alignment": "center",
-                            "v_alignment": "center",
                             "key": "settings_grid"
                         }
                       }
