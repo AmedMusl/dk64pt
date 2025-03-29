@@ -1,5 +1,5 @@
 {
-  "items_grid": {
+  "items_grid_h": {
     "type": "container",
     "orientation": "horizontal",
     "margin": "0,0",
@@ -7,7 +7,7 @@
       {
         "type": "itemgrid",
         "item_margin": "5, 3",
-        "item_size": 48,
+        "v_alignment": "top",
         "rows": [
           [
             "gb",

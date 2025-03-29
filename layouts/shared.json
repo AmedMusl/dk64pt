@@ -1,0 +1,32 @@
+{
+    "shared_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "itemgrid",
+                "item_margin": "5, 3",
+                "item_size": 38,
+                "rows": [
+                    [
+                        "climb",
+                        "vine",
+                        "oranges",
+                        "barrel",
+                        "dive",
+                        "slam"
+                    ],
+                    [
+                        "camera",
+                        "shockwave",
+                        "sniper",
+                        "homing"
+                    ]
+                ]
+            }
+        ]
+    }
+}
+
+    

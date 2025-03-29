@@ -3,12 +3,18 @@
   "game_name": "Donkey Kong 64 Randomizer",
   "package_version": "0.0.0",
   "package_uid": "dk64_pt",
-  "author": "Umed",
+  "author": "Umed, Schwartz Gandhi",
   "min_poptracker_version": "0.25.9",
   "target_poptracker_version": "0.28.0",
   "variants": {
     "standard": {
-      "display_name": "Map Tracker",
+      "display_name": "Map Tracker (Vertical)",
+      "flags": [
+        "ap"
+      ]
+    },
+    "var_horizontal": {
+      "display_name": "Map Tracker (Horizontal)",
       "flags": [
         "ap"
       ]

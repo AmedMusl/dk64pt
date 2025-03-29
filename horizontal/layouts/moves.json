@@ -1,5 +1,5 @@
 {
-  "moves_grid": {
+  "moves_grid_h": {
     "type": "array",
     "orientation": "vertical",
     "margin": "0,0",
@@ -13,7 +13,6 @@
             "type": "itemgrid",
             "item_margin": "5, 3",
             "h_alignment": "center",
-            "item_size": 38,
             "rows": [
               [
                 "donkey",
