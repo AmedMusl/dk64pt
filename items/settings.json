@@ -362,7 +362,8 @@
           {
             "img": "images/settings/japes.png",
             "codes": "level5, l5_japes",
-            "inherit_codes": false
+            "inherit_codes": false,
+            "item_width": 100
           },
           {
             "img": "images/settings/aztec.png",

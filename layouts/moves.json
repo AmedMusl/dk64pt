@@ -61,33 +61,31 @@
               ],
               [
                 "climb",
-                "slam",
+                "vine",
                 "oranges",
                 "barrel",
-                "dive"
+                "dive",
+                "slam"
               ],
               [
-                "vine",
                 "camera",
                 "shockwave",
                 "sniper",
                 "homing"
+              ],
+              [
+                "bean",
+                "pearl",
+                "nintendo",
+                "rareware"
+              ],
+              [
+                "gb",
+                "medals",
+                "fairies",
+                "crowns",
+                "rainbow"
               ]
-            ]
-          }
-        ]
-      },
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "content": [
-          {
-            "type": "itemgrid",
-            "h_alignment": "center",
-            "item_size": 32,
-            "item_margin": "0,0",
-            "rows": [
-              [ "pearl", "bean", "nintendo", "rareware", "rainbow", "crowns", "fairies", "medals", "gb"  ]
             ]
           }
         ]

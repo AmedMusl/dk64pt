@@ -8,13 +8,12 @@
           "content": [
               {
                   "type": "dock",
-                  "orientation": "vertical",
-                  "dock": "left",
+                  "dock": "bottom",
                   "content": [
                       {
                           "type": "group",
                           "header": "Moves",
-                          "dock": "top",
+                          "dock": "left",
                           "margin": "0,0,3,0",
                           "content": {
                               "type": "layout",
@@ -26,7 +25,7 @@
                       {
                         "type": "group",
                         "header": "Level Order",
-                        "dock": "top",
+                        "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
@@ -38,7 +37,7 @@
                       {
                         "type": "group",
                         "header": "Settings",
-                        "dock": "top",
+                        "dock": "left",
                         "margin": "0,0,3,0",
                         "content": {
                             "type": "layout",
