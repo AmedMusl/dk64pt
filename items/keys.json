@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Key 1",
+        "type": "toggle",
+        "img": "images/keys/k1.png",
+        "codes": "k1"
+    },
+    {
+        "name": "Key 2",
+        "type": "toggle",
+        "img": "images/keys/k2.png",
+        "codes": "k2"
+    },
+    {
+        "name": "Key 3",
+        "type": "toggle",
+        "img": "images/keys/k3.png",
+        "codes": "k3"
+    },
+    {
+        "name": "Key 4",
+        "type": "toggle",
+        "img": "images/keys/k4.png",
+        "codes": "k4"
+    },
+    {
+        "name": "Key 5",
+        "type": "toggle",
+        "img": "images/keys/k5.png",
+        "codes": "k5"
+    },
+    {
+        "name": "Key 6",
+        "type": "toggle",
+        "img": "images/keys/k6.png",
+        "codes": "k6"
+    },
+    {
+        "name": "Key 7",
+        "type": "toggle",
+        "img": "images/keys/k7.png",
+        "codes": "k7"
+    },
+    {
+        "name": "Key 8",
+        "type": "toggle",
+        "img": "images/keys/k8.png",
+        "codes": "k8"
+    }
+]

@@ -23,6 +23,7 @@ ScriptHost:LoadScript("scripts/logic/logic.lua")
 Tracker:AddItems("items/kongs.json")
 Tracker:AddItems("items/moves.jsonc")
 Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/keys.json")
 Tracker:AddItems("items/settings.json")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
@@ -48,7 +49,7 @@ Tracker:AddLayouts("layouts/broadcast.jsonc")
 Tracker:AddLayouts("layouts/world_maps.json")
 Tracker:AddLayouts("layouts/tabs.json")
 Tracker:AddLayouts("layouts/items.json")
-Tracker:AddLayouts("layouts/keys.json")
+Tracker:AddLayouts("layouts/level_order.json")
 Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddLayouts("layouts/barriers.json")
 
