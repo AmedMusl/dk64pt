@@ -18,12 +18,7 @@
       "flags": [
         "ap"
       ]
-    },
-    "var_itemsonly": {
-      "display_name": "Items Only",
-      "flags": [
-        "ap"
-      ]
     }
-  }
+  },
+    "versions_url": "https://raw.githubusercontent.com/AmedMusl/dk64pt/refs/heads/main/versions.json"
 }

@@ -318,7 +318,7 @@
             },
             {
                 "name": "Aztec Crate: Near Gong Tower",
-                "access_rules": ["$tunnelDoor"],
+                "access_rules": ["$tunnelDoor, $aztecPastSandPit"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -337,7 +337,7 @@
             },
             {
                 "name": "Aztec DK Sealed Quicksand Tunnel Barrel",
-                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $aztecSlam"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $aztecSlam, $aztecPastSandPit"],
                 "sections": [
                     {
                         "name": "Golden Banana"

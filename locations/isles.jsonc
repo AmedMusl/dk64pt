@@ -1223,7 +1223,7 @@
       },
       {
         "name": "Isles Chunky Helm Lobby Barrel",
-        "access_rules": ["$gone, vine, key6, key7, $port"],
+        "access_rules": ["$gone, vine, $canEnterHelm"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -1240,7 +1240,7 @@
       },
       {
         "name": "Isles Kasplat: Helm Lobby",
-        "access_rules": ["key6, key7, $gone, $port, $coconut, sniper"],
+        "access_rules": ["$canEnterHelm, $coconut, sniper"],
         "sections": [
           {
             "name": "Kasplat",

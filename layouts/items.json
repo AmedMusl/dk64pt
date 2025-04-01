@@ -1,7 +1,6 @@
 {
   "items_grid": {
     "type": "container",
-    "orientation": "horizontal",
     "margin": "0,0",
     "content": [
       {

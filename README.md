@@ -1,20 +1,21 @@
-# Template Pack for PopTracker
+# PopTracker pack for Donkey Kong 64 Archipelago Randomizer
 
-This a template tracker package for PopTracker.
+An PopTracker pack with map for\
+[The DK64 Archipelago Randomizer](https://github.com/2dos/DK64-Randomizer)
 
-Includes examples for AP and SNES memory autotracking and beginner-friendly explanations in the pack.
+## Requirements
+[PopTracker](https://github.com/black-sliver/PopTracker)
 
 ## Installation
 
-Just download the latest build or source and put in your packs folder (unpacked).
+1. Download the latest release from the Releases section on GitHub.
+2. Place the downloaded zip file in the PopTracker packs directory.
 
-## More Info
+## Usage
 
-Check out PopTrackers Documentation on
-packs [here](https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md).
+The tracker will show you which checks are in logic with your current items and keys
+PopTracker supports Archipelago Autotracking integration (see the PopTracker's README for details).
 
-Still having trouble realizing your pack and looking for help or just want more information about everything PopTracker? Check out the ['Unofficial' PopTracker Discord Server](https://discord.com/invite/gwThqMCPgK)!
-
-## License
-
-Feel free to use this template without credit for all your PopTracker packs!
+## Special Thanks
+DK64 Randomizer Devs
+Schwartz Gandhi (For Layout)

@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "package_version": "0.0.1",
+            "download_url": "https://github.com/AmedMusl/dk64pt/releases/download/v0.0.1/dk64pt.zip",
+            "sha256": "5F2588C5DE00C569D3A7AF15D2EB45D98EF41FF20C9F0EB436DB7F0629B8AD25",
+            "changelog": [
+                "Initital Release of DK64 Poptracker"
+            ]
+        }
+    ]
+}

@@ -160,6 +160,10 @@ function canEnterSprintCabin()
     return trombone() and (rocket() or balloon())
 end
 
+function aztecPastSandPit()
+    return (has("climb") and has("vine")) or rocket()
+end
+
 function raisedWater()
     local in_lighthouse = lighthouse()
     if has("waterraised") then
@@ -199,7 +203,7 @@ end
 -- Barriers
 
 function coconutCage()
-    if has("coconutgate") then
+    if has("japes_coconut_gates") then
         return true
     else
         return has("climb")
@@ -207,7 +211,7 @@ function coconutCage()
 end
 
 function shellhive()
-    if has("shellhive") then
+    if has("japes_shellhive_gate") then
         return true
     else
         return feather()
@@ -215,7 +219,7 @@ function shellhive()
 end
 
 function templeIce()
-    if has("tinyice") then
+    if has("aztec_tiny_temple_ice") then
         return true
     else
         return aztecSlam() and peanuts() and guitar()
@@ -223,7 +227,7 @@ function templeIce()
 end
 
 function tunnelDoor()
-    if has("tunnels") then
+    if has("aztec_tunnel_door") then
         return true
     else
         return has("climb") and has("vine") and guitar()
@@ -232,7 +236,7 @@ end
 
 function aztec5DT()
     local in_tunnel = tunnelDoor()
-    if has("5dt") then
+    if has("aztec_5dtemple_switches") then
         return in_tunnel
     else
         return rocket() and peanuts() and aztecSlam() and in_tunnel
@@ -241,7 +245,7 @@ end
 
 function llamaSwitches()
     local in_tunnel = tunnelDoor()
-    if has("llama") then
+    if has("aztec_llama_switches") then
         return in_tunnel
     else
         return blast() and in_tunnel
@@ -250,7 +254,7 @@ end
 
 function production()
     local in_testing = testing()
-    if has("production") then
+    if has("factory_production_room") then
         return in_testing
     else
         return coconut() and grab() and in_testing
@@ -258,7 +262,7 @@ function production()
 end
 
 function testing()
-    if has("testing") then
+    if has("factory_testing_gate") then
         return true
     else
         return has("slam")
@@ -266,7 +270,7 @@ function testing()
 end
 
 function lighthouse()
-    if has("lighthouse") then
+    if has("galleon_lighthouse_gate") then
         return true
     else
         return coconut()
@@ -274,7 +278,7 @@ function lighthouse()
 end
 
 function shipyard()
-    if has("shipyard") then
+    if has("galleon_shipyard_area_gate") then
         return true
     else
         return peanuts()
@@ -283,7 +287,7 @@ end
 
 function seasick()
     local in_lighthouse = lighthouse()
-    if has("seasick") then
+    if has("galleon_seasick_ship") then
         return in_lighthouse
     else
         return has("climb") and galleonSlam() and grab() and in_lighthouse
@@ -292,7 +296,7 @@ end
 
 function treasure()
     local in_shipyard = shipyard()
-    if has("treasure") then
+    if has("galleon_treasure_room") then
         return in_shipyard
     else
         return in_shipyard and has("lanky")
@@ -300,7 +304,7 @@ function treasure()
 end
 
 function greenTunnel()
-    if has("green") then
+    if has("forest_green_tunnel") then
         return true
     else
         return feather() and pineapple()
@@ -308,7 +312,7 @@ function greenTunnel()
 end
 
 function greenTunnelFeather()
-    if has("green") then
+    if has("forest_green_tunnel") then
         return true
     else
         return feather()
@@ -316,7 +320,7 @@ function greenTunnelFeather()
 end
 
 function yellowTunnel()
-    if has("yellow") then
+    if has("forest_yellow_tunnel") then
         return true
     else
         return grape()
@@ -324,7 +328,7 @@ function yellowTunnel()
 end
 
 function igloo()
-    if has("igloo") then
+    if has("caves_igloo_pads") then
         return true
     else
         return rocket()
@@ -332,7 +336,7 @@ function igloo()
 end
 
 function cavesIce()
-    if has("ice") then
+    if has("caves_ice_walls") then
         return true
     else
         return punch()
@@ -340,7 +344,7 @@ function cavesIce()
 end
 
 function dkCryptDoors()
-    if has("cryptdoors") then
+    if has("castle_crypt_doors") then
         return true
     else
         return coconut()
@@ -348,7 +352,7 @@ function dkCryptDoors()
 end
 
 function diddyCryptDoors()
-    if has("cryptdoors") then
+    if has("castle_crypt_doors") then
         return true
     else
         return peanuts()
@@ -356,7 +360,7 @@ function diddyCryptDoors()
 end
 
 function chunkyCryptDoors()
-    if has("cryptdoors") then
+    if has("castle_crypt_doors") then
         return true
     else
         return pineapple()
@@ -364,7 +368,7 @@ function chunkyCryptDoors()
 end
 
 function cryptDoors()
-    if has("cryptdoors") then
+    if has("castle_crypt_doors") then
         return true
     else
         return coconut() or peanuts() or pineapple()
@@ -372,7 +376,7 @@ function cryptDoors()
 end
 
 function mausoleumDoors()
-    if has("cryptDoors") then
+    if has("castle_crypt_doors") then
         return true
     else
         return grape() or feather()
@@ -619,4 +623,14 @@ function canEnterCastle()
     if has("l6_castle") or has("l7_castle") then
         return has("k5")
     end
+end
+
+function canEnterHelm()
+    return has("k6") and has("k7") and port()
+end
+
+function jetPac()
+    local medals = Tracker:ProviderCountForCode("medals")
+    local jetrec = Tracker:ProviderCountForCode("jetpacReq")
+    return medals >= jetrec
 end

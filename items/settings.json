@@ -13,103 +13,103 @@
       "name": "Japes Coconut Gate",
       "type": "toggle",
       "img": "images/settings/coconut_gate.png",
-      "codes": "coconutgate"
+      "codes": "japes_coconut_gates"
   },
   {
       "name": "Japes Shellhive",
       "type": "toggle",
       "img": "images/settings/shellhive.png",
-      "codes": "shellhive"
+      "codes": "japes_shellhive_gate"
   },
   {
       "name": "Aztec Tiny Temple Ice",
       "type": "toggle",
       "img": "images/settings/tiny_temple_ice.png",
-      "codes": "tinyice"
+      "codes": "aztec_tiny_temple_ice"
   },
   {
       "name": "Aztec Tunnel Door",
       "type": "toggle",
       "img": "images/settings/aztec_tunnels.png",
-      "codes": "tunnels"
+      "codes": "aztec_tunnel_door"
   },
   {
       "name": "Aztec 5DTemple Switches",
       "type": "toggle",
       "img": "images/settings/5dt_switches.png",
-      "codes": "5dt"
+      "codes": "aztec_5dtemple_switches"
   },
   {
       "name": "Aztec Llama Switches",
       "type": "toggle",
       "img": "images/settings/llama_switches.png",
-      "codes": "llama"
+      "codes": "aztec_llama_switches"
   },
   {
       "name": "Factory Production Room",
       "type": "toggle",
       "img": "images/settings/production.png",
-      "codes": "production"
+      "codes": "factory_production_room"
   },
   {
       "name": "Factory Testing Gate",
       "type": "toggle",
       "img": "images/settings/testing.png",
-      "codes": "testing"
+      "codes": "factory_testing_gate"
   },
   {
       "name": "Galleon Lighthouse Gate",
       "type": "toggle",
       "img": "images/settings/lighthouse.png",
-      "codes": "lighthouse"
+      "codes": "galleon_lighthouse_gate"
   },
   {
       "name": "Galleon Shipyard Gate",
       "type": "toggle",
       "img": "images/settings/shipyard.png",
-      "codes": "shipyard"
+      "codes": "galleon_shipyard_area_gate"
   },
   {
       "name": "Galleon Seasick Ship",
       "type": "toggle",
       "img": "images/settings/seasick.png",
-      "codes": "seasick"
+      "codes": "galleon_seasick_ship"
   },
   {
       "name": "Galleon Treasure Room",
       "type": "toggle",
       "img": "images/settings/treasure.png",
-      "codes": "treasure"
+      "codes": "galleon_treasure_room"
   },
   {
       "name": "Forest Green Tunnel",
       "type": "toggle",
       "img": "images/settings/green.png",
-      "codes": "green"
+      "codes": "forest_green_tunnel"
   },
   {
     "name": "Forest Yellow Tunnel",
     "type": "toggle",
     "img": "images/settings/yellow.png",
-    "codes": "yellow"
+    "codes": "forest_yellow_tunnel"
   },
   {
     "name": "Caves Igloo Pads",
     "type": "toggle",
     "img": "images/settings/igloo.png",
-    "codes": "igloo"
+    "codes": "caves_igloo_pads"
   },
   {
     "name": "Caves Ice Walls",
     "type": "toggle",
     "img": "images/settings/ice.png",
-    "codes": "ice"
+    "codes": "caves_ice_walls"
   },
   {
     "name": "Castle Crypt Doors",
     "type": "toggle",
     "img": "images/settings/crypt.png",
-    "codes": "cryptdoors"
+    "codes": "castle_crypt_doors"
   },
   {
     "name": "L1 Number",
@@ -539,5 +539,42 @@
           "inherit_codes": false
         }
       ]
+    },
+    {
+      "name": "Spoil Level Order",
+      "type": "static",
+      "img": "images/settings/spoil.png",
+      "codes": "spoiltext"
+    },
+    {
+      "name": "Spoil Level Order",
+      "type": "progressive",
+      "allow_disabled": false,
+      "loop": true,
+      "stages": [
+        {
+          "name": "No",
+          "img": "images/settings/no.png",
+          "codes": "spoil, spoilno",
+          "inherit_codes": false
+        },
+        {
+          "name": "Yes",
+          "img": "images/settings/yes.png",
+          "codes": "spoil, spoilyes",
+          "inherit_codes": false
+        }
+      ]
+    },
+    {
+      "name": "Medals Required For Jetpac",
+      "type": "consumable",
+      "min_quantity": 1,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/jetpac.png",
+      "codes": "jetpacReq",
+      "overlay_background": "#000000",
+      "max_quantity": 40
     }
 ]

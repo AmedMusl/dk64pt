@@ -30,6 +30,7 @@
                     },
                     {
                         "name": "Jetpac",
+                        "access_rules": ["$jetPac"],
                         "chest_unopened_img": "images/items/n64rw_coin.png",
                         "chest_opened_img": "images/items/n64rwbw.png"
                     }
@@ -129,7 +130,7 @@
         "children": [
             {
                 "name": "Aztec Cranky",
-                "access_rules": [],
+                "access_rules": ["$tunnelDoor"],
                 "sections": [
                     {
                         "name": "Cranky DK",
@@ -163,7 +164,7 @@
             },
             {
                 "name": "Aztec Funky",
-                "access_rules": [],
+                "access_rules": ["$tunnelDoor"],
                 "sections": [
                     {
                         "name": "Funky DK",
@@ -307,7 +308,7 @@
             },
             {
                 "name": "Factory Funky",
-                "access_rules": [],
+                "access_rules": ["$testing, climb"],
                 "sections": [
                     {
                         "name": "Funky DK",
@@ -383,7 +384,7 @@
             },
             {
                 "name": "Galleon Funky",
-                "access_rules": [],
+                "access_rules": ["$shipyard"],
                 "sections": [
                     {
                         "name": "Funky DK",
@@ -417,7 +418,7 @@
             },
             {
                 "name": "Galleon Candy",
-                "access_rules": [],
+                "access_rules": ["$shipyard"],
                 "sections": [
                     {
                         "name": "Candy DK",
@@ -493,7 +494,7 @@
             },
             {
                 "name": "Forest Funky",
-                "access_rules": ["$feather, $pineapple"],
+                "access_rules": ["$greenTunnel"],
                 "sections": [
                     {
                         "name": "Funky DK",

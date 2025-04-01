@@ -11,22 +11,37 @@
                 "content": [
                     {
                         "type": "itemgrid",
-                        "item_margin": "4, 4",
+                        "item_margin": "15, 4",
                         "item_size": "240, 28",
                         "rows": [
-                            ["coconutgate", "shellhive"],
-                            ["tinyice", "tunnels"],
-                            ["5dt", "llama"],
-                            ["production", "testing"],
-                            ["lighthouse", "shipyard"],
-                            ["seasick", "treasure"],
-                            ["green", "yellow"],
-                            ["igloo", "ice"],
-                            ["cryptdoors"]
+                            ["japes_coconut_gates", "japes_shellhive_gate"],
+                            ["aztec_tiny_temple_ice", "aztec_tunnel_door"],
+                            ["aztec_5dtemple_switches", "aztec_llama_switches"],
+                            ["factory_production_room", "factory_testing_gate"],
+                            ["galleon_lighthouse_gate", "galleon_shipyard_area_gate"],
+                            ["galleon_seasick_ship", "galleon_treasure_room"],
+                            ["forest_green_tunnel", "forest_yellow_tunnel"],
+                            ["caves_igloo_pads", "_caves_ice_walls"],
+                            ["castle_crypt_doors"]
                         ]
                     }
                 ]
             }
+            // {
+            //     "type": "array",
+            //     "orientation": "horizontal",
+            //     "margin": "0,0",
+            //     "content": [
+            //         {
+            //             "type": "itemgrid",
+            //             "item_margin": "10, 4",
+            //             "item_size": "240, 28",
+            //             "rows": [
+            //                 ["spoiltext", "spoil"]
+            //             ]
+            //         }
+            //     ]
+            // }
         ]
     }
 }

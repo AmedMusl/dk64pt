@@ -1,26 +1,27 @@
 {
-  //sets the layout for the broadcast view
   "tracker_broadcast": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
-        "type": "layout",
-        "key": "moves_grid"
-      },
-      {
-        "type": "layout",
-        "key": "shared_grid"
-      },
-      {
-        "type": "layout",
-        "key": "items_grid"
-      },
-      {
-        "type": "layout",
-        "key": "keys_grid"
-      }
-    ]
-  }
+        "type": "array",
+        "orientation": "vertical",
+        "h_alignment": "center",
+        "margin": "5,5",
+        "background": "#212121",
+        "content": [
+          {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "margin": "0,0",
+            "item_margin": "1,2",
+            "rows": [
+              ["donkey", "coconut", "bongos", "grab", "blast", "strong", "dkbp"],
+              ["diddy", "peanuts", "guitar", "charge", "spring", "rocket", "diddybp"],
+              ["lanky", "grape", "trombone", "orangstand", "balloon", "sprint", "lankybp"],
+              ["tiny", "feather", "sax", "twirl", "port", "mini", "tinybp"],
+              ["chunky", "pineapple", "triangle", "punch", "gone", "big", "chunkybp"],
+              ["slam", "dive", "oranges", "barrel", "vine", "climb"],
+              ["camera", "shockwave", "homing", "sniper"],
+              ["k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8"]
+            ]
+          }
+        ]
+    }
 }
