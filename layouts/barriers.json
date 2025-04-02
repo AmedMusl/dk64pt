@@ -21,7 +21,7 @@
                             ["galleon_lighthouse_gate", "galleon_shipyard_area_gate"],
                             ["galleon_seasick_ship", "galleon_treasure_room"],
                             ["forest_green_tunnel", "forest_yellow_tunnel"],
-                            ["caves_igloo_pads", "_caves_ice_walls"],
+                            ["caves_igloo_pads", "caves_ice_walls"],
                             ["castle_crypt_doors"]
                         ]
                     }
