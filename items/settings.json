@@ -576,5 +576,27 @@
       "codes": "jetpacReq",
       "overlay_background": "#000000",
       "max_quantity": 40
+    },
+    {
+      "name": "Fairies Required for BFI",
+      "type": "consumable",
+      "min_quantity": 1,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/bfi.png",
+      "codes": "bfiReq",
+      "overlay_background": "#000000",
+      "max_quantity": 20
+    },
+    {
+      "name": "Pearls Required for Mermaid",
+      "type": "consumable",
+      "min_quantity": 1,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/items/pearl.png",
+      "codes": "mermaid",
+      "overlay_background": "#000000",
+      "max_quantity": 5
     }
 ]

@@ -507,7 +507,7 @@
                 "sections": [
                     {
                         "name": "Japes Lanky Zingers",
-                        "access_rules": ["$japesSlam, $grape", "$japesSlam, $trombone"]
+                        "access_rules": ["$lankyPaint"]
                     },
                     {
                         "name": "Japes Fairy (Painting Room)",

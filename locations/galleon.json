@@ -236,7 +236,7 @@
             },
             {            
                 "name": "Galleon Tiny Mermaid Reward",
-                "access_rules": ["$lighthouse, dive, $mini, pearl"],
+                "access_rules": ["$mermaid, $lighthouse, dive, $mini, pearl"],
                 "sections": [
                     {
                         "name": "Golden Banana"

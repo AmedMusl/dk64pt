@@ -130,7 +130,7 @@
             "name": "Returning the Banana Fairies",
             "chest_unopened_img": "images/items/GB.png",
             "chest_opened_img": "images/items/GBbw.png",
-            "access_rules": []
+            "access_rules": ["$BFI"]
           }
         ],
         "map_locations": [

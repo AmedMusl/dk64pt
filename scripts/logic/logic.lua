@@ -200,6 +200,10 @@ function nightTime()
     end
 end
 
+function lankyPaint()
+    return has("slam") and (coconut() or grape() or peanuts() or feather() or pineapple() or bongos() or guitar() or trombone() or sax() or triangle())
+end
+
 -- Barriers
 
 function coconutCage()
@@ -633,4 +637,16 @@ function jetPac()
     local medals = Tracker:ProviderCountForCode("medals")
     local jetrec = Tracker:ProviderCountForCode("jetpacReq")
     return medals >= jetrec
+end
+
+function BFI()
+    local fairies = Tracker:ProviderCountForCode("fairies")
+    local bfi = Tracker:ProviderCountForCode("bfiReq")
+    return fairies >= bfi
+end
+
+function mermaid()
+    local pearls = Tracker:ProviderCountForCode("pearl")
+    local mermaid = Tracker:ProviderCountForCode("mermaid")
+    return pearls >= mermaid
 end

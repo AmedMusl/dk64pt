@@ -1,7 +1,7 @@
 {
   "name": "Donkey Kong 64 Poptracker",
   "game_name": "Donkey Kong 64 Randomizer",
-  "package_version": "0.0.1",
+  "package_version": "0.0.2",
   "package_uid": "dk64_pt",
   "author": "Umed, Schwartz Gandhi",
   "min_poptracker_version": "0.25.9",
