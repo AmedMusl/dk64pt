@@ -426,7 +426,7 @@
       },
       {
         "name": "Isles Diddy Snide Barrel",
-        "access_rules": ["$spring"],
+        "access_rules": [],
         "sections": [
           {
             "name": "Golden Banana"
@@ -750,7 +750,7 @@
       },
       {
         "name": "Isles Diddy Peanut Cage",
-        "access_rules": ["k4, $peanuts"],
+        "access_rules": ["$pastCabinIsle"],
         "sections": [
           {
             "name": "Golden Banana"

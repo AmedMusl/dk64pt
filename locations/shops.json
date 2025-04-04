@@ -54,7 +54,7 @@
         "children": [
             {
                 "name": "Japes Cranky",
-                "access_rules": [],
+                "access_rules": ["$coconutCage"],
                 "sections": [
                     {
                         "name": "Cranky DK",

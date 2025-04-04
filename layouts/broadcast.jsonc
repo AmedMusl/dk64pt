@@ -4,13 +4,12 @@
         "orientation": "vertical",
         "h_alignment": "center",
         "margin": "5,5",
-        "background": "#212121",
         "content": [
           {
             "type": "itemgrid",
             "h_alignment": "center",
-            "margin": "0,0",
-            "item_margin": "1,2",
+            "margin": "0,0,3,0",
+            "item_margin": "3,2",
             "rows": [
               ["donkey", "coconut", "bongos", "grab", "blast", "strong", "dkbp"],
               ["diddy", "peanuts", "guitar", "charge", "spring", "rocket", "diddybp"],
@@ -18,9 +17,17 @@
               ["tiny", "feather", "sax", "twirl", "port", "mini", "tinybp"],
               ["chunky", "pineapple", "triangle", "punch", "gone", "big", "chunkybp"],
               ["slam", "dive", "oranges", "barrel", "vine", "climb"],
-              ["camera", "shockwave", "homing", "sniper"],
-              ["k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8"]
+              ["camera", "shockwave", "homing", "sniper"]
             ]
+          },
+          {
+            "type": "group",
+            "dock": "top",
+            "margin": "0,0,3,0",
+            "content": {
+              "type": "layout",
+              "key": "keys_grid"
+          }
           }
         ]
     }

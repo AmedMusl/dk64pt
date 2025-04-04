@@ -17,5 +17,5 @@ The tracker will show you which checks are in logic with your current items and 
 PopTracker supports Archipelago Autotracking integration (see the PopTracker's README for details).
 
 ## Special Thanks
-DK64 Randomizer Devs
-Schwartz Gandhi (For Layout)
+- DK64 Randomizer Devs
+- Schwartz Gandhi (For Layout)

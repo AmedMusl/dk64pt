@@ -161,7 +161,19 @@ function canEnterSprintCabin()
 end
 
 function aztecPastSandPit()
-    return (has("climb") and has("vine")) or rocket()
+    return (has("climb") and has("vine")) or rocket() or (has("climb") and twirl())
+end
+
+function pastCabinIsle()
+    return has("k4") and peanuts() and ((rocket() and has("barrel") and has("chunky") and trombone()) or twirl() or has("donkey"))
+end
+
+function canBeatSpider()
+    if not_has("dusk") then
+        return punch() and mini() and canChangeTime()
+    elseif has("dusk") then
+        return punch() and canChangeTime()
+    end
 end
 
 function raisedWater()
@@ -215,10 +227,11 @@ function coconutCage()
 end
 
 function shellhive()
+    local in_coconut = coconutCage()
     if has("japes_shellhive_gate") then
-        return true
+        return in_coconut
     else
-        return feather()
+        return feather() and in_coconut
     end
 end
 

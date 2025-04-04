@@ -408,7 +408,7 @@
             },
             {            
                 "name": "Forest Tiny Spider Boss",
-                "access_rules": ["$canChangeTime, $punch, $triangle, $mini"],
+                "access_rules": ["$canBeatSpider"],
                 "sections": [
                     {
                         "name": "Golden Banana"

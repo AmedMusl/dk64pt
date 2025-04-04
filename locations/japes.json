@@ -321,7 +321,7 @@
             },
             {            
                 "name": "Japes Kasplat: Hive Tunnel Lower",
-                "access_rules": [],
+                "access_rules": ["$coconutCage"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -340,7 +340,7 @@
             },
             {            
                 "name": "Japes Kasplat: Hive Tunnel Upper",
-                "access_rules": [],
+                "access_rules": ["$coconutCage"],
                 "sections": [
                     {
                         "name": "Kasplat",

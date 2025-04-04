@@ -246,7 +246,7 @@
             },
             {            
                 "name": "Greenhouse",
-                "access_rules": ["$castleSlam"],
+                "access_rules": ["$castleSlam, lanky"],
                 "sections": [
                     {
                         "name": "Castle Lanky Greenhouse"

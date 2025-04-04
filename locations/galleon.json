@@ -567,7 +567,7 @@
             },
             {
                 "name": "Galleon Boss Defeated",
-                "access_rules": ["vine", "dive"],
+                "access_rules": ["vine", "dive, $shipyard", "dive, $lighthouse"],
                 "sections": [
                     {
                         "name": "Boss",
