@@ -337,7 +337,7 @@
             },
             {
                 "name": "Aztec DK Sealed Quicksand Tunnel Barrel",
-                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $aztecSlam, $aztecPastSandPit"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $aztecSlam, $aztecPastSandPit, $strong"],
                 "sections": [
                     {
                         "name": "Golden Banana"

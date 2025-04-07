@@ -20,7 +20,8 @@
                 "k6",
                 "k7",
                 "k8"
-              ]
+              ],
+              ["blocker1", "blocker2", "blocker3", "blocker4", "blocker5", "blocker6", "blocker7", "blocker8"]
             ]
           }
         ]

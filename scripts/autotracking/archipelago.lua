@@ -44,6 +44,17 @@ local function activate_object(obj, code)
     end
 end
 
+local function process_blocker_values(blocker_values)
+    for blocker, value in pairs(blocker_values) do
+        local obj = Tracker:FindObjectForCode("blocker" .. blocker)
+        if obj then
+            obj.AcquiredCount = value
+        else
+            -- print(string.format("Warning: Could not find object for blocker %d", blocker))
+        end
+    end
+end
+
 local function process_removed_barriers(barriers)
     -- print("Processing RemovedBarriers...")
     -- print("Contents of RemovedBarriers:")
@@ -143,6 +154,10 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['BLockerValues'] then
+        process_blocker_values(slot_data['BLockerValues'])
+    end
+
     if slot_data['ForestTime'] then
         local obj = Tracker:FindObjectForCode("time")
         local stage = slot_data['ForestTime']
@@ -158,6 +173,17 @@ function onClear(slot_data)
     if slot_data['MedalCBRequirement'] then
         local obj = Tracker:FindObjectForCode("medalamount")
         obj.AcquiredCount = (slot_data['MedalCBRequirement'])
+    end
+
+    if slot_data['StartingKongs'] then
+        for kong in string.gmatch(slot_data['StartingKongs'], "[^,%s]+") do
+            local obj = Tracker:FindObjectForCode(kong)
+            if obj then
+                obj.Active = true
+            else
+                -- print(string.format("Warning: Could not find object for StartingKong %s", kong))
+            end
+        end
     end
 end
 

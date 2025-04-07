@@ -598,5 +598,101 @@
       "codes": "mermaid",
       "overlay_background": "#000000",
       "max_quantity": 5
+    },
+    {
+      "name": "Level 1 B. Locker",
+      "type": "consumable",
+      "allow_disabled": false,
+      "min_quantity": 0,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/blocker.png",
+      "codes": "blocker1",
+      "overlay_background": "#000000",
+      "max_quantity": 201
+    },
+    {
+      "name": "Level 2 B. Locker",
+      "type": "consumable",
+      "allow_disabled": false,
+      "min_quantity": 0,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/blocker.png",
+      "codes": "blocker2",
+      "overlay_background": "#000000",
+      "max_quantity": 201
+    },
+    {
+      "name": "Level 3 B. Locker",
+      "type": "consumable",
+      "allow_disabled": false,
+      "min_quantity": 0,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/blocker.png",
+      "codes": "blocker3",
+      "overlay_background": "#000000",
+      "max_quantity": 201
+    },
+    {
+      "name": "Level 4 B. Locker",
+      "type": "consumable",
+      "allow_disabled": false,
+      "min_quantity": 0,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/blocker.png",
+      "codes": "blocker4",
+      "overlay_background": "#000000",
+      "max_quantity": 201
+    },
+    {
+      "name": "Level 5 B. Locker",
+      "type": "consumable",
+      "allow_disabled": false,
+      "min_quantity": 0,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/blocker.png",
+      "codes": "blocker5",
+      "overlay_background": "#000000",
+      "max_quantity": 201
+    },
+    {
+      "name": "Level 6 B. Locker",
+      "type": "consumable",
+      "allow_disabled": false,
+      "min_quantity": 0,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/blocker.png",
+      "codes": "blocker6",
+      "overlay_background": "#000000",
+      "max_quantity": 201
+    },
+    {
+      "name": "Level 7 B. Locker",
+      "type": "consumable",
+      "allow_disabled": false,
+      "min_quantity": 0,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/blocker.png",
+      "codes": "blocker7",
+      "overlay_background": "#000000",
+      "max_quantity": 201
+    },
+    {
+      "name": "Level 8 B. Locker",
+      "type": "consumable",
+      "allow_disabled": false,
+      "min_quantity": 0,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/blocker.png",
+      "codes": "blocker8",
+      "overlay_background": "#000000",
+      "max_quantity": 201
     }
 ]

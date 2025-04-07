@@ -4,7 +4,7 @@
 function japesDKMedal()
 
     if not_has("donkey") then
-        return 0
+        return false
     end
     local cb_total = 15
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -30,7 +30,7 @@ end
 function japesDiddyMedal()
 
     if not_has("diddy") then
-        return 0
+        return false
     end
     local cb_total = 5
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -55,7 +55,7 @@ end
 function japesLankyMedal()
 
     if not_has("lanky") then
-        return 0
+        return false
     end
     local cb_total = 4
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -89,7 +89,7 @@ end
 function japesTinyMedal()
 
     if not_has("tiny") then
-        return 0
+        return false
     end
     local cb_total = 5
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -122,7 +122,7 @@ end
 
 function japesChunkyMedal()
     if not_has("chunky") then
-        return 0
+        return false
     end
     local cb_total = 15
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -146,7 +146,7 @@ end
 
 function aztecDKMedal()
     if not_has("donkey") then
-        return 0
+        return false
     end
     local cb_total = 3
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -173,7 +173,7 @@ end
 
 function aztecDiddyMedal()
     if not_has("diddy") then
-        return 0
+        return false
     end
     local cb_total = 5
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -206,7 +206,7 @@ end
 
 function aztecLankyMedal()
     if not_has("lanky") then
-        return 0
+        return false
     end
     local cb_total = 5
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -233,7 +233,7 @@ end
 
 function aztecTinyMedal()
     if not_has("tiny") then
-        return 0
+        return false
     end
     local cb_total = 0
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -263,7 +263,7 @@ end
 
 function aztecChunkyMedal()
     if not_has("chunky") then
-        return 0
+        return false
     end
     local cb_total = 5
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -284,7 +284,7 @@ end
 
 function factoryDKMedal()
     if not_has("donkey") then
-        return 0
+        return false
     end
     local cb_total = 15
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -308,7 +308,7 @@ end
 
 function factoryDiddyMedal()
     if not_has("diddy") then
-        return 0
+        return false
     end
     local cb_total = 12
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -332,7 +332,7 @@ end
 
 function factoryLankyMedal()
     if not_has("lanky") then
-        return 0
+        return false
     end
     local cb_total = 10
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -359,7 +359,7 @@ end
 
 function factoryTinyMedal()
     if not_has("tiny") then
-        return 0
+        return false
     end
     local cb_total = 10
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -389,7 +389,7 @@ end
 
 function factoryChunkyMedal()
     if not_has("chunky") then
-        return 0
+        return false
     end
     local cb_total = 20
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -421,7 +421,7 @@ end
 
 function galleonDKMedal()
     if not_has("donkey") then
-        return 0
+        return false
     end
     local cb_total = 0
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -454,7 +454,7 @@ end
 
 function galleonDiddyMedal()
     if not_has("diddy") then
-        return 0
+        return false
     end
     local cb_total = 10
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -481,7 +481,7 @@ end
 
 function galleonLankyMedal()
     if not_has("lanky") then
-        return 0
+        return false
     end
     local cb_total = 5
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -517,7 +517,7 @@ end
 
 function galleonTinyMedal()
     if not_has("tiny") then
-        return 0
+        return false
     end
     local cb_total = 9
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -553,7 +553,7 @@ end
 
 function galleonChunkyMedal()
     if not_has("chunky") then
-        return 0
+        return false
     end
     local cb_total = 12
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -586,7 +586,7 @@ end
 
 function forestDKMedal()
     if not_has("donkey") then
-        return 0
+        return false
     end
     local cb_total = 28
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -622,7 +622,7 @@ end
 
 function forestDiddyMedal()
     if not_has("diddy") then
-        return 0
+        return false
     end
     local cb_total = 28
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -652,7 +652,7 @@ end
 
 function forestLankyMedal()
     if not_has("lanky") then
-        return 0
+        return false
     end
     local cb_total = 21
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -682,7 +682,7 @@ end
 
 function forestTinyMedal()
     if not_has("tiny") then
-        return 0
+        return false
     end
     local cb_total = 10
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -719,7 +719,7 @@ end
 
 function forestChunkyMedal()
     if not_has("chunky") then
-        return 0
+        return false
     end
     local cb_total = 11
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -750,7 +750,7 @@ end
 
 function cavesDKMedal()
     if not_has("donkey") then
-        return 0
+        return false
     end
     local cb_total = 25
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -778,7 +778,7 @@ end
 
 function cavesDiddyMedal()
     if not_has("diddy") then
-        return 0
+        return false
     end
     local cb_total = 5
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -809,7 +809,7 @@ end
 
 function cavesLankyMedal()
     if not_has("lanky") then
-        return 0
+        return false
     end
     local cb_total = 15
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -849,7 +849,7 @@ end
 
 function cavesTinyMedal()
     if not_has("tiny") then
-        return 0
+        return false
     end
     local cb_total = 15
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -886,7 +886,7 @@ end
 
 function cavesChunkyMedal()
     if not_has("chunky") then
-        return 0
+        return false
     end
     local cb_total = 18
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -920,7 +920,7 @@ end
 
 function castleDKMedal()
     if not_has("donkey") then
-        return 0
+        return false
     end
     local cb_total = 50
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -945,7 +945,7 @@ end
 
 function castleDiddyMedal()
     if not_has("diddy") then
-        return 0
+        return false
     end
     local cb_total = 0
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -976,7 +976,7 @@ end
 
 function castleLankyMedal()
     if not_has("lanky") then
-        return 0
+        return false
     end
     local cb_total = 30
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -998,7 +998,7 @@ end
 
 function castleTinyMedal()
     if not_has("tiny") then
-        return 0
+        return false
     end
     local cb_total = 50
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
@@ -1026,7 +1026,7 @@ end
 
 function castleChunkyMedal()
     if not_has("chunky") then
-        return 0
+        return false
     end
     local cb_total = 30
     local cb_amount = Tracker:ProviderCountForCode("medalamount")

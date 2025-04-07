@@ -336,7 +336,7 @@
             },
             {            
                 "name": "Forest DK Mill Levels",
-                "access_rules": ["$dayTime, $grab, $forestSlam"],
+                "access_rules": ["$dayTime, $grab, $forestSlam, $nightTime"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -425,7 +425,7 @@
             },
             {            
                 "name": "Forest Chunky Keg Crushing",
-                "access_rules": ["$dayTime, barrel, $punch, $triangle"],
+                "access_rules": ["$dayTime, barrel, $punch, $triangle, $grab, $forestSlam"],
                 "sections": [
                     {
                         "name": "Golden Banana"

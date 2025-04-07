@@ -140,7 +140,7 @@
             },
             {
                 "name": "Caves Kasplat: On the Pillar",
-                "access_rules": ["$rocket", "$balloon"],
+                "access_rules": ["$rocket"],
                 "sections": [
                     {
                         "name": "Kasplat",
