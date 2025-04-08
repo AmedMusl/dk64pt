@@ -672,3 +672,50 @@ function mermaid()
     local mermaid = Tracker:ProviderCountForCode("mermaid")
     return pearls >= mermaid
 end
+
+function hasHelm(prefix)
+    for i = 1, 5 do
+        if has(prefix .. i) then
+            return true
+        end
+    end
+    return false
+end
+
+function dkHelm()
+    return hasHelm("helmdk")
+end
+
+function diddyHelm()
+    return hasHelm("helmdiddy")
+end
+
+function lankyHelm()
+    return hasHelm("helmlanky")
+end
+
+function tinyHelm()
+    return hasHelm("helmtiny")
+end
+
+function chunkyHelm()
+    return hasHelm("helmchunky")
+end
+
+function endOfHelm()
+    local helmOrder = {
+        {kong = "helmdk", check = bongos},
+        {kong = "helmdiddy", check = function() return rocket() and guitar() end},
+        {kong = "helmlanky", check = trombone},
+        {kong = "helmtiny", check = sax},
+        {kong = "helmchunky", check = triangle}
+    }
+
+    for _, helm in ipairs(helmOrder) do
+        if hasHelm(helm.kong) and not helm.check() then
+            return false
+        end
+    end
+
+    return true
+end

@@ -27,6 +27,7 @@
             {
                 "name": "Helm DK Medal",
                 "access_rules": ["$bongos"],
+                "visibility_rules": ["$dkHelm"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -43,6 +44,7 @@
             },
             {
                 "name": "Helm Diddy Medal",
+                "visibility_rules": ["$diddyHelm"],
                 "access_rules": ["$guitar, $rocket"],
                 "sections": [
                     {
@@ -60,6 +62,7 @@
             },
             {
                 "name": "Helm Lanky Medal",
+                "visibility_rules": ["$lankyHelm"],
                 "access_rules": ["$trombone"],
                 "sections": [
                     {
@@ -77,6 +80,7 @@
             },
             {
                 "name": "Helm Tiny Medal",
+                "visibility_rules": ["$tinyHelm"],
                 "access_rules": ["$sax"],
                 "sections": [
                     {
@@ -94,6 +98,7 @@
             },
             {
                 "name": "Helm Chunky Medal",
+                "visibility_rules": ["$chunkyHelm"],
                 "access_rules": ["$triangle"],
                 "sections": [
                     {
@@ -111,7 +116,7 @@
             },
             {
                 "name": "The End of Helm",
-                "access_rules": [],
+                "access_rules": ["$endOfHelm"],
                 "sections": [
                     {
                         "name": "Key",
@@ -130,7 +135,7 @@
             },
             {
                 "name": "Helm Fairy (Key 8 Room)",
-                "access_rules": ["camera"],
+                "access_rules": ["$endOfHelm, camera"],
                 "sections": [
                     {
                         "name": "Fairy 1",
