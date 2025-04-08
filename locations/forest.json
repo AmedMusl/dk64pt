@@ -353,7 +353,7 @@
             },
             {            
                 "name": "Forest Diddy Winch Cage",
-                "access_rules": ["$nightTime, $forestSlam, $charge, $guitar"],
+                "access_rules": ["$nightTime, $forestSlam, $charge, $guitar, $canChangeTime"],
                 "sections": [
                     {
                         "name": "Golden Banana"
