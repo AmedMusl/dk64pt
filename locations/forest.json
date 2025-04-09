@@ -208,7 +208,7 @@
             },
             {            
                 "name": "Forest Lanky Zinger Bounce",
-                "access_rules": ["$topOfMushroom, $forestSlam"],
+                "access_rules": ["$topOfMushroom, $forestSlam", lanky],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -225,7 +225,7 @@
             },
             {            
                 "name": "Forest Lanky Coloured Mushroom Slam",
-                "access_rules": ["$topOfMushroom, $forestSlam"],
+                "access_rules": ["$topOfMushroom, $forestSlam", lanky],
                 "sections": [
                     {
                         "name": "Golden Banana"
