@@ -11,9 +11,9 @@ function has_more_then_n_consumable(n)
         print(string.format("called has_more_then_n_consumable: count: %s, n: %s, val: %s", count, n, val))
     end
     if val then
-        return true -- 1 => access is in logic
+        return 1 -- 1 => access is in logic
     end
-    return false -- 0 => no access
+    return 0 -- 0 => no access
 end
 
 function has(item, amount)
@@ -149,7 +149,7 @@ function canChangeTime()
 end
 
 function topOfMushroom()
-    return (rocket() or has("climb")) and ostand() or rocket()
+    return canClimbMushroom() and (ostand() or rocket())
 end
 
 function canClearGauntlet()
@@ -174,6 +174,10 @@ function canBeatSpider()
     elseif has("dusk") then
         return punch() and canChangeTime()
     end
+end
+
+function canClimbMushroom()
+    return has("climb") or rocket() or (coconut() and peanuts() and grape() and feather() and pineapple())
 end
 
 function raisedWater()
@@ -719,3 +723,31 @@ function endOfHelm()
 
     return true
 end
+
+function toggleLevelOrder()
+    if has("k1") then
+        Tracker:FindObjectForCode("num2").Active = true
+    end
+    if has("k2") then
+        Tracker:FindObjectForCode("num3").Active = true
+        Tracker:FindObjectForCode("num4").Active = true
+    end
+    if has("k4") then
+        Tracker:FindObjectForCode("num5").Active = true
+    end
+    if has("k5") then
+        Tracker:FindObjectForCode("num6").Active = true
+        Tracker:FindObjectForCode("num7").Active = true
+    end
+    if has("k6") and has("k7") then
+        Tracker:FindObjectForCode("num8").Active = true
+    end
+end
+
+ScriptHost:AddWatchForCode("number2", "k1", toggleLevelOrder)
+ScriptHost:AddWatchForCode("number34", "k2", toggleLevelOrder)
+ScriptHost:AddWatchForCode("number5", "k4", toggleLevelOrder)
+ScriptHost:AddWatchForCode("number67", "k5", toggleLevelOrder)
+ScriptHost:AddWatchForCode("number8", "k6", toggleLevelOrder)
+ScriptHost:AddWatchForCode("number8_k6", "k6", toggleLevelOrder)
+ScriptHost:AddWatchForCode("number8_k7", "k7", toggleLevelOrder)

@@ -38,6 +38,11 @@
                         "access_rules": ["$factoryChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
                     }
                 ],
                 "map_locations": [
@@ -425,14 +430,14 @@
                 ]
             },
             {            
-                "name": "DK Arcade",
+                "name": "DK Arcade Round 2",
                 "access_rules": ["$blast"],
                 "sections": [
+                    // {
+                    //     "name": "DK Arcade Round 1"
+                    // },
                     {
-                        "name": "DK Arcade Round 1"
-                    },
-                    {
-                        "name": "DK Arcade Nintendo Coin",
+                        "name": "Nintendo Coin",
                         "access_rules": ["$grab, climb"],
                         "chest_unopened_img": "images/items/n64rw_coin.png",
                         "chest_opened_img": "images/items/n64rwbw.png"
@@ -603,50 +608,50 @@
                         "size": 10
                     }
                 ]
-            },
-            {
-                "name": "Factory Boss Defeated",
-                "access_rules": [],
-                "sections": [
-                    {
-                        "name": "Boss",
-                        "chest_unopened_img": "images/items/scoff.png",
-                        "chest_opened_img": "images/items/scoffbw.png"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "factory",
-                        "x": 242,
-                        "y": 372,
-                        "size": 10
-                    },
-                    {
-                        "map": "factory",
-                        "x": 535,
-                        "y": 155,
-                        "size": 10
-                    },
-                    {
-                        "map": "factory",
-                        "x": 714,
-                        "y": 407,
-                        "size": 10
-                    },
-                    {
-                        "map": "factory",
-                        "x": 867,
-                        "y": 536,
-                        "size": 10
-                    },
-                    {
-                        "map": "factory",
-                        "x": 1430,
-                        "y": 278,
-                        "size": 10
-                    }
-                ]
             }
+            // {
+            //     "name": "Factory Boss Defeated",
+            //     "access_rules": [],
+            //     "sections": [
+            //         {
+            //             "name": "Boss",
+            //             "chest_unopened_img": "images/items/scoff.png",
+            //             "chest_opened_img": "images/items/scoffbw.png"
+            //         }
+            //     ],
+            //     "map_locations": [
+            //         {
+            //             "map": "factory",
+            //             "x": 242,
+            //             "y": 372,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "factory",
+            //             "x": 535,
+            //             "y": 155,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "factory",
+            //             "x": 714,
+            //             "y": 407,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "factory",
+            //             "x": 867,
+            //             "y": 536,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "factory",
+            //             "x": 1430,
+            //             "y": 278,
+            //             "size": 10
+            //         }
+            //     ]
+            // }
         ]
     }
 ]

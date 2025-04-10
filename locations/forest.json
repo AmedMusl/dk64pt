@@ -38,6 +38,11 @@
                         "access_rules": ["$forestChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
                     }
                 ],
                 "map_locations": [
@@ -93,15 +98,11 @@
                     },
                     {
                         "name": "Forest Tiny Mushroom Barrel",
-                        "access_rules": ["$forestSlam, tiny"]
+                        "access_rules": ["$forestSlam, tiny, climb"]
                     },
                     {
                         "name": "Forest Kasplat: Inside Giant Mushroom",
-                        "access_rules": [
-                        "climb",
-                        "$rocket",
-                         "@Fungi Forest/Inside the Mushroom/Forest DK Mushroom Cannons"
-                        ],
+                        "access_rules": ["$canClimbMushroom"],
                         "chest_unopened_img": "images/items/diddy_bp.png",
                         "chest_opened_img": "images/items/blueprintbw.png"
                     }
@@ -117,7 +118,7 @@
             },
             {            
                 "name": "Forest Kasplat: Lower Mushroom Exterior",
-                "access_rules": ["climb", "$rocket"],
+                "access_rules": ["$canClimbMushroom"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -136,7 +137,7 @@
             },
             {            
                 "name": "Forest DK Baboon Blast",
-                "access_rules": ["$blast, climb", "$blast, $rocket"],
+                "access_rules": ["$blast, $canClimbMushroom"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -153,7 +154,7 @@
             },
             {            
                 "name": "Forest Kasplat: Mushroom Night Door",
-                "access_rules": ["climb", "$rocket"],
+                "access_rules": ["$canClimbMushroom"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -172,7 +173,7 @@
             },
             {            
                 "name": "Forest Battle Arena: High Ladder Platform",
-                "access_rules": ["climb", "$rocket"],
+                "access_rules": ["$canClimbMushroom"],
                 "sections": [
                     {
                         "name": "Crown",
@@ -191,7 +192,7 @@
             },
             {            
                 "name": "Forest Chunky Face Puzzle",
-                "access_rules": ["$forestSlam, $pineapple, climb", "$forestSlam, $pineapple, $rocket"],
+                "access_rules": ["$canClimbMushroom, $forestSlam, $pineapple"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -208,7 +209,7 @@
             },
             {            
                 "name": "Forest Lanky Zinger Bounce",
-                "access_rules": ["$topOfMushroom, $forestSlam"],
+                "access_rules": ["$topOfMushroom, $forestSlam, lanky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -225,7 +226,7 @@
             },
             {            
                 "name": "Forest Lanky Coloured Mushroom Slam",
-                "access_rules": ["$topOfMushroom, $forestSlam"],
+                "access_rules": ["$topOfMushroom, $forestSlam, lanky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -625,50 +626,50 @@
                         "size": 10
                     }
                 ]
-            },
-            {
-                "name": "Forest Boss Defeated",
-                "access_rules": [],
-                "sections": [
-                    {
-                        "name": "Boss",
-                        "chest_unopened_img": "images/items/scoff.png",
-                        "chest_opened_img": "images/items/scoffbw.png"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "forest",
-                        "x": 800,
-                        "y": 696,
-                        "size": 10
-                    },
-                    {
-                        "map": "forest",
-                        "x": 360,
-                        "y": 754,
-                        "size": 10
-                    },
-                    {
-                        "map": "forest",
-                        "x": 359,
-                        "y": 676,
-                        "size": 10
-                    },
-                    {
-                        "map": "forest",
-                        "x": 423,
-                        "y": 241,
-                        "size": 10
-                    },
-                    {
-                        "map": "forest",
-                        "x": 964,
-                        "y": 252,
-                        "size": 10
-                    }
-                ]
             }
+            // {
+            //     "name": "Forest Boss Defeated",
+            //     "access_rules": [],
+            //     "sections": [
+            //         {
+            //             "name": "Boss",
+            //             "chest_unopened_img": "images/items/scoff.png",
+            //             "chest_opened_img": "images/items/scoffbw.png"
+            //         }
+            //     ],
+            //     "map_locations": [
+            //         {
+            //             "map": "forest",
+            //             "x": 800,
+            //             "y": 696,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "forest",
+            //             "x": 360,
+            //             "y": 754,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "forest",
+            //             "x": 359,
+            //             "y": 676,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "forest",
+            //             "x": 423,
+            //             "y": 241,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "forest",
+            //             "x": 964,
+            //             "y": 252,
+            //             "size": 10
+            //         }
+            //     ]
+            // }
         ]
     }
 ]

@@ -38,6 +38,11 @@
                         "access_rules": ["$cavesChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
                     }
                 ],
                 "map_locations": [
@@ -520,44 +525,44 @@
                         "size": 12
                     }
                 ]
-            },
-            {
-                "name": "Caves Boss Defeated",
-                "access_rules": [],
-                "sections": [
-                    {
-                        "name": "Boss",
-                        "chest_unopened_img": "images/items/scoff.png",
-                        "chest_opened_img": "images/items/scoffbw.png"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "caves",
-                        "x": 856,
-                        "y": 688,
-                        "size": 12
-                    },
-                    {
-                        "map": "caves",
-                        "x": 630,
-                        "y": 812,
-                        "size": 12
-                    },
-                    {
-                        "map": "caves",
-                        "x": 397,
-                        "y": 334,
-                        "size": 12
-                    },
-                    {
-                        "map": "caves",
-                        "x": 381,
-                        "y": 503,
-                        "size": 12
-                    }
-                ]
             }
+            // {
+            //     "name": "Caves Boss Defeated",
+            //     "access_rules": [],
+            //     "sections": [
+            //         {
+            //             "name": "Boss",
+            //             "chest_unopened_img": "images/items/scoff.png",
+            //             "chest_opened_img": "images/items/scoffbw.png"
+            //         }
+            //     ],
+            //     "map_locations": [
+            //         {
+            //             "map": "caves",
+            //             "x": 856,
+            //             "y": 688,
+            //             "size": 12
+            //         },
+            //         {
+            //             "map": "caves",
+            //             "x": 630,
+            //             "y": 812,
+            //             "size": 12
+            //         },
+            //         {
+            //             "map": "caves",
+            //             "x": 397,
+            //             "y": 334,
+            //             "size": 12
+            //         },
+            //         {
+            //             "map": "caves",
+            //             "x": 381,
+            //             "y": 503,
+            //             "size": 12
+            //         }
+            //     ]
+            // }
         ]
     }
 ]

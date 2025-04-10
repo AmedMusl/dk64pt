@@ -15,7 +15,13 @@ function japesDKMedal()
         cb_total = cb_total + 16
     end
     if coconut() then
-        cb_total = cb_total +39
+        cb_total = cb_total + 10
+    end
+    if coconut() and coconutCage() then
+        cb_total = cb_total + 20
+    end
+    if coconutCage() then
+        cb_total = cb_total + 9
     end
     if has("vine") and has("climb") then
         cb_total = cb_total + 10
@@ -46,7 +52,7 @@ function japesDiddyMedal()
     if has("climb") and peanuts() and japesSlam() then
         cb_total = cb_total + 20
     end
-    if coconut() then
+    if coconutCage() then
         cb_total = cb_total + 8
     end
     return cb_total >= cb_amount
@@ -57,22 +63,19 @@ function japesLankyMedal()
     if not_has("lanky") then
         return false
     end
-    local cb_total = 4
+    local cb_total = 1
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
     if has("dive") then
         cb_total = cb_total + 5
     end
     if has("climb") then
-        cb_total = cb_total + 15
+        cb_total = cb_total + 10
     end
-    if grape() then
+    if coconutCage() and grape() then
         cb_total = cb_total + 20
     end
     if ostand() then
-        cb_total = cb_total + 11
-    end
-    if coconut() then
-        cb_total = cb_total + 10
+        cb_total = cb_total + 5
     end
     if ostand() and peanuts() then
         cb_total = cb_total + 20
@@ -80,8 +83,17 @@ function japesLankyMedal()
     if ostand() and peanuts() and grape() then
         cb_total = cb_total + 10
     end
-    if peanuts() and grape() then
+    if coconutCage() then
         cb_total = cb_total + 5
+    end
+    if coconutCage() and ostand() then
+        cb_total = cb_total + 9
+    end
+    if coconutCage() and has("climb") then
+        cb_total = cb_total + 5
+    end
+    if coconutCage() and coconut() then
+        cb_total = cb_total + 10
     end
     return cb_total >= cb_amount
 end
@@ -89,17 +101,17 @@ end
 function japesTinyMedal()
 
     if not_has("tiny") then
-        return false
+        return 0
     end
     local cb_total = 5
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
     if has("climb") then
         cb_total = cb_total + 5
     end
-    if coconutCage() then
+    if coconutCage() and coconut() then
         cb_total = cb_total + 12
     end
-    if coconutCage() and feather() then
+    if coconutCage() and coconut() and feather() then
         cb_total = cb_total + 10
     end
     if feather() then
@@ -138,7 +150,7 @@ function japesChunkyMedal()
     if shellhive() and hunky() and has("climb") then
         cb_total = cb_total + 20
     end
-    if has("barrel") and has("chunky") then
+    if has("barrel") then
         cb_total = cb_total + 15
     end
     return cb_total >= cb_amount

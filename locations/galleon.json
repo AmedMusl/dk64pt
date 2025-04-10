@@ -38,6 +38,11 @@
                         "access_rules": ["$galleonChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
                     }
                 ],
                 "map_locations": [
@@ -564,50 +569,50 @@
                         "size": 10
                     }
                 ]
-            },
-            {
-                "name": "Galleon Boss Defeated",
-                "access_rules": ["vine", "dive, $shipyard", "dive, $lighthouse"],
-                "sections": [
-                    {
-                        "name": "Boss",
-                        "chest_unopened_img": "images/items/scoff.png",
-                        "chest_opened_img": "images/items/scoffbw.png"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "galleon",
-                        "x": 537,
-                        "y": 229,
-                        "size": 10
-                    },
-                    {
-                        "map": "galleon",
-                        "x": 854,
-                        "y": 703,
-                        "size": 10
-                    },
-                    {
-                        "map": "galleon",
-                        "x": 778,
-                        "y": 506,
-                        "size": 10
-                    },
-                    {
-                        "map": "galleon",
-                        "x": 346,
-                        "y": 674,
-                        "size": 10
-                    },
-                    {
-                        "map": "galleon",
-                        "x": 160,
-                        "y": 41,
-                        "size": 10
-                    }
-                ]
             }
+            // {
+            //     "name": "Galleon Boss Defeated",
+            //     "access_rules": ["vine", "dive, $shipyard", "dive, $lighthouse"],
+            //     "sections": [
+            //         {
+            //             "name": "Boss",
+            //             "chest_unopened_img": "images/items/scoff.png",
+            //             "chest_opened_img": "images/items/scoffbw.png"
+            //         }
+            //     ],
+            //     "map_locations": [
+            //         {
+            //             "map": "galleon",
+            //             "x": 537,
+            //             "y": 229,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "galleon",
+            //             "x": 854,
+            //             "y": 703,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "galleon",
+            //             "x": 778,
+            //             "y": 506,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "galleon",
+            //             "x": 346,
+            //             "y": 674,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "galleon",
+            //             "x": 160,
+            //             "y": 41,
+            //             "size": 10
+            //         }
+            //     ]
+            // }
         ]
     }
 ]

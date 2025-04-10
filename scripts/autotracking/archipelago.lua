@@ -237,7 +237,24 @@ function onLocation(location_id, location_name)
     end
 end
 
+-- function onScout(location_id, location_name, item_id, item_name, item_player)
+--     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+--         print(string.format("called onScout: %s, %s, %s, %s, %s", location_id, location_name, item_id, item_name,
+--             item_player))
+--     end
+--     -- not implemented yet :(
+-- end
+
+-- function onBounce(json)
+--     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+--         print(string.format("called onBounce: %s", dump_table(json)))
+--     end
+--     -- your code goes here
+-- end
+
 
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
+-- Archipelago:AddScoutHandler("scout handler", onScout)
+-- Archipelago:AddBouncedHandler("bounce handler", onBounce)

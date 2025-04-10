@@ -38,6 +38,11 @@
                         "access_rules": ["$aztecChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
                     }
                 ],
                 "map_locations": [
@@ -423,7 +428,7 @@
             },
             {
                 "name": "Aztec Free Lanky Item",
-                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $bongos, $coconut, dive"],
+                "access_rules": ["$llamaSwitches, $canEnterLlamaTemple, $bongos, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -545,44 +550,44 @@
                         "size": 10
                     }
                 ]
-            },
-            {
-                "name": "Aztec Boss Defeated",
-                "access_rules": [],
-                "sections": [
-                    {
-                        "name": "Boss",
-                        "chest_unopened_img": "images/items/scoff.png",
-                        "chest_opened_img": "images/items/scoffbw.png"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "aztec",
-                        "x": 618,
-                        "y": 851,
-                        "size": 10
-                    },
-                    {
-                        "map": "aztec",
-                        "x": 674,
-                        "y": 289,
-                        "size": 10
-                    },
-                    {
-                        "map": "aztec",
-                        "x": 386,
-                        "y": 94,
-                        "size": 10
-                    },
-                    {
-                        "map": "aztec",
-                        "x": 517,
-                        "y": 107,
-                        "size": 10
-                    }
-                ]
             }
+            // {
+            //     "name": "Aztec Boss Defeated",
+            //     "access_rules": [],
+            //     "sections": [
+            //         {
+            //             "name": "Boss",
+            //             "chest_unopened_img": "images/items/scoff.png",
+            //             "chest_opened_img": "images/items/scoffbw.png"
+            //         }
+            //     ],
+            //     "map_locations": [
+            //         {
+            //             "map": "aztec",
+            //             "x": 618,
+            //             "y": 851,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "aztec",
+            //             "x": 674,
+            //             "y": 289,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "aztec",
+            //             "x": 386,
+            //             "y": 94,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "aztec",
+            //             "x": 517,
+            //             "y": 107,
+            //             "size": 10
+            //         }
+            //     ]
+            // }
         ]
     }
 ]

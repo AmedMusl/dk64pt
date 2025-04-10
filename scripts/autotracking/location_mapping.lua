@@ -38,7 +38,7 @@ LOCATION_MAPPING = {
 	[14041240] = {"@Angry Aztec/Aztec Lanky Matching Game/Golden Banana"},
 	[14041242] = {"@Angry Aztec/Aztec Tiny Llama Temple Lava Pedestals/Golden Banana"},
 	[14041243] = {"@Angry Aztec/Aztec Kasplat: Llama Temple Lava/Kasplat"},
-	[14041244] = {"@Angry Aztec/Aztec Boss Defeated/Boss"},
+	[14041244] = {"@Angry Aztec/Medals/Boss"},
 	-- Castle
 	[14041389] = {"@Creepy Castle/Medals/Castle DK Medal"},
 	[14041390] = {"@Creepy Castle/Medals/Castle Diddy Medal"},
@@ -75,7 +75,7 @@ LOCATION_MAPPING = {
 	[14041419] = {"@Creepy Castle/Castle DK Dungeon/Golden Banana"},
 	[14041420] = {"@Creepy Castle/Castle Diddy Dungeon/Golden Banana"},
 	[14041421] = {"@Creepy Castle/Castle Lanky Dungeon/Golden Banana"},
-	[14041422] = {"@Creepy Castle/Castle Boss Defeated/Boss"},
+	[14041422] = {"@Creepy Castle/Medals/Boss"},
 	-- Caves
 	[14041355] = {"@Crystal Caves/Medals/Caves DK Medal"},
 	[14041356] = {"@Crystal Caves/Medals/Caves Diddy Medal"},
@@ -111,7 +111,7 @@ LOCATION_MAPPING = {
 	[14041385] = {"@Crystal Caves/Caves Lanky Sprint Cabin/Golden Banana"},
 	[14041386] = {"@Crystal Caves/Caves Tiny 5 Door Cabin/Golden Banana"},
 	[14041387] = {"@Crystal Caves/Caves Chunky 5 Door Cabin/Golden Banana"},
-	[14041388] = {"@Crystal Caves/Caves Boss Defeated/Boss"},
+	[14041388] = {"@Crystal Caves/Medals/Boss"},
 	-- Isles
 	[14041686] = {"@DK Isles/Isles Dirt: Training Grounds Rear Tunnel/Rainbow Coin"},
 	[14041687] = {"@DK Isles/Isles Dirt: Banana Hoard/Rainbow Coin"},
@@ -229,7 +229,7 @@ LOCATION_MAPPING = {
 	[14041351] = {"@Fungi Forest/Forest Tiny Top of Beanstalk/Golden Banana"},
 	[14041352] = {"@Fungi Forest/Forest Chunky Apple Rescue/Golden Banana"},
 	[14041681] = {"@Fungi Forest/Forest Dirt: Beanstalk/Rainbow Coin"},
-	[14041354] = {"@Fungi Forest/Forest Boss Defeated/Boss"},
+	[14041354] = {"@Fungi Forest/Medals/Boss"},
 	-- Helm
 	[14041433] = {"@Hideout Helm/Helm Battle Arena/Crown"},
 	[14041434] = {"@Hideout Helm/Helm DK Medal/Medal"},
@@ -277,7 +277,7 @@ LOCATION_MAPPING = {
 	[14041205] = {"@Jungle Japes/Japes Diddy Minecart/Golden Banana"},
 	[14041206] = {"@Jungle Japes/Japes Chunky Underground/Golden Banana"},
 	[14041207] = {"@Jungle Japes/Japes Kasplat: Underground/Kasplat"},
-	[14041208] = {"@Jungle Japes/Japes Boss Defeated/Boss"},
+	[14041208] = {"@Jungle Japes/Medals/Boss"},
 	-- Factory
 	[14041245] = {"@Frantic Factory/Medals/Factory DK Medal"},
 	[14041246] = {"@Frantic Factory/Medals/Factory Diddy Medal"},
@@ -305,10 +305,10 @@ LOCATION_MAPPING = {
 	[14041675] = {"@Frantic Factory/Factory Dirt: Dark Room/Rainbow Coin"},
 	[14041273] = {"@Frantic Factory/Factory Kasplat: Pole to Arcade/Kasplat"},
 	[14041693] = {"@Frantic Factory/Factory Crate: Near Candy/Crate"},
-	[14041267] = {"@Frantic Factory/DK Arcade/DK Arcade Round 1"},
+	-- [14041267] = {"@Frantic Factory/DK Arcade/DK Arcade Round 1"},
 	[14041269] = {"@Frantic Factory/Factory Tiny Mini by Arcade/Golden Banana"},
 	[14041271] = {"@Frantic Factory/Factory Chunky Barrel by Arcade/Golden Banana"},
-	[14041266] = {"@Frantic Factory/DK Arcade/DK Arcade Nintendo Coin"},
+	[14041266] = {"@Frantic Factory/DK Arcade Round 2/Nintendo Coin"},
 	[14041272] = {"@Frantic Factory/Factory Kasplat: Base of Production/Kasplat"},
 	[14041274] = {"@Frantic Factory/Factory DK Crusher Room/Golden Banana"},
 	[14041278] = {"@Frantic Factory/Factory Chunky Production Timer/Golden Banana"},
@@ -316,7 +316,7 @@ LOCATION_MAPPING = {
 	[14041276] = {"@Frantic Factory/Factory Lanky Production Handstand/Golden Banana"},
 	[14041277] = {"@Frantic Factory/Factory Tiny Production Twirl/Golden Banana"},
 	[14041279] = {"@Frantic Factory/Factory Kasplat: Upper Production Pipe/Kasplat"},
-	[14041280] = {"@Frantic Factory/Factory Boss Defeated/Boss"},
+	[14041280] = {"@Frantic Factory/Medals/Boss"},
 	-- Galleon
 	[14041281] = {"@Gloomy Galleon/Medals/Galleon DK Medal"},
 	[14041282] = {"@Gloomy Galleon/Medals/Galleon Diddy Medal"},
@@ -358,7 +358,7 @@ LOCATION_MAPPING = {
 	[14041311] = {"@Gloomy Galleon/Galleon Tiny 5-Door Ship/Golden Banana"},
 	[14041312] = {"@Gloomy Galleon/Galleon Tiny 5-Door Ship/Fairy"},
 	[14041313] = {"@Gloomy Galleon/Galleon Chunky 5-Door Ship/Golden Banana"},
-	[14041319] = {"@Gloomy Galleon/Galleon Boss Defeated/Boss"},
+	[14041319] = {"@Gloomy Galleon/Medals/Boss"},
 	-- Shops
 	[14041448] = {"@Japes Shops/Japes Funky/Funky DK"},
 	[14041449] = {"@Japes Shops/Japes Funky/Funky Diddy"},

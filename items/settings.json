@@ -166,7 +166,7 @@
     },
     {
       "name": "L2 Number",
-      "type": "static",
+      "type": "toggle",
       "img": "images/settings/2.png",
       "codes": "num2"
     },
@@ -219,7 +219,7 @@
     },
     {
       "name": "L3 Number",
-      "type": "static",
+      "type": "toggle",
       "img": "images/settings/3.png",
       "codes": "num3"
     },
@@ -272,7 +272,7 @@
     },
     {
       "name": "L4 Number",
-      "type": "static",
+      "type": "toggle",
       "img": "images/settings/4.png",
       "codes": "num4"
     },
@@ -325,7 +325,7 @@
     },
     {
       "name": "L5 Number",
-      "type": "static",
+      "type": "toggle",
       "img": "images/settings/5.png",
       "codes": "num5"
     },
@@ -378,7 +378,7 @@
     },
     {
       "name": "L6 Number",
-      "type": "static",
+      "type": "toggle",
       "img": "images/settings/6.png",
       "codes": "num6"
     },
@@ -431,7 +431,7 @@
     },
     {
       "name": "L7 Number",
-      "type": "static",
+      "type": "toggle",
       "img": "images/settings/7.png",
       "codes": "num7"
     },
@@ -484,7 +484,7 @@
     },
     {
       "name": "L8 Number",
-      "type": "static",
+      "type": "toggle",
       "img": "images/settings/8.png",
       "codes": "num8"
     },

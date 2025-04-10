@@ -599,7 +599,7 @@
       // },
       {
         "name": "Isles Tiny Galleon Lobby Swim",
-        "access_rules": ["$canEnterGalleon, $mini, $galleonSlam, chunky, dive"],
+        "access_rules": ["$canEnterGalleon, $mini, $galleonSlam, chunky, dive, $twirl"],
         "sections": [
           {
             "name": "Golden Banana"

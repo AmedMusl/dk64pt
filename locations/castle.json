@@ -38,6 +38,11 @@
                         "access_rules": ["$castleChunkyMedal"],
                         "chest_unopened_img": "images/items/bananamedal.png",
                         "chest_opened_img": "images/items/bananamedalbw.png"
+                    },
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/items/scoff.png",
+                        "chest_opened_img": "images/items/scoffbw.png"
                     }
                 ],
                 "map_locations": [
@@ -143,7 +148,7 @@
                     },
                     {
                         "name": "Castle Fairy (Tree Sniping Room)",
-                        "access_rules": ["$coconut, sniper, dive, camera"],
+                        "access_rules": ["$coconut, dive, camera"],
                         "chest_unopened_img": "images/items/fairy.png",
                         "chest_opened_img": "images/items/fairybw.png"
                     }
@@ -193,7 +198,7 @@
             },
             {            
                 "name": "Castle Fairy (Near Car Race)",
-                "access_rules": ["$castleSlam, $port, camera"],
+                "access_rules": ["$castleSlam, $port, camera, diddy"],
                 "sections": [
                     {
                         "name": "Fairy",
@@ -212,7 +217,7 @@
             },
             {            
                 "name": "Castle Tiny Car Race",
-                "access_rules": ["$castleSlam, $port, $mini"],
+                "access_rules": ["$castleSlam, $port, $mini, diddy"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -514,50 +519,50 @@
                         "size": 16
                     }
                 ]
-            },
-            {
-                "name": "Castle Boss Defeated",
-                "access_rules": [],
-                "sections": [
-                    {
-                        "name": "Boss",
-                        "chest_unopened_img": "images/items/scoff.png",
-                        "chest_opened_img": "images/items/scoffbw.png"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "castle",
-                        "x": 202,
-                        "y": 596,
-                        "size": 10
-                    },
-                    {
-                        "map": "castle",
-                        "x": 760,
-                        "y": 864,
-                        "size": 10
-                    },
-                    {
-                        "map": "castle",
-                        "x": 670,
-                        "y": 755,
-                        "size": 10
-                    },
-                    {
-                        "map": "dungeontunnel",
-                        "x": 395,
-                        "y": 616,
-                        "size": 16
-                    },
-                    {
-                        "map": "crypthub",
-                        "x": 913,
-                        "y": 93,
-                        "size": 16
-                    }
-                ]
             }
+            // {
+            //     "name": "Castle Boss Defeated",
+            //     "access_rules": [],
+            //     "sections": [
+            //         {
+            //             "name": "Boss",
+            //             "chest_unopened_img": "images/items/scoff.png",
+            //             "chest_opened_img": "images/items/scoffbw.png"
+            //         }
+            //     ],
+            //     "map_locations": [
+            //         {
+            //             "map": "castle",
+            //             "x": 202,
+            //             "y": 596,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "castle",
+            //             "x": 760,
+            //             "y": 864,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "castle",
+            //             "x": 670,
+            //             "y": 755,
+            //             "size": 10
+            //         },
+            //         {
+            //             "map": "dungeontunnel",
+            //             "x": 395,
+            //             "y": 616,
+            //             "size": 16
+            //         },
+            //         {
+            //             "map": "crypthub",
+            //             "x": 913,
+            //             "y": 93,
+            //             "size": 16
+            //         }
+            //     ]
+            // }
         ]
     }    
 ]
