@@ -1,0 +1,2092 @@
+[
+    {
+        "name": "aztecDKMedal",
+        "type": "toggle",
+        "codes": "aztecDKMedal"
+    },
+    {
+        "name": "aztecDiddyMedal",
+        "type": "toggle",
+        "codes": "aztecDiddyMedal"
+    },
+    {
+        "name": "aztecLankyMedal",
+        "type": "toggle",
+        "codes": "aztecLankyMedal"
+    },
+    {
+        "name": "aztecTinyMedal",
+        "type": "toggle",
+        "codes": "aztecTinyMedal"
+    },
+    {
+        "name": "aztecChunkyMedal",
+        "type": "toggle",
+        "codes": "aztecChunkyMedal"
+    },
+    {
+        "name": "aztecChunkyVases",
+        "type": "toggle",
+        "codes": "aztecChunkyVases"
+    },
+    {
+        "name": "aztecDKKasplat",
+        "type": "toggle",
+        "codes": "aztecDKKasplat"
+    },
+    {
+        "name": "aztecFreeLlama",
+        "type": "toggle",
+        "codes": "aztecFreeLlama"
+    },
+    {
+        "name": "aztecDiddyKasplat",
+        "type": "toggle",
+        "codes": "aztecDiddyKasplat"
+    },
+    {
+        "name": "aztecOasisDirt",
+        "type": "toggle",
+        "codes": "aztecOasisDirt"
+    },
+    {
+        "name": "aztecChunkyKlaptrap",
+        "type": "toggle",
+        "codes": "aztecChunkyKlaptrap"
+    },
+    {
+        "name": "aztecTinyKlaptrap",
+        "type": "toggle",
+        "codes": "aztecTinyKlaptrap"
+    },
+    {
+        "name": "aztecLankyVulture",
+        "type": "toggle",
+        "codes": "aztecLankyVulture"
+    },
+    {
+        "name": "aztecArena",
+        "type": "toggle",
+        "codes": "aztecArena"
+    },
+    {
+        "name": "aztecFreeTiny",
+        "type": "toggle",
+        "codes": "aztecFreeTiny"
+    },
+    {
+        "name": "aztecChunkyCagedBarrel",
+        "type": "toggle",
+        "codes": "aztecChunkyCagedBarrel"
+    },
+    {
+        "name": "aztecTinyKasplat",
+        "type": "toggle",
+        "codes": "aztecTinyKasplat"
+    },
+    {
+        "name": "aztecDiddyGongs",
+        "type": "toggle",
+        "codes": "aztecDiddyGongs"
+    },
+    {
+        "name": "aztecDiddyVulture",
+        "type": "toggle",
+        "codes": "aztecDiddyVulture"
+    },
+    {
+        "name": "aztecLlamaTopCrate",
+        "type": "toggle",
+        "codes": "aztecLlamaTopCrate"
+    },
+    {
+        "name": "aztecGongCrate",
+        "type": "toggle",
+        "codes": "aztecGongCrate"
+    },
+    {
+        "name": "aztecDKQuicksand",
+        "type": "toggle",
+        "codes": "aztecDKQuicksand"
+    },
+    {
+        "name": "aztecDK5DT",
+        "type": "toggle",
+        "codes": "aztecDK5DT"
+    },
+    {
+        "name": "aztecDiddy5DT",
+        "type": "toggle",
+        "codes": "aztecDiddy5DT"
+    },
+    {
+        "name": "aztecLanky5DT",
+        "type": "toggle",
+        "codes": "aztecLanky5DT"
+    },
+    {
+        "name": "aztecTiny5DT",
+        "type": "toggle",
+        "codes": "aztecTiny5DT"
+    },
+    {
+        "name": "aztec5DTFairy",
+        "type": "toggle",
+        "codes": "aztec5DTFairy"
+    },
+    {
+        "name": "aztecChunky5DT",
+        "type": "toggle",
+        "codes": "aztecChunky5DT"
+    },
+    {
+        "name": "aztecChunkyKasplat",
+        "type": "toggle",
+        "codes": "aztecChunkyKasplat"
+    },
+    {
+        "name": "aztec5DTDirt",
+        "type": "toggle",
+        "codes": "aztec5DTDirt"
+    },
+    {
+        "name": "aztecTinyRace",
+        "type": "toggle",
+        "codes": "aztecTinyRace"
+    },
+    {
+        "name": "aztecFreeLanky",
+        "type": "toggle",
+        "codes": "aztecFreeLanky"
+    },
+    {
+        "name": "aztecLankyOstandBarrel",
+        "type": "toggle",
+        "codes": "aztecLankyOstandBarrel"
+    },
+    {
+        "name": "aztecLlamaFairy",
+        "type": "toggle",
+        "codes": "aztecLlamaFairy"
+    },
+    {
+        "name": "aztecLlamaCrate",
+        "type": "toggle",
+        "codes": "aztecLlamaCrate"
+    },
+    {
+        "name": "aztecLankyMatching",
+        "type": "toggle",
+        "codes": "aztecLankyMatching"
+    },
+    {
+        "name": "aztecTinyPedestals",
+        "type": "toggle",
+        "codes": "aztecTinyPedestals"
+    },
+    {
+        "name": "aztecLankyKasplat",
+        "type": "toggle",
+        "codes": "aztecLankyKasplat"
+    },
+    {
+        "name": "aztecBoss",
+        "type": "toggle",
+        "codes": "aztecBoss"
+    },
+    {
+        "name": "castleDKMedal",
+        "type": "toggle",
+        "codes": "castleDKMedal"
+    },
+    {
+        "name": "castleDiddyMedal",
+        "type": "toggle",
+        "codes": "castleDiddyMedal"
+    },
+    {
+        "name": "castleLankyMedal",
+        "type": "toggle",
+        "codes": "castleLankyMedal"
+    },
+    {
+        "name": "casleTinyMedal",
+        "type": "toggle",
+        "codes": "casleTinyMedal"
+    },
+    {
+        "name": "castleChunkyMedal",
+        "type": "toggle",
+        "codes": "castleChunkyMedal"
+    },
+    {
+        "name": "castleDiddyAboveCastleBarrel",
+        "type": "toggle",
+        "codes": "castleDiddyAboveCastleBarrel"
+    },
+    {
+        "name": "castleLankyKasplat",
+        "type": "toggle",
+        "codes": "castleLankyKasplat"
+    },
+    {
+        "name": "castleTopDirt",
+        "type": "toggle",
+        "codes": "castleTopDirt"
+    },
+    {
+        "name": "castleTinyKasplat",
+        "type": "toggle",
+        "codes": "castleTinyKasplat"
+    },
+    {
+        "name": "castleDKTreeSniping",
+        "type": "toggle",
+        "codes": "castleDKTreeSniping"
+    },
+    {
+        "name": "castleDKKasplat",
+        "type": "toggle",
+        "codes": "castleDKKasplat"
+    },
+    {
+        "name": "castleTreeFairy",
+        "type": "toggle",
+        "codes": "castleTreeFairy"
+    },
+    {
+        "name": "castleChunkyTreeSnipingBarrel",
+        "type": "toggle",
+        "codes": "castleChunkyTreeSnipingBarrel"
+    },
+    {
+        "name": "castleDKLibrary",
+        "type": "toggle",
+        "codes": "castleDKLibrary"
+    },
+    {
+        "name": "castleDiddyBallroom",
+        "type": "toggle",
+        "codes": "castleDiddyBallroom"
+    },
+    {
+        "name": "castleCarRaceFairy",
+        "type": "toggle",
+        "codes": "castleCarRaceFairy"
+    },
+    {
+        "name": "castleTinyCarRace",
+        "type": "toggle",
+        "codes": "castleTinyCarRace"
+    },
+    {
+        "name": "castleLankyTower",
+        "type": "toggle",
+        "codes": "castleLankyTower"
+    },
+    {
+        "name": "castleLankyGreenhouse",
+        "type": "toggle",
+        "codes": "castleLankyGreenhouse"
+    },
+    {
+        "name": "castleArena",
+        "type": "toggle",
+        "codes": "castleArena"
+    },
+    {
+        "name": "castleTinyTrashcan",
+        "type": "toggle",
+        "codes": "castleTinyTrashcan"
+    },
+    {
+        "name": "castleChunkyShed",
+        "type": "toggle",
+        "codes": "castleChunkyShed"
+    },
+    {
+        "name": "castleChunkyMuseum",
+        "type": "toggle",
+        "codes": "castleChunkyMuseum"
+    },
+    {
+        "name": "castleDiddyKasplat",
+        "type": "toggle",
+        "codes": "castleDiddyKasplat"
+    },
+    {
+        "name": "castleMausoleumCrate",
+        "type": "toggle",
+        "codes": "castleMausoleumCrate"
+    },
+    {
+        "name": "castleDiddyCrypt",
+        "type": "toggle",
+        "codes": "castleDiddyCrypt"
+    },
+    {
+        "name": "castleChunkyCrypt",
+        "type": "toggle",
+        "codes": "castleChunkyCrypt"
+    },
+    {
+        "name": "castleDKMinecart",
+        "type": "toggle",
+        "codes": "castleDKMinecart"
+    },
+    {
+        "name": "castleLankyMausoleum",
+        "type": "toggle",
+        "codes": "castleLankyMausoleum"
+    },
+    {
+        "name": "castleTinyMausoleum",
+        "type": "toggle",
+        "codes": "castleTinyMausoleum"
+    },
+    {
+        "name": "castleTinyOverChasm",
+        "type": "toggle",
+        "codes": "castleTinyOverChasm"
+    },
+    {
+        "name": "castleChunkyKasplat",
+        "type": "toggle",
+        "codes": "castleChunkyKasplat"
+    },
+    {
+        "name": "castleDKDungeon",
+        "type": "toggle",
+        "codes": "castleDKDungeon"
+    },
+    {
+        "name": "castleDiddyDungeon",
+        "type": "toggle",
+        "codes": "castleDiddyDungeon"
+    },
+    {
+        "name": "castleLankyDungeon",
+        "type": "toggle",
+        "codes": "castleLankyDungeon"
+    },
+    {
+        "name": "castleBoss",
+        "type": "toggle",
+        "codes": "castleBoss"
+    },
+    {
+        "name": "cavesDKMedal",
+        "type": "toggle",
+        "codes": "cavesDKMedal"
+    },
+    {
+        "name": "cavesDiddyMedal",
+        "type": "toggle",
+        "codes": "cavesDiddyMedal"
+    },
+    {
+        "name": "cavesLankyMedal",
+        "type": "toggle",
+        "codes": "cavesLankyMedal"
+    },
+    {
+        "name": "cavesTinyMedal",
+        "type": "toggle",
+        "codes": "cavesTinyMedal"
+    },
+    {
+        "name": "cavesChunkyMedal",
+        "type": "toggle",
+        "codes": "cavesChunkyMedal"
+    },
+    {
+        "name": "cavesDiddyJetpackBarrel",
+        "type": "toggle",
+        "codes": "cavesDiddyJetpackBarrel"
+    },
+    {
+        "name": "cavesDKKasplat",
+        "type": "toggle",
+        "codes": "cavesDKKasplat"
+    },
+    {
+        "name": "cavesChunkyGorillaGone",
+        "type": "toggle",
+        "codes": "cavesChunkyGorillaGone"
+    },
+    {
+        "name": "cavesDiddyKasplat",
+        "type": "toggle",
+        "codes": "cavesDiddyKasplat"
+    },
+    {
+        "name": "cavesTinyMiniCaveBarrel",
+        "type": "toggle",
+        "codes": "cavesTinyMiniCaveBarrel"
+    },
+    {
+        "name": "cavesLankyKasplat",
+        "type": "toggle",
+        "codes": "cavesLankyKasplat"
+    },
+    {
+        "name": "cavesDKBlast",
+        "type": "toggle",
+        "codes": "cavesDKBlast"
+    },
+    {
+        "name": "cavesLankyBeetleRace",
+        "type": "toggle",
+        "codes": "cavesLankyBeetleRace"
+    },
+    {
+        "name": "cavesLankyIceSlam",
+        "type": "toggle",
+        "codes": "cavesLankyIceSlam"
+    },
+    {
+        "name": "cavesTinyMonkeyportIgloo",
+        "type": "toggle",
+        "codes": "cavesTinyMonkeyportIgloo"
+    },
+    {
+        "name": "cavesChunkyTransparentIgloo",
+        "type": "toggle",
+        "codes": "cavesChunkyTransparentIgloo"
+    },
+    {
+        "name": "cavesChunkyKasplat",
+        "type": "toggle",
+        "codes": "cavesChunkyKasplat"
+    },
+    {
+        "name": "cavesKoshaDirt",
+        "type": "toggle",
+        "codes": "cavesKoshaDirt"
+    },
+    {
+        "name": "cavesDK5DI",
+        "type": "toggle",
+        "codes": "cavesDK5DI"
+    },
+    {
+        "name": "cavesDiddy5DI",
+        "type": "toggle",
+        "codes": "cavesDiddy5DI"
+    },
+    {
+        "name": "cavesTiny5DI",
+        "type": "toggle",
+        "codes": "cavesTiny5DI"
+    },
+    {
+        "name": "caves5DIFairy",
+        "type": "toggle",
+        "codes": "caves5DIFairy"
+    },
+    {
+        "name": "cavesChunky5DI",
+        "type": "toggle",
+        "codes": "cavesChunky5DI"
+    },
+    {
+        "name": "cavesTinyKasplat",
+        "type": "toggle",
+        "codes": "cavesTinyKasplat"
+    },
+    {
+        "name": "cavesDKRotatingCabin",
+        "type": "toggle",
+        "codes": "cavesDKRotatingCabin"
+    },
+    {
+        "name": "cavesArena",
+        "type": "toggle",
+        "codes": "cavesArena"
+    },
+    {
+        "name": "cavesDK5DC",
+        "type": "toggle",
+        "codes": "cavesDK5DC"
+    },
+    {
+        "name": "cavesDiddyLower5DC",
+        "type": "toggle",
+        "codes": "cavesDiddyLower5DC"
+    },
+    {
+        "name": "cavesDiddyUpper5DC",
+        "type": "toggle",
+        "codes": "cavesDiddyUpper5DC"
+    },
+    {
+        "name": "caves5DCFairy",
+        "type": "toggle",
+        "codes": "caves5DCFairy"
+    },
+    {
+        "name": "cavesLankySprintCabin",
+        "type": "toggle",
+        "codes": "cavesLankySprintCabin"
+    },
+    {
+        "name": "cavesTiny5DC",
+        "type": "toggle",
+        "codes": "cavesTiny5DC"
+    },
+    {
+        "name": "cavesChunky5DC",
+        "type": "toggle",
+        "codes": "cavesChunky5DC"
+    },
+    {
+        "name": "cavesBoss",
+        "type": "toggle",
+        "codes": "cavesBoss"
+    },
+    {
+        "name": "islesTrainingRearDirt",
+        "type": "toggle",
+        "codes": "islesTrainingRearDirt"
+    },
+    {
+        "name": "islesBananaHoardDirt",
+        "type": "toggle",
+        "codes": "islesBananaHoardDirt"
+    },
+    {
+        "name": "islesJapesLobbyEntrance",
+        "type": "toggle",
+        "codes": "islesJapesLobbyEntrance"
+    },
+    {
+        "name": "islesChunkyPineappleCage",
+        "type": "toggle",
+        "codes": "islesChunkyPineappleCage"
+    },
+    {
+        "name": "islesTinyFeatherCage",
+        "type": "toggle",
+        "codes": "islesTinyFeatherCage"
+    },
+    {
+        "name": "islesChunkyPoundTheX",
+        "type": "toggle",
+        "codes": "islesChunkyPoundTheX"
+    },
+    {
+        "name": "islesLoneFairy",
+        "type": "toggle",
+        "codes": "islesLoneFairy"
+    },
+    {
+        "name": "islesCavesDirt",
+        "type": "toggle",
+        "codes": "islesCavesDirt"
+    },
+    {
+        "name": "islesChunkyTrianglePad",
+        "type": "toggle",
+        "codes": "islesChunkyTrianglePad"
+    },
+    {
+        "name": "islesLankySprintCage",
+        "type": "toggle",
+        "codes": "islesLankySprintCage"
+    },
+    {
+        "name": "islesKlumsyDirt",
+        "type": "toggle",
+        "codes": "islesKlumsyDirt"
+    },
+    {
+        "name": "islesBFIGift",
+        "type": "toggle",
+        "codes": "islesBFIGift"
+    },
+    {
+        "name": "islesReturningBFI",
+        "type": "toggle",
+        "codes": "islesReturningBFI"
+    },
+    {
+        "name": "islesLankyTrombonePad",
+        "type": "toggle",
+        "codes": "islesLankyTrombonePad"
+    },
+    {
+        "name": "islesTinyAztecLobbyBarrel",
+        "type": "toggle",
+        "codes": "islesTinyAztecLobbyBarrel"
+    },
+    {
+        "name": "islesLankyGrapeCage",
+        "type": "toggle",
+        "codes": "islesLankyGrapeCage"
+    },
+    {
+        "name": "islesDKCoconutCage",
+        "type": "toggle",
+        "codes": "islesDKCoconutCage"
+    },
+    {
+        "name": "islesTinySaxPad",
+        "type": "toggle",
+        "codes": "islesTinySaxPad"
+    },
+    {
+        "name": "islesUpperKremFairy",
+        "type": "toggle",
+        "codes": "islesUpperKremFairy"
+    },
+    {
+        "name": "islesDiddySnidesBarrel",
+        "type": "toggle",
+        "codes": "islesDiddySnidesBarrel"
+    },
+    {
+        "name": "islesSnidesArena",
+        "type": "toggle",
+        "codes": "islesSnidesArena"
+    },
+    {
+        "name": "islesDKBongosPad",
+        "type": "toggle",
+        "codes": "islesDKBongosPad"
+    },
+    {
+        "name": "islesTinyKasplat",
+        "type": "toggle",
+        "codes": "islesTinyKasplat"
+    },
+    {
+        "name": "islesFactoryLobbyFairy",
+        "type": "toggle",
+        "codes": "islesFactoryLobbyFairy"
+    },
+    {
+        "name": "islesTinyGalleonLobbySwim",
+        "type": "toggle",
+        "codes": "islesTinyGalleonLobbySwim"
+    },
+    {
+        "name": "islesChunkyKasplat",
+        "type": "toggle",
+        "codes": "islesChunkyKasplat"
+    },
+    {
+        "name": "islesCabinDirt",
+        "type": "toggle",
+        "codes": "islesCabinDirt"
+    },
+    {
+        "name": "islesDiddyPeanutsCage",
+        "type": "toggle",
+        "codes": "islesDiddyPeanutsCage"
+    },
+    {
+        "name": "islesDiddySummitBarrel",
+        "type": "toggle",
+        "codes": "islesDiddySummitBarrel"
+    },
+    {
+        "name": "islesAztecRoofDirt",
+        "type": "toggle",
+        "codes": "islesAztecRoofDirt"
+    },
+    {
+        "name": "islesFungiLobbyArena",
+        "type": "toggle",
+        "codes": "islesFungiLobbyArena"
+    },
+    {
+        "name": "islesFungiLobbyFairy",
+        "type": "toggle",
+        "codes": "islesFungiLobbyFairy"
+    },
+    {
+        "name": "islesDKCavesLava",
+        "type": "toggle",
+        "codes": "islesDKCavesLava"
+    },
+    {
+        "name": "islesDiddyGuitarPad",
+        "type": "toggle",
+        "codes": "islesDiddyGuitarPad"
+    },
+    {
+        "name": "islesLankyKasplat",
+        "type": "toggle",
+        "codes": "islesLankyKasplat"
+    },
+    {
+        "name": "islesLankyCastleLobbyBarrel",
+        "type": "toggle",
+        "codes": "islesLankyCastleLobbyBarrel"
+    },
+    {
+        "name": "islesDiddyKasplat",
+        "type": "toggle",
+        "codes": "islesDiddyKasplat"
+    },
+    {
+        "name": "islesUpperCastleDirt",
+        "type": "toggle",
+        "codes": "islesUpperCastleDirt"
+    },
+    {
+        "name": "islesChunkyHelmLobbyBarrel",
+        "type": "toggle",
+        "codes": "islesChunkyHelmLobbyBarrel"
+    },
+    {
+        "name": "islesDKKasplat",
+        "type": "toggle",
+        "codes": "islesDKKasplat"
+    },
+    {
+        "name": "forestDKMedal",
+        "type": "toggle",
+        "codes": "forestDKMedal"
+    },
+    {
+        "name": "forestDiddyMedal",
+        "type": "toggle",
+        "codes": "forestDiddyMedal"
+    },
+    {
+        "name": "forestLankyMedal",
+        "type": "toggle",
+        "codes": "forestLankyMedal"
+    },
+    {
+        "name": "forestTinyMedal",
+        "type": "toggle",
+        "codes": "forestTinyMedal"
+    },
+    {
+        "name": "forestChunkyMedal",
+        "type": "toggle",
+        "codes": "forestChunkyMedal"
+    },
+    {
+        "name": "forestChunkyMinecart",
+        "type": "toggle",
+        "codes": "forestChunkyMinecart"
+    },
+    {
+        "name": "ForestDiddyTopOfMushroomBarrel",
+        "type": "toggle",
+        "codes": "ForestDiddyTopOfMushroomBarrel"
+    },
+    {
+        "name": "forestTinyMushroomBarrel",
+        "type": "toggle",
+        "codes": "forestTinyMushroomBarrel"
+    },
+    {
+        "name": "forestTinyKasplat",
+        "type": "toggle",
+        "codes": "forestTinyKasplat"
+    },
+    {
+        "name": "forestDKBlast",
+        "type": "toggle",
+        "codes": "forestDKBlast"
+    },
+    {
+        "name": "forestDiddyKasplat",
+        "type": "toggle",
+        "codes": "forestDiddyKasplat"
+    },
+    {
+        "name": "forestDKMushroomCannons",
+        "type": "toggle",
+        "codes": "forestDKMushroomCannons"
+    },
+    {
+        "name": "forestChunkyKasplat",
+        "type": "toggle",
+        "codes": "forestChunkyKasplat"
+    },
+    {
+        "name": "forestArena",
+        "type": "toggle",
+        "codes": "forestArena"
+    },
+    {
+        "name": "forestChunkyFacePuzzle",
+        "type": "toggle",
+        "codes": "forestChunkyFacePuzzle"
+    },
+    {
+        "name": "forestLankyZingerBounce",
+        "type": "toggle",
+        "codes": "forestLankyZingerBounce"
+    },
+    {
+        "name": "forestLankyColoredMushroomSlam",
+        "type": "toggle",
+        "codes": "forestLankyColoredMushroomSlam"
+    },
+    {
+        "name": "forestDiddyOwlRace",
+        "type": "toggle",
+        "codes": "forestDiddyOwlRace"
+    },
+    {
+        "name": "forestLankyRabbitRace",
+        "type": "toggle",
+        "codes": "forestLankyRabbitRace"
+    },
+    {
+        "name": "forestLankyKasplat",
+        "type": "toggle",
+        "codes": "forestLankyKasplat"
+    },
+    {
+        "name": "forestOwlTreeCrate",
+        "type": "toggle",
+        "codes": "forestOwlTreeCrate"
+    },
+    {
+        "name": "forestTinyAnthill",
+        "type": "toggle",
+        "codes": "forestTinyAnthill"
+    },
+    {
+        "name": "forestTinySecondReward",
+        "type": "toggle",
+        "codes": "forestTinySecondReward"
+    },
+    {
+        "name": "forestDKMillLevers",
+        "type": "toggle",
+        "codes": "forestDKMillLevers"
+    },
+    {
+        "name": "forestDiddyWinchCage",
+        "type": "toggle",
+        "codes": "forestDiddyWinchCage"
+    },
+    {
+        "name": "forestIsotarge",
+        "type": "toggle",
+        "codes": "forestIsotarge"
+    },
+    {
+        "name": "forestDarkAtticCrate",
+        "type": "toggle",
+        "codes": "forestDarkAtticCrate"
+    },
+    {
+        "name": "forestTinySpiderBoss",
+        "type": "toggle",
+        "codes": "forestTinySpiderBoss"
+    },
+    {
+        "name": "forestChunkyKegCrushing",
+        "type": "toggle",
+        "codes": "forestChunkyKegCrushing"
+    },
+    {
+        "name": "forestDiddyDarkRafters",
+        "type": "toggle",
+        "codes": "forestDiddyDarkRafters"
+    },
+    {
+        "name": "forestDarkRaftersFairy",
+        "type": "toggle",
+        "codes": "forestDarkRaftersFairy"
+    },
+    {
+        "name": "forestLankyAtticShooting",
+        "type": "toggle",
+        "codes": "forestLankyAtticShooting"
+    },
+    {
+        "name": "forestDKKasplat",
+        "type": "toggle",
+        "codes": "forestDKKasplat"
+    },
+    {
+        "name": "forestNearThornvineCrate",
+        "type": "toggle",
+        "codes": "forestNearThornvineCrate"
+    },
+    {
+        "name": "forestDKThornvineBarnBarrel",
+        "type": "toggle",
+        "codes": "forestDKThornvineBarnBarrel"
+    },
+    {
+        "name": "forestThornvineCrate",
+        "type": "toggle",
+        "codes": "forestThornvineCrate"
+    },
+    {
+        "name": "forestThornvineFairy",
+        "type": "toggle",
+        "codes": "forestThornvineFairy"
+    },
+    {
+        "name": "forestThornvineFairy",
+        "type": "toggle",
+        "codes": "forestThornvineFairy"
+    },
+    {
+        "name": "forestChunkyAppleRescue",
+        "type": "toggle",
+        "codes": "forestChunkyAppleRescue"
+    },
+    {
+        "name": "forestBeanstalkDirt",
+        "type": "toggle",
+        "codes": "forestBeanstalkDirt"
+    },
+    {
+        "name": "forestBoss",
+        "type": "toggle",
+        "codes": "forestBoss"
+    },
+    {
+        "name": "forestTinyTopOfBeanstalk",
+        "type": "toggle",
+        "codes": "forestTinyTopOfBeanstalk"
+    },
+    {
+        "name": "helmArena",
+        "type": "toggle",
+        "codes": "helmArena"
+    },
+    {
+        "name": "helmDKMedal",
+        "type": "toggle",
+        "codes": "helmDKMedal"
+    },
+    {
+        "name": "helmChunkyMedal",
+        "type": "toggle",
+        "codes": "helmChunkyMedal"
+    },
+    {
+        "name": "helmTinyMedal",
+        "type": "toggle",
+        "codes": "helmTinyMedal"
+    },
+    {
+        "name": "helmLankyMedal",
+        "type": "toggle",
+        "codes": "helmLankyMedal"
+    },
+    {
+        "name": "helmDiddyMedal",
+        "type": "toggle",
+        "codes": "helmDiddyMedal"
+    },
+    {
+        "name": "endOFHelm",
+        "type": "toggle",
+        "codes": "endOFHelm"
+    },
+    {
+        "name": "helmFairy1",
+        "type": "toggle",
+        "codes": "helmFairy1"
+    },
+    {
+        "name": "helmFairy2",
+        "type": "toggle",
+        "codes": "helmFairy2"
+    },
+    {
+        "name": "japesDKMedal",
+        "type": "toggle",
+        "codes": "japesDKMedal"
+    },
+    {
+        "name": "japesDiddyMedal",
+        "type": "toggle",
+        "codes": "japesDiddyMedal"
+    },
+    {
+        "name": "japesLankyMedal",
+        "type": "toggle",
+        "codes": "japesLankyMedal"
+    },
+    {
+        "name": "japesTinyMedal",
+        "type": "toggle",
+        "codes": "japesTinyMedal"
+    },
+    {
+        "name": "japesChunkyMedal",
+        "type": "toggle",
+        "codes": "japesChunkyMedal"
+    },
+    {
+        "name": "japesDKFloorCageBanana",
+        "type": "toggle",
+        "codes": "japesDKFloorCageBanana"
+    },
+    {
+        "name": "japesChunkyBoulder",
+        "type": "toggle",
+        "codes": "japesChunkyBoulder"
+    },
+    {
+        "name": "japesLankyTimedCageBanana",
+        "type": "toggle",
+        "codes": "japesLankyTimedCageBanana"
+    },
+    {
+        "name": "japesFrontOfDiddyCage",
+        "type": "toggle",
+        "codes": "japesFrontOfDiddyCage"
+    },
+    {
+        "name": "japesArena",
+        "type": "toggle",
+        "codes": "japesArena"
+    },
+    {
+        "name": "japesFreeDiddy",
+        "type": "toggle",
+        "codes": "japesFreeDiddy"
+    },
+    {
+        "name": "japesMountainCrate",
+        "type": "toggle",
+        "codes": "japesMountainCrate"
+    },
+    {
+        "name": "japesChunkyTimedCageBanana",
+        "type": "toggle",
+        "codes": "japesChunkyTimedCageBanana"
+    },
+    {
+        "name": "japesDiddyTimedCageBanana",
+        "type": "toggle",
+        "codes": "japesDiddyTimedCageBanana"
+    },
+    {
+        "name": "japesTinyTimedCageBanana",
+        "type": "toggle",
+        "codes": "japesTinyTimedCageBanana"
+    },
+    {
+        "name": "japesPaintingHillDirt",
+        "type": "toggle",
+        "codes": "japesPaintingHillDirt"
+    },
+    {
+        "name": "japesDiddyTopOfMountain",
+        "type": "toggle",
+        "codes": "japesDiddyTopOfMountain"
+    },
+    {
+        "name": "japesDKBlast",
+        "type": "toggle",
+        "codes": "japesDKBlast"
+    },
+    {
+        "name": "japesDiddyPeanutTunnel",
+        "type": "toggle",
+        "codes": "japesDiddyPeanutTunnel"
+    },
+    {
+        "name": "japesLankyGrapeGateBarrel",
+        "type": "toggle",
+        "codes": "japesLankyGrapeGateBarrel"
+    },
+    {
+        "name": "japesTinyFeatherCageBarrel",
+        "type": "toggle",
+        "codes": "japesTinyFeatherCageBarrel"
+    },
+    {
+        "name": "japesDKKasplat",
+        "type": "toggle",
+        "codes": "japesDKKasplat"
+    },
+    {
+        "name": "japesTinyKasplat",
+        "type": "toggle",
+        "codes": "japesTinyKasplat"
+    },
+    {
+        "name": "japesTinyStump",
+        "type": "toggle",
+        "codes": "japesTinyStump"
+    },
+    {
+        "name": "japesChunkyGiantBarrel",
+        "type": "toggle",
+        "codes": "japesChunkyGiantBarrel"
+    },
+    {
+        "name": "japesTinyBeehive",
+        "type": "toggle",
+        "codes": "japesTinyBeehive"
+    },
+    {
+        "name": "japesLankySlopeBarrel",
+        "type": "toggle",
+        "codes": "japesLankySlopeBarrel"
+    },
+    {
+        "name": "japesDiddyKasplat",
+        "type": "toggle",
+        "codes": "japesDiddyKasplat"
+    },
+    {
+        "name": "japesLankyKasplat",
+        "type": "toggle",
+        "codes": "japesLankyKasplat"
+    },
+    {
+        "name": "japesRambiFairy",
+        "type": "toggle",
+        "codes": "japesRambiFairy"
+    },
+    {
+        "name": "japesRambiCrate",
+        "type": "toggle",
+        "codes": "japesRambiCrate"
+    },
+    {
+        "name": "japesLankyPaintingRoom",
+        "type": "toggle",
+        "codes": "japesLankyPaintingRoom"
+    },
+    {
+        "name": "japesPaintingFairy",
+        "type": "toggle",
+        "codes": "japesPaintingFairy"
+    },
+    {
+        "name": "japesDiddyMinecart",
+        "type": "toggle",
+        "codes": "japesDiddyMinecart"
+    },
+    {
+        "name": "japesChunkyUnderground",
+        "type": "toggle",
+        "codes": "japesChunkyUnderground"
+    },
+    {
+        "name": "japesChunkyKasplat",
+        "type": "toggle",
+        "codes": "japesChunkyKasplat"
+    },
+    {
+        "name": "japesBoss",
+        "type": "toggle",
+        "codes": "japesBoss"
+    },
+    {
+        "name": "factoryDKMedal",
+        "type": "toggle",
+        "codes": "factoryDKMedal"
+    },
+    {
+        "name": "factoryDiddyMedal",
+        "type": "toggle",
+        "codes": "factoryDiddyMedal"
+    },
+    {
+        "name": "factoryLankyMedal",
+        "type": "toggle",
+        "codes": "factoryLankyMedal"
+    },
+    {
+        "name": "factoryTinyMedal",
+        "type": "toggle",
+        "codes": "factoryTinyMedal"
+    },
+    {
+        "name": "factoryChunkyMedal",
+        "type": "toggle",
+        "codes": "factoryChunkyMedal"
+    },
+    {
+        "name": "factoryDKNumbersGame",
+        "type": "toggle",
+        "codes": "factoryDKNumbersGame"
+    },
+    {
+        "name": "factoryDiddyBlockTower",
+        "type": "toggle",
+        "codes": "factoryDiddyBlockTower"
+    },
+    {
+        "name": "factoryLankyTestingBarrel",
+        "type": "toggle",
+        "codes": "factoryLankyTestingBarrel"
+    },
+    {
+        "name": "factoryTinyDartboard",
+        "type": "toggle",
+        "codes": "factoryTinyDartboard"
+    },
+    {
+        "name": "factoryChunkyKasplat",
+        "type": "toggle",
+        "codes": "factoryChunkyKasplat"
+    },
+    {
+        "name": "factoryNumbersFairy",
+        "type": "toggle",
+        "codes": "factoryNumbersFairy"
+    },
+    {
+        "name": "factoryFunkysFairy",
+        "type": "toggle",
+        "codes": "factoryFunkysFairy"
+    },
+    {
+        "name": "factoryFunkysCrate",
+        "type": "toggle",
+        "codes": "factoryFunkysCrate"
+    },
+    {
+        "name": "factoryDiddyPincode",
+        "type": "toggle",
+        "codes": "factoryDiddyPincode"
+    },
+    {
+        "name": "factoryChunkyToyMonster",
+        "type": "toggle",
+        "codes": "factoryChunkyToyMonster"
+    },
+    {
+        "name": "factoryLankyKasplat",
+        "type": "toggle",
+        "codes": "factoryLankyKasplat"
+    },
+    {
+        "name": "factoryArena",
+        "type": "toggle",
+        "codes": "factoryArena"
+    },
+    {
+        "name": "factoryLankyPianoGame",
+        "type": "toggle",
+        "codes": "factoryLankyPianoGame"
+    },
+    {
+        "name": "factoryTinyCarRace",
+        "type": "toggle",
+        "codes": "factoryTinyCarRace"
+    },
+    {
+        "name": "factoryDiddyStorageRoomBarrel",
+        "type": "toggle",
+        "codes": "factoryDiddyStorageRoomBarrel"
+    },
+    {
+        "name": "factoryDKPowerHut",
+        "type": "toggle",
+        "codes": "factoryDKPowerHut"
+    },
+    {
+        "name": "factoryFreeChunky",
+        "type": "toggle",
+        "codes": "factoryFreeChunky"
+    },
+    {
+        "name": "factoryChunkyDarkRoom",
+        "type": "toggle",
+        "codes": "factoryChunkyDarkRoom"
+    },
+    {
+        "name": "factoryDarkDirt",
+        "type": "toggle",
+        "codes": "factoryDarkDirt"
+    },
+    {
+        "name": "factoryTinyKasplat",
+        "type": "toggle",
+        "codes": "factoryTinyKasplat"
+    },
+    {
+        "name": "factoryCandysCrate",
+        "type": "toggle",
+        "codes": "factoryCandysCrate"
+    },
+    {
+        "name": "DKArcade1",
+        "type": "toggle",
+        "codes": "DKArcade1"
+    },
+    {
+        "name": "factoryTinyMiniByArcade",
+        "type": "toggle",
+        "codes": "factoryTinyMiniByArcade"
+    },
+    {
+        "name": "factoryChunkyArcadeBarrel",
+        "type": "toggle",
+        "codes": "factoryChunkyArcadeBarrel"
+    },
+    {
+        "name": "DKArcade2",
+        "type": "toggle",
+        "codes": "DKArcade2"
+    },
+    {
+        "name": "factoryDiddyKasplat",
+        "type": "toggle",
+        "codes": "factoryDiddyKasplat"
+    },
+    {
+        "name": "factoryDKCrusherRoom",
+        "type": "toggle",
+        "codes": "factoryDKCrusherRoom"
+    },
+    {
+        "name": "factoryChunkyProductionTimer",
+        "type": "toggle",
+        "codes": "factoryChunkyProductionTimer"
+    },
+    {
+        "name": "factoryDiddyProductionSpring",
+        "type": "toggle",
+        "codes": "factoryDiddyProductionSpring"
+    },
+    {
+        "name": "factoryLankyProductionHandstand",
+        "type": "toggle",
+        "codes": "factoryLankyProductionHandstand"
+    },
+    {
+        "name": "factoryTinyProductionTwirl",
+        "type": "toggle",
+        "codes": "factoryTinyProductionTwirl"
+    },
+    {
+        "name": "factoryDKKasplat",
+        "type": "toggle",
+        "codes": "factoryDKKasplat"
+    },
+    {
+        "name": "factoryBoss",
+        "type": "toggle",
+        "codes": "factoryBoss"
+    },
+    {
+        "name": "galleonDKMedal",
+        "type": "toggle",
+        "codes": "galleonDKMedal"
+    },
+    {
+        "name": "galleonDiddyMedal",
+        "type": "toggle",
+        "codes": "galleonDiddyMedal"
+    },
+    {
+        "name": "galleonLankyMedal",
+        "type": "toggle",
+        "codes": "galleonLankyMedal"
+    },
+    {
+        "name": "galleonTinyMedal",
+        "type": "toggle",
+        "codes": "galleonTinyMedal"
+    },
+    {
+        "name": "galleonChunkyMedal",
+        "type": "toggle",
+        "codes": "galleonChunkyMedal"
+    },
+    {
+        "name": "galleonChunkyChest",
+        "type": "toggle",
+        "codes": "galleonChunkyChest"
+    },
+    {
+        "name": "galleonArena",
+        "type": "toggle",
+        "codes": "galleonArena"
+    },
+    {
+        "name": "galleonChestFairy",
+        "type": "toggle",
+        "codes": "galleonChestFairy"
+    },
+    {
+        "name": "galleonTinyKasplat",
+        "type": "toggle",
+        "codes": "galleonTinyKasplat"
+    },
+    {
+        "name": "galleonChunkyCannonGame",
+        "type": "toggle",
+        "codes": "galleonChunkyCannonGame"
+    },
+    {
+        "name": "galleonLankyKasplat",
+        "type": "toggle",
+        "codes": "galleonLankyKasplat"
+    },
+    {
+        "name": "galleonDiddyKasplat",
+        "type": "toggle",
+        "codes": "galleonDiddyKasplat"
+    },
+    {
+        "name": "galleonDiddyTopOfLighthouse",
+        "type": "toggle",
+        "codes": "galleonDiddyTopOfLighthouse"
+    },
+    {
+        "name": "galleonLankyEnguardeChest",
+        "type": "toggle",
+        "codes": "galleonLankyEnguardeChest"
+    },
+    {
+        "name": "galleonLighthouseDirt",
+        "type": "toggle",
+        "codes": "galleonLighthouseDirt"
+    },
+    {
+        "name": "galleonDKLighthouse",
+        "type": "toggle",
+        "codes": "galleonDKLighthouse"
+    },
+    {
+        "name": "galleonTinyMermaid",
+        "type": "toggle",
+        "codes": "galleonTinyMermaid"
+    },
+    {
+        "name": "galleonChunkySeasick",
+        "type": "toggle",
+        "codes": "galleonChunkySeasick"
+    },
+    {
+        "name": "galleonDKFreeTheSeal",
+        "type": "toggle",
+        "codes": "galleonDKFreeTheSeal"
+    },
+    {
+        "name": "galleonChunkyKasplat",
+        "type": "toggle",
+        "codes": "galleonChunkyKasplat"
+    },
+    {
+        "name": "galleonCactusCrate",
+        "type": "toggle",
+        "codes": "galleonCactusCrate"
+    },
+    {
+        "name": "galleonDKSealRace",
+        "type": "toggle",
+        "codes": "galleonDKSealRace"
+    },
+    {
+        "name": "galleonLankyGoldTowerBarrel",
+        "type": "toggle",
+        "codes": "galleonLankyGoldTowerBarrel"
+    },
+    {
+        "name": "galleonDiddyGoldTowerBarrel",
+        "type": "toggle",
+        "codes": "galleonDiddyGoldTowerBarrel"
+    },
+    {
+        "name": "galleonDKKasplat",
+        "type": "toggle",
+        "codes": "galleonDKKasplat"
+    },
+    {
+        "name": "galleonFarLeft",
+        "type": "toggle",
+        "codes": "galleonFarLeft"
+    },
+    {
+        "name": "galleonCenter",
+        "type": "toggle",
+        "codes": "galleonCenter"
+    },
+    {
+        "name": "galleonFarRight",
+        "type": "toggle",
+        "codes": "galleonFarRight"
+    },
+    {
+        "name": "galleonCloseRight",
+        "type": "toggle",
+        "codes": "galleonCloseRight"
+    },
+    {
+        "name": "galleonCloseLeft",
+        "type": "toggle",
+        "codes": "galleonCloseLeft"
+    },
+    {
+        "name": "galleonTinySubmarineBarrel",
+        "type": "toggle",
+        "codes": "galleonTinySubmarineBarrel"
+    },
+    {
+        "name": "galleonDiddyMechfish",
+        "type": "toggle",
+        "codes": "galleonDiddyMechfish"
+    },
+    {
+        "name": "galleonLanky2DS",
+        "type": "toggle",
+        "codes": "galleonLanky2DS"
+    },
+    {
+        "name": "galleonTiny2DS",
+        "type": "toggle",
+        "codes": "galleonTiny2DS"
+    },
+    {
+        "name": "galleonDK5DS",
+        "type": "toggle",
+        "codes": "galleonDK5DS"
+    },
+    {
+        "name": "galleonDiddy5DS",
+        "type": "toggle",
+        "codes": "galleonDiddy5DS"
+    },
+    {
+        "name": "galleonLanky5DS",
+        "type": "toggle",
+        "codes": "galleonLanky5DS"
+    },
+    {
+        "name": "galleonTiny5DS",
+        "type": "toggle",
+        "codes": "galleonTiny5DS"
+    },
+    {
+        "name": "galleon5DSFairy",
+        "type": "toggle",
+        "codes": "galleon5DSFairy"
+    },
+    {
+        "name": "galleonChunky5DS",
+        "type": "toggle",
+        "codes": "galleonChunky5DS"
+    },
+    {
+        "name": "galleonBoss",
+        "type": "toggle",
+        "codes": "galleonBoss"
+    },
+    {
+        "name": "japesFunkyDK",
+        "type": "toggle",
+        "codes": "japesFunkyDK"
+    },
+    {
+        "name": "japesFunkyDiddy",
+        "type": "toggle",
+        "codes": "japesFunkyDiddy"
+    },
+    {
+        "name": "japesFunkyLanky",
+        "type": "toggle",
+        "codes": "japesFunkyLanky"
+    },
+    {
+        "name": "japesFunkyTiny",
+        "type": "toggle",
+        "codes": "japesFunkyTiny"
+    },
+    {
+        "name": "japesFunkyChunky",
+        "type": "toggle",
+        "codes": "japesFunkyChunky"
+    },
+    {
+        "name": "aztecFunkyDK",
+        "type": "toggle",
+        "codes": "aztecFunkyDK"
+    },
+    {
+        "name": "aztecFunkyDiddy",
+        "type": "toggle",
+        "codes": "aztecFunkyDiddy"
+    },
+    {
+        "name": "aztecFunkyLanky",
+        "type": "toggle",
+        "codes": "aztecFunkyLanky"
+    },
+    {
+        "name": "aztecFunkyTiny",
+        "type": "toggle",
+        "codes": "aztecFunkyTiny"
+    },
+    {
+        "name": "aztecFunkyChunky",
+        "type": "toggle",
+        "codes": "aztecFunkyChunky"
+    },
+    {
+        "name": "factoryFunkyDK",
+        "type": "toggle",
+        "codes": "factoryFunkyDK"
+    },
+    {
+        "name": "factoryFunkyDiddy",
+        "type": "toggle",
+        "codes": "factoryFunkyDiddy"
+    },
+    {
+        "name": "factoryFunkyLanky",
+        "type": "toggle",
+        "codes": "factoryFunkyLanky"
+    },
+    {
+        "name": "factoryFunkyTiny",
+        "type": "toggle",
+        "codes": "factoryFunkyTiny"
+    },
+    {
+        "name": "factoryFunkyChunky",
+        "type": "toggle",
+        "codes": "factoryFunkyChunky"
+    },
+    {
+        "name": "galleonFunkyDK",
+        "type": "toggle",
+        "codes": "galleonFunkyDK"
+    },
+    {
+        "name": "galleonFunkyDiddy",
+        "type": "toggle",
+        "codes": "galleonFunkyDiddy"
+    },
+    {
+        "name": "galleonFunkyLanky",
+        "type": "toggle",
+        "codes": "galleonFunkyLanky"
+    },
+    {
+        "name": "galleonFunkyTiny",
+        "type": "toggle",
+        "codes": "galleonFunkyTiny"
+    },
+    {
+        "name": "galleonFunkyChunky",
+        "type": "toggle",
+        "codes": "galleonFunkyChunky"
+    },
+    {
+        "name": "forestFunkyDK",
+        "type": "toggle",
+        "codes": "forestFunkyDK"
+    },
+    {
+        "name": "forestFunkyDiddy",
+        "type": "toggle",
+        "codes": "forestFunkyDiddy"
+    },
+    {
+        "name": "forestFunkyLanky",
+        "type": "toggle",
+        "codes": "forestFunkyLanky"
+    },
+    {
+        "name": "forestFunkyTiny",
+        "type": "toggle",
+        "codes": "forestFunkyTiny"
+    },
+    {
+        "name": "forestFunkyChunky",
+        "type": "toggle",
+        "codes": "forestFunkyChunky"
+    },
+    {
+        "name": "cavesFunkyDK",
+        "type": "toggle",
+        "codes": "cavesFunkyDK"
+    },
+    {
+        "name": "cavesFunkyDiddy",
+        "type": "toggle",
+        "codes": "cavesFunkyDiddy"
+    },
+    {
+        "name": "cavesFunkyLanky",
+        "type": "toggle",
+        "codes": "cavesFunkyLanky"
+    },
+    {
+        "name": "cavesFunkyTiny",
+        "type": "toggle",
+        "codes": "cavesFunkyTiny"
+    },
+    {
+        "name": "cavesFunkyChunky",
+        "type": "toggle",
+        "codes": "cavesFunkyChunky"
+    },
+    {
+        "name": "castleFunkyDK",
+        "type": "toggle",
+        "codes": "castleFunkyDK"
+    },
+    {
+        "name": "castleFunkyDiddy",
+        "type": "toggle",
+        "codes": "castleFunkyDiddy"
+    },
+    {
+        "name": "castleFunkyLanky",
+        "type": "toggle",
+        "codes": "castleFunkyLanky"
+    },
+    {
+        "name": "castleFunkyTiny",
+        "type": "toggle",
+        "codes": "castleFunkyTiny"
+    },
+    {
+        "name": "castleFunkyChunky",
+        "type": "toggle",
+        "codes": "castleFunkyChunky"
+    },
+    {
+        "name": "aztecCandyDK",
+        "type": "toggle",
+        "codes": "aztecCandyDK"
+    },
+    {
+        "name": "aztecCandyDiddy",
+        "type": "toggle",
+        "codes": "aztecCandyDiddy"
+    },
+    {
+        "name": "aztecCandyLanky",
+        "type": "toggle",
+        "codes": "aztecCandyLanky"
+    },
+    {
+        "name": "factoryDKMedal",
+        "type": "toggle",
+        "codes": "factoryDKMedal"
+    },
+    {
+        "name": "aztecCandyTiny",
+        "type": "toggle",
+        "codes": "aztecCandyTiny"
+    },
+    {
+        "name": "aztecCandyChunky",
+        "type": "toggle",
+        "codes": "aztecCandyChunky"
+    },
+    {
+        "name": "factorCandyDK",
+        "type": "toggle",
+        "codes": "factorCandyDK"
+    },
+    {
+        "name": "factoryCandyDiddy",
+        "type": "toggle",
+        "codes": "factoryCandyDiddy"
+    },
+    {
+        "name": "factoryCandyLanky",
+        "type": "toggle",
+        "codes": "factoryCandyLanky"
+    },
+    {
+        "name": "factoryCandyTiny",
+        "type": "toggle",
+        "codes": "factoryCandyTiny"
+    },
+    {
+        "name": "factoryCandyChunky",
+        "type": "toggle",
+        "codes": "factoryCandyChunky"
+    },
+    {
+        "name": "galleonCandyDK",
+        "type": "toggle",
+        "codes": "galleonCandyDK"
+    },
+    {
+        "name": "galleonCandyDiddy",
+        "type": "toggle",
+        "codes": "galleonCandyDiddy"
+    },
+    {
+        "name": "galleonCandyLanky",
+        "type": "toggle",
+        "codes": "galleonCandyLanky"
+    },
+    {
+        "name": "galleonCandyTiny",
+        "type": "toggle",
+        "codes": "galleonCandyTiny"
+    },
+    {
+        "name": "galleonCandyChunky",
+        "type": "toggle",
+        "codes": "galleonCandyChunky"
+    },
+    {
+        "name": "cavesCandyDK",
+        "type": "toggle",
+        "codes": "cavesCandyDK"
+    },
+    {
+        "name": "cavesCandyDiddy",
+        "type": "toggle",
+        "codes": "cavesCandyDiddy"
+    },
+    {
+        "name": "cavesCandyLanky",
+        "type": "toggle",
+        "codes": "cavesCandyLanky"
+    },
+    {
+        "name": "cavesCandyTiny",
+        "type": "toggle",
+        "codes": "cavesCandyTiny"
+    },
+    {
+        "name": "cavesCandyChunky",
+        "type": "toggle",
+        "codes": "cavesCandyChunky"
+    },
+    {
+        "name": "castleCandyDK",
+        "type": "toggle",
+        "codes": "castleCandyDK"
+    },
+    {
+        "name": "castleCandyDiddy",
+        "type": "toggle",
+        "codes": "castleCandyDiddy"
+    },
+    {
+        "name": "castleCandyLanky",
+        "type": "toggle",
+        "codes": "castleCandyLanky"
+    },
+    {
+        "name": "castleCandyTiny",
+        "type": "toggle",
+        "codes": "castleCandyTiny"
+    },
+    {
+        "name": "castleCandyChunky",
+        "type": "toggle",
+        "codes": "castleCandyChunky"
+    },
+    {
+        "name": "crankyJetpac",
+        "type": "toggle",
+        "codes": "crankyJetpac"
+    },
+    {
+        "name": "japesCrankyDK",
+        "type": "toggle",
+        "codes": "japesCrankyDK"
+    },
+    {
+        "name": "japesCrankyDiddy",
+        "type": "toggle",
+        "codes": "japesCrankyDiddy"
+    },
+    {
+        "name": "japesCrankyLanky",
+        "type": "toggle",
+        "codes": "japesCrankyLanky"
+    },
+    {
+        "name": "japesCrankyTiny",
+        "type": "toggle",
+        "codes": "japesCrankyTiny"
+    },
+    {
+        "name": "japesCrankyChunky",
+        "type": "toggle",
+        "codes": "japesCrankyChunky"
+    },
+    {
+        "name": "aztecCrankyDK",
+        "type": "toggle",
+        "codes": "aztecCrankyDK"
+    },
+    {
+        "name": "aztecCrankyDiddy",
+        "type": "toggle",
+        "codes": "aztecCrankyDiddy"
+    },
+    {
+        "name": "aztecCrankyLanky",
+        "type": "toggle",
+        "codes": "aztecCrankyLanky"
+    },
+    {
+        "name": "aztecCrankyTiny",
+        "type": "toggle",
+        "codes": "aztecCrankyTiny"
+    },
+    {
+        "name": "aztecCrankyChunky",
+        "type": "toggle",
+        "codes": "aztecCrankyChunky"
+    },
+    {
+        "name": "factoryCrankyDK",
+        "type": "toggle",
+        "codes": "factoryCrankyDK"
+    },
+    {
+        "name": "factoryCrankyDiddy",
+        "type": "toggle",
+        "codes": "factoryCrankyDiddy"
+    },
+    {
+        "name": "factoryCrankyLanky",
+        "type": "toggle",
+        "codes": "factoryCrankyLanky"
+    },
+    {
+        "name": "factoryCrankyTiny",
+        "type": "toggle",
+        "codes": "factoryCrankyTiny"
+    },
+    {
+        "name": "factoryCrankyChunky",
+        "type": "toggle",
+        "codes": "factoryCrankyChunky"
+    },
+    {
+        "name": "galleonCrankyDK",
+        "type": "toggle",
+        "codes": "galleonCrankyDK"
+    },
+    {
+        "name": "galleonCrankyDiddy",
+        "type": "toggle",
+        "codes": "galleonCrankyDiddy"
+    },
+    {
+        "name": "galleonCrankyLanky",
+        "type": "toggle",
+        "codes": "galleonCrankyLanky"
+    },
+    {
+        "name": "galleonCrankyTiny",
+        "type": "toggle",
+        "codes": "galleonCrankyTiny"
+    },
+    {
+        "name": "galleonCrankyChunky",
+        "type": "toggle",
+        "codes": "galleonCrankyChunky"
+    },
+    {
+        "name": "forestCrankyDK",
+        "type": "toggle",
+        "codes": "forestCrankyDK"
+    },
+    {
+        "name": "forestCrankyDiddy",
+        "type": "toggle",
+        "codes": "forestCrankyDiddy"
+    },
+    {
+        "name": "forestCrankyLanky",
+        "type": "toggle",
+        "codes": "forestCrankyLanky"
+    },
+    {
+        "name": "forestCrankyTiny",
+        "type": "toggle",
+        "codes": "forestCrankyTiny"
+    },
+    {
+        "name": "forestCrankyChunky",
+        "type": "toggle",
+        "codes": "forestCrankyChunky"
+    },
+    {
+        "name": "cavesCrankyLanky",
+        "type": "toggle",
+        "codes": "cavesCrankyLanky"
+    },
+    {
+        "name": "cavesCrankyTiny",
+        "type": "toggle",
+        "codes": "cavesCrankyTiny"
+    },
+    {
+        "name": "cavesCrankyChunky",
+        "type": "toggle",
+        "codes": "cavesCrankyChunky"
+    },
+    {
+        "name": "cavesCrankyDK",
+        "type": "toggle",
+        "codes": "cavesCrankyDK"
+    },
+    {
+        "name": "cavesCrankyDiddy",
+        "type": "toggle",
+        "codes": "cavesCrankyDiddy"
+    },
+    {
+        "name": "castleCrankyDK",
+        "type": "toggle",
+        "codes": "castleCrankyDK"
+    },
+    {
+        "name": "castleCrankyDiddy",
+        "type": "toggle",
+        "codes": "castleCrankyDiddy"
+    },
+    {
+        "name": "castleCrankyLanky",
+        "type": "toggle",
+        "codes": "castleCrankyLanky"
+    },
+    {
+        "name": "castleCrankyTiny",
+        "type": "toggle",
+        "codes": "castleCrankyTiny"
+    },
+    {
+        "name": "castleCrankyChunky",
+        "type": "toggle",
+        "codes": "castleCrankyChunky"
+    },
+    {
+        "name": "islesCrankyDK",
+        "type": "toggle",
+        "codes": "islesCrankyDK"
+    },
+    {
+        "name": "islesCrankyDiddy",
+        "type": "toggle",
+        "codes": "islesCrankyDiddy"
+    },
+    {
+        "name": "islesCrankyLanky",
+        "type": "toggle",
+        "codes": "islesCrankyLanky"
+    },
+    {
+        "name": "islesCrankyTiny",
+        "type": "toggle",
+        "codes": "islesCrankyTiny"
+    },
+    {
+        "name": "islesCrankyChunky",
+        "type": "toggle",
+        "codes": "islesCrankyChunky"
+    }
+]

@@ -109,7 +109,7 @@
             },
             {
                 "name": "Aztec Kasplat: On Tiny Temple",
-                "access_rules": ["$rocket"],
+                "access_rules": ["$rocket, climb"],
                 "sections": [
                     {
                         "name": "Kasplat",

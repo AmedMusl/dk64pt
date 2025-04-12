@@ -466,7 +466,7 @@
             },
             {            
                 "name": "Forest Lanky Attic Shooting",
-                "access_rules": ["$nightTime, $forestSlam, lanky, homing"],
+                "access_rules": ["$nightTime, $forestSlam, lanky, homing, $height"],
                 "sections": [
                     {
                         "name": "Golden Banana"

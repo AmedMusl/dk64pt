@@ -160,6 +160,10 @@ function canEnterSprintCabin()
     return trombone() and (rocket() or balloon())
 end
 
+function height()
+    return balloon() or rocket()
+end
+
 function aztecPastSandPit()
     return (has("climb") and has("vine")) or rocket() or (has("climb") and twirl())
 end
@@ -727,25 +731,42 @@ end
 function toggleLevelOrder()
     if has("k1") then
         Tracker:FindObjectForCode("num2").Active = true
+    elseif not_has("k1") then
+        Tracker:FindObjectForCode("num2").Active = false
     end
     if has("k2") then
         Tracker:FindObjectForCode("num3").Active = true
+    else
+        Tracker:FindObjectForCode("num3").Active = false
+    end
+    if has("k2") and has("dive") then
         Tracker:FindObjectForCode("num4").Active = true
+    else
+        Tracker:FindObjectForCode("num4").Active = false
     end
     if has("k4") then
         Tracker:FindObjectForCode("num5").Active = true
+    else
+        Tracker:FindObjectForCode("num5").Active = false
     end
     if has("k5") then
         Tracker:FindObjectForCode("num6").Active = true
         Tracker:FindObjectForCode("num7").Active = true
+    else
+        Tracker:FindObjectForCode("num6").Active = false
+        Tracker:FindObjectForCode("num7").Active = false
     end
     if has("k6") and has("k7") then
         Tracker:FindObjectForCode("num8").Active = true
+    else
+        Tracker:FindObjectForCode("num8").Active = false
     end
 end
 
+
 ScriptHost:AddWatchForCode("number2", "k1", toggleLevelOrder)
-ScriptHost:AddWatchForCode("number34", "k2", toggleLevelOrder)
+ScriptHost:AddWatchForCode("number3", "k2", toggleLevelOrder)
+ScriptHost:AddWatchForCode("number4_dive", "dive", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number5", "k4", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number67", "k5", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number8", "k6", toggleLevelOrder)

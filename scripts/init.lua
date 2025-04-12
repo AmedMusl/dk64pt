@@ -25,9 +25,10 @@ Tracker:AddItems("items/moves.jsonc")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/keys.json")
 Tracker:AddItems("items/settings.json")
+Tracker:AddItems("items/hints.json")
 
 
-
+-- Locations
 Tracker:AddMaps("maps/maps.json")
 Tracker:AddLocations("locations/isles.jsonc")
 Tracker:AddLocations("locations/aztec.json")
@@ -39,6 +40,7 @@ Tracker:AddLocations("locations/japes.json")
 Tracker:AddLocations("locations/galleon.json")
 Tracker:AddLocations("locations/factory.json")
 Tracker:AddLocations("locations/shops.json")
+Tracker:AddLocations("locations/hints.json")
 
 
 -- Default Layout

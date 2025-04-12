@@ -1,5 +1,6 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/hints_mapping.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -185,6 +186,11 @@ function onClear(slot_data)
             end
         end
     end
+    if PLAYER_ID > -1 then
+    
+        HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({HINTS_ID})
+    end
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -252,9 +258,46 @@ end
 --     -- your code goes here
 -- end
 
+function onNotify(key, value, old_value)
+
+    if value ~= old_value and key == HINTS_ID then
+        for _, hint in ipairs(value) do
+            if not hint.found and hint.finding_player == Archipelago.PlayerNumber then
+                updateHints(hint.location)
+            end
+        end
+    end
+end
+
+function onNotifyLaunch(key, value)
+    Tracker.BulkUpdate = false
+    if key == HINTS_ID then
+        for _, hint in ipairs(value) do
+            if not hint.found and hint.finding_player == Archipelago.PlayerNumber then
+                updateHints(hint.location)
+            end
+        end
+    end
+end
+
+function updateHints(locationID)
+    local item_codes = HINTS_MAPPING[locationID]
+
+    for _, item_code in ipairs(item_codes) do
+        local obj = Tracker:FindObjectForCode(item_code)
+        if obj then
+            obj.Active = true
+        else
+            print(string.format("No object found for code: %s", item_code))
+        end
+    end
+end
+
 
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
+Archipelago:AddSetReplyHandler("notify handler", onNotify)
+Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
