@@ -161,7 +161,7 @@ function canEnterSprintCabin()
 end
 
 function height()
-    return balloon() or rocket()
+    return balloon() or has("climb")
 end
 
 function aztecPastSandPit()
