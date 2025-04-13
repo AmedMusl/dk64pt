@@ -430,14 +430,14 @@
                 ]
             },
             {            
-                "name": "DK Arcade Round 2",
+                "name": "DK Arcade",
                 "access_rules": ["$blast"],
                 "sections": [
-                    // {
-                    //     "name": "DK Arcade Round 1"
-                    // },
                     {
-                        "name": "Nintendo Coin",
+                        "name": "Round 1"
+                    },
+                    {
+                        "name": "Round 2",
                         "access_rules": ["$grab, climb"],
                         "chest_unopened_img": "images/items/n64rw_coin.png",
                         "chest_opened_img": "images/items/n64rwbw.png"

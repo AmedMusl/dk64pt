@@ -58,7 +58,7 @@
       },
       {
         "name": "Chunky Pound the X",
-        "access_rules": ["$port, $sax, $hunky"],
+        "access_rules": ["$port, $sax, $hunky, slam"],
         "sections": [
           {
             "name": "Golden Banana"
