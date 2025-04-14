@@ -55,7 +55,7 @@ function japesDiddyMedal()
     if coconutCage() then
         cb_total = cb_total + 3
     end
-    if coconutCage() and coconut then
+    if coconutCage() and coconut() then
         cb_total = cb_total + 5
     end
     return cb_total >= cb_amount

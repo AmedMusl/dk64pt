@@ -41,6 +41,7 @@
                     },
                     {
                         "name": "Boss",
+                        "access_rules": ["$levelBossLogic, vine", "$levelBossLogic, dive, $shipyard", "$levelBossLogic, dive, $lighthouse"],
                         "chest_unopened_img": "images/items/scoff.png",
                         "chest_opened_img": "images/items/scoffbw.png"
                     }

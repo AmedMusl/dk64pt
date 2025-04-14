@@ -277,7 +277,7 @@ LOCATION_MAPPING = {
 	[14041205] = {"@Jungle Japes/Japes Diddy Minecart/Golden Banana", "@Wrinkly Hints/Japes Hints/Diddy Minecart"},
 	[14041206] = {"@Jungle Japes/Japes Chunky Underground/Golden Banana", "@Wrinkly Hints/Japes Hints/Chunky Underground Banana"},
 	[14041207] = {"@Jungle Japes/Japes Kasplat: Underground/Kasplat", "@Wrinkly Hints/Japes Hints/Underground Kasplat"},
-	[14041208] = {"@Jungle Japes/Medals/Boss"},
+	[14041208] = {"@Jungle Japes/Medals/Boss", "@Wrinkly Hints/Japes Hints/Japes Boss"},
 	-- Factory
 	[14041245] = {"@Frantic Factory/Medals/Factory DK Medal", "@Wrinkly Hints/Factory Hints/Factory DK Medal"},
 	[14041246] = {"@Frantic Factory/Medals/Factory Diddy Medal", "@Wrinkly Hints/Factory Hints/Factory Diddy Medal"},

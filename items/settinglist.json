@@ -1076,5 +1076,397 @@
           "inherit_codes": false
         }
       ]
+    },
+    {
+      "name": "Level 1 TnS",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/scoff.png",
+          "name": "Level 1 Boss",
+          "codes": "tns1",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army1.png",
+          "name": "Armydillo 1",
+          "codes": "tns1, army11",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga1.png",
+          "name": "Dogadon 1",
+          "codes": "tns1, doga11",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/madjack.png",
+          "name": "Mad Jack",
+          "codes": "tns1, jack1",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/pufftoss.png",
+          "name": "Pufftoss",
+          "codes": "tns1, puff1",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga2.png",
+          "name": "Dogadon 2",
+          "codes": "tns1, doga21",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army2.png",
+          "name": "Armydillo 2",
+          "codes": "tns1, army21",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/kutout.png",
+          "name": "Kutout",
+          "codes": "tns1, kutout1",
+          "inherit_codes": false
+        }
+      ]
+    },
+    {
+      "name": "Level 2 TnS",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/scoff.png",
+          "name": "Level 2 Boss",
+          "codes": "tns2",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army1.png",
+          "name": "Armydillo 1",
+          "codes": "tns2, army12",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga1.png",
+          "name": "Dogadon 1",
+          "codes": "tns2, doga12",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/madjack.png",
+          "name": "Mad Jack",
+          "codes": "tns2, jack2",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/pufftoss.png",
+          "name": "Pufftoss",
+          "codes": "tns2, puff2",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga2.png",
+          "name": "Dogadon 2",
+          "codes": "tns2, doga22",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army2.png",
+          "name": "Armydillo 2",
+          "codes": "tns2, army22",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/kutout.png",
+          "name": "Kutout",
+          "codes": "tns2, kutout2",
+          "inherit_codes": false
+        }
+      ]
+    },
+    {
+      "name": "Level 3 TnS",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/scoff.png",
+          "name": "Level 3 Boss",
+          "codes": "tns3",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army1.png",
+          "name": "Armydillo 1",
+          "codes": "tns3, army13",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga1.png",
+          "name": "Dogadon 1",
+          "codes": "tns3, doga13",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/madjack.png",
+          "name": "Mad Jack",
+          "codes": "tns3, jack3",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/pufftoss.png",
+          "name": "Pufftoss",
+          "codes": "tns3, puff3",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga2.png",
+          "name": "Dogadon 2",
+          "codes": "tns3, doga23",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army2.png",
+          "name": "Armydillo 2",
+          "codes": "tns3, army23",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/kutout.png",
+          "name": "Kutout",
+          "codes": "tns3, kutout3",
+          "inherit_codes": false
+        }
+      ]
+    },
+    {
+      "name": "Level 4 TnS",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/scoff.png",
+          "name": "Level 4 Boss",
+          "codes": "tns4",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army1.png",
+          "name": "Armydillo 1",
+          "codes": "tns4, army14",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga1.png",
+          "name": "Dogadon 1",
+          "codes": "tns4, doga14",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/madjack.png",
+          "name": "Mad Jack",
+          "codes": "tns4, jack4",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/pufftoss.png",
+          "name": "Pufftoss",
+          "codes": "tns4, puff4",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga2.png",
+          "name": "Dogadon 2",
+          "codes": "tns4, doga24",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army2.png",
+          "name": "Armydillo 2",
+          "codes": "tns4, army24",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/kutout.png",
+          "name": "Kutout",
+          "codes": "tns4, kutout4",
+          "inherit_codes": false
+        }
+      ]
+    },
+    {
+      "name": "Level 5 TnS",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/scoff.png",
+          "name": "Level 5 Boss",
+          "codes": "tns5",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army1.png",
+          "name": "Armydillo 1",
+          "codes": "tns5, army1",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga1.png",
+          "name": "Dogadon 1",
+          "codes": "tns5, doga15",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/madjack.png",
+          "name": "Mad Jack",
+          "codes": "tns5, jack5",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/pufftoss.png",
+          "name": "Pufftoss",
+          "codes": "tns5, puff5",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga2.png",
+          "name": "Dogadon 2",
+          "codes": "tns5, doga25",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army2.png",
+          "name": "Armydillo 2",
+          "codes": "tns5, army25",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/kutout.png",
+          "name": "Kutout",
+          "codes": "tns5, kutout5",
+          "inherit_codes": false
+        }
+      ]
+    },
+    {
+      "name": "Level 6 TnS",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/scoff.png",
+          "name": "Level 6 Boss",
+          "codes": "tns6",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army1.png",
+          "name": "Armydillo 1",
+          "codes": "tns6, army16",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga1.png",
+          "name": "Dogadon 1",
+          "codes": "tns6, doga16",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/madjack.png",
+          "name": "Mad Jack",
+          "codes": "tns6, jack6",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/pufftoss.png",
+          "name": "Pufftoss",
+          "codes": "tns6, puff6",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga2.png",
+          "name": "Dogadon 2",
+          "codes": "tns6, doga26",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army2.png",
+          "name": "Armydillo 2",
+          "codes": "tns6, army26",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/kutout.png",
+          "name": "Kutout",
+          "codes": "tns6, kutout6",
+          "inherit_codes": false
+        }
+      ]
+    },
+    {
+      "name": "Level 7 TnS",
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/scoff.png",
+          "name": "Level 7 Boss",
+          "codes": "tns7",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army1.png",
+          "name": "Armydillo 1",
+          "codes": "tns7, army17",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga1.png",
+          "name": "Dogadon 1",
+          "codes": "tns7, doga17",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/madjack.png",
+          "name": "Mad Jack",
+          "codes": "tns7, jack7",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/pufftoss.png",
+          "name": "Pufftoss",
+          "codes": "tns7, puff7",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/doga2.png",
+          "name": "Dogadon 2",
+          "codes": "tns7, doga27",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/army2.png",
+          "name": "Armydillo 2",
+          "codes": "tns7, army27",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/kutout.png",
+          "name": "Kutout",
+          "codes": "tns7, kutout7",
+          "inherit_codes": false
+        }
+      ]
     }
 ]

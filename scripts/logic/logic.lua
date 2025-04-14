@@ -762,6 +762,33 @@ function toggleLevelOrder()
         Tracker:FindObjectForCode("num8").Active = false
     end
 end
+function hasBoss(prefix)
+    for i = 1, 7 do
+        if has(prefix .. i) then
+            return true
+        end
+    end
+    return false
+end
+
+function levelBossLogic()
+    local bossOrder = {
+        {boss = "army1", check = function() return has("barrel") end},
+        {boss = "doga1", check = function() return has("barrel") end},
+        {boss = "jack", check = twirl},
+        {boss = "puff", check = function() return true end}, -- Ensure 'check' is callable
+        {boss = "doga2", check = function() return has("barrel") and hunky() end},
+        {boss = "army2", check = function() return has("barrel") end},
+        {boss = "kutout", check = function() return true end} -- Ensure 'check' is callable
+    }
+
+    for _, boss in ipairs(bossOrder) do
+        if hasBoss(boss.boss) and not boss.check() then
+            return false
+        end
+    end
+    return true
+end
 
 
 ScriptHost:AddWatchForCode("number2", "k1", toggleLevelOrder)

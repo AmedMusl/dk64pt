@@ -12,8 +12,6 @@ if ENABLE_DEBUG_LOG then
     print("Debug logging is enabled!")
 end
 
--- Utility Script for helper functions etc.
-ScriptHost:LoadScript("scripts/utils.lua")
 
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")
@@ -24,7 +22,7 @@ Tracker:AddItems("items/kongs.json")
 Tracker:AddItems("items/moves.jsonc")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/keys.json")
-Tracker:AddItems("items/settings.json")
+Tracker:AddItems("items/settinglist.json")
 Tracker:AddItems("items/hints.json")
 
 

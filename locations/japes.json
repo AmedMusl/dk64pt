@@ -41,6 +41,7 @@
                     },
                     {
                         "name": "Boss",
+                        "access_rules": ["$levelBossLogic, climb, vine", "$levelBossLogic, $peanuts", "$levelBossLogic, $coconutCage, $coconut"],
                         "chest_unopened_img": "images/items/scoff.png",
                         "chest_opened_img": "images/items/scoffbw.png"
                     }
@@ -216,7 +217,7 @@
             },
             {            
                 "name": "Japes Dirt: Painting Hill",
-                "access_rules": ["$ostand, shockwave"],
+                "access_rules": ["$ostand, shockwave", "$twirl, climb, shockwave"],
                 "sections": [
                     {
                         "name": "Rainbow Coin",
