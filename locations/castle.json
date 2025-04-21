@@ -139,7 +139,7 @@
                     },
                     {
                         "name": "Castle Chunky Tree Sniping Barrel",
-                        "access_rules": ["$pineapple, sniper, $punch"]
+                        "access_rules": ["$pineapple, sniper, $punch", "^$ap, $pineapple, $punch"]
                     },
                     {
                         "name": "Castle Kasplat: Inside the Tree",
@@ -235,7 +235,7 @@
             },
             {            
                 "name": "Castle Lanky Tower",
-                "access_rules": ["$castleSlam, $balloon, $grape, sniper"],
+                "access_rules": ["$castleSlam, $balloon, $grape, sniper", "$castleSlam, $balloon, $grape, homing, ^$ap"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -274,7 +274,7 @@
             },
             {            
                 "name": "Castle Tiny Trashcan",
-                "access_rules": ["$mini, $canClearGauntlet"],
+                "access_rules": ["^$trash"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -418,7 +418,7 @@
                 "sections": [
                     {
                         "name": "Castle Lanky Mausoleum",
-                        "access_rules": ["$grape, $sprint, vine, $trombone"]
+                        "access_rules": ["$grape, $sprint, vine, $trombone", "$grape, $sprint, ^$ap"]
                     },
                     {
                         "name": "Castle Tiny Mausoleum",

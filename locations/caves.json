@@ -57,7 +57,7 @@
             },
             {
                 "name": "Caves Diddy Jetpack Barrel",
-                "access_rules": ["$rocket"],
+                "access_rules": ["$rocket", "^$ap, donkey", "^$ap, $twirl"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -146,7 +146,7 @@
             },
             {
                 "name": "Caves Kasplat: On the Pillar",
-                "access_rules": ["$rocket"],
+                "access_rules": ["$rocket", "^$ap, $balloon", "^$ap, $twirl"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -182,7 +182,7 @@
             },
             {
                 "name": "Caves Lanky Beetle Race",
-                "access_rules": ["$cavesSlam, $balloon, $sprint"],
+                "access_rules": ["$cavesSlam, $balloon, $sprint", "$cavesSlam, $sprint, ^$ap"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -322,7 +322,7 @@
             },
             {
                 "name": "Caves Lanky 5 Door Igloo",
-                "access_rules": ["$igloo, $trombone, $balloon"],
+                "access_rules": ["$igloo, $trombone, $balloon", "^$ap, $igloo, $trombone"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -420,7 +420,7 @@
             },
             {
                 "name": "Caves DK 5 Door Cabin",
-                "access_rules": ["$bongos, $coconut, homing"],
+                "access_rules": ["^$dkCabin"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -437,7 +437,7 @@
             },
             {
                 "name": "Caves Diddy 5 Door Cabin Lower",
-                "access_rules": ["$guitar, $rocket, oranges"],
+                "access_rules": ["$guitar, $rocket, oranges", "^$ap, $guitar, oranges"],
                 "sections": [
                     {
                         "name": "Golden Banana"

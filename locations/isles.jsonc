@@ -144,7 +144,7 @@
       },
       {
         "name": "Isles Lanky Instrument Pad",
-        "access_rules": ["$canEnterJapes, barrel, chunky, $trombone"],
+        "access_rules": ["$canEnterJapesLobby, barrel, chunky, $trombone"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -256,7 +256,7 @@
       // },
       {
         "name": "Isles Tiny Aztec Lobby Barrel",
-        "access_rules": ["$canEnterAztec"],
+        "access_rules": ["$canEnterAztecLobby"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -462,7 +462,7 @@
       },
       {
         "name": "Isles DK Bongo Pad",
-        "access_rules": ["$canEnterFactory, $bongos, $grab"],
+        "access_rules": ["$canEnterFactoryLobby, $bongos, $grab"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -479,7 +479,7 @@
       },
       {
         "name": "Isles Factory Lobby Box",
-        "access_rules": ["$canEnterFactory, $punch"],
+        "access_rules": ["$canEnterFactoryLobby, $punch"],
         "sections": [
           {
             "name": "Kasplat",
@@ -599,7 +599,7 @@
       // },
       {
         "name": "Isles Tiny Galleon Lobby Swim",
-        "access_rules": ["$canEnterGalleon, $mini, $galleonSlam, chunky, dive, $twirl"],
+        "access_rules": ["$canEnterGalleonLobby, $mini, $galleonSlam, chunky, dive, $twirl"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -616,7 +616,7 @@
       },
       {
         "name": "Isles Kasplat: Galleon Lobby",
-        "access_rules": ["$canEnterGalleon"],
+        "access_rules": ["$canEnterGalleonLobby"],
         "sections": [
           {
             "name": "Kasplat",
@@ -784,7 +784,7 @@
       },
       {
         "name": "Isles Dirt: Aztec Roof",
-        "access_rules": ["$rocket, shockwave, k4, barrel, chunky, $trombone"],
+        "access_rules": ["$rocket, shockwave, k4, barrel, chunky, $trombone", "^$ap, $twirl, shockwave, k4", "^$ap, k4, donkey, shockwave"],
         "sections": [
           {
             "name": "Rainbow Coin",
@@ -804,7 +804,7 @@
       },
       {
         "name": "Isles Fairy (Fungi Lobby)",
-        "access_rules": ["$canEnterForest, $feather, camera"],
+        "access_rules": ["$canEnterForestLobby, $feather, camera"],
         "sections": [
           {
             "name": "Fairy",
@@ -823,7 +823,7 @@
       },
       {
         "name": "Isles Battle Arena 2 (Fungi Lobby)",
-        "access_rules": ["$canEnterForest, $coconut, $peanuts, $grape, $feather, $pineapple, $gone"],
+        "access_rules": ["$canEnterForestLobby, $coconut, $peanuts, $grape, $feather, $pineapple, $gone"],
         "sections": [
           {
             "name": "Crown",
@@ -938,7 +938,7 @@
       // },
       {
         "name": "Isles DK Caves Lava",
-        "access_rules": ["$canEnterCaves, $punch, $strong"],
+        "access_rules": ["$canEnterCavesLobby, $punch, $strong"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -955,7 +955,7 @@
       },
       {
         "name": "Isles Diddy Guitar Pad",
-        "access_rules": ["$canEnterCaves, $rocket, $guitar"],
+        "access_rules": ["$canEnterCavesLobby, $rocket, $guitar"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -972,7 +972,7 @@
       },
       {
         "name": "Isles Kasplat: Caves Lobby Punch",
-        "access_rules": ["$canEnterCaves, $punch"],
+        "access_rules": ["$canEnterCavesLobby, $punch"],
         "sections": [
           {
             "name": "Kasplat",
@@ -1181,7 +1181,7 @@
       // },
       {
         "name": "Upper Castle Lobby",
-        "access_rules": ["$canEnterCastle, barrel, $balloon, chunky"],
+        "access_rules": ["$canEnterCastleLobby, barrel, $balloon, chunky", "$canEnterCastleLobby, ^$ap, $twirl"],
         "sections": [
           {
             "name": "Isles Lanky Castle Lobby Barrel"
@@ -1204,7 +1204,7 @@
       },
       {
         "name": "Isles Kasplat: Castle Lobby",
-        "access_rules": ["$canEnterCastle, $coconut"],
+        "access_rules": ["$canEnterCastleLobby, $coconut"],
         "sections": [
           {
             "name": "Kasplat",
@@ -1223,7 +1223,7 @@
       },
       {
         "name": "Isles Chunky Helm Lobby Barrel",
-        "access_rules": ["$gone, vine, $canEnterHelm"],
+        "access_rules": ["$gone, vine, $canEnterHelmLobby", "$canEnterHelmLobby, ^$ap, $twirl"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -1240,7 +1240,7 @@
       },
       {
         "name": "Isles Kasplat: Helm Lobby",
-        "access_rules": ["$canEnterHelm, $coconut, sniper"],
+        "access_rules": ["$canEnterHelm, $coconut, sniper", "$canEnterHelmLobby, ^$ap, $twirl"],
         "sections": [
           {
             "name": "Kasplat",

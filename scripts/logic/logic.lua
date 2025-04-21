@@ -1,8 +1,5 @@
--- put logic functions here using the Lua API: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#lua-interface
--- don't be afraid to use custom logic functions. it will make many things a lot easier to maintain, for example by adding logging.
--- to see how this function gets called, check: locations/locations.json
--- example:
 ScriptHost:LoadScript("scripts/logic/medallogic.lua")
+ScriptHost:LoadScript("scripts/logic/logichelper.lua")
 
 function has_more_then_n_consumable(n)
     local count = Tracker:ProviderCountForCode('consumable')
@@ -164,10 +161,6 @@ function height()
     return balloon() or has("climb")
 end
 
-function aztecPastSandPit()
-    return (has("climb") and has("vine")) or rocket() or (has("climb") and twirl())
-end
-
 function pastCabinIsle()
     return has("k4") and peanuts() and ((rocket() and has("barrel") and has("chunky") and trombone()) or twirl() or has("donkey"))
 end
@@ -224,13 +217,86 @@ function lankyPaint()
     return has("slam") and (coconut() or grape() or peanuts() or feather() or pineapple() or bongos() or guitar() or trombone() or sax() or triangle())
 end
 
+function lighthousePlatform()
+    if raisedWater() then
+        return AccessibilityLevel.Normal
+    elseif has("lanky") or has("chunky") then
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function aztecAccess()
+    if canEnterAztec() and (has("vine") or twirl()) then
+        return AccessibilityLevel.Normal
+    elseif canEnterAztec() then
+        return AccessibilityLevel.SequenceBreak
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function japesChunkyTimed()
+    if coconutCage() and coconut() and has("barrel") and japesSlam() and has("chunky") and has("climb") then
+        return AccessibilityLevel.SequenceBreak
+    elseif coconutCage() and coconut() and has("barrel") and japesSlam() and has("chunky") and ostand() then
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function japesDiddyTimed()
+    if coconutCage() and japesSlam() and has("climb") and coconut() and has("diddy") then
+        return AccessibilityLevel.SequenceBreak
+    elseif coconutCage() and coconut() and japesSlam() and ostand() and has("diddy") then
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function japesLankyTimed()
+    if coconutCage() and japesSlam() and has("climb") and coconut() and has("lanky") then
+        return AccessibilityLevel.SequenceBreak
+    elseif coconutCage() and coconut() and japesSlam() and ostand() and has("lanky") then
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function trash()
+    if mini() and (sax() or ((feather() or coconut() or peanuts() or grape() or pineapple()) and has("homing")) or bongos() or guitar() or trombone() or triangle()) then
+        return AccessibilityLevel.Normal
+    elseif mini() and (feather() or coconut() or peanuts() or grape() or pineapple()) then
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function dkCabin()
+    if bongos() and ((coconut() or peanuts() or grape() or feather() or pineapple()) and has("homing")) then
+        return AccessibilityLevel.Normal
+    elseif bongos() and (coconut() or peanuts() or grape() or feather() or pineapple()) then
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function lankyAttic()
+    if has("lanky") and nightTime() and forestSlam() and (balloon() or has("climb")) and ((coconut() or peanuts() or grape() or feather() or pineapple()) and has("homing")) then
+        return AccessibilityLevel.Normal
+    elseif has("lanky") and nightTime() and forestSlam() and (balloon() or has("climb")) and (coconut() or peanuts() or grape() or feather() or pineapple()) then
+        return AccessibilityLevel.SequenceBreak
+
+    end
+end
+
+function ap()
+    return AccessibilityLevel.SequenceBreak
+end
+
 -- Barriers
 
 function coconutCage()
     if has("japes_coconut_gates") then
-        return true
-    else
-        return has("climb")
+        return AccessibilityLevel.Normal
+    elseif has("climb") then
+        return AccessibilityLevel.Normal
+    elseif ostand() then
+        return AccessibilityLevel.SequenceBreak
     end
 end
 
@@ -253,9 +319,11 @@ end
 
 function tunnelDoor()
     if has("aztec_tunnel_door") then
-        return true
+        return AccessibilityLevel.Normal
+    elseif guitar() and has("climb") and ((has("vine")) or rocket()) then
+        return AccessibilityLevel.Normal
     else
-        return has("climb") and has("vine") and guitar()
+        return guitar() and AccessibilityLevel.SequenceBreak
     end
 end
 
@@ -322,9 +390,11 @@ end
 function treasure()
     local in_shipyard = shipyard()
     if has("galleon_treasure_room") then
-        return in_shipyard
+        return in_shipyard and AccessibilityLevel.Normal
+    elseif raisedWater() then
+        return in_shipyard and has("lanky") and AccessibilityLevel.Normal
     else
-        return in_shipyard and has("lanky")
+        return in_shipyard and has("lanky") and AccessibilityLevel.SequenceBreak
     end
 end
 
@@ -505,162 +575,11 @@ end
 
   function canEnterWithBlocker(level, blockerCode)
     local gbCount = Tracker:ProviderCountForCode("gb")
-    local blocker = Tracker:ProviderCountForCode(blockerCode)
-    return has(level) and gbCount >= blocker
-end
-
-function canEnterJapes()
-    if canEnterWithBlocker("l1_japes", "blocker1") then
-        return true
+    if not blockerCode then
+        -- If blockerCode is nil, assume no blocker is required
+        return has(level)
     end
-    if canEnterWithBlocker("l2_japes", "blocker2") then
-        return has("k1")
-    end
-    if canEnterWithBlocker("l3_japes", "blocker3") then
-        return has("k2")
-    end
-    if canEnterWithBlocker("l4_japes", "blocker4") then
-        return has("k2") and has("dive")
-    end
-    if canEnterWithBlocker("l5_japes", "blocker5") then
-        return has("k4")
-    end
-    if canEnterWithBlocker("l6_japes", "blocker6") or canEnterWithBlocker("l7_japes", "blocker7") then
-        return has("k5")
-    end
-end
-
-function canEnterAztec()
-    if canEnterWithBlocker("l1_aztec", "blocker1") then
-        return true
-    end
-    if canEnterWithBlocker("l2_aztec", "blocker2") then
-        return has("k1")
-    end
-    if canEnterWithBlocker("l3_aztec", "blocker3") then
-        return has("k2")
-    end
-    if canEnterWithBlocker("l4_aztec", "blocker4") then
-        return has("k2") and has("dive")
-    end
-    if canEnterWithBlocker("l5_aztec", "blocker5") then
-        return has("k4")
-    end
-    if canEnterWithBlocker("l6_aztec", "blocker6") or canEnterWithBlocker("l7_aztec", "blocker7") then
-        return has("k5")
-    end
-end
-
-function canEnterFactory()
-    if canEnterWithBlocker("l1_factory", "blocker1") then
-        return true
-    end
-    if canEnterWithBlocker("l2_factory", "blocker2") then
-        return has("k1")
-    end
-    if canEnterWithBlocker("l3_factory", "blocker3") then
-        return has("k2")
-    end
-    if canEnterWithBlocker("l4_factory", "blocker4") then
-        return has("k2") and has("dive")
-    end
-    if canEnterWithBlocker("l5_factory", "blocker5") then
-        return has("k4")
-    end
-    if canEnterWithBlocker("l6_factory", "blocker6") or canEnterWithBlocker("l7_factory", "blocker7") then
-        return has("k5")
-    end
-end
-
-function canEnterGalleon()
-    if canEnterWithBlocker("l1_galleon", "blocker1") then
-        return true
-    end
-    if canEnterWithBlocker("l2_galleon", "blocker2") then
-        return has("k1")
-    end
-    if canEnterWithBlocker("l3_galleon", "blocker3") then
-        return has("k2")
-    end
-    if canEnterWithBlocker("l4_galleon", "blocker4") then
-        return has("k2") and has("dive")
-    end
-    if canEnterWithBlocker("l5_galleon", "blocker5") then
-        return has("k4")
-    end
-    if canEnterWithBlocker("l6_galleon", "blocker6") or canEnterWithBlocker("l7_galleon", "blocker7") then
-        return has("k5")
-    end
-end
-
-function canEnterForest()
-    if canEnterWithBlocker("l1_forest", "blocker1") then
-        return true
-    end
-    if canEnterWithBlocker("l2_forest", "blocker2") then
-        return has("k1")
-    end
-    if canEnterWithBlocker("l3_forest", "blocker3") then
-        return has("k2")
-    end
-    if canEnterWithBlocker("l4_forest", "blocker4") then
-        return has("k2") and has("dive")
-    end
-    if canEnterWithBlocker("l5_forest", "blocker5") then
-        return has("k4")
-    end
-    if canEnterWithBlocker("l6_forest", "blocker6") or canEnterWithBlocker("l7_forest", "blocker7") then
-        return has("k5")
-    end
-end
-
-function canEnterCaves()
-    if canEnterWithBlocker("l1_caves", "blocker1") then
-        return true
-    end
-    if canEnterWithBlocker("l2_caves", "blocker2") then
-        return has("k1")
-    end
-    if canEnterWithBlocker("l3_caves", "blocker3") then
-        return has("k2")
-    end
-    if canEnterWithBlocker("l4_caves", "blocker4") then
-        return has("k2") and has("dive")
-    end
-    if canEnterWithBlocker("l5_caves", "blocker5") then
-        return has("k4")
-    end
-    if canEnterWithBlocker("l6_caves", "blocker6") or canEnterWithBlocker("l7_caves", "blocker7") then
-        return has("k5")
-    end
-end
-
-function canEnterCastle()
-    if canEnterWithBlocker("l1_castle", "blocker1") then
-        return true
-    end
-    if canEnterWithBlocker("l2_castle", "blocker2") then
-        return has("k1")
-    end
-    if canEnterWithBlocker("l3_castle", "blocker3") then
-        return has("k2")
-    end
-    if canEnterWithBlocker("l4_castle", "blocker4") then
-        return has("k2") and has("dive")
-    end
-    if canEnterWithBlocker("l5_castle", "blocker5") then
-        return has("k4")
-    end
-    if canEnterWithBlocker("l6_castle", "blocker6") or canEnterWithBlocker("l7_castle", "blocker7") then
-        return has("k5")
-    end
-end
-
-function canEnterHelm()
-    if canEnterWithBlocker("level8", "blocker8") and has("k6") and has("k7") and port() then
-        return true
-    end
-    return false
+    return has(level) and gbCount >= Tracker:ProviderCountForCode(blockerCode)
 end
 
 function jetPac()
@@ -775,11 +694,11 @@ function levelBossLogic()
     local bossOrder = {
         {boss = "army1", check = function() return has("barrel") end},
         {boss = "doga1", check = function() return has("barrel") end},
-        {boss = "jack", check = twirl},
-        {boss = "puff", check = function() return true end}, -- Ensure 'check' is callable
+        {boss = "jack", check = function () return has("slam") and twirl() end},
+        {boss = "puff", check = function() return true end},
         {boss = "doga2", check = function() return has("barrel") and hunky() end},
         {boss = "army2", check = function() return has("barrel") end},
-        {boss = "kutout", check = function() return true end} -- Ensure 'check' is callable
+        {boss = "kutout", check = function() return true end}
     }
 
     for _, boss in ipairs(bossOrder) do

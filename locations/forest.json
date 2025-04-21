@@ -467,7 +467,7 @@
             },
             {            
                 "name": "Forest Lanky Attic Shooting",
-                "access_rules": ["$nightTime, $forestSlam, lanky, homing, $height"],
+                "access_rules": ["^$lankyAttic"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -522,7 +522,7 @@
             },
             {            
                 "name": "Forest Donkey Thornvine Barn Barrel",
-                "access_rules": ["$nightTime, $forestSlam, $strong, climb, vine"],
+                "access_rules": ["$nightTime, $forestSlam, $strong, climb, vine", "$nightTime, ^$ap, $forestSlam, $strong, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"

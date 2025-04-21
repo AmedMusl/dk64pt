@@ -54,7 +54,7 @@
         "children": [
             {
                 "name": "Japes Cranky",
-                "access_rules": ["$coconutCage"],
+                "access_rules": ["^$coconutCage"],
                 "sections": [
                     {
                         "name": "Cranky DK",
@@ -124,7 +124,7 @@
     },
     {
         "name": "Aztec Shops",
-        "access_rules": ["$canEnterAztec, vine", "$canEnterAztec, $twirl"],
+        "access_rules": ["^$aztecAccess"],
         "chest_unopened_img": "images/items/soldoutbw.png",
         "chest_opened_img": "images/items/soldout.png",
         "children": [

@@ -71,23 +71,26 @@ function japesLankyMedal()
     if has("dive") then
         cb_total = cb_total + 5
     end
+    if peanuts() and grape() then
+        cb_total = cb_total + 5
+    end
     if has("climb") then
         cb_total = cb_total + 10
     end
     if coconutCage() and grape() then
         cb_total = cb_total + 20
     end
-    if ostand() then
-        cb_total = cb_total + 5
+    if ostand() or twirl() then
+        cb_total = cb_total + 2
     end
-    if ostand() and peanuts() then
+    if (ostand() or twirl()) and peanuts() then
         cb_total = cb_total + 20
     end
-    if ostand() and peanuts() and grape() then
+    if (ostand() or twirl()) and peanuts() and grape() then
         cb_total = cb_total + 10
     end
     if coconutCage() then
-        cb_total = cb_total + 5
+        cb_total = cb_total + 3
     end
     if coconutCage() and ostand() then
         cb_total = cb_total + 9

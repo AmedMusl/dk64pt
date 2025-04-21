@@ -91,7 +91,7 @@
             },
             {            
                 "name": "Factory Lanky Testing Room Barrel",
-                "access_rules": ["$testing, $balloon, climb"],
+                "access_rules": ["$testing, $balloon, climb", "$testing, ^$ap, diddy", "$testing, ^$ap, lanky", "$testing, ^$ap, tiny"],
                 "sections": [
                     {
                         "name": "Golden Banana"

@@ -186,7 +186,7 @@
             },
             {            
                 "name": "Galleon Diddy Top of Lighthouse",
-                "access_rules": ["$raisedWater, $lighthouse, $seasick, $rocket, $galleonSlam"],
+                "access_rules": ["$lighthouse, ^$lighthousePlatform, $rocket, $guitar"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -219,7 +219,7 @@
                 ]
             },            {            
                 "name": "Lighthouse",
-                "access_rules": ["$raisedWater, $lighthouse, $galleonSlam, climb, donkey"],
+                "access_rules": ["^$lighthousePlatform, $lighthouse, $galleonSlam, climb, donkey"],
                 "sections": [
                     {
                         "name": "Galleon DK Lighthouse"
@@ -259,7 +259,7 @@
             },
             {            
                 "name": "Galleon Chunky Seasick",
-                "access_rules": ["$raisedWater, $lighthouse, $seasick, slam, $punch"],
+                "access_rules": ["^$lighthousePlatform, $lighthouse, $seasick, slam, $punch"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -276,7 +276,7 @@
             },
             {            
                 "name": "Galleon Seal",
-                "access_rules": ["$lighthouse, $shipyard, $raisedWater, $blast"],
+                "access_rules": ["$lighthouse, $shipyard, ^$lighthousePlatform, $blast"],
                 "sections": [
                     {
                         "name": "Free the Seal"
@@ -334,7 +334,7 @@
             },
             {            
                 "name": "Galleon Lanky Gold Tower Barrel",
-                "access_rules": ["$treasure, dive, $balloon"],
+                "access_rules": ["^$treasure, dive, $balloon"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -351,7 +351,7 @@
             },
             {            
                 "name": "Galleon Diddy Gold Tower Barrel",
-                "access_rules": ["$treasure, dive, $spring"],
+                "access_rules": ["^$treasure, dive, $spring"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -368,7 +368,7 @@
             },
             {            
                 "name": "Galleon Kasplat: Diddy Gold Tower",
-                "access_rules": ["$treasure, dive, $spring"],
+                "access_rules": ["^$treasure, dive, $spring"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -387,7 +387,7 @@
             },
             {            
                 "name": "Treasure Chest",
-                "access_rules": ["$treasure, dive, $mini"],
+                "access_rules": ["^$treasure, dive, $mini"],
                 "sections": [
                     {
                         "name": "Treasure Chest Far Left Clam",
@@ -443,7 +443,7 @@
             },
             {            
                 "name": "Galleon Diddy Mechfish",
-                "access_rules": ["$lighthouse, $shipyard, $rocket, $guitar, dive, $peanuts"],
+                "access_rules": ["^$lighthousePlatform, $lighthouse, $shipyard, $rocket, $guitar, dive, $peanuts"],
                 "sections": [
                     {
                         "name": "Golden Banana"
