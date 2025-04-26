@@ -214,7 +214,7 @@ function nightTime()
 end
 
 function lankyPaint()
-    return has("slam") and (coconut() or grape() or peanuts() or feather() or pineapple() or bongos() or guitar() or trombone() or sax() or triangle())
+    return has("slam") and has("lanky") and (coconut() or grape() or peanuts() or feather() or pineapple() or bongos() or guitar() or trombone() or sax() or triangle())
 end
 
 function lighthousePlatform()
@@ -348,7 +348,7 @@ end
 function production()
     local in_testing = testing()
     if has("factory_production_room") then
-        return in_testing
+        return true
     else
         return coconut() and grab() and in_testing
     end

@@ -39,6 +39,7 @@ Tracker:AddLocations("locations/galleon.json")
 Tracker:AddLocations("locations/factory.json")
 Tracker:AddLocations("locations/shops.json")
 Tracker:AddLocations("locations/hints.json")
+Tracker:AddLocations("locations/overview.json")
 
 
 -- Default Layout

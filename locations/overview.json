@@ -1,0 +1,2325 @@
+[
+    {
+        "name": "Overview",
+        "children": [
+            {
+                "name": "Isles GBs",
+                "sections": [
+                    {
+                        "ref": "DK Isles/Japes Lobby Entrance/Golden Banana",
+                        "name": "Isles Japes Lobby Entrance"
+                    },
+                    {
+                        "ref": "DK Isles/Isles DK Coconut Cage/Golden Banana",
+                        "name": "Isles DK Coconut Cage"
+                    },
+                    {
+                        "ref": "DK Isles/Isles DK Bongo Pad/Golden Banana",
+                        "name": "Isles DK Bongos Pad"
+                    },
+                    {
+                        "ref": "DK Isles/Isles DK Caves Lava/Golden Banana",
+                        "name": "Isles DK Caves Lava"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Diddy Peanut Cage/Golden Banana",
+                        "name": "Isles Diddy Peanut Cage"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Diddy Guitar Pad/Golden Banana",
+                        "name": "Isles Diddy Guitar Pad"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Diddy Snide Barrel/Golden Banana",
+                        "name": "Isles Diddy Snide Barrel"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Diddy Summit Barrel/Golden Banana",
+                        "name": "Isles Diddy Summit Barrel"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Lanky Grape Cage/Golden Banana",
+                        "name": "Isles Lanky Grape Cage"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Lanky Instrument Pad/Golden Banana",
+                        "name": "Isles Lanky Trombone Pad"
+                    },
+                    {
+                        "ref": "DK Isles/K. Lumsy Prison/Isles Lanky Sprint Cage",
+                        "name": "Isles Lanky Sprint Cage"
+                    },
+                    {
+                        "ref": "DK Isles/Upper Castle Lobby/Isles Lanky Castle Lobby Barrel",
+                        "name": "Isles Lanky Castle Lobby Barrel"
+                    },
+                    {
+                        "ref": "DK Isles/Tiny Feather Cage/Golden Banana",
+                        "name": "Isles Tiny Feather Cage"
+                    },
+                    {
+                        "ref": "DK Isles/Upper Krem Isles/Isles Tiny Saxophone Pad",
+                        "name": "Isles Tiny Sax Pad"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Tiny Galleon Lobby Swim/Golden Banana",
+                        "name": "Isles Tiny Galleon Lobby Swim"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Tiny Aztec Lobby Barrel/Golden Banana",
+                        "name": "Isles Tiny Aztec Lobby Barrel"
+                    },
+                    {
+                        "ref": "DK Isles/Banana Fairy Island/Returning the Banana Fairies",
+                        "name": "Returning the Banana Fairies"
+                    },
+                    {
+                        "ref": "DK Isles/Chunky Pineapple Cage/Golden Banana",
+                        "name": "Isles Chunky Pineapple Cage"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Chunky Triangle Pad/Golden Banana",
+                        "name": "Isles Chunky Triangle Pad"
+                    },
+                    {
+                        "ref": "DK Isles/Chunky Pound the X/Golden Banana",
+                        "name": "Isles Chunky Pound the X"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Chunky Helm Lobby Barrel/Golden Banana",
+                        "name": "Isles Chunky Helm Lobby Barrel"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 155,
+                        "y": 73
+                    }
+                ]
+            },
+            {
+                "name": "Isles Fairies",
+                "sections": [
+                    {
+                        "ref": "DK Isles/Isles Fairy (Small Island)/Fairy",
+                        "name": "Isles Lone Fairy"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Factory Lobby Box/Isles Fairy (Factory Lobby)",
+                        "name": "Isles Factory Lobby Fairy"
+                    },
+                    {
+                        "ref": "DK Isles/Upper Krem Isles/Isles Fairy (Upper Krem Isle)",
+                        "name": "Isles Upper Krem Fairy"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Fairy (Fungi Lobby)/Fairy",
+                        "name": "Isles Fungi Lobby Fairy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 308,
+                        "y": 73
+                    }
+                ]
+            },
+            {
+                "name": "Isles Arenas",
+                "sections": [
+                    {
+                        "ref": "DK Isles/Isles Battle Arena 1/Crown",
+                        "name": "Isles Snide's Lobby Arena"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Battle Arena 2 (Fungi Lobby)/Crown",
+                        "name": "Isles Fungi Lobby Arena"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 384,
+                        "y": 73
+                    }
+                ]
+            },
+            {
+                "name": "Isles Dirt Patches",
+                "sections": [
+                    {
+                        "ref": "DK Isles/Isles Dirt: Training Grounds Rear Tunnel/Rainbow Coin",
+                        "name": "Training Ground Rear Tunnel Patch"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Dirt: Banana Hoard/Rainbow Coin",
+                        "name": "Training Grounds Banana Hoard Patch"
+                    },
+                    {
+                        "ref": "DK Isles/K. Lumsy Prison/Isles Dirt: Back of Prison"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Dirt: Under Caves Lobby/Rainbow Coin",
+                        "name": "Isles Under Caves Lobby Patch"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Dirt: Cabin Isle/Rainbow Coin",
+                        "name": "Isles Cabin Isle Patch"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Dirt: Aztec Roof/Rainbow Coin",
+                        "name": "Isles Aztec Roof Patch"
+                    },
+                    {
+                        "ref": "DK Isles/Upper Castle Lobby/Isles Dirt: Castle Lobby",
+                        "name": "Isles Castle Lobby Patch"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 453,
+                        "y": 73
+                    }
+                ]
+            },
+            {
+                "name": "Isles Blueprints",
+                "sections": [
+                    {
+                        "ref": "DK Isles/Isles Kasplat: Helm Lobby/Kasplat",
+                        "name": "Helm Lobby Kasplat"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Kasplat: Castle Lobby/Kasplat",
+                        "name": "Castle Lobby Kasplat"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Kasplat: Caves Lobby Punch/Kasplat",
+                        "name": "Caves Lobby Kasplat"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Factory Lobby Box/Kasplat",
+                        "name": "Factory Lobby Kasplat"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Kasplat: Galleon Lobby/Kasplat",
+                        "name": "Galleon Lobby Kasplat"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 527,
+                        "y": 73
+                    }
+                ]
+            },
+            {
+                "name": "Company Coins",
+                "sections": [
+                    {
+                        "ref": "Isles Shops/Isles Cranky/Jetpac",
+                        "name": "Jetpac"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 648,
+                        "y": 73
+                    }
+                ]
+            },
+            {
+                "name": "Isles Shops",
+                "sections": [
+                    {
+                        "ref": "Isles Shops/Isles Cranky/Cranky DK",
+                        "name": "Isles Cranky DK"
+                    },
+                    {
+                        "ref": "Isles Shops/Isles Cranky/Cranky Diddy",
+                        "name": "Isles Cranky Diddy"
+                    },
+                    {
+                        "ref": "Isles Shops/Isles Cranky/Cranky Lanky",
+                        "name": "Isles Cranky Lanky"
+                    },
+                    {
+                        "ref": "Isles Shops/Isles Cranky/Cranky Tiny",
+                        "name": "Isles Cranky Tiny"
+                    },
+                    {
+                        "ref": "Isles Shops/Isles Cranky/Cranky Chunky",
+                        "name": "Isles Cranky Chunky"
+                    },
+                    {
+                        "ref": "DK Isles/Banana Fairy Island/The Banana Fairy's Gift"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 705,
+                        "y": 73
+                    }
+                ]
+            },
+            {
+                "name": "Japes GBs",
+                "sections": [
+                    {
+                        "ref": "Jungle Japes/Japes DK Floor Cage Banana/Golden Banana",
+                        "name": "Japes DK Floor Cage"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes DK Baboon Blast/Golden Banana",
+                        "name": "Japes DK Baboon Blast"
+                    },
+                    {
+                        "ref": "Jungle Japes/Diddy Cage/Japes in Front of Diddy Cage",
+                        "name": "Japes DK Front of Diddy Cage"
+                    },
+                    {
+                        "ref": "Jungle Japes/Diddy Cage/Japes Free Diddy Item",
+                        "name": "Japes DK Free Diddy Item"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Diddy Timed Cage Banana/Golden Banana",
+                        "name": "Japes Diddy Timed Cage"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Diddy Top of Mountain/Golden Banana",
+                        "name": "Japes Diddy Top of Mountain"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Diddy Peanut Tunnel/Golden Banana",
+                        "name": "Japes Diddy Peanut Tunnel"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Diddy Minecart/Golden Banana",
+                        "name": "Japes Diddy Minecart"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Lanky Timed Cage Banana/Golden Banana",
+                        "name": "Japes Lanky Timed Cage"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Lanky Grape Gate Barrel/Golden Banana",
+                        "name": "Japes Lanky Grape Gate Barrel"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Lanky Slope Barrel/Golden Banana",
+                        "name": "Japes Lanky Slope Barrel"
+                    },
+                    {
+                        "ref": "Jungle Japes/Painting Room/Japes Lanky Zingers",
+                        "name": "Japes Lanky Zingers"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Tiny Timed Cage Banana/Golden Banana",
+                        "name": "Japes Tiny Timed Cage"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Tiny Feather Gate Barrel/Golden Banana",
+                        "name": "Japes Tiny Feather Gate Barrel"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Tiny Stump/Golden Banana",
+                        "name": "Japes Tiny Stump"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Tiny Beehive/Golden Banana",
+                        "name": "Japes Tiny Beehive"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Chunky Boulder/Golden Banana",
+                        "name": "Japes Chunky Boulder"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Chunky Timed Cage Banana/Golden Banana",
+                        "name": "Japes Chunky Timed Cage"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Chunky Giant Bonus Barrel/Golden Banana",
+                        "name": "Japes Chunky Giant Bonus Barrel"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Chunky Underground/Golden Banana",
+                        "name": "Japes Chunky Underground"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 155,
+                        "y": 123
+                    }
+                ]
+            },
+            {
+                "name": "Japes Medals",
+                "sections": [
+                    {
+                        "ref": "Jungle Japes/Medals/Japes DK Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Japes Diddy Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Japes Lanky Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Japes Tiny Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Japes Chunky Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Boss",
+                        "name": "Japes Boss"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 233,
+                        "y": 123
+                    }
+                ]
+            },
+            {
+                "name": "Japes Fairies",
+                "sections": [
+                    {
+                        "ref": "Jungle Japes/Japes Fairy (Rambi Door Pool)/Fairy",
+                        "name": "Japes Rambi Door Fairy"
+                    },
+                    {
+                        "ref": "Jungle Japes/Painting Room/Japes Fairy (Painting Room)",
+                        "name": "Japes Painting Room Fairy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 308,
+                        "y": 123
+                    }
+                ]
+            },
+            {
+                "name": "Japes Arena",
+                "sections": [
+                    {
+                        "ref": "Jungle Japes/Japes Battle Arena (Near Funky)/Crown",
+                        "name": "Japes Arena: Near Funky"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 384,
+                        "y": 123
+                    }
+                ]
+            },
+            {
+                "name": "Japes Dirt Patches",
+                "sections": [
+                    {
+                        "ref": "Jungle Japes/Japes Dirt: Painting Hill/Rainbow Coin",
+                        "name": "Japes Painting Hill Patch"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 453,
+                        "y": 123
+                    }
+                ]
+            },
+            {
+                "name": "Japes Blueprints",
+                "sections": [
+                    {
+                        "ref": "Jungle Japes/Japes Kasplat: Hive Tunnel Lower/Kasplat",
+                        "name": "Japes Kasplat: Hive Tunnel Lower"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Kasplat: Near Painting Room/Kasplat",
+                        "name": "Japes Kasplat: Near Painting Room"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Kasplat: By Lanky Slope Bonus/Kasplat",
+                        "name": "Japes Kasplat: By Lanky Slope Bonus"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Kasplat: Hive Tunnel Upper/Kasplat",
+                        "name": "Japes Kasplat: Hive Tunnel Upper"
+                    },
+                    {
+                        "ref": "Jungle Japes/Japes Kasplat: Underground/Kasplat",
+                        "name": "Japes Kasplat: Underground"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 527,
+                        "y": 123
+                    }
+                ]
+            },
+            {
+              "name": "Japes Crates",
+              "sections": [
+                {
+                    "ref": "Jungle Japes/Japes Crate: Behind the Mountain/Crate",
+                    "name": "Japes Crate: Behind the Mountain"
+                },
+                {
+                    "ref": "Jungle Japes/Japes Crate: In the Rambi Cave/Crate",
+                    "name": "Japes Crate: In the Rambi Cave"
+                }
+              ],
+              "map_locations": [
+                {
+                    "map": "overview",
+                    "x": 591,
+                    "y": 123
+                }
+              ]
+            },
+            {
+                "name": "Japes Shops",
+                "sections": [
+                    {
+                        "ref": "Japes Shops/Japes Cranky/Cranky DK",
+                        "name": "Japes Cranky DK"
+                    },
+                    {
+                        "ref": "Japes Shops/Japes Cranky/Cranky Diddy",
+                        "name": "Japes Cranky Diddy"
+                    },
+                    {
+                        "ref": "Japes Shops/Japes Cranky/Cranky Lanky",
+                        "name": "Japes Cranky Lanky"
+                    },
+                    {
+                        "ref": "Japes Shops/Japes Cranky/Cranky Tiny",
+                        "name": "Japes Cranky Tiny"
+                    },
+                    {
+                        "ref": "Japes Shops/Japes Cranky/Cranky Chunky",
+                        "name": "Japes Cranky Chunky"
+                    },
+                    {
+                        "ref": "Japes Shops/Japes Funky/Funky DK",
+                        "name": "Japes Funky DK"
+                    },
+                    {
+                        "ref": "Japes Shops/Japes Funky/Funky Diddy",
+                        "name": "Japes Funky Diddy"
+                    },
+                    {
+                        "ref": "Japes Shops/Japes Funky/Funky Lanky",
+                        "name": "Japes Funky Lanky"
+                    },
+                    {
+                        "ref": "Japes Shops/Japes Funky/Funky Tiny",
+                        "name": "Japes Funky Tiny"
+                    },
+                    {
+                        "ref": "Japes Shops/Japes Funky/Funky Chunky",
+                        "name": "Japes Funky Chunky"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 705,
+                        "y": 123
+                    }
+                ]
+            },
+            {
+                "name": "Aztec GBs",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/Aztec DK Free Llama Blast/Golden Banana",
+                        "name": "Aztec DK Free Llama Blast"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec DK Sealed Quicksand Tunnel Barrel/Golden Banana",
+                        "name": "Aztec DK Sealed Quicksand Tunnel"
+                    },
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec DK 5DT"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Free Lanky Item/Golden Banana",
+                        "name": "Aztec Free Lanky Item"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Free Tiny Item/Golden Banana",
+                        "name": "Aztec Free Tiny Item"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Diddy Ram Gongs/Golden Banana",
+                        "name": "Aztec Diddy Ram Gongs"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Diddy Vulture Race/Golden Banana",
+                        "name": "Aztec Diddy Vulture Race"
+                    },
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Diddy 5DT"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Lanky Vulture Shooting/Golden Banana",
+                        "name": "Aztec Lanky Vulture Shooting"
+                    },
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Lanky 5DT"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Lanky Llama Temple Barrel/Golden Banana",
+                        "name": "Aztec Lanky Llama Temple Barrel"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Lanky Matching Game/Golden Banana",
+                        "name": "Aztec Lanky Matching Game"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Tiny Klaptrap Room/Golden Banana",
+                        "name": "Aztec Tiny Klaptrap Room"
+                    },
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Tiny 5DT"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Tiny Beetle Race/Golden Banana",
+                        "name": "Aztec Tiny Beetle Race"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Tiny Llama Temple Lava Pedestals/Golden Banana",
+                        "name": "Aztec Tiny Llama Temple Lava Pedestals"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Chunky Vases/Golden Banana",
+                        "name": "Aztec Chunky Vases"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Chunky Klaptrap Room/Golden Banana",
+                        "name": "Aztec Chunky Klaptrap Room"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Chunky Giant Caged Barrel/Golden Banana",
+                        "name": "Aztec Chunky Giant Caged Barrel"
+                    },
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Chunky 5DT"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 155,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Medals",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/Medals/Aztec DK Medal"
+                    },
+                    {
+                        "ref": "Angry Aztec/Medals/Aztec Diddy Medal"
+                    },
+                    {
+                        "ref": "Angry Aztec/Medals/Aztec Lanky Medal"
+                    },
+                    {
+                        "ref": "Angry Aztec/Medals/Aztec Tiny Medal"
+                    },
+                    {
+                        "ref": "Angry Aztec/Medals/Aztec Chunky Medal"
+                    },
+                    {
+                        "ref": "Angry Aztec/Medals/Boss",
+                        "name": "Aztec Boss"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 233,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Fairies",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Fairy (Inside Tiny 5DT)",
+                        "name": "Aztec Fairy (Inside Tiny 5DT)"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Fairy (Llama Temple)/Fairy",
+                        "name": "Aztec Fairy (Llama Temple)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 308,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Arena",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/Aztec Battle Arena (Tiny Temple: Vulture Room)/Crown",
+                        "name": "Aztec Battle Arena (Tiny Temple)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 384,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Dirt Patches",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/Aztec Dirt: Oasis/Rainbow Coin",
+                        "name": "Aztec Dirt: Oasis"
+                    },
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Dirt: Chunky 5DT"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 453,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Blueprints",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/Aztec Kasplat: Behind DK Stone Door/Kasplat",
+                        "name": "Aztec Kasplat: Behind DK Stone Door"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Kasplat: On Tiny Temple/Kasplat",
+                        "name": "Aztec Kasplat: On Tiny Temple"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Kasplat: Llama Temple Lava/Kasplat",
+                        "name": "Aztec Kasplat: Llama Temple Lava"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Kasplat: Hunky Chunky Barrel/Kasplat",
+                        "name": "Aztec Kasplat: Hunky Chunky Barrel"
+                    },
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Kasplat: Chunky 5DT"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 527,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Crates",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/Aztec Crate: On Llama Temple/Crate",
+                        "name": "Aztec Crate: On Llama Temple"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Crate: Near Gong Tower/Crate",
+                        "name": "Aztec Crate: Near Gong Tower"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Crate: Llama Temple/Crate",
+                        "name": "Aztec Crate: Llama Temple"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 591,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Shops",
+                "sections": [
+                    {
+                        "ref": "Aztec Shops/Aztec Cranky/Cranky DK",
+                        "name": "Aztec Cranky DK"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Cranky/Cranky Diddy",
+                        "name": "Aztec Cranky Diddy"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Cranky/Cranky Lanky",
+                        "name": "Aztec Cranky Lanky"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Cranky/Cranky Tiny",
+                        "name": "Aztec Cranky Tiny"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Cranky/Cranky Chunky",
+                        "name": "Aztec Cranky Chunky"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Funky/Funky DK",
+                        "name": "Aztec Funky DK"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Funky/Funky Diddy",
+                        "name": "Aztec Funky Diddy"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Funky/Funky Lanky",
+                        "name": "Aztec Funky Lanky"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Funky/Funky Tiny",
+                        "name": "Aztec Funky Tiny"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Funky/Funky Chunky",
+                        "name": "Aztec Funky Chunky"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Candy/Candy DK",
+                        "name": "Aztec Candy DK"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Candy/Candy Diddy",
+                        "name": "Aztec Candy Diddy"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Candy/Candy Lanky",
+                        "name": "Aztec Candy Lanky"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Candy/Candy Tiny",
+                        "name": "Aztec Candy Tiny"
+                    },
+                    {
+                        "ref": "Aztec Shops/Aztec Candy/Candy Chunky",
+                        "name": "Aztec Candy Chunky"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 705,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "name": "Factory GBs", 
+                "sections": [
+                    {
+                        "ref": "Frantic Factory/Factory DK Number Game/Golden Banana",
+                        "name": "Factory DK Number Game"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory DK Power Hut/Golden Banana",
+                        "name": "Factory DK Power Hut"
+                    },
+                    {
+                        "ref": "Frantic Factory/DK Arcade/Round 1",
+                        "name": "Factory DK Arcade Round 1"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory DK Crusher Room/Golden Banana",
+                        "name": "Factory DK Crusher Room"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Diddy Block Tower/Golden Banana",
+                        "name": "Factory Diddy Block Tower"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Diddy Charge Enemies/Golden Banana",
+                        "name": "Factory Diddy Charge Enemies"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Diddy Storage Room Barrel/Golden Banana",
+                        "name": "Factory Diddy Storage Room Barrel"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Diddy Production Spring/Golden Banana",
+                        "name": "Factory Diddy Production Spring"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Lanky Testing Room Barrel/Golden Banana",
+                        "name": "Factory Lanky Testing Room Barrel"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Lanky Piano Game/Golden Banana",
+                        "name": "Factory Lanky Piano Room"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Free Chunky Item/Golden Banana",
+                        "name": "Factroy Free Chunky Item"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Lanky Production Handstand/Golden Banana",
+                        "name": "Factory Lanky Production Handstand"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Tiny Dartboard/Golden Banana",
+                        "name": "Factory Tiny Dartboard"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Tiny Car Race/Golden Banana",
+                        "name": "Factory Tiny Car Race"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Tiny Mini by Arcade/Golden Banana",
+                        "name": "Factory Tiny Mini by Arcade"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Tiny Production Twirl/Golden Banana",
+                        "name": "Factory Tiny Production Twirl"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Chunky Toy Monster/Golden Banana",
+                        "name": "Factory Chunky Toy Monster"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Chunky Dark Room/Golden Banana",
+                        "name": "Factory Chunky Dark Room"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Chunky Barrel by Arcade/Golden Banana",
+                        "name": "Factory Chunky Barrel by Arcade"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Chunky Production Timer/Golden Banana",
+                        "name": "Factory Chunky Production Timer"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 155,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Factory Medals",
+                "sections": [
+                    {
+                        "ref": "Frantic Factory/Medals/Factory DK Medal"
+                    },
+                    {
+                        "ref": "Frantic Factory/Medals/Factory Diddy Medal"
+                    },
+                    {
+                        "ref": "Frantic Factory/Medals/Factory Lanky Medal"
+                    },
+                    {
+                        "ref": "Frantic Factory/Medals/Factory Tiny Medal"
+                    },
+                    {
+                        "ref": "Frantic Factory/Medals/Factory Chunky Medal"
+                    },
+                    {
+                        "ref": "Frantic Factory/Medals/Boss"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 233,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Factory Fairies",
+                "sections": [
+                    {
+                        "ref": "Frantic Factory/Factory Fairy (Number Game)/Fairy",
+                        "name": "Factory Fairy Number Game"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Fairy (Near Funky's)/Fairy",
+                        "name": "Factory Fairy Near Funky's"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 308,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Factory Arena",
+                "sections": [
+                    {
+                        "ref": "Frantic Factory/Factory Battle Arena (Under Grate)/Crown",
+                        "name": "Factory Arena"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 384,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Factory Dirt Patches",
+                "sections": [
+                    {
+                        "ref": "Frantic Factory/Factory Dirt: Dark Room/Rainbow Coin",
+                        "name": "Factory Dirt: Dark Room"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 453,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Factory Blueprints",
+                "sections": [
+                    {
+                        "ref": "Frantic Factory/Factory Kasplat: Upper Production Pipe/Kasplat",
+                        "name": "Factory Kasplat: Upper Production Pipe"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Kasplat: Base of Production/Kasplat",
+                        "name": "Factory Kasplat: Base of Production"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Kasplat: R&D/Kasplat",
+                        "name": "Factory Kasplat: R&D"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Kasplat: Pole to Arcade/Kasplat",
+                        "name": "Factory Kasplat: Pole to Arcade"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Kasplat: Block Tower/Kasplat",
+                        "name": "Factory Kasplat: Block Tower"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 527,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Factory Crates",
+                "sections": [
+                    {
+                        "ref": "Frantic Factory/Factory Crate: Near Funky/Crate",
+                        "name": "Factory Crate: Near Funky"
+                    },
+                    {
+                        "ref": "Frantic Factory/Factory Crate: Near Candy/Crate",
+                        "name": "Factory Crate: Near Candy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 591,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Factory Company Coin",
+                "sections": [
+                    {
+                        "ref": "Frantic Factory/DK Arcade/Round 2",
+                        "name": "Factory Arcade Round 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 648,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Factory Shops",
+                "sections": [
+                    {
+                        "ref": "Factory Shops/Factory Cranky/Cranky DK"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Cranky/Cranky Diddy"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Cranky/Cranky Lanky"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Cranky/Cranky Tiny"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Cranky/Cranky Chunky"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Funky/Funky DK"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Funky/Funky Diddy"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Funky/Funky Lanky"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Funky/Funky Tiny"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Funky/Funky Chunky"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Candy/Candy DK"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Candy/Candy Diddy"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Candy/Candy Lanky"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Candy/Candy Tiny"
+                    },
+                    {
+                        "ref": "Factory Shops/Factory Candy/Candy Chunky"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 705,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Galleon GBs",
+                "sections": [
+                    {
+                        "ref": "Gloomy Galleon/Lighthouse/Galleon DK Lighthouse"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Seal/Free the Seal",
+                        "name": "Galleon DK Free the Seal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Seal/Seal Race",
+                        "name": "Galleon DK Seal Race"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon DK 5-Door Ship/Golden Banana",
+                        "name": "Galleon DK 5DS"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Diddy Top of Lighthouse/Golden Banana",
+                        "name": "Galleon Diddy Top of Lighthouse"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Diddy Gold Tower Barrel/Golden Banana",
+                        "name": "Galleon Diddy Gold Tower Barrel"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Diddy Mechfish/Golden Banana",
+                        "name": "Galleon Diddy Mechfish"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Diddy 5-Door Ship/Golden Banana",
+                        "name": "Galleon Diddy 5DS"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Lanky Enguarde Chest/Golden Banana",
+                        "name": "Galleon Lanky Enguarde Chest"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Lanky Gold Tower Barrel/Golden Banana",
+                        "name": "Galleon Lanky Gold Tower Barrel"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/2-Door Ship/Lanky 2DS",
+                        "name": "Galleon Lanky 2DS"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Lanky 5-Door Ship/Golden Banana",
+                        "name": "Galleon Lanky 5DS"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Tiny Mermaid Reward/Golden Banana",
+                        "name": "Galleon Tiny Mermaid Reward"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Tiny Submarine Barrel/Golden Banana",
+                        "name": "Galleon Tiny Submarine Barrel"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/2-Door Ship/Tiny 2DS",
+                        "name": "Galleon Tiny 2DS"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Tiny 5-Door Ship/Golden Banana",
+                        "name": "Galleon Tiny 5DS"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Chunky Chest/Golden Banana",
+                        "name": "Galleon Chunky Chest"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Chunky Cannon Game/Golden Banana",
+                        "name": "Galleon Chunky Cannon Game"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Chunky Seasick/Golden Banana",
+                        "name": "Galleon Chunky Seasick"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Chunky 5-Door Ship/Golden Banana",
+                        "name": "Galleon Chunky 5DS"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 155,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Medals",
+                "sections": [
+                    {
+                        "ref": "Gloomy Galleon/Medals/Galleon DK Medal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Medals/Galleon Diddy Medal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Medals/Galleon Lanky Medal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Medals/Galleon Tiny Medal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Medals/Galleon Chunky Medal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Medals/Boss",
+                        "name": "Galleon Boss"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 233,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Fairies",
+                "sections": [
+                    {
+                        "ref": "Gloomy Galleon/Galleon Fairy (In Punch Chest)/Fairy",
+                        "name": "Galleon Fairy In Punch Chest"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Tiny 5-Door Ship/Fairy",
+                        "name": "Galleon Fairy Tiny 5DS"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 308,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Arena",
+                "sections": [
+                    {
+                        "ref": "Gloomy Galleon/Galleon Battle Arena (Under Cranky)/Crown",
+                        "name": "Galleon Arena"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 384,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Dirt Patches",
+                "sections": [
+                    {
+                        "ref": "Gloomy Galleon/Lighthouse/Galleon Dirt: Lighthouse"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 453,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Blueprints",
+                "sections": [
+                    {
+                        "ref": "Gloomy Galleon/Galleon Kasplat: Diddy Gold Tower/Kasplat",
+                        "name": "Galleon Kasplat: Diddy Gold Tower"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Kasplat: Lighthouse Alcove/Kasplat",
+                        "name": "Galleon Kasplat: Lighthouse Alcove"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Kasplat: Cannon Game Room/Kasplat",
+                        "name": "Galleon Kasplat: Cannon Game Room"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Kasplat: Past Vines/Kasplat",
+                        "name": "Galleon Kasplat: Past Vines"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Galleon Kasplat: Musical Cactus/Kasplat",
+                        "name": "Galleon Kasplat: Musical Cactus"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 527,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Crates and Pearls",
+                "sections": [
+                    {
+                        "ref": "Gloomy Galleon/Galleon Crate: Near Cactus/Crate",
+                        "name": "Galleon Crate: Near Cactus"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Far Left Clam"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Center Clam"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Far Right Clam"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Close Right Clam"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Close Left Clam"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 591,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Galleon Shops",
+                "sections": [
+                    {
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky DK"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky Diddy"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky Lanky"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky Tiny"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky Chunky"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Funky/Funky DK"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Funky/Funky Diddy"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Funky/Funky Lanky"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Funky/Funky Tiny"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Funky/Funky Chunky"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Candy/Candy DK"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Candy/Candy Diddy"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Candy/Candy Lanky"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Candy/Candy Tiny"
+                    },
+                    {
+                        "ref": "Galleon Shops/Galleon Candy/Candy Chunky"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 705,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Forest GBs",
+                "sections": [
+                    {
+                        "ref": "Fungi Forest/Forest DK Baboon Blast/Golden Banana",
+                        "name": "Forest DK Blast Course"
+                    },
+                    {
+                        "ref": "Fungi Forest/Inside the Mushroom/Forest DK Mushroom Cannons"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest DK Mill Levers/Golden Banana",
+                        "name": "Forest DK Mill Levers"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Donkey Thornvine Barn Barrel/Golden Banana",
+                        "name": "Forest DK Thornvine Barn Barrel"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Diddy Top of Mushroom Barrel/Golden Banana",
+                        "name": "Forest Diddy Top of Mushroom Barrel"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Diddy Owl Race/Golden Banana",
+                        "name": "Forest Diddy Owl Race"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Diddy Winch Cage/Golden Banana",
+                        "name": "Forest Diddy Winch Cage"
+                    },
+                    {
+                        "ref": "Fungi Forest/Dark Rafters/Forest Diddy Dark Rafters"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Lanky Zinger Bounce/Golden Banana",
+                        "name": "Forest Lanky Zinger Bounce"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Lanky Coloured Mushroom Slam/Golden Banana",
+                        "name": "Forest Lanky Colored Mushroom Slam"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Lanky Rabbit Race/Golden Banana",
+                        "name": "Forest Lanky Rabbit Race"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Lanky Attic Shooting/Golden Banana",
+                        "name": "Forest Lanky Attic Shooting"
+                    },
+                    {
+                        "ref": "Fungi Forest/Inside the Mushroom/Forest Tiny Mushroom Barrel"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Anthill/Forest Tiny Anthill Banana"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Anthill/Forest Tiny Bean"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Tiny Spider Boss/Golden Banana",
+                        "name": "Forest Tiny Spider Boss"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Tiny Top of Beanstalk/Golden Banana",
+                        "name": "Forest Tiny Top of Beanstalk"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Chunky Minecart/Golden Banana",
+                        "name": "Forest Chunky Minecart"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Chunky Face Puzzle/Golden Banana",
+                        "name": "Forest Chunky Face Puzzle"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Chunky Keg Crushing/Golden Banana",
+                        "name": "Forest Chunky Keg Crushing"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Chunky Apple Rescue/Golden Banana",
+                        "name": "Forest Chunky Apple Rescue"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 155,
+                        "y": 322
+                    }
+                ]
+            },
+            {
+                "name": "Forest Medals",
+                "sections": [
+                    {
+                        "ref": "Fungi Forest/Medals/Forest DK Medal"
+                    },
+                    {
+                        "ref": "Fungi Forest/Medals/Forest Diddy Medal"
+                    },
+                    {
+                        "ref": "Fungi Forest/Medals/Forest Lanky Medal"
+                    },
+                    {
+                        "ref": "Fungi Forest/Medals/Forest Tiny Medal"
+                    },
+                    {
+                        "ref": "Fungi Forest/Medals/Forest Chunky Medal"
+                    },
+                    {
+                        "ref": "Fungi Forest/Medals/Boss",
+                        "name": "Forest Boss"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 233,
+                        "y": 322
+                    }
+                ]
+            },
+            {
+                "name": "Forest Fairies",
+                "sections": [
+                    {
+                        "ref": "Fungi Forest/Dark Rafters/Forest Fairy (Dark Rafters)"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Fairy (Thornvine Barn)/Fairy",
+                        "name": "Forest Fairy Thornvine Barn"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 308,
+                        "y": 322
+                    }
+                ]
+            },
+            {
+                "name": "Forest Arena",
+                "sections": [
+                    {
+                        "ref": "Fungi Forest/Forest Battle Arena: High Ladder Platform/Crown"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 384,
+                        "y": 322
+                    }
+                ]
+            },
+            {
+                "name": "Forest Dirt Patches",
+                "sections": [
+                    {
+                        "ref": "Fungi Forest/Forest Dirt: Near Mills Grass/Rainbow Coin",
+                        "name": "Forest Dirt: Near Mills Grass"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Dirt: Beanstalk/Rainbow Coin",
+                        "name": "Forest Dirt: Beanstalk"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 453,
+                        "y": 322
+                    }
+                ]
+            },
+            {
+                "name": "Forest Blueprints",
+                "sections": [
+                    {
+                        "ref": "Fungi Forest/Forest Kasplat: Behind DK's Barn/Kasplat",
+                        "name": "Forest Kasplat: Behind DK's Barn"
+                    },
+                    {
+                        "ref": "Fungi Forest/Inside the Mushroom/Forest Kasplat: Inside Giant Mushroom"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Kasplat: Under Owl Tree/Kasplat",
+                        "name": "Forest Kasplat: Under Owl Tree"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Kasplat: Lower Mushroom Exterior/Kasplat",
+                        "name": "Forest Kasplat: Lower Mushroom Exterior"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Kasplat: Mushroom Night Door/Kasplat",
+                        "name": "Forest Kasplat: Mushroom Night Door"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 527,
+                        "y": 322
+                    }
+                ]
+            },
+            {
+                "name": "Forest Crates",
+                "sections": [
+                    {
+                        "ref": "Fungi Forest/Forest Crate: Near Owl Tree/Crate",
+                        "name": "Forest Crate: Near Owl Tree"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Crate: Behind Dark Attic/Crate",
+                        "name": "Forest Crate: Behind Dark Attic"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Crate: Near Thornvine Barn/Crate",
+                        "name": "Forest Crate: Near Thornvine Barn"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Crate: In Thornvine Barn/Crate",
+                        "name": "Forest Crate: In Thornvine Barn"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 591,
+                        "y": 322
+                    }
+                ]
+            },
+            {
+                "name": "Forest Shops",
+                "sections": [
+                    {
+                        "ref": "Forest Shops/Forest Cranky/Cranky DK"
+                    },
+                    {
+                        "ref": "Forest Shops/Forest Cranky/Cranky Diddy"
+                    },
+                    {
+                        "ref": "Forest Shops/Forest Cranky/Cranky Lanky"
+                    },
+                    {
+                        "ref": "Forest Shops/Forest Cranky/Cranky Tiny"
+                    },
+                    {
+                        "ref": "Forest Shops/Forest Cranky/Cranky Chunky"
+                    },
+                    {
+                        "ref": "Forest Shops/Forest Funky/Funky DK"
+                    },
+                    {
+                        "ref": "Forest Shops/Forest Funky/Funky Diddy"
+                    },
+                    {
+                        "ref": "Forest Shops/Forest Funky/Funky Lanky"
+                    },
+                    {
+                        "ref": "Forest Shops/Forest Funky/Funky Tiny"
+                    },
+                    {
+                        "ref": "Forest Shops/Forest Funky/Funky Chunky"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 705,
+                        "y": 322
+                    }
+                ]
+            },
+            {
+                "name": "Caves GBs",
+                "sections": [
+                    {
+                        "ref": "Crystal Caves/Caves DK Baboon Blast/Golden Banana",
+                        "name": "Caves DK Blast Course"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves DK 5 Door Igloo/Golden Banana",
+                        "name": "Caves DK 5DI"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves DK 5 Door Cabin/Golden Banana",
+                        "name": "Caves DK 5DC"
+                    },
+                    {
+                        "ref": "Crystal Caves/Rotating Cabin/Caves DK Rotating Cabin"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Diddy Jetpack Barrel/Golden Banana",
+                        "name": "Caves Diddy Jetpack Barrel"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Diddy 5 Door Igloo/Golden Banana",
+                        "name": "Caves Diddy 5DI"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Diddy 5 Door Cabin Lower/Golden Banana",
+                        "name": "Caves Diddy Lower 5DC"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Diddy 5 Door Cabin Upper/Golden Banana",
+                        "name": "Caves Diddy Upper 5DC"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Lanky Beetle Race/Golden Banana",
+                        "name": "Caves Lanky Beetle Race"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Lanky Ice Castle Slam Challenge/Golden Banana",
+                        "name": "Caves Lanky Ice Castle Slam Challenge"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Lanky 5 Door Igloo/Golden Banana",
+                        "name": "Caves Lanky 5DI"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Lanky Sprint Cabin/Golden Banana",
+                        "name": "Caves Lanky Sprint Cabin"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Tiny Mini Cave Barrel/Golden Banana",
+                        "name": "Caves Tiny Mini Cave Barrel"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Tiny Monkeyport Igloo/Golden Banana",
+                        "name": "Caves Tiny Monkeyport Igloo"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Tiny 5 Door Igloo/Golden Banana",
+                        "name": "Caves Tiny 5DI"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Tiny 5 Door Cabin/Golden Banana",
+                        "name": "Caves Tiny 5DC"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Chunky Gorilla Gone/Golden Banana",
+                        "name": "Caves Chunky Gorilla Gone"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Chunky Transparent Igloo/Golden Banana",
+                        "name": "Caves Chunky Transparent Igloo"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Chunky 5 Door Igloo/Golden Banana",
+                        "name": "Caves Chunky 5DI"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Chunky 5 Door Cabin/Golden Banana",
+                        "name": "Caves Chunky 5DC"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 155,
+                        "y": 375
+                    }
+                ]
+            },
+            {
+                "name": "Caves Medals",
+                "sections": [
+                    {
+                        "ref": "Crystal Caves/Medals/Caves DK Medal"
+                    },
+                    {
+                        "ref": "Crystal Caves/Medals/Caves Diddy Medal"
+                    },
+                    {
+                        "ref": "Crystal Caves/Medals/Caves Lanky Medal"
+                    },
+                    {
+                        "ref": "Crystal Caves/Medals/Caves Tiny Medal"
+                    },
+                    {
+                        "ref": "Crystal Caves/Medals/Caves Chunky Medal"
+                    },
+                    {
+                        "ref": "Crystal Caves/Medals/Boss",
+                        "name": "Caves Boss"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 233,
+                        "y": 375
+                    }
+                ]
+            },
+            {
+                "name": "Caves Fairies",
+                "sections": [
+                    {
+                        "ref": "Crystal Caves/Caves Tiny 5 Door Igloo/Fairy",
+                        "name": "Caves Fairy (Tiny 5DI)"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Diddy 5 Door Cabin Upper/Fairy",
+                        "name": "Caves Fairy (Diddy Upper 5DC)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 308,
+                        "y": 375
+                    }
+                ]
+            },
+            {
+                "name": "Caves Arena",
+                "sections": [
+                    {
+                        "ref": "Crystal Caves/Rotating Cabin/Caves Battle Arena"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 384,
+                        "y": 375
+                    }
+                ]
+            },
+            {
+                "name": "Caves Dirt Patches",
+                "sections": [
+                    {
+                        "ref": "Crystal Caves/Caves Dirt: Giant Kosha/Rainbow Coin",
+                        "name": "Caves Dirt: Giant Kosha"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 453,
+                        "y": 375
+                    }
+                ]
+            },
+            {
+                "name": "Caves Blueprints",
+                "sections": [
+                    {
+                        "ref": "Crystal Caves/Caves Kasplat: Near Ice Castle/Kasplat",
+                        "name": "Caves Kasplat: Near Ice Castle"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Kasplat: Mini Room by Funky/Kasplat",
+                        "name": "Caves Kasplat: Mini Room by Funky"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Kasplat: On the Pillar/Kasplat",
+                        "name": "Caves Kasplat: On the Pillar"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Kasplat: By the Far Warp 2/Kasplat",
+                        "name": "Caves Kasplat: By the Far Warp 2"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Kasplat: On 5-Door Igloo/Kasplat",
+                        "name": "Caves Kasplat: On 5-Door Igloo"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 527,
+                        "y": 375
+                    }
+                ]
+            },
+            {
+                "name": "Caves Shops",
+                "sections": [
+                    {
+                        "ref": "Caves Shops/Caves Cranky/Cranky DK"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Cranky/Cranky Diddy"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Cranky/Cranky Lanky"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Cranky/Cranky Tiny"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Cranky/Cranky Chunky"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Funky/Funky DK"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Funky/Funky Diddy"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Funky/Funky Lanky"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Funky/Funky Tiny"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Funky/Funky Chunky"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Candy/Candy DK"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Candy/Candy Diddy"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Candy/Candy Lanky"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Candy/Candy Tiny"
+                    },
+                    {
+                        "ref": "Caves Shops/Caves Candy/Candy Chunky"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 705,
+                        "y": 375
+                    }
+                ]
+            },
+            {
+                "name": "Castle GBs",
+                "sections": [
+                    {
+                        "ref": "Creepy Castle/Inside the Tree/Castle DK Tree Sniping"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle DK Library/Golden Banana",
+                        "name": "Castle DK Library"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle DK Minecart/Golden Banana",
+                        "name": "Castle DK Minecart"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle DK Dungeon/Golden Banana",
+                        "name": "Castle DK Dungeon"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Diddy Above Castle/Golden Banana",
+                        "name": "Castle Diddy Above Castle"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Diddy Ballroom/Golden Banana",
+                        "name": "Castle Diddy Ballroom"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Diddy Crypt/Golden Banana",
+                        "name": "Castle Diddy Crypt"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Diddy Dungeon/Golden Banana",
+                        "name": "Castle Diddy Dungeon"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Lanky Tower/Golden Banana",
+                        "name": "Castle Lanky Tower"
+                    },
+                    {
+                        "ref": "Creepy Castle/Greenhouse/Castle Lanky Greenhouse"
+                    },
+                    {
+                        "ref": "Creepy Castle/Mausoleum/Castle Lanky Mausoleum"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Lanky Dungeon/Golden Banana",
+                        "name": "Castle Lanky Dungeon"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Tiny Car Race/Golden Banana",
+                        "name": "Castle Tiny Car Race"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Tiny Trashcan/Golden Banana",
+                        "name": "Castle Tiny Trashcan"
+                    },
+                    {
+                        "ref": "Creepy Castle/Mausoleum/Castle Tiny Mausoleum"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Tiny Over Chasm/Golden Banana",
+                        "name": "Caslt Tiny Over Chasm"
+                    },
+                    {
+                        "ref": "Creepy Castle/Inside the Tree/Castle Chunky Tree Sniping Barrel"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Chunky Shed/Golden Banana",
+                        "name": "Castle Chunky Shed"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Chunky Museum/Golden Banana",
+                        "name": "Castle Chunky Museum"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Chunky Crypt/Golden Banana",
+                        "name": "Castle Chunky Crypt"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 155,
+                        "y": 429
+                    }
+                ]
+            },
+            {
+                "name": "Castle Medals",
+                "sections": [
+                    {
+                        "ref": "Creepy Castle/Medals/Castle DK Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Castle Diddy Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Castle Lanky Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Castle Tiny Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Castle Chunky Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Boss",
+                        "name": "Castle Boss"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 233,
+                        "y": 429
+                    }
+                ]
+            },
+            {
+                "name": "Castle Fairies",
+                "sections": [
+                    {
+                        "ref": "Creepy Castle/Inside the Tree/Castle Fairy (Tree Sniping Room)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Fairy (Near Car Race)/Fairy",
+                        "name": "Castle Fairy (Near Car Race)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 308,
+                        "y": 429
+                    }
+                ]
+            },
+            {
+                "name": "Castle Arena",
+                "sections": [
+                    {
+                        "ref": "Creepy Castle/Greenhouse/Castle Battle Arena (Greenhouse Center)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 384,
+                        "y": 429
+                    }
+                ]
+            },
+            {
+                "name": "Castle Dirt Patches",
+                "sections": [
+                    {
+                        "ref": "Creepy Castle/Castle Dirt: Top Floor/Rainbow Coin",
+                        "name": "Castle Dirt: Top Floor"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 453,
+                        "y": 429
+                    }
+                ]
+            },
+            {
+                "name": "Castle Blueprints",
+                "sections": [
+                    {
+                        "ref": "Creepy Castle/Inside the Tree/Castle Kasplat: Inside the Tree"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Kasplat: Lower Cave Center/Kasplat",
+                        "name": "Castle Kasplat: Lower Cave Center"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Kasplat: Near Upper Warp 2/Kasplat",
+                        "name": "Castle Kasplat: Near Upper Warp 2"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Kasplat: On a Lone Platform/Kasplat",
+                        "name": "Castle Kasplat: On a Lone Platform"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Kasplat: Near Candy's/Kasplat",
+                        "name": "Castle Kasplat: Near Candy's"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 527,
+                        "y": 429
+                    }
+                ]
+            },
+            {
+                "name": "Castle Crates",
+                "sections": [
+                    {
+                        "ref": "Creepy Castle/Castle Crate: Behind Mausoleum Entrance/Crate",
+                        "name": "Castle Crate: Behind Mausoleum Entrance"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 591,
+                        "y": 429
+                    }
+                ]
+            },
+            {
+                "name": "Castle Shops",
+                "sections": [
+                    {
+                        "ref": "Castle Shops/Castle Cranky/Cranky DK"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Cranky/Cranky Diddy"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Cranky/Cranky Lanky"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Cranky/Cranky Tiny"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Cranky/Cranky Chunky"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Funky/Funky DK"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Funky/Funky Diddy"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Funky/Funky Lanky"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Funky/Funky Tiny"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Funky/Funky Chunky"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Candy/Candy DK"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Candy/Candy Diddy"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Candy/Candy Lanky"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Candy/Candy Tiny"
+                    },
+                    {
+                        "ref": "Castle Shops/Castle Candy/Candy Chunky"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 705,
+                        "y": 429
+                    }
+                ]
+            },
+            {
+                "name": "Helm Medals",
+                "sections": [
+                    {
+                        "ref": "Hideout Helm/Helm DK Medal/Medal",
+                        "name": "Helm DK Medal"
+                    },
+                    {
+                        "ref": "Hideout Helm/Helm Chunky Medal/Medal",
+                        "name": "Helm Chunky Medal"
+                    },
+                    {
+                        "ref": "Hideout Helm/Helm Tiny Medal/Medal",
+                        "name": "Helm Tiny Medal"
+                    },
+                    {
+                        "ref": "Hideout Helm/Helm Lanky Medal/Medal",
+                        "name": "Helm Lanky Medal"
+                    },
+                    {
+                        "ref": "Hideout Helm/Helm Diddy Medal/Medal",
+                        "name": "Helm Diddy Medal"
+                    },
+                    {
+                        "ref": "Hideout Helm/The End of Helm/Key",
+                        "name": "The End of Helm"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 233,
+                        "y": 483
+                    }
+                ]
+            },
+            {
+                "name": "Helm Fairies",
+                "sections": [
+                    {
+                        "ref": "Hideout Helm/Helm Fairy (Key 8 Room)/Fairy 1"
+                    },
+                    {
+                        "ref": "Hideout Helm/Helm Fairy (Key 8 Room)/Fairy 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 308,
+                        "y": 483
+                    }
+                ]
+            },
+            {
+                "name": "Helm Arena",
+                "sections": [
+                    {
+                        "ref": "Hideout Helm/Helm Battle Arena/Crown",
+                        "name": "Helm Arena"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 384,
+                        "y": 483
+                    }
+                ]
+            }
+        ]
+    }
+]

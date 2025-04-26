@@ -190,5 +190,11 @@
     "location_size": 35,
     "location_border_thickness": 2,
     "img": "/images/maps/helm.png"
+  },
+  {
+    "name": "overview",
+    "location_size": 20,
+    "location_border_thickness": 2,
+    "img": "/images/maps/overview.png"
   }
 ]

@@ -571,7 +571,7 @@
                 "sections": [
                     {
                         "name": "Kasplat",
-                        "chest_unopened_img": "images/items.chunky_bp.png",
+                        "chest_unopened_img": "images/items/chunky_bp.png",
                         "chest_opened_img": "images/items/blueprintbw.png"
                     }
                 ],

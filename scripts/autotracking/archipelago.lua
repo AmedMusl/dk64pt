@@ -1,6 +1,7 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/hints_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/map_mapping.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -186,11 +187,31 @@ function onClear(slot_data)
             end
         end
     end
+
+    if slot_data['FairyRequirement'] then
+        local obj = Tracker:FindObjectForCode("bfiReq")
+        obj.AcquiredCount = (slot_data['FairyRequirement'])
+    end
+
+    if slot_data['JetpacReq'] then
+        local obj = Tracker:FindObjectForCode("JetpacReq")
+        obj.AcquiredCount = (slot_data["JetpacReq"])
+    end
+
+    if slot_data['MermaidPearls'] then
+        local obj = Tracker:FindObjectForCode("mermaid")
+        obj.AcquiredCount = (slot_data['MermaidPearls'])
+    end
     if PLAYER_ID > -1 then
     
         HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({HINTS_ID})
+
+        map_id = "DK64Rando_"..TEAM_NUMBER.."_"..PLAYER_ID.."_map"
+        Archipelago:SetNotify({map_id})
+        Archipelago:Get({map_id})
     end
+
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -243,21 +264,6 @@ function onLocation(location_id, location_name)
     end
 end
 
--- function onScout(location_id, location_name, item_id, item_name, item_player)
---     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
---         print(string.format("called onScout: %s, %s, %s, %s, %s", location_id, location_name, item_id, item_name,
---             item_player))
---     end
---     -- not implemented yet :(
--- end
-
--- function onBounce(json)
---     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
---         print(string.format("called onBounce: %s", dump_table(json)))
---     end
---     -- your code goes here
--- end
-
 function onNotify(key, value, old_value)
 
     if value ~= old_value and key == HINTS_ID then
@@ -287,9 +293,17 @@ function updateHints(locationID)
         local obj = Tracker:FindObjectForCode(item_code)
         if obj then
             obj.Active = true
-        else
-            print(string.format("No object found for code: %s", item_code))
         end
+    end
+end
+
+function onMapChange(id, value, old)
+    print("got  " .. id .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
+    print(dump_table(MAP_MAPPING[tostring(value)]))
+    -- if has("automap_on") then
+    tabs = MAP_MAPPING[tostring(value)]
+    for i, tab in ipairs(tabs) do
+        Tracker:UiHint("ActivateTab", tab)
     end
 end
 
@@ -297,7 +311,7 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
--- Archipelago:AddScoutHandler("scout handler", onScout)
--- Archipelago:AddBouncedHandler("bounce handler", onBounce)
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
 Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+Archipelago:AddSetReplyHandler("map_id", onMapChange)
+Archipelago:AddRetrievedHandler("map_id", onMapChange)

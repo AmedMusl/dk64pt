@@ -211,7 +211,6 @@ end
 
 function canEnterHelmLobby()
     return canEnterLevel({
-        {"level8"},
         {"level8", "blocker8", {"k6", "k7"}}
     }, true)
     and port()
@@ -219,8 +218,7 @@ end
 
 function canEnterHelm()
     return canEnterLevel({
-        {"level8"},
         {"level8", "blocker8", {"k6", "k7"}}
     }, false)
-    and port()
+    and port() and gone() and has("vine")
 end

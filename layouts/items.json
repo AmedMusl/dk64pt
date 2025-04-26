@@ -6,7 +6,7 @@
       {
         "type": "itemgrid",
         "item_margin": "5, 3",
-        "item_size": 48,
+        "item_size": 38,
         "rows": [
           [
             "gb",
