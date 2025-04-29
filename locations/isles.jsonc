@@ -122,8 +122,8 @@
         "sections": [
           {
             "name": "The Banana Fairy's Gift",
-            "chest_unopened_img": "images/items/potion.png",
-            "chest_opened_img": "images/items/potionbw.png",
+            "chest_unopened_img": "images/settings/bfi.png",
+            "chest_opened_img": "images/items/bfibw.png",
             "access_rules": []
           },
           {

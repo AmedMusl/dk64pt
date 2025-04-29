@@ -91,7 +91,7 @@
             },
             {            
                 "name": "Factory Lanky Testing Room Barrel",
-                "access_rules": ["$testing, $balloon, climb", "$testing, ^$ap, diddy", "$testing, ^$ap, lanky", "$testing, ^$ap, tiny"],
+                "access_rules": ["$testing, $balloon, climb", "$testing, ^$ap, diddy, climb", "$testing, ^$ap, lanky, climb", "$testing, ^$ap, tiny, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -435,9 +435,6 @@
                 "access_rules": ["$blast"],
                 "sections": [
                     {
-                        "name": "Round 1"
-                    },
-                    {
                         "name": "Round 2",
                         "access_rules": ["$grab, climb"],
                         "chest_unopened_img": "images/items/n64rw_coin.png",
@@ -449,6 +446,23 @@
                         "map": "factory",
                         "x": 767,
                         "y": 412,
+                        "size": 14
+                    }
+                ]
+            },
+            {
+                "name": "Factory DK Blast Course",
+                "access_rules": ["$blast"],
+                "sections": [
+                    {
+                        "name": "Golden Banana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 545,
+                        "y": 215,
                         "size": 14
                     }
                 ]

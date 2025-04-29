@@ -182,7 +182,7 @@
             },
             {
                 "name": "Aztec Lanky Vulture Shooting",
-                "access_rules": ["$templeIce, $canEnterTinyTemple, dive, $grape, $aztecSlam"],
+                "access_rules": ["$templeIce, $canEnterTinyTemple, dive, $canChangeTime, $aztecSlam, lanky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -199,7 +199,7 @@
             },
             {
                 "name": "Aztec Battle Arena (Tiny Temple: Vulture Room)",
-                "access_rules": ["$templeIce, $canEnterTinyTemple, dive, $grape, $aztecSlam"],
+                "access_rules": ["@Angry Aztec/Aztec Lanky Vulture Shooting/Golden Banana"],
                 "sections": [
                     {
                         "name": "Crown",
@@ -354,6 +354,12 @@
                         "map": "llamatemple",
                         "x": 800,
                         "y": 386,
+                        "size": 12
+                    },
+                    {
+                        "map": "aztec",
+                        "x": 441,
+                        "y": 118,
                         "size": 12
                     }
                 ]

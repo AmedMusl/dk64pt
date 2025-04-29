@@ -1,8 +1,8 @@
 [
     {
         "name": "Isles Shops",
-        "chest_unopened_img": "images/items/soldoutbw.png",
-        "chest_opened_img": "images/items/soldout.png",
+        "chest_unopened_img": "images/items/cranky.png",
+        "chest_opened_img": "images/items/crankybw.png",
         "children": [
             {
                 "name": "Isles Cranky",
@@ -49,8 +49,8 @@
     {
         "name": "Japes Shops",
         "access_rules": ["$canEnterJapes"],
-        "chest_unopened_img": "images/items/soldoutbw.png",
-        "chest_opened_img": "images/items/soldout.png",
+        "chest_unopened_img": "images/items/cranky.png",
+        "chest_opened_img": "images/items/crankybw.png",
         "children": [
             {
                 "name": "Japes Cranky",
@@ -88,6 +88,8 @@
             },
             {
                 "name": "Japes Funky",
+                "chest_unopened_img": "images/items/funky.png",
+                "chest_opened_img": "images/items/funkybw.png",
                 "access_rules": ["climb"],
                 "sections": [
                     {
@@ -125,8 +127,8 @@
     {
         "name": "Aztec Shops",
         "access_rules": ["^$aztecAccess"],
-        "chest_unopened_img": "images/items/soldoutbw.png",
-        "chest_opened_img": "images/items/soldout.png",
+        "chest_unopened_img": "images/items/cranky.png",
+        "chest_opened_img": "images/items/crankybw.png",
         "children": [
             {
                 "name": "Aztec Cranky",
@@ -164,6 +166,8 @@
             },
             {
                 "name": "Aztec Funky",
+                "chest_unopened_img": "images/items/funky.png",
+                "chest_opened_img": "images/items/funkybw.png",
                 "access_rules": ["$tunnelDoor"],
                 "sections": [
                     {
@@ -198,6 +202,8 @@
             },
             {
                 "name": "Aztec Candy",
+                "chest_unopened_img": "images/items/candy.png",
+                "chest_opened_img": "images/items/candybw.png",
                 "access_rules": [],
                 "sections": [
                     {
@@ -235,8 +241,8 @@
     {
         "name": "Factory Shops",
         "access_rules": ["$canEnterFactory"],
-        "chest_unopened_img": "images/items/soldoutbw.png",
-        "chest_opened_img": "images/items/soldout.png",
+        "chest_unopened_img": "images/items/cranky.png",
+        "chest_opened_img": "images/items/crankybw.png",
         "children": [
             {
                 "name": "Factory Cranky",
@@ -274,6 +280,8 @@
             },
             {
                 "name": "Factory Candy",
+                "chest_unopened_img": "images/items/candy.png",
+                "chest_opened_img": "images/items/candybw.png",
                 "access_rules": [],
                 "sections": [
                     {
@@ -308,6 +316,8 @@
             },
             {
                 "name": "Factory Funky",
+                "chest_unopened_img": "images/items/funky.png",
+                "chest_opened_img": "images/items/funkybw.png",
                 "access_rules": ["$testing, climb"],
                 "sections": [
                     {
@@ -345,8 +355,8 @@
     {
         "name": "Galleon Shops",
         "access_rules": ["$canEnterGalleon"],
-        "chest_unopened_img": "images/items/soldoutbw.png",
-        "chest_opened_img": "images/items/soldout.png",
+        "chest_unopened_img": "images/items/cranky.png",
+        "chest_opened_img": "images/items/crankybw.png",
         "children": [
             {
                 "name": "Galleon Cranky",
@@ -384,6 +394,8 @@
             },
             {
                 "name": "Galleon Funky",
+                "chest_unopened_img": "images/items/funky.png",
+                "chest_opened_img": "images/items/funkybw.png",
                 "access_rules": ["$shipyard"],
                 "sections": [
                     {
@@ -418,6 +430,8 @@
             },
             {
                 "name": "Galleon Candy",
+                "chest_unopened_img": "images/items/candy.png",
+                "chest_opened_img": "images/items/candybw.png",
                 "access_rules": ["$shipyard"],
                 "sections": [
                     {
@@ -455,8 +469,8 @@
     {
         "name": "Forest Shops",
         "access_rules": ["$canEnterForest"],
-        "chest_unopened_img": "images/items/soldoutbw.png",
-        "chest_opened_img": "images/items/soldout.png",
+        "chest_unopened_img": "images/items/cranky.png",
+        "chest_opened_img": "images/items/crankybw.png",
         "children": [
             {
                 "name": "Forest Cranky",
@@ -494,6 +508,8 @@
             },
             {
                 "name": "Forest Funky",
+                "chest_unopened_img": "images/items/funky.png",
+                "chest_opened_img": "images/items/funkybw.png",
                 "access_rules": ["$greenTunnel"],
                 "sections": [
                     {
@@ -531,8 +547,8 @@
     {
         "name": "Caves Shops",
         "access_rules": ["$canEnterCaves"],
-        "chest_unopened_img": "images/items/soldoutbw.png",
-        "chest_opened_img": "images/items/soldout.png",
+        "chest_unopened_img": "images/items/cranky.png",
+        "chest_opened_img": "images/items/crankybw.png",
         "children": [
             {
                 "name": "Caves Cranky",
@@ -570,6 +586,8 @@
             },
             {
                 "name": "Caves Funky",
+                "chest_unopened_img": "images/items/funky.png",
+                "chest_opened_img": "images/items/funkybw.png",
                 "access_rules": [],
                 "sections": [
                     {
@@ -604,6 +622,8 @@
             },
             {
                 "name": "Caves Candy",
+                "chest_unopened_img": "images/items/candy.png",
+                "chest_opened_img": "images/items/candybw.png",
                 "access_rules": [],
                 "sections": [
                     {
@@ -641,8 +661,8 @@
     {
         "name": "Castle Shops",
         "access_rules": ["$canEnterCastle"],
-        "chest_unopened_img": "images/items/soldoutbw.png",
-        "chest_opened_img": "images/items/soldout.png",
+        "chest_unopened_img": "images/items/cranky.png",
+        "chest_opened_img": "images/items/crankybw.png",
         "children": [
             {
                 "name": "Castle Cranky",
@@ -680,6 +700,8 @@
             },
             {
                 "name": "Castle Funky",
+                "chest_unopened_img": "images/items/funky.png",
+                "chest_opened_img": "images/items/funkybw.png",
                 "access_rules": [],
                 "sections": [
                     {
@@ -714,6 +736,8 @@
             },
             {
                 "name": "Castle Candy",
+                "chest_unopened_img": "images/items/candy.png",
+                "chest_opened_img": "images/items/candybw.png",
                 "access_rules": [],
                 "sections": [
                     {

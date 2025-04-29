@@ -237,7 +237,7 @@ end
 
 function japesChunkyTimed()
     if coconutCage() and coconut() and has("barrel") and japesSlam() and has("chunky") and has("climb") then
-        return AccessibilityLevel.SequenceBreak
+        return AccessibilityLevel.Normal
     elseif coconutCage() and coconut() and has("barrel") and japesSlam() and has("chunky") and ostand() then
         return AccessibilityLevel.SequenceBreak
     end
@@ -245,7 +245,7 @@ end
 
 function japesDiddyTimed()
     if coconutCage() and japesSlam() and has("climb") and coconut() and has("diddy") then
-        return AccessibilityLevel.SequenceBreak
+        return AccessibilityLevel.Normal
     elseif coconutCage() and coconut() and japesSlam() and ostand() and has("diddy") then
         return AccessibilityLevel.SequenceBreak
     end
@@ -253,7 +253,7 @@ end
 
 function japesLankyTimed()
     if coconutCage() and japesSlam() and has("climb") and coconut() and has("lanky") then
-        return AccessibilityLevel.SequenceBreak
+        return AccessibilityLevel.Normal
     elseif coconutCage() and coconut() and japesSlam() and ostand() and has("lanky") then
         return AccessibilityLevel.SequenceBreak
     end

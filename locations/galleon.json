@@ -186,7 +186,7 @@
             },
             {            
                 "name": "Galleon Diddy Top of Lighthouse",
-                "access_rules": ["$lighthouse, ^$lighthousePlatform, $rocket, $guitar"],
+                "access_rules": ["$lighthouse, ^$lighthousePlatform, $rocket, $galleonSlam"],
                 "sections": [
                     {
                         "name": "Golden Banana"
