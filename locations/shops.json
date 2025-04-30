@@ -90,7 +90,7 @@
                 "name": "Japes Funky",
                 "chest_unopened_img": "images/items/funky.png",
                 "chest_opened_img": "images/items/funkybw.png",
-                "access_rules": ["climb"],
+                "access_rules": ["climb", "$ostand, ^$ap"],
                 "sections": [
                     {
                         "name": "Funky DK",
@@ -132,7 +132,7 @@
         "children": [
             {
                 "name": "Aztec Cranky",
-                "access_rules": ["$tunnelDoor"],
+                "access_rules": ["^$tunnelDoor"],
                 "sections": [
                     {
                         "name": "Cranky DK",
@@ -168,7 +168,7 @@
                 "name": "Aztec Funky",
                 "chest_unopened_img": "images/items/funky.png",
                 "chest_opened_img": "images/items/funkybw.png",
-                "access_rules": ["$tunnelDoor"],
+                "access_rules": ["^$tunnelDoor"],
                 "sections": [
                     {
                         "name": "Funky DK",

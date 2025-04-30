@@ -5,6 +5,8 @@ ScriptHost:LoadScript("scripts/autotracking/map_mapping.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
+-- Store the level positions globally so they can be accessed by the update function
+LEVEL_POSITIONS = {}
 
 function has_value (t, val)
     for i, v in ipairs(t) do
@@ -51,26 +53,147 @@ local function process_blocker_values(blocker_values)
         local obj = Tracker:FindObjectForCode("blocker" .. blocker)
         if obj then
             obj.AcquiredCount = value
-        else
-            -- print(string.format("Warning: Could not find object for blocker %d", blocker))
         end
     end
 end
 
 local function process_removed_barriers(barriers)
-    -- print("Processing RemovedBarriers...")
-    -- print("Contents of RemovedBarriers:")
-    -- print(dump_table(barriers)) -- Debugging: Print the entire table
-
     for barrier, code in pairs(barriers) do
-        code = code:match("^%s*(.-)%s*$") -- Trim whitespace
-        -- print(string.format("Processing barrier: %s with code: %s", barrier, code))
+        code = code:match("^%s*(.-)%s*$")
         local obj = Tracker:FindObjectForCode(code)
         if obj then
-            -- print(string.format("Found object for code: %s", code))
             activate_object(obj, code)
+        end
+    end
+end
+
+local function process_level_order(level_order)
+    if type(level_order) ~= "string" then
+        print("Error: LevelOrder is not a string. Found type: " .. type(level_order))
+        return
+    end
+    
+    level_order = level_order:gsub(",$", "")
+    local level_mapping = {
+        ["JungleJapes"] = 1,
+        ["AngryAztec"] = 2,
+        ["FranticFactory"] = 3,
+        ["GloomyGalleon"] = 4,
+        ["FungiForest"] = 5,
+        ["CrystalCaves"] = 6,
+        ["CreepyCastle"] = 7,
+    }
+    
+    -- Split the string by commas and process each level
+    LEVEL_POSITIONS = {}
+    local level_number = 1
+    
+    for level_name in string.gmatch(level_order, "([^,]+)") do
+        -- Trim whitespace
+        level_name = level_name:match("^%s*(.-)%s*$")
+        
+        -- Skip Hideout Helm as it's always static at level8
+        if level_name == "HideoutHelm" then
+            goto continue
+        end
+        
+        -- Check if this is a valid level name
+        local tracker_stage = level_mapping[level_name]
+        if tracker_stage then
+            -- Store which level ID (1-7) should be set to this tracker_stage
+            LEVEL_POSITIONS[level_number] = tracker_stage
+            level_number = level_number + 1
+        end
+        
+        ::continue::
+    end
+
+    -- After setting up LEVEL_POSITIONS, call update_level_display to show the accessible levels
+    update_level_display()
+end
+
+function update_level_display()
+    if next(LEVEL_POSITIONS) == nil then
+        return
+    end
+    
+    print("Updating level display with current key status:")
+    
+    -- Get current key status
+    local has_k1 = Tracker:FindObjectForCode("k1") and Tracker:FindObjectForCode("k1").Active
+    local has_k2 = Tracker:FindObjectForCode("k2") and Tracker:FindObjectForCode("k2").Active
+    local has_k4 = Tracker:FindObjectForCode("k4") and Tracker:FindObjectForCode("k4").Active
+    local has_k5 = Tracker:FindObjectForCode("k5") and Tracker:FindObjectForCode("k5").Active
+    local has_dive = Tracker:FindObjectForCode("dive") and Tracker:FindObjectForCode("dive").Active
+    -- Update level1 (always visible)
+    local obj = Tracker:FindObjectForCode("level1")
+    if obj and LEVEL_POSITIONS[1] then
+        local old_stage = obj.CurrentStage
+        obj.CurrentStage = LEVEL_POSITIONS[1]
+    end
+    
+    -- Update level2 (needs key1)
+    obj = Tracker:FindObjectForCode("level2")
+    if obj then
+        local old_stage = obj.CurrentStage
+        if has_k1 and LEVEL_POSITIONS[2] then
+            obj.CurrentStage = LEVEL_POSITIONS[2]
         else
-            -- print(string.format("Could not find object for code: %s", code))
+            obj.CurrentStage = 0 -- Reset to unknown if we don't have the key
+        end
+    end
+    
+    -- Update level3 (needs key2)
+    obj = Tracker:FindObjectForCode("level3")
+    if obj then
+        local old_stage = obj.CurrentStage
+        if has_k2 and LEVEL_POSITIONS[3] then
+            obj.CurrentStage = LEVEL_POSITIONS[3]
+        else
+            obj.CurrentStage = 0
+        end
+    end
+    
+    -- Update level4 (needs key2 and dive)
+    obj = Tracker:FindObjectForCode("level4")
+    if obj then
+        local old_stage = obj.CurrentStage
+        if has_k2 and has_dive and LEVEL_POSITIONS[4] then
+            obj.CurrentStage = LEVEL_POSITIONS[4]
+        else
+            obj.CurrentStage = 0
+        end
+    end
+    
+    -- Update level5 (needs key4)
+    obj = Tracker:FindObjectForCode("level5")
+    if obj then
+        local old_stage = obj.CurrentStage
+        if has_k4 and LEVEL_POSITIONS[5] then
+            obj.CurrentStage = LEVEL_POSITIONS[5]
+        else
+            obj.CurrentStage = 0
+        end
+    end
+    
+    -- Update level6 and level7 (need key5)
+    obj = Tracker:FindObjectForCode("level6")
+    if obj then
+        local old_stage = obj.CurrentStage
+        if has_k5 and LEVEL_POSITIONS[6] then
+            obj.CurrentStage = LEVEL_POSITIONS[6]
+        else
+            obj.CurrentStage = 0
+        end
+    end
+    
+    obj = Tracker:FindObjectForCode("level7")
+    if obj then
+        local old_stage = obj.CurrentStage
+        if has_k5 and LEVEL_POSITIONS[7] then
+            obj.CurrentStage = LEVEL_POSITIONS[7]
+        else
+            obj.CurrentStage = 0
         end
     end
 end
@@ -132,10 +255,9 @@ function onClear(slot_data)
 
     -- Handle RemovedBarriers
     if type(slot_data['RemovedBarriers']) == "string" then
-        -- print("RemovedBarriers is a string. Converting to table...")
         local barriers = {}
         for barrier in string.gmatch(tostring(slot_data['RemovedBarriers']), "[^,]+") do
-            barriers[barrier] = barrier -- Map the barrier name to itself or a default code
+            barriers[barrier] = barrier
         end
         slot_data['RemovedBarriers'] = barriers
     end
@@ -202,6 +324,11 @@ function onClear(slot_data)
         local obj = Tracker:FindObjectForCode("mermaid")
         obj.AcquiredCount = (slot_data['MermaidPearls'])
     end
+
+    if slot_data['LevelOrder'] then
+        process_level_order(slot_data['LevelOrder'])
+    end
+
     if PLAYER_ID > -1 then
     
         HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
@@ -211,7 +338,6 @@ function onClear(slot_data)
         Archipelago:SetNotify({map_id})
         Archipelago:Get({map_id})
     end
-
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -222,13 +348,17 @@ function onItem(index, item_id, item_name, player_number)
     CUR_INDEX = index;
     local v = ITEM_MAPPING[item_id]
     if not v or not v[1] then
-        --print(string.format("onItem: could not find item mapping for id %s", item_id))
+        print(string.format("Could not find item mapping for id %s", tostring(item_id)))
         return
     end
     local obj = Tracker:FindObjectForCode(v[1])
     if obj then
         if v[2] == "toggle" then
+            local wasActive = obj.Active
             obj.Active = true
+            if v[1] == "k1" or v[1] == "k2" or v[1] == "k4" or v[1] == "k5" or v[1] == "dive" then
+                update_level_display()
+            end
         elseif v[2] == "progressive" then
             if obj.Active then
                 obj.CurrentStage = obj.CurrentStage + 1
@@ -298,8 +428,8 @@ function updateHints(locationID)
 end
 
 function onMapChange(id, value, old)
-    print("got  " .. id .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
-    print(dump_table(MAP_MAPPING[tostring(value)]))
+    -- print("got  " .. id .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
+    -- print(dump_table(MAP_MAPPING[tostring(value)]))
     -- if has("automap_on") then
     tabs = MAP_MAPPING[tostring(value)]
     for i, tab in ipairs(tabs) do
