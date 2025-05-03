@@ -41,7 +41,7 @@
                     },
                     {
                         "name": "Boss",
-                        "access_rules": ["$levelBossLogic"],
+                        "access_rules": ["$castleBossLogic"],
                         "chest_unopened_img": "images/items/scoff.png",
                         "chest_opened_img": "images/items/scoffbw.png"
                     }
@@ -291,7 +291,7 @@
             },
             {            
                 "name": "Castle Chunky Shed",
-                "access_rules": ["$punch, $gone, $pineapple", "$punch, $triangle"],
+                "access_rules": ["$chunkyShed"],
                 "sections": [
                     {
                         "name": "Golden Banana"

@@ -41,7 +41,7 @@
                     },
                     {
                         "name": "Boss",
-                        "access_rules": ["$levelBossLogic, climb, vine", "$levelBossLogic, $peanuts", "$levelBossLogic, ^$coconutCage, $coconut", "$levelBossLogic, ^$ap, climb", "$levelBossLogic, ^$ap, $ostand"],
+                        "access_rules": ["$japesBossLogic, climb, vine", "$japesBossLogic, $peanuts", "$japesBossLogic, ^$coconutCage, $coconut", "$japesBossLogic, ^$ap, climb", "$japesBossLogic, ^$ap, $ostand"],
                         "chest_unopened_img": "images/items/scoff.png",
                         "chest_opened_img": "images/items/scoffbw.png"
                     }

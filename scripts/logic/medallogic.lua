@@ -584,7 +584,7 @@ function galleonChunkyMedal()
     if lighthouse() and has("dive") then
         cb_total = cb_total + 10
     end
-    if raisedWater() and seasick() and punch() then
+    if raisedWater() and seasick() and punch() and has("slam") then
         cb_total = cb_total + 5
     end
     if raisedWater() and pineapple() then

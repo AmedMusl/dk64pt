@@ -284,6 +284,10 @@ function lankyAttic()
     end
 end
 
+function chunkyShed()
+    return punch() and ((gone() and canChangeTime()) or triangle() or bongos() or guitar() or trombone() or sax())
+end
+
 function ap()
     return AccessibilityLevel.SequenceBreak
 end
@@ -690,25 +694,294 @@ function hasBoss(prefix)
     return false
 end
 
-function levelBossLogic()
-    local bossOrder = {
-        {boss = "army1", check = function() return has("barrel") end},
-        {boss = "doga1", check = function() return has("barrel") end},
-        {boss = "jack", check = function () return has("slam") and twirl() end},
-        {boss = "puff", check = function() return true end},
-        {boss = "doga2", check = function() return has("barrel") and hunky() end},
-        {boss = "army2", check = function() return has("barrel") end},
-        {boss = "kutout", check = function() return true end}
+-- Maps level names to level numbers
+function getLevelNumber(level)
+    local levelMap = {
+        japes = 1,
+        aztec = 2,
+        factory = 3,
+        galleon = 4,
+        forest = 5,
+        caves = 6,
+        castle = 7
     }
-
-    for _, boss in ipairs(bossOrder) do
-        if hasBoss(boss.boss) and not boss.check() then
-            return false
-        end
-    end
-    return true
+    
+    return levelMap[level]
 end
 
+-- Get level that contains a specific level number
+function getLevelWithNumber(number)
+    for i = 1, 7 do
+        if has("l" .. number .. "_japes") then return "japes" end
+        if has("l" .. number .. "_aztec") then return "aztec" end
+        if has("l" .. number .. "_factory") then return "factory" end
+        if has("l" .. number .. "_galleon") then return "galleon" end
+        if has("l" .. number .. "_forest") then return "forest" end
+        if has("l" .. number .. "_caves") then return "caves" end
+        if has("l" .. number .. "_castle") then return "castle" end
+    end
+    return nil
+end
+
+-- Check if a specific boss is assigned to a level (by TNS order)
+function checkBossInLevel(levelNum, bossName)
+    local bossMap = {
+        army1 = {"army11", "army12", "army13", "army14", "army1", "army16", "army17"},
+        doga1 = {"doga11", "doga12", "doga13", "doga14", "doga15", "doga16", "doga17"},
+        jack = {"jack1", "jack2", "jack3", "jack4", "jack5", "jack6", "jack7"},
+        puff = {"puff1", "puff2", "puff3", "puff4", "puff5", "puff6", "puff7"},
+        doga2 = {"doga21", "doga22", "doga23", "doga24", "doga25", "doga26", "doga27"},
+        army2 = {"army21", "army22", "army23", "army24", "army25", "army26", "army27"},
+        kutout = {"kutout1", "kutout2", "kutout3", "kutout4", "kutout5", "kutout6", "kutout7"}
+    }
+    
+    if bossMap[bossName] and levelNum >= 1 and levelNum <= 7 then
+        return has(bossMap[bossName][levelNum])
+    end
+    return false
+end
+
+function getBossInLevel(levelNum)
+    if checkBossInLevel(levelNum, "army1") then return "army1" end
+    if checkBossInLevel(levelNum, "doga1") then return "doga1" end
+    if checkBossInLevel(levelNum, "jack") then return "jack" end
+    if checkBossInLevel(levelNum, "puff") then return "puff" end
+    if checkBossInLevel(levelNum, "doga2") then return "doga2" end
+    if checkBossInLevel(levelNum, "army2") then return "army2" end
+    if checkBossInLevel(levelNum, "kutout") then return "kutout" end
+    return nil
+end
+
+function japesBossLogic()
+    local levelNum = 0
+    
+    -- Find which level number Japes is
+    for i = 1, 7 do
+        if has("l" .. i .. "_japes") then
+            levelNum = i
+            break
+        end
+    end
+    
+    if levelNum == 0 then
+        return true -- Japes isn't assigned to any level number
+    end
+    
+    local boss = getBossInLevel(levelNum)
+    if not boss then
+        return false -- No boss assigned to this level, return false
+    end
+    
+    local requirements = {
+        army1 = function() return has("barrel") end,
+        doga1 = function() return has("barrel") end,
+        jack = function() return has("slam") and twirl() end,
+        puff = function() return true end,
+        doga2 = function() return has("barrel") and hunky() end,
+        army2 = function() return has("barrel") end,
+        kutout = function() return true end
+    }
+    
+    return requirements[boss]()
+end
+
+function aztecBossLogic()
+    local levelNum = 0
+    
+    -- Find which level number Aztec is
+    for i = 1, 7 do
+        if has("l" .. i .. "_aztec") then
+            levelNum = i
+            break
+        end
+    end
+    
+    if levelNum == 0 then
+        return true -- Aztec isn't assigned to any level number
+    end
+    
+    local boss = getBossInLevel(levelNum)
+    if not boss then
+        return false -- No boss assigned to this level, return false
+    end
+    
+    local requirements = {
+        army1 = function() return has("barrel") end,
+        doga1 = function() return has("barrel") end,
+        jack = function() return has("slam") and twirl() end,
+        puff = function() return true end,
+        doga2 = function() return has("barrel") and hunky() end,
+        army2 = function() return has("barrel") end,
+        kutout = function() return true end
+    }
+    
+    return requirements[boss]()
+end
+
+function factoryBossLogic()
+    local levelNum = 0
+    
+    -- Find which level number Factory is
+    for i = 1, 7 do
+        if has("l" .. i .. "_factory") then
+            levelNum = i
+            break
+        end
+    end
+    
+    if levelNum == 0 then
+        return true -- Factory isn't assigned to any level number
+    end
+    
+    local boss = getBossInLevel(levelNum)
+    if not boss then
+        return false -- No boss assigned to this level, return false
+    end
+    
+    local requirements = {
+        army1 = function() return has("barrel") end,
+        doga1 = function() return has("barrel") end,
+        jack = function() return has("slam") and twirl() end,
+        puff = function() return true end,
+        doga2 = function() return has("barrel") and hunky() end,
+        army2 = function() return has("barrel") end,
+        kutout = function() return true end
+    }
+    
+    return requirements[boss]()
+end
+
+function galleonBossLogic()
+    local levelNum = 0
+    
+    -- Find which level number Galleon is
+    for i = 1, 7 do
+        if has("l" .. i .. "_galleon") then
+            levelNum = i
+            break
+        end
+    end
+    
+    if levelNum == 0 then
+        return true -- Galleon isn't assigned to any level number
+    end
+    
+    local boss = getBossInLevel(levelNum)
+    if not boss then
+        return false -- No boss assigned to this level, return false
+    end
+    
+    local requirements = {
+        army1 = function() return has("barrel") end,
+        doga1 = function() return has("barrel") end,
+        jack = function() return has("slam") and twirl() end,
+        puff = function() return true end,
+        doga2 = function() return has("barrel") and hunky() end,
+        army2 = function() return has("barrel") end,
+        kutout = function() return true end
+    }
+    
+    return requirements[boss]()
+end
+
+function forestBossLogic()
+    local levelNum = 0
+    
+    -- Find which level number Forest is
+    for i = 1, 7 do
+        if has("l" .. i .. "_forest") then
+            levelNum = i
+            break
+        end
+    end
+    
+    if levelNum == 0 then
+        return true -- Forest isn't assigned to any level number
+    end
+    
+    local boss = getBossInLevel(levelNum)
+    if not boss then
+        return false -- No boss assigned to this level, return false
+    end
+    
+    local requirements = {
+        army1 = function() return has("barrel") end,
+        doga1 = function() return has("barrel") end,
+        jack = function() return has("slam") and twirl() end,
+        puff = function() return true end,
+        doga2 = function() return has("barrel") and hunky() end,
+        army2 = function() return has("barrel") end,
+        kutout = function() return true end
+    }
+    
+    return requirements[boss]()
+end
+
+function cavesBossLogic()
+    local levelNum = 0
+    
+    -- Find which level number Caves is
+    for i = 1, 7 do
+        if has("l" .. i .. "_caves") then
+            levelNum = i
+            break
+        end
+    end
+    
+    if levelNum == 0 then
+        return true -- Caves isn't assigned to any level number
+    end
+    
+    local boss = getBossInLevel(levelNum)
+    if not boss then
+        return false -- No boss assigned to this level, return false
+    end
+    
+    local requirements = {
+        army1 = function() return has("barrel") end,
+        doga1 = function() return has("barrel") end,
+        jack = function() return has("slam") and twirl() end,
+        puff = function() return true end,
+        doga2 = function() return has("barrel") and hunky() end,
+        army2 = function() return has("barrel") end,
+        kutout = function() return true end
+    }
+    
+    return requirements[boss]()
+end
+
+function castleBossLogic()
+    local levelNum = 0
+    
+    -- Find which level number Castle is
+    for i = 1, 7 do
+        if has("l" .. i .. "_castle") then
+            levelNum = i
+            break
+        end
+    end
+    
+    if levelNum == 0 then
+        return true -- Castle isn't assigned to any level number
+    end
+    
+    local boss = getBossInLevel(levelNum)
+    if not boss then
+        return false -- No boss assigned to this level, return false
+    end
+    
+    local requirements = {
+        army1 = function() return has("barrel") end,
+        doga1 = function() return has("barrel") end,
+        jack = function() return has("slam") and twirl() end,
+        puff = function() return true end,
+        doga2 = function() return has("barrel") and hunky() end,
+        army2 = function() return has("barrel") end,
+        kutout = function() return true end
+    }
+    
+    return requirements[boss]()
+end
 
 ScriptHost:AddWatchForCode("number2", "k1", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number3", "k2", toggleLevelOrder)

@@ -7,6 +7,8 @@ CUR_INDEX = -1
 SLOT_DATA = nil
 -- Store the level positions globally so they can be accessed by the update function
 LEVEL_POSITIONS = {}
+-- Track which lobbies the player has visited
+VISITED_LOBBIES = {}
 
 function has_value (t, val)
     for i, v in ipairs(t) do
@@ -117,81 +119,42 @@ function update_level_display()
         return
     end
     
-    print("Updating level display with current key status:")
-    
-    -- Get current key status
-    local has_k1 = Tracker:FindObjectForCode("k1") and Tracker:FindObjectForCode("k1").Active
-    local has_k2 = Tracker:FindObjectForCode("k2") and Tracker:FindObjectForCode("k2").Active
-    local has_k4 = Tracker:FindObjectForCode("k4") and Tracker:FindObjectForCode("k4").Active
-    local has_k5 = Tracker:FindObjectForCode("k5") and Tracker:FindObjectForCode("k5").Active
-    local has_dive = Tracker:FindObjectForCode("dive") and Tracker:FindObjectForCode("dive").Active
-    -- Update level1 (always visible)
-    local obj = Tracker:FindObjectForCode("level1")
-    if obj and LEVEL_POSITIONS[1] then
-        local old_stage = obj.CurrentStage
-        obj.CurrentStage = LEVEL_POSITIONS[1]
-    end
-    
-    -- Update level2 (needs key1)
-    obj = Tracker:FindObjectForCode("level2")
-    if obj then
-        local old_stage = obj.CurrentStage
-        if has_k1 and LEVEL_POSITIONS[2] then
-            obj.CurrentStage = LEVEL_POSITIONS[2]
-        else
-            obj.CurrentStage = 0 -- Reset to unknown if we don't have the key
-        end
-    end
-    
-    -- Update level3 (needs key2)
-    obj = Tracker:FindObjectForCode("level3")
-    if obj then
-        local old_stage = obj.CurrentStage
-        if has_k2 and LEVEL_POSITIONS[3] then
-            obj.CurrentStage = LEVEL_POSITIONS[3]
-        else
+    -- For each level position (1-7), find where each level is in the level order
+    for i = 1, 7 do
+        local obj = Tracker:FindObjectForCode("level" .. i)
+        if obj then
+            -- Default to hidden (0)
             obj.CurrentStage = 0
+            
+            -- Check which level is at this position in the order
+            local level_id = LEVEL_POSITIONS[i]
+            if level_id then
+                -- Find which level name corresponds to this level_id
+                for level_name, id in pairs({
+                    ["JungleJapes"] = 1,
+                    ["AngryAztec"] = 2,
+                    ["FranticFactory"] = 3,
+                    ["GloomyGalleon"] = 4,
+                    ["FungiForest"] = 5,
+                    ["CrystalCaves"] = 6,
+                    ["CreepyCastle"] = 7
+                }) do
+                    -- If this is the level at position i and we've visited its lobby,
+                    -- show that level's icon at the current position
+                    if id == level_id and VISITED_LOBBIES[level_name] then
+                        obj.CurrentStage = level_id
+                        break
+                    end
+                end
+            end
         end
     end
     
-    -- Update level4 (needs key2 and dive)
-    obj = Tracker:FindObjectForCode("level4")
+    -- Handle Hideout Helm separately since it's always at position 8
+    local obj = Tracker:FindObjectForCode("level8")
     if obj then
-        local old_stage = obj.CurrentStage
-        if has_k2 and has_dive and LEVEL_POSITIONS[4] then
-            obj.CurrentStage = LEVEL_POSITIONS[4]
-        else
-            obj.CurrentStage = 0
-        end
-    end
-    
-    -- Update level5 (needs key4)
-    obj = Tracker:FindObjectForCode("level5")
-    if obj then
-        local old_stage = obj.CurrentStage
-        if has_k4 and LEVEL_POSITIONS[5] then
-            obj.CurrentStage = LEVEL_POSITIONS[5]
-        else
-            obj.CurrentStage = 0
-        end
-    end
-    
-    -- Update level6 and level7 (need key5)
-    obj = Tracker:FindObjectForCode("level6")
-    if obj then
-        local old_stage = obj.CurrentStage
-        if has_k5 and LEVEL_POSITIONS[6] then
-            obj.CurrentStage = LEVEL_POSITIONS[6]
-        else
-            obj.CurrentStage = 0
-        end
-    end
-    
-    obj = Tracker:FindObjectForCode("level7")
-    if obj then
-        local old_stage = obj.CurrentStage
-        if has_k5 and LEVEL_POSITIONS[7] then
-            obj.CurrentStage = LEVEL_POSITIONS[7]
+        if VISITED_LOBBIES["HideoutHelm"] then
+            obj.CurrentStage = 8 -- Always set to position 8
         else
             obj.CurrentStage = 0
         end
@@ -431,7 +394,30 @@ function onMapChange(id, value, old)
     -- print("got  " .. id .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
     -- print(dump_table(MAP_MAPPING[tostring(value)]))
     -- if has("automap_on") then
-    tabs = MAP_MAPPING[tostring(value)]
+    local map_id = tostring(value)
+    tabs = MAP_MAPPING[map_id]
+    
+    if map_id == "169" then -- Japes Lobby
+        VISITED_LOBBIES["JungleJapes"] = true
+    elseif map_id == "173" then -- Aztec Lobby
+        VISITED_LOBBIES["AngryAztec"] = true
+    elseif map_id == "175" then -- Factory Lobby
+        VISITED_LOBBIES["FranticFactory"] = true
+    elseif map_id == "174" then -- Galleon Lobby
+        VISITED_LOBBIES["GloomyGalleon"] = true
+    elseif map_id == "178" then -- Forest Lobby
+        VISITED_LOBBIES["FungiForest"] = true
+    elseif map_id == "194" then -- Caves Lobby
+        VISITED_LOBBIES["CrystalCaves"] = true
+    elseif map_id == "193" then -- Castle Lobby
+        VISITED_LOBBIES["CreepyCastle"] = true
+    elseif map_id == "170" then -- Helm Lobby
+        VISITED_LOBBIES["HideoutHelm"] = true
+    end
+    
+    -- If we've discovered a new lobby, update the level display
+    update_level_display()
+    
     for i, tab in ipairs(tabs) do
         Tracker:UiHint("ActivateTab", tab)
     end
