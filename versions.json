@@ -1,9 +1,9 @@
 {
     "versions": [
         {
-            "package_version": "0.2.1",
-            "download_url": "https://github.com/AmedMusl/dk64pt/releases/download/v0.2.1/dk64pt.zip",
-            "sha256": "D748417A1E9C9BCFB32464C41C791BA51EB09B520EFE98061BB31286A8B17A39",
+            "package_version": "0.2.2",
+            "download_url": "https://github.com/AmedMusl/dk64pt/releases/download/v0.2.2/dk64pt.zip",
+            "sha256": "467F6CFFB335DFD863BBEBD0C7CE8F28AF55661A520325FE1294A04D33E8D7EF",
             "changelog": [
                 "Check Github for the full changelog."
             ]
