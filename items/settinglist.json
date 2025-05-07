@@ -112,7 +112,7 @@
     "codes": "castle_crypt_doors"
   },
   {
-    "name": "L1 Number",
+    "name": "Japes Entrance",
     "type": "static",
     "img": "images/settings/1.png",
     "codes": "num1"
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "name": "L2 Number",
+      "name": "Aztec Entrance",
       "type": "toggle",
       "img": "images/settings/2.png",
       "codes": "num2"
@@ -218,7 +218,7 @@
       ]
     },
     {
-      "name": "L3 Number",
+      "name": "Factory Entrance",
       "type": "toggle",
       "img": "images/settings/3.png",
       "codes": "num3"
@@ -271,7 +271,7 @@
       ]
     },
     {
-      "name": "L4 Number",
+      "name": "Galleon Entrance",
       "type": "toggle",
       "img": "images/settings/4.png",
       "codes": "num4"
@@ -324,7 +324,7 @@
       ]
     },
     {
-      "name": "L5 Number",
+      "name": "Forest Entrance",
       "type": "toggle",
       "img": "images/settings/5.png",
       "codes": "num5"
@@ -377,7 +377,7 @@
       ]
     },
     {
-      "name": "L6 Number",
+      "name": "Caves Entrance",
       "type": "toggle",
       "img": "images/settings/6.png",
       "codes": "num6"
@@ -430,7 +430,7 @@
       ]
     },
     {
-      "name": "L7 Number",
+      "name": "Castle Entrance",
       "type": "toggle",
       "img": "images/settings/7.png",
       "codes": "num7"

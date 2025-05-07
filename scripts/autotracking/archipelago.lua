@@ -10,6 +10,15 @@ LEVEL_POSITIONS = {}
 -- Track which lobbies the player has visited
 VISITED_LOBBIES = {}
 
+local SAVEDATA_KEY = "dk64pt_visited_lobbies"
+local CURRENT_SLOT_KEY = "dk64pt_current_slot"
+local SAVEDATA_FILENAME = "dk64pt_savedata.txt"
+local VISITED_LOBBIES_FILE = "dk64pt_visited_lobbies"
+
+-- Use global variables for session persistence
+-- Global table to store visited lobbies between sessions (works during tracker runtime)
+SAVED_LOBBIES_BY_SLOT = SAVED_LOBBIES_BY_SLOT or {}
+
 function has_value (t, val)
     for i, v in ipairs(t) do
         if v == val then return 1 end
@@ -123,8 +132,8 @@ function update_level_display()
     for i = 1, 7 do
         local obj = Tracker:FindObjectForCode("level" .. i)
         if obj then
-            -- Default to hidden (0)
-            obj.CurrentStage = 0
+            -- Get current stage value to check if it's already set
+            local current_stage = obj.CurrentStage
             
             -- Check which level is at this position in the order
             local level_id = LEVEL_POSITIONS[i]
@@ -146,19 +155,85 @@ function update_level_display()
                         break
                     end
                 end
+                
+                -- If we didn't find a visited lobby for this position but it was already marked,
+                -- preserve the previous marking
+                if obj.CurrentStage == 0 and current_stage > 0 then
+                    obj.CurrentStage = current_stage
+                end
+            else
+                -- No level_id for this position, but preserve existing marking if any
+                if current_stage > 0 then
+                    obj.CurrentStage = current_stage
+                end
             end
         end
     end
     
-    -- Handle Hideout Helm separately since it's always at position 8
-    local obj = Tracker:FindObjectForCode("level8")
-    if obj then
-        if VISITED_LOBBIES["HideoutHelm"] then
-            obj.CurrentStage = 8 -- Always set to position 8
-        else
-            obj.CurrentStage = 0
+    -- Save the visited lobbies data whenever it changes
+    save_visited_lobbies()
+end
+
+-- Function to save visited lobbies to memory storage
+function save_visited_lobbies()
+    if not SLOT_DATA or not PLAYER_ID or PLAYER_ID < 0 then
+        return
+    end
+    
+    -- Create a unique key for this player's slot
+    local slot_key = PLAYER_ID .. "_" .. (TEAM_NUMBER or 0)
+    
+    -- Initialize or update the storage for this slot key
+    if not SAVED_LOBBIES_BY_SLOT[slot_key] then
+        SAVED_LOBBIES_BY_SLOT[slot_key] = {
+            level_order = SLOT_DATA['LevelOrder'],
+            lobbies = {}
+        }
+    end
+    
+    -- Save the lobbies under this slot key
+    SAVED_LOBBIES_BY_SLOT[slot_key].lobbies = {}
+    
+    for lobby_name, visited in pairs(VISITED_LOBBIES) do
+        if visited then
+            SAVED_LOBBIES_BY_SLOT[slot_key].lobbies[lobby_name] = true
         end
     end
+end
+
+-- Function to load visited lobbies from memory storage
+function load_visited_lobbies()
+    if not SLOT_DATA or not PLAYER_ID or PLAYER_ID < 0 then
+        return
+    end
+    
+    -- Create a unique key for this player's slot
+    local slot_key = PLAYER_ID .. "_" .. (TEAM_NUMBER or 0)
+    
+    -- Check if we have saved data for this slot
+    if SAVED_LOBBIES_BY_SLOT[slot_key] then
+        -- Check if the level order matches between saved data and current data
+        if SLOT_DATA['LevelOrder'] and SAVED_LOBBIES_BY_SLOT[slot_key].level_order 
+           and SLOT_DATA['LevelOrder'] ~= SAVED_LOBBIES_BY_SLOT[slot_key].level_order then
+            return false
+        end
+        
+        -- Restore the visited lobbies
+        for lobby_name, visited in pairs(SAVED_LOBBIES_BY_SLOT[slot_key].lobbies or {}) do
+            if visited then
+                VISITED_LOBBIES[lobby_name] = true
+            end
+        end
+        
+        -- Update the level display with the loaded data
+        if next(LEVEL_POSITIONS) ~= nil then
+            update_level_display()
+        end
+        
+        return true
+    end
+    
+    return false
 end
 
 function onClear(slot_data)
@@ -207,6 +282,9 @@ function onClear(slot_data)
             end
         end
     end
+
+    -- Always clear visited lobbies when connecting to a new slot
+    VISITED_LOBBIES = {} 
 
     if slot_data == nil then
         print("welp")
@@ -291,6 +369,10 @@ function onClear(slot_data)
     if slot_data['LevelOrder'] then
         process_level_order(slot_data['LevelOrder'])
     end
+
+    -- Load visited lobbies after level order is processed
+    -- Only if connecting to the same slot as before
+    load_visited_lobbies()
 
     if PLAYER_ID > -1 then
     
@@ -397,26 +479,35 @@ function onMapChange(id, value, old)
     local map_id = tostring(value)
     tabs = MAP_MAPPING[map_id]
     
-    if map_id == "169" then -- Japes Lobby
+    local updated = false
+    
+    if map_id == "169" and not VISITED_LOBBIES["JungleJapes"] then -- Japes Lobby
         VISITED_LOBBIES["JungleJapes"] = true
-    elseif map_id == "173" then -- Aztec Lobby
+        updated = true
+    elseif map_id == "173" and not VISITED_LOBBIES["AngryAztec"] then -- Aztec Lobby
         VISITED_LOBBIES["AngryAztec"] = true
-    elseif map_id == "175" then -- Factory Lobby
+        updated = true
+    elseif map_id == "175" and not VISITED_LOBBIES["FranticFactory"] then -- Factory Lobby
         VISITED_LOBBIES["FranticFactory"] = true
-    elseif map_id == "174" then -- Galleon Lobby
+        updated = true
+    elseif map_id == "174" and not VISITED_LOBBIES["GloomyGalleon"] then -- Galleon Lobby
         VISITED_LOBBIES["GloomyGalleon"] = true
-    elseif map_id == "178" then -- Forest Lobby
+        updated = true
+    elseif map_id == "178" and not VISITED_LOBBIES["FungiForest"] then -- Forest Lobby
         VISITED_LOBBIES["FungiForest"] = true
-    elseif map_id == "194" then -- Caves Lobby
+        updated = true
+    elseif map_id == "194" and not VISITED_LOBBIES["CrystalCaves"] then -- Caves Lobby
         VISITED_LOBBIES["CrystalCaves"] = true
-    elseif map_id == "193" then -- Castle Lobby
+        updated = true
+    elseif map_id == "193" and not VISITED_LOBBIES["CreepyCastle"] then -- Castle Lobby
         VISITED_LOBBIES["CreepyCastle"] = true
-    elseif map_id == "170" then -- Helm Lobby
-        VISITED_LOBBIES["HideoutHelm"] = true
+        updated = true
     end
     
     -- If we've discovered a new lobby, update the level display
-    update_level_display()
+    if updated then
+        update_level_display()
+    end
     
     for i, tab in ipairs(tabs) do
         Tracker:UiHint("ActivateTab", tab)

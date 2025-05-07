@@ -1232,8 +1232,8 @@
         "map_locations": [
           {
             "map": "helmlobby",
-            "x": 74,
-            "y": 464,
+            "x": 109,
+            "y": 491,
             "size": 16
           }
         ]
@@ -1251,8 +1251,8 @@
         "map_locations": [
           {
             "map": "helmlobby",
-            "x": 335,
-            "y": 464,
+            "x": 369,
+            "y": 490,
             "size": 16
           }
         ]

@@ -6,13 +6,13 @@ function japesDKMedal()
     if not_has("donkey") then
         return false
     end
-    local cb_total = 15
+    local cb_total = 10
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
     if coconut() and has("climb") then
         cb_total = cb_total + 10
     end
     if has("climb") then
-        cb_total = cb_total + 16
+        cb_total = cb_total + 21
     end
     if coconut() then
         cb_total = cb_total + 10
@@ -46,11 +46,17 @@ function japesDiddyMedal()
     if has("climb") then
         cb_total = cb_total + 27
     end
+    if peanuts() then
+        cb_total = cb_total + 10
+    end
     if has("climb") and peanuts() then
-        cb_total = cb_total + 30
+        cb_total = cb_total + 20
     end
     if has("climb") and peanuts() and japesSlam() then
-        cb_total = cb_total + 20
+        cb_total = cb_total + 15
+    end
+    if has("climb") and peanuts() and japesSlam() and charge() then
+        cb_total = cb_total + 5
     end
     if coconutCage() then
         cb_total = cb_total + 3

@@ -169,7 +169,7 @@ function canBeatSpider()
     if not_has("dusk") then
         return punch() and mini() and canChangeTime()
     elseif has("dusk") then
-        return punch() and canChangeTime()
+        return (punch() or mini()) and canChangeTime()
     end
 end
 
