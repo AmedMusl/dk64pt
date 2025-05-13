@@ -1,5 +1,5 @@
 {
-    "settings_popup": {
+    "barriers_grid": {
         "type": "array",
         "orientation": "vertical",
         "margin": "0,0",
@@ -12,6 +12,7 @@
                     {
                         "type": "itemgrid",
                         "item_margin": "15, 4",
+                        "background": "#000000",
                         "item_size": "240, 28",
                         "rows": [
                             ["japes_coconut_gates", "japes_shellhive_gate"],

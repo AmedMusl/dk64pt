@@ -11,6 +11,7 @@
                 "content": [
                     {
                         "type": "itemgrid",
+                        "background": "#000000",
                         "item_margin": "5, 2",
                         "h_alignment": "left",
                         "rows": [

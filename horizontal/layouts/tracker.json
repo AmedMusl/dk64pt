@@ -50,16 +50,16 @@
                             "key": "keys_grid"
                         }
                       },
-                      {
-                        "type": "group",
-                        "header": "Settings",
-                        "dock": "left",
-                        "margin": "0,0,3,0",
-                        "content": {
-                            "type": "layout",
-                            "key": "settings_grid"
-                        }
-                      }
+                    //   {
+                    //     "type": "group",
+                    //     "header": "Settings",
+                    //     "dock": "left",
+                    //     "margin": "0,0,3,0",
+                    //     "content": {
+                    //         "type": "layout",
+                    //         "key": "settings_grid"
+                    //     }
+                    //   }
                   ]
               },
               {

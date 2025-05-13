@@ -53,16 +53,6 @@
                             "type": "layout",
                             "key": "keys_grid"
                         }
-                      },
-                      {
-                        "type": "group",
-                        "header": "Settings",
-                        "dock": "top",
-                        "margin": "0,0,3,0",
-                        "content": {
-                            "type": "layout",
-                            "key": "settings_grid"
-                        }
                       }
                   ]
               },

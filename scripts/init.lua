@@ -53,6 +53,7 @@ Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/level_order.json")
 Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddLayouts("layouts/barriers.json")
+Tracker:AddLayouts("layouts/popup.json")
 
 -- Horizontal Layout
 if IS_HORIZONTAL then
