@@ -1130,6 +1130,36 @@
           "name": "Kutout",
           "codes": "tns1, kutout1",
           "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-dk.png",
+          "name": "DK Phase",
+          "codes": "tns1, dkphase1",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-diddy.png",
+          "name": "Diddy Phase",
+          "codes": "tns1, diddyphase1",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-lanky.png",
+          "name": "DK Phase",
+          "codes": "tns1, lankyphase1",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-tiny.png",
+          "name": "Diddy Phase",
+          "codes": "tns1, tinyphase1",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-chunky.png",
+          "name": "DK Phase",
+          "codes": "tns1, chunkyphase1",
+          "inherit_codes": false
         }
       ]
     },
@@ -1185,6 +1215,36 @@
           "img": "images/settings/kutout.png",
           "name": "Kutout",
           "codes": "tns2, kutout2",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-dk.png",
+          "name": "DK Phase",
+          "codes": "tns2, dkphase2",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-diddy.png",
+          "name": "Diddy Phase",
+          "codes": "tns2, diddyphase2",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-lanky.png",
+          "name": "DK Phase",
+          "codes": "tns2, lankyphase2",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-tiny.png",
+          "name": "Diddy Phase",
+          "codes": "tns2, tinyphase2",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-chunky.png",
+          "name": "DK Phase",
+          "codes": "tns2, chunkyphase2",
           "inherit_codes": false
         }
       ]
@@ -1242,6 +1302,36 @@
           "name": "Kutout",
           "codes": "tns3, kutout3",
           "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-dk.png",
+          "name": "DK Phase",
+          "codes": "tns3, dkphase3",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-diddy.png",
+          "name": "Diddy Phase",
+          "codes": "tns3, diddyphase3",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-lanky.png",
+          "name": "DK Phase",
+          "codes": "tns3, lankyphase3",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-tiny.png",
+          "name": "Diddy Phase",
+          "codes": "tns3, tinyphase3",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-chunky.png",
+          "name": "DK Phase",
+          "codes": "tns3, chunkyphase3",
+          "inherit_codes": false
         }
       ]
     },
@@ -1297,6 +1387,36 @@
           "img": "images/settings/kutout.png",
           "name": "Kutout",
           "codes": "tns4, kutout4",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-dk.png",
+          "name": "DK Phase",
+          "codes": "tns4, dkphase4",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-diddy.png",
+          "name": "Diddy Phase",
+          "codes": "tns4, diddyphase4",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-lanky.png",
+          "name": "DK Phase",
+          "codes": "tns4, lankyphase4",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-tiny.png",
+          "name": "Diddy Phase",
+          "codes": "tns4, tinyphase4",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-chunky.png",
+          "name": "DK Phase",
+          "codes": "tns4, chunkyphase4",
           "inherit_codes": false
         }
       ]
@@ -1354,6 +1474,36 @@
           "name": "Kutout",
           "codes": "tns5, kutout5",
           "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-dk.png",
+          "name": "DK Phase",
+          "codes": "tns5, dkphase5",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-diddy.png",
+          "name": "Diddy Phase",
+          "codes": "tns5, diddyphase5",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-lanky.png",
+          "name": "DK Phase",
+          "codes": "tns5, lankyphase5",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-tiny.png",
+          "name": "Diddy Phase",
+          "codes": "tns5, tinyphase5",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-chunky.png",
+          "name": "DK Phase",
+          "codes": "tns5, chunkyphase5",
+          "inherit_codes": false
         }
       ]
     },
@@ -1409,6 +1559,36 @@
           "img": "images/settings/kutout.png",
           "name": "Kutout",
           "codes": "tns6, kutout6",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-dk.png",
+          "name": "DK Phase",
+          "codes": "tns6, dkphase6",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-diddy.png",
+          "name": "Diddy Phase",
+          "codes": "tns6, diddyphase6",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-lanky.png",
+          "name": "DK Phase",
+          "codes": "tns6, lankyphase6",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-tiny.png",
+          "name": "Diddy Phase",
+          "codes": "tns6, tinyphase6",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-chunky.png",
+          "name": "DK Phase",
+          "codes": "tns6, chunkyphase6",
           "inherit_codes": false
         }
       ]
@@ -1466,7 +1646,43 @@
           "name": "Kutout",
           "codes": "tns7, kutout7",
           "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-dk.png",
+          "name": "DK Phase",
+          "codes": "tns7, dkphase7",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-diddy.png",
+          "name": "Diddy Phase",
+          "codes": "tns7, diddyphase7",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-lanky.png",
+          "name": "DK Phase",
+          "codes": "tns7, lankyphase7",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/krool-tiny.png",
+          "name": "Diddy Phase",
+          "codes": "tns7, tinyphase7",
+          "inherit_codes": false
+        },
+                {
+          "img": "images/settings/krool-chunky.png",
+          "name": "DK Phase",
+          "codes": "tns7, chunkyphase7",
+          "inherit_codes": false
         }
       ]
+    },
+    {
+      "name": "Open Lobbies",
+      "type": "toggle",
+      "img": "images/settings/openlobbies.png",
+      "codes": "openlobbies"
     }
 ]

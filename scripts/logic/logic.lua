@@ -652,37 +652,46 @@ function endOfHelm()
 end
 
 function toggleLevelOrder()
-    if has("k1") then
+    if has("openlobbies") then
         Tracker:FindObjectForCode("num2").Active = true
-    elseif not_has("k1") then
-        Tracker:FindObjectForCode("num2").Active = false
-    end
-    if has("k2") then
         Tracker:FindObjectForCode("num3").Active = true
-    else
-        Tracker:FindObjectForCode("num3").Active = false
-    end
-    if has("k2") and has("dive") then
         Tracker:FindObjectForCode("num4").Active = true
-    else
-        Tracker:FindObjectForCode("num4").Active = false
-    end
-    if has("k4") then
         Tracker:FindObjectForCode("num5").Active = true
-    else
-        Tracker:FindObjectForCode("num5").Active = false
-    end
-    if has("k5") then
         Tracker:FindObjectForCode("num6").Active = true
         Tracker:FindObjectForCode("num7").Active = true
-    else
-        Tracker:FindObjectForCode("num6").Active = false
-        Tracker:FindObjectForCode("num7").Active = false
-    end
-    if has("k6") and has("k7") then
         Tracker:FindObjectForCode("num8").Active = true
     else
+        Tracker:FindObjectForCode("num2").Active = false
+        Tracker:FindObjectForCode("num3").Active = false
+        Tracker:FindObjectForCode("num4").Active = false
+        Tracker:FindObjectForCode("num5").Active = false
+        Tracker:FindObjectForCode("num6").Active = false
+        Tracker:FindObjectForCode("num7").Active = false
         Tracker:FindObjectForCode("num8").Active = false
+        if has("k1") then
+            Tracker:FindObjectForCode("num2").Active = true
+        end
+        
+        if has("k2") then
+            Tracker:FindObjectForCode("num3").Active = true
+        end
+        
+        if has("k2") and has("dive") then
+            Tracker:FindObjectForCode("num4").Active = true
+        end
+        
+        if has("k4") then
+            Tracker:FindObjectForCode("num5").Active = true
+        end
+        
+        if has("k5") then
+            Tracker:FindObjectForCode("num6").Active = true
+            Tracker:FindObjectForCode("num7").Active = true
+        end
+        
+        if has("k6") and has("k7") then
+            Tracker:FindObjectForCode("num8").Active = true
+        end
     end
 end
 function hasBoss(prefix)
@@ -732,7 +741,12 @@ function checkBossInLevel(levelNum, bossName)
         puff = {"puff1", "puff2", "puff3", "puff4", "puff5", "puff6", "puff7"},
         doga2 = {"doga21", "doga22", "doga23", "doga24", "doga25", "doga26", "doga27"},
         army2 = {"army21", "army22", "army23", "army24", "army25", "army26", "army27"},
-        kutout = {"kutout1", "kutout2", "kutout3", "kutout4", "kutout5", "kutout6", "kutout7"}
+        kutout = {"kutout1", "kutout2", "kutout3", "kutout4", "kutout5", "kutout6", "kutout7"},
+        dkphase = {"dkphase1", "dkphase2", "dkphase3", "dkphase4", "dkphase5", "dkphase6", "dkphase7"},
+        diddyphase = {"diddyphase1", "diddyphase2", "diddyphase3", "diddyphase4", "diddyphase5", "diddyphase6", "diddyphase7"},
+        lankyphase = {"lankyphase1", "lankyphase2", "lankyphase3", "lankyphase4", "lankyphase5", "lankyphase6", "lankyphase7"},
+        tinyphase = {"tinyphase1", "tinyphase2", "tinyphase3", "tinyphase4", "tinyphase5", "tinyphase6", "tinyphase7"},
+        chunkyphase = {"chunkyphase1", "chunkyphase2", "chunkyphase3", "chunkyphase4", "chunkyphase5", "chunkyphase6", "chunkyphase7"}
     }
     
     if bossMap[bossName] and levelNum >= 1 and levelNum <= 7 then
@@ -749,6 +763,11 @@ function getBossInLevel(levelNum)
     if checkBossInLevel(levelNum, "doga2") then return "doga2" end
     if checkBossInLevel(levelNum, "army2") then return "army2" end
     if checkBossInLevel(levelNum, "kutout") then return "kutout" end
+    if checkBossInLevel(levelNum, "dkphase") then return "dkphase" end
+    if checkBossInLevel(levelNum, "diddyphase") then return "diddyphase" end
+    if checkBossInLevel(levelNum, "lankyphase") then return "lankyphase" end
+    if checkBossInLevel(levelNum, "tinyphase") then return "tinyphase" end
+    if checkBossInLevel(levelNum, "chunkyphase") then return "chunkyphase" end
     return nil
 end
 
@@ -779,7 +798,12 @@ function japesBossLogic()
         puff = function() return true end,
         doga2 = function() return has("barrel") and hunky() end,
         army2 = function() return has("barrel") end,
-        kutout = function() return true end
+        kutout = function() return true end,
+        dkphase = function() return has("climb") and blast() end,
+        diddyphase = function() return rocket() and peanuts() end,
+        lankyphase = function() return has("barrel") and trombone() end,
+        tinyphase = function() return mini() and feather() end,
+        chunkyphase = function() return hunky() and gone() and punch() end
     }
     
     return requirements[boss]()
@@ -812,7 +836,12 @@ function aztecBossLogic()
         puff = function() return true end,
         doga2 = function() return has("barrel") and hunky() end,
         army2 = function() return has("barrel") end,
-        kutout = function() return true end
+        kutout = function() return true end,
+        dkphase = function() return has("climb") and blast() end,
+        diddyphase = function() return rocket() and peanuts() end,
+        lankyphase = function() return has("barrel") and trombone() end,
+        tinyphase = function() return mini() and feather() end,
+        chunkyphase = function() return hunky() and gone() and punch() end
     }
     
     return requirements[boss]()
@@ -845,7 +874,12 @@ function factoryBossLogic()
         puff = function() return true end,
         doga2 = function() return has("barrel") and hunky() end,
         army2 = function() return has("barrel") end,
-        kutout = function() return true end
+        kutout = function() return true end,
+        dkphase = function() return has("climb") and blast() end,
+        diddyphase = function() return rocket() and peanuts() end,
+        lankyphase = function() return has("barrel") and trombone() end,
+        tinyphase = function() return mini() and feather() end,
+        chunkyphase = function() return hunky() and gone() and punch() end
     }
     
     return requirements[boss]()
@@ -878,7 +912,12 @@ function galleonBossLogic()
         puff = function() return true end,
         doga2 = function() return has("barrel") and hunky() end,
         army2 = function() return has("barrel") end,
-        kutout = function() return true end
+        kutout = function() return true end,
+        dkphase = function() return has("climb") and blast() end,
+        diddyphase = function() return rocket() and peanuts() end,
+        lankyphase = function() return has("barrel") and trombone() end,
+        tinyphase = function() return mini() and feather() end,
+        chunkyphase = function() return hunky() and gone() and punch() end
     }
     
     return requirements[boss]()
@@ -911,7 +950,12 @@ function forestBossLogic()
         puff = function() return true end,
         doga2 = function() return has("barrel") and hunky() end,
         army2 = function() return has("barrel") end,
-        kutout = function() return true end
+        kutout = function() return true end,
+        dkphase = function() return has("climb") and blast() end,
+        diddyphase = function() return rocket() and peanuts() end,
+        lankyphase = function() return has("barrel") and trombone() end,
+        tinyphase = function() return mini() and feather() end,
+        chunkyphase = function() return hunky() and gone() and punch() end
     }
     
     return requirements[boss]()
@@ -944,7 +988,12 @@ function cavesBossLogic()
         puff = function() return true end,
         doga2 = function() return has("barrel") and hunky() end,
         army2 = function() return has("barrel") end,
-        kutout = function() return true end
+        kutout = function() return true end,
+        dkphase = function() return has("climb") and blast() end,
+        diddyphase = function() return rocket() and peanuts() end,
+        lankyphase = function() return has("barrel") and trombone() end,
+        tinyphase = function() return mini() and feather() end,
+        chunkyphase = function() return hunky() and gone() and punch() end
     }
     
     return requirements[boss]()
@@ -977,12 +1026,18 @@ function castleBossLogic()
         puff = function() return true end,
         doga2 = function() return has("barrel") and hunky() end,
         army2 = function() return has("barrel") end,
-        kutout = function() return true end
+        kutout = function() return true end,
+        dkphase = function() return has("climb") and blast() end,
+        diddyphase = function() return rocket() and peanuts() end,
+        lankyphase = function() return has("barrel") and trombone() end,
+        tinyphase = function() return mini() and feather() end,
+        chunkyphase = function() return hunky() and gone() and punch() end
     }
     
     return requirements[boss]()
 end
 
+ScriptHost:AddWatchForCode("openlobbies", "openlobbies", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number2", "k1", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number3", "k2", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number4_dive", "dive", toggleLevelOrder)

@@ -366,12 +366,15 @@ function onClear(slot_data)
         obj.AcquiredCount = (slot_data['MermaidPearls'])
     end
 
+    if slot_data['OpenLobbies'] then
+        local obj = Tracker:FindObjectForCode("openlobbies")
+        obj.Active = (slot_data['OpenLobbies'])
+    end
+
     if slot_data['LevelOrder'] then
         process_level_order(slot_data['LevelOrder'])
     end
 
-    -- Load visited lobbies after level order is processed
-    -- Only if connecting to the same slot as before
     load_visited_lobbies()
 
     if PLAYER_ID > -1 then

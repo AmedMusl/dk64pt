@@ -9,22 +9,37 @@ function canEnterLevel(levels, ignoreBlocker)
         if has(levelCode) then
             -- Skip blocker check if ignoreBlocker is true
             if ignoreBlocker or canEnterWithBlocker(levelCode, blockerCode) then
-                -- Check keys if they are required
+                -- Check keys if they are required (but ignore keys if openlobbies is enabled)
                 if not keys then
                     return true
                 elseif type(keys) == "table" then
                     local allKeysPresent = true
-                    for _, key in ipairs(keys) do
-                        if not has(key) then
-                            allKeysPresent = false
-                            break
+                    if has("openlobbies") then
+                        -- When openlobbies is enabled, only check for ability requirements, not key requirements
+                        for _, item in ipairs(keys) do
+                            if not string.match(item, "^k%d+$") and not has(item) then
+                                allKeysPresent = false
+                                break
+                            end
+                        end
+                    else
+                        -- Normal logic - check all requirements including keys
+                        for _, item in ipairs(keys) do
+                            if not has(item) then
+                                allKeysPresent = false
+                                break
+                            end
                         end
                     end
                     if allKeysPresent then
                         return true
                     end
                 else
-                    if has(keys) then
+                    -- Single requirement case (e.g. "k1")
+                    if has("openlobbies") and string.match(keys, "^k%d+$") then
+                        -- Ignore key requirements with openlobbies
+                        return true
+                    elseif has(keys) then
                         return true
                     end
                 end
