@@ -74,7 +74,7 @@
             },
             {
                 "name": "Aztec Kasplat: Behind DK Stone Door",
-                "access_rules": ["$coconut, $strong"],
+                "access_rules": ["$canActivateAztecBlueprintDoor, $strong"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -343,7 +343,7 @@
             },
             {
                 "name": "Aztec DK Sealed Quicksand Tunnel Barrel",
-                "access_rules": ["^$llamaSwitches, $canEnterLlamaTemple, $aztecSlam, $strong"],
+                "access_rules": ["^$llamaSwitches, $canEnterLlamaTemple, $canActivateAztecQuickSandSwitch, $strong"],
                 "sections": [
                     {
                         "name": "Golden Banana"

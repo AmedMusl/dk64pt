@@ -89,10 +89,10 @@ function japesLankyMedal()
     if ostand() or twirl() then
         cb_total = cb_total + 2
     end
-    if (ostand() or twirl()) and peanuts() then
+    if (ostand() or twirl()) and canActivateJapesPainting() then
         cb_total = cb_total + 20
     end
-    if (ostand() or twirl()) and peanuts() and grape() then
+    if (ostand() or twirl()) and canActivateJapesPainting() and grape() then
         cb_total = cb_total + 10
     end
     if coconutCage() then
@@ -120,10 +120,10 @@ function japesTinyMedal()
     if has("climb") then
         cb_total = cb_total + 5
     end
-    if coconutCage() and coconut() then
+    if coconutCage() and canActivateJapesRambi() then
         cb_total = cb_total + 12
     end
-    if coconutCage() and coconut() and feather() then
+    if coconutCage() and canActivateJapesRambi() and feather() then
         cb_total = cb_total + 10
     end
     if feather() then
@@ -153,10 +153,10 @@ function japesChunkyMedal()
     if has("climb") then
         cb_total = cb_total + 15
     end
-    if coconutCage() and pineapple() and coconut() then
+    if coconutCage() and pineapple() and canActivateJapesRambi() then
         cb_total = cb_total + 30
     end
-    if coconutCage() and coconut() and has("barrel") then
+    if coconutCage() and canActivateJapesRambi() and has("barrel") then
         cb_total = cb_total + 5
     end
     if shellhive() and hunky() and has("climb") then
@@ -180,7 +180,7 @@ function aztecDKMedal()
     if coconut() and tunnelDoor() then
         cb_total = cb_total + 30
     end
-    if llamaSwitches() and canEnterLlamaTemple() and aztecSlam() and strong() then
+    if llamaSwitches() and canEnterLlamaTemple() and canActivateAztecQuickSandSwitch() and strong() then
         cb_total = cb_total + 20
     end
     if llamaSwitches() and canEnterLlamaTemple() then
@@ -189,7 +189,7 @@ function aztecDKMedal()
     if tunnelDoor() then
         cb_total = cb_total + 7
     end
-    if strong() and coconut() then
+    if strong() and canActivateAztecBlueprintDoor() then
         cb_total = cb_total + 10
     end
     return cb_total >= cb_amount
@@ -204,8 +204,11 @@ function aztecDiddyMedal()
     if peanuts() then
         cb_total = cb_total + 10
     end
-    if peanuts() and aztecSlam() then
-        cb_total = cb_total + 18
+    if canEnterTinyTemple() and aztecSlam() then --3 on tiny tiny tongue
+        cb_total = cb_total + 3
+    end
+    if aztecSlam() and peanuts() then -- 15 on tiny tongue
+        cb_total = cb_total + 15
     end
     if peanuts() and has("dive") and templeIce() then
         cb_total = cb_total + 7
@@ -222,7 +225,7 @@ function aztecDiddyMedal()
     if tunnelDoor() and peanuts() and aztec5DT() then
         cb_total = cb_total + 10
     end
-    if llamaSwitches() and coconut() and aztecSlam() and strong() and peanuts() then
+    if llamaSwitches() and canEnterLlamaTemple() and canActivateAztecQuickSandSwitch() and strong() and peanuts() then
         cb_total = cb_total + 10
     end
     return cb_total >= cb_amount
@@ -291,11 +294,14 @@ function aztecChunkyMedal()
     end
     local cb_total = 5
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
-    if has("dive") and templeIce() and canEnterTinyTemple() then
+    if has("dive") and templeIce() and canEnterTinyTemple() and pineapple() then
         cb_total = cb_total + 10
     end
     if pineapple() then
-        cb_total = cb_total + 49
+        cb_total = cb_total + 20
+    end
+    if canEnterTinyTemple() then
+        cb_total = cb_total + 29
     end
     if tunnelDoor() then
         cb_total = cb_total + 16
@@ -560,7 +566,7 @@ function galleonTinyMedal()
     if lighthouse() and feather() and raisedWater() then
         cb_total = cb_total + 10
     end
-    if raisedWater() and pineapple() then
+    if raisedWater() and canActivateGalleonCannonGame() then
         cb_total = cb_total + 15
     end
     if sax() and has("dive") and shipyard() then
@@ -593,7 +599,7 @@ function galleonChunkyMedal()
     if raisedWater() and seasick() and punch() and has("slam") then
         cb_total = cb_total + 5
     end
-    if raisedWater() and pineapple() then
+    if raisedWater() and pineapple() and canActivateGalleonCannonGame() then
         cb_total = cb_total + 10
     end
     if pineapple() and shipyard() then

@@ -1,5 +1,6 @@
 ScriptHost:LoadScript("scripts/logic/medallogic.lua")
 ScriptHost:LoadScript("scripts/logic/logichelper.lua")
+ScriptHost:LoadScript("scripts/logic/switchsanity.lua")
 
 function has_more_then_n_consumable(n)
     local count = Tracker:ProviderCountForCode('consumable')
@@ -138,7 +139,7 @@ function canEnterTinyTemple()
 end
 
 function canEnterLlamaTemple()
-    return coconut() or grape() or feather()
+    return canActivateAztecLlamaCoconut() or canActivateAztecLlamaGrape() or canActivateAztecLlamaFeather()
 end
 
 function canChangeTime()
@@ -236,9 +237,9 @@ function aztecAccess()
 end
 
 function japesChunkyTimed()
-    if coconutCage() and coconut() and has("barrel") and japesSlam() and has("chunky") and has("climb") then
+    if coconutCage() and canActivateJapesRambi() and has("barrel") and japesSlam() and has("chunky") and has("climb") then
         return AccessibilityLevel.Normal
-    elseif coconutCage() and coconut() and has("barrel") and japesSlam() and has("chunky") and ostand() then
+    elseif coconutCage() and canActivateJapesRambi() and has("barrel") and japesSlam() and has("chunky") and ostand() then
         return AccessibilityLevel.SequenceBreak
     end
 end
@@ -309,7 +310,7 @@ function shellhive()
     if has("japes_shellhive_gate") then
         return in_coconut
     else
-        return feather() and in_coconut
+        return canActivateJapesFeather() and in_coconut
     end
 end
 
@@ -324,7 +325,7 @@ end
 function tunnelDoor()
     if has("aztec_tunnel_door") then
         return AccessibilityLevel.Normal
-    elseif guitar() and has("climb") and ((has("vine")) or rocket()) then
+    elseif canActivateAztecGuitar() and has("climb") and ((has("vine")) or rocket()) then
         return AccessibilityLevel.Normal
     else
         return guitar() and AccessibilityLevel.SequenceBreak
@@ -370,7 +371,7 @@ function lighthouse()
     if has("galleon_lighthouse_gate") then
         return true
     else
-        return coconut()
+        return canActivateGalleonLighthouse()
     end
 end
 
@@ -378,7 +379,7 @@ function shipyard()
     if has("galleon_shipyard_area_gate") then
         return true
     else
-        return peanuts()
+        return canActivateGalleonShipwreck()
     end
 end
 
@@ -406,7 +407,7 @@ function greenTunnel()
     if has("forest_green_tunnel") then
         return true
     else
-        return feather() and pineapple()
+        return canActivateFungiGreenFeather() and canActivateFungiGreenPineapple()
     end
 end
 
@@ -414,7 +415,7 @@ function greenTunnelFeather()
     if has("forest_green_tunnel") then
         return true
     else
-        return feather()
+        return canActivateFungiGreenFeather()
     end
 end
 
@@ -422,7 +423,7 @@ function yellowTunnel()
     if has("forest_yellow_tunnel") then
         return true
     else
-        return grape()
+        return canActivateFungiYellow()
     end
 end
 

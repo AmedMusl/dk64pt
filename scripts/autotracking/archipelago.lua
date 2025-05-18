@@ -361,6 +361,14 @@ function onClear(slot_data)
         obj.AcquiredCount = (slot_data["JetpacReq"])
     end
 
+    if slot_data['SwitchSanity'] then
+        SWITCHSANITY = slot_data['SwitchSanity']
+        -- print("Received SwitchSanity data:")
+        -- print(dump_table(SWITCHSANITY))
+    else
+        SWITCHSANITY = {}
+    end
+
     if slot_data['MermaidPearls'] then
         local obj = Tracker:FindObjectForCode("mermaid")
         obj.AcquiredCount = (slot_data['MermaidPearls'])

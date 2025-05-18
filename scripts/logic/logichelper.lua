@@ -228,12 +228,12 @@ function canEnterHelmLobby()
     return canEnterLevel({
         {"level8", "blocker8", {"k6", "k7"}}
     }, true)
-    and port()
+    and canActivateIslesMonkeyport()
 end
 
 function canEnterHelm()
     return canEnterLevel({
         {"level8", "blocker8", {"k6", "k7"}}
     }, false)
-    and port() and gone() and has("vine")
+    and canActivateIslesMonkeyport() and canActivateIslesHelmLobbyGone() and has("vine")
 end

@@ -131,7 +131,7 @@
             },
             {            
                 "name": "Galleon Chunky Cannon Game",
-                "access_rules": ["$pineapple, barrel, $raisedWater"],
+                "access_rules": ["$canActivateGalleonCannonGame, barrel, $raisedWater"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -148,7 +148,7 @@
             },
             {            
                 "name": "Galleon Kasplat: Cannon Game Room",
-                "access_rules": ["$pineapple, $raisedWater"],
+                "access_rules": ["$canActivateGalleonCannonGame, $raisedWater"],
                 "sections": [
                     {
                         "name": "Kasplat",

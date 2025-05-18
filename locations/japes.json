@@ -276,7 +276,7 @@
             },
             {            
                 "name": "Japes Diddy Peanut Tunnel",
-                "access_rules": ["$peanuts"],
+                "access_rules": ["$canActivateJapesDiddyCave"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -293,7 +293,7 @@
             },
             {            
                 "name": "Japes Lanky Grape Gate Barrel",
-                "access_rules": ["$peanuts, $grape"],
+                "access_rules": ["$canActivateJapesDiddyCave, $grape"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -310,7 +310,7 @@
             },
             {            
                 "name": "Japes Tiny Feather Gate Barrel",
-                "access_rules": ["$peanuts, $feather"],
+                "access_rules": ["$canActivateJapesDiddyCave, $feather"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -471,7 +471,7 @@
             },
             {            
                 "name": "Japes Fairy (Rambi Door Pool)",
-                "access_rules": ["^$coconutCage, $coconut, camera"],
+                "access_rules": ["^$coconutCage, $canActivateJapesRambi, camera"],
                 "sections": [
                     {
                         "name": "Fairy",
@@ -490,7 +490,7 @@
             },
             {            
                 "name": "Japes Crate: In the Rambi Cave",
-                "access_rules": ["^$coconutCage, $coconut"],
+                "access_rules": ["^$coconutCage, $canActivateJapesRambi"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -509,7 +509,7 @@
             },
             {            
                 "name": "Painting Room",
-                "access_rules": ["$peanuts, $ostand", "$peanuts, $twirl, climb"],
+                "access_rules": ["$canActivateJapesPainting, $ostand", "$canActivateJapesPainting, $twirl, climb"],
                 "sections": [
                     {
                         "name": "Japes Lanky Zingers",
