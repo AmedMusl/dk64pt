@@ -162,7 +162,7 @@ function japesChunkyMedal()
     if shellhive() and hunky() and has("climb") then
         cb_total = cb_total + 20
     end
-    if has("barrel") then
+    if has("barrel") and has("slam") then
         cb_total = cb_total + 15
     end
     return cb_total >= cb_amount
@@ -684,28 +684,31 @@ function forestLankyMedal()
     if not_has("lanky") then
         return false
     end
-    local cb_total = 21
+    local cb_total = 20
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    if has("climb") then
+        cb_total = cb_total + 3
+    end
     if has("climb") or balloon() then
-        cb_total = cb_total + 11
+        cb_total = cb_total + 9
+    end
+    if nightTime() and (has("climb") or balloon()) then
+        cb_total = cb_total + 10
     end
     if grape() then
         cb_total = cb_total + 10
     end
-    if grape() and (has("climb") or rocket()) then
+    if grape() and canClimbMushroom() then
         cb_total = cb_total + 10
+    end
+    if rocket() or (ostand() and canClimbMushroom()) then
+        cb_total = cb_total + 5
+    end
+    if forestSlam() and (rocket() or (ostand() and has("climb"))) then
+        cb_total = cb_total + 15
     end
     if yellowTunnel() then
         cb_total = cb_total + 18
-    end
-    if rocket() or (ostand() and has("climb")) then
-        cb_total = cb_total + 5
-    end
-    if (rocket() or (ostand() and has("climb"))) and forestSlam() then
-        cb_total = cb_total + 15
-    end
-    if nightTime() then
-        cb_total = cb_total + 10
     end
     return cb_total >= cb_amount
 end

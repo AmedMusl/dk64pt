@@ -131,7 +131,7 @@
             },
             {            
                 "name": "Inside the Tree",
-                "access_rules": ["$blast"],
+                "access_rules": ["$canEnterTree"],
                 "sections": [
                     {
                         "name": "Castle DK Tree Sniping",
@@ -139,7 +139,7 @@
                     },
                     {
                         "name": "Castle Chunky Tree Sniping Barrel",
-                        "access_rules": ["$pineapple, sniper, $punch", "^$ap, $pineapple, $punch"]
+                        "access_rules": ["$pineapple, sniper, $punch", "^$avp, $pineapple, $punch"]
                     },
                     {
                         "name": "Castle Kasplat: Inside the Tree",
@@ -235,7 +235,7 @@
             },
             {            
                 "name": "Castle Lanky Tower",
-                "access_rules": ["$castleSlam, $balloon, $grape, sniper", "$castleSlam, $balloon, $grape, homing, ^$ap"],
+                "access_rules": ["$castleSlam, $balloon, $grape, sniper", "$castleSlam, $balloon, $grape, homing, ^$avp"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -418,7 +418,7 @@
                 "sections": [
                     {
                         "name": "Castle Lanky Mausoleum",
-                        "access_rules": ["$grape, $sprint, vine, $trombone", "$grape, $sprint, ^$ap"]
+                        "access_rules": ["$grape, $sprint, vine, $trombone", "$grape, $sprint, ^$avp"]
                     },
                     {
                         "name": "Castle Tiny Mausoleum",
@@ -489,7 +489,7 @@
             },
             {            
                 "name": "Castle Diddy Dungeon",
-                "access_rules": ["$castleSlam, $peanuts, sniper, vine"],
+                "access_rules": ["$castleSlam, $peanuts, sniper, vine", "$moontail, $castleSlam, vine"],
                 "sections": [
                     {
                         "name": "Golden Banana"

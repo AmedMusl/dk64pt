@@ -23,7 +23,7 @@
       },
       {
         "name": "Chunky Pineapple Cage",
-        "access_rules": ["$pineapple"],
+        "access_rules": ["$pineapple", "$sts"],
         "sections": [
           {
             "name": "Golden Banana",
@@ -41,7 +41,7 @@
       },
       {
         "name": "Tiny Feather Cage",
-        "access_rules": ["$feather"],
+        "access_rules": ["$feather", "$sts"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -118,7 +118,7 @@
       },
       {
         "name": "Banana Fairy Island",
-        "access_rules": ["$mini"],
+        "access_rules": ["$mini", "$sts"],
         "sections": [
           {
             "name": "The Banana Fairy's Gift",
@@ -368,7 +368,7 @@
       // },
       {
         "name": "Isles Lanky Grape Cage",
-        "access_rules": ["$grape"],
+        "access_rules": ["$grape", "$phaseswim"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -462,7 +462,7 @@
       },
       {
         "name": "Isles DK Bongo Pad",
-        "access_rules": ["$canEnterFactoryLobby, $bongos, $grab"],
+        "access_rules": ["$canEnterFactoryLobby, $bongos, $grab", "$canEnterFactoryLobby, $moonkicks, $bongos"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -599,7 +599,7 @@
       // },
       {
         "name": "Isles Tiny Galleon Lobby Swim",
-        "access_rules": ["$canEnterGalleonLobby, $mini, $galleonSlam, chunky, dive, $twirl"],
+        "access_rules": ["$canEnterGalleonLobby, $mini, $galleonSlam, chunky, dive, $twirl", "$canEnterGalleonLobby, $phaseswim"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -750,7 +750,7 @@
       },
       {
         "name": "Isles Diddy Peanut Cage",
-        "access_rules": ["$pastCabinIsle"],
+        "access_rules": ["$pastCabinIsle, $peanuts"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -784,7 +784,12 @@
       },
       {
         "name": "Isles Dirt: Aztec Roof",
-        "access_rules": ["$rocket, shockwave, k4, barrel, chunky, $canActivateIslesSpawnRocketbarrel", "^$ap, $twirl, shockwave, k4", "^$ap, k4, donkey, shockwave"],
+        "access_rules": [
+          "$rocket, shockwave, k4, barrel, chunky, $canActivateIslesSpawnRocketbarrel",
+          "^$avp, $twirl, shockwave, k4",
+          "^$avp, k4, donkey, shockwave",
+          "$moonkicks, shockwave"
+        ],
         "sections": [
           {
             "name": "Rainbow Coin",
@@ -1181,7 +1186,11 @@
       // },
       {
         "name": "Upper Castle Lobby",
-        "access_rules": ["$canEnterCastleLobby, barrel, $balloon, chunky", "$canEnterCastleLobby, ^$ap, $twirl"],
+        "access_rules": [
+          "$canEnterCastleLobby, barrel, $balloon, chunky",
+          "$canEnterCastleLobby, ^$avp, $twirl",
+          "$canEnterCastleLobby, $moonkicks"
+          ],
         "sections": [
           {
             "name": "Isles Lanky Castle Lobby Barrel"
@@ -1223,7 +1232,7 @@
       },
       {
         "name": "Isles Chunky Helm Lobby Barrel",
-        "access_rules": ["$canActivateIslesHelmLobbyGone, vine, $canEnterHelmLobby", "$canEnterHelmLobby, ^$ap, $twirl"],
+        "access_rules": ["$canActivateIslesHelmLobbyGone, vine, $canEnterHelmLobby", "$canEnterHelmLobby, ^$avp, $twirl"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -1240,7 +1249,7 @@
       },
       {
         "name": "Isles Kasplat: Helm Lobby",
-        "access_rules": ["$canEnterHelm, $coconut, sniper", "$canEnterHelmLobby, ^$ap, $twirl"],
+        "access_rules": ["$canEnterHelm, $coconut, sniper", "$canEnterHelmLobby, ^$avp, $twirl"],
         "sections": [
           {
             "name": "Kasplat",
@@ -1279,7 +1288,7 @@
       },
       {
         "name": "Isles Dirt: Banana Hoard",
-        "access_rules": ["shockwave, vine, climb"],
+        "access_rules": ["shockwave, vine, climb", "shockwave, climb, $moonkicks"],
         "sections": [
           {
             "name": "Rainbow Coin",

@@ -148,7 +148,7 @@
             },
             {
                 "name": "Aztec Chunky Klaptrap Room",
-                "access_rules": ["$canEnterTinyTemple, $triangle"],
+                "access_rules": ["$canEnterTinyTemple, $triangle", "$canEnterTinyTemple, dive, $templeIce, $phaseswim"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -165,7 +165,7 @@
             },
             {
                 "name": "Aztec Tiny Klaptrap Room",
-                "access_rules": ["$templeIce, $canEnterTinyTemple, $mini, dive"],
+                "access_rules": ["$templeIce, $canEnterTinyTemple, $mini, dive", "$canEnterTinyTemple, $templeIce, dive, $phaseswim"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -305,7 +305,7 @@
             },
             {
                 "name": "Aztec Crate: On Llama Temple",
-                "access_rules": ["^$tunnelDoor, $rocket"],
+                "access_rules": ["^$tunnelDoor, $rocket", "^$tunnelDoor, $moonkicks"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -452,7 +452,11 @@
             },
             {
                 "name": "Aztec Lanky Llama Temple Barrel",
-                "access_rules": ["^$llamaSwitches, $trombone, $ostand, $canEnterLlamaTemple", "^$llamaSwitches, ^$ap, $twirl, $canEnterLlamaTemple"],
+                "access_rules": [
+                    "^$llamaSwitches, $trombone, $ostand, $canEnterLlamaTemple", 
+                    "^$llamaSwitches, ^$avp, $twirl, $canEnterLlamaTemple, $trombone",
+                    "^$llamaSwitches, $moonkicks, $trombone, $canEnterLlamaTemple"
+                ],
                 "sections": [
                     {
                         "name": "Golden Banana"

@@ -338,7 +338,7 @@
             },
             {            
                 "name": "Forest DK Mill Levers",
-                "access_rules": ["$dayTime, $grab, $forestSlam, $nightTime"],
+                "access_rules": ["^$forestDKLevers"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -355,7 +355,7 @@
             },
             {            
                 "name": "Forest Diddy Winch Cage",
-                "access_rules": ["$nightTime, $forestSlam, $charge, $guitar, $canChangeTime"],
+                "access_rules": ["$winchCage"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -444,7 +444,7 @@
             },
             {            
                 "name": "Dark Rafters",
-                "access_rules": ["$nightTime, $spring, $guitar"],
+                "access_rules": ["$nightTime, $spring, $guitar", "$nightTime, $moontail, $guitar"],
                 "sections": [
                     {
                         "name": "Forest Diddy Dark Rafters"
@@ -522,7 +522,7 @@
             },
             {            
                 "name": "Forest Donkey Thornvine Barn Barrel",
-                "access_rules": ["$nightTime, $forestSlam, $strong, climb, vine", "$nightTime, ^$ap, $forestSlam, $strong, climb"],
+                "access_rules": ["^$canEnterThornvine, climb, vine", "^$canEnterThornvine, ^$avp, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"

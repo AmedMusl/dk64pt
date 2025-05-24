@@ -90,7 +90,7 @@
                 "name": "Japes Funky",
                 "chest_unopened_img": "images/items/funky.png",
                 "chest_opened_img": "images/items/funkybw.png",
-                "access_rules": ["climb", "$ostand, ^$ap"],
+                "access_rules": ["climb", "$ostand, ^$avp"],
                 "sections": [
                     {
                         "name": "Funky DK",

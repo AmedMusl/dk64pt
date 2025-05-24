@@ -369,6 +369,112 @@ function onClear(slot_data)
         SWITCHSANITY = {}
     end
 
+    if slot_data['GlitchesSelected'] then
+        for glitch in string.gmatch(slot_data['GlitchesSelected'], "[^,%s]+") do
+            local obj = Tracker:FindObjectForCode(glitch)
+            if obj then
+                obj.Active = true
+            end
+        end
+    end
+
+    if slot_data['BossBananas'] then
+        local banana_values = {}
+        for value in string.gmatch(slot_data['BossBananas'], "([^,]+)") do
+            table.insert(banana_values, tonumber(value:match("^%s*(.-)%s*$")))
+        end
+        
+        if banana_values[1] then
+            local obj = Tracker:FindObjectForCode("tnsportal1")
+            if obj then obj.AcquiredCount = banana_values[1] end
+        end
+        if banana_values[2] then
+            local obj = Tracker:FindObjectForCode("tnsportal2")
+            if obj then obj.AcquiredCount = banana_values[2] end
+        end
+        if banana_values[3] then
+            local obj = Tracker:FindObjectForCode("tnsportal3")
+            if obj then obj.AcquiredCount = banana_values[3] end
+        end
+        if banana_values[4] then
+            local obj = Tracker:FindObjectForCode("tnsportal4")
+            if obj then obj.AcquiredCount = banana_values[4] end
+        end
+        if banana_values[5] then
+            local obj = Tracker:FindObjectForCode("tnsportal5")
+            if obj then obj.AcquiredCount = banana_values[5] end
+        end
+        if banana_values[6] then
+            local obj = Tracker:FindObjectForCode("tnsportal6")
+            if obj then obj.AcquiredCount = banana_values[6] end
+        end
+        if banana_values[7] then
+            local obj = Tracker:FindObjectForCode("tnsportal7")
+            if obj then obj.AcquiredCount = banana_values[7] end
+        end
+    end
+
+    if slot_data['BossMaps'] then
+        local boss_maps = {}
+        for map in string.gmatch(slot_data['BossMaps'], "([^,]+)") do
+            table.insert(boss_maps, map:match("^%s*(.-)%s*$"))
+        end
+        
+        -- Map boss name to stage number
+        local boss_map_stages = {
+            ["JapesBoss"] = 1,
+            ["AztecBoss"] = 2,
+            ["FactoryBoss"] = 3,
+            ["GalleonBoss"] = 4,
+            ["FungiBoss"] = 5,
+            ["CavesBoss"] = 6,
+            ["CastleBoss"] = 7,
+            ["KroolDonkeyPhase"] = 8,
+            ["KroolDiddyPhase"] = 9,
+            ["KroolLankyPhase"] = 10,
+            ["KroolTinyPhase"] = 11,
+            ["KroolChunkyPhase"] = 12
+        }
+        for i = 1, math.min(7, #boss_maps) do
+            local boss_map = boss_maps[i]
+            local stage = boss_map_stages[boss_map]
+            if stage then
+                local obj = Tracker:FindObjectForCode("tns" .. i)
+                if obj then
+                    obj.CurrentStage = stage
+                end
+            end
+        end
+    end
+
+    if slot_data['BossKongs'] then
+        local boss_kongs = {}
+        for kong in string.gmatch(slot_data['BossKongs'], "([^,]+)") do
+            table.insert(boss_kongs, kong:match("^%s*(.-)%s*$"))
+        end
+        
+        -- Map kong name to stage number
+        local kong_stages = {
+            ["donkey"] = 1,
+            ["diddy"] = 2,
+            ["lanky"] = 3,
+            ["tiny"] = 4,
+            ["chunky"] = 5
+        }
+        
+        -- Set the stages for the bosskong objects
+        for i = 1, math.min(7, #boss_kongs) do
+            local kong = boss_kongs[i]
+            local stage = kong_stages[kong]
+            if stage then
+                local obj = Tracker:FindObjectForCode("bosskong" .. i)
+                if obj then
+                    obj.CurrentStage = stage
+                end
+            end
+        end
+    end
+
     if slot_data['MermaidPearls'] then
         local obj = Tracker:FindObjectForCode("mermaid")
         obj.AcquiredCount = (slot_data['MermaidPearls'])

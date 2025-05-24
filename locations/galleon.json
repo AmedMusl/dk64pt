@@ -112,7 +112,7 @@
             },
             {            
                 "name": "Galleon Kasplat: Past Vines",
-                "access_rules": ["vine"],
+                "access_rules": ["vine", "$moonkicks"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -131,7 +131,7 @@
             },
             {            
                 "name": "Galleon Chunky Cannon Game",
-                "access_rules": ["$canActivateGalleonCannonGame, barrel, $raisedWater"],
+                "access_rules": ["$canActivateGalleonCannonGame, barrel, $raisedWater, chunky", "$phaseswim, barrel, $raisedWater, chunky"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -148,7 +148,7 @@
             },
             {            
                 "name": "Galleon Kasplat: Cannon Game Room",
-                "access_rules": ["$canActivateGalleonCannonGame, $raisedWater"],
+                "access_rules": ["$canActivateGalleonCannonGame, $raisedWater", "$phaseswim, $raisedWater"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -242,7 +242,7 @@
             },
             {            
                 "name": "Galleon Tiny Mermaid Reward",
-                "access_rules": ["$mermaid, $lighthouse, dive, $mini, pearl"],
+                "access_rules": ["$mermaid, $lighthouse, dive, $mini", "$mermaid, $lighthouse, dive, $phaseswim"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -276,13 +276,15 @@
             },
             {            
                 "name": "Galleon Seal",
-                "access_rules": ["$lighthouse, $shipyard, ^$lighthousePlatform, $blast"],
+                "access_rules": [],
                 "sections": [
                     {
-                        "name": "Free the Seal"
+                        "name": "Free the Seal",
+                        "access_rules": ["$lighthouse, $shipyard, ^$lighthousePlatform, $blast"]
                     },
                     {
-                        "name": "Seal Race"
+                        "name": "Seal Race",
+                        "access_rules": ["$lighthouse, $shipyard, ^$lighthousePlatform, $blast", "$shipyard, $phaseswim"]
                     }
                 ],
                 "map_locations": [
@@ -334,7 +336,7 @@
             },
             {            
                 "name": "Galleon Lanky Gold Tower Barrel",
-                "access_rules": ["^$treasure, dive, $balloon"],
+                "access_rules": ["^$lankyGold"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -351,7 +353,7 @@
             },
             {            
                 "name": "Galleon Diddy Gold Tower Barrel",
-                "access_rules": ["^$treasure, dive, $spring"],
+                "access_rules": ["^$diddyGold"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -368,7 +370,7 @@
             },
             {            
                 "name": "Galleon Kasplat: Diddy Gold Tower",
-                "access_rules": ["^$treasure, dive, $spring"],
+                "access_rules": ["^$diddyGold"],
                 "sections": [
                     {
                         "name": "Kasplat",
@@ -387,7 +389,7 @@
             },
             {            
                 "name": "Treasure Chest",
-                "access_rules": ["^$treasure, dive, $mini"],
+                "access_rules": ["^$treasure, dive, $mini", "$shipyard, $phaseswim"],
                 "sections": [
                     {
                         "name": "Treasure Chest Far Left Clam",
@@ -426,7 +428,7 @@
             },
             {            
                 "name": "Galleon Tiny Submarine Barrel",
-                "access_rules": ["$shipyard, $mini, dive"],
+                "access_rules": ["$shipyard, $mini, dive", "$shipyard, $phaseswim", "$shipyard, $sts"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -460,15 +462,15 @@
             },
             {            
                 "name": "2-Door Ship",
-                "access_rules": ["$shipyard, $galleonSlam"],
+                "access_rules": ["$shipyard, $galleonSlam", "$shipyard, $phaseswim"],
                 "sections": [
                     {
                         "name": "Lanky 2DS",
-                        "access_rules": ["lanky, dive"]
+                        "access_rules": ["lanky, dive", "$phaseswim"]
                     },
                     {
                         "name": "Tiny 2DS",
-                        "access_rules": ["tiny, dive"]
+                        "access_rules": ["tiny, dive", "$phaseswim"]
                     }
                 ],
                 "map_locations": [
@@ -482,7 +484,7 @@
             },
             {            
                 "name": "Galleon DK 5-Door Ship",
-                "access_rules": ["$shipyard, $bongos, dive"],
+                "access_rules": ["$shipyard, $bongos, dive", "$shipyard, $phaseswim"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -499,7 +501,7 @@
             },
             {            
                 "name": "Galleon Diddy 5-Door Ship",
-                "access_rules": ["$shipyard, $loweredWater, $guitar, dive"],
+                "access_rules": ["$shipyard, $loweredWater, $guitar, dive", "$shipyard, $phaseswim"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -516,7 +518,7 @@
             },
             {            
                 "name": "Galleon Lanky 5-Door Ship",
-                "access_rules": ["$shipyard, $loweredWater, $trombone, dive"],
+                "access_rules": ["$shipyard, $loweredWater, $trombone, dive", "$shipyard, $phaseswim"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -533,7 +535,7 @@
             },
             {            
                 "name": "Galleon Tiny 5-Door Ship",
-                "access_rules": ["$shipyard, $sax, dive"],
+                "access_rules": ["$shipyard, $sax, dive", "$shipyard, $phaseswim"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -556,7 +558,7 @@
             },
             {            
                 "name": "Galleon Chunky 5-Door Ship",
-                "access_rules": ["$shipyard, $lighthouse, $loweredWater, $triangle, dive"],
+                "access_rules": ["$shipyard, $lighthouse, $loweredWater, $triangle, dive", "$shipyard, $phaseswim"],
                 "sections": [
                     {
                         "name": "Golden Banana"

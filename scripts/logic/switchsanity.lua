@@ -1,174 +1,298 @@
+function isSwitchsanityEnabled()
+    return SWITCHSANITY ~= nil
+end
+
 function getSwitchKong(switch_name)
     if SWITCHSANITY and SWITCHSANITY[switch_name] and SWITCHSANITY[switch_name]["kong"] then
         return SWITCHSANITY[switch_name]["kong"]
     end
-    return nil -- Default if not found or not using switchsanity
+    return nil
 end
 
 function getSwitchType(switch_name)
     if SWITCHSANITY and SWITCHSANITY[switch_name] and SWITCHSANITY[switch_name]["type"] then
         return SWITCHSANITY[switch_name]["type"]
     end
-    return nil -- Default if not found or not using switchsanity
+    return nil
 end
 
--- Check if a specific kong can activate a switch
-function canActivateSwitch(switch_name)
-    local kong = getSwitchKong(switch_name)
-    local switch_type = getSwitchType(switch_name)
+function getSwitchLogic(switch_name)
+    local result = {}
+    result.isSwitchsanity = isSwitchsanityEnabled()
+    result.kong = getSwitchKong(switch_name)
+    result.type = getSwitchType(switch_name)
     
-    if not kong or not switch_type then
-        -- Switch not found in SwitchSanity data, use default logic
-        return true
+    if result.kong and result.type then
+        if result.kong == "donkey" then
+            result.hasKong = has("donkey")
+            result.hasGun = coconut()
+            result.hasInstrument = bongos()
+            result.hasSlam = has("donkey") and has("slam")
+            result.hasPadMove = blast()
+            result.hasMiscAbility = grab()
+        elseif result.kong == "diddy" then
+            result.hasKong = has("diddy")
+            result.hasGun = peanuts()
+            result.hasInstrument = guitar()
+            result.hasSlam = has("diddy") and has("slam")
+            result.hasMiscAbility = charge()
+        elseif result.kong == "lanky" then
+            result.hasKong = has("lanky")
+            result.hasGun = grape()
+            result.hasInstrument = trombone()
+            result.hasSlam = has("lanky") and has("slam")
+            result.hasPadMove = balloon()
+        elseif result.kong == "tiny" then
+            result.hasKong = has("tiny")
+            result.hasGun = feather()
+            result.hasInstrument = sax()
+            result.hasSlam = has("tiny") and has("slam")
+            result.hasPadMove = port()
+        elseif result.kong == "chunky" then
+            result.hasKong = has("chunky")
+            result.hasGun = pineapple()
+            result.hasInstrument = triangle()
+            result.hasSlam = has("chunky") and has("slam")
+            result.hasPadMove = gone()
+        end
     end
     
-    -- First check if the player has the required kong
-    if kong == "donkey" and not has("donkey") then return false end
-    if kong == "diddy" and not has("diddy") then return false end
-    if kong == "lanky" and not has("lanky") then return false end
-    if kong == "tiny" and not has("tiny") then return false end
-    if kong == "chunky" and not has("chunky") then return false end
+    return result
+end
+
+function canActivateSwitch(switch_name)
+    local logic = getSwitchLogic(switch_name)
+    if not logic.isSwitchsanity then
+        return true
+    end
+    if not logic.kong or not logic.type then
+        return true
+    end
+    if not logic.hasKong then
+        return false
+    end
     
-    -- Kong-specific checks
-    if kong == "donkey" then
-        if switch_type == "GunSwitch" then
-            return coconut()
-        elseif switch_type == "InstrumentPad" then
-            return bongos()
-        elseif switch_type == "SlamSwitch" then
-            return has("donkey") and has("slam")
-        elseif switch_type == "PadMove" then
-            return blast()
-        elseif switch_type == "MiscActivator" then
-            return grab()
-        end
-    elseif kong == "diddy" then
-        if switch_type == "GunSwitch" then
-            return peanuts()
-        elseif switch_type == "InstrumentPad" then
-            return guitar()
-        elseif switch_type == "PadMove" then
-            return spring()
-        elseif switch_type == "SlamSwitch" then
-            return has("diddy") and has("slam")
-        elseif switch_type == "MiscActivator" then
-            return charge()
-        end
-    elseif kong == "lanky" then
-        if switch_type == "GunSwitch" then
-            return grape()
-        elseif switch_type == "InstrumentPad" then
-            return trombone()
-        elseif switch_type == "PadMove" then
-            return balloon()
-        elseif switch_type == "SlamSwitch" then
-            return has("lanky") and has("slam")
-        end
-    elseif kong == "tiny" then
-        if switch_type == "GunSwitch" then
-            return feather()
-        elseif switch_type == "InstrumentPad" then
-            return sax()
-        elseif switch_type == "PadMove" then
-            return port()
-        elseif switch_type == "SlamSwitch" then
-            return has("tiny") and has("slam")
-        end
-    elseif kong == "chunky" then
-        if switch_type == "GunSwitch" then
-            return pineapple()
-        elseif switch_type == "InstrumentPad" then
-            return triangle()
-        elseif switch_type == "PadMove" then
-            return gone()
-        elseif switch_type == "SlamSwitch" then
-            return has("chunky") and has("slam")
-        end
+    if logic.type == "GunSwitch" then
+        return logic.hasGun
+    elseif logic.type == "InstrumentPad" then
+        return logic.hasInstrument
+    elseif logic.type == "SlamSwitch" then
+        return logic.hasSlam
+    elseif logic.type == "PadMove" then
+        return logic.hasPadMove
+    elseif logic.type == "MiscActivator" then
+        return logic.hasMiscAbility
     end
     
     return false
 end
 
 function canActivateAztecGuitar()
-    return canActivateSwitch("AztecGuitar")
+    local logic = getSwitchLogic("AztecGuitar")
+    
+    if not logic.isSwitchsanity then
+        return guitar()
+    else
+        return canActivateSwitch("AztecGuitar")
+    end
 end
 
 function canActivateJapesFeather()
-    return canActivateSwitch("JapesFeather")
+    local logic = getSwitchLogic("JapesFeather")
+    
+    if not logic.isSwitchsanity then
+        return feather()
+    else
+        return canActivateSwitch("JapesFeather")
+    end
 end
 
 function canActivateIslesSpawnRocketbarrel()
-    return canActivateSwitch("IslesSpawnRocketbarrel")
+    local logic = getSwitchLogic("IslesSpawnRocketbarrel")
+    
+    if not logic.isSwitchsanity then
+        return trombone()
+    else
+        return canActivateSwitch("IslesSpawnRocketbarrel")
+    end
 end
 
 function canActivateAztecQuickSandSwitch()
-    return canActivateSwitch("AztecQuicksandSwitch") and aztecSlam()
+    local logic = getSwitchLogic("AztecQuicksandSwitch")
+    
+    if not logic.isSwitchsanity then
+        return has("donkey") and aztecSlam()
+    else
+        return canActivateSwitch("AztecQuicksandSwitch") and aztecSlam()
+    end
 end
 
 function canActivateJapesRambi()
-    return canActivateSwitch("JapesRambi")
+    local logic = getSwitchLogic("JapesRambi")
+    
+    if not logic.isSwitchsanity then
+        return coconut()
+    else
+        return canActivateSwitch("JapesRambi")
+    end
 end
 
 function canActivateFungiGreenFeather()
-    return canActivateSwitch("FungiGreenFeather")
+    local logic = getSwitchLogic("FungiGreenFeather")
+    
+    if not logic.isSwitchsanity then
+        return feather()
+    else
+        return canActivateSwitch("FungiGreenFeather")
+    end
 end
 
 function canActivateFungiGreenPineapple()
-    return canActivateSwitch("FungiGreenPineapple")
+    local logic = getSwitchLogic("FungiGreenPineapple")
+    
+    if not logic.isSwitchsanity then
+        return pineapple()
+    else
+        return canActivateSwitch("FungiGreenPineapple")
+    end
 end
 
 function canActivateIslesMonkeyport()
-    return canActivateSwitch("IslesMonkeyport")
+    local logic = getSwitchLogic("IslesMonkeyport")
+    
+    if not logic.isSwitchsanity then
+        return port()
+    else
+        return canActivateSwitch("IslesMonkeyport")
+    end
 end
 
 function canActivateAztecLlamaGrape()
-    return canActivateSwitch("AztecLlamaGrape")
+    local logic = getSwitchLogic("AztecLlamaGrape")
+    
+    if not logic.isSwitchsanity then
+        return grape()
+    else
+        return canActivateSwitch("AztecLlamaGrape")
+    end
 end
 
 function canActivateFungiYellow()
-    return canActivateSwitch("FungiYellow")
+    local logic = getSwitchLogic("FungiYellow")
+    
+    if not logic.isSwitchsanity then
+        return grape()
+    else
+        return canActivateSwitch("FungiYellow")
+    end
 end
 
 function canActivateGalleonShipwreck()
-    return canActivateSwitch("GalleonShipwreck")
+    local logic = getSwitchLogic("GalleonShipwreck")
+    
+    if not logic.isSwitchsanity then
+        return peanuts()
+    else
+        return canActivateSwitch("GalleonShipwreck")
+    end
 end
 
 function canActivateIslesAztecLobbyFeather()
-    return canActivateSwitch("IslesAztecLobbyFeather")
+    local logic = getSwitchLogic("IslesAztecLobbyFeather")
+    
+    if not logic.isSwitchsanity then
+        return feather()
+    else
+        return canActivateSwitch("IslesAztecLobbyFeather")
+    end
 end
 
 function canActivateJapesDiddyCave()
-    return canActivateSwitch("JapesDiddyCave")
+    local logic = getSwitchLogic("JapesDiddyCave")
+    
+    if not logic.isSwitchsanity then
+        return peanuts()
+    else
+        return canActivateSwitch("JapesDiddyCave")
+    end
 end
 
 function canActivateIslesFungiLobbyFeather()
-    return canActivateSwitch("IslesFungiLobbyFeather")
+    local logic = getSwitchLogic("IslesFungiLobbyFeather")
+    
+    if not logic.isSwitchsanity then
+        return feather()
+    else
+        return canActivateSwitch("IslesFungiLobbyFeather")
+    end
 end
 
 function canActivateAztecBlueprintDoor()
-    return canActivateSwitch("AztecBlueprintDoor")
+    local logic = getSwitchLogic("AztecBlueprintDoor")
+    
+    if not logic.isSwitchsanity then
+        return coconut()
+    else
+        return canActivateSwitch("AztecBlueprintDoor")
+    end
 end
 
 function canActivateGalleonLighthouse()
-    return canActivateSwitch("GalleonLighthouse")
+    local logic = getSwitchLogic("GalleonLighthouse")
+    
+    if not logic.isSwitchsanity then
+        return coconut()
+    else
+        return canActivateSwitch("GalleonLighthouse")
+    end
 end
 
 function canActivateGalleonCannonGame()
-    return canActivateSwitch("GalleonCannonGame")
+    local logic = getSwitchLogic("GalleonCannonGame")
+    
+    if not logic.isSwitchsanity then
+        return pineapple()
+    else
+        return canActivateSwitch("GalleonCannonGame")
+    end
 end
 
 function canActivateIslesHelmLobbyGone()
-    return canActivateSwitch("IslesHelmLobbyGone")
+    local logic = getSwitchLogic("IslesHelmLobbyGone")
+    
+    if not logic.isSwitchsanity then
+        return gone()
+    else
+        return canActivateSwitch("IslesHelmLobbyGone")
+    end
 end
 
 function canActivateAztecLlamaFeather()
-    return canActivateSwitch("AztecLlamaFeather")
+    local logic = getSwitchLogic("AztecLlamaFeather")
+    
+    if not logic.isSwitchsanity then
+        return feather()
+    else
+        return canActivateSwitch("AztecLlamaFeather")
+    end
 end
 
 function canActivateJapesPainting()
-    return canActivateSwitch("JapesPainting")
+    local logic = getSwitchLogic("JapesPainting")
+    
+    if not logic.isSwitchsanity then
+        return peanuts()
+    else
+        return canActivateSwitch("JapesPainting")
+    end
 end
 
 function canActivateAztecLlamaCoconut()
-    return canActivateSwitch("AztecLlamaCoconut")
+    local logic = getSwitchLogic("AztecLlamaCoconut")
+    
+    if not logic.isSwitchsanity then
+        return coconut()
+    else
+        return canActivateSwitch("AztecLlamaCoconut")
+    end
 end

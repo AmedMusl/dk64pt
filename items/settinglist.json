@@ -1684,5 +1684,335 @@
       "type": "toggle",
       "img": "images/settings/openlobbies.png",
       "codes": "openlobbies"
+    },
+    {
+      "name": "Advanced Platforming",
+      "type": "toggle",
+      "img": "images/settings/advanced_platforming.png",
+      "codes": "advanced_platforming"
+    },
+    {
+      "name": "Moon Kicks",
+      "type": "toggle",
+      "img": "images/settings/moonkicks.png",
+      "codes": "moonkicks"
+    },
+    {
+      "name": "Moon Tail",
+      "type": "toggle",
+      "img": "images/settings/moontail.png",
+      "codes": "moontail"
+    },
+    {
+      "name": "Phase Swimming",
+      "type": "toggle",
+      "img": "images/settings/phase_swimming.png",
+      "codes": "phase_swimming"
+    },
+    {
+      "name": "Swim Through Shores",
+      "type": "toggle",
+      "img": "images/settings/sts.png",
+      "codes": "swim_through_shores"
+    },
+    {
+      "name": "Troff & Scoff Skips",
+      "type": "toggle",
+      "img": "images/settings/tnsskips.png",
+      "codes": "troff_n_scoff_skips"
+    },
+    {
+      "name": "Level 1 Troff & Scoff",
+      "type": "consumable",
+      "min_quantity": 0,
+      "max_quantity": 500,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/rainbowbunch.gif",
+      "codes": "tnsportal1"
+    },
+    {
+      "name": "Level 2 Troff & Scoff",
+      "type": "consumable",
+      "min_quantity": 0,
+      "max_quantity": 500,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/rainbowbunch.gif",
+      "codes": "tnsportal2"
+    },
+    {
+      "name": "Level 3 Troff & Scoff",
+      "type": "consumable",
+      "min_quantity": 0,
+      "max_quantity": 500,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/rainbowbunch.gif",
+      "codes": "tnsportal3"
+    },
+    {
+      "name": "Level 4 Troff & Scoff",
+      "type": "consumable",
+      "min_quantity": 0,
+      "max_quantity": 500,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/rainbowbunch.gif",
+      "codes": "tnsportal4"
+    },
+    {
+      "name": "Level 5 Troff & Scoff",
+      "type": "consumable",
+      "min_quantity": 0,
+      "max_quantity": 500,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/rainbowbunch.gif",
+      "codes": "tnsportal5"
+    },
+    {
+      "name": "Level 6 Troff & Scoff",
+      "type": "consumable",
+      "min_quantity": 0,
+      "max_quantity": 500,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/rainbowbunch.gif",
+      "codes": "tnsportal6"
+    },
+    {
+      "name": "Level 7 Troff & Scoff",
+      "type": "consumable",
+      "min_quantity": 0,
+      "max_quantity": 500,
+      "increment": 1,
+      "decrement": 1,
+      "img": "images/settings/rainbowbunch.gif",
+      "codes": "tnsportal7"
+    },
+    {
+      "name": "Boss Kong 1",
+      "type": "progressive",
+      "allow_disabled": false,
+      "loop": true,
+      "stages": [
+        {
+          "img": "images/settings/family.png",
+          "codes": "bosskong1"
+        },
+        {
+          "img": "images/items/dk.png",
+          "codes": "bosskong1, dkboss1"
+        },
+        {
+          "img": "images/items/diddy.png",
+          "codes": "bosskong1, diddyboss1"
+        },
+        {
+          "img": "images/items/lanky.png",
+          "codes": "bosskong1, lankyboss1"
+        },
+        {
+          "img": "images/items/tiny.png",
+          "codes": "bosskong1, tinyboss1"
+        },
+        {
+          "img": "images/items/chunky.png",
+          "codes": "bosskong1, chunkyboss1"
+        }
+      ]
+    },
+    {
+      "name": "Boss Kong 2",
+      "type": "progressive",
+      "allow_disabled": false,
+      "loop": true,
+      "stages": [
+        {
+          "img": "images/settings/family.png",
+          "codes": "bosskong2"
+        },
+        {
+          "img": "images/items/dk.png",
+          "codes": "bosskong2, dkboss2"
+        },
+        {
+          "img": "images/items/diddy.png",
+          "codes": "bosskong2, diddyboss2"
+        },
+        {
+          "img": "images/items/lanky.png",
+          "codes": "bosskong2, lankyboss2"
+        },
+        {
+          "img": "images/items/tiny.png",
+          "codes": "bosskong2, tinyboss2"
+        },
+        {
+          "img": "images/items/chunky.png",
+          "codes": "bosskong2, chunkyboss2"
+        }
+      ]
+    },
+    {
+      "name": "Boss Kong 3",
+      "type": "progressive",
+      "allow_disabled": false,
+      "loop": true,
+      "stages": [
+        {
+          "img": "images/settings/family.png",
+          "codes": "bosskong3"
+        },
+        {
+          "img": "images/items/dk.png",
+          "codes": "bosskong3, dkboss3"
+        },
+        {
+          "img": "images/items/diddy.png",
+          "codes": "bosskong3, diddyboss3"
+        },
+        {
+          "img": "images/items/lanky.png",
+          "codes": "bosskong3, lankyboss3"
+        },
+        {
+          "img": "images/items/tiny.png",
+          "codes": "bosskong3, tinyboss3"
+        },
+        {
+          "img": "images/items/chunky.png",
+          "codes": "bosskong3, chunkyboss3"
+        }
+      ]
+    },
+    {
+      "name": "Boss Kong 4",
+      "type": "progressive",
+      "allow_disabled": false,
+      "loop": true,
+      "stages": [
+        {
+          "img": "images/settings/family.png",
+          "codes": "bosskong4"
+        },
+        {
+          "img": "images/items/dk.png",
+          "codes": "bosskong4, dkboss4"
+        },
+        {
+          "img": "images/items/diddy.png",
+          "codes": "bosskong4, diddyboss4"
+        },
+        {
+          "img": "images/items/lanky.png",
+          "codes": "bosskong4, lankyboss4"
+        },
+        {
+          "img": "images/items/tiny.png",
+          "codes": "bosskong4, tinyboss4"
+        },
+        {
+          "img": "images/items/chunky.png",
+          "codes": "bosskong4, chunkyboss4"
+        }
+      ]
+    },
+    {
+      "name": "Boss Kong 5",
+      "type": "progressive",
+      "allow_disabled": false,
+      "loop": true,
+      "stages": [
+        {
+          "img": "images/settings/family.png",
+          "codes": "bosskong5"
+        },
+        {
+          "img": "images/items/dk.png",
+          "codes": "bosskong5, dkboss5"
+        },
+        {
+          "img": "images/items/diddy.png",
+          "codes": "bosskong5, diddyboss5"
+        },
+        {
+          "img": "images/items/lanky.png",
+          "codes": "bosskong5, lankyboss5"
+        },
+        {
+          "img": "images/items/tiny.png",
+          "codes": "bosskong5, tinyboss5"
+        },
+        {
+          "img": "images/items/chunky.png",
+          "codes": "bosskong5, chunkyboss5"
+        }
+      ]
+    },
+    {
+      "name": "Boss Kong 6",
+      "type": "progressive",
+      "allow_disabled": false,
+      "loop": true,
+      "stages": [
+        {
+          "img": "images/settings/family.png",
+          "codes": "bosskong6"
+        },
+        {
+          "img": "images/items/dk.png",
+          "codes": "bosskong6, dkboss6"
+        },
+        {
+          "img": "images/items/diddy.png",
+          "codes": "bosskong6, diddyboss6"
+        },
+        {
+          "img": "images/items/lanky.png",
+          "codes": "bosskong6, lankyboss6"
+        },
+        {
+          "img": "images/items/tiny.png",
+          "codes": "bosskong6, tinyboss6"
+        },
+        {
+          "img": "images/items/chunky.png",
+          "codes": "bosskong6, chunkyboss6"
+        }
+      ]
+    },
+    {
+      "name": "Boss Kong 7",
+      "type": "progressive",
+      "allow_disabled": false,
+      "loop": true,
+      "stages": [
+        {
+          "img": "images/settings/family.png",
+          "codes": "bosskong7"
+        },
+        {
+          "img": "images/items/dk.png",
+          "codes": "bosskong7, dkboss7"
+        },
+        {
+          "img": "images/items/diddy.png",
+          "codes": "bosskong7, diddyboss7"
+        },
+        {
+          "img": "images/items/lanky.png",
+          "codes": "bosskong7, lankyboss7"
+        },
+        {
+          "img": "images/items/tiny.png",
+          "codes": "bosskong7, tinyboss7"
+        },
+        {
+          "img": "images/items/chunky.png",
+          "codes": "bosskong7, chunkyboss7"
+        }
+      ]
     }
 ]

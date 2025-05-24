@@ -1,6 +1,7 @@
 ScriptHost:LoadScript("scripts/logic/medallogic.lua")
 ScriptHost:LoadScript("scripts/logic/logichelper.lua")
 ScriptHost:LoadScript("scripts/logic/switchsanity.lua")
+ScriptHost:LoadScript("scripts/logic/CBLogic.lua")
 
 function has_more_then_n_consumable(n)
     local count = Tracker:ProviderCountForCode('consumable')
@@ -155,7 +156,7 @@ function canClearGauntlet()
 end
 
 function canEnterSprintCabin()
-    return trombone() and (rocket() or balloon())
+    return trombone() and (rocket() or balloon() or moonkicks())
 end
 
 function height()
@@ -163,7 +164,86 @@ function height()
 end
 
 function pastCabinIsle()
-    return has("k4") and peanuts() and ((rocket() and has("barrel") and has("chunky") and trombone()) or twirl() or has("donkey"))
+    local hasGalleonKey = has("k4")
+    local standardMethod = rocket() and has("barrel") and has("chunky") and trombone()
+    local advancedPlatforming = avp() and (twirl() or has("donkey"))
+    local moonkicks = moonkicks()
+    
+    return hasGalleonKey and (standardMethod or advancedPlatforming or moonkicks)
+end
+
+function winchCage()
+    return (peanuts() and guitar() and charge() and nightTime() and ((has("climb") and forestSlam()) or ((has("climb") or balloon()) and moonkicks()))) or phaseswim()
+end
+
+function lankyGold()
+    local inTreasure = treasure() and has("dive")
+    local usingBalloon = balloon() and (raisedWater() or avp())
+    
+    return inTreasure and (usingBalloon or moonkicks())
+end
+
+function diddyGold()
+    local inTreasure = treasure() and has("dive")
+    local usingSpring = spring() and (raisedWater() or avp())
+    
+    return inTreasure and (usingSpring or moonkicks())
+end
+
+function japesHillside()
+    return has("climb") or (avp() and ostand())
+end
+
+function topOfMountain()
+    return peanuts() or moonkicks()
+end
+
+function japesDiddySwitch()
+    return japesSlam() and (peanuts() or (avp() and has("diddy")))
+end
+
+function japesDiddyMountain()
+    return topOfMountain() and japesDiddySwitch() and japesHillside() and peanuts()
+end
+
+function canEnterTree()
+    return blast() or phaseswim()
+end
+
+function dk5DI()
+    return (bongos() or phaseswim()) and (strong() or moonkicks())
+end
+
+function diddy5DI()
+    return (guitar() or phaseswim()) and (has("barrel"))
+end
+
+function lanky5DI()
+    return (trombone() or phaseswim()) and (balloon() or avp()) 
+end
+
+function tiny5DI()
+    return (sax() or phaseswim()) and has("slam")
+end
+
+function chunky5DI()
+    return triangle() or phaseswim()
+end
+
+function forestDKLevers()
+    if dayTime() and nightTime() and forestSlam() and grab() and punch() and triangle() then
+        return AccessibilityLevel.Normal
+    elseif dayTime() and forestSlam() and grab() and punch() and triangle() then
+        return phaseswim()
+    end
+end
+
+function canEnterThornvine()
+    if nightTime() and strong() and forestSlam() then
+        return AccessibilityLevel.Normal
+    elseif nightTime() then
+        return phaseswim()
+    end
 end
 
 function canBeatSpider()
@@ -289,8 +369,38 @@ function chunkyShed()
     return punch() and ((gone() and canChangeTime()) or triangle() or bongos() or guitar() or trombone() or sax())
 end
 
-function ap()
+function avp()
     return AccessibilityLevel.SequenceBreak
+end
+
+-- Glitches
+
+function avp()
+    if has("advanced_platforming") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function moonkicks()
+    return has("moonkicks") and has("donkey")
+end
+
+function phaseswim()
+    return has("phase_swimming") and has("dive")
+end
+
+function sts()
+    return has("swim_through_shores") and has("dive")
+end
+
+function tnsskip()
+    return has("troff_n_scoff_skips")
+end
+
+function moontail()
+    return has("diddy") and has("moontail")
 end
 
 -- Barriers
@@ -301,7 +411,7 @@ function coconutCage()
     elseif has("climb") then
         return AccessibilityLevel.Normal
     elseif ostand() then
-        return AccessibilityLevel.SequenceBreak
+        return avp()
     end
 end
 
@@ -310,7 +420,7 @@ function shellhive()
     if has("japes_shellhive_gate") then
         return in_coconut
     else
-        return canActivateJapesFeather() and in_coconut
+        return in_coconut and (canActivateJapesFeather() or (moonkicks() and has("climb")))
     end
 end
 
@@ -371,7 +481,7 @@ function lighthouse()
     if has("galleon_lighthouse_gate") then
         return true
     else
-        return canActivateGalleonLighthouse()
+        return canActivateGalleonLighthouse() or (phaseswim() and canActivateGalleonCannonGame())
     end
 end
 
@@ -379,7 +489,7 @@ function shipyard()
     if has("galleon_shipyard_area_gate") then
         return true
     else
-        return canActivateGalleonShipwreck()
+        return canActivateGalleonShipwreck() or (phaseswim() and raisedWater())
     end
 end
 
@@ -398,8 +508,10 @@ function treasure()
         return in_shipyard and AccessibilityLevel.Normal
     elseif raisedWater() then
         return in_shipyard and has("lanky") and AccessibilityLevel.Normal
+    elseif phaseswim() then
+        return AccessibilityLevel.Normal and in_shipyard
     else
-        return in_shipyard and has("lanky") and AccessibilityLevel.SequenceBreak
+        return in_shipyard and has("lanky") and avp()
     end
 end
 
@@ -407,7 +519,7 @@ function greenTunnel()
     if has("forest_green_tunnel") then
         return true
     else
-        return canActivateFungiGreenFeather() and canActivateFungiGreenPineapple()
+        return (canActivateFungiGreenFeather() and canActivateFungiGreenPineapple()) or phaseswim()
     end
 end
 
@@ -415,7 +527,7 @@ function greenTunnelFeather()
     if has("forest_green_tunnel") then
         return true
     else
-        return canActivateFungiGreenFeather()
+        return canActivateFungiGreenFeather() or phaseswim()
     end
 end
 
@@ -423,7 +535,7 @@ function yellowTunnel()
     if has("forest_yellow_tunnel") then
         return true
     else
-        return canActivateFungiYellow()
+        return canActivateFungiYellow() or phaseswim()
     end
 end
 
@@ -431,7 +543,7 @@ function igloo()
     if has("caves_igloo_pads") then
         return true
     else
-        return rocket()
+        return rocket() or phaseswim()
     end
 end
 
@@ -756,7 +868,35 @@ function checkBossInLevel(levelNum, bossName)
     return false
 end
 
+function hasKongForBoss(level_num)
+    if not level_num or level_num < 1 or level_num > 7 then
+        return true -- If invalid level number, don't block access
+    end
+    
+    local bossKongObject = Tracker:FindObjectForCode("bosskong" .. level_num)
+    if not bossKongObject then
+        return true -- If boss kong object doesn't exist, don't block access
+    end
+    
+    local kongStage = bossKongObject.CurrentStage
+    if kongStage <= 0 then
+        return true -- No kong requirement for this boss
+    end
+    
+    -- Map stage number to kong code
+    local kongs = {"donkey", "diddy", "lanky", "tiny", "chunky"}
+    local requiredKong = kongs[kongStage]
+    
+    if not requiredKong then
+        return true -- Invalid kong mapping, don't block access
+    end
+    
+    -- Check if player has the required kong
+    return has(requiredKong)
+end
+
 function getBossInLevel(levelNum)
+    -- Then check the regular bosses
     if checkBossInLevel(levelNum, "army1") then return "army1" end
     if checkBossInLevel(levelNum, "doga1") then return "doga1" end
     if checkBossInLevel(levelNum, "jack") then return "jack" end
@@ -769,6 +909,7 @@ function getBossInLevel(levelNum)
     if checkBossInLevel(levelNum, "lankyphase") then return "lankyphase" end
     if checkBossInLevel(levelNum, "tinyphase") then return "tinyphase" end
     if checkBossInLevel(levelNum, "chunkyphase") then return "chunkyphase" end
+    
     return nil
 end
 
@@ -787,6 +928,16 @@ function japesBossLogic()
         return true -- Japes isn't assigned to any level number
     end
     
+    -- Check if player has the required kong for this boss
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+        return false
+    end
+    
+    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+        return false
+    end
+    
+    -- Continue with existing boss logic
     local boss = getBossInLevel(levelNum)
     if not boss then
         return false -- No boss assigned to this level, return false
@@ -823,6 +974,15 @@ function aztecBossLogic()
     
     if levelNum == 0 then
         return true -- Aztec isn't assigned to any level number
+    end
+
+    -- Check if player has the required kong for this boss
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+        return false
+    end
+    
+    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+        return false
     end
     
     local boss = getBossInLevel(levelNum)
@@ -863,6 +1023,15 @@ function factoryBossLogic()
         return true -- Factory isn't assigned to any level number
     end
     
+    -- Check if player has the required kong for this boss
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+        return false
+    end
+    
+    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+        return false
+    end
+
     local boss = getBossInLevel(levelNum)
     if not boss then
         return false -- No boss assigned to this level, return false
@@ -899,6 +1068,15 @@ function galleonBossLogic()
     
     if levelNum == 0 then
         return true -- Galleon isn't assigned to any level number
+    end
+
+    -- Check if player has the required kong for this boss
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+        return false
+    end
+    
+    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+        return false
     end
     
     local boss = getBossInLevel(levelNum)
@@ -939,6 +1117,15 @@ function forestBossLogic()
         return true -- Forest isn't assigned to any level number
     end
     
+    -- Check if player has the required kong for this boss
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+        return false
+    end
+
+    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+        return false
+    end
+
     local boss = getBossInLevel(levelNum)
     if not boss then
         return false -- No boss assigned to this level, return false
@@ -977,6 +1164,15 @@ function cavesBossLogic()
         return true -- Caves isn't assigned to any level number
     end
     
+    -- Check if player has the required kong for this boss
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+        return false
+    end
+
+    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+        return false
+    end
+
     local boss = getBossInLevel(levelNum)
     if not boss then
         return false -- No boss assigned to this level, return false
@@ -1014,7 +1210,17 @@ function castleBossLogic()
     if levelNum == 0 then
         return true -- Castle isn't assigned to any level number
     end
-    
+
+    -- Check if player has the required kong for this boss
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+        return false
+    end
+
+    -- Check TNS requirements if skips are disabled
+    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+        return false
+    end
+
     local boss = getBossInLevel(levelNum)
     if not boss then
         return false -- No boss assigned to this level, return false

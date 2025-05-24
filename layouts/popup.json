@@ -20,6 +20,15 @@
                     "background": "#000000",
                     "key": "barriers_grid"
                 }
+            },
+            {
+                "title": "Glitches",
+                "icon": "",
+                "content":{
+                    "type": "layout",
+                    "background": "#000000",
+                    "key": "glitch_grid"
+                }
             }
         ]
     }

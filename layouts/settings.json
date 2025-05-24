@@ -17,7 +17,10 @@
                         "rows": [
                             ["medalamount", "water", "time", "jetpacReq", "bfiReq", "mermaid", "openlobbies"],
                             ["helmorder", "bom", "bom2", "bom3", "bom4", "bom5"],
-                            ["kroolorder", "krool", "krool2", "krool3", "krool4", "krool5"]
+                            ["kroolorder", "krool", "krool2", "krool3", "krool4", "krool5"],
+                            ["tns1", "tns2", "tns3", "tns4", "tns5", "tns6", "tns7"],
+                            ["tnsportal1", "tnsportal2", "tnsportal3", "tnsportal4", "tnsportal5", "tnsportal6", "tnsportal7"],
+                            ["bosskong1", "bosskong2", "bosskong3", "bosskong4", "bosskong5", "bosskong6", "bosskong7"]
                         ]
                     }
                 ]

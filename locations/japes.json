@@ -41,7 +41,7 @@
                     },
                     {
                         "name": "Boss",
-                        "access_rules": ["$japesBossLogic, climb, vine", "$japesBossLogic, $peanuts", "$japesBossLogic, ^$coconutCage, $coconut", "$japesBossLogic, ^$ap, climb", "$japesBossLogic, ^$ap, $ostand"],
+                        "access_rules": ["$japesBossLogic, climb, vine", "$japesBossLogic, $peanuts", "$japesBossLogic, ^$coconutCage, $coconut", "$japesBossLogic, ^$avp, climb", "$japesBossLogic, ^$avp, $ostand"],
                         "chest_unopened_img": "images/items/scoff.png",
                         "chest_opened_img": "images/items/scoffbw.png"
                     }
@@ -108,7 +108,7 @@
             },
             {            
                 "name": "Diddy Cage",
-                "access_rules": ["climb", "^$ap, $ostand"],
+                "access_rules": ["climb", "^$avp, $ostand"],
                 "sections": [
                     {
                         "name": "Japes in Front of Diddy Cage"
@@ -128,7 +128,7 @@
             },
             {            
                 "name": "Japes Crate: Behind the Mountain",
-                "access_rules": ["climb", "^$ap, $ostand"],
+                "access_rules": ["climb", "^$avp, $ostand"],
                 "sections": [
                     {
                         "name": "Crate",
@@ -181,7 +181,7 @@
             },
             {            
                 "name": "Japes Battle Arena (Near Funky)",
-                "access_rules": ["climb", "^$ap, $ostand"],
+                "access_rules": ["climb", "^$avp, $ostand"],
                 "sections": [
                     {
                         "name": "Crown",
@@ -217,7 +217,7 @@
             },
             {            
                 "name": "Japes Dirt: Painting Hill",
-                "access_rules": ["$ostand, shockwave", "$twirl, climb, shockwave"],
+                "access_rules": ["$ostand, shockwave", "$twirl, climb, shockwave", "$moonkicks, shockwave"],
                 "sections": [
                     {
                         "name": "Rainbow Coin",
@@ -236,7 +236,7 @@
             },
             {            
                 "name": "Japes Diddy Top of Mountain",
-                "access_rules": ["$peanuts, $japesSlam, climb", "$peanuts, $japesSlam, ^$ap, $ostand"],
+                "access_rules": ["$japesDiddyMountain"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -259,7 +259,7 @@
             },
             {            
                 "name": "Japes DK Baboon Blast",
-                "access_rules": ["climb, vine, $blast"],
+                "access_rules": ["climb, vine, $blast", "climb, $moonkicks, $blast"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -509,7 +509,7 @@
             },
             {            
                 "name": "Painting Room",
-                "access_rules": ["$canActivateJapesPainting, $ostand", "$canActivateJapesPainting, $twirl, climb"],
+                "access_rules": ["$canActivateJapesPainting, $ostand", "$canActivateJapesPainting, $twirl, climb", "$canActivateJapesPainting, $moonkicks"],
                 "sections": [
                     {
                         "name": "Japes Lanky Zingers",
@@ -533,7 +533,7 @@
             },
             {            
                 "name": "Japes Diddy Minecart",
-                "access_rules": ["$charge, $peanuts, $japesSlam, climb", "^$ap, $japesSlam, $peanuts, $charge, $ostand"],
+                "access_rules": ["$charge, $peanuts, $japesSlam, climb", "^$avp, $japesSlam, $peanuts, $charge, $ostand"],
                 "sections": [
                     {
                         "name": "Golden Banana"

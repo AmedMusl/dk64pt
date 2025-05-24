@@ -17,15 +17,27 @@ function canEnterLevel(levels, ignoreBlocker)
                     if has("openlobbies") then
                         -- When openlobbies is enabled, only check for ability requirements, not key requirements
                         for _, item in ipairs(keys) do
-                            if not string.match(item, "^k%d+$") and not has(item) then
-                                allKeysPresent = false
-                                break
+                            if not string.match(tostring(item), "^k%d+$") then
+                                if type(item) == "function" then
+                                    if not item() then
+                                        allKeysPresent = false
+                                        break
+                                    end
+                                elseif not has(item) then
+                                    allKeysPresent = false
+                                    break
+                                end
                             end
                         end
                     else
                         -- Normal logic - check all requirements including keys
                         for _, item in ipairs(keys) do
-                            if not has(item) then
+                            if type(item) == "function" then
+                                if not item() then
+                                    allKeysPresent = false
+                                    break
+                                end
+                            elseif not has(item) then
                                 allKeysPresent = false
                                 break
                             end
@@ -36,7 +48,12 @@ function canEnterLevel(levels, ignoreBlocker)
                     end
                 else
                     -- Single requirement case (e.g. "k1")
-                    if has("openlobbies") and string.match(keys, "^k%d+$") then
+                    if type(keys) == "function" then
+                        -- If it's a function, just call it directly
+                        if keys() then
+                            return true
+                        end
+                    elseif has("openlobbies") and string.match(keys, "^k%d+$") then
                         -- Ignore key requirements with openlobbies
                         return true
                     elseif has(keys) then
@@ -55,7 +72,7 @@ function canEnterJapesLobby()
         {"l1_japes", "blocker1"},
         {"l2_japes", "blocker2", "k1"},
         {"l3_japes", "blocker3", "k2"},
-        {"l4_japes", "blocker4", {"k2", "dive"}},
+        {"l4_japes", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_japes", "blocker5", "k4"},
         {"l6_japes", "blocker6", "k5"},
         {"l7_japes", "blocker7", "k5"}
@@ -67,7 +84,7 @@ function canEnterJapes()
         {"l1_japes", "blocker1"},
         {"l2_japes", "blocker2", "k1"},
         {"l3_japes", "blocker3", "k2"},
-        {"l4_japes", "blocker4", {"k2", "dive"}},
+        {"l4_japes", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_japes", "blocker5", "k4"},
         {"l6_japes", "blocker6", "k5"},
         {"l7_japes", "blocker7", "k5"}
@@ -80,7 +97,7 @@ function canEnterAztecLobby()
         {"l1_aztec", "blocker1"},
         {"l2_aztec", "blocker2", "k1"},
         {"l3_aztec", "blocker3", "k2"},
-        {"l4_aztec", "blocker4", {"k2", "dive"}},
+        {"l4_aztec", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_aztec", "blocker5", "k4"},
         {"l6_aztec", "blocker6", "k5"},
         {"l7_aztec", "blocker7", "k5"}
@@ -92,7 +109,7 @@ function canEnterAztec()
         {"l1_aztec", "blocker1"},
         {"l2_aztec", "blocker2", "k1"},
         {"l3_aztec", "blocker3", "k2"},
-        {"l4_aztec", "blocker4", {"k2", "dive"}},
+        {"l4_aztec", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_aztec", "blocker5", "k4"},
         {"l6_aztec", "blocker6", "k5"},
         {"l7_aztec", "blocker7", "k5"}
@@ -105,7 +122,7 @@ function canEnterFactoryLobby()
         {"l1_factory", "blocker1"},
         {"l2_factory", "blocker2", "k1"},
         {"l3_factory", "blocker3", "k2"},
-        {"l4_factory", "blocker4", {"k2", "dive"}},
+        {"l4_factory", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_factory", "blocker5", "k4"},
         {"l6_factory", "blocker6", "k5"},
         {"l7_factory", "blocker7", "k5"}
@@ -117,7 +134,7 @@ function canEnterFactory()
         {"l1_factory", "blocker1"},
         {"l2_factory", "blocker2", "k1"},
         {"l3_factory", "blocker3", "k2"},
-        {"l4_factory", "blocker4", {"k2", "dive"}},
+        {"l4_factory", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_factory", "blocker5", "k4"},
         {"l6_factory", "blocker6", "k5"},
         {"l7_factory", "blocker7", "k5"}
@@ -130,7 +147,7 @@ function canEnterGalleonLobby()
         {"l1_galleon", "blocker1"},
         {"l2_galleon", "blocker2", "k1"},
         {"l3_galleon", "blocker3", "k2"},
-        {"l4_galleon", "blocker4", {"k2", "dive"}},
+        {"l4_galleon", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_galleon", "blocker5", "k4"},
         {"l6_galleon", "blocker6", "k5"},
         {"l7_galleon", "blocker7", "k5"}
@@ -142,7 +159,7 @@ function canEnterGalleon()
         {"l1_galleon", "blocker1"},
         {"l2_galleon", "blocker2", "k1"},
         {"l3_galleon", "blocker3", "k2"},
-        {"l4_galleon", "blocker4", {"k2", "dive"}},
+        {"l4_galleon", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_galleon", "blocker5", "k4"},
         {"l6_galleon", "blocker6", "k5"},
         {"l7_galleon", "blocker7", "k5"}
@@ -155,7 +172,7 @@ function canEnterForestLobby()
         {"l1_forest", "blocker1"},
         {"l2_forest", "blocker2", "k1"},
         {"l3_forest", "blocker3", "k2"},
-        {"l4_forest", "blocker4", {"k2", "dive"}},
+        {"l4_forest", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_forest", "blocker5", "k4"},
         {"l6_forest", "blocker6", "k5"},
         {"l7_forest", "blocker7", "k5"}
@@ -167,7 +184,7 @@ function canEnterForest()
         {"l1_forest", "blocker1"},
         {"l2_forest", "blocker2", "k1"},
         {"l3_forest", "blocker3", "k2"},
-        {"l4_forest", "blocker4", {"k2", "dive"}},
+        {"l4_forest", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_forest", "blocker5", "k4"},
         {"l6_forest", "blocker6", "k5"},
         {"l7_forest", "blocker7", "k5"}
@@ -180,7 +197,7 @@ function canEnterCavesLobby()
         {"l1_caves", "blocker1"},
         {"l2_caves", "blocker2", "k1"},
         {"l3_caves", "blocker3", "k2"},
-        {"l4_caves", "blocker4", {"k2", "dive"}},
+        {"l4_caves", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_caves", "blocker5", "k4"},
         {"l6_caves", "blocker6", "k5"},
         {"l7_caves", "blocker7", "k5"}
@@ -192,7 +209,7 @@ function canEnterCaves()
         {"l1_caves", "blocker1"},
         {"l2_caves", "blocker2", "k1"},
         {"l3_caves", "blocker3", "k2"},
-        {"l4_caves", "blocker4", {"k2", "dive"}},
+        {"l4_caves", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_caves", "blocker5", "k4"},
         {"l6_caves", "blocker6", "k5"},
         {"l7_caves", "blocker7", "k5"}
@@ -205,7 +222,7 @@ function canEnterCastleLobby()
         {"l1_castle", "blocker1"},
         {"l2_castle", "blocker2", "k1"},
         {"l3_castle", "blocker3", "k2"},
-        {"l4_castle", "blocker4", {"k2", "dive"}},
+        {"l4_castle", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_castle", "blocker5", "k4"},
         {"l6_castle", "blocker6", "k5"},
         {"l7_castle", "blocker7", "k5"}
@@ -217,7 +234,7 @@ function canEnterCastle()
         {"l1_castle", "blocker1"},
         {"l2_castle", "blocker2", "k1"},
         {"l3_castle", "blocker3", "k2"},
-        {"l4_castle", "blocker4", {"k2", "dive"}},
+        {"l4_castle", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
         {"l5_castle", "blocker5", "k4"},
         {"l6_castle", "blocker6", "k5"},
         {"l7_castle", "blocker7", "k5"}
@@ -235,5 +252,5 @@ function canEnterHelm()
     return canEnterLevel({
         {"level8", "blocker8", {"k6", "k7"}}
     }, false)
-    and canActivateIslesMonkeyport() and canActivateIslesHelmLobbyGone() and has("vine")
+    and canActivateIslesMonkeyport() and ((canActivateIslesHelmLobbyGone() and has("vine")) or moonkicks())
 end

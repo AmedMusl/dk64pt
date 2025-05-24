@@ -74,7 +74,7 @@
             },
             {            
                 "name": "Factory Diddy Block Tower",
-                "access_rules": ["$testing, $spring, climb"],
+                "access_rules": ["$testing, $spring, climb", "$testing, $moontail, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -91,7 +91,7 @@
             },
             {            
                 "name": "Factory Lanky Testing Room Barrel",
-                "access_rules": ["$testing, $balloon, climb", "$testing, ^$ap, diddy, climb", "$testing, ^$ap, lanky, climb", "$testing, ^$ap, tiny, climb"],
+                "access_rules": ["$testing, $balloon, climb", "$testing, ^$avp, diddy, climb", "$testing, ^$avp, lanky, climb", "$testing, ^$avp, tiny, climb"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -324,7 +324,7 @@
             },
             {            
                 "name": "Factory DK Power Hut",
-                "access_rules": ["$testing, climb, $coconut"],
+                "access_rules": ["$testing, climb, $coconut", "$testing, climb, $moonkicks"],
                 "sections": [
                     {
                         "name": "Golden Banana"
