@@ -633,28 +633,31 @@ function forestCBTotal()
     
     -- Lanky bananas
     if has("lanky") then
-        cb_total = cb_total + 21
+        cb_total = cb_total + 20
         
+        if has("climb") then
+            cb_total = cb_total + 3
+        end
         if has("climb") or balloon() then
-            cb_total = cb_total + 11
+            cb_total = cb_total + 9
+        end
+        if nightTime() and (has("climb") or balloon()) then
+            cb_total = cb_total + 10
         end
         if grape() then
             cb_total = cb_total + 10
         end
-        if grape() and (has("climb") or rocket()) then
+        if grape() and canClimbMushroom() then
             cb_total = cb_total + 10
+        end
+        if rocket() or (ostand() and canClimbMushroom()) then
+            cb_total = cb_total + 5
+        end
+        if forestSlam() and (rocket() or (ostand() and has("climb"))) then
+            cb_total = cb_total + 15
         end
         if yellowTunnel() then
             cb_total = cb_total + 18
-        end
-        if rocket() or (ostand() and has("climb")) then
-            cb_total = cb_total + 5
-        end
-        if (rocket() or (ostand() and has("climb"))) and forestSlam() then
-            cb_total = cb_total + 15
-        end
-        if nightTime() then
-            cb_total = cb_total + 10
         end
     end
     
