@@ -366,7 +366,7 @@ function onClear(slot_data)
         -- print("Received SwitchSanity data:")
         -- print(dump_table(SWITCHSANITY))
     else
-        SWITCHSANITY = {}
+        SWITCHSANITY = nil
     end
 
     if slot_data['GlitchesSelected'] then
