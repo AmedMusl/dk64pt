@@ -73,7 +73,7 @@ function canEnterJapesLobby()
         {"l2_japes", "blocker2", "k1"},
         {"l3_japes", "blocker3", "k2"},
         {"l4_japes", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_japes", "blocker5", "k4"},
+        {"l5_japes", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_japes", "blocker6", "k5"},
         {"l7_japes", "blocker7", "k5"}
     }, true)
@@ -85,7 +85,7 @@ function canEnterJapes()
         {"l2_japes", "blocker2", "k1"},
         {"l3_japes", "blocker3", "k2"},
         {"l4_japes", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_japes", "blocker5", "k4"},
+        {"l5_japes", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_japes", "blocker6", "k5"},
         {"l7_japes", "blocker7", "k5"}
     }, false)
@@ -98,7 +98,7 @@ function canEnterAztecLobby()
         {"l2_aztec", "blocker2", "k1"},
         {"l3_aztec", "blocker3", "k2"},
         {"l4_aztec", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_aztec", "blocker5", "k4"},
+        {"l5_aztec", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_aztec", "blocker6", "k5"},
         {"l7_aztec", "blocker7", "k5"}
     }, true)
@@ -110,7 +110,7 @@ function canEnterAztec()
         {"l2_aztec", "blocker2", "k1"},
         {"l3_aztec", "blocker3", "k2"},
         {"l4_aztec", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_aztec", "blocker5", "k4"},
+        {"l5_aztec", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_aztec", "blocker6", "k5"},
         {"l7_aztec", "blocker7", "k5"}
     }, false)
@@ -123,7 +123,7 @@ function canEnterFactoryLobby()
         {"l2_factory", "blocker2", "k1"},
         {"l3_factory", "blocker3", "k2"},
         {"l4_factory", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_factory", "blocker5", "k4"},
+        {"l5_factory", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_factory", "blocker6", "k5"},
         {"l7_factory", "blocker7", "k5"}
     }, true)
@@ -135,7 +135,7 @@ function canEnterFactory()
         {"l2_factory", "blocker2", "k1"},
         {"l3_factory", "blocker3", "k2"},
         {"l4_factory", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_factory", "blocker5", "k4"},
+        {"l5_factory", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_factory", "blocker6", "k5"},
         {"l7_factory", "blocker7", "k5"}
     }, false)
@@ -148,7 +148,7 @@ function canEnterGalleonLobby()
         {"l2_galleon", "blocker2", "k1"},
         {"l3_galleon", "blocker3", "k2"},
         {"l4_galleon", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_galleon", "blocker5", "k4"},
+        {"l5_galleon", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_galleon", "blocker6", "k5"},
         {"l7_galleon", "blocker7", "k5"}
     }, true)
@@ -160,7 +160,7 @@ function canEnterGalleon()
         {"l2_galleon", "blocker2", "k1"},
         {"l3_galleon", "blocker3", "k2"},
         {"l4_galleon", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_galleon", "blocker5", "k4"},
+        {"l5_galleon", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_galleon", "blocker6", "k5"},
         {"l7_galleon", "blocker7", "k5"}
     }, false)
@@ -173,7 +173,7 @@ function canEnterForestLobby()
         {"l2_forest", "blocker2", "k1"},
         {"l3_forest", "blocker3", "k2"},
         {"l4_forest", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_forest", "blocker5", "k4"},
+        {"l5_forest", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_forest", "blocker6", "k5"},
         {"l7_forest", "blocker7", "k5"}
     }, true)
@@ -185,7 +185,7 @@ function canEnterForest()
         {"l2_forest", "blocker2", "k1"},
         {"l3_forest", "blocker3", "k2"},
         {"l4_forest", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_forest", "blocker5", "k4"},
+        {"l5_forest", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_forest", "blocker6", "k5"},
         {"l7_forest", "blocker7", "k5"}
     }, false)
@@ -198,7 +198,7 @@ function canEnterCavesLobby()
         {"l2_caves", "blocker2", "k1"},
         {"l3_caves", "blocker3", "k2"},
         {"l4_caves", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_caves", "blocker5", "k4"},
+        {"l5_caves", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_caves", "blocker6", "k5"},
         {"l7_caves", "blocker7", "k5"}
     }, true)
@@ -210,7 +210,7 @@ function canEnterCaves()
         {"l2_caves", "blocker2", "k1"},
         {"l3_caves", "blocker3", "k2"},
         {"l4_caves", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_caves", "blocker5", "k4"},
+        {"l5_caves", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_caves", "blocker6", "k5"},
         {"l7_caves", "blocker7", "k5"}
     }, false)
@@ -223,7 +223,7 @@ function canEnterCastleLobby()
         {"l2_castle", "blocker2", "k1"},
         {"l3_castle", "blocker3", "k2"},
         {"l4_castle", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_castle", "blocker5", "k4"},
+        {"l5_castle", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_castle", "blocker6", "k5"},
         {"l7_castle", "blocker7", "k5"}
     }, true)
@@ -235,7 +235,7 @@ function canEnterCastle()
         {"l2_castle", "blocker2", "k1"},
         {"l3_castle", "blocker3", "k2"},
         {"l4_castle", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_castle", "blocker5", "k4"},
+        {"l5_castle", "blocker5", function() return has("k4") or moonkicks() end},
         {"l6_castle", "blocker6", "k5"},
         {"l7_castle", "blocker7", "k5"}
     }, false)
