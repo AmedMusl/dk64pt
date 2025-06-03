@@ -1,7 +1,7 @@
 [
     {
         "name": "Fungi Forest",
-        "access_rules": ["$canEnterForest"],
+        "access_rules": ["^$canEnterForest"],
         "chest_unopened_img": "images/items/GB.png",
         "chest_opened_img": "images/items/GBbw.png",
         "children": [

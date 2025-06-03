@@ -48,7 +48,7 @@
     },
     {
         "name": "Japes Shops",
-        "access_rules": ["$canEnterJapes"],
+        "access_rules": ["^$canEnterJapes"],
         "chest_unopened_img": "images/items/cranky.png",
         "chest_opened_img": "images/items/crankybw.png",
         "children": [
@@ -240,7 +240,7 @@
     },
     {
         "name": "Factory Shops",
-        "access_rules": ["$canEnterFactory"],
+        "access_rules": ["^$canEnterFactory"],
         "chest_unopened_img": "images/items/cranky.png",
         "chest_opened_img": "images/items/crankybw.png",
         "children": [
@@ -354,7 +354,7 @@
     },
     {
         "name": "Galleon Shops",
-        "access_rules": ["$canEnterGalleon"],
+        "access_rules": ["^$canEnterGalleon"],
         "chest_unopened_img": "images/items/cranky.png",
         "chest_opened_img": "images/items/crankybw.png",
         "children": [
@@ -468,7 +468,7 @@
     },
     {
         "name": "Forest Shops",
-        "access_rules": ["$canEnterForest"],
+        "access_rules": ["^$canEnterForest"],
         "chest_unopened_img": "images/items/cranky.png",
         "chest_opened_img": "images/items/crankybw.png",
         "children": [
@@ -546,7 +546,7 @@
     },
     {
         "name": "Caves Shops",
-        "access_rules": ["$canEnterCaves"],
+        "access_rules": ["^$canEnterCaves"],
         "chest_unopened_img": "images/items/cranky.png",
         "chest_opened_img": "images/items/crankybw.png",
         "children": [
@@ -660,7 +660,7 @@
     },
     {
         "name": "Castle Shops",
-        "access_rules": ["$canEnterCastle"],
+        "access_rules": ["^$canEnterCastle"],
         "chest_unopened_img": "images/items/cranky.png",
         "chest_opened_img": "images/items/crankybw.png",
         "children": [

@@ -435,7 +435,7 @@
             },
             {
                 "name": "Aztec Free Lanky Item",
-                "access_rules": ["^$llamaSwitches, $canEnterLlamaTemple, $bongos, dive"],
+                "access_rules": ["^$llamaSwitches, $canEnterLlamaTemple, $lankyFreeing, dive"],
                 "sections": [
                     {
                         "name": "Golden Banana"

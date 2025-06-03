@@ -210,16 +210,32 @@ function canEnterTree()
     return blast() or phaseswim()
 end
 
+function beginningDK5DI()
+    return bongos() or phaseswim()
+end
+
 function dk5DI()
     return (bongos() or phaseswim()) and (strong() or moonkicks())
+end
+
+function beginningDiddy5DI()
+    return guitar() or phaseswim()
 end
 
 function diddy5DI()
     return (guitar() or phaseswim()) and (has("barrel"))
 end
 
+function beginningLanky5DI()
+    return trombone() or phaseswim()
+end
+
 function lanky5DI()
     return (trombone() or phaseswim()) and (balloon() or avp()) 
+end
+
+function beginningTiny5DI()
+    return sax() or phaseswim()
 end
 
 function tiny5DI()
@@ -252,6 +268,10 @@ function canBeatSpider()
     elseif has("dusk") then
         return (punch() or mini()) and canChangeTime()
     end
+end
+
+function lowerMushroomExterior()
+    return (twirl() and avp()) or canClimbMushroom() or (has("climb") and (has("donkey") or has("chunky")) and avp())
 end
 
 function canClimbMushroom()
@@ -300,9 +320,9 @@ end
 
 function lighthousePlatform()
     if raisedWater() then
-        return AccessibilityLevel.Normal
+        return true
     elseif has("lanky") or has("chunky") then
-        return AccessibilityLevel.SequenceBreak
+        return avp()
     end
 end
 
@@ -325,17 +345,17 @@ function japesChunkyTimed()
 end
 
 function japesDiddyTimed()
-    if coconutCage() and japesSlam() and has("climb") and coconut() and has("diddy") then
+    if coconutCage() and japesSlam() and has("climb") and canActivateJapesRambi() and has("diddy") then
         return AccessibilityLevel.Normal
-    elseif coconutCage() and coconut() and japesSlam() and ostand() and has("diddy") then
+    elseif coconutCage() and canActivateJapesRambi() and japesSlam() and ostand() and has("diddy") then
         return AccessibilityLevel.SequenceBreak
     end
 end
 
 function japesLankyTimed()
-    if coconutCage() and japesSlam() and has("climb") and coconut() and has("lanky") then
+    if coconutCage() and japesSlam() and has("climb") and canActivateJapesRambi() and has("lanky") then
         return AccessibilityLevel.Normal
-    elseif coconutCage() and coconut() and japesSlam() and ostand() and has("lanky") then
+    elseif coconutCage() and canActivateJapesRambi() and japesSlam() and ostand() and has("lanky") then
         return AccessibilityLevel.SequenceBreak
     end
 end
@@ -361,7 +381,6 @@ function lankyAttic()
         return AccessibilityLevel.Normal
     elseif has("lanky") and nightTime() and forestSlam() and (balloon() or has("climb")) and (coconut() or peanuts() or grape() or feather() or pineapple()) then
         return AccessibilityLevel.SequenceBreak
-
     end
 end
 
@@ -369,8 +388,28 @@ function chunkyShed()
     return punch() and ((gone() and canChangeTime()) or triangle() or bongos() or guitar() or trombone() or sax())
 end
 
-function avp()
-    return AccessibilityLevel.SequenceBreak
+function powerHutPlatform()
+    return (testing() and has("climb")) or (moonkicks()) or (twirl() and avp())
+end
+
+function canGetOnCannonGamePlatform()
+    return raisedWater() or (avp() and (has("chunky") or has("lanky")))
+end
+
+function lankyFreeing()
+    if LANKY_FREEING_KONG == "donkey" then
+        return bongos()
+    elseif LANKY_FREEING_KONG == "diddy" then
+        return guitar()
+    elseif LANKY_FREEING_KONG == "lanky" then
+        return trombone()
+    elseif LANKY_FREEING_KONG == "tiny" then
+        return sax()
+    elseif LANKY_FREEING_KONG == "chunky" then
+        return triangle()
+    end
+    -- Default case if LANKY_FREEING_KONG is not set
+    return false
 end
 
 -- Glitches
@@ -461,11 +500,11 @@ function llamaSwitches()
 end
 
 function production()
-    local in_testing = testing()
+    local powerhut = powerHutPlatform() and (coconut() or moonkicks())
     if has("factory_production_room") then
         return true
     else
-        return coconut() and grab() and in_testing
+        return powerhut and grab()
     end
 end
 
@@ -481,7 +520,7 @@ function lighthouse()
     if has("galleon_lighthouse_gate") then
         return true
     else
-        return canActivateGalleonLighthouse() or (phaseswim() and canActivateGalleonCannonGame())
+        return canActivateGalleonLighthouse()
     end
 end
 
@@ -496,20 +535,22 @@ end
 function seasick()
     local in_lighthouse = lighthouse()
     if has("galleon_seasick_ship") then
-        return in_lighthouse
+        return in_lighthouse and lighthousePlatform()
     else
-        return has("climb") and galleonSlam() and grab() and in_lighthouse
+        return has("climb") and galleonSlam() and grab() and in_lighthouse and lighthousePlatform()
     end
 end
 
 function treasure()
     local in_shipyard = shipyard()
+    
     if has("galleon_treasure_room") then
-        return in_shipyard and AccessibilityLevel.Normal
-    elseif raisedWater() then
-        return in_shipyard and has("lanky") and AccessibilityLevel.Normal
+        return in_shipyard
+    end
+    if raisedWater() and enguarde() then
+        return in_shipyard
     elseif phaseswim() then
-        return AccessibilityLevel.Normal and in_shipyard
+        return (canActivateGalleonCannonGame() and raisedWater()) or in_shipyard
     else
         return in_shipyard and has("lanky") and avp()
     end
@@ -816,35 +857,6 @@ function hasBoss(prefix)
     return false
 end
 
--- Maps level names to level numbers
-function getLevelNumber(level)
-    local levelMap = {
-        japes = 1,
-        aztec = 2,
-        factory = 3,
-        galleon = 4,
-        forest = 5,
-        caves = 6,
-        castle = 7
-    }
-    
-    return levelMap[level]
-end
-
--- Get level that contains a specific level number
-function getLevelWithNumber(number)
-    for i = 1, 7 do
-        if has("l" .. number .. "_japes") then return "japes" end
-        if has("l" .. number .. "_aztec") then return "aztec" end
-        if has("l" .. number .. "_factory") then return "factory" end
-        if has("l" .. number .. "_galleon") then return "galleon" end
-        if has("l" .. number .. "_forest") then return "forest" end
-        if has("l" .. number .. "_caves") then return "caves" end
-        if has("l" .. number .. "_castle") then return "castle" end
-    end
-    return nil
-end
-
 -- Check if a specific boss is assigned to a level (by TNS order)
 function checkBossInLevel(levelNum, bossName)
     local bossMap = {
@@ -896,7 +908,7 @@ function hasKongForBoss(level_num)
 end
 
 function getBossInLevel(levelNum)
-    -- Then check the regular bosses
+    -- Check the regular bosses
     if checkBossInLevel(levelNum, "army1") then return "army1" end
     if checkBossInLevel(levelNum, "doga1") then return "doga1" end
     if checkBossInLevel(levelNum, "jack") then return "jack" end
@@ -913,36 +925,31 @@ function getBossInLevel(levelNum)
     return nil
 end
 
+-- Simplified boss logic functions for vanilla TNS requirements
+
 function japesBossLogic()
-    local levelNum = 0
-    
-    -- Find which level number Japes is
-    for i = 1, 7 do
-        if has("l" .. i .. "_japes") then
-            levelNum = i
-            break
-        end
-    end
-    
-    if levelNum == 0 then
-        return true -- Japes isn't assigned to any level number
-    end
-    
-    -- Check if player has the required kong for this boss
-    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+    -- Check if player has the required kong for Japes (level 1)
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(1) then
         return false
     end
     
-    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+    -- Check the TNS requirement for Japes
+    if not_has("troff_n_scoff_skips") and not has("tns1") then
         return false
     end
     
-    -- Continue with existing boss logic
-    local boss = getBossInLevel(levelNum)
+    -- Check CB requirement for Japes unless TNS skips are enabled
+    if not_has("troff_n_scoff_skips") and not japesCBTotal() then
+        return false
+    end
+    
+    -- Get the boss assigned to Japes
+    local boss = getBossInLevel(1)
     if not boss then
-        return false -- No boss assigned to this level, return false
+        return false
     end
     
+    -- Check boss-specific requirements
     local requirements = {
         army1 = function() return has("barrel") end,
         doga1 = function() return has("barrel") end,
@@ -962,34 +969,28 @@ function japesBossLogic()
 end
 
 function aztecBossLogic()
-    local levelNum = 0
-    
-    -- Find which level number Aztec is
-    for i = 1, 7 do
-        if has("l" .. i .. "_aztec") then
-            levelNum = i
-            break
-        end
-    end
-    
-    if levelNum == 0 then
-        return true -- Aztec isn't assigned to any level number
-    end
-
-    -- Check if player has the required kong for this boss
-    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+    -- Check if player has the required kong for Aztec (level 2)
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(2) then
         return false
     end
     
-    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+    -- Check the TNS requirement for Aztec
+    if not_has("troff_n_scoff_skips") and not has("tns2") then
         return false
     end
     
-    local boss = getBossInLevel(levelNum)
+    -- Check CB requirement for Aztec unless TNS skips are enabled
+    if not_has("troff_n_scoff_skips") and not aztecCBTotal() then
+        return false
+    end
+    
+    -- Get the boss assigned to Aztec
+    local boss = getBossInLevel(2)
     if not boss then
-        return false -- No boss assigned to this level, return false
+        return false
     end
     
+    -- Check boss-specific requirements
     local requirements = {
         army1 = function() return has("barrel") end,
         doga1 = function() return has("barrel") end,
@@ -1009,34 +1010,28 @@ function aztecBossLogic()
 end
 
 function factoryBossLogic()
-    local levelNum = 0
-    
-    -- Find which level number Factory is
-    for i = 1, 7 do
-        if has("l" .. i .. "_factory") then
-            levelNum = i
-            break
-        end
-    end
-    
-    if levelNum == 0 then
-        return true -- Factory isn't assigned to any level number
-    end
-    
-    -- Check if player has the required kong for this boss
-    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+    -- Check if player has the required kong for Factory (level 3)
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(3) then
         return false
     end
     
-    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+    -- Check the TNS requirement for Factory
+    if not_has("troff_n_scoff_skips") and not has("tns3") then
         return false
     end
-
-    local boss = getBossInLevel(levelNum)
+    
+    -- Check CB requirement for Factory unless TNS skips are enabled
+    if not_has("troff_n_scoff_skips") and not factoryCBTotal() then
+        return false
+    end
+    
+    -- Get the boss assigned to Factory
+    local boss = getBossInLevel(3)
     if not boss then
-        return false -- No boss assigned to this level, return false
+        return false
     end
     
+    -- Check boss-specific requirements
     local requirements = {
         army1 = function() return has("barrel") end,
         doga1 = function() return has("barrel") end,
@@ -1056,34 +1051,28 @@ function factoryBossLogic()
 end
 
 function galleonBossLogic()
-    local levelNum = 0
-    
-    -- Find which level number Galleon is
-    for i = 1, 7 do
-        if has("l" .. i .. "_galleon") then
-            levelNum = i
-            break
-        end
-    end
-    
-    if levelNum == 0 then
-        return true -- Galleon isn't assigned to any level number
-    end
-
-    -- Check if player has the required kong for this boss
-    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+    -- Check if player has the required kong for Galleon (level 4)
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(4) then
         return false
     end
     
-    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+    -- Check the TNS requirement for Galleon
+    if not_has("troff_n_scoff_skips") and not has("tns4") then
         return false
     end
     
-    local boss = getBossInLevel(levelNum)
+    -- Check CB requirement for Galleon unless TNS skips are enabled
+    if not_has("troff_n_scoff_skips") and not galleonCBTotal() then
+        return false
+    end
+    
+    -- Get the boss assigned to Galleon
+    local boss = getBossInLevel(4)
     if not boss then
-        return false -- No boss assigned to this level, return false
+        return false
     end
     
+    -- Check boss-specific requirements
     local requirements = {
         army1 = function() return has("barrel") end,
         doga1 = function() return has("barrel") end,
@@ -1103,34 +1092,28 @@ function galleonBossLogic()
 end
 
 function forestBossLogic()
-    local levelNum = 0
-    
-    -- Find which level number Forest is
-    for i = 1, 7 do
-        if has("l" .. i .. "_forest") then
-            levelNum = i
-            break
-        end
-    end
-    
-    if levelNum == 0 then
-        return true -- Forest isn't assigned to any level number
-    end
-    
-    -- Check if player has the required kong for this boss
-    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+    -- Check if player has the required kong for Forest (level 5)
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(5) then
         return false
     end
-
-    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+    
+    -- Check the TNS requirement for Forest
+    if not_has("troff_n_scoff_skips") and not has("tns5") then
         return false
     end
-
-    local boss = getBossInLevel(levelNum)
+    
+    -- Check CB requirement for Forest unless TNS skips are enabled
+    if not_has("troff_n_scoff_skips") and not forestCBTotal() then
+        return false
+    end
+    
+    -- Get the boss assigned to Forest
+    local boss = getBossInLevel(5)
     if not boss then
-        return false -- No boss assigned to this level, return false
+        return false
     end
     
+    -- Check boss-specific requirements
     local requirements = {
         army1 = function() return has("barrel") end,
         doga1 = function() return has("barrel") end,
@@ -1150,34 +1133,28 @@ function forestBossLogic()
 end
 
 function cavesBossLogic()
-    local levelNum = 0
-    
-    -- Find which level number Caves is
-    for i = 1, 7 do
-        if has("l" .. i .. "_caves") then
-            levelNum = i
-            break
-        end
-    end
-    
-    if levelNum == 0 then
-        return true -- Caves isn't assigned to any level number
-    end
-    
-    -- Check if player has the required kong for this boss
-    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+    -- Check if player has the required kong for Caves (level 6)
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(6) then
         return false
     end
-
-    if not_has("troff_n_scoff_skips") and not castleCBTotal() then
+    
+    -- Check the TNS requirement for Caves
+    if not_has("troff_n_scoff_skips") and not has("tns6") then
         return false
     end
-
-    local boss = getBossInLevel(levelNum)
+    
+    -- Check CB requirement for Caves unless TNS skips are enabled
+    if not_has("troff_n_scoff_skips") and not cavesCBTotal() then
+        return false
+    end
+    
+    -- Get the boss assigned to Caves
+    local boss = getBossInLevel(6)
     if not boss then
-        return false -- No boss assigned to this level, return false
+        return false
     end
     
+    -- Check boss-specific requirements
     local requirements = {
         army1 = function() return has("barrel") end,
         doga1 = function() return has("barrel") end,
@@ -1197,35 +1174,28 @@ function cavesBossLogic()
 end
 
 function castleBossLogic()
-    local levelNum = 0
-    
-    -- Find which level number Castle is
-    for i = 1, 7 do
-        if has("l" .. i .. "_castle") then
-            levelNum = i
-            break
-        end
-    end
-    
-    if levelNum == 0 then
-        return true -- Castle isn't assigned to any level number
-    end
-
-    -- Check if player has the required kong for this boss
-    if not has("troff_n_scoff_skips") and not hasKongForBoss(levelNum) then
+    -- Check if player has the required kong for Castle (level 7)
+    if not has("troff_n_scoff_skips") and not hasKongForBoss(7) then
         return false
     end
-
-    -- Check TNS requirements if skips are disabled
+    
+    -- Check the TNS requirement for Castle
+    if not_has("troff_n_scoff_skips") and not has("tns7") then
+        return false
+    end
+    
+    -- Check CB requirement for Castle unless TNS skips are enabled
     if not_has("troff_n_scoff_skips") and not castleCBTotal() then
         return false
     end
-
-    local boss = getBossInLevel(levelNum)
+    
+    -- Get the boss assigned to Castle
+    local boss = getBossInLevel(7)
     if not boss then
-        return false -- No boss assigned to this level, return false
+        return false
     end
     
+    -- Check boss-specific requirements
     local requirements = {
         army1 = function() return has("barrel") end,
         doga1 = function() return has("barrel") end,

@@ -1,7 +1,7 @@
 [
     {
         "name": "Gloomy Galleon",
-        "access_rules": ["$canEnterGalleon"],
+        "access_rules": ["^$canEnterGalleon"],
         "chest_unopened_img": "images/items/GB.png",
         "chest_opened_img": "images/items/GBbw.png",
         "children": [

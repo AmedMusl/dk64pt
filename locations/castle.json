@@ -1,7 +1,7 @@
 [
     {
         "name": "Creepy Castle",
-        "access_rules": ["$canEnterCastle"],
+        "access_rules": ["^$canEnterCastle"],
         "chest_unopened_img": "images/items/GB.png",
         "chest_opened_img": "images/items/GBbw.png",
         "children": [

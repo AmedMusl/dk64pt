@@ -10,11 +10,6 @@ LEVEL_POSITIONS = {}
 -- Track which lobbies the player has visited
 VISITED_LOBBIES = {}
 
-local SAVEDATA_KEY = "dk64pt_visited_lobbies"
-local CURRENT_SLOT_KEY = "dk64pt_current_slot"
-local SAVEDATA_FILENAME = "dk64pt_savedata.txt"
-local VISITED_LOBBIES_FILE = "dk64pt_visited_lobbies"
-
 -- Use global variables for session persistence
 -- Global table to store visited lobbies between sessions (works during tracker runtime)
 SAVED_LOBBIES_BY_SLOT = SAVED_LOBBIES_BY_SLOT or {}
@@ -79,10 +74,6 @@ local function process_removed_barriers(barriers)
 end
 
 local function process_level_order(level_order)
-    if type(level_order) ~= "string" then
-        print("Error: LevelOrder is not a string. Found type: " .. type(level_order))
-        return
-    end
     
     level_order = level_order:gsub(",$", "")
     local level_mapping = {
@@ -128,17 +119,13 @@ function update_level_display()
         return
     end
     
-    -- For each level position (1-7), find where each level is in the level order
     for i = 1, 7 do
         local obj = Tracker:FindObjectForCode("level" .. i)
         if obj then
-            -- Get current stage value to check if it's already set
             local current_stage = obj.CurrentStage
             
-            -- Check which level is at this position in the order
             local level_id = LEVEL_POSITIONS[i]
             if level_id then
-                -- Find which level name corresponds to this level_id
                 for level_name, id in pairs({
                     ["JungleJapes"] = 1,
                     ["AngryAztec"] = 2,
@@ -148,42 +135,31 @@ function update_level_display()
                     ["CrystalCaves"] = 6,
                     ["CreepyCastle"] = 7
                 }) do
-                    -- If this is the level at position i and we've visited its lobby,
-                    -- show that level's icon at the current position
                     if id == level_id and VISITED_LOBBIES[level_name] then
                         obj.CurrentStage = level_id
                         break
                     end
                 end
-                
-                -- If we didn't find a visited lobby for this position but it was already marked,
-                -- preserve the previous marking
                 if obj.CurrentStage == 0 and current_stage > 0 then
                     obj.CurrentStage = current_stage
                 end
             else
-                -- No level_id for this position, but preserve existing marking if any
                 if current_stage > 0 then
                     obj.CurrentStage = current_stage
                 end
             end
         end
     end
-    
-    -- Save the visited lobbies data whenever it changes
     save_visited_lobbies()
 end
 
--- Function to save visited lobbies to memory storage
 function save_visited_lobbies()
     if not SLOT_DATA or not PLAYER_ID or PLAYER_ID < 0 then
         return
     end
     
-    -- Create a unique key for this player's slot
     local slot_key = PLAYER_ID .. "_" .. (TEAM_NUMBER or 0)
     
-    -- Initialize or update the storage for this slot key
     if not SAVED_LOBBIES_BY_SLOT[slot_key] then
         SAVED_LOBBIES_BY_SLOT[slot_key] = {
             level_order = SLOT_DATA['LevelOrder'],
@@ -191,7 +167,6 @@ function save_visited_lobbies()
         }
     end
     
-    -- Save the lobbies under this slot key
     SAVED_LOBBIES_BY_SLOT[slot_key].lobbies = {}
     
     for lobby_name, visited in pairs(VISITED_LOBBIES) do
@@ -201,31 +176,25 @@ function save_visited_lobbies()
     end
 end
 
--- Function to load visited lobbies from memory storage
 function load_visited_lobbies()
     if not SLOT_DATA or not PLAYER_ID or PLAYER_ID < 0 then
         return
     end
     
-    -- Create a unique key for this player's slot
     local slot_key = PLAYER_ID .. "_" .. (TEAM_NUMBER or 0)
     
-    -- Check if we have saved data for this slot
     if SAVED_LOBBIES_BY_SLOT[slot_key] then
-        -- Check if the level order matches between saved data and current data
         if SLOT_DATA['LevelOrder'] and SAVED_LOBBIES_BY_SLOT[slot_key].level_order 
            and SLOT_DATA['LevelOrder'] ~= SAVED_LOBBIES_BY_SLOT[slot_key].level_order then
             return false
         end
         
-        -- Restore the visited lobbies
         for lobby_name, visited in pairs(SAVED_LOBBIES_BY_SLOT[slot_key].lobbies or {}) do
             if visited then
                 VISITED_LOBBIES[lobby_name] = true
             end
         end
         
-        -- Update the level display with the loaded data
         if next(LEVEL_POSITIONS) ~= nil then
             update_level_display()
         end
@@ -345,8 +314,6 @@ function onClear(slot_data)
             local obj = Tracker:FindObjectForCode(kong)
             if obj then
                 obj.Active = true
-            else
-                -- print(string.format("Warning: Could not find object for StartingKong %s", kong))
             end
         end
     end
@@ -472,6 +439,67 @@ function onClear(slot_data)
                     obj.CurrentStage = stage
                 end
             end
+        end
+    end
+    
+    -- Process HelmOrder slot data
+    if slot_data['HelmOrder'] then
+        -- Map of numeric values to Kong names (0=DK, 1=Chunky, 2=Tiny, 3=Lanky, 4=Diddy)
+        local kongMap = {
+            [0] = "donkey",
+            [1] = "chunky",
+            [2] = "tiny", 
+            [3] = "lanky",
+            [4] = "diddy"
+        }
+        
+        local kongStageMap = {
+            donkey = 1,
+            chunky = 5,
+            tiny = 4,
+            lanky = 3, 
+            diddy = 2
+        }
+        
+        local helmSequence = {}
+        for value in string.gmatch(slot_data['HelmOrder'], "%d+") do
+            table.insert(helmSequence, tonumber(value))
+        end
+        
+        for i, kongValue in ipairs(helmSequence) do
+            if i > 5 then break end
+            
+            local helmObject = Tracker:FindObjectForCode("bom" .. i)
+            if helmObject then
+                local kong = kongMap[kongValue]
+                if kong and kongStageMap[kong] then
+                    helmObject.CurrentStage = kongStageMap[kong]
+                    helmObject.Active = true
+                end
+            end
+        end
+        
+        -- Mark remaining helm stages as inactive if the sequence is shorter than 5
+        for i = #helmSequence + 1, 5 do
+            local helmObject = Tracker:FindObjectForCode("bom" .. i)
+            if helmObject then
+                helmObject.Active = false
+            end
+        end
+    end
+
+    if slot_data['LankyFreeingKong'] ~= nil then
+        local kongMap = {
+            [0] = "donkey",
+            [1] = "diddy",
+            [2] = "lanky",
+            [3] = "tiny",
+            [4] = "chunky"
+        }
+        
+        local kongValue = tonumber(slot_data['LankyFreeingKong'])
+        if kongValue ~= nil and kongMap[kongValue] then
+            LANKY_FREEING_KONG = kongMap[kongValue]     
         end
     end
 

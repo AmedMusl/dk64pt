@@ -1,7 +1,7 @@
 [
     {
         "name": "Crystal Caves",
-        "access_rules": ["$canEnterCaves"],
+        "access_rules": ["^$canEnterCaves"],
         "chest_unopened_img": "images/items/GB.png",
         "chest_opened_img": "images/items/GBbw.png",
         "children": [

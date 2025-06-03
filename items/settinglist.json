@@ -900,31 +900,31 @@
       "stages": [
         {
           "img": "images/settings/2753.png",
-          "codes": "bom"
+          "codes": "bom1"
         },
         {
           "img": "images/items/dk.png",
-          "codes": "bom, helmdk1",
+          "codes": "bom1, helmdk1",
           "inherit_codes": false
         },
         {
           "img": "images/items/diddy.png",
-          "codes": "bom, helmdiddy1",
+          "codes": "bom1, helmdiddy1",
           "inherit_codes": false
         },
         {
           "img": "images/items/lanky.png",
-          "codes": "bom, helmlanky1",
+          "codes": "bom1, helmlanky1",
           "inherit_codes": false
         },
         {
           "img": "images/items/tiny.png",
-          "codes": "bom, helmtiny1",
+          "codes": "bom1, helmtiny1",
           "inherit_codes": false
         },
         {
           "img": "images/items/chunky.png",
-          "codes": "bom, helmchunky1",
+          "codes": "bom1, helmchunky1",
           "inherit_codes": false
         }
       ]
