@@ -8,7 +8,7 @@ function japesDKMedal()
     end
     local cb_total = 10 -- W3
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
-    if coconut() and (has("climb") or (avp() and ostand)) then -- By Snide
+    if coconut() and (has("climb") or (avp() and ostand())) then -- By Snide
         cb_total = cb_total + 10
     end
     if has("climb") then -- Hilltop
@@ -548,7 +548,7 @@ function galleonDiddyMedal()
     if shipyard() and has("dive") then -- 20 mechfish grate 6 to gold tower 10 2DS
         cb_total = cb_total + 36
     end
-    if treasure() and peanuts() then -- Treasure Balloon
+    if treasure() and peanuts() and has("dive") then -- Treasure Balloon
         cb_total = cb_total + 10
     end
     if shipyard() and has("dive") and ((guitar() and loweredWater()) or phaseswim()) then -- Diddy 5DS
@@ -581,16 +581,16 @@ function galleonLankyMedal()
     if shipyard() and has("dive") then -- Enguarde
         cb_total = cb_total + 5
     end
-    if treasure() and ((raisedWater() and balloon()) or (enguarde() and avp()) or moonkicks() and balloon()) then -- Gold Tower
+    if treasure() and has("dive") and ((raisedWater() and balloon()) or (enguarde() and avp()) or moonkicks() and balloon()) then -- Gold Tower
         cb_total = cb_total + 4
     end
-    if treasure() and ((raisedWater()) or (enguarde() and avp()) or moonkicks()) then -- Gold Tower Bottom
+    if treasure() and has("dive") and ((raisedWater()) or (enguarde() and avp()) or moonkicks()) then -- Gold Tower Bottom
         cb_total = cb_total + 1
     end
-    if shipyard() and (galleonSlam() or phaseswim()) then -- Lanky 2DS
+    if shipyard() and has("dive") and (galleonSlam() or phaseswim()) then -- Lanky 2DS
         cb_total = cb_total + 10
     end
-    if shipyard() and ((trombone() and loweredWater()) or phaseswim()) then -- Lanky 5DS
+    if shipyard() and has("dive") and ((trombone() and loweredWater()) or phaseswim()) then -- Lanky 5DS
         cb_total = cb_total + 15
     end
     return cb_total >= cb_amount
@@ -605,7 +605,7 @@ function galleonTinyMedal()
     if has("vine") or moonkicks() then -- Past Vines
         cb_total = cb_total + 8
     end
-    if (canActivateGalleonCannonGame or (phaseswim() and raisedWater())) and canGetOnCannonGamePlatform() then -- Cannon Game
+    if (canActivateGalleonCannonGame() or (phaseswim() and raisedWater())) and canGetOnCannonGamePlatform() then -- Cannon Game
         cb_total = cb_total + 15
     end
     if lighthouse() and feather() and loweredWater() then -- KEVIN
@@ -617,16 +617,16 @@ function galleonTinyMedal()
     if lighthouse() and feather() and (raisedWater() or (has("lanky") or has("chunky") and avp())) then -- Snide Balloon
         cb_total = cb_total + 10
     end
-    if treasure() then -- Hype Chest Entrance
+    if treasure() and has("dive") then -- Hype Chest Entrance
         cb_total = cb_total + 5
     end
-    if treasure() and feather() then -- Gold Tower Balloon
+    if treasure() and feather() and has("dive") then -- Gold Tower Balloon
         cb_total = cb_total + 10
     end
-    if shipyard() and (galleonSlam() or phaseswim()) then -- Tiny 2DS
+    if shipyard() and has("dive") (galleonSlam() or phaseswim()) then -- Tiny 2DS
         cb_total = cb_total + 10
     end
-    if shipyard() and (sax() or phaseswim()) then -- Tiny 5DS
+    if shipyard() and has("dive") and (sax() or phaseswim()) then -- Tiny 5DS
         cb_total = cb_total + 18
     end
     return cb_total >= cb_amount

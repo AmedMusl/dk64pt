@@ -203,7 +203,7 @@ function japesDiddySwitch()
 end
 
 function japesDiddyMountain()
-    return topOfMountain() and japesDiddySwitch() and japesHillside() and peanuts()
+    return topOfMountain() and japesDiddySwitch() and japesHillside() and peanuts() and japesHillside()
 end
 
 function canEnterTree()

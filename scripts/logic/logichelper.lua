@@ -1,485 +1,417 @@
--- Reworked Level Entry function to account for lobbies
--- Helper function to check if a function result indicates accessibility
-function isAccessible(result)
-    return result == true or result == AccessibilityLevel.Normal or result == AccessibilityLevel.SequenceBreak
-end
+-- Level Entry Logic
 
--- Helper function to determine if a result is a sequence break
-function isSequenceBreak(result)
-    return result == AccessibilityLevel.SequenceBreak
-end
-
-function canEnterLevel(levels, ignoreBlocker)
-    local finalResult = false
-    
-    for _, level in ipairs(levels) do
-        local levelCode = level[1]
-        local blockerCode = level[2]
-        local keys = level[3]
-
-        -- Check if the level is accessible
-        if has(levelCode) then
-            -- Skip blocker check if ignoreBlocker is true
-            if ignoreBlocker or canEnterWithBlocker(levelCode, blockerCode) then
-                -- Check keys if they are required (but ignore keys if openlobbies is enabled)
-                if not keys then
-                    return true
-                elseif type(keys) == "table" then
-                    local allKeysPresent = AccessibilityLevel.Normal
-                    if has("openlobbies") then
-                        -- When openlobbies is enabled, only check for ability requirements, not key requirements
-                        for _, item in ipairs(keys) do
-                            if not string.match(tostring(item), "^k%d+$") then
-                                if type(item) == "function" then
-                                    if not item() then
-                                        allKeysPresent = AccessibilityLevel.None
-                                        break
-                                    end
-                                elseif not has(item) then
-                                    allKeysPresent = AccessibilityLevel.None
-                                    break
-                                end
-                            end
-                        end                    else
-                        -- Normal logic - check all requirements including keys
-                        for _, item in ipairs(keys) do
-                            if type(item) == "function" then
-                                local result = item()
-                                if result == false or result == AccessibilityLevel.None then
-                                    allKeysPresent = AccessibilityLevel.None
-                                    break
-                                end
-                                -- If we have any sequence breaks, we'll mark this as a sequence break
-                                if result == AccessibilityLevel.SequenceBreak and allKeysPresent ~= AccessibilityLevel.SequenceBreak then
-                                    allKeysPresent = AccessibilityLevel.SequenceBreak
-                                end
-                            elseif not has(item) then
-                                allKeysPresent = AccessibilityLevel.None
-                                break
-                            end
-                        end
-                    end
-                    if allKeysPresent == true then
-                        return true
-                    elseif allKeysPresent == AccessibilityLevel.SequenceBreak then
-                        return AccessibilityLevel.SequenceBreak
-                    end
-                else
-                    -- Single requirement case (e.g. "k1")
-                    if type(keys) == "function" then
-                        -- If it's a function, just call it directly
-                        local result = keys()
-                        if result == true or result == AccessibilityLevel.Normal then
-                            return true
-                        elseif result == AccessibilityLevel.SequenceBreak then
-                            return AccessibilityLevel.SequenceBreak
-                        end
-                    elseif has("openlobbies") and string.match(keys, "^k%d+$") then
-                        -- Ignore key requirements with openlobbies
-                        return true
-                    elseif has(keys) then
-                        return true
-                    end
-                end
-            end
-        end
+function bLocker1()
+    local blockerCount = Tracker:ProviderCountForCode("blocker1")
+    if blockerCount < 1 then
+        return true
+    else
+        return Tracker:ProviderCountForCode("gb") >= blockerCount
     end
-    return false
 end
 
--- Japes
+function bLocker2()
+    local blockerCount = Tracker:ProviderCountForCode("blocker2")
+    if blockerCount < 1 then
+        return true
+    else
+        return Tracker:ProviderCountForCode("gb") >= blockerCount
+    end
+end
+
+function bLocker3()
+    local blockerCount = Tracker:ProviderCountForCode("blocker3")
+    if blockerCount < 1 then
+        return true
+    else
+        return Tracker:ProviderCountForCode("gb") >= blockerCount
+    end
+end
+
+function bLocker4()
+    local blockerCount = Tracker:ProviderCountForCode("blocker4")
+    if blockerCount < 1 then
+        return true
+    else
+        return Tracker:ProviderCountForCode("gb") >= blockerCount
+    end
+end
+
+function bLocker5()
+    local blockerCount = Tracker:ProviderCountForCode("blocker5")
+    if blockerCount < 1 then
+        return true
+    else
+        return Tracker:ProviderCountForCode("gb") >= blockerCount
+    end
+end
+
+function bLocker6()
+    local blockerCount = Tracker:ProviderCountForCode("blocker6")
+    if blockerCount < 1 then
+        return true
+    else
+        return Tracker:ProviderCountForCode("gb") >= blockerCount
+    end
+end
+
+function bLocker7()
+    local blockerCount = Tracker:ProviderCountForCode("blocker7")
+    if blockerCount < 1 then
+        return true
+    else
+        return Tracker:ProviderCountForCode("gb") >= blockerCount
+    end
+end
+
+function bLocker8()
+    local blockerCount = Tracker:ProviderCountForCode("blocker8")
+    if blockerCount < 1 then
+        return true
+    else
+        return Tracker:ProviderCountForCode("gb") >= blockerCount
+    end
+end
+
 function canEnterJapesLobby()
-    return canEnterLevel({
-        {"l1_japes", "blocker1"},
-        {"l2_japes", "blocker2", "k1"},
-        {"l3_japes", "blocker3", "k2"},
-        {"l4_japes", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_japes", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_japes", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_japes", "blocker7", "k5"}
-    }, true)
+    if has("l1_japes") then
+        return true
+    elseif has("l2_japes") then
+        return has("k1") or has("openlobbies")
+    elseif has("l3_japes") then
+        return ((has("k2") or has("openlobbies")))
+    elseif has("l4_japes") then
+        return (((has("k2") or has("openlobbies")))) and has("dive")
+    elseif has("l5_japes") then
+        return has("k4") or moonkicks() or has("openlobbies")
+    elseif has("l6_japes") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move then
+            return AccessibilityLevel.Normal
+        elseif key and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_japes") then
+        return has("k5") or has("openlobbies")
+    end
 end
 
 function canEnterJapes()
-    return canEnterLevel({
-        {"l1_japes", "blocker1"},
-        {"l2_japes", "blocker2", "k1"},
-        {"l3_japes", "blocker3", "k2"},
-        {"l4_japes", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_japes", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_japes", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            return false
-        end},
-        {"l7_japes", "blocker7", "k5"}
-    }, false)
+    if has("l1_japes") then
+        return bLocker1()
+    elseif has("l2_japes") then
+        return (has("k1") or has("openlobbies")) and bLocker2()
+    elseif has("l3_japes") then
+        return (((has("k2") or has("openlobbies")))) and bLocker3()
+    elseif has("l4_japes") then
+        return (((has("k2") or has("openlobbies")))) and has("dive") and bLocker4()
+    elseif has("l5_japes") then
+        return (has("k4") or moonkicks() or has("openlobbies")) and bLocker5()
+    elseif has("l6_japes") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move and bLocker6() then
+            return AccessibilityLevel.Normal
+        elseif key and bLocker6() and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_japes") then
+        return (has("k5") or has("openlobbies")) and bLocker7()
+    end
 end
 
--- Aztec
 function canEnterAztecLobby()
-    return canEnterLevel({
-        {"l1_aztec", "blocker1"},
-        {"l2_aztec", "blocker2", "k1"},
-        {"l3_aztec", "blocker3", "k2"},
-        {"l4_aztec", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_aztec", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_aztec", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_aztec", "blocker7", "k5"}
-    }, true)
+    if has("l1_aztec") then
+        return true
+    elseif has("l2_aztec") then
+        return has("k1") or has("openlobbies")
+    elseif has("l3_aztec") then
+        return ((has("k2") or has("openlobbies")))
+    elseif has("l4_aztec") then
+        return (((has("k2") or has("openlobbies")))) and has("dive")
+    elseif has("l5_aztec") then
+        return has("k4") or moonkicks() or has("openlobbies")
+    elseif has("l6_aztec") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move then
+            return AccessibilityLevel.Normal
+        elseif key and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_aztec") then
+        return has("k5") or has("openlobbies")
+    end
 end
 
 function canEnterAztec()
-    return canEnterLevel({
-        {"l1_aztec", "blocker1"},
-        {"l2_aztec", "blocker2", "k1"},
-        {"l3_aztec", "blocker3", "k2"},
-        {"l4_aztec", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_aztec", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_aztec", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_aztec", "blocker7", "k5"}
-    }, false)
+    if has("l1_aztec") then
+        return bLocker1()
+    elseif has("l2_aztec") then
+        return (has("k1") or has("openlobbies")) and bLocker2()
+    elseif has("l3_aztec") then
+        return (((has("k2") or has("openlobbies")))) and bLocker3()
+    elseif has("l4_aztec") then
+        return (((has("k2") or has("openlobbies")))) and has("dive") and bLocker4()
+    elseif has("l5_aztec") then
+        return (has("k4") or moonkicks() or has("openlobbies")) and bLocker5()
+    elseif has("l6_aztec") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move and bLocker6() then
+            return AccessibilityLevel.Normal
+        elseif key and bLocker6() and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_aztec") then
+        return (has("k5") or has("openlobbies")) and bLocker7()
+    end
 end
 
--- Factory
 function canEnterFactoryLobby()
-    return canEnterLevel({
-        {"l1_factory", "blocker1"},
-        {"l2_factory", "blocker2", "k1"},
-        {"l3_factory", "blocker3", "k2"},
-        {"l4_factory", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_factory", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_factory", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_factory", "blocker7", "k5"}
-    }, true)
+    if has("l1_factory") then
+        return true
+    elseif has("l2_factory") then
+        return has("k1") or has("openlobbies")
+    elseif has("l3_factory") then
+        return ((has("k2") or has("openlobbies")))
+    elseif has("l4_factory") then
+        return (((has("k2") or has("openlobbies")))) and has("dive")
+    elseif has("l5_factory") then
+        return has("k4") or has("openlobbies") or moonkicks()
+    elseif has("l6_factory") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move then
+            return AccessibilityLevel.Normal
+        elseif key and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_factory") then
+        return has("k5") or has("openlobbies")
+    end
 end
 
 function canEnterFactory()
-    return canEnterLevel({
-        {"l1_factory", "blocker1"},
-        {"l2_factory", "blocker2", "k1"},
-        {"l3_factory", "blocker3", "k2"},
-        {"l4_factory", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_factory", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_factory", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_factory", "blocker7", "k5"}
-    }, false)
+    if has("l1_factory") then
+        return bLocker1()
+    elseif has("l2_factory") then
+        return (has("k1") or has("openlobbies")) and bLocker2()
+    elseif has("l3_factory") then
+        return (((has("k2") or has("openlobbies")))) and bLocker3()
+    elseif has("l4_factory") then
+        return (((has("k2") or has("openlobbies")))) and has("dive") and bLocker4()
+    elseif has("l5_factory") then
+        return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
+    elseif has("l6_factory") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move and bLocker6() then
+            return AccessibilityLevel.Normal
+        elseif key and bLocker6() and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_factory") then
+        return (has("k5") or has("openlobbies")) and bLocker7()
+    end
 end
 
--- Galleon
 function canEnterGalleonLobby()
-    return canEnterLevel({
-        {"l1_galleon", "blocker1"},
-        {"l2_galleon", "blocker2", "k1"},
-        {"l3_galleon", "blocker3", "k2"},
-        {"l4_galleon", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_galleon", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_galleon", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_galleon", "blocker7", "k5"}
-    }, true)
+    if has("l1_galleon") then
+        return true
+    elseif has("l2_galleon") then
+        return has("k1") or has("openlobbies")
+    elseif has("l3_galleon") then
+        return ((has("k2") or has("openlobbies")))
+    elseif has("l4_galleon") then
+        return (((has("k2") or has("openlobbies")))) and has("dive")
+    elseif has("l5_galleon") then
+        return has("k4") or has("openlobbies") or moonkicks()
+    elseif has("l6_galleon") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move then
+            return AccessibilityLevel.Normal
+        elseif key and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_galleon") then
+        return has("k5") or has("openlobbies")
+    end
 end
 
 function canEnterGalleon()
-    return canEnterLevel({
-        {"l1_galleon", "blocker1"},
-        {"l2_galleon", "blocker2", "k1"},
-        {"l3_galleon", "blocker3", "k2"},
-        {"l4_galleon", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_galleon", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_galleon", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_galleon", "blocker7", "k5"}
-    }, false)
+    if has("l1_galleon") then
+        return bLocker1()
+    elseif has("l2_galleon") then
+        return (has("k1") or has("openlobbies")) and bLocker2()
+    elseif has("l3_galleon") then
+        return (((has("k2") or has("openlobbies")))) and bLocker3()
+    elseif has("l4_galleon") then
+        return (((has("k2") or has("openlobbies")))) and has("dive") and bLocker4()
+    elseif has("l5_galleon") then
+        return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
+    elseif has("l6_galleon") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move and bLocker6() then
+            return AccessibilityLevel.Normal
+        elseif key and bLocker6() and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_galleon") then
+        return (has("k5") or has("openlobbies")) and bLocker7()
+    end
 end
 
--- Forest
 function canEnterForestLobby()
-    return canEnterLevel({
-        {"l1_forest", "blocker1"},
-        {"l2_forest", "blocker2", "k1"},
-        {"l3_forest", "blocker3", "k2"},
-        {"l4_forest", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_forest", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_forest", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_forest", "blocker7", "k5"}
-    }, true)
+    if has("l1_forest") then
+        return true
+    elseif has("l2_forest") then
+        return has("k1") or has("openlobbies")
+    elseif has("l3_forest") then
+        return ((has("k2") or has("openlobbies")))
+    elseif has("l4_forest") then
+        return (((has("k2") or has("openlobbies")))) and has("dive")
+    elseif has("l5_forest") then
+        return has("k4") or has("openlobbies") or moonkicks()
+    elseif has("l6_forest") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move then
+            return AccessibilityLevel.Normal
+        elseif key and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_forest") then
+        return has("k5") or has("openlobbies")
+    end
 end
 
 function canEnterForest()
-    return canEnterLevel({
-        {"l1_forest", "blocker1"},
-        {"l2_forest", "blocker2", "k1"},
-        {"l3_forest", "blocker3", "k2"},
-        {"l4_forest", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_forest", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_forest", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_forest", "blocker7", "k5"}
-    }, false)
+    if has("l1_forest") then
+        return bLocker1()
+    elseif has("l2_forest") then
+        return (has("k1") or has("openlobbies")) and bLocker2()
+    elseif has("l3_forest") then
+        return ((has("k2") or has("openlobbies"))) and bLocker3()
+    elseif has("l4_forest") then
+        return ((has("k2") or has("openlobbies"))) and has("dive") and bLocker4()
+    elseif has("l5_forest") then
+        return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
+    elseif has("l6_forest") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move and bLocker6() then
+            return AccessibilityLevel.Normal
+        elseif key and bLocker6() and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_forest") then
+        return (has("k5") or has("openlobbies")) and bLocker7()
+    end
 end
 
--- Caves
 function canEnterCavesLobby()
-    return canEnterLevel({
-        {"l1_caves", "blocker1"},
-        {"l2_caves", "blocker2", "k1"},
-        {"l3_caves", "blocker3", "k2"},
-        {"l4_caves", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_caves", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_caves", "blocker6", "k5", function() 
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_caves", "blocker7", "k5"}
-    }, true)
+    if has("l1_caves") then
+        return true
+    elseif has("l2_caves") then
+        return has("k1") or has("openlobbies")
+    elseif has("l3_caves") then
+        return (has("k2") or has("openlobbies"))
+    elseif has("l4_caves") then
+        return ((has("k2") or has("openlobbies"))) and has("dive")
+    elseif has("l5_caves") then
+        return has("k4") or has("openlobbies") or moonkicks()
+    elseif has("l6_caves") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move then
+            return AccessibilityLevel.Normal
+        elseif key and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_caves") then
+        return has("k5") or has("openlobbies")
+    end
 end
 
 function canEnterCaves()
-    return canEnterLevel({
-        {"l1_caves", "blocker1"},
-        {"l2_caves", "blocker2", "k1"},
-        {"l3_caves", "blocker3", "k2"},
-        {"l4_caves", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_caves", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_caves", "blocker6", function() 
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_caves", "blocker7", "k5"}
-    }, false)
+    if has("l1_caves") then
+        return bLocker1()
+    elseif has("l2_caves") then
+        return (has("k1") or has("openlobbies")) and bLocker2()
+    elseif has("l3_caves") then
+        return (has("k2") or has("openlobbies")) and bLocker3()
+    elseif has("l4_caves") then
+        return (has("k2") or has("openlobbies")) and has("dive") and bLocker4()
+    elseif has("l5_caves") then
+        return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
+    elseif has("l6_caves") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move and bLocker6() then
+            return AccessibilityLevel.Normal
+        elseif key and bLocker6() and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_caves") then
+        return (has("k5") or has("openlobbies")) and bLocker7()
+    end
 end
 
--- Castle
 function canEnterCastleLobby()
-    return canEnterLevel({
-        {"l1_castle", "blocker1"},
-        {"l2_castle", "blocker2", "k1"},
-        {"l3_castle", "blocker3", "k2"},
-        {"l4_castle", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_castle", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_castle", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_castle", "blocker7", "k5"}
-    }, true)
+    if has("l1_castle") then
+        return true
+    elseif has("l2_castle") then
+        return has("k1") or has("openlobbies")
+    elseif has("l3_castle") then
+        return has("k2") or has("openlobbies")
+    elseif has("l4_castle") then
+        return (has("k2") or has("openlobbies")) and has("dive") 
+    elseif has("l5_castle") then
+        return has("k4") or has("openlobbies") or moonkicks()
+    elseif has("l6_castle") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move then
+            return AccessibilityLevel.Normal
+        elseif key and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_castle") then
+        return has("k5") or has("openlobbies")
+    end
 end
 
 function canEnterCastle()
-    return canEnterLevel({
-        {"l1_castle", "blocker1"},
-        {"l2_castle", "blocker2", "k1"},
-        {"l3_castle", "blocker3", "k2"},
-        {"l4_castle", "blocker4", function() return (has("k2") and has("dive")) or phaseswim() end},
-        {"l5_castle", "blocker5", function() return has("k4") or moonkicks() end},
-        {"l6_castle", "blocker6", "k5", function()
-            if has("k5") and (twirl() or has("donkey") or has("chunky")) or moonkicks() then
-                return true
-            end
-            
-            if has("k5") and (has("diddy") or has("lanky")) then
-                local advancedplatform = avp()
-                if advancedplatform == AccessibilityLevel.Normal then
-                    return true
-                elseif advancedplatform == AccessibilityLevel.SequenceBreak then
-                    return advancedplatform
-                end
-            end
-            
-            return false
-        end},
-        {"l7_castle", "blocker7", "k5"}
-    }, false)
+    if has("l1_castle") then
+        return bLocker1()
+    elseif has("l2_castle") then
+        return (has("k1") or has("openlobbies")) and bLocker2()
+    elseif has("l3_castle") then
+        return (has("k2") or has("openlobbies")) and bLocker3()
+    elseif has("l4_castle") then
+        return (has("k2") or has("openlobbies")) and has("dive") and bLocker4()
+    elseif has("l5_castle") then
+        return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
+    elseif has("l6_castle") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move and bLocker6() then
+            return AccessibilityLevel.Normal
+        elseif key and bLocker6() and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_castle") then
+        return (has("k5") or has("openlobbies")) and bLocker7()
+    end
 end
 
 function canEnterHelmLobby()
-    return canEnterLevel({
-        {"level8", "blocker8", {"k6", "k7"}}
-    }, true)
-    and canActivateIslesMonkeyport()
+    return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
 end
 
 function canEnterHelm()
-    return canEnterLevel({
-        {"level8", "blocker8", {"k6", "k7"}}
-    }, false)
-    and canActivateIslesMonkeyport() and ((canActivateIslesHelmLobbyGone() and has("vine")) or moonkicks())
+    return canEnterHelmLobby() and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8()
 end

@@ -158,7 +158,8 @@
                         "name": "Training Grounds Banana Hoard Patch"
                     },
                     {
-                        "ref": "DK Isles/K. Lumsy Prison/Isles Dirt: Back of Prison"
+                        "ref": "DK Isles/K. Lumsy Prison/Isles Dirt: Back of Prison",
+                        "name": "Isles Back of Prison Patch"
                     },
                     {
                         "ref": "DK Isles/Isles Dirt: Under Caves Lobby/Rainbow Coin",
@@ -257,7 +258,8 @@
                         "name": "Isles Cranky Chunky"
                     },
                     {
-                        "ref": "DK Isles/Banana Fairy Island/The Banana Fairy's Gift"
+                        "ref": "DK Isles/Banana Fairy Island/The Banana Fairy's Gift",
+                        "name": "The Banana Fairy's Gift"
                     }
                 ],
                 "map_locations": [
@@ -364,19 +366,24 @@
                 "name": "Japes Medals",
                 "sections": [
                     {
-                        "ref": "Jungle Japes/Medals/Japes DK Medal"
+                        "ref": "Jungle Japes/Medals/Japes DK Medal",
+                        "name": "Japes DK Medal"
                     },
                     {
-                        "ref": "Jungle Japes/Medals/Japes Diddy Medal"
+                        "ref": "Jungle Japes/Medals/Japes Diddy Medal",
+                        "name": "Japes Diddy Medal"
                     },
                     {
-                        "ref": "Jungle Japes/Medals/Japes Lanky Medal"
+                        "ref": "Jungle Japes/Medals/Japes Lanky Medal",
+                        "name": "Japes Lanky Medal"
                     },
                     {
-                        "ref": "Jungle Japes/Medals/Japes Tiny Medal"
+                        "ref": "Jungle Japes/Medals/Japes Tiny Medal",
+                        "name": "Japes Tiny Medal"
                     },
                     {
-                        "ref": "Jungle Japes/Medals/Japes Chunky Medal"
+                        "ref": "Jungle Japes/Medals/Japes Chunky Medal",
+                        "name": "Japes Chunky Medal"
                     },
                     {
                         "ref": "Jungle Japes/Medals/Boss",
@@ -559,7 +566,8 @@
                         "name": "Aztec DK Sealed Quicksand Tunnel"
                     },
                     {
-                        "ref": "Angry Aztec/5 Door Temple/Aztec DK 5DT"
+                        "ref": "Angry Aztec/5 Door Temple/Aztec DK 5DT",
+                        "name": "Aztec DK 5DT"
                     },
                     {
                         "ref": "Angry Aztec/Aztec Free Lanky Item/Golden Banana",
@@ -578,14 +586,16 @@
                         "name": "Aztec Diddy Vulture Race"
                     },
                     {
-                        "ref": "Angry Aztec/5 Door Temple/Aztec Diddy 5DT"
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Diddy 5DT",
+                        "name": "Aztec Diddy 5DT"
                     },
                     {
                         "ref": "Angry Aztec/Aztec Lanky Vulture Shooting/Golden Banana",
                         "name": "Aztec Lanky Vulture Shooting"
                     },
                     {
-                        "ref": "Angry Aztec/5 Door Temple/Aztec Lanky 5DT"
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Lanky 5DT",
+                        "name": "Aztec Lanky 5DT" 
                     },
                     {
                         "ref": "Angry Aztec/Aztec Lanky Llama Temple Barrel/Golden Banana",
@@ -600,7 +610,8 @@
                         "name": "Aztec Tiny Klaptrap Room"
                     },
                     {
-                        "ref": "Angry Aztec/5 Door Temple/Aztec Tiny 5DT"
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Tiny 5DT",
+                        "name": "Aztec Tiny 5DT"
                     },
                     {
                         "ref": "Angry Aztec/Aztec Tiny Beetle Race/Golden Banana",
@@ -623,7 +634,8 @@
                         "name": "Aztec Chunky Giant Caged Barrel"
                     },
                     {
-                        "ref": "Angry Aztec/5 Door Temple/Aztec Chunky 5DT"
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Chunky 5DT",
+                        "name": "Aztec Chunky 5DT"
                     }
                 ],
                 "map_locations": [
@@ -638,19 +650,24 @@
                 "name": "Aztec Medals",
                 "sections": [
                     {
-                        "ref": "Angry Aztec/Medals/Aztec DK Medal"
+                        "ref": "Angry Aztec/Medals/Aztec DK Medal",
+                        "name": "Aztec DK Medal"
                     },
                     {
-                        "ref": "Angry Aztec/Medals/Aztec Diddy Medal"
+                        "ref": "Angry Aztec/Medals/Aztec Diddy Medal",
+                        "name": "Aztec Diddy Medal"
                     },
                     {
-                        "ref": "Angry Aztec/Medals/Aztec Lanky Medal"
+                        "ref": "Angry Aztec/Medals/Aztec Lanky Medal",
+                        "name": "Aztec Lanky Medal"
                     },
                     {
-                        "ref": "Angry Aztec/Medals/Aztec Tiny Medal"
+                        "ref": "Angry Aztec/Medals/Aztec Tiny Medal",
+                        "name": "Aztec Tiny Medal"
                     },
                     {
-                        "ref": "Angry Aztec/Medals/Aztec Chunky Medal"
+                        "ref": "Angry Aztec/Medals/Aztec Chunky Medal",
+                        "name": "Aztec Chunky Medal"
                     },
                     {
                         "ref": "Angry Aztec/Medals/Boss",
@@ -709,7 +726,8 @@
                         "name": "Aztec Dirt: Oasis"
                     },
                     {
-                        "ref": "Angry Aztec/5 Door Temple/Aztec Dirt: Chunky 5DT"
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Dirt: Chunky 5DT",
+                        "name": "Aztec Dirt: Chunky 5DT"
                     }
                 ],
                 "map_locations": [
@@ -740,7 +758,8 @@
                         "name": "Aztec Kasplat: Hunky Chunky Barrel"
                     },
                     {
-                        "ref": "Angry Aztec/5 Door Temple/Aztec Kasplat: Chunky 5DT"
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Kasplat: Chunky 5DT",
+                        "name": "Aztec Kasplat: Chunky 5DT"
                     }
                 ],
                 "map_locations": [
@@ -939,26 +958,31 @@
                     }
                 ]
             },
-            {
-                "name": "Factory Medals",
+            {                "name": "Factory Medals",
                 "sections": [
                     {
-                        "ref": "Frantic Factory/Medals/Factory DK Medal"
+                        "ref": "Frantic Factory/Medals/Factory DK Medal",
+                        "name": "Factory DK Medal"
                     },
                     {
-                        "ref": "Frantic Factory/Medals/Factory Diddy Medal"
+                        "ref": "Frantic Factory/Medals/Factory Diddy Medal",
+                        "name": "Factory Diddy Medal"
                     },
                     {
-                        "ref": "Frantic Factory/Medals/Factory Lanky Medal"
+                        "ref": "Frantic Factory/Medals/Factory Lanky Medal",
+                        "name": "Factory Lanky Medal"
                     },
                     {
-                        "ref": "Frantic Factory/Medals/Factory Tiny Medal"
+                        "ref": "Frantic Factory/Medals/Factory Tiny Medal",
+                        "name": "Factory Tiny Medal"
                     },
                     {
-                        "ref": "Frantic Factory/Medals/Factory Chunky Medal"
+                        "ref": "Frantic Factory/Medals/Factory Chunky Medal",
+                        "name": "Factory Chunky Medal"
                     },
                     {
-                        "ref": "Frantic Factory/Medals/Boss"
+                        "ref": "Frantic Factory/Medals/Boss",
+                        "name": "Factory Boss"
                     }
                 ],
                 "map_locations": [
@@ -1093,49 +1117,64 @@
                 "name": "Factory Shops",
                 "sections": [
                     {
-                        "ref": "Factory Shops/Factory Cranky/Cranky DK"
+                        "ref": "Factory Shops/Factory Cranky/Cranky DK",
+                        "name": "Factory Cranky DK"
                     },
                     {
-                        "ref": "Factory Shops/Factory Cranky/Cranky Diddy"
+                        "ref": "Factory Shops/Factory Cranky/Cranky Diddy",
+                        "name": "Factory Cranky Diddy"
                     },
                     {
-                        "ref": "Factory Shops/Factory Cranky/Cranky Lanky"
+                        "ref": "Factory Shops/Factory Cranky/Cranky Lanky",
+                        "name": "Factory Cranky Lanky"
                     },
                     {
-                        "ref": "Factory Shops/Factory Cranky/Cranky Tiny"
+                        "ref": "Factory Shops/Factory Cranky/Cranky Tiny",
+                        "name": "Factory Cranky Tiny"
                     },
                     {
-                        "ref": "Factory Shops/Factory Cranky/Cranky Chunky"
+                        "ref": "Factory Shops/Factory Cranky/Cranky Chunky",
+                        "name": "Factory Cranky Chunky"
                     },
                     {
-                        "ref": "Factory Shops/Factory Funky/Funky DK"
+                        "ref": "Factory Shops/Factory Funky/Funky DK",
+                        "name": "Factory Funky DK"
                     },
                     {
-                        "ref": "Factory Shops/Factory Funky/Funky Diddy"
+                        "ref": "Factory Shops/Factory Funky/Funky Diddy",
+                        "name": "Factory Funky Diddy"
                     },
                     {
-                        "ref": "Factory Shops/Factory Funky/Funky Lanky"
+                        "ref": "Factory Shops/Factory Funky/Funky Lanky",
+                        "name": "Factory Funky Lanky"
                     },
                     {
-                        "ref": "Factory Shops/Factory Funky/Funky Tiny"
+                        "ref": "Factory Shops/Factory Funky/Funky Tiny",
+                        "name": "Factory Funky Tiny"
                     },
                     {
-                        "ref": "Factory Shops/Factory Funky/Funky Chunky"
+                        "ref": "Factory Shops/Factory Funky/Funky Chunky",
+                        "name": "Factory Funky Chunky"
                     },
                     {
-                        "ref": "Factory Shops/Factory Candy/Candy DK"
+                        "ref": "Factory Shops/Factory Candy/Candy DK",
+                        "name": "Factory Candy DK"
                     },
                     {
-                        "ref": "Factory Shops/Factory Candy/Candy Diddy"
+                        "ref": "Factory Shops/Factory Candy/Candy Diddy",
+                        "name": "Factory Candy Diddy"
                     },
                     {
-                        "ref": "Factory Shops/Factory Candy/Candy Lanky"
+                        "ref": "Factory Shops/Factory Candy/Candy Lanky",
+                        "name": "Factory Candy Lanky"
                     },
                     {
-                        "ref": "Factory Shops/Factory Candy/Candy Tiny"
+                        "ref": "Factory Shops/Factory Candy/Candy Tiny",
+                        "name": "Factory Candy Tiny"
                     },
                     {
-                        "ref": "Factory Shops/Factory Candy/Candy Chunky"
+                        "ref": "Factory Shops/Factory Candy/Candy Chunky",
+                        "name": "Factory Candy Chunky"
                     }
                 ],
                 "map_locations": [
@@ -1241,19 +1280,24 @@
                 "name": "Galleon Medals",
                 "sections": [
                     {
-                        "ref": "Gloomy Galleon/Medals/Galleon DK Medal"
+                        "ref": "Gloomy Galleon/Medals/Galleon DK Medal",
+                        "name": "Galleon DK Medal"
                     },
                     {
-                        "ref": "Gloomy Galleon/Medals/Galleon Diddy Medal"
+                        "ref": "Gloomy Galleon/Medals/Galleon Diddy Medal",
+                        "name": "Galleon Diddy Medal"
                     },
                     {
-                        "ref": "Gloomy Galleon/Medals/Galleon Lanky Medal"
+                        "ref": "Gloomy Galleon/Medals/Galleon Lanky Medal",
+                        "name": "Galleon Lanky Medal"
                     },
                     {
-                        "ref": "Gloomy Galleon/Medals/Galleon Tiny Medal"
+                        "ref": "Gloomy Galleon/Medals/Galleon Tiny Medal",
+                        "name": "Galleon Tiny Medal"
                     },
                     {
-                        "ref": "Gloomy Galleon/Medals/Galleon Chunky Medal"
+                        "ref": "Gloomy Galleon/Medals/Galleon Chunky Medal",
+                        "name": "Galleon Chunky Medal"
                     },
                     {
                         "ref": "Gloomy Galleon/Medals/Boss",
@@ -1359,19 +1403,24 @@
                         "name": "Galleon Crate: Near Cactus"
                     },
                     {
-                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Far Left Clam"
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Far Left Clam",
+                        "name": "Treasure Chest Far Left Clam"
                     },
                     {
-                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Center Clam"
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Center Clam",
+                        "name": "Treasure Chest Center Clam"
                     },
                     {
-                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Far Right Clam"
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Far Right Clam",
+                        "name": "Treasure Chest Far Right Clam"
                     },
                     {
-                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Close Right Clam"
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Close Right Clam",
+                        "name": "Treasure Chest Close Right Clam"
                     },
                     {
-                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Close Left Clam"
+                        "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Close Left Clam",
+                        "name": "Treasure Chest Close Left Clam"
                     }
                 ],
                 "map_locations": [
@@ -1386,49 +1435,64 @@
                 "name": "Galleon Shops",
                 "sections": [
                     {
-                        "ref": "Galleon Shops/Galleon Cranky/Cranky DK"
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky DK",
+                        "name": "Galleon Cranky DK"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Cranky/Cranky Diddy"
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky Diddy",
+                        "name": "Galleon Cranky Diddy"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Cranky/Cranky Lanky"
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky Lanky",
+                        "name": "Galleon Cranky Lanky"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Cranky/Cranky Tiny"
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky Tiny",
+                        "name": "Galleon Cranky Tiny"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Cranky/Cranky Chunky"
+                        "ref": "Galleon Shops/Galleon Cranky/Cranky Chunky",
+                        "name": "Galleon Cranky Chunky"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Funky/Funky DK"
+                        "ref": "Galleon Shops/Galleon Funky/Funky DK",
+                        "name": "Galleon Funky DK"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Funky/Funky Diddy"
+                        "ref": "Galleon Shops/Galleon Funky/Funky Diddy",
+                        "name": "Galleon Funky Diddy"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Funky/Funky Lanky"
+                        "ref": "Galleon Shops/Galleon Funky/Funky Lanky",
+                        "name": "Galleon Funky Lanky"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Funky/Funky Tiny"
+                        "ref": "Galleon Shops/Galleon Funky/Funky Tiny",
+                        "name": "Galleon Funky Tiny"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Funky/Funky Chunky"
+                        "ref": "Galleon Shops/Galleon Funky/Funky Chunky",
+                        "name": "Galleon Funky Chunky"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Candy/Candy DK"
+                        "ref": "Galleon Shops/Galleon Candy/Candy DK",
+                        "name": "Galleon Candy DK"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Candy/Candy Diddy"
+                        "ref": "Galleon Shops/Galleon Candy/Candy Diddy",
+                        "name": "Galleon Candy Diddy"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Candy/Candy Lanky"
+                        "ref": "Galleon Shops/Galleon Candy/Candy Lanky",
+                        "name": "Galleon Candy Lanky"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Candy/Candy Tiny"
+                        "ref": "Galleon Shops/Galleon Candy/Candy Tiny",
+                        "name": "Galleon Candy Tiny"
                     },
                     {
-                        "ref": "Galleon Shops/Galleon Candy/Candy Chunky"
+                        "ref": "Galleon Shops/Galleon Candy/Candy Chunky",
+                        "name": "Galleon Candy Chunky"
                     }
                 ],
                 "map_locations": [
@@ -1439,15 +1503,15 @@
                     }
                 ]
             },
-            {
-                "name": "Forest GBs",
+            {                "name": "Forest GBs",
                 "sections": [
                     {
                         "ref": "Fungi Forest/Forest DK Baboon Blast/Golden Banana",
                         "name": "Forest DK Blast Course"
                     },
                     {
-                        "ref": "Fungi Forest/Inside the Mushroom/Forest DK Mushroom Cannons"
+                        "ref": "Fungi Forest/Inside the Mushroom/Forest DK Mushroom Cannons",
+                        "name": "Forest DK Mushroom Cannons"
                     },
                     {
                         "ref": "Fungi Forest/Forest DK Mill Levers/Golden Banana",
@@ -1468,9 +1532,9 @@
                     {
                         "ref": "Fungi Forest/Forest Diddy Winch Cage/Golden Banana",
                         "name": "Forest Diddy Winch Cage"
-                    },
-                    {
-                        "ref": "Fungi Forest/Dark Rafters/Forest Diddy Dark Rafters"
+                    },                    {
+                        "ref": "Fungi Forest/Dark Rafters/Forest Diddy Dark Rafters",
+                        "name": "Forest Diddy Dark Rafters"
                     },
                     {
                         "ref": "Fungi Forest/Forest Lanky Zinger Bounce/Golden Banana",
@@ -1487,15 +1551,15 @@
                     {
                         "ref": "Fungi Forest/Forest Lanky Attic Shooting/Golden Banana",
                         "name": "Forest Lanky Attic Shooting"
-                    },
-                    {
-                        "ref": "Fungi Forest/Inside the Mushroom/Forest Tiny Mushroom Barrel"
-                    },
-                    {
-                        "ref": "Fungi Forest/Forest Anthill/Forest Tiny Anthill Banana"
-                    },
-                    {
-                        "ref": "Fungi Forest/Forest Anthill/Forest Tiny Bean"
+                    },                    {
+                        "ref": "Fungi Forest/Inside the Mushroom/Forest Tiny Mushroom Barrel",
+                        "name": "Forest Tiny Mushroom Barrel"
+                    },                    {
+                        "ref": "Fungi Forest/Forest Anthill/Forest Tiny Anthill Banana",
+                        "name": "Forest Tiny Anthill Banana"
+                    },                    {
+                        "ref": "Fungi Forest/Forest Anthill/Forest Tiny Bean",
+                        "name": "Forest Tiny Bean"
                     },
                     {
                         "ref": "Fungi Forest/Forest Tiny Spider Boss/Golden Banana",
@@ -1530,23 +1594,27 @@
                     }
                 ]
             },
-            {
-                "name": "Forest Medals",
+            {                "name": "Forest Medals",
                 "sections": [
                     {
-                        "ref": "Fungi Forest/Medals/Forest DK Medal"
+                        "ref": "Fungi Forest/Medals/Forest DK Medal",
+                        "name": "Forest DK Medal"
                     },
                     {
-                        "ref": "Fungi Forest/Medals/Forest Diddy Medal"
+                        "ref": "Fungi Forest/Medals/Forest Diddy Medal",
+                        "name": "Forest Diddy Medal"
                     },
                     {
-                        "ref": "Fungi Forest/Medals/Forest Lanky Medal"
+                        "ref": "Fungi Forest/Medals/Forest Lanky Medal",
+                        "name": "Forest Lanky Medal"
                     },
                     {
-                        "ref": "Fungi Forest/Medals/Forest Tiny Medal"
+                        "ref": "Fungi Forest/Medals/Forest Tiny Medal",
+                        "name": "Forest Tiny Medal"
                     },
                     {
-                        "ref": "Fungi Forest/Medals/Forest Chunky Medal"
+                        "ref": "Fungi Forest/Medals/Forest Chunky Medal",
+                        "name": "Forest Chunky Medal"
                     },
                     {
                         "ref": "Fungi Forest/Medals/Boss",
@@ -1563,9 +1631,9 @@
             },
             {
                 "name": "Forest Fairies",
-                "sections": [
-                    {
-                        "ref": "Fungi Forest/Dark Rafters/Forest Fairy (Dark Rafters)"
+                "sections": [                    {
+                        "ref": "Fungi Forest/Dark Rafters/Forest Fairy (Dark Rafters)",
+                        "name": "Forest Fairy (Dark Rafters)"
                     },
                     {
                         "ref": "Fungi Forest/Forest Fairy (Thornvine Barn)/Fairy",
@@ -1582,9 +1650,9 @@
             },
             {
                 "name": "Forest Arena",
-                "sections": [
-                    {
-                        "ref": "Fungi Forest/Forest Battle Arena: High Ladder Platform/Crown"
+                "sections": [                    {
+                        "ref": "Fungi Forest/Forest Battle Arena: High Ladder Platform/Crown",
+                        "name": "Forest Battle Arena"
                     }
                 ],
                 "map_locations": [
@@ -1621,9 +1689,9 @@
                     {
                         "ref": "Fungi Forest/Forest Kasplat: Behind DK's Barn/Kasplat",
                         "name": "Forest Kasplat: Behind DK's Barn"
-                    },
-                    {
-                        "ref": "Fungi Forest/Inside the Mushroom/Forest Kasplat: Inside Giant Mushroom"
+                    },                    {
+                        "ref": "Fungi Forest/Inside the Mushroom/Forest Kasplat: Inside Giant Mushroom",
+                        "name": "Forest Kasplat: Inside Giant Mushroom"
                     },
                     {
                         "ref": "Fungi Forest/Forest Kasplat: Under Owl Tree/Kasplat",
@@ -1674,38 +1742,47 @@
                     }
                 ]
             },
-            {
-                "name": "Forest Shops",
+            {                "name": "Forest Shops",
                 "sections": [
                     {
-                        "ref": "Forest Shops/Forest Cranky/Cranky DK"
+                        "ref": "Forest Shops/Forest Cranky/Cranky DK",
+                        "name": "Forest Cranky DK"
                     },
                     {
-                        "ref": "Forest Shops/Forest Cranky/Cranky Diddy"
+                        "ref": "Forest Shops/Forest Cranky/Cranky Diddy",
+                        "name": "Forest Cranky Diddy"
                     },
                     {
-                        "ref": "Forest Shops/Forest Cranky/Cranky Lanky"
+                        "ref": "Forest Shops/Forest Cranky/Cranky Lanky",
+                        "name": "Forest Cranky Lanky"
                     },
                     {
-                        "ref": "Forest Shops/Forest Cranky/Cranky Tiny"
+                        "ref": "Forest Shops/Forest Cranky/Cranky Tiny",
+                        "name": "Forest Cranky Tiny"
                     },
                     {
-                        "ref": "Forest Shops/Forest Cranky/Cranky Chunky"
+                        "ref": "Forest Shops/Forest Cranky/Cranky Chunky",
+                        "name": "Forest Cranky Chunky"
                     },
                     {
-                        "ref": "Forest Shops/Forest Funky/Funky DK"
+                        "ref": "Forest Shops/Forest Funky/Funky DK",
+                        "name": "Forest Funky DK"
                     },
                     {
-                        "ref": "Forest Shops/Forest Funky/Funky Diddy"
+                        "ref": "Forest Shops/Forest Funky/Funky Diddy",
+                        "name": "Forest Funky Diddy"
                     },
                     {
-                        "ref": "Forest Shops/Forest Funky/Funky Lanky"
+                        "ref": "Forest Shops/Forest Funky/Funky Lanky",
+                        "name": "Forest Funky Lanky"
                     },
                     {
-                        "ref": "Forest Shops/Forest Funky/Funky Tiny"
+                        "ref": "Forest Shops/Forest Funky/Funky Tiny",
+                        "name": "Forest Funky Tiny"
                     },
                     {
-                        "ref": "Forest Shops/Forest Funky/Funky Chunky"
+                        "ref": "Forest Shops/Forest Funky/Funky Chunky",
+                        "name": "Forest Funky Chunky"
                     }
                 ],
                 "map_locations": [
@@ -1807,23 +1884,27 @@
                     }
                 ]
             },
-            {
-                "name": "Caves Medals",
+            {                "name": "Caves Medals",
                 "sections": [
                     {
-                        "ref": "Crystal Caves/Medals/Caves DK Medal"
+                        "ref": "Crystal Caves/Medals/Caves DK Medal",
+                        "name": "Caves DK Medal"
                     },
                     {
-                        "ref": "Crystal Caves/Medals/Caves Diddy Medal"
+                        "ref": "Crystal Caves/Medals/Caves Diddy Medal",
+                        "name": "Caves Diddy Medal"
                     },
                     {
-                        "ref": "Crystal Caves/Medals/Caves Lanky Medal"
+                        "ref": "Crystal Caves/Medals/Caves Lanky Medal",
+                        "name": "Caves Lanky Medal"
                     },
                     {
-                        "ref": "Crystal Caves/Medals/Caves Tiny Medal"
+                        "ref": "Crystal Caves/Medals/Caves Tiny Medal",
+                        "name": "Caves Tiny Medal"
                     },
                     {
-                        "ref": "Crystal Caves/Medals/Caves Chunky Medal"
+                        "ref": "Crystal Caves/Medals/Caves Chunky Medal",
+                        "name": "Caves Chunky Medal"
                     },
                     {
                         "ref": "Crystal Caves/Medals/Boss",
@@ -1860,9 +1941,9 @@
             },
             {
                 "name": "Caves Arena",
-                "sections": [
-                    {
-                        "ref": "Crystal Caves/Rotating Cabin/Caves Battle Arena"
+                "sections": [                    {
+                        "ref": "Crystal Caves/Rotating Cabin/Caves Battle Arena",
+                        "name": "Caves Battle Arena"
                     }
                 ],
                 "map_locations": [
@@ -1921,53 +2002,67 @@
                     }
                 ]
             },
-            {
-                "name": "Caves Shops",
+            {                "name": "Caves Shops",
                 "sections": [
                     {
-                        "ref": "Caves Shops/Caves Cranky/Cranky DK"
+                        "ref": "Caves Shops/Caves Cranky/Cranky DK",
+                        "name": "Caves Cranky DK"
                     },
                     {
-                        "ref": "Caves Shops/Caves Cranky/Cranky Diddy"
+                        "ref": "Caves Shops/Caves Cranky/Cranky Diddy",
+                        "name": "Caves Cranky Diddy"
                     },
                     {
-                        "ref": "Caves Shops/Caves Cranky/Cranky Lanky"
+                        "ref": "Caves Shops/Caves Cranky/Cranky Lanky",
+                        "name": "Caves Cranky Lanky"
                     },
                     {
-                        "ref": "Caves Shops/Caves Cranky/Cranky Tiny"
+                        "ref": "Caves Shops/Caves Cranky/Cranky Tiny",
+                        "name": "Caves Cranky Tiny"
                     },
                     {
-                        "ref": "Caves Shops/Caves Cranky/Cranky Chunky"
+                        "ref": "Caves Shops/Caves Cranky/Cranky Chunky",
+                        "name": "Caves Cranky Chunky"
                     },
                     {
-                        "ref": "Caves Shops/Caves Funky/Funky DK"
+                        "ref": "Caves Shops/Caves Funky/Funky DK",
+                        "name": "Caves Funky DK"
                     },
                     {
-                        "ref": "Caves Shops/Caves Funky/Funky Diddy"
+                        "ref": "Caves Shops/Caves Funky/Funky Diddy",
+                        "name": "Caves Funky Diddy"
                     },
                     {
-                        "ref": "Caves Shops/Caves Funky/Funky Lanky"
+                        "ref": "Caves Shops/Caves Funky/Funky Lanky",
+                        "name": "Caves Funky Lanky"
                     },
                     {
-                        "ref": "Caves Shops/Caves Funky/Funky Tiny"
+                        "ref": "Caves Shops/Caves Funky/Funky Tiny",
+                        "name": "Caves Funky Tiny"
                     },
                     {
-                        "ref": "Caves Shops/Caves Funky/Funky Chunky"
+                        "ref": "Caves Shops/Caves Funky/Funky Chunky",
+                        "name": "Caves Funky Chunky"
                     },
                     {
-                        "ref": "Caves Shops/Caves Candy/Candy DK"
+                        "ref": "Caves Shops/Caves Candy/Candy DK",
+                        "name": "Caves Candy DK"
                     },
                     {
-                        "ref": "Caves Shops/Caves Candy/Candy Diddy"
+                        "ref": "Caves Shops/Caves Candy/Candy Diddy",
+                        "name": "Caves Candy Diddy"
                     },
                     {
-                        "ref": "Caves Shops/Caves Candy/Candy Lanky"
+                        "ref": "Caves Shops/Caves Candy/Candy Lanky",
+                        "name": "Caves Candy Lanky"
                     },
                     {
-                        "ref": "Caves Shops/Caves Candy/Candy Tiny"
+                        "ref": "Caves Shops/Caves Candy/Candy Tiny",
+                        "name": "Caves Candy Tiny"
                     },
                     {
-                        "ref": "Caves Shops/Caves Candy/Candy Chunky"
+                        "ref": "Caves Shops/Caves Candy/Candy Chunky",
+                        "name": "Caves Candy Chunky"
                     }
                 ],
                 "map_locations": [
@@ -1978,11 +2073,11 @@
                     }
                 ]
             },
-            {
-                "name": "Castle GBs",
+            {                "name": "Castle GBs",
                 "sections": [
                     {
-                        "ref": "Creepy Castle/Inside the Tree/Castle DK Tree Sniping"
+                        "ref": "Creepy Castle/Inside the Tree/Castle DK Tree Sniping",
+                        "name": "Castle DK Tree Sniping"
                     },
                     {
                         "ref": "Creepy Castle/Castle DK Library/Golden Banana",
@@ -2015,12 +2110,12 @@
                     {
                         "ref": "Creepy Castle/Castle Lanky Tower/Golden Banana",
                         "name": "Castle Lanky Tower"
-                    },
-                    {
-                        "ref": "Creepy Castle/Greenhouse/Castle Lanky Greenhouse"
-                    },
-                    {
-                        "ref": "Creepy Castle/Mausoleum/Castle Lanky Mausoleum"
+                    },                    {
+                        "ref": "Creepy Castle/Greenhouse/Castle Lanky Greenhouse",
+                        "name": "Castle Lanky Greenhouse"
+                    },                    {
+                        "ref": "Creepy Castle/Mausoleum/Castle Lanky Mausoleum",
+                        "name": "Castle Lanky Mausoleum" 
                     },
                     {
                         "ref": "Creepy Castle/Castle Lanky Dungeon/Golden Banana",
@@ -2033,16 +2128,16 @@
                     {
                         "ref": "Creepy Castle/Castle Tiny Trashcan/Golden Banana",
                         "name": "Castle Tiny Trashcan"
-                    },
-                    {
-                        "ref": "Creepy Castle/Mausoleum/Castle Tiny Mausoleum"
+                    },                    {
+                        "ref": "Creepy Castle/Mausoleum/Castle Tiny Mausoleum",
+                        "name": "Castle Tiny Mausoleum"
                     },
                     {
                         "ref": "Creepy Castle/Castle Tiny Over Chasm/Golden Banana",
                         "name": "Castle Tiny Over Chasm"
-                    },
-                    {
-                        "ref": "Creepy Castle/Inside the Tree/Castle Chunky Tree Sniping Barrel"
+                    },                    {
+                        "ref": "Creepy Castle/Inside the Tree/Castle Chunky Tree Sniping Barrel",
+                        "name": "Castle Chunky Tree Sniping Barrel"
                     },
                     {
                         "ref": "Creepy Castle/Castle Chunky Shed/Golden Banana",
@@ -2065,23 +2160,27 @@
                     }
                 ]
             },
-            {
-                "name": "Castle Medals",
+            {                "name": "Castle Medals",
                 "sections": [
                     {
-                        "ref": "Creepy Castle/Medals/Castle DK Medal"
+                        "ref": "Creepy Castle/Medals/Castle DK Medal",
+                        "name": "Castle DK Medal"
                     },
                     {
-                        "ref": "Creepy Castle/Medals/Castle Diddy Medal"
+                        "ref": "Creepy Castle/Medals/Castle Diddy Medal",
+                        "name": "Castle Diddy Medal"
                     },
                     {
-                        "ref": "Creepy Castle/Medals/Castle Lanky Medal"
+                        "ref": "Creepy Castle/Medals/Castle Lanky Medal",
+                        "name": "Castle Lanky Medal"
                     },
                     {
-                        "ref": "Creepy Castle/Medals/Castle Tiny Medal"
+                        "ref": "Creepy Castle/Medals/Castle Tiny Medal",
+                        "name": "Castle Tiny Medal"
                     },
                     {
-                        "ref": "Creepy Castle/Medals/Castle Chunky Medal"
+                        "ref": "Creepy Castle/Medals/Castle Chunky Medal",
+                        "name": "Castle Chunky Medal"
                     },
                     {
                         "ref": "Creepy Castle/Medals/Boss",
@@ -2098,9 +2197,9 @@
             },
             {
                 "name": "Castle Fairies",
-                "sections": [
-                    {
-                        "ref": "Creepy Castle/Inside the Tree/Castle Fairy (Tree Sniping Room)"
+                "sections": [                    {
+                        "ref": "Creepy Castle/Inside the Tree/Castle Fairy (Tree Sniping Room)",
+                        "name": "Castle Fairy (Tree Sniping Room)"
                     },
                     {
                         "ref": "Creepy Castle/Castle Fairy (Near Car Race)/Fairy",
@@ -2117,9 +2216,9 @@
             },
             {
                 "name": "Castle Arena",
-                "sections": [
-                    {
-                        "ref": "Creepy Castle/Greenhouse/Castle Battle Arena (Greenhouse Center)"
+                "sections": [                    {
+                        "ref": "Creepy Castle/Greenhouse/Castle Battle Arena (Greenhouse Center)",
+                        "name": "Castle Battle Arena"
                     }
                 ],
                 "map_locations": [
@@ -2148,9 +2247,9 @@
             },
             {
                 "name": "Castle Blueprints",
-                "sections": [
-                    {
-                        "ref": "Creepy Castle/Inside the Tree/Castle Kasplat: Inside the Tree"
+                "sections": [                    {
+                        "ref": "Creepy Castle/Inside the Tree/Castle Kasplat: Inside the Tree",
+                        "name": "Castle Kasplat: Inside the Tree"
                     },
                     {
                         "ref": "Creepy Castle/Castle Kasplat: Lower Cave Center/Kasplat",
@@ -2193,53 +2292,67 @@
                     }
                 ]
             },
-            {
-                "name": "Castle Shops",
+            {                "name": "Castle Shops",
                 "sections": [
                     {
-                        "ref": "Castle Shops/Castle Cranky/Cranky DK"
+                        "ref": "Castle Shops/Castle Cranky/Cranky DK",
+                        "name": "Castle Cranky DK"
                     },
                     {
-                        "ref": "Castle Shops/Castle Cranky/Cranky Diddy"
+                        "ref": "Castle Shops/Castle Cranky/Cranky Diddy",
+                        "name": "Castle Cranky Diddy"
                     },
                     {
-                        "ref": "Castle Shops/Castle Cranky/Cranky Lanky"
+                        "ref": "Castle Shops/Castle Cranky/Cranky Lanky",
+                        "name": "Castle Cranky Lanky"
                     },
                     {
-                        "ref": "Castle Shops/Castle Cranky/Cranky Tiny"
+                        "ref": "Castle Shops/Castle Cranky/Cranky Tiny",
+                        "name": "Castle Cranky Tiny"
                     },
                     {
-                        "ref": "Castle Shops/Castle Cranky/Cranky Chunky"
+                        "ref": "Castle Shops/Castle Cranky/Cranky Chunky",
+                        "name": "Castle Cranky Chunky"
                     },
                     {
-                        "ref": "Castle Shops/Castle Funky/Funky DK"
+                        "ref": "Castle Shops/Castle Funky/Funky DK",
+                        "name": "Castle Funky DK"
                     },
                     {
-                        "ref": "Castle Shops/Castle Funky/Funky Diddy"
+                        "ref": "Castle Shops/Castle Funky/Funky Diddy",
+                        "name": "Castle Funky Diddy"
                     },
                     {
-                        "ref": "Castle Shops/Castle Funky/Funky Lanky"
+                        "ref": "Castle Shops/Castle Funky/Funky Lanky",
+                        "name": "Castle Funky Lanky"
                     },
                     {
-                        "ref": "Castle Shops/Castle Funky/Funky Tiny"
+                        "ref": "Castle Shops/Castle Funky/Funky Tiny",
+                        "name": "Castle Funky Tiny"
                     },
                     {
-                        "ref": "Castle Shops/Castle Funky/Funky Chunky"
+                        "ref": "Castle Shops/Castle Funky/Funky Chunky",
+                        "name": "Castle Funky Chunky"
                     },
                     {
-                        "ref": "Castle Shops/Castle Candy/Candy DK"
+                        "ref": "Castle Shops/Castle Candy/Candy DK",
+                        "name": "Castle Candy DK"
                     },
                     {
-                        "ref": "Castle Shops/Castle Candy/Candy Diddy"
+                        "ref": "Castle Shops/Castle Candy/Candy Diddy",
+                        "name": "Castle Candy Diddy"
                     },
                     {
-                        "ref": "Castle Shops/Castle Candy/Candy Lanky"
+                        "ref": "Castle Shops/Castle Candy/Candy Lanky",
+                        "name": "Castle Candy Lanky"
                     },
                     {
-                        "ref": "Castle Shops/Castle Candy/Candy Tiny"
+                        "ref": "Castle Shops/Castle Candy/Candy Tiny",
+                        "name": "Castle Candy Tiny"
                     },
                     {
-                        "ref": "Castle Shops/Castle Candy/Candy Chunky"
+                        "ref": "Castle Shops/Castle Candy/Candy Chunky",
+                        "name": "Castle Candy Chunky"
                     }
                 ],
                 "map_locations": [
@@ -2286,14 +2399,15 @@
                     }
                 ]
             },
-            {
-                "name": "Helm Fairies",
+            {                "name": "Helm Fairies",
                 "sections": [
                     {
-                        "ref": "Hideout Helm/Helm Fairy (Key 8 Room)/Fairy 1"
+                        "ref": "Hideout Helm/Helm Fairy (Key 8 Room)/Fairy 1",
+                        "name": "Helm Fairy 1"
                     },
                     {
-                        "ref": "Hideout Helm/Helm Fairy (Key 8 Room)/Fairy 2"
+                        "ref": "Hideout Helm/Helm Fairy (Key 8 Room)/Fairy 2",
+                        "name": "Helm Fairy 2"
                     }
                 ],
                 "map_locations": [
