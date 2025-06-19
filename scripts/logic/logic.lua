@@ -364,7 +364,23 @@ function trash()
     if mini() and (sax() or ((feather() or coconut() or peanuts() or grape() or pineapple()) and has("homing")) or bongos() or guitar() or trombone() or triangle()) then
         return AccessibilityLevel.Normal
     elseif mini() and (feather() or coconut() or peanuts() or grape() or pineapple()) then
-        return AccessibilityLevel.SequenceBreak
+        return hardshooting()
+    end
+end
+
+function chunkyTree()
+    if pineapple() and punch() and has("sniper") then
+        return AccessibilityLevel.Normal
+    elseif pineapple() and punch() then
+        return hardshooting()
+    end
+end
+
+function lankyTower()
+    if has("sniper") and balloon() and grape() and castleSlam() then
+        return AccessibilityLevel.Normal
+    elseif has("homing") and balloon() and grape() and castleSlam() then
+        return hardshooting()
     end
 end
 
@@ -372,7 +388,7 @@ function dkCabin()
     if bongos() and ((coconut() or peanuts() or grape() or feather() or pineapple()) and has("homing")) then
         return AccessibilityLevel.Normal
     elseif bongos() and (coconut() or peanuts() or grape() or feather() or pineapple()) then
-        return AccessibilityLevel.SequenceBreak
+        return hardshooting()
     end
 end
 
@@ -380,7 +396,7 @@ function lankyAttic()
     if has("lanky") and nightTime() and forestSlam() and (balloon() or has("climb")) and ((coconut() or peanuts() or grape() or feather() or pineapple()) and has("homing")) then
         return AccessibilityLevel.Normal
     elseif has("lanky") and nightTime() and forestSlam() and (balloon() or has("climb")) and (coconut() or peanuts() or grape() or feather() or pineapple()) then
-        return AccessibilityLevel.SequenceBreak
+        return hardshooting()
     end
 end
 
@@ -416,6 +432,14 @@ end
 
 function avp()
     if has("advanced_platforming") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function hardshooting()
+    if has("hardshooting") then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak

@@ -445,7 +445,7 @@
             },
             {            
                 "name": "Galleon Diddy Mechfish",
-                "access_rules": ["^$lighthousePlatform, $lighthouse, $shipyard, $rocket, $guitar, dive, $peanuts"],
+                "access_rules": ["^$lighthousePlatform, $lighthouse, $shipyard, $rocket, $guitar, dive, $canChangeTime"],
                 "sections": [
                     {
                         "name": "Golden Banana"

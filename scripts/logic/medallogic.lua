@@ -644,7 +644,7 @@ function galleonChunkyMedal()
     if pineapple() and (canActivateGalleonCannonGame() or (phaseswim() and raisedWater())) and canGetOnCannonGamePlatform() then -- Cannon Game Balloon
         cb_total = cb_total + 10
     end
-    if lighthouse() or has("dive") then -- Base of Lighthouse
+    if lighthouse() and has("dive") then -- Base of Lighthouse
         cb_total = cb_total + 10
     end
     if seasick() and has("slam") then -- Seasick

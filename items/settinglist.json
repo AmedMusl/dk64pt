@@ -2014,5 +2014,11 @@
           "codes": "bosskong7, chunkyboss7"
         }
       ]
+    },
+    {
+      "name": "Hard Shooting",
+      "type": "toggle",
+      "img": "images/settings/hardshooting.png",
+      "codes": "hardshooting"
     }
 ]

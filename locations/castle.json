@@ -139,7 +139,7 @@
                     },
                     {
                         "name": "Castle Chunky Tree Sniping Barrel",
-                        "access_rules": ["$pineapple, sniper, $punch", "^$avp, $pineapple, $punch"]
+                        "access_rules": ["^$chunkyTree"]
                     },
                     {
                         "name": "Castle Kasplat: Inside the Tree",
@@ -235,7 +235,7 @@
             },
             {            
                 "name": "Castle Lanky Tower",
-                "access_rules": ["$castleSlam, $balloon, $grape, sniper", "$castleSlam, $balloon, $grape, homing, ^$avp"],
+                "access_rules": ["^$lankyTower"],
                 "sections": [
                     {
                         "name": "Golden Banana"

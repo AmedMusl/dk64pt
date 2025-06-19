@@ -323,6 +323,11 @@ function onClear(slot_data)
         obj.AcquiredCount = (slot_data['FairyRequirement'])
     end
 
+    if slot_data['HardShooting'] then
+        local obj = Tracker:FindObjectForCode("hardshooting")
+        obj.Active = (slot_data['HardShooting'])
+    end
+
     if slot_data['JetpacReq'] then
         local obj = Tracker:FindObjectForCode("JetpacReq")
         obj.AcquiredCount = (slot_data["JetpacReq"])
