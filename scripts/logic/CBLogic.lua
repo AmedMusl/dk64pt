@@ -1,17 +1,17 @@
 function japesCBTotal()
-    local DiddyMine = peanuts() and (has("climb") or (avp() and ostand()))
+    local DiddyMine = peanuts() and (has("climb") or (avpMedal() and ostand()))
     local cb_total = 0
     local cb_amount = Tracker:ProviderCountForCode("tnsportal1")
     
     if has("donkey") then
         cb_total = cb_total + 10     
-        if coconut() and (has("climb") or (avp() and ostand())) then -- By Snide
+        if coconut() and (has("climb") or (avpMedal() and ostand())) then -- By Snide
             cb_total = cb_total + 10
         end
         if has("climb") then -- Hilltop
             cb_total = cb_total + 15
         end
-        if has("climb") or (ostand() and avp()) then -- Between Snide and Diddy Cage
+        if has("climb") or (ostand() and avpMedal()) then -- Between Snide and Diddy Cage
             cb_total = cb_total + 6
         end
         if coconut() then -- Boulder
@@ -26,10 +26,10 @@ function japesCBTotal()
         if coconutCage() then -- Path to Cranky
             cb_total = cb_total + 9
         end
-        if  has("climb") and (has("vine") or avp()) then -- Start
+        if  has("climb") and (has("vine") or avpMedal()) then -- Start
             cb_total = cb_total + 5
         end
-        if (has("climb") and has("vine")) or (avp() and (ostand() or has("climb"))) then -- TnS Alcove
+        if (has("climb") and has("vine")) or (avpMedal() and (ostand() or has("climb"))) then -- TnS Alcove
             cb_total = cb_total + 5
         end
         if blast() and has("climb") and (moonkicks() or (has("vine") and (has("lanky") or has("donkey") or has("diddy")))) then -- Blast Course
@@ -45,7 +45,7 @@ function japesCBTotal()
         if has("climb") then -- Trees
             cb_total = cb_total + 20
         end
-        if has("climb") or (ostand() and avp()) then -- Around Mountain
+        if has("climb") or (ostand() and avpMedal()) then -- Around Mountain
             cb_total = cb_total + 7
         end
         if canActivateJapesDiddyCave() and peanuts() then -- Diddy Cave Balloon
@@ -57,13 +57,13 @@ function japesCBTotal()
         if DiddyMine and japesSlam() then -- Conveyor
             cb_total = cb_total + 5
         end
-        if DiddyMine and japesSlam() and (charge() or avp()) then -- Inside Minecart
+        if DiddyMine and japesSlam() and (charge() or avpMedal()) then -- Inside Minecart
             cb_total = cb_total + 5
         end
         if DiddyMine and peanuts() and japesSlam() then -- Conveyor Balloon
             cb_total = cb_total + 10
         end
-        if (has("climb") or (ostand() and avp())) and (peanuts() or moonkicks()) then -- Top of Mountain
+        if (has("climb") or (ostand() and avpMedal())) and (peanuts() or moonkicks()) then -- Top of Mountain
             cb_total = cb_total + 10
         end
         if coconutCage() then -- Diddy Kasplat
@@ -85,7 +85,7 @@ function japesCBTotal()
         if has("climb") then -- Snide Treetop
             cb_total = cb_total + 5
         end
-        if has("climb") or (ostand() and avp()) then -- Snide
+        if has("climb") or (ostand() and avpMedal()) then -- Snide
             cb_total = cb_total + 5
         end
         if coconutCage() and grape() then -- 10 by Kasplat 10 by Hutt
@@ -119,6 +119,9 @@ function japesCBTotal()
         if has("climb") and coconutCage() then -- Cranky Treetop
             cb_total = cb_total + 5
         end
+        if coconutCage() then -- Before Rambi Gate
+            cb_total = cb_total + 2
+        end
         if coconutCage() and canActivateJapesRambi() then
             cb_total = cb_total + 5
         end
@@ -135,7 +138,7 @@ function japesCBTotal()
             cb_total = cb_total + 5
         end
         if coconutCage() and canActivateJapesRambi() then -- Behind Rambi Gate
-            cb_total = cb_total + 7
+            cb_total = cb_total + 5
         end
         if coconutCage() and canActivateJapesRambi() and feather() then -- Fairy Pool Balloon
             cb_total = cb_total + 10
@@ -150,7 +153,7 @@ function japesCBTotal()
     
     if has("chunky") then
         cb_total = cb_total + 5
-        if has("climb") or (ostand() and avp()) then -- Funky
+        if has("climb") or (ostand() and avpMedal()) then -- Funky
             cb_total = cb_total + 10
         end
         if coconutCage() then -- Path to Shellhive
@@ -285,7 +288,7 @@ function aztecCBTotal()
         if llamaSwitches() and canEnterLlamaTemple() and mini() then -- Past Pedestal Hole
             cb_total = cb_total + 2
         end
-        if llamaSwitches() and canEnterLlamaTemple() and mini() and aztecSlam() and (twirl() or avp()) then -- Pedestals
+        if llamaSwitches() and canEnterLlamaTemple() and mini() and aztecSlam() and (twirl() or avpMedal()) then -- Pedestals
             cb_total = cb_total + 10
         end
     end
@@ -519,10 +522,10 @@ function galleonCBTotal()
         if shipyard() and has("dive") then -- Enguarde
             cb_total = cb_total + 5
         end
-        if treasure() and has("dive") and ((raisedWater() and balloon()) or (enguarde() and avp()) or moonkicks() and balloon()) then -- Gold Tower
+        if treasure() and has("dive") and ((raisedWater() and balloon()) or (enguarde() and avpMedal()) or moonkicks() and balloon()) then -- Gold Tower
             cb_total = cb_total + 4
         end
-        if treasure() and has("dive") and ((raisedWater()) or (enguarde() and avp()) or moonkicks()) then -- Gold Tower Bottom
+        if treasure() and has("dive") and ((raisedWater()) or (enguarde() and avpMedal()) or moonkicks()) then -- Gold Tower Bottom
             cb_total = cb_total + 1
         end
         if shipyard() and has("dive") and (galleonSlam() or phaseswim()) then -- Lanky 2DS
@@ -545,10 +548,10 @@ function galleonCBTotal()
         if lighthouse() and feather() and loweredWater() then -- KEVIN
             cb_total = cb_total + 10
         end
-        if lighthouse() and (raisedWater() or (has("lanky") or has("chunky") and avp())) then -- Snide
+        if lighthouse() and (raisedWater() or (has("lanky") or has("chunky") and avpMedal())) then -- Snide
             cb_total = cb_total + 5
         end
-        if lighthouse() and feather() and (raisedWater() or (has("lanky") or has("chunky") and avp())) then -- Snide Balloon
+        if lighthouse() and feather() and (raisedWater() or (has("lanky") or has("chunky") and avpMedal())) then -- Snide Balloon
             cb_total = cb_total + 10
         end
         if treasure() and has("dive") then -- Hype Chest Entrance
@@ -648,7 +651,7 @@ function forestCBTotal()
         if yellowTunnel() and rocket() then -- Top of Tree
             cb_total = cb_total + 5
         end
-        if peanuts() and (dayTime() or avp()) then -- Snide
+        if peanuts() and (dayTime() or avpMedal()) then -- Snide
             cb_total = cb_total + 10
         end
         if peanuts() and forestSlam() and has("climb") and nightTime() then -- Winch Room
@@ -800,7 +803,7 @@ function cavesCBTotal()
         if rocket() then -- 20 Around Igloo 5 Below Jetpack Bonus
             cb_total = cb_total + 25
         end
-        if rocket() or avp() then -- Warp 4 Pillar
+        if rocket() or avpMedal() then -- Warp 4 Pillar
             cb_total = cb_total + 5
         end
         if peanuts() then -- Warp 4 Pillar And Above Cabins
@@ -815,7 +818,7 @@ function cavesCBTotal()
         if guitar() then -- Lower 5DC
             cb_total = cb_total + 5
         end
-        if guitar() and (rocket() or avp()) then -- Lower 5DC Platforms
+        if guitar() and (rocket() or avpMedal()) then -- Lower 5DC Platforms
             cb_total = cb_total + 5
         end
     end
@@ -823,13 +826,13 @@ function cavesCBTotal()
     -- Lanky bananas
     if has("lanky") then
         cb_total = cb_total + 15
-        if (balloon() or avp()) and cavesSlam() then -- Beetle Race Entrance
+        if (balloon() or avpMedal()) and cavesSlam() then -- Beetle Race Entrance
             cb_total = cb_total + 5
         end
         if balloon() then -- Cranky
             cb_total = cb_total + 15
         end
-        if rocket() or (balloon() and avp()) then -- Lanky Kasplat
+        if rocket() or (balloon() and avpMedal()) then -- Lanky Kasplat
             cb_total = cb_total + 20
         end
         if cavesSlam() and grape() then -- tomato balloon
@@ -838,7 +841,7 @@ function cavesCBTotal()
         if beginningLanky5DI() and igloo() then -- Bottom Lanky 5DI
             cb_total = cb_total + 1
         end
-        if beginningLanky5DI() and igloo() and ((balloon() or avp())) then -- Lanky 5DI
+        if beginningLanky5DI() and igloo() and ((balloon() or avpMedal())) then -- Lanky 5DI
             cb_total = cb_total + 4
         end
         if beginningLanky5DI() and igloo() and grape() then -- Lanky 5DI Balloon
@@ -890,7 +893,7 @@ function cavesCBTotal()
     -- Chunky bananas
     if has("chunky") then
         cb_total = cb_total + 18
-        if has("barrel") or avp() then -- Inside Small Boulder
+        if has("barrel") or avpMedal() then -- Inside Small Boulder
             cb_total = cb_total + 5
         end
         if cavesIce() then -- GG and Snide Room
@@ -981,7 +984,7 @@ function castleCBTotal()
         if castleSlam() and grape() then -- Tower
             cb_total = cb_total + 20
         end
-        if castleSlam() and grape() and trombone() and (balloon() or (twirl() and avp())) then -- Lanky Dungeon
+        if castleSlam() and grape() and trombone() and (balloon() or (twirl() and avpMedal())) then -- Lanky Dungeon
             cb_total = cb_total + 10
         end
         if grape() and sprint() then -- Lanky Mausoleum
@@ -1007,7 +1010,7 @@ function castleCBTotal()
         if feather() then -- Funky
             cb_total = cb_total + 10
         end
-        if mausoleumDoors() and (twirl() or avp()) then -- Green Goo Gap
+        if mausoleumDoors() and (twirl() or avpMedal()) then -- Green Goo Gap
             cb_total = cb_total + 5
         end
     end

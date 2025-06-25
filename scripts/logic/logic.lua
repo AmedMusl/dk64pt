@@ -438,6 +438,10 @@ function avp()
     end
 end
 
+function avpMedal()
+    return has("advanced_platforming")
+end
+
 function hardshooting()
     if has("hardshooting") then
         return AccessibilityLevel.Normal
@@ -791,37 +795,146 @@ function hasHelm(prefix)
     return false
 end
 
+-- Get the current helm order based on helm position codes
+function getHelmOrder()
+    local helmOrder = {}
+    local helmRequirements = {
+        helmdk = function() return bongos() end,
+        helmdiddy = function() return rocket() and guitar() end,
+        helmlanky = function() return trombone() end,
+        helmtiny = function() return sax() end,
+        helmchunky = function() return triangle() end
+    }
+    
+    -- Check each position (1-5) and see which kong is assigned to it
+    for i = 1, 5 do
+        for kongCode, requirement in pairs(helmRequirements) do
+            if has(kongCode .. i) then
+                table.insert(helmOrder, {kong = kongCode, check = requirement, position = i})
+                break
+            end
+        end
+    end
+    
+    -- Sort by position to ensure correct order
+    table.sort(helmOrder, function(a, b) return a.position < b.position end)
+    
+    return helmOrder
+end
+
+-- Check if a kong is in the current helm order and return its position
+function getKongHelmPosition(kongCode)
+    local helmOrder = getHelmOrder()
+    for i, helm in ipairs(helmOrder) do
+        if helm.kong == kongCode then
+            return i
+        end
+    end
+    return nil
+end
+
 function dkHelm()
-    return hasHelm("helmdk")
+    local helmOrder = getHelmOrder()
+    local dkPosition = getKongHelmPosition("helmdk")
+    
+    -- If DK is not in the helm order, return true (not required)
+    if not dkPosition then
+        return bongos()
+    end
+    
+    -- DK is in the helm order, check all requirements from positions 1 to DK's position
+    -- This includes ALL previous kongs' requirements AND DK's own requirement
+    for i = 1, dkPosition do
+        if not helmOrder[i].check() then
+            return false
+        end
+    end
+    
+    return true
 end
 
 function diddyHelm()
-    return hasHelm("helmdiddy")
+    local helmOrder = getHelmOrder()
+    local diddyPosition = getKongHelmPosition("helmdiddy")
+    
+    -- If Diddy is not in the helm order, return true (not required)
+    if not diddyPosition then
+        return rocket() and guitar()
+    end
+    
+    -- Diddy is in the helm order, check all requirements from positions 1 to Diddy's position
+    for i = 1, diddyPosition do
+        if not helmOrder[i].check() then
+            return false
+        end
+    end
+    
+    return true
 end
 
 function lankyHelm()
-    return hasHelm("helmlanky")
+    local helmOrder = getHelmOrder()
+    local lankyPosition = getKongHelmPosition("helmlanky")
+    
+    -- If Lanky is not in the helm order, return true (not required)
+    if not lankyPosition then
+        return trombone()
+    end
+    
+    -- Lanky is in the helm order, check all requirements from positions 1 to Lanky's position
+    for i = 1, lankyPosition do
+        if not helmOrder[i].check() then
+            return false
+        end
+    end
+    
+    return true
 end
 
 function tinyHelm()
-    return hasHelm("helmtiny")
+    local helmOrder = getHelmOrder()
+    local tinyPosition = getKongHelmPosition("helmtiny")
+    
+    -- If Tiny is not in the helm order, return true (not required)
+    if not tinyPosition then
+        return sax()
+    end
+    
+    -- Tiny is in the helm order, check all requirements from positions 1 to Tiny's position
+    for i = 1, tinyPosition do
+        if not helmOrder[i].check() then
+            return false
+        end
+    end
+    
+    return true
 end
 
 function chunkyHelm()
-    return hasHelm("helmchunky")
+    local helmOrder = getHelmOrder()
+    local chunkyPosition = getKongHelmPosition("helmchunky")
+    
+    -- If Chunky is not in the helm order, return true (not required)
+    if not chunkyPosition then
+        return triangle()
+    end
+    
+    -- Chunky is in the helm order, check all requirements from positions 1 to Chunky's position
+    for i = 1, chunkyPosition do
+        if not helmOrder[i].check() then
+            return false
+        end
+    end
+    
+    return true
 end
 
 function endOfHelm()
-    local helmOrder = {
-        {kong = "helmdk", check = bongos},
-        {kong = "helmdiddy", check = function() return rocket() and guitar() end},
-        {kong = "helmlanky", check = trombone},
-        {kong = "helmtiny", check = sax},
-        {kong = "helmchunky", check = triangle}
-    }
-
+    local helmOrder = getHelmOrder()
+    
+    -- Check that all kongs in the helm order meet their requirements
     for _, helm in ipairs(helmOrder) do
-        if hasHelm(helm.kong) and not helm.check() then
+        if not helm.check() then
             return false
         end
     end

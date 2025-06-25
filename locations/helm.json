@@ -26,7 +26,7 @@
             },
             {
                 "name": "Helm DK Medal",
-                "access_rules": ["$bongos"],
+                "access_rules": ["$dkHelm"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -43,7 +43,7 @@
             },
             {
                 "name": "Helm Diddy Medal",
-                "access_rules": ["$guitar, $rocket"],
+                "access_rules": ["$diddyHelm"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -60,7 +60,7 @@
             },
             {
                 "name": "Helm Lanky Medal",
-                "access_rules": ["$trombone"],
+                "access_rules": ["$lankyHelm"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -77,7 +77,7 @@
             },
             {
                 "name": "Helm Tiny Medal",
-                "access_rules": ["$sax"],
+                "access_rules": ["$tinyHelm"],
                 "sections": [
                     {
                         "name": "Medal"
@@ -94,7 +94,7 @@
             },
             {
                 "name": "Helm Chunky Medal",
-                "access_rules": ["$triangle"],
+                "access_rules": ["$chunkyHelm"],
                 "sections": [
                     {
                         "name": "Medal"

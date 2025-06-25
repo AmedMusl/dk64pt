@@ -539,7 +539,6 @@ function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
     end
-    local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index;
     local v = ITEM_MAPPING[item_id]
     if not v or not v[1] then
