@@ -186,7 +186,7 @@
             },
             {            
                 "name": "Galleon Diddy Top of Lighthouse",
-                "access_rules": ["$lighthouse, ^$lighthousePlatform, $rocket, $galleonSlam"],
+                "access_rules": ["$lighthouse, ^$lighthousePlatform, $rocket, $galleonSlam, $seasick"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -222,7 +222,8 @@
                 "access_rules": ["^$lighthousePlatform, $lighthouse, $galleonSlam, climb, donkey"],
                 "sections": [
                     {
-                        "name": "Galleon DK Lighthouse"
+                        "name": "Galleon DK Lighthouse",
+                        "access_rules":["$galleonDKLighthouse"]
                     },
                     {
                         "name": "Galleon Dirt: Lighthouse",

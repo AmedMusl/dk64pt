@@ -368,6 +368,15 @@ function trash()
     end
 end
 
+function galleonDKLighthouse()
+    if seasick() then
+        return true
+    else
+        return grab()
+    end
+end
+
+
 function chunkyTree()
     if pineapple() and punch() and has("sniper") then
         return AccessibilityLevel.Normal
@@ -438,9 +447,6 @@ function avp()
     end
 end
 
-function avpMedal()
-    return has("advanced_platforming")
-end
 
 function hardshooting()
     if has("hardshooting") then
@@ -505,7 +511,7 @@ function tunnelDoor()
     elseif canActivateAztecGuitar() and has("climb") and ((has("vine")) or rocket()) then
         return AccessibilityLevel.Normal
     else
-        return guitar() and AccessibilityLevel.SequenceBreak
+        return canActivateAztecGuitar() and AccessibilityLevel.SequenceBreak
     end
 end
 

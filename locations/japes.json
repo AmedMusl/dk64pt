@@ -41,7 +41,7 @@
                     },
                     {
                         "name": "Boss",
-                        "access_rules": ["$japesBossLogic, climb, vine", "$japesBossLogic, $peanuts", "$japesBossLogic, ^$coconutCage, $coconut", "$japesBossLogic, ^$avp, climb", "$japesBossLogic, ^$avp, $ostand"],
+                        "access_rules": ["$japesBossLogic, climb, vine", "$japesBossLogic, $canActivateJapesDiddyCave", "$japesBossLogic, ^$coconutCage, $canActivateJapesRambi", "$japesBossLogic, ^$avp, climb", "$japesBossLogic, ^$avp, $ostand"],
                         "chest_unopened_img": "images/items/scoff.png",
                         "chest_opened_img": "images/items/scoffbw.png"
                     }
