@@ -80,7 +80,7 @@ function canEnterJapesLobby()
     elseif has("l3_japes") then
         return ((has("k2") or has("openlobbies")))
     elseif has("l4_japes") then
-        return (((has("k2") or has("openlobbies")))) and has("dive")
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive")
     elseif has("l5_japes") then
         return has("k4") or moonkicks() or has("openlobbies")
     elseif has("l6_japes") then
@@ -102,9 +102,9 @@ function canEnterJapes()
     elseif has("l2_japes") then
         return (has("k1") or has("openlobbies")) and bLocker2()
     elseif has("l3_japes") then
-        return (((has("k2") or has("openlobbies")))) and bLocker3()
+        return (has("k2") or has("openlobbies")) and bLocker3()
     elseif has("l4_japes") then
-        return (((has("k2") or has("openlobbies")))) and has("dive") and bLocker4()
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive") and bLocker4()
     elseif has("l5_japes") then
         return (has("k4") or moonkicks() or has("openlobbies")) and bLocker5()
     elseif has("l6_japes") then
@@ -128,7 +128,7 @@ function canEnterAztecLobby()
     elseif has("l3_aztec") then
         return ((has("k2") or has("openlobbies")))
     elseif has("l4_aztec") then
-        return (((has("k2") or has("openlobbies")))) and has("dive")
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive")
     elseif has("l5_aztec") then
         return has("k4") or moonkicks() or has("openlobbies")
     elseif has("l6_aztec") then
@@ -150,9 +150,9 @@ function canEnterAztec()
     elseif has("l2_aztec") then
         return (has("k1") or has("openlobbies")) and bLocker2()
     elseif has("l3_aztec") then
-        return (((has("k2") or has("openlobbies")))) and bLocker3()
+        return (has("k2") or has("openlobbies")) and bLocker3()
     elseif has("l4_aztec") then
-        return (((has("k2") or has("openlobbies")))) and has("dive") and bLocker4()
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive") and bLocker4()
     elseif has("l5_aztec") then
         return (has("k4") or moonkicks() or has("openlobbies")) and bLocker5()
     elseif has("l6_aztec") then
@@ -176,7 +176,7 @@ function canEnterFactoryLobby()
     elseif has("l3_factory") then
         return ((has("k2") or has("openlobbies")))
     elseif has("l4_factory") then
-        return (((has("k2") or has("openlobbies")))) and has("dive")
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive")
     elseif has("l5_factory") then
         return has("k4") or has("openlobbies") or moonkicks()
     elseif has("l6_factory") then
@@ -198,9 +198,9 @@ function canEnterFactory()
     elseif has("l2_factory") then
         return (has("k1") or has("openlobbies")) and bLocker2()
     elseif has("l3_factory") then
-        return (((has("k2") or has("openlobbies")))) and bLocker3()
+        return (has("k2") or has("openlobbies")) and bLocker3()
     elseif has("l4_factory") then
-        return (((has("k2") or has("openlobbies")))) and has("dive") and bLocker4()
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive") and bLocker4()
     elseif has("l5_factory") then
         return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
     elseif has("l6_factory") then
@@ -224,7 +224,7 @@ function canEnterGalleonLobby()
     elseif has("l3_galleon") then
         return ((has("k2") or has("openlobbies")))
     elseif has("l4_galleon") then
-        return (((has("k2") or has("openlobbies")))) and has("dive")
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive")
     elseif has("l5_galleon") then
         return has("k4") or has("openlobbies") or moonkicks()
     elseif has("l6_galleon") then
@@ -246,9 +246,9 @@ function canEnterGalleon()
     elseif has("l2_galleon") then
         return (has("k1") or has("openlobbies")) and bLocker2()
     elseif has("l3_galleon") then
-        return (((has("k2") or has("openlobbies")))) and bLocker3()
+        return (has("k2") or has("openlobbies")) and bLocker3()
     elseif has("l4_galleon") then
-        return (((has("k2") or has("openlobbies")))) and has("dive") and bLocker4()
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive") and bLocker4()
     elseif has("l5_galleon") then
         return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
     elseif has("l6_galleon") then
@@ -272,7 +272,7 @@ function canEnterForestLobby()
     elseif has("l3_forest") then
         return ((has("k2") or has("openlobbies")))
     elseif has("l4_forest") then
-        return (((has("k2") or has("openlobbies")))) and has("dive")
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive")
     elseif has("l5_forest") then
         return has("k4") or has("openlobbies") or moonkicks()
     elseif has("l6_forest") then
@@ -296,7 +296,7 @@ function canEnterForest()
     elseif has("l3_forest") then
         return ((has("k2") or has("openlobbies"))) and bLocker3()
     elseif has("l4_forest") then
-        return ((has("k2") or has("openlobbies"))) and has("dive") and bLocker4()
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive") and bLocker4()
     elseif has("l5_forest") then
         return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
     elseif has("l6_forest") then
@@ -320,7 +320,7 @@ function canEnterCavesLobby()
     elseif has("l3_caves") then
         return (has("k2") or has("openlobbies"))
     elseif has("l4_caves") then
-        return ((has("k2") or has("openlobbies"))) and has("dive")
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive")
     elseif has("l5_caves") then
         return has("k4") or has("openlobbies") or moonkicks()
     elseif has("l6_caves") then
@@ -344,7 +344,7 @@ function canEnterCaves()
     elseif has("l3_caves") then
         return (has("k2") or has("openlobbies")) and bLocker3()
     elseif has("l4_caves") then
-        return (has("k2") or has("openlobbies")) and has("dive") and bLocker4()
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive") and bLocker4()
     elseif has("l5_caves") then
         return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
     elseif has("l6_caves") then
@@ -368,7 +368,7 @@ function canEnterCastleLobby()
     elseif has("l3_castle") then
         return has("k2") or has("openlobbies")
     elseif has("l4_castle") then
-        return (has("k2") or has("openlobbies")) and has("dive") 
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive") 
     elseif has("l5_castle") then
         return has("k4") or has("openlobbies") or moonkicks()
     elseif has("l6_castle") then
@@ -392,7 +392,7 @@ function canEnterCastle()
     elseif has("l3_castle") then
         return (has("k2") or has("openlobbies")) and bLocker3()
     elseif has("l4_castle") then
-        return (has("k2") or has("openlobbies")) and has("dive") and bLocker4()
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive") and bLocker4()
     elseif has("l5_castle") then
         return (has("k4") or has("openlobbies") or moonkicks()) and bLocker5()
     elseif has("l6_castle") then
