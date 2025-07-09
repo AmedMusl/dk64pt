@@ -1,4 +1,3 @@
-
 -- Medal Logic
 
 -- Helper function to convert AccessibilityLevel to boolean
@@ -254,13 +253,16 @@ function aztecDiddyMedal()
     end
     local cb_total = 5 -- Bunch Front Tiny Temple
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    
+    print("DEBUG: aztecDiddyMedal - Starting cb_total: " .. cb_total .. ", cb_amount: " .. cb_amount)
+    
     if peanuts() then -- Balloon Front Tiny Temple
         cb_total = cb_total + 10
     end
     if canEnterTinyTemple() and aztecSlam() then --3 on tiny tiny tongue
         cb_total = cb_total + 3
     end
-    if aztecSlam() and peanuts() then -- 15 on tiny tongue
+    if aztecSlam() and peanuts() and canEnterTinyTemple then -- 15 on tiny tongue
         cb_total = cb_total + 15
     end
     if peanuts() and has("dive") and templeIce() then -- 7 Underwater
@@ -269,7 +271,7 @@ function aztecDiddyMedal()
     if accessible(tunnelDoor) then -- 5 Behind Guitar Door 3 Near Rockets 3 GongSteps 4 5DTemple Steps
         cb_total = cb_total + 15
     end
-    if has("climb") or rocket() then -- Gong Tower Treetops
+    if (has("climb") or rocket()) and tunnelDoor() then -- Gong Tower Treetops
         cb_total = cb_total + 15
     end
     if accessible(tunnelDoor) and rocket() then -- 5 Sun Ring 5 top Llama Temple
@@ -281,7 +283,9 @@ function aztecDiddyMedal()
     if accessible(llamaSwitches) and canEnterLlamaTemple() and canActivateAztecQuickSandSwitch() and (strong() or rocket()) and peanuts() then -- Balloon Inside Quicksand Cave
         cb_total = cb_total + 10
     end
-    return cb_total >= cb_amount
+    
+    local result = cb_total >= cb_amount
+    return result
 end
 
 function aztecLankyMedal()

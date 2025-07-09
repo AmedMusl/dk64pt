@@ -324,7 +324,7 @@
             },
             {            
                 "name": "Factory DK Power Hut",
-                "access_rules": ["$powerHutPlatform, $coconut", "$powerHutPlatform, $moonkicks"],
+                "access_rules": ["$powerHutPlatform, $coconut, $powerHutCheck", "$powerHutPlatform, $moonkicks, $powerHutCheck"],
                 "sections": [
                     {
                         "name": "Golden Banana"

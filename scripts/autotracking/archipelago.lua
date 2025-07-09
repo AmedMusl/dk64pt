@@ -14,6 +14,64 @@ VISITED_LOBBIES = {}
 -- Global table to store visited lobbies between sessions (works during tracker runtime)
 SAVED_LOBBIES_BY_SLOT = SAVED_LOBBIES_BY_SLOT or {}
 
+-- Global variables for slot data features
+SWITCHSANITY = nil
+BLOCKER_VALUES = nil
+
+-- Function to update blocker tracker items with BLockerValues requirements
+function updateBLockerTrackerItems()
+    if not BLOCKER_VALUES or type(BLOCKER_VALUES) ~= "string" then
+        return
+    end
+    
+    -- Map level names to blocker tracker codes
+    local level_to_blocker = {
+        ["Japes"] = "blocker1",
+        ["Aztec"] = "blocker2", 
+        ["Factory"] = "blocker3",
+        ["Galleon"] = "blocker4",
+        ["Forest"] = "blocker5",
+        ["Caves"] = "blocker6",
+        ["Castle"] = "blocker7",
+        ["Helm"] = "blocker8"
+    }
+    
+    -- Parse the BLockerValues string and update tracker item counts
+    for level_name, blocker_code in pairs(level_to_blocker) do
+        local pattern = level_name .. ":%s*(%d+)%s+([^,]+)"
+        local count, item_type = BLOCKER_VALUES:match(pattern)
+        
+        if count then
+            local obj = Tracker:FindObjectForCode(blocker_code)
+            if obj then
+                local count_num = tonumber(count) or 0
+                -- Only update the count, don't affect item collection state
+                if obj.AcquiredCount ~= nil then
+                    obj.AcquiredCount = count_num
+                elseif obj.CurrentStage ~= nil then
+                    obj.CurrentStage = count_num
+                end
+                print("Set " .. blocker_code .. " requirement to " .. count_num .. " (from " .. level_name .. ")")
+            end
+        end
+    end
+end
+
+-- Function to clear blocker tracker items when no BLockerValues
+function clearBLockerTrackerItems()
+    for i = 1, 8 do
+        local obj = Tracker:FindObjectForCode("blocker" .. i)
+        if obj then
+            -- Only clear the count, don't affect collection state
+            if obj.AcquiredCount ~= nil then
+                obj.AcquiredCount = 0
+            elseif obj.CurrentStage ~= nil then
+                obj.CurrentStage = 0
+            end
+        end
+    end
+end
+
 function has_value (t, val)
     for i, v in ipairs(t) do
         if v == val then return 1 end
@@ -54,14 +112,6 @@ local function activate_object(obj, code)
     end
 end
 
-local function process_blocker_values(blocker_values)
-    for blocker, value in pairs(blocker_values) do
-        local obj = Tracker:FindObjectForCode("blocker" .. blocker)
-        if obj then
-            obj.AcquiredCount = value
-        end
-    end
-end
 
 local function process_removed_barriers(barriers)
     for barrier, code in pairs(barriers) do
@@ -288,10 +338,6 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['BLockerValues'] then
-        process_blocker_values(slot_data['BLockerValues'])
-    end
-
     if slot_data['ForestTime'] then
         local obj = Tracker:FindObjectForCode("time")
         local stage = slot_data['ForestTime']
@@ -339,6 +385,18 @@ function onClear(slot_data)
         -- print(dump_table(SWITCHSANITY))
     else
         SWITCHSANITY = nil
+    end
+
+    if slot_data['BLockerValues'] then
+        BLOCKER_VALUES = slot_data['BLockerValues']
+        print("Received BLockerValues:", BLOCKER_VALUES)
+        
+        -- Update blocker tracker items with the actual requirements
+        updateBLockerTrackerItems()
+    else
+        BLOCKER_VALUES = nil
+        -- Clear blocker tracker items when no BLockerValues
+        clearBLockerTrackerItems()
     end
 
     if slot_data['GlitchesSelected'] then
@@ -571,6 +629,13 @@ end
 
 function onLocation(location_id, location_name)
     local loc_list = LOCATION_MAPPING[location_id]
+    
+    -- Handle case where loc_list might be a string instead of a table
+    if type(loc_list) == "string" then
+        loc_list = {loc_list}
+    elseif type(loc_list) ~= "table" then
+        return
+    end
 
     for i, loc in ipairs(loc_list) do
         if not loc then

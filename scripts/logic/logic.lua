@@ -1,6 +1,7 @@
 ScriptHost:LoadScript("scripts/logic/medallogic.lua")
 ScriptHost:LoadScript("scripts/logic/logichelper.lua")
 ScriptHost:LoadScript("scripts/logic/switchsanity.lua")
+ScriptHost:LoadScript("scripts/logic/blocker.lua")
 ScriptHost:LoadScript("scripts/logic/CBLogic.lua")
 
 function has_more_then_n_consumable(n)
@@ -323,6 +324,14 @@ function lighthousePlatform()
         return true
     elseif has("lanky") or has("chunky") then
         return avp()
+    end
+end
+
+function powerHutCheck()
+    if production() then
+        return true
+    else
+        return grab()
     end
 end
 
