@@ -127,7 +127,6 @@ LOCATION_MAPPING = {
 	[14041150] = {"@DK Isles/Banana Fairy Island/The Banana Fairy's Gift", "@Wrinkly Hints/Isles Hints/The Banana Fairy's Gift"},
 	[14041151] = {"@DK Isles/Banana Fairy Island/Returning the Banana Fairies", "@Wrinkly Hints/Isles Hints/Returning The Banana Fairies"},
 	[14041152] = {"@DK Isles/Isles Lanky Instrument Pad/Golden Banana", "@Wrinkly Hints/Isles Hints/Lanky Trombone Pad"},
-	-- [14041606] = {"@DK Isles/Japes Tiny Wrinkly Door/Wrinkly Door"},
 	[14041603] = {"@DK Isles/Japes DK Wrinkly Door/Wrinkly Door"},
 	[14041604] = {"@DK Isles/Japes Diddy Wrinkly Door/Wrinkly Door"},
 	[14041605] = {"@DK Isles/Japes Lanky Wrinkly Door/Wrinkly Door"},
