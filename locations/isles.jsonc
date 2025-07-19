@@ -349,7 +349,7 @@
       },
       {
         "name": "Aztec Chunky Wrinkly Door",
-        "access_rules": ["^$canEnterAztecLobby"],
+        "access_rules": ["^$canEnterAztecLobby, $canActivateIslesAztecLobbyFeather"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -523,7 +523,7 @@
       },
       {
         "name": "Factory Diddy Wrinkly Door",
-        "access_rules": ["^$canEnterFactoryLobby"],
+        "access_rules": ["^$factoryDiddyHint"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -542,7 +542,7 @@
       },
       {
         "name": "Factory Lanky Wrinkly Door",
-        "access_rules": ["^$canEnterFactoryLobby"],
+        "access_rules": ["^$factoryLankyHint"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -561,7 +561,7 @@
       },
       {
         "name": "Factory Tiny Wrinkly Door",
-        "access_rules": ["^$canEnterFactoryLobby"],
+        "access_rules": ["^$factoryTinyHint"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1015,7 +1015,7 @@
       },
       {
         "name": "Caves Diddy Hint Door",
-        "access_rules": ["^$canEnterCavesLobby"],
+        "access_rules": ["^$canEnterCavesLobby, $rocket", "^$canEnterCavesLobby, $moonkicks"],
         "sections": [
           {
             "name": "Wrinkly Door",

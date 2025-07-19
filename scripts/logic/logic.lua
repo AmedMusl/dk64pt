@@ -16,6 +16,20 @@ function has_more_then_n_consumable(n)
     return 0 -- 0 => no access
 end
 
+-- Function to check if a location is marked as junk
+function isLocationJunk(locationName)
+    if not JUNK_LOCATIONS then
+        return true
+    end
+    
+    for i, junkLocation in pairs(JUNK_LOCATIONS) do
+        if junkLocation == locationName then
+            return false
+        end
+    end
+    return true
+end
+
 function has(item, amount)
     local count = Tracker:ProviderCountForCode(item)
     amount = tonumber(amount)
@@ -430,6 +444,18 @@ function canGetOnCannonGamePlatform()
     return raisedWater() or (avp() and (has("chunky") or has("lanky")))
 end
 
+function factoryDiddyHint()
+    return canEnterFactoryLobby() and (grab() or moonkicks() or (avp() and (has("tiny") or has("diddy"))))
+end
+
+function factoryLankyHint()
+    return canEnterFactoryLobby() and (grab() or moonkicks() or avp())
+end
+
+function factoryTinyHint()
+    return canEnterFactoryLobby() and (grab() or moonkicks() or (avp() and (has("tiny") or has("diddy"))))
+end
+
 function lankyFreeing()
     if LANKY_FREEING_KONG == "donkey" then
         return bongos()
@@ -494,6 +520,8 @@ function coconutCage()
         return AccessibilityLevel.Normal
     elseif ostand() then
         return avp()
+    else
+        return phaseswim()
     end
 end
 

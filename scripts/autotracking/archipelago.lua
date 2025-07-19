@@ -17,6 +17,7 @@ SAVED_LOBBIES_BY_SLOT = SAVED_LOBBIES_BY_SLOT or {}
 -- Global variables for slot data features
 SWITCHSANITY = nil
 BLOCKER_VALUES = nil
+JUNK_LOCATIONS = nil
 
 -- Function to update blocker tracker items with BLockerValues requirements
 function updateBLockerTrackerItems()
@@ -406,6 +407,12 @@ function onClear(slot_data)
                 obj.Active = true
             end
         end
+    end
+
+    if slot_data['Junk'] then
+        JUNK_LOCATIONS = slot_data['Junk']
+    else
+        JUNK_LOCATIONS = nil
     end
 
     if slot_data['BossBananas'] then

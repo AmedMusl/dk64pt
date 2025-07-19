@@ -43,7 +43,7 @@ function getBLockerItemCount(item_type)
         local obj = Tracker:FindObjectForCode("gb")
         return obj and obj.AcquiredCount or 0
     elseif item_type == "Crown" then
-        local obj = Tracker:FindObjectForCode("crown")
+        local obj = Tracker:FindObjectForCode("crowns")
         return obj and obj.AcquiredCount or 0
     elseif item_type == "Blueprint" then
         -- Sum all individual blueprint types
