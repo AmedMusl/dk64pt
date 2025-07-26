@@ -15,7 +15,7 @@
                         "item_margin": "5, 2",
                         "h_alignment": "left",
                         "rows": [
-                            ["medalamount", "water", "time", "jetpacReq", "bfiReq", "mermaid", "openlobbies", "hardshooting"],
+                            ["medalamount", "water", "time", "jetpacReq", "bfiReq", "mermaid", "openlobbies", "hardshooting", "hintsinpool"],
                             ["helmorder", "bom1", "bom2", "bom3", "bom4", "bom5"],
                             ["kroolorder", "krool", "krool2", "krool3", "krool4", "krool5"],
                             ["tns1", "tns2", "tns3", "tns4", "tns5", "tns6", "tns7"],

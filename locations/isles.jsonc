@@ -162,6 +162,7 @@
       {
         "name": "Japes DK Wrinkly Door",
         "access_rules": ["^$canEnterJapesLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -181,6 +182,7 @@
       {
         "name": "Japes Diddy Wrinkly Door",
         "access_rules": ["^$canEnterJapesLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -200,6 +202,7 @@
       {
         "name": "Japes Lanky Wrinkly Door",
         "access_rules": ["^$canEnterJapesLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -219,6 +222,7 @@
       {
         "name": "Japes Tiny Wrinkly Door",
         "access_rules": ["^$canEnterJapesLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -238,6 +242,7 @@
       {
         "name": "Japes Chunky Wrinkly Door",
         "access_rules": ["^$canEnterJapesLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -274,6 +279,7 @@
       {
         "name": "Aztec DK Wrinkly Door",
         "access_rules": ["^$canEnterAztecLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -293,6 +299,7 @@
       {
         "name": "Aztec Diddy Wrinkly Door",
         "access_rules": ["^$canEnterAztecLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -312,6 +319,7 @@
       {
         "name": "Aztec Lanky Wrinkly Door",
         "access_rules": ["^$canEnterAztecLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -331,6 +339,7 @@
       {
         "name": "Aztec Tiny Wrinkly Door",
         "access_rules": ["^$canEnterAztecLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -350,6 +359,7 @@
       {
         "name": "Aztec Chunky Wrinkly Door",
         "access_rules": ["^$canEnterAztecLobby, $canActivateIslesAztecLobbyFeather"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -505,6 +515,7 @@
       {
         "name": "Factory DK Wrinkly Door",
         "access_rules": ["^$canEnterFactoryLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -524,6 +535,7 @@
       {
         "name": "Factory Diddy Wrinkly Door",
         "access_rules": ["^$factoryDiddyHint"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -543,6 +555,7 @@
       {
         "name": "Factory Lanky Wrinkly Door",
         "access_rules": ["^$factoryLankyHint"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -562,6 +575,7 @@
       {
         "name": "Factory Tiny Wrinkly Door",
         "access_rules": ["^$factoryTinyHint"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -581,6 +595,7 @@
       {
         "name": "Factory Chunky Wrinkly Door",
         "access_rules": ["^$canEnterFactoryLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -636,6 +651,7 @@
       {
         "name": "Galleon DK Hint Door",
         "access_rules": ["^$canEnterGalleonLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -655,6 +671,7 @@
       {
         "name": "Galleon Diddy Hint Door",
         "access_rules": ["^$canEnterGalleonLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -674,6 +691,7 @@
       {
         "name": "Galleon Lanky Hint Door",
         "access_rules": ["^$canEnterGalleonLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -693,6 +711,7 @@
       {
         "name": "Galleon Tiny Hint Door",
         "access_rules": ["^$canEnterGalleonLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -712,6 +731,7 @@
       {
         "name": "Galleon Chunky Hint Door",
         "access_rules": ["^$canEnterGalleonLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -849,6 +869,7 @@
       {
         "name": "Forest DK Hint Door",
         "access_rules": ["^$canEnterForestLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -868,6 +889,7 @@
       {
         "name": "Forest Diddy Hint Door",
         "access_rules": ["^$canEnterForestLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -887,6 +909,7 @@
       {
         "name": "Forest Lanky Hint Door",
         "access_rules": ["^$canEnterForestLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -906,6 +929,7 @@
       {
         "name": "Forest Tiny Hint Door",
         "access_rules": ["^$canEnterForestLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -925,6 +949,7 @@
       {
         "name": "Forest Chunky Hint Door",
         "access_rules": ["^$canEnterForestLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -997,6 +1022,7 @@
       {
         "name": "Caves DK Hint Door",
         "access_rules": ["^$canEnterCavesLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1016,6 +1042,7 @@
       {
         "name": "Caves Diddy Hint Door",
         "access_rules": ["^$canEnterCavesLobby, $rocket", "^$canEnterCavesLobby, $moonkicks"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1035,6 +1062,7 @@
       {
         "name": "Caves Lanky Hint Door",
         "access_rules": ["^$canEnterCavesLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1054,6 +1082,7 @@
       {
         "name": "Caves Tiny Hint Door",
         "access_rules": ["^$canEnterCavesLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1073,6 +1102,7 @@
       {
         "name": "Caves Chunky Hint Door",
         "access_rules": ["^$canEnterCavesLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1092,6 +1122,7 @@
       {
         "name": "Castle DK Hint Door",
         "access_rules": ["^$canEnterCastleLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1111,6 +1142,7 @@
       {
         "name": "Castle Diddy Hint Door",
         "access_rules": ["^$canEnterCastleLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1130,6 +1162,7 @@
       {
         "name": "Castle Lanky Hint Door",
         "access_rules": ["^$canEnterCastleLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1149,6 +1182,7 @@
       {
         "name": "Castle Tiny Hint Door",
         "access_rules": ["^$canEnterCastleLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",
@@ -1168,6 +1202,7 @@
       {
         "name": "Castle Chunky Hint Door",
         "access_rules": ["^$canEnterCastleLobby"],
+        "visibility_rules": ["hintsinpool"],
         "sections": [
           {
             "name": "Wrinkly Door",

@@ -578,6 +578,11 @@ function onClear(slot_data)
         obj.AcquiredCount = (slot_data['MermaidPearls'])
     end
 
+    if slot_data["HintsInPool"] then
+        local obj = Tracker:FindObjectForCode("hintsinpool")
+        obj.Active = (slot_data['HintsInPool'])
+    end
+
     if slot_data['OpenLobbies'] then
         local obj = Tracker:FindObjectForCode("openlobbies")
         obj.Active = (slot_data['OpenLobbies'])
