@@ -4,22 +4,16 @@ end
 
 function getBLockerRequirement(level_name)
     if BLOCKER_VALUES then
-        -- Handle both table format and string format
-        if type(BLOCKER_VALUES) == "table" and BLOCKER_VALUES[level_name] then
-            return BLOCKER_VALUES[level_name]
-        elseif type(BLOCKER_VALUES) == "string" then
-            -- Parse string format: "Japes: 9 Blueprint, Aztec: 3 Fairy..."
-            local pattern = level_name .. ":%s*(%d+)%s+([^,]+)"
-            local count, item_type = BLOCKER_VALUES:match(pattern)
-            if count and item_type then
-                return {
-                    item = item_type:match("^%s*(.-)%s*$"), -- trim whitespace
-                    count = tonumber(count)
-                }
-            end
+        -- Parse string format: "Japes: 9 Blueprint, Aztec: 3 Fairy..."
+        local pattern = level_name .. ":%s*(%d+)%s+([^,]+)"
+        local count, item_type = BLOCKER_VALUES:match(pattern)
+        if count and item_type then
+            return {
+                item = item_type:match("^%s*(.-)%s*$"),
+                count = tonumber(count)
+            }
         end
     end
-    return nil
 end
 
 function getBLockerItemType(level_name)
@@ -41,7 +35,19 @@ end
 function getBLockerItemCount(item_type)
     if item_type == "GoldenBanana" then
         local obj = Tracker:FindObjectForCode("gb")
-        return obj and obj.AcquiredCount or 0
+        local gb_count = obj and obj.AcquiredCount or 0
+        
+        -- Add blueprint count since turning in blueprints gives golden bananas
+        local blueprint_total = 0
+        for _, blueprint_code in ipairs({"dkbp", "diddybp", "lankybp", "tinybp", "chunkybp"}) do
+            local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+            if blueprint_obj then
+                local bp_count = blueprint_obj.AcquiredCount or 0
+                blueprint_total = blueprint_total + bp_count
+                -- Debug output
+            end
+        end
+        return gb_count + blueprint_total
     elseif item_type == "Crown" then
         local obj = Tracker:FindObjectForCode("crowns")
         return obj and obj.AcquiredCount or 0
