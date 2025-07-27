@@ -152,5 +152,13 @@
         "type": "toggle",
         "img": "images/items/snides.png",
         "codes": "snide"
+    },
+    {
+        "name": "Hints",
+        "type": "consumable",
+        "img": "images/settings/wrinklydoor.png",
+        "max_quantity": 35,
+        "initial_quantity": 0,
+        "codes": "hintcount"
     }
 ]

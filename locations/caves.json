@@ -339,7 +339,7 @@
             },
             {
                 "name": "Caves Tiny 5 Door Igloo",
-                "access_rules": ["$igloo, $tiny5DI"],
+                "access_rules": ["$igloo, $tiny5DI, tiny"],
                 "sections": [
                     {
                         "name": "Golden Banana"

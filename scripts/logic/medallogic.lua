@@ -253,9 +253,6 @@ function aztecDiddyMedal()
     end
     local cb_total = 5 -- Bunch Front Tiny Temple
     local cb_amount = Tracker:ProviderCountForCode("medalamount")
-    
-    print("DEBUG: aztecDiddyMedal - Starting cb_total: " .. cb_total .. ", cb_amount: " .. cb_amount)
-    
     if peanuts() then -- Balloon Front Tiny Temple
         cb_total = cb_total + 10
     end

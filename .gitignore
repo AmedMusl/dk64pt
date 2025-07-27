@@ -3,3 +3,7 @@ todo.*
 *.xcf
 .idea
 *.lnk
+*.py
+*.ps1
+*.bat
+*.lua.backup
