@@ -1,0 +1,296 @@
+[
+    {
+        "name": "Factory Dropsanity",
+        "chest_unopened_img": "images/settings/dropsanity.png",
+        "chest_opened_img": "images/settings/dropsanitybw.png",
+        "access_rules": ["^$canEnterFactory"],
+        "visibility_rules": "dropsanity",
+        "children": [
+            {
+                "name": "Frantic Factory Enemy: Candy Cranky (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 292,
+                        "y": 274
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Candy Cranky (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 292,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Lobby Left",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 537,
+                        "y": 725
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Lobby Right",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 590,
+                        "y": 725
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Storage Room",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 530,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Block Tower (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 922,
+                        "y": 512
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Block Tower (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 1012,
+                        "y": 400
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Block Tower (2)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 944,
+                        "y": 362
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Tunnel To Hatch",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 413,
+                        "y": 810
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Tunnel To Prod (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 163,
+                        "y": 612
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Tunnel To Prod (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 162,
+                        "y": 494
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Tunnel To Block Tower",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 821,
+                        "y": 644
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Tunnel To Race (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 1313,
+                        "y": 617
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Tunnel To Race (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 1322,
+                        "y": 550
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Low Warp 4",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 458,
+                        "y": 444
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Diddy Switch",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 438,
+                        "y": 524
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: To Block Tower Tunnel",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 775,
+                        "y": 800
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Dark Room (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 803,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Enemy: Dark Room (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 803,
+                        "y": 250
+                    }
+                ]
+            }
+        ]
+    }
+]

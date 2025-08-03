@@ -1,0 +1,131 @@
+[
+    {
+        "name": "Caves Dropsanity",
+        "chest_unopened_img": "images/settings/dropsanity.png",
+        "chest_opened_img": "images/settings/dropsanitybw.png",
+        "access_rules": ["^$cavesAccess"],
+        "visibility_rules": "dropsanity",
+        "children": [
+            {
+                "name": "Crystal Caves Enemy: Start",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 382,
+                        "y": 871
+                    }
+                ]
+            },
+            {
+                "name": "Crystal Caves Enemy: Near Ice Castle",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 449,
+                        "y": 659
+                    }
+                ]
+            },
+            {
+                "name": "Crystal Caves Enemy: Outside 5DC",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 128,
+                        "y": 569
+                    }
+                ]
+            },
+            {
+                "name": "Crystal Caves Enemy: 1DC Waterfall",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 345,
+                        "y": 425
+                    }
+                ]
+            },
+            {
+                "name": "Crystal Caves Enemy: Near Funky",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 292,
+                        "y": 672
+                    }
+                ]
+            },
+            {
+                "name": "Crystal Caves Enemy: Near Snide",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 550,
+                        "y": 744
+                    }
+                ]
+            },
+            {
+                "name": "Crystal Caves Enemy: Near Bonus Room",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 685,
+                        "y": 430
+                    }
+                ]
+            },
+            {
+                "name": "Crystal Caves Enemy: 1DC Headphones",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 203,
+                        "y": 564
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -288,10 +288,25 @@
             },
             {
                 "name": "Caves DK 5 Door Igloo",
-                "access_rules": ["$igloo, $dk5DI"],
+                "access_rules": ["$igloo, $beginningDK5DI"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Golden Banana",
+                        "access_rules":["$dk5DI"]
+                    },
+                    {
+                        "name": "Caves Donkey Igloo Enemy: Right",
+                        "access_rules":["$heavyEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Caves Donkey Igloo Enemy: Left",
+                        "access_rules":["$heavyEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -339,16 +354,24 @@
             },
             {
                 "name": "Caves Tiny 5 Door Igloo",
-                "access_rules": ["$igloo, $tiny5DI, tiny"],
+                "access_rules": ["$igloo"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Golden Banana",
+                        "access_rules":["$tiny5DI, tiny"]
                     },
                     {
                         "name": "Fairy",
                         "access_rules": ["camera"],
                         "chest_unopened_img": "images/items/fairy.png",
                         "chest_opened_img": "images/items/fairybw.png"
+                    },
+                    {
+                        "name": "Caves Tiny Igloo Enemy: Big Enemy",
+                        "access_rules":["$heavyEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -480,10 +503,18 @@
             },
             {
                 "name": "Caves Lanky Sprint Cabin",
-                "access_rules": ["$canEnterSprintCabin, $balloon, $sprint"],
+                "access_rules": ["$canEnterSprintCabin"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Golden Banana",
+                        "access_rules":["$balloon, $sprint"]
+                    },
+                    {
+                        "name": "Caves Lanky Cabin Enemy: Near",
+                        "access_rules":["$heavyEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -529,43 +560,6 @@
                     }
                 ]
             }
-            // {
-            //     "name": "Caves Boss Defeated",
-            //     "access_rules": [],
-            //     "sections": [
-            //         {
-            //             "name": "Boss",
-            //             "chest_unopened_img": "images/items/scoff.png",
-            //             "chest_opened_img": "images/items/scoffbw.png"
-            //         }
-            //     ],
-            //     "map_locations": [
-            //         {
-            //             "map": "caves",
-            //             "x": 856,
-            //             "y": 688,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "caves",
-            //             "x": 630,
-            //             "y": 812,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "caves",
-            //             "x": 397,
-            //             "y": 334,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "caves",
-            //             "x": 381,
-            //             "y": 503,
-            //             "size": 12
-            //         }
-            //     ]
-            // }
         ]
     }
 ]

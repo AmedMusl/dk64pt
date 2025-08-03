@@ -1,0 +1,283 @@
+[
+    {
+        "name": "Isles Dropsanity",
+        "chest_unopened_img": "images/settings/dropsanity.png",
+        "chest_opened_img": "images/settings/dropsanitybw.png",
+        "visibility_rules": "dropsanity",
+        "access_rules": [],
+        "children": [
+            {
+                "name": "Isles Enemy: Pineapple Cage (0)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 484,
+                        "y": 643,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Isles Enemy: Fungi Cannon (0)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 307,
+                        "y": 710,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Isles Enemy: Japes Entrance",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 340,
+                        "y": 485,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Isles Enemy: Monkeyport Pad",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 375,
+                        "y": 224,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Isles Enemy: Upper Factory Path",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 412,
+                        "y": 220,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Isles Enemy: Near Aztec",
+                "access_rules": ["$flyingEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 307,
+                        "y": 623,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Isles Enemy: Fungi Cannon (1)",
+                "access_rules": ["$flyingEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 280,
+                        "y": 667,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Isles Enemy: Pineapple Cage (1)",
+                "access_rules": ["$flyingEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 477,
+                        "y": 682,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Isles Enemy: Lower Factory Path (0)",
+                "access_rules": ["$flyingEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 394,
+                        "y": 280,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Isles Enemy: Lower Factory Path (1)",
+                "access_rules": ["$flyingEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "isles",
+                        "x": 400,
+                        "y": 200,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Lobby Enemy: Left",
+                "access_rules": ["^$canEnterCastleLobby, $heavyEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castlelobby",
+                        "x": 184,
+                        "y": 322,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Lobby Enemy: Far Right",
+                "access_rules": ["^$canEnterCastleLobby, $heavyEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castlelobby",
+                        "x": 604,
+                        "y": 237,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Lobby Enemy: Near Right",
+                "access_rules": ["^$canEnterCastleLobby, $heavyEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castlelobby",
+                        "x": 672,
+                        "y": 498,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Frantic Factory Lobby Enemy: Enemy (0)",
+                "access_rules": ["^$canEnterFactoryLobby", "$flyingEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "factorylobby",
+                        "x": 607,
+                        "y": 354,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Lobby Enemy: Enemy (0)",
+                "access_rules": ["^$canEnterJapesLobby"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japeslobby",
+                        "x": 354,
+                        "y": 429,
+                        "size": 16
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Lobby Enemy: Enemy (1)",
+                "access_rules": ["^$canEnterJapesLobby"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japeslobby",
+                        "x": 530,
+                        "y": 429,
+                        "size": 16
+                    }
+                ]
+            }
+        ]
+    }
+]

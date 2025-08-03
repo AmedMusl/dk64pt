@@ -1,0 +1,649 @@
+[
+    {
+        "name": "Japes Dropsanity",
+        "chest_unopened_img": "images/settings/dropsanity.png",
+        "chest_opened_img": "images/settings/dropsanitybw.png",
+        "visibility_rules": "dropsanity",
+        "access_rules": ["^$canEnterJapes"],
+        "children": [
+            {
+                "name": "Jungle Japes Enemy: Start",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 533,
+                        "y": 798,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Diddy Cavern",
+                "access_rules": ["$peanuts"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 183,
+                        "y": 834,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Tunnel (0)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 321,
+                        "y": 849,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Tunnel (1)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 363,
+                        "y": 781,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Storm (0)",
+                "access_rules": ["^$coconutCage"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 409,
+                        "y": 125,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Storm (1)",
+                "access_rules": ["^$coconutCage"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 398,
+                        "y": 78,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Storm (2)",
+                "access_rules": ["^$coconutCage"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 327,
+                        "y": 91,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Hive (0)",
+                "access_rules": ["$shellhive, $canChangeTime"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 301,
+                        "y": 270,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Hive (1)",
+                "access_rules": ["$shellhive, $canChangeTime"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 279,
+                        "y": 227,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Hive (2)",
+                "access_rules": ["$shellhive, $canChangeTime"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 214,
+                        "y": 228,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Hive (3)",
+                "access_rules": ["$shellhive"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 187,
+                        "y": 327,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Hive (4)",
+                "access_rules": ["$shellhive"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 285,
+                        "y": 324,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Killed In Demo",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 316,
+                        "y": 646,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Near Underground",
+                "access_rules": ["$canChangeTime"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 258,
+                        "y": 646,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Near Painting (0)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 531,
+                        "y": 553,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Near Painting (1)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 544,
+                        "y": 521,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Near Painting (2)",
+                "access_rules": ["$canChangeTime"],
+                "sections": [
+                    {
+                        "name": "japes"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 528,
+                        "y": 510,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Mountain",
+                "access_rules": ["$canChangeTime, climb", "$canChangeTime, $ostand, ^$ap"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 363,
+                        "y": 412,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Feather Tunnel",
+                "access_rules": ["^$coconutCage, $canChangeTime"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 101,
+                        "y": 364,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Jungle Japes Enemy: Middle Tunnel",
+                "access_rules": ["^$coconutCage"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japes",
+                        "x": 369,
+                        "y": 286,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Start (0)",
+                "access_rules":["$peanuts, climb"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 370,
+                        "y": 733,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Start (1)",
+                "access_rules": ["$peanuts, climb"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 314,
+                        "y": 735,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Start (2)",
+                "access_rules": ["$peanuts, climb"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 258,
+                        "y": 782,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Start (3)",
+                "access_rules": ["$peanuts, climb"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 217,
+                        "y": 745,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Start (4)",
+                "access_rules":["$peanuts, climb"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 250,
+                        "y": 685,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Near Gate Switch (0)",
+                "access_rules":["$peanuts, climb"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 220,
+                        "y": 290,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Near Gate Switch (1)",
+                "access_rules":["$peanuts, climb"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 255,
+                        "y": 245,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Hi Lo",
+                "access_rules":["$peanuts, $charge, climb"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 361,
+                        "y": 74,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Conveyor (0)",
+                "access_rules":["$peanuts, $japesSlam, climb"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 438,
+                        "y": 388,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Mountain Enemy: Conveyor (1)",
+                "access_rules":["$peanuts, climb, $japesSlam"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "japesmountain",
+                        "x": 467,
+                        "y": 344,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Japes Tiny Hive Enemy: First Room",
+                "access_rules":["$shellhive, $mini, oranges"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shellhive",
+                        "x": 232,
+                        "y": 712
+                    }
+                ]
+            },
+            {
+                "name": "Japes Tiny Hive Enemy: Second Room (0)",
+                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shellhive",
+                        "x": 670,
+                        "y": 159
+                    }
+                ]
+            },
+            {
+                "name": "Japes Tiny Hive Enemy: Second Room (1)",
+                "access_rules": ["$shellhive, $mini, $japesSlam, oranges"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shellhive",
+                        "x": 730,
+                        "y": 159
+                    }
+                ]
+            },
+            {
+                "name": "Japes Tiny Hive Enemy: Third Room (0)",
+                "access_rules": ["$shellhive, $mini, $japesSlam, oranges"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shellhive",
+                        "x": 1119,
+                        "y": 607
+                    }
+                ]
+            },
+            {
+                "name": "Japes Tiny Hive Enemy: Third Room (1)",
+                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shellhive",
+                        "x": 1140,
+                        "y": 803
+                    }
+                ]
+            },
+            {
+                "name": "Japes Tiny Hive Enemy: Third Room (2)",
+                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shellhive",
+                        "x": 1342,
+                        "y": 568
+                    }
+                ]
+            },
+            {
+                "name": "Japes Tiny Hive Enemy: Third Room (3)",
+                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shellhive",
+                        "x": 1356,
+                        "y": 815
+                    }
+                ]
+            },
+            {
+                "name": "Japes Tiny Hive Enemy: Main Room",
+                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shellhive",
+                        "x": 1093,
+                        "y": 702
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -20,7 +20,8 @@
 		"tabs": [
 			{ "title": "Main Area", "content": { "type": "map", "maps": ["japes"] } },
 			{ "title": "Japes Underground", "content": { "type": "map", "maps": ["japesunder"] } },
-			{ "title": "Japes Diddy Mountain", "content": { "type": "map", "maps": ["japesmountain"] } }
+			{ "title": "Japes Diddy Mountain", "content": { "type": "map", "maps": ["japesmountain"] } },
+			{ "title": "Japes Shellhive", "content": { "type": "map", "maps": ["shellhive"] } }
 		]
 	},
 	"maps_aztec": {
@@ -28,7 +29,12 @@
 		"tabs": [
 			{ "title": "Main Area", "content": { "type": "map", "maps": ["aztec"] } },
 			{ "title": "Tiny Temple", "content": { "type": "map", "maps": ["tinytemple"] } },
-			{ "title": "Llama Temple", "content": { "type": "map", "maps": ["llamatemple"] } }
+			{ "title": "Llama Temple", "content": { "type": "map", "maps": ["llamatemple"] } },
+			{ "title": "DK 5DT", "content": { "type": "map", "maps": ["dk5dt"] } },
+			{ "title": "Diddy 5DT", "content": { "type": "map", "maps": ["diddy5dt"] } },
+			{ "title": "Lanky 5DT", "content": { "type": "map", "maps": ["lanky5dt"] } },
+			{ "title": "Tiny 5DT", "content": { "type": "map", "maps": ["tiny5dt"] } },
+			{ "title": "Chunky 5DT", "content": { "type": "map", "maps": ["chunky5dt"] } }
 		]
 	},
 	"maps_factory": {

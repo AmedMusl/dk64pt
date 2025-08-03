@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Galleon Dropsanity",
+        "chest_unopened_img": "images/settings/dropsanity.png",
+        "chest_opened_img": "images/settings/dropsanitybw.png",
+        "access_rules": ["^$canEnterGalleon"],
+        "visibility_rules": "dropsanity",
+        "children": [
+            {
+                "name": "Gloomy Galleon Enemy: Chest Room (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 654,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "name": "Gloomy Galleon Enemy: Chest Room (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 665,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "name": "Gloomy Galleon Enemy: Near Vine Cannon",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 564,
+                        "y": 290
+                    }
+                ]
+            },
+            {
+                "name": "Gloomy Galleon Enemy: Cranky Cannon",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 475,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "name": "Gloomy Galleon Enemy: Peanut Tunnel",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 507,
+                        "y": 394
+                    }
+                ]
+            },
+            {
+                "name": "Gloomy Galleon Enemy: Coconut Tunnel",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "galleon",
+                        "x": 608,
+                        "y": 410
+                    }
+                ]
+            }
+        ]
+    }
+]

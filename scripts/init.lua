@@ -40,7 +40,15 @@ Tracker:AddLocations("locations/factory.json")
 Tracker:AddLocations("locations/shops.json")
 Tracker:AddLocations("locations/hints.json")
 Tracker:AddLocations("locations/overview.json")
-
+Tracker:AddLocations("locations/islesdropsanity.json")
+Tracker:AddLocations("locations/japesdropsanity.json")
+Tracker:AddLocations("locations/aztecdropsanity.json")
+Tracker:AddLocations("locations/factorydropsanity.json")
+Tracker:AddLocations("locations/galleondropsanity.json")
+Tracker:AddLocations("locations/forestdropsanity.json")
+Tracker:AddLocations("locations/cavesdropsanity.json")
+Tracker:AddLocations("locations/castledropsanity.json")
+Tracker:AddLocations("locations/helmdropsanity.json")
 
 -- Default Layout
 Tracker:AddLayouts("layouts/moves.json")

@@ -187,8 +187,20 @@ function pastCabinIsle()
     return hasGalleonKey and (standardMethod or advancedPlatforming or moonkicks)
 end
 
+function winch()
+    return (nightTime() and has("climb") and forestSlam()) or (balloon() and moonkicks())
+end
+
 function winchCage()
-    return (peanuts() and guitar() and charge() and nightTime() and ((has("climb") and forestSlam()) or ((has("climb") or balloon()) and moonkicks()))) or phaseswim()
+    return guitar() and charge() and canChangeTime() and charge()
+end
+
+function flyingEnemy()
+    return bongos() or guitar() or trombone() or sax() or triangle() or coconut() or peanuts() or grape() or feather() or pineapple()
+end
+
+function heavyEnemy()
+    return has("shockwave") or has("oranges") or bongos() or guitar() or trombone() or sax() or triangle()
 end
 
 function lankyGold()

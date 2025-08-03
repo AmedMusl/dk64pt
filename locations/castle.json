@@ -152,6 +152,20 @@
                         "access_rules": ["$coconut, dive, camera"],
                         "chest_unopened_img": "images/items/fairy.png",
                         "chest_opened_img": "images/items/fairybw.png"
+                    },
+                    {
+                        "name": "Castle Tree Enemy: Start Room (0)",
+                        "access_rules":["$flyingEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Tree Enemy: Start Room (1)",
+                        "access_rules":["$flyingEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -165,10 +179,39 @@
             },
             {            
                 "name": "Castle DK Library",
-                "access_rules": ["$castleSlam, $strong"],
+                "access_rules": ["$castleSlam, donkey"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Golden Banana",
+                        "access_rules":["$strong"]
+                    },
+                    {
+                        "name": "Castle Library Enemy: Fork Left (0)",
+                        "access_rules":["$flyingEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Library Enemy: Fork Left (1)",
+                        "access_rules":["$flyingEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Library Enemy: Fork Center",
+                        "access_rules":["$flyingEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Library Enemy: Fork Right",
+                        "access_rules":["$flyingEnemy"],
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -367,6 +410,30 @@
                 "sections": [
                     {
                         "name": "Golden Banana"
+                    },
+                    {
+                        "name": "Castle Crypt Enemy: Diddy Coffin (0)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Crypt Enemy: Diddy Coffin (1)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Crypt Enemy: Diddy Coffin (2)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Crypt Enemy: Diddy Coffin (3)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -380,10 +447,39 @@
             },
             {            
                 "name": "Castle Chunky Crypt",
-                "access_rules": ["$chunkyCryptDoors, $punch"],
+                "access_rules": ["$chunkyCryptDoors"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Golden Banana",
+                        "access_rules":["$punch"]
+                    },
+                    {
+                        "name": "Castle Crypt Enemy: Chunky Coffin (0)",
+                        "visibility_rules":["dropsanity"],
+                        "access_rules":["slam, chunky"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Crypt Enemy: Chunky Coffin (1)",
+                        "visibility_rules":["dropsanity"],
+                        "access_rules":["slam, chunky"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Crypt Enemy: Chunky Coffin (2)",
+                        "visibility_rules":["dropsanity"],
+                        "access_rules":["slam, chunky"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Crypt Enemy: Chunky Coffin (3)",
+                        "visibility_rules":["dropsanity"],
+                        "access_rules":["slam, chunky"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -397,10 +493,17 @@
             },
             {            
                 "name": "Castle DK Minecart",
-                "access_rules": ["$dkCryptDoors, $grab"],
+                "access_rules": ["$dkCryptDoors"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Golden Banana",
+                        "access_rules":["$grab"]
+                    },
+                    {
+                        "name": "Castle Crypt Enemy: Minecart Entry",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -423,6 +526,24 @@
                     {
                         "name": "Castle Tiny Mausoleum",
                         "access_rules": ["$twirl, $castleSlam"]
+                    },
+                    {
+                        "name": "Castle Mausoleum Enemy: Tiny Path",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Mausoleum Enemy: Lanky Path (0)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                    {
+                        "name": "Castle Mausoleum Enemy: Lanky Path (1)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -521,49 +642,6 @@
                     }
                 ]
             }
-            // {
-            //     "name": "Castle Boss Defeated",
-            //     "access_rules": [],
-            //     "sections": [
-            //         {
-            //             "name": "Boss",
-            //             "chest_unopened_img": "images/items/scoff.png",
-            //             "chest_opened_img": "images/items/scoffbw.png"
-            //         }
-            //     ],
-            //     "map_locations": [
-            //         {
-            //             "map": "castle",
-            //             "x": 202,
-            //             "y": 596,
-            //             "size": 14
-            //         },
-            //         {
-            //             "map": "castle",
-            //             "x": 760,
-            //             "y": 864,
-            //             "size": 14
-            //         },
-            //         {
-            //             "map": "castle",
-            //             "x": 670,
-            //             "y": 755,
-            //             "size": 14
-            //         },
-            //         {
-            //             "map": "dungeontunnel",
-            //             "x": 395,
-            //             "y": 616,
-            //             "size": 16
-            //         },
-            //         {
-            //             "map": "crypthub",
-            //             "x": 913,
-            //             "y": 93,
-            //             "size": 16
-            //         }
-            //     ]
-            // }
         ]
     }    
 ]

@@ -11,7 +11,31 @@ function bLocker1()
     if blockerCount < 1 then
         return true
     else
-        return Tracker:ProviderCountForCode("gb") >= blockerCount
+        local gb_count = Tracker:ProviderCountForCode("gb")
+        -- Add blueprint count since turning in blueprints gives golden bananas
+        -- Only count blueprints for kongs you have
+        local blueprint_total = 0
+        local kong_blueprint_map = {
+            {"donkey", "dkbp"},
+            {"diddy", "diddybp"}, 
+            {"lanky", "lankybp"},
+            {"tiny", "tinybp"},
+            {"chunky", "chunkybp"}
+        }
+        
+        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+            local kong_code = kong_bp_pair[1]
+            local blueprint_code = kong_bp_pair[2]
+            local kong_obj = Tracker:FindObjectForCode(kong_code)
+            
+            if kong_obj and kong_obj.Active then
+                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                if blueprint_obj then
+                    blueprint_total = blueprint_total + (blueprint_obj.AcquiredCount or 0)
+                end
+            end
+        end
+        return (gb_count + blueprint_total) >= blockerCount
     end
 end
 
@@ -26,7 +50,31 @@ function bLocker2()
     if blockerCount < 1 then
         return true
     else
-        return Tracker:ProviderCountForCode("gb") >= blockerCount
+        local gb_count = Tracker:ProviderCountForCode("gb")
+        -- Add blueprint count since turning in blueprints gives golden bananas
+        -- Only count blueprints for kongs you have
+        local blueprint_total = 0
+        local kong_blueprint_map = {
+            {"donkey", "dkbp"},
+            {"diddy", "diddybp"}, 
+            {"lanky", "lankybp"},
+            {"tiny", "tinybp"},
+            {"chunky", "chunkybp"}
+        }
+        
+        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+            local kong_code = kong_bp_pair[1]
+            local blueprint_code = kong_bp_pair[2]
+            local kong_obj = Tracker:FindObjectForCode(kong_code)
+            
+            if kong_obj and kong_obj.Active then
+                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                if blueprint_obj then
+                    blueprint_total = blueprint_total + (blueprint_obj.AcquiredCount or 0)
+                end
+            end
+        end
+        return (gb_count + blueprint_total) >= blockerCount
     end
 end
 
@@ -41,7 +89,31 @@ function bLocker3()
     if blockerCount < 1 then
         return true
     else
-        return Tracker:ProviderCountForCode("gb") >= blockerCount
+        local gb_count = Tracker:ProviderCountForCode("gb")
+        -- Add blueprint count since turning in blueprints gives golden bananas
+        -- Only count blueprints for kongs you have
+        local blueprint_total = 0
+        local kong_blueprint_map = {
+            {"donkey", "dkbp"},
+            {"diddy", "diddybp"}, 
+            {"lanky", "lankybp"},
+            {"tiny", "tinybp"},
+            {"chunky", "chunkybp"}
+        }
+        
+        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+            local kong_code = kong_bp_pair[1]
+            local blueprint_code = kong_bp_pair[2]
+            local kong_obj = Tracker:FindObjectForCode(kong_code)
+            
+            if kong_obj and kong_obj.Active then
+                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                if blueprint_obj then
+                    blueprint_total = blueprint_total + (blueprint_obj.AcquiredCount or 0)
+                end
+            end
+        end
+        return (gb_count + blueprint_total) >= blockerCount
     end
 end
 
@@ -56,7 +128,31 @@ function bLocker4()
     if blockerCount < 1 then
         return true
     else
-        return Tracker:ProviderCountForCode("gb") >= blockerCount
+        local gb_count = Tracker:ProviderCountForCode("gb")
+        -- Add blueprint count since turning in blueprints gives golden bananas
+        -- Only count blueprints for kongs you have
+        local blueprint_total = 0
+        local kong_blueprint_map = {
+            {"donkey", "dkbp"},
+            {"diddy", "diddybp"}, 
+            {"lanky", "lankybp"},
+            {"tiny", "tinybp"},
+            {"chunky", "chunkybp"}
+        }
+        
+        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+            local kong_code = kong_bp_pair[1]
+            local blueprint_code = kong_bp_pair[2]
+            local kong_obj = Tracker:FindObjectForCode(kong_code)
+            
+            if kong_obj and kong_obj.Active then
+                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                if blueprint_obj then
+                    blueprint_total = blueprint_total + (blueprint_obj.AcquiredCount or 0)
+                end
+            end
+        end
+        return (gb_count + blueprint_total) >= blockerCount
     end
 end
 
@@ -71,7 +167,31 @@ function bLocker5()
     if blockerCount < 1 then
         return true
     else
-        return Tracker:ProviderCountForCode("gb") >= blockerCount
+        local gb_count = Tracker:ProviderCountForCode("gb")
+        -- Add blueprint count since turning in blueprints gives golden bananas
+        -- Only count blueprints for kongs you have
+        local blueprint_total = 0
+        local kong_blueprint_map = {
+            {"donkey", "dkbp"},
+            {"diddy", "diddybp"}, 
+            {"lanky", "lankybp"},
+            {"tiny", "tinybp"},
+            {"chunky", "chunkybp"}
+        }
+        
+        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+            local kong_code = kong_bp_pair[1]
+            local blueprint_code = kong_bp_pair[2]
+            local kong_obj = Tracker:FindObjectForCode(kong_code)
+            
+            if kong_obj and kong_obj.Active then
+                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                if blueprint_obj then
+                    blueprint_total = blueprint_total + (blueprint_obj.AcquiredCount or 0)
+                end
+            end
+        end
+        return (gb_count + blueprint_total) >= blockerCount
     end
 end
 
@@ -86,7 +206,31 @@ function bLocker6()
     if blockerCount < 1 then
         return true
     else
-        return Tracker:ProviderCountForCode("gb") >= blockerCount
+        local gb_count = Tracker:ProviderCountForCode("gb")
+        -- Add blueprint count since turning in blueprints gives golden bananas
+        -- Only count blueprints for kongs you have
+        local blueprint_total = 0
+        local kong_blueprint_map = {
+            {"donkey", "dkbp"},
+            {"diddy", "diddybp"}, 
+            {"lanky", "lankybp"},
+            {"tiny", "tinybp"},
+            {"chunky", "chunkybp"}
+        }
+        
+        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+            local kong_code = kong_bp_pair[1]
+            local blueprint_code = kong_bp_pair[2]
+            local kong_obj = Tracker:FindObjectForCode(kong_code)
+            
+            if kong_obj and kong_obj.Active then
+                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                if blueprint_obj then
+                    blueprint_total = blueprint_total + (blueprint_obj.AcquiredCount or 0)
+                end
+            end
+        end
+        return (gb_count + blueprint_total) >= blockerCount
     end
 end
 
@@ -101,7 +245,31 @@ function bLocker7()
     if blockerCount < 1 then
         return true
     else
-        return Tracker:ProviderCountForCode("gb") >= blockerCount
+        local gb_count = Tracker:ProviderCountForCode("gb")
+        -- Add blueprint count since turning in blueprints gives golden bananas
+        -- Only count blueprints for kongs you have
+        local blueprint_total = 0
+        local kong_blueprint_map = {
+            {"donkey", "dkbp"},
+            {"diddy", "diddybp"}, 
+            {"lanky", "lankybp"},
+            {"tiny", "tinybp"},
+            {"chunky", "chunkybp"}
+        }
+        
+        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+            local kong_code = kong_bp_pair[1]
+            local blueprint_code = kong_bp_pair[2]
+            local kong_obj = Tracker:FindObjectForCode(kong_code)
+            
+            if kong_obj and kong_obj.Active then
+                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                if blueprint_obj then
+                    blueprint_total = blueprint_total + (blueprint_obj.AcquiredCount or 0)
+                end
+            end
+        end
+        return (gb_count + blueprint_total) >= blockerCount
     end
 end
 
@@ -116,7 +284,31 @@ function bLocker8()
     if blockerCount < 1 then
         return true
     else
-        return Tracker:ProviderCountForCode("gb") >= blockerCount
+        local gb_count = Tracker:ProviderCountForCode("gb")
+        -- Add blueprint count since turning in blueprints gives golden bananas
+        -- Only count blueprints for kongs you have
+        local blueprint_total = 0
+        local kong_blueprint_map = {
+            {"donkey", "dkbp"},
+            {"diddy", "diddybp"}, 
+            {"lanky", "lankybp"},
+            {"tiny", "tinybp"},
+            {"chunky", "chunkybp"}
+        }
+        
+        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+            local kong_code = kong_bp_pair[1]
+            local blueprint_code = kong_bp_pair[2]
+            local kong_obj = Tracker:FindObjectForCode(kong_code)
+            
+            if kong_obj and kong_obj.Active then
+                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                if blueprint_obj then
+                    blueprint_total = blueprint_total + (blueprint_obj.AcquiredCount or 0)
+                end
+            end
+        end
+        return (gb_count + blueprint_total) >= blockerCount
     end
 end
 

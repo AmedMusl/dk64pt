@@ -1,0 +1,334 @@
+[
+    {
+        "name": "Helm Dropsanity",
+        "chest_unopened_img": "images/settings/dropsanity.png",
+        "chest_opened_img": "images/settings/dropsanitybw.png",
+        "visibility_rules": "dropsanity",
+        "access_rules": ["^$canEnterHelm"],
+        "children": [
+            {
+                "name": "Hideout Helm Enemy: Start (0)",
+                "access_rules": ["$endOfHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 86,
+                        "y": 820,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Start (1)",
+                "access_rules": ["$endOfHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 87,
+                        "y": 793,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Hill",
+                "access_rules": ["$endOfHelm, $ostand, $heavyEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 144,
+                        "y": 793,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Switch Room (0)",
+                "access_rules": ["$endOfHelm, $ostand, $heavyEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 123,
+                        "y": 723,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Switch Room (1)",
+                "access_rules": ["$endOfHelm, $ostand"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 170,
+                        "y": 691,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Mini Room (0)",
+                "access_rules": ["$endOfHelm, $ostand, $pineapple, vine"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 189,
+                        "y": 539,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Mini Room (1)",
+                "access_rules": ["$endOfHelm, $ostand, $pineapple, vine"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 185,
+                        "y": 500,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Mini Room (2)",
+                "access_rules": ["$endOfHelm, $ostand, $pineapple, vine"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 227,
+                        "y": 468,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Mini Room (3)",
+                "access_rules": ["$endOfHelm, $ostand, $pineapple, vine"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 240,
+                        "y": 526,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: DKRoom",
+                "access_rules": ["$dkHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 297,
+                        "y": 259,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Chunky Room (0)",
+                "access_rules": ["$chunkyHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 121,
+                        "y": 450,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Chunky Room (1)",
+                "access_rules": ["$chunkyHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 103,
+                        "y": 430,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Tiny Room",
+                "access_rules": ["$tinyHelm, $heavyEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 332,
+                        "y": 348,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Lanky Room (0)",
+                "access_rules": ["$lankyHelm, $heavyEnemy"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 75,
+                        "y": 364,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Lanky Room (1)",
+                "access_rules": ["$lankyHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 75,
+                        "y": 330,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Diddy Room (0)",
+                "access_rules": ["$diddyHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 309,
+                        "y": 430,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Diddy Room (1)",
+                "access_rules": ["$diddyHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 288,
+                        "y": 450,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Nav Right",
+                "access_rules": ["$endOfHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 169,
+                        "y": 169,
+                        "size": 10
+                    }
+                ]
+            },
+            {
+                "name": "Hideout Helm Enemy: Nav Left",
+                "access_rules": ["$endOfHelm"],
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "helm",
+                        "x": 123,
+                        "y": 169,
+                        "size": 10
+                    }
+                ]
+            }
+        ]
+    }
+]

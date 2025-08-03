@@ -3,7 +3,7 @@ function isBLockerEnabled()
 end
 
 function getBLockerRequirement(level_name)
-    if BLOCKER_VALUES then
+    if BLOCKER_VALUES and type(BLOCKER_VALUES) == "string" then
         -- Parse string format: "Japes: 9 Blueprint, Aztec: 3 Fairy..."
         local pattern = level_name .. ":%s*(%d+)%s+([^,]+)"
         local count, item_type = BLOCKER_VALUES:match(pattern)
@@ -38,13 +38,27 @@ function getBLockerItemCount(item_type)
         local gb_count = obj and obj.AcquiredCount or 0
         
         -- Add blueprint count since turning in blueprints gives golden bananas
+        -- Only count blueprints for kongs you have
         local blueprint_total = 0
-        for _, blueprint_code in ipairs({"dkbp", "diddybp", "lankybp", "tinybp", "chunkybp"}) do
-            local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
-            if blueprint_obj then
-                local bp_count = blueprint_obj.AcquiredCount or 0
-                blueprint_total = blueprint_total + bp_count
-                -- Debug output
+        local kong_blueprint_map = {
+            {"donkey", "dkbp"},
+            {"diddy", "diddybp"}, 
+            {"lanky", "lankybp"},
+            {"tiny", "tinybp"},
+            {"chunky", "chunkybp"}
+        }
+        
+        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+            local kong_code = kong_bp_pair[1]
+            local blueprint_code = kong_bp_pair[2]
+            local kong_obj = Tracker:FindObjectForCode(kong_code)
+            
+            if kong_obj and kong_obj.Active then
+                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                if blueprint_obj then
+                    local bp_count = blueprint_obj.AcquiredCount or 0
+                    blueprint_total = blueprint_total + bp_count
+                end
             end
         end
         return gb_count + blueprint_total

@@ -84,104 +84,140 @@
     "img": "/images/maps/diddy_mountain.png"
   },
   {
+    "name": "shellhive",
+    "location_size":16,
+    "location_border_thickness":2,
+    "img": "images/maps/shellhive.png"
+  },
+  {
     "name": "aztec",
-    "location_size": 35,
+    "location_size": 12,
     "location_border_thickness": 2,
     "img": "/images/maps/aztec.png"
   },
   {
     "name": "tinytemple",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/tiny_temple.png"
   },
   {
+    "name": "dk5dt",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "/images/maps/dk5dt.png"
+  },
+  {
+    "name": "diddy5dt",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "/images/maps/diddy5dt.png"
+  },
+  {
+    "name": "lanky5dt",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "/images/maps/lanky5dt.png"
+  },
+  {
+    "name": "tiny5dt",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "/images/maps/tiny5dt.png"
+  },
+  {
+    "name": "chunky5dt",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "/images/maps/chunky5dt.png"
+  },
+  {
     "name": "llamatemple",
-    "location_size": 35,
+    "location_size": 12,
     "location_border_thickness": 2,
     "img": "/images/maps/llama.png"
   },
   {
     "name": "factory",
-    "location_size": 35,
+    "location_size": 14,
     "location_border_thickness": 2,
     "img": "/images/maps/factory.png"
   },
   {
     "name": "galleon",
-    "location_size": 35,
+    "location_size": 10,
     "location_border_thickness": 2,
     "img": "/images/maps/galleon.png"
   },
   {
     "name": "forest",
-    "location_size": 35,
+    "location_size": 12,
     "location_border_thickness": 2,
     "img": "/images/maps/forest.png"
   },
   {
     "name": "frontmill",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/front_mill.png"
   },
   {
     "name": "rearmill",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/rear_mill.png"
   },
   {
     "name": "barn",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/barn.png"
   },
   {
     "name": "caves",
-    "location_size": 35,
+    "location_size": 12,
     "location_border_thickness": 2,
     "img": "/images/maps/caves.png"
   },
   {
     "name": "castle",
-    "location_size": 35,
+    "location_size": 14,
     "location_border_thickness": 2,
     "img": "/images/maps/castle.png"
   },
   {
     "name": "crypthub",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/crypt_hub.png"
   },
   {
     "name": "crypt",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/kong_crypt.png"
   },
   {
     "name": "dungeon",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/dungeon.png"
   },
   {
     "name": "dungeontunnel",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/dungeon_tunnel.png"
   },
   {
     "name": "ballroom",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/ballroom.png"
   },
   {
     "name": "museum",
-    "location_size": 35,
+    "location_size": 16,
     "location_border_thickness": 2,
     "img": "/images/maps/museum.png"
   },

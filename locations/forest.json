@@ -104,8 +104,30 @@
                     {
                         "name": "Forest Kasplat: Inside Giant Mushroom",
                         "access_rules": ["$canClimbMushroom"],
+                        "visibility_rules":["dropsanity"],
                         "chest_unopened_img": "images/items/diddy_bp.png",
                         "chest_opened_img": "images/items/blueprintbw.png"
+                    },
+                    {
+                        "name": "Forest Giant Mushroom Enemy: Above Night Door",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules": ["$flyingEnemy, $canClimbMushroom"]
+                    },
+                    {
+                        "name": "Forest Giant Mushroom Enemy: Path (0)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules": ["$flyingEnemy, $canClimbMushroom"]
+                    },
+                    {
+                        "name": "Forest Giant Mushroom Enemy: Path (1)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules": ["$flyingEnemy, $canClimbMushroom"]
                     }
                 ],
                 "map_locations": [
@@ -192,11 +214,19 @@
                 ]
             },
             {            
-                "name": "Forest Chunky Face Puzzle",
-                "access_rules": ["$canClimbMushroom, $forestSlam, $pineapple"],
+                "name": "Face Puzzle Room",
+                "access_rules": ["$canClimbMushroom, $forestSlam"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Forest Chunky Face Puzzle",
+                        "access_rules": ["$pineapple"]
+                    },
+                    {
+                        "name": "Forest Chunky Face Room Enemy: Enemy",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules": ["$flyingEnemy"]
                     }
                 ],
                 "map_locations": [
@@ -209,11 +239,25 @@
                 ]
             },
             {            
-                "name": "Forest Lanky Zinger Bounce",
+                "name": "Zinger Room",
                 "access_rules": ["$topOfMushroom, $forestSlam, lanky"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Forest Lanky Zinger Room"
+                    },
+                    {
+                        "name": "Forest Lanky Zingers Room Enemy: Enemy (0)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules":["$flyingEnemy"]
+                    },
+                                        {
+                        "name": "Forest Lanky Zingers Room Enemy: Enemy (1)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules":["$flyingEnemy"]
                     }
                 ],
                 "map_locations": [
@@ -325,6 +369,34 @@
                         "name": "Forest Tiny Bean",
                         "chest_unopened_img": "images/items/bean.png",
                         "chest_opened_img": "images/items/beanbw.png"
+                    },
+                    {
+                        "name": "Forest Anthill Enemy: Gauntlet (0)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules": ["oranges", "$bongos", "$guitar", "$trombone", "$sax", "$triangle"]
+                    },
+                                        {
+                        "name": "Forest Anthill Enemy: Gauntlet (1)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules": ["oranges", "$bongos", "$guitar", "$trombone", "$sax", "$triangle"]
+                    },
+                                        {
+                        "name": "Forest Anthill Enemy: Gauntlet (2)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules": ["oranges", "$bongos", "$guitar", "$trombone", "$sax", "$triangle"]
+                    },
+                                        {
+                        "name": "Forest Anthill Enemy: Gauntlet (3)",
+                        "visibility_rules":["dropsanity"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png",
+                        "access_rules": ["oranges", "$bongos", "$guitar", "$trombone", "$sax", "$triangle"]
                     }
                 ],
                 "map_locations": [
@@ -354,11 +426,19 @@
                 ]
             },
             {            
-                "name": "Forest Diddy Winch Cage",
-                "access_rules": ["$winchCage"],
+                "name": "Winch Room",
+                "access_rules": ["$winch"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Forest Diddy Winch Cage",
+                        "access_rules":["$winchCage"]
+                    },
+                    {
+                        "name": "Forest Winch Room Enemy: Enemy",
+                        "visibility_rules":["dropsanity"],
+                        "access_rules":["$flyingEnemy"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -628,49 +708,6 @@
                     }
                 ]
             }
-            // {
-            //     "name": "Forest Boss Defeated",
-            //     "access_rules": [],
-            //     "sections": [
-            //         {
-            //             "name": "Boss",
-            //             "chest_unopened_img": "images/items/scoff.png",
-            //             "chest_opened_img": "images/items/scoffbw.png"
-            //         }
-            //     ],
-            //     "map_locations": [
-            //         {
-            //             "map": "forest",
-            //             "x": 800,
-            //             "y": 696,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "forest",
-            //             "x": 360,
-            //             "y": 754,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "forest",
-            //             "x": 359,
-            //             "y": 676,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "forest",
-            //             "x": 423,
-            //             "y": 241,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "forest",
-            //             "x": 964,
-            //             "y": 252,
-            //             "size": 12
-            //         }
-            //     ]
-            // }
         ]
     }
 ]

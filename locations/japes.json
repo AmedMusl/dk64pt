@@ -377,6 +377,12 @@
                         "x": 295,
                         "y": 205,
                         "size": 10
+                    },
+                    {
+                        "map": "shellhive",
+                        "x": 1246,
+                        "y": 681,
+                        "size": 16
                     }
                 ]
             },
@@ -399,7 +405,7 @@
             },
             {            
                 "name": "Japes Tiny Beehive",
-                "access_rules": ["$shellhive, $mini, $japesSlam"],
+                "access_rules": ["$shellhive, $mini, $japesSlam, oranges"],
                 "sections": [
                     {
                         "name": "Golden Banana"

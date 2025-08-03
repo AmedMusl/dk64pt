@@ -1,0 +1,521 @@
+[
+    {
+        "name": "Castle Dropsanity",
+        "chest_unopened_img": "images/settings/dropsanity.png",
+        "chest_opened_img": "images/settings/dropsanitybw.png",
+        "access_rules": ["^$canEnterCastle"],
+        "visibility_rules": "dropsanity",
+        "children": [
+            {
+                "name": "Creepy Castle Enemy: Near Bridge (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 192,
+                        "y": 465
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Near Bridge (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 253,
+                        "y": 443
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Wooden Extrusion (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 368,
+                        "y": 781
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Wooden Extrusion (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 556,
+                        "y": 782
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Near Shed",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 670,
+                        "y": 758
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Near Library",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 495,
+                        "y": 705
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Near Tower",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 454,
+                        "y": 578
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Museum Steps",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 355,
+                        "y": 710
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Near Low Cave",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 456,
+                        "y": 750
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Path To Low Kasplat",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 204,
+                        "y": 835
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Low TnS",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 810,
+                        "y": 755
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Path To Dungeon",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 850,
+                        "y": 465
+                    }
+                ]
+            },
+            {
+                "name": "Creepy Castle Enemy: Near Headphones",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 736,
+                        "y": 246
+                    }
+                ]
+            },
+            {
+                "name": "Castle Ballroom Enemy: Start",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ballroom",
+                        "x": 252,
+                        "y": 848
+                    }
+                ]
+            },
+            {
+                "name": "Castle Dungeon Enemy: Face Room",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeon",
+                        "x": 362,
+                        "y": 471
+                    }
+                ]
+            },
+            {
+                "name": "Castle Dungeon Enemy: Chair Room",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeon",
+                        "x": 118,
+                        "y": 822
+                    }
+                ]
+            },
+            {
+                "name": "Castle Dungeon Enemy: Outside Lanky Room",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeon",
+                        "x": 116,
+                        "y": 336
+                    }
+                ]
+            },
+            {
+                "name": "Castle Lower Cave Enemy: Near Crypt",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypthub",
+                        "x": 295,
+                        "y": 633
+                    }
+                ]
+            },
+            {
+                "name": "Castle Lower Cave Enemy: Stair Right",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypthub",
+                        "x": 430,
+                        "y": 533
+                    }
+                ]
+            },
+            {
+                "name": "Castle Lower Cave Enemy: Stair Left",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypthub",
+                        "x": 430,
+                        "y": 722
+                    }
+                ]
+            },
+            {
+                "name": "Castle Lower Cave Enemy: Near Mausoleum",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypthub",
+                        "x": 973,
+                        "y": 623
+                    }
+                ]
+            },
+            {
+                "name": "Castle Lower Cave Enemy: Near Funky",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypthub",
+                        "x": 843,
+                        "y": 387
+                    }
+                ]
+            },
+            {
+                "name": "Castle Lower Cave Enemy: Near Tag",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "castle",
+                        "x": 836,
+                        "y": 210
+                    }
+                ]
+            },
+            {
+                "name": "Castle Crypt Enemy: Fork",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypt",
+                        "x": 303,
+                        "y": 410
+                    }
+                ]
+            },
+            {
+                "name": "Castle Crypt Enemy: Near Diddy",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypt",
+                        "x": 430,
+                        "y": 262
+                    }
+                ]
+            },
+            {
+                "name": "Castle Crypt Enemy: Near Chunky",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "crypt",
+                        "x": 302,
+                        "y": 648
+                    }
+                ]
+            },
+            {
+                "name": "Castle Upper Cave Enemy: Near Dungeon",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeontunnel",
+                        "x": 133,
+                        "y": 465
+                    }
+                ]
+            },
+            {
+                "name": "Castle Upper Cave Enemy: Near Pit",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeontunnel",
+                        "x": 246,
+                        "y": 359
+                    }
+                ]
+            },
+            {
+                "name": "Castle Upper Cave Enemy: Near Entrance",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dungeontunnel",
+                        "x": 222,
+                        "y": 789
+                    }
+                ]
+            },
+            {
+                "name": "Castle Museum Enemy: Main Floor (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "museum",
+                        "x": 136,
+                        "y": 314
+                    }
+                ]
+            },
+            {
+                "name": "Castle Museum Enemy: Main Floor (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "museum",
+                        "x": 278,
+                        "y": 314
+                    }
+                ]
+            },
+            {
+                "name": "Castle Museum Enemy: Main Floor (2)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "museum",
+                        "x": 136,
+                        "y": 64
+                    }
+                ]
+            },
+            {
+                "name": "Castle Museum Enemy: Main Floor (3)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "museum",
+                        "x": 278,
+                        "y": 64
+                    }
+                ]
+            },
+            {
+                "name": "Castle Museum Enemy: Start",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "museum",
+                        "x": 214,
+                        "y": 595
+                    }
+                ]
+            }
+        ]
+    }
+]

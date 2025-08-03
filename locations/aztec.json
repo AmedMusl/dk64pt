@@ -562,43 +562,6 @@
                     }
                 ]
             }
-            // {
-            //     "name": "Aztec Boss Defeated",
-            //     "access_rules": [],
-            //     "sections": [
-            //         {
-            //             "name": "Boss",
-            //             "chest_unopened_img": "images/items/scoff.png",
-            //             "chest_opened_img": "images/items/scoffbw.png"
-            //         }
-            //     ],
-            //     "map_locations": [
-            //         {
-            //             "map": "aztec",
-            //             "x": 618,
-            //             "y": 851,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "aztec",
-            //             "x": 674,
-            //             "y": 289,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "aztec",
-            //             "x": 386,
-            //             "y": 94,
-            //             "size": 12
-            //         },
-            //         {
-            //             "map": "aztec",
-            //             "x": 517,
-            //             "y": 107,
-            //             "size": 12
-            //         }
-            //     ]
-            // }
         ]
     }
 ]

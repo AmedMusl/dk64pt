@@ -1,0 +1,1024 @@
+[
+    {
+        "name": "Aztec Dropsanity",
+        "chest_unopened_img": "images/settings/dropsanity.png",
+        "chest_opened_img": "images/settings/dropsanitybw.png",
+        "access_rules": ["^$aztecAccess"],
+        "visibility_rules": "dropsanity",
+        "children": [
+            {
+                "name": "Angry Aztec Enemy: Vase Room (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 937,
+                        "y": 798
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Vase Room (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 988,
+                        "y": 794
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Tunnel Pad (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 431,
+                        "y": 622
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Tunnel Cage (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 330,
+                        "y": 490
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Tunnel Cage (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 341,
+                        "y": 493
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Tunnel Cage (2)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 335,
+                        "y": 504
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Starting Tunnel (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 782,
+                        "y": 731
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Starting Tunnel (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 703,
+                        "y": 775
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Oasis Door",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 555,
+                        "y": 688
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Tunnel Cage (3)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 340,
+                        "y": 426
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Outside Llama",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 450,
+                        "y": 305
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Outside Tower",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 273,
+                        "y": 247
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Tunnel Pad (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 434,
+                        "y": 584
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Near Candy",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 632,
+                        "y": 784
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Around Totem",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 510,
+                        "y": 181
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Starting Tunnel (2)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 731,
+                        "y": 738
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Starting Tunnel (3)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 712,
+                        "y": 766
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Outside Snide",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 270,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Outside 5DT",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 585,
+                        "y": 217
+                    }
+                ]
+            },
+            {
+                "name": "Angry Aztec Enemy: Near Sealed Quicksand Tunnel",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 467,
+                        "y": 187
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Donkey 5DTemple Enemy: Start Trap (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 732,
+                        "y": 455
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Donkey 5DTemple Enemy: Start Trap (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 776,
+                        "y": 455
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Donkey 5DTemple Enemy: Start Trap (2)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 756,
+                        "y": 417
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Donkey 5DTemple Enemy: End Trap (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 51,
+                        "y": 64
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Donkey 5DTemple Enemy: End Trap (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 87,
+                        "y": 64
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Donkey 5DTemple Enemy: End Trap (2)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 72,
+                        "y": 65
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Donkey 5DTemple Enemy: End Path (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 431,
+                        "y": 242
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Donkey 5DTemple Enemy: End Path (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 525,
+                        "y": 242
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Donkey 5DTemple Enemy: Start Path",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 414,
+                        "y": 618
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Diddy 5DTemple Enemy: End Trap (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "diddy5dt",
+                        "x": 64,
+                        "y": 444
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Diddy 5DTemple Enemy: End Trap (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "diddy5dt",
+                        "x": 101,
+                        "y": 444
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Diddy 5DTemple Enemy: End Trap (2)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "diddy5dt",
+                        "x": 78,
+                        "y": 431
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Diddy 5DTemple Enemy: Start Left (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "diddy5dt",
+                        "x": 417,
+                        "y": 631
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Diddy 5DTemple Enemy: Start Left (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "diddy5dt",
+                        "x": 528,
+                        "y": 618
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Diddy 5DTemple Enemy: Reward",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "diddy5dt",
+                        "x": 297,
+                        "y": 252
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Diddy 5DTemple Enemy: Second Switch",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "diddy5dt",
+                        "x": 535,
+                        "y": 220
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Lanky 5DTemple Enemy: Joining Paths",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "lanky5dt",
+                        "x": 310,
+                        "y": 422
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Lanky 5DTemple Enemy: End Trap",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "lanky5dt",
+                        "x": 83,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Lanky 5DTemple Enemy: Reward",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "lanky5dt",
+                        "x": 533,
+                        "y": 69
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny 5DTemple Enemy: Start Right Front",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tiny5dt",
+                        "x": 552,
+                        "y": 717
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny 5DTemple Enemy: Start Left Back",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tiny5dt",
+                        "x": 212,
+                        "y": 528
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny 5DTemple Enemy: Start Right Back",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tiny5dt",
+                        "x": 553,
+                        "y": 521
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny 5DTemple Enemy: Start Left Front",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tiny5dt",
+                        "x": 228,
+                        "y": 714
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny 5DTemple Enemy: Reward (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny 5DTemple Enemy: Reward (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tiny5dt",
+                        "x": 175,
+                        "y": 206
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny 5DTemple Enemy: Dead End (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tiny5dt",
+                        "x": 555,
+                        "y": 149
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny 5DTemple Enemy: Dead End (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tiny5dt",
+                        "x": 606,
+                        "y": 149
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Chunky 5DTemple Enemy: Start Right",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "chunky5dt",
+                        "x": 400,
+                        "y": 805
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Chunky 5DTemple Enemy: Start Left",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "chunky5dt",
+                        "x": 175,
+                        "y": 805
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Chunky 5DTemple Enemy: Second Right",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "chunky5dt",
+                        "x": 400,
+                        "y": 424
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Chunky 5DTemple Enemy: Second Left",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "chunky5dt",
+                        "x": 175,
+                        "y": 424
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Chunky 5DTemple Enemy: Reward",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "chunky5dt",
+                        "x": 427,
+                        "y": 44
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Llama Temple Enemy: Kong Free Instrument",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 945,
+                        "y": 575
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Llama Temple Enemy: Dino Instrument",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 466,
+                        "y": 575
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Llama Temple Enemy: Right",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 819,
+                        "y": 602
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Llama Temple Enemy: Left",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 575,
+                        "y": 602
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Llama Temple Enemy: Melon Crate",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 696,
+                        "y": 665
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Llama Temple Enemy: Slam Switch",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "llamatemple",
+                        "x": 883,
+                        "y": 374
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Guard Rotating (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 55,
+                        "y": 132
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Guard Rotating (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 100,
+                        "y": 110
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Main Room (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 206,
+                        "y": 112
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Main Room (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 342,
+                        "y": 214
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Main Room (2)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 329,
+                        "y": 124
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Kong Room (0)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 502,
+                        "y": 581
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Kong Room (1)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 577,
+                        "y": 581
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Kong Room (2)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 577,
+                        "y": 650
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Kong Room (3)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 502,
+                        "y": 650
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Tiny Temple Enemy: Kong Room (4)",
+                "sections": [
+                    {
+                        "name": "Enemy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tinytemple",
+                        "x": 539,
+                        "y": 615
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -230,6 +230,20 @@
                         "access_rules": ["shockwave"],
                         "chest_unopened_img": "images/items/rainbowcoin.png",
                         "chest_opened_img": "images/items/rainbowcoinbw.png"
+                    },
+                    {
+                        "name": "Galleon Lighthouse Enemy: Enemy (0)",
+                        "visibility_rules":["dropsanity"],
+                        "access_rules":["oranges", "shockwave", "$bongos", "$guitar", "$trombone", "$sax", "$triangle"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
+                    },
+                                        {
+                        "name": "Galleon Lighthouse Enemy: Enemy (1)",
+                        "visibility_rules":["dropsanity"],
+                        "access_rules":["oranges", "shockwave", "$bongos", "$guitar", "$trombone", "$sax", "$triangle"],
+                        "chest_unopened_img": "images/settings/dropsanity.png",
+                        "chest_opened_img": "images/settings/dropsanitybw.png"
                     }
                 ],
                 "map_locations": [
@@ -574,49 +588,6 @@
                     }
                 ]
             }
-            // {
-            //     "name": "Galleon Boss Defeated",
-            //     "access_rules": ["vine", "dive, $shipyard", "dive, $lighthouse"],
-            //     "sections": [
-            //         {
-            //             "name": "Boss",
-            //             "chest_unopened_img": "images/items/scoff.png",
-            //             "chest_opened_img": "images/items/scoffbw.png"
-            //         }
-            //     ],
-            //     "map_locations": [
-            //         {
-            //             "map": "galleon",
-            //             "x": 537,
-            //             "y": 229,
-            //             "size": 10
-            //         },
-            //         {
-            //             "map": "galleon",
-            //             "x": 854,
-            //             "y": 703,
-            //             "size": 10
-            //         },
-            //         {
-            //             "map": "galleon",
-            //             "x": 778,
-            //             "y": 506,
-            //             "size": 10
-            //         },
-            //         {
-            //             "map": "galleon",
-            //             "x": 346,
-            //             "y": 674,
-            //             "size": 10
-            //         },
-            //         {
-            //             "map": "galleon",
-            //             "x": 160,
-            //             "y": 41,
-            //             "size": 10
-            //         }
-            //     ]
-            // }
         ]
     }
 ]

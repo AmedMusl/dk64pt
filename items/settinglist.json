@@ -2026,5 +2026,17 @@
       "type": "toggle",
       "img": "images/settings/wrinklydoor.png",
       "codes": "hintsinpool"
+    },
+    {
+      "name": "Dropsanity",
+      "type": "toggle",
+      "img": "images/settings/dropsanity.png",
+      "codes": "dropsanity"
+    },
+    {
+      "name": "Dropsanity",
+      "type": "toggle",
+      "img": "images/settings/dropsanity.png",
+      "codes": "dropsanity"
     }
 ]
