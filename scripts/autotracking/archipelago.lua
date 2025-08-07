@@ -421,11 +421,6 @@ function onClear(slot_data)
         obj.AcquiredCount = (slot_data['FairyRequirement'])
     end
 
-    if slot_data['HardShooting'] then
-        local obj = Tracker:FindObjectForCode("hardshooting")
-        obj.Active = (slot_data['HardShooting'])
-    end
-
     if slot_data['JetpacReq'] then
         local obj = Tracker:FindObjectForCode("JetpacReq")
         obj.AcquiredCount = (slot_data["JetpacReq"])
@@ -457,9 +452,39 @@ function onClear(slot_data)
         clearBLockerTrackerItems()
     end
 
+    -- Handle GlitchesSelected and TricksSelected with version-specific logic
+    local version = slot_data['Version'] or "0.0.0"
+    local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
+    local is_version_110_or_higher = false
+    
+    if major and minor and patch then
+        major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
+        -- Check if version >= 1.1.0
+        if major > 1 or (major == 1 and minor > 1) or (major == 1 and minor == 1 and patch >= 0) then
+            is_version_110_or_higher = true
+        end
+    end
+
     if slot_data['GlitchesSelected'] then
         for glitch in string.gmatch(slot_data['GlitchesSelected'], "[^,%s]+") do
+            -- Skip advanced_platforming in versions >= 1.1.0 since it moved to TricksSelected
+            if is_version_110_or_higher and glitch == "advanced_platforming" then
+                goto continue
+            end
+            
             local obj = Tracker:FindObjectForCode(glitch)
+            if obj then
+                obj.Active = true
+            end
+            
+            ::continue::
+        end
+    end
+
+    -- Only process TricksSelected if Version is >= 1.1.0
+    if slot_data["TricksSelected"] and is_version_110_or_higher then
+        for tricks in string.gmatch(slot_data['TricksSelected'], "[^,%s]+") do
+            local obj = Tracker:FindObjectForCode(tricks)
             if obj then
                 obj.Active = true
             end

@@ -573,7 +573,7 @@
             },
             {            
                 "name": "Factory Lanky Production Handstand",
-                "access_rules": ["$production, $ostand, $factorySlam, climb"],
+                "access_rules": ["$production, $ostand, $factorySlam, climb", "$production, slope_resets, $factorySlam, climb, tiny"],
                 "sections": [
                     {
                         "name": "Golden Banana"

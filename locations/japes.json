@@ -217,7 +217,7 @@
             },
             {            
                 "name": "Japes Dirt: Painting Hill",
-                "access_rules": ["$ostand, shockwave", "$twirl, climb, shockwave", "$moonkicks, shockwave"],
+                "access_rules": ["$ostand, shockwave", "$twirl, climb, shockwave", "$moonkicks, shockwave", "slope_resets, shockwave"],
                 "sections": [
                     {
                         "name": "Rainbow Coin",
@@ -422,7 +422,7 @@
             },
             {            
                 "name": "Japes Lanky Slope Barrel",
-                "access_rules": ["^$coconutCage, $ostand"],
+                "access_rules": ["^$coconutCage, $ostand", "^$coconutCage, slope_resets"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -515,7 +515,7 @@
             },
             {            
                 "name": "Painting Room",
-                "access_rules": ["$canActivateJapesPainting, $ostand", "$canActivateJapesPainting, $twirl, climb", "$canActivateJapesPainting, $moonkicks"],
+                "access_rules": ["$canActivateJapesPainting, $ostand", "$canActivateJapesPainting, $twirl, climb", "$canActivateJapesPainting, $moonkicks", "$canActivateJapesPainting, slope_resets"],
                 "sections": [
                     {
                         "name": "Japes Lanky Zingers",

@@ -479,7 +479,8 @@
                 "access_rules": [
                     "^$llamaSwitches, $trombone, $ostand, $canEnterLlamaTemple", 
                     "^$llamaSwitches, ^$avp, $twirl, $canEnterLlamaTemple, $trombone",
-                    "^$llamaSwitches, $moonkicks, $trombone, $canEnterLlamaTemple"
+                    "^$llamaSwitches, $moonkicks, $trombone, $canEnterLlamaTemple",
+                    "^$llamaSwitches, slope_resets, $trombone, $canEnterLlamaTemple"
                 ],
                 "sections": [
                     {

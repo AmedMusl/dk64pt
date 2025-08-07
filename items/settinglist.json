@@ -2018,8 +2018,8 @@
     {
       "name": "Hard Shooting",
       "type": "toggle",
-      "img": "images/settings/hardshooting.png",
-      "codes": "hardshooting"
+      "img": "images/settings/hard_shooting.png",
+      "codes": "hard_shooting"
     },
     {
       "name": "Hints In Pool",
@@ -2044,5 +2044,17 @@
       "type": "toggle",
       "img": "images/settings/bouldersanity.png",
       "codes": "bouldersanity"
+    },
+    {
+      "name": "Advanced Grenading",
+      "type": "toggle",
+      "img": "images/settings/advanced_grenading.png",
+      "codes": "advanced_grenading"
+    },
+    {
+      "name": "Slope Resets",
+      "type": "toggle",
+      "img": "images/settings/slope_resets.png",
+      "codes": "slope_resets"
     }
 ]

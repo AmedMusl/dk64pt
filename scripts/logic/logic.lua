@@ -329,7 +329,7 @@ function dayTime()
     if has("daytime") or has("dusk") then
         return true
     elseif has("nighttime") then
-        return coconut() or peanuts() or grape() or feather() or pineapple()
+        return coconut() or peanuts() or grape() or feather() or pineapple() or advancedGrenade()
     end
 end
 
@@ -337,12 +337,12 @@ function nightTime()
     if has("nighttime") or has("dusk") then
         return true
     elseif has("daytime") then
-        return coconut() or peanuts() or grape() or feather() or pineapple()
+        return coconut() or peanuts() or grape() or feather() or pineapple() or advancedGrenade()
     end
 end
 
 function lankyPaint()
-    return has("slam") and has("lanky") and (coconut() or grape() or peanuts() or feather() or pineapple() or bongos() or guitar() or trombone() or sax() or triangle())
+    return has("slam") and has("lanky") and (coconut() or grape() or peanuts() or feather() or pineapple() or bongos() or guitar() or trombone() or sax() or triangle() or advancedGrenade())
 end
 
 function lighthousePlatform()
@@ -399,7 +399,7 @@ function trash()
     if mini() and (sax() or ((feather() or coconut() or peanuts() or grape() or pineapple()) and has("homing")) or bongos() or guitar() or trombone() or triangle()) then
         return AccessibilityLevel.Normal
     elseif mini() and (feather() or coconut() or peanuts() or grape() or pineapple()) then
-        return hardshooting()
+        return hard_shooting()
     end
 end
 
@@ -416,7 +416,7 @@ function chunkyTree()
     if pineapple() and punch() and has("sniper") then
         return AccessibilityLevel.Normal
     elseif pineapple() and punch() then
-        return hardshooting()
+        return hard_shooting()
     end
 end
 
@@ -424,7 +424,7 @@ function lankyTower()
     if has("sniper") and balloon() and grape() and castleSlam() then
         return AccessibilityLevel.Normal
     elseif has("homing") and balloon() and grape() and castleSlam() then
-        return hardshooting()
+        return hard_shooting()
     end
 end
 
@@ -432,7 +432,9 @@ function dkCabin()
     if bongos() and ((coconut() or peanuts() or grape() or feather() or pineapple()) and has("homing")) then
         return AccessibilityLevel.Normal
     elseif bongos() and (coconut() or peanuts() or grape() or feather() or pineapple()) then
-        return hardshooting()
+        return hard_shooting()
+    elseif bongos() then
+        return advancedGrenade()
     end
 end
 
@@ -440,7 +442,7 @@ function lankyAttic()
     if has("lanky") and nightTime() and forestSlam() and (balloon() or has("climb")) and ((coconut() or peanuts() or grape() or feather() or pineapple()) and has("homing")) then
         return AccessibilityLevel.Normal
     elseif has("lanky") and nightTime() and forestSlam() and (balloon() or has("climb")) and (coconut() or peanuts() or grape() or feather() or pineapple()) then
-        return hardshooting()
+        return hard_shooting()
     end
 end
 
@@ -495,8 +497,8 @@ function avp()
 end
 
 
-function hardshooting()
-    if has("hardshooting") then
+function hard_shooting()
+    if has("hard_shooting") then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak
@@ -505,6 +507,10 @@ end
 
 function moonkicks()
     return has("moonkicks") and has("donkey")
+end
+
+function advancedGrenade()
+    return has("advanced_grenading") and has("oranges")
 end
 
 function phaseswim()
@@ -532,6 +538,8 @@ function coconutCage()
         return AccessibilityLevel.Normal
     elseif ostand() then
         return avp()
+    elseif has("slope_resets") then
+        return has("tiny")
     else
         return phaseswim()
     end
