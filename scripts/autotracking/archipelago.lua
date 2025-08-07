@@ -4,66 +4,67 @@ ScriptHost:LoadScript("scripts/autotracking/hints_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/map_mapping.lua")
 ScriptHost:LoadScript("scripts/dropsanity.lua")
 
--- Global variable to store the current item mapping
-CURRENT_ITEM_MAPPING = ITEM_MAPPING
-
--- Function to set up version-appropriate item mapping
-function setupItemMappingForVersion(version)
-    -- Default to current mapping (for version >= 1.1.0)
-    CURRENT_ITEM_MAPPING = {}
-    
-    -- Copy all standard mappings first
-    for k, v in pairs(ITEM_MAPPING) do
-        CURRENT_ITEM_MAPPING[k] = v
-    end
-    
-    -- Check version and apply legacy mappings if needed
-    if version then
-        local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
-        if major and minor and patch then
-            major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
-            -- If version < 1.1.0, remove new mappings and add legacy ones
-            if major < 1 or (major == 1 and minor < 1) then
-                -- Remove the new item mappings
-                CURRENT_ITEM_MAPPING[14041270] = nil  -- gb
-                CURRENT_ITEM_MAPPING[14041271] = nil  -- fairies
-                CURRENT_ITEM_MAPPING[14041273] = nil  -- medals
-                CURRENT_ITEM_MAPPING[14041272] = nil  -- crowns
-                CURRENT_ITEM_MAPPING[14041167] = nil  -- bean
-                CURRENT_ITEM_MAPPING[14041269] = nil  -- pearl
-                CURRENT_ITEM_MAPPING[14041169] = nil  -- rainbow
-                
-                -- Add legacy mappings
-                for k, v in pairs(LEGACY_ITEM_MAPPING) do
-                    CURRENT_ITEM_MAPPING[k] = v
-                end
-                
-                print("Using legacy item mappings for version " .. version)
-            else
-                print("Using current item mappings for version " .. version)
-            end
-        end
-    end
-end
-
+-- ===== GLOBAL VARIABLES =====
 CUR_INDEX = -1
 SLOT_DATA = nil
--- Store the level positions globally so they can be accessed by the update function
 LEVEL_POSITIONS = {}
--- Track which lobbies the player has visited
 VISITED_LOBBIES = {}
-
--- Use global variables for session persistence
--- Global table to store visited lobbies between sessions (works during tracker runtime)
 SAVED_LOBBIES_BY_SLOT = SAVED_LOBBIES_BY_SLOT or {}
 
--- Global variables for slot data features
+-- Slot data features
 SWITCHSANITY = nil
 BLOCKER_VALUES = nil
 JUNK_LOCATIONS = nil
 ENEMY_DATA = nil
 
--- Function to update blocker tracker items with BLockerValues requirements
+-- Current item mapping (version-dependent)
+CURRENT_ITEM_MAPPING = ITEM_MAPPING
+
+-- ===== UTILITY FUNCTIONS =====
+
+-- Function to check if version is >= 1.1.0
+function isVersion110OrHigher(version)
+    if not version then
+        return true -- Default to true for new versions if no version specified
+    end
+    
+    local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
+    if major and minor and patch then
+        major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
+        return major > 1 or (major == 1 and minor > 1) or (major == 1 and minor == 1 and patch >= 0)
+    end
+    
+    return false
+end
+
+-- Function to set up version-appropriate item mapping
+function setupItemMappingForVersion(version)
+    -- Start with a fresh copy of the standard mappings
+    CURRENT_ITEM_MAPPING = {}
+    for k, v in pairs(ITEM_MAPPING) do
+        CURRENT_ITEM_MAPPING[k] = v
+    end
+    
+    -- If version < 1.1.0, replace with legacy mappings
+    if not isVersion110OrHigher(version) then
+        -- Remove the new item mappings
+        local newMappings = {14041270, 14041271, 14041273, 14041272, 14041167, 14041269, 14041169}
+        for _, id in ipairs(newMappings) do
+            CURRENT_ITEM_MAPPING[id] = nil
+        end
+        
+        -- Add legacy mappings
+        for k, v in pairs(LEGACY_ITEM_MAPPING) do
+            CURRENT_ITEM_MAPPING[k] = v
+        end
+        
+        print("Using legacy item mappings for version " .. (version or "unknown"))
+    else
+        print("Using current item mappings for version " .. (version or "latest"))
+    end
+end
+
+-- ===== BLOCKER AND LEVEL MANAGEMENT =====
 function updateBLockerTrackerItems()
     if not BLOCKER_VALUES or type(BLOCKER_VALUES) ~= "string" then
         return
@@ -300,6 +301,51 @@ function load_visited_lobbies()
     return false
 end
 
+-- ===== SLOT DATA PROCESSING =====
+function processVersionGatedFeatures(slot_data)
+    local version = slot_data['Version'] or "0.0.0"
+    local isNewVersion = isVersion110OrHigher(version)
+    
+    -- Dropsanity (version >= 1.1.0 only)
+    if slot_data['Dropsanity'] and isNewVersion then
+        local obj = Tracker:FindObjectForCode("dropsanity")
+        obj.Active = slot_data['Dropsanity']
+    end
+    
+    -- BouldersInPool (version >= 1.1.0 only)
+    if slot_data['BouldersInPool'] and isNewVersion then
+        local obj = Tracker:FindObjectForCode("bouldersanity")
+        obj.Active = slot_data['BouldersInPool']
+    end
+    
+    -- Handle GlitchesSelected and TricksSelected
+    if slot_data['GlitchesSelected'] then
+        for glitch in string.gmatch(slot_data['GlitchesSelected'], "[^,%s]+") do
+            -- Skip advanced_platforming in versions >= 1.1.0 since it moved to TricksSelected
+            if isNewVersion and glitch == "advanced_platforming" then
+                goto continue
+            end
+            
+            local obj = Tracker:FindObjectForCode(glitch)
+            if obj then
+                obj.Active = true
+            end
+            
+            ::continue::
+        end
+    end
+    
+    -- TricksSelected (version >= 1.1.0 only)
+    if slot_data["TricksSelected"] and isNewVersion then
+        for tricks in string.gmatch(slot_data['TricksSelected'], "[^,%s]+") do
+            local obj = Tracker:FindObjectForCode(tricks)
+            if obj then
+                obj.Active = true
+            end
+        end
+    end
+end
+
 function onClear(slot_data)
     print(dump_table(slot_data))
     SLOT_DATA = slot_data
@@ -452,84 +498,8 @@ function onClear(slot_data)
         clearBLockerTrackerItems()
     end
 
-    -- Handle GlitchesSelected and TricksSelected with version-specific logic
-    local version = slot_data['Version'] or "0.0.0"
-    local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
-    local is_version_110_or_higher = false
-    
-    if major and minor and patch then
-        major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
-        -- Check if version >= 1.1.0
-        if major > 1 or (major == 1 and minor > 1) or (major == 1 and minor == 1 and patch >= 0) then
-            is_version_110_or_higher = true
-        end
-    end
-
-    if slot_data['GlitchesSelected'] then
-        for glitch in string.gmatch(slot_data['GlitchesSelected'], "[^,%s]+") do
-            -- Skip advanced_platforming in versions >= 1.1.0 since it moved to TricksSelected
-            if is_version_110_or_higher and glitch == "advanced_platforming" then
-                goto continue
-            end
-            
-            local obj = Tracker:FindObjectForCode(glitch)
-            if obj then
-                obj.Active = true
-            end
-            
-            ::continue::
-        end
-    end
-
-    -- Only process TricksSelected if Version is >= 1.1.0
-    if slot_data["TricksSelected"] and is_version_110_or_higher then
-        for tricks in string.gmatch(slot_data['TricksSelected'], "[^,%s]+") do
-            local obj = Tracker:FindObjectForCode(tricks)
-            if obj then
-                obj.Active = true
-            end
-        end
-    end
-
-    if slot_data['Dropsanity'] then
-        -- Only process Dropsanity if Version is >= 1.1.0
-        local version = slot_data['Version'] or "0.0.0"
-        local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
-        local version_valid = false
-        
-        if major and minor and patch then
-            major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
-            -- Check if version >= 1.1.0
-            if major > 1 or (major == 1 and minor > 1) or (major == 1 and minor == 1 and patch >= 0) then
-                version_valid = true
-            end
-        end
-        
-        if version_valid then
-            local obj = Tracker:FindObjectForCode("dropsanity")
-            obj.Active = (slot_data['Dropsanity'])
-        end
-    end
-
-        if slot_data['BouldersInPool'] then
-        -- Only process Dropsanity if Version is >= 1.1.0
-        local version = slot_data['Version'] or "0.0.0"
-        local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
-        local version_valid = false
-        
-        if major and minor and patch then
-            major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
-            -- Check if version >= 1.1.0
-            if major > 1 or (major == 1 and minor > 1) or (major == 1 and minor == 1 and patch >= 0) then
-                version_valid = true
-            end
-        end
-        
-        if version_valid then
-            local obj = Tracker:FindObjectForCode("bouldersanity")
-            obj.Active = (slot_data['BouldersInPool'])
-        end
-    end
+    -- Process version-gated features
+    processVersionGatedFeatures(slot_data)
 
     if slot_data['Junk'] then
         JUNK_LOCATIONS = slot_data['Junk']
@@ -543,33 +513,14 @@ function onClear(slot_data)
             table.insert(banana_values, tonumber(value:match("^%s*(.-)%s*$")))
         end
         
-        if banana_values[1] then
-            local obj = Tracker:FindObjectForCode("tnsportal1")
-            if obj then obj.AcquiredCount = banana_values[1] end
-        end
-        if banana_values[2] then
-            local obj = Tracker:FindObjectForCode("tnsportal2")
-            if obj then obj.AcquiredCount = banana_values[2] end
-        end
-        if banana_values[3] then
-            local obj = Tracker:FindObjectForCode("tnsportal3")
-            if obj then obj.AcquiredCount = banana_values[3] end
-        end
-        if banana_values[4] then
-            local obj = Tracker:FindObjectForCode("tnsportal4")
-            if obj then obj.AcquiredCount = banana_values[4] end
-        end
-        if banana_values[5] then
-            local obj = Tracker:FindObjectForCode("tnsportal5")
-            if obj then obj.AcquiredCount = banana_values[5] end
-        end
-        if banana_values[6] then
-            local obj = Tracker:FindObjectForCode("tnsportal6")
-            if obj then obj.AcquiredCount = banana_values[6] end
-        end
-        if banana_values[7] then
-            local obj = Tracker:FindObjectForCode("tnsportal7")
-            if obj then obj.AcquiredCount = banana_values[7] end
+        -- Set banana requirements for portals 1-7
+        for i = 1, math.min(7, #banana_values) do
+            if banana_values[i] then
+                local obj = Tracker:FindObjectForCode("tnsportal" .. i)
+                if obj then 
+                    obj.AcquiredCount = banana_values[i] 
+                end
+            end
         end
     end
 
@@ -727,6 +678,8 @@ function onClear(slot_data)
     end
 end
 
+-- ===== ARCHIPELAGO EVENT HANDLERS =====
+
 function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
@@ -740,7 +693,6 @@ function onItem(index, item_id, item_name, player_number)
     local obj = Tracker:FindObjectForCode(v[1])
     if obj then
         if v[2] == "toggle" then
-            local wasActive = obj.Active
             obj.Active = true
             if v[1] == "k1" or v[1] == "k2" or v[1] == "k4" or v[1] == "k5" or v[1] == "dive" then
                 update_level_display()
@@ -862,7 +814,7 @@ function onMapChange(id, value, old)
     end
 end
 
-
+-- ===== HANDLER REGISTRATION =====
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
