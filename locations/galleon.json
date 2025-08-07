@@ -234,14 +234,14 @@
                     {
                         "name": "Galleon Lighthouse Enemy: Enemy (0)",
                         "visibility_rules":["dropsanity"],
-                        "access_rules":["oranges", "shockwave", "$bongos", "$guitar", "$trombone", "$sax", "$triangle"],
+                        "access_rules":["$applyEnemyLogic|GalleonLighthouseEnemy_Enemy0"],
                         "chest_unopened_img": "images/settings/dropsanity.png",
                         "chest_opened_img": "images/settings/dropsanitybw.png"
                     },
                                         {
                         "name": "Galleon Lighthouse Enemy: Enemy (1)",
                         "visibility_rules":["dropsanity"],
-                        "access_rules":["oranges", "shockwave", "$bongos", "$guitar", "$trombone", "$sax", "$triangle"],
+                        "access_rules":["$applyEnemyLogic|GalleonLighthouseEnemy_Enemy1"],
                         "chest_unopened_img": "images/settings/dropsanity.png",
                         "chest_opened_img": "images/settings/dropsanitybw.png"
                     }

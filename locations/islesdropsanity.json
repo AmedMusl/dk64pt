@@ -178,7 +178,7 @@
             },
             {
                 "name": "Creepy Castle Lobby Enemy: Left",
-                "access_rules": ["^$canEnterCastleLobby, $heavyEnemy"],
+                "access_rules": ["^$canEnterCastleLobby, $applyEnemyLogic|CastleLobbyEnemy_Left"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -195,7 +195,7 @@
             },
             {
                 "name": "Creepy Castle Lobby Enemy: Far Right",
-                "access_rules": ["^$canEnterCastleLobby, $heavyEnemy"],
+                "access_rules": ["^$canEnterCastleLobby, $applyEnemyLogic|CastleLobbyEnemy_FarRight"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -212,7 +212,7 @@
             },
             {
                 "name": "Creepy Castle Lobby Enemy: Near Right",
-                "access_rules": ["^$canEnterCastleLobby, $heavyEnemy"],
+                "access_rules": ["^$canEnterCastleLobby, $applyEnemyLogic|CastleLobbyEnemy_NearRight"],
                 "sections": [
                     {
                         "name": "Enemy"

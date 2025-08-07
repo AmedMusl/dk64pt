@@ -42,7 +42,7 @@
             },
             {
                 "name": "Hideout Helm Enemy: Hill",
-                "access_rules": ["$endOfHelm, $ostand, $heavyEnemy"],
+                "access_rules": ["$endOfHelm, $ostand, $applyEnemyLogic|HelmMainEnemy_Hill"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -59,7 +59,7 @@
             },
             {
                 "name": "Hideout Helm Enemy: Switch Room (0)",
-                "access_rules": ["$endOfHelm, $ostand, $heavyEnemy"],
+                "access_rules": ["$endOfHelm, $ostand, $applyEnemyLogic|HelmMainEnemy_SwitchRoom0"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -212,7 +212,7 @@
             },
             {
                 "name": "Hideout Helm Enemy: Tiny Room",
-                "access_rules": ["$tinyHelm, $heavyEnemy"],
+                "access_rules": ["$tinyHelm, $applyEnemyLogic|HelmMainEnemy_TinyRoom"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -229,7 +229,7 @@
             },
             {
                 "name": "Hideout Helm Enemy: Lanky Room (0)",
-                "access_rules": ["$lankyHelm, $heavyEnemy"],
+                "access_rules": ["$lankyHelm, $applyEnemyLogic|HelmMainEnemy_LankyRoom0"],
                 "sections": [
                     {
                         "name": "Enemy"

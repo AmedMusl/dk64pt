@@ -8,6 +8,7 @@
         "children": [
             {
                 "name": "Frantic Factory Enemy: Candy Cranky (0)",
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -23,6 +24,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Candy Cranky (1)",
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -38,6 +40,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Lobby Left",
+                "access_rules": ["$applyEnemyLogic|FactoryMainEnemy_LobbyLeft"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -53,6 +56,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Lobby Right",
+                "access_rules": ["$applyEnemyLogic|FactoryMainEnemy_LobbyRight"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -68,6 +72,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Storage Room",
+                "access_rules": ["$flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -83,6 +88,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Block Tower (0)",
+                "access_rules": ["$testing, climb"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -98,6 +104,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Block Tower (1)",
+                "access_rules": ["$testing, climb"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -113,6 +120,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Block Tower (2)",
+                "access_rules": ["$testing, climb"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -128,6 +136,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Tunnel To Hatch",
+                "access_rules": ["$testing, climb, $applyEnemyLogic|FactoryMainEnemy_TunnelToHatch"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -143,6 +152,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Tunnel To Prod (0)",
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -158,6 +168,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Tunnel To Prod (1)",
+                "access_rules": ["$applyEnemyLogic|FactoryMainEnemy_TunnelToProd1"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -173,6 +184,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Tunnel To Block Tower",
+                "access_rules": ["$applyEnemyLogic|FactoryMainEnemy_TunnelToBlockTower, $testing, climb"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -188,6 +200,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Tunnel To Race (0)",
+                "access_rules": ["$applyEnemyLogic|FactoryMainEnemy_TunnelToRace0, $testing, climb"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -203,6 +216,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Tunnel To Race (1)",
+                "access_rules": ["$flyingEnemy, $testing, climb"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -218,6 +232,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Low Warp 4",
+                "access_rules": ["$applyEnemyLogic|FactoryMainEnemy_LowWarp4"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -233,6 +248,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Diddy Switch",
+                "access_rules": ["$flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -248,6 +264,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: To Block Tower Tunnel",
+                "access_rules": ["$flyingEnemy, $testing, climb"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -263,6 +280,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Dark Room (0)",
+                "access_rules": ["$punch, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -278,6 +296,7 @@
             },
             {
                 "name": "Frantic Factory Enemy: Dark Room (1)",
+                "access_rules": ["$punch, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"

@@ -707,6 +707,66 @@
                         "size": 12
                     }
                 ]
+            },
+            {
+                "name": "Forest Keg: Mill Front Near",
+                "access_rules":["$dayTime, chunky, barrel"],
+                "visibility_rules":["bouldersanity"],
+                "sections": [
+                    {
+                        "name": "Boulder",
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "frontmill",
+                        "x": 668,
+                        "y": 625,
+                        "size": 16
+                    }
+                ]
+            },
+                        {
+                "name": "Forest Keg: Mill Front Far",
+                "access_rules":["$dayTime, chunky, barrel"],
+                "visibility_rules":["bouldersanity"],
+                "sections": [
+                    {
+                        "name": "Boulder",
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "frontmill",
+                        "x": 176,
+                        "y": 515,
+                        "size": 16
+                    }
+                ]
+            },
+                        {
+                "name": "Forest Keg: Mill Back",
+                "access_rules":["$dayTime, barrel, $punch", "$dayTime, chunky, barrel, $mini"],
+                "visibility_rules":["bouldersanity"],
+                "sections": [
+                    {
+                        "name": "Boulder",
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "rearmill",
+                        "x": 285,
+                        "y": 470,
+                        "size": 16
+                    }
+                ]
             }
         ]
     }

@@ -57,7 +57,7 @@ ITEM_MAPPING = {
 	[0xd6403e] = {"k6", "toggle"},
 	[0xd6403f] = {"k7", "toggle"},
 	[0xd64040] = {"k8", "toggle"},
-	-- Misc Items
+	-- Misc Items (Version >= 1.1.0)
 	[14041270] = {"gb", "consumable"},
 	[14041271] = {"fairies", "consumable"},
 	[14041273] = {"medals", "consumable"},
@@ -147,4 +147,15 @@ ITEM_MAPPING = {
 	[14041217] = {"hintcount", "consumable"},
 	[14041218] = {"hintcount", "consumable"},
 	[14041219] = {"hintcount", "consumable"},
+}
+
+-- Legacy item mappings for versions < 1.1.0
+LEGACY_ITEM_MAPPING = {
+	[0xd6404b] = {"gb", "consumable"},
+	[0xd6404c] = {"fairies", "consumable"},
+	[0xd6404d] = {"medals", "consumable"},
+	[0xd6404e] = {"crowns", "consumable"},
+	[0xd6404f] = {"bean", "toggle"},
+	[0xd64050] = {"pearl", "consumable"},
+	[0xd64051] = {"rainbow", "consumable"},
 }

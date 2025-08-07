@@ -296,14 +296,14 @@
                     },
                     {
                         "name": "Caves Donkey Igloo Enemy: Right",
-                        "access_rules":["$heavyEnemy"],
+                        "access_rules":["$applyEnemyLogic|Caves5DIDKEnemy_Right"],
                         "visibility_rules":["dropsanity"],
                         "chest_unopened_img": "images/settings/dropsanity.png",
                         "chest_opened_img": "images/settings/dropsanitybw.png"
                     },
                     {
                         "name": "Caves Donkey Igloo Enemy: Left",
-                        "access_rules":["$heavyEnemy"],
+                        "access_rules":["$applyEnemyLogic|Caves5DIDKEnemy_Left"],
                         "visibility_rules":["dropsanity"],
                         "chest_unopened_img": "images/settings/dropsanity.png",
                         "chest_opened_img": "images/settings/dropsanitybw.png"
@@ -368,7 +368,7 @@
                     },
                     {
                         "name": "Caves Tiny Igloo Enemy: Big Enemy",
-                        "access_rules":["$heavyEnemy"],
+                        "access_rules":["$applyEnemyLogic|Caves5DITinyEnemy_BigEnemy"],
                         "visibility_rules":["dropsanity"],
                         "chest_unopened_img": "images/settings/dropsanity.png",
                         "chest_opened_img": "images/settings/dropsanitybw.png"
@@ -511,7 +511,7 @@
                     },
                     {
                         "name": "Caves Lanky Cabin Enemy: Near",
-                        "access_rules":["$heavyEnemy"],
+                        "access_rules":["$applyEnemyLogic|Caves1DCEnemy_Near"],
                         "visibility_rules":["dropsanity"],
                         "chest_unopened_img": "images/settings/dropsanity.png",
                         "chest_opened_img": "images/settings/dropsanitybw.png"
@@ -556,6 +556,46 @@
                         "map": "caves",
                         "x": 105,
                         "y": 523,
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Caves Boulder: Small",
+                "access_rules":["barrel, chunky"],
+                "visibility_rules":["bouldersanity"],
+                "sections": [
+                    {
+                        "name": "Boulder",
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 509,
+                        "y": 713,
+                        "size": 12
+                    }
+                ]
+            },
+                        {
+                "name": "Caves Boulder: Large",
+                "access_rules":["barrel, $cavesIce, $hunky"],
+                "visibility_rules":["bouldersanity"],
+                "sections": [
+                    {
+                        "name": "Boulder",
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "caves",
+                        "x": 447,
+                        "y": 373,
                         "size": 12
                     }
                 ]

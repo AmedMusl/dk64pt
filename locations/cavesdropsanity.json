@@ -3,11 +3,12 @@
         "name": "Caves Dropsanity",
         "chest_unopened_img": "images/settings/dropsanity.png",
         "chest_opened_img": "images/settings/dropsanitybw.png",
-        "access_rules": ["^$cavesAccess"],
+        "access_rules": ["^$canEnterCaves"],
         "visibility_rules": "dropsanity",
         "children": [
             {
                 "name": "Crystal Caves Enemy: Start",
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -23,6 +24,7 @@
             },
             {
                 "name": "Crystal Caves Enemy: Near Ice Castle",
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -38,6 +40,7 @@
             },
             {
                 "name": "Crystal Caves Enemy: Outside 5DC",
+                "access_rules": ["$flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -53,6 +56,7 @@
             },
             {
                 "name": "Crystal Caves Enemy: 1DC Waterfall",
+                "access_rules": ["$flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -68,6 +72,7 @@
             },
             {
                 "name": "Crystal Caves Enemy: Near Funky",
+                "access_rules": ["$flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -83,6 +88,7 @@
             },
             {
                 "name": "Crystal Caves Enemy: Near Snide",
+                "access_rules": ["$applyEnemyLogic|CavesMainEnemy_NearSnide"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -98,6 +104,7 @@
             },
             {
                 "name": "Crystal Caves Enemy: Near Bonus Room",
+                "access_rules": ["$applyEnemyLogic|CavesMainEnemy_NearBonusRoom"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -113,6 +120,7 @@
             },
             {
                 "name": "Crystal Caves Enemy: 1DC Headphones",
+                "access_rules": ["$applyEnemyLogic|CavesMainEnemy_1DCHeadphones, $canEnterSprintCabin"],
                 "sections": [
                     {
                         "name": "Enemy"

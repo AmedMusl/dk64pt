@@ -641,6 +641,26 @@
                         "size": 16
                     }
                 ]
+            },
+            {
+                "name": "Castle Boulder: Museum",
+                "access_rules":["$castleSlam, $punch, barrel"],
+                "visibility_rules":["bouldersanity"],
+                "sections": [
+                    {
+                        "name": "Boulder",
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                        
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "museum",
+                        "x": 210,
+                        "y": 64
+                    }
+                ]
             }
         ]
     }    

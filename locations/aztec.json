@@ -61,6 +61,30 @@
                 "sections": [
                     {
                         "name": "Golden Banana"
+                    },
+                    {
+                        "name": "Aztec Vase: Circle",
+                        "visibility_rules":["bouldersanity"],
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                    },
+                                        {
+                        "name": "Aztec Vase: Colon",
+                        "visibility_rules":["bouldersanity"],
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                    },
+                                        {
+                        "name": "Aztec Vase: Triangle",
+                        "visibility_rules":["bouldersanity"],
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                    },
+                                        {
+                        "name": "Aztec Vase: Plus",
+                        "visibility_rules":["bouldersanity"],
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
                     }
                 ],
                 "map_locations": [
@@ -559,6 +583,25 @@
                         "x": 273,
                         "y": 296,
                         "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Aztec Boulder: Tunnel",
+                "access_rules":["$hunky, barrel, ^$tunnelDoor"],
+                "visibility_rules":["bouldersanity"],
+                "sections": [
+                    {
+                        "name": "Boulder",
+                        "chest_unopened_img": "images/items/boulder.png",
+                        "chest_opened_img": "images/items/boulderbw.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "aztec",
+                        "x": 373,
+                        "y": 492
                     }
                 ]
             }

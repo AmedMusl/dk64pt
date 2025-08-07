@@ -25,7 +25,7 @@
             },
             {
                 "name": "Jungle Japes Enemy: Diddy Cavern",
-                "access_rules": ["$peanuts"],
+                "access_rules": ["$canActivateJapesDiddyCave"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -127,7 +127,7 @@
             },
             {
                 "name": "Jungle Japes Enemy: Hive (0)",
-                "access_rules": ["$shellhive, $canChangeTime"],
+                "access_rules": ["^$shellhive, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -144,7 +144,7 @@
             },
             {
                 "name": "Jungle Japes Enemy: Hive (1)",
-                "access_rules": ["$shellhive, $canChangeTime"],
+                "access_rules": ["$shellhive, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -161,7 +161,7 @@
             },
             {
                 "name": "Jungle Japes Enemy: Hive (2)",
-                "access_rules": ["$shellhive, $canChangeTime"],
+                "access_rules": ["$shellhive, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -229,7 +229,7 @@
             },
             {
                 "name": "Jungle Japes Enemy: Near Underground",
-                "access_rules": ["$canChangeTime"],
+                "access_rules": ["$flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -280,10 +280,10 @@
             },
             {
                 "name": "Jungle Japes Enemy: Near Painting (2)",
-                "access_rules": ["$canChangeTime"],
+                "access_rules": ["$flyingEnemy"],
                 "sections": [
                     {
-                        "name": "japes"
+                        "name": "Enemy"
                     }
                 ],
                 "map_locations": [
@@ -297,7 +297,7 @@
             },
             {
                 "name": "Jungle Japes Enemy: Mountain",
-                "access_rules": ["$canChangeTime, climb", "$canChangeTime, $ostand, ^$ap"],
+                "access_rules": ["$flyingEnemy, climb", "$flyingEnemy, $ostand, ^$ap"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -314,7 +314,7 @@
             },
             {
                 "name": "Jungle Japes Enemy: Feather Tunnel",
-                "access_rules": ["^$coconutCage, $canChangeTime"],
+                "access_rules": ["^$coconutCage, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -467,7 +467,7 @@
             },
             {
                 "name": "Japes Mountain Enemy: Hi Lo",
-                "access_rules":["$peanuts, $charge, climb"],
+                "access_rules":["$peanuts, $charge, climb, $applyEnemyLogic|JapesMountainEnemy_HiLo"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -484,7 +484,7 @@
             },
             {
                 "name": "Japes Mountain Enemy: Conveyor (0)",
-                "access_rules":["$peanuts, $japesSlam, climb"],
+                "access_rules":["$peanuts, $japesSlam, climb, $applyEnemyLogic|JapesMountainEnemy_Conveyor0"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -501,7 +501,7 @@
             },
             {
                 "name": "Japes Mountain Enemy: Conveyor (1)",
-                "access_rules":["$peanuts, climb, $japesSlam"],
+                "access_rules":["$peanuts, climb, $japesSlam, $applyEnemyLogic|JapesMountainEnemy_Conveyor1"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -518,7 +518,7 @@
             },
             {
                 "name": "Japes Tiny Hive Enemy: First Room",
-                "access_rules":["$shellhive, $mini, oranges"],
+                "access_rules":["$shellhive, $mini, $applyEnemyLogic|JapesTinyHiveEnemy_FirstRoom"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -534,7 +534,7 @@
             },
             {
                 "name": "Japes Tiny Hive Enemy: Second Room (0)",
-                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "access_rules":["$shellhive, $mini, $japesSlam, $applyEnemyLogic|JapesTinyHiveEnemy_SecondRoom0"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -550,7 +550,7 @@
             },
             {
                 "name": "Japes Tiny Hive Enemy: Second Room (1)",
-                "access_rules": ["$shellhive, $mini, $japesSlam, oranges"],
+                "access_rules": ["$shellhive, $mini, $japesSlam, $applyEnemyLogic|JapesTinyHiveEnemy_SecondRoom1"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -566,7 +566,7 @@
             },
             {
                 "name": "Japes Tiny Hive Enemy: Third Room (0)",
-                "access_rules": ["$shellhive, $mini, $japesSlam, oranges"],
+                "access_rules": ["$shellhive, $mini, $japesSlam, $applyEnemyLogic|JapesTinyHiveEnemy_ThirdRoom0"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -582,7 +582,7 @@
             },
             {
                 "name": "Japes Tiny Hive Enemy: Third Room (1)",
-                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "access_rules":["$shellhive, $mini, $japesSlam, $applyEnemyLogic|JapesTinyHiveEnemy_ThirdRoom1"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -598,7 +598,7 @@
             },
             {
                 "name": "Japes Tiny Hive Enemy: Third Room (2)",
-                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "access_rules":["$shellhive, $mini, $japesSlam, $applyEnemyLogic|JapesTinyHiveEnemy_ThirdRoom2, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -614,7 +614,7 @@
             },
             {
                 "name": "Japes Tiny Hive Enemy: Third Room (3)",
-                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "access_rules":["$shellhive, $mini, $japesSlam, $applyEnemyLogic|JapesTinyHiveEnemy_ThirdRoom3, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -630,7 +630,7 @@
             },
             {
                 "name": "Japes Tiny Hive Enemy: Main Room",
-                "access_rules":["$shellhive, $mini, $japesSlam, oranges"],
+                "access_rules":["$shellhive, $mini, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"

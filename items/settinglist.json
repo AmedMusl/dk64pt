@@ -2038,5 +2038,11 @@
       "type": "toggle",
       "img": "images/settings/dropsanity.png",
       "codes": "dropsanity"
+    },
+    {
+      "name": "Bouldersanity",
+      "type": "toggle",
+      "img": "images/settings/bouldersanity.png",
+      "codes": "bouldersanity"
     }
 ]

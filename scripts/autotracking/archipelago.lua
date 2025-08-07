@@ -2,6 +2,49 @@ ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/hints_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/map_mapping.lua")
+ScriptHost:LoadScript("scripts/dropsanity.lua")
+
+-- Global variable to store the current item mapping
+CURRENT_ITEM_MAPPING = ITEM_MAPPING
+
+-- Function to set up version-appropriate item mapping
+function setupItemMappingForVersion(version)
+    -- Default to current mapping (for version >= 1.1.0)
+    CURRENT_ITEM_MAPPING = {}
+    
+    -- Copy all standard mappings first
+    for k, v in pairs(ITEM_MAPPING) do
+        CURRENT_ITEM_MAPPING[k] = v
+    end
+    
+    -- Check version and apply legacy mappings if needed
+    if version then
+        local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
+        if major and minor and patch then
+            major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
+            -- If version < 1.1.0, remove new mappings and add legacy ones
+            if major < 1 or (major == 1 and minor < 1) then
+                -- Remove the new item mappings
+                CURRENT_ITEM_MAPPING[14041270] = nil  -- gb
+                CURRENT_ITEM_MAPPING[14041271] = nil  -- fairies
+                CURRENT_ITEM_MAPPING[14041273] = nil  -- medals
+                CURRENT_ITEM_MAPPING[14041272] = nil  -- crowns
+                CURRENT_ITEM_MAPPING[14041167] = nil  -- bean
+                CURRENT_ITEM_MAPPING[14041269] = nil  -- pearl
+                CURRENT_ITEM_MAPPING[14041169] = nil  -- rainbow
+                
+                -- Add legacy mappings
+                for k, v in pairs(LEGACY_ITEM_MAPPING) do
+                    CURRENT_ITEM_MAPPING[k] = v
+                end
+                
+                print("Using legacy item mappings for version " .. version)
+            else
+                print("Using current item mappings for version " .. version)
+            end
+        end
+    end
+end
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -18,6 +61,7 @@ SAVED_LOBBIES_BY_SLOT = SAVED_LOBBIES_BY_SLOT or {}
 SWITCHSANITY = nil
 BLOCKER_VALUES = nil
 JUNK_LOCATIONS = nil
+ENEMY_DATA = nil
 
 -- Function to update blocker tracker items with BLockerValues requirements
 function updateBLockerTrackerItems()
@@ -261,6 +305,13 @@ function onClear(slot_data)
     SLOT_DATA = slot_data
     CUR_INDEX = -1
 
+    -- Set up version-appropriate item mapping before processing items
+    if slot_data and slot_data['Version'] then
+        setupItemMappingForVersion(slot_data['Version'])
+    else
+        setupItemMappingForVersion(nil) -- Use default mappings
+    end
+
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
@@ -280,7 +331,7 @@ function onClear(slot_data)
     end
 
     -- reset items
-    for _, v in pairs(ITEM_MAPPING) do
+    for _, v in pairs(CURRENT_ITEM_MAPPING) do
         if v[1] and v[2] then
             if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
                 print(string.format("onClear: clearing item %s of type %s", v[1], v[2]))
@@ -388,6 +439,12 @@ function onClear(slot_data)
         SWITCHSANITY = nil
     end
 
+    if slot_data['EnemyData'] then
+        ENEMY_DATA = slot_data['EnemyData']
+    else
+        ENEMY_DATA = nil
+    end
+
     if slot_data['BLockerValues'] then
         BLOCKER_VALUES = slot_data['BLockerValues']
         print("Received BLockerValues:", BLOCKER_VALUES)
@@ -406,6 +463,46 @@ function onClear(slot_data)
             if obj then
                 obj.Active = true
             end
+        end
+    end
+
+    if slot_data['Dropsanity'] then
+        -- Only process Dropsanity if Version is >= 1.1.0
+        local version = slot_data['Version'] or "0.0.0"
+        local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
+        local version_valid = false
+        
+        if major and minor and patch then
+            major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
+            -- Check if version >= 1.1.0
+            if major > 1 or (major == 1 and minor > 1) or (major == 1 and minor == 1 and patch >= 0) then
+                version_valid = true
+            end
+        end
+        
+        if version_valid then
+            local obj = Tracker:FindObjectForCode("dropsanity")
+            obj.Active = (slot_data['Dropsanity'])
+        end
+    end
+
+        if slot_data['BouldersInPool'] then
+        -- Only process Dropsanity if Version is >= 1.1.0
+        local version = slot_data['Version'] or "0.0.0"
+        local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
+        local version_valid = false
+        
+        if major and minor and patch then
+            major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
+            -- Check if version >= 1.1.0
+            if major > 1 or (major == 1 and minor > 1) or (major == 1 and minor == 1 and patch >= 0) then
+                version_valid = true
+            end
+        end
+        
+        if version_valid then
+            local obj = Tracker:FindObjectForCode("bouldersanity")
+            obj.Active = (slot_data['BouldersInPool'])
         end
     end
 
@@ -610,7 +707,7 @@ function onItem(index, item_id, item_name, player_number)
         return
     end
     CUR_INDEX = index;
-    local v = ITEM_MAPPING[item_id]
+    local v = CURRENT_ITEM_MAPPING[item_id]
     if not v or not v[1] then
         print(string.format("Could not find item mapping for id %s", tostring(item_id)))
         return

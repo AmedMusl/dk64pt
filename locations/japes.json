@@ -590,37 +590,6 @@
                     }
                 ]
             }
-            // {
-            //     "name": "Japes Boss Defeated",
-            //     "access_rules": [],
-            //     "sections": [
-            //         {
-            //             "name": "Boss",
-            //             "chest_unopened_img": "images/items/scoff.png",
-            //             "chest_opened_img": "images/items/scoffbw.png"
-            //         }
-            //     ],
-            //     "map_locations": [
-            //         {
-            //             "map": "japes",
-            //             "x": 196,
-            //             "y": 809,
-            //             "size": 10
-            //         },
-            //         {
-            //             "map": "japes",
-            //             "x": 569,
-            //             "y": 459,
-            //             "size": 10
-            //         },
-            //         {
-            //             "map": "japes",
-            //             "x": 529,
-            //             "y": 158,
-            //             "size": 10
-            //         }
-            //     ]
-            // }
         ]
     }
 ]

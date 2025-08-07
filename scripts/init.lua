@@ -28,7 +28,7 @@ Tracker:AddItems("items/hints.json")
 
 -- Locations
 Tracker:AddMaps("maps/maps.json")
-Tracker:AddLocations("locations/isles.jsonc")
+Tracker:AddLocations("locations/isles.json")
 Tracker:AddLocations("locations/aztec.json")
 Tracker:AddLocations("locations/castle.json")
 Tracker:AddLocations("locations/caves.json")

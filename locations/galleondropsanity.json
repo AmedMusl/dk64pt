@@ -8,6 +8,7 @@
         "children": [
             {
                 "name": "Gloomy Galleon Enemy: Chest Room (0)",
+                "access_rules": ["$applyEnemyLogic|GalleonMainEnemy_ChestRoom0"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -23,6 +24,7 @@
             },
             {
                 "name": "Gloomy Galleon Enemy: Chest Room (1)",
+                "access_rules": ["$applyEnemyLogic|GalleonMainEnemy_ChestRoom1"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -38,6 +40,7 @@
             },
             {
                 "name": "Gloomy Galleon Enemy: Near Vine Cannon",
+                "access_rules": ["$applyEnemyLogic|GalleonMainEnemy_NearVineCannon"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -53,6 +56,7 @@
             },
             {
                 "name": "Gloomy Galleon Enemy: Cranky Cannon",
+                "access_rules": ["$applyEnemyLogic|GalleonMainEnemy_CrankyCannon"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -68,6 +72,7 @@
             },
             {
                 "name": "Gloomy Galleon Enemy: Peanut Tunnel",
+                "access_rules": ["$applyEnemyLogic|GalleonMainEnemy_PeanutTunnel"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -83,6 +88,7 @@
             },
             {
                 "name": "Gloomy Galleon Enemy: Coconut Tunnel",
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Enemy"

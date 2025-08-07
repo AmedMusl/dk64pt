@@ -74,11 +74,39 @@
         ]
       },
       {
-        "name": "Isles Chunky Triangle Pad",
-        "access_rules": ["barrel, $triangle"],
+        "name": "Isles Boulder: Near Level 2",
+        "access_rules":["barrel, chunky"],
         "sections": [
           {
-            "name": "Golden Banana"
+            "name": "Boulder",
+            "chest_unopened_img": "images/items/boulder.png",
+            "chest_opened_img": "images/items/boulderbw.png",
+            "visibility_rules":["bouldersanity"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "isles",
+            "x": 377,
+            "y": 519,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Isles Chunky Triangle Pad",
+        "access_rules": ["barrel"],
+        "sections": [
+          {
+            "name": "Golden Banana",
+            "access_rules":["$triangle"]
+          },
+          {
+            "name": "Isles Boulder: Near Level 6",
+            "access_rules":["chunky"],
+            "visibility_rules":["bouldersanity"],
+            "chest_unopened_img": "images/items/boulder.png",
+            "chest_opened_img": "images/items/boulderbw.png"
           }
         ],
         "map_locations": [
@@ -144,10 +172,17 @@
       },
       {
         "name": "Isles Lanky Instrument Pad",
-        "access_rules": ["^$canEnterJapesLobby, barrel, chunky, $trombone"],
+        "access_rules": ["^$canEnterJapesLobby, barrel, chunky"],
         "sections": [
           {
-            "name": "Golden Banana"
+            "name": "Golden Banana",
+            "access_rules":["$trombone"]
+          },
+          {
+            "name": "Isles Boulder: Japes Lobby",
+            "visibility_rules":["bouldersanity"],
+            "chest_unopened_img": "images/items/boulder.png",
+            "chest_opened_img": "images/items/boulderbw.png"
           }
         ],
         "map_locations": [
@@ -984,6 +1019,26 @@
         ]
       },
       {
+        "name": "Isles Boulder: Caves Lobby",
+        "access_rules":["^$canEnterCavesLobby, $punch, boulder"],
+        "visibility_rules":["bouldersanity"],
+        "sections": [
+          {
+            "name": "Boulder",
+            "chest_unopened_img": "images/items/boulder.png",
+            "chest_opened_img": "images/items/boulderbw.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "caveslobby",
+            "x": 192,
+            "y": 306,
+            "size": 16
+          }
+        ]
+      },
+      {
         "name": "Isles Diddy Guitar Pad",
         "access_rules": ["^$canEnterCavesLobby, $rocket, $guitar"],
         "sections": [
@@ -1215,6 +1270,26 @@
             "map": "castlelobby",
             "x": 414,
             "y": 548,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Isles Boulder: Castle Lobby",
+        "access_rules":["^$canEnterCastleLobby, boulder, chunky"],
+        "visibility_rules":["bouldersanity"],
+        "sections": [
+          {
+            "name": "Boulder",
+            "chest_unopened_img": "images/items/boulder.png",
+            "chest_opened_img": "images/items/boulderbw.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "castlelobby",
+            "x": 670,
+            "y": 355,
             "size": 16
           }
         ]
