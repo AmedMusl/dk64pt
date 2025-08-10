@@ -106,7 +106,7 @@ function japesCBTotal()
             if accessible(coconutCage) then -- 1 to Kasplat 2 on slopes
                 cb_total = cb_total + 3
             end
-            if accessible(coconutCage) and ostand() then -- Bonus Slopes
+            if accessible(coconutCage) and (ostand() or has("slope_resets")) then -- Bonus Slopes
                 cb_total = cb_total + 9
             end
             if accessible(coconutCage) and has("climb") then -- Cranky Treetop
@@ -376,7 +376,7 @@ function factoryCBTotal()
             if intest and trombone() and grape() then -- Piano Room
                 cb_total = cb_total + 10
             end
-            if ostand() then -- Pipe
+            if ostand() or has("slope_resets") then -- Pipe
                 cb_total = cb_total + 4
             end
             if accessible(production) and grape() then -- Crusher Balloon
