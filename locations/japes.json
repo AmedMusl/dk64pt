@@ -556,7 +556,7 @@
             },
             {            
                 "name": "Japes Chunky Underground",
-                "access_rules": ["barrel, vine, slam, $pineapple"],
+                "access_rules": ["$enterJapesUnder, ^$japesChunkyUnderground"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -573,7 +573,7 @@
             },
             {            
                 "name": "Japes Kasplat: Underground",
-                "access_rules": ["barrel, vine, slam, $pineapple"],
+                "access_rules": ["$enterJapesUnder, ^$japesChunkyKasplat"],
                 "sections": [
                     {
                         "name": "Kasplat",

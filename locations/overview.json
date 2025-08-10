@@ -187,6 +187,66 @@
                 ]
             },
             {
+                "name": "Isles Enemies",
+                "sections": [
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Pineapple Cage (0)/Enemy",
+                        "name": "Isles Enemy: Pineapple Cage (0)"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Fungi Cannon (0)/Enemy",
+                        "name": "Isles Enemy: Fungi Cannon (0)"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Jungle Japes Lobby Enemy: Enemy (0)/Enemy",
+                        "name": "Jungle Japes Lobby Enemy (0)"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Jungle Japes Lobby Enemy: Enemy (1)/Enemy",
+                        "name": "Jungle Japes Lobby Enemy (1)"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Japes Entrance/Enemy",
+                        "name": "Isles Enemy: Japes Entrance"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Monkeyport Pad/Enemy",
+                        "name": "Isles Enemy: Monkeyport Pad"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Upper Factory Path/Enemy",
+                        "name": "Isles Enemy: Upper Factory Path"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Near Aztec/Enemy",
+                        "name": "Isles Enemy: Near Aztec"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Fungi Cannon (1)/Enemy",
+                        "name": "Isles Enemy: Fungi Cannon (1)"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Pineapple Cage (1)/Enemy",
+                        "name": "Isles Enemy: Pineapple Cage (1)"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Lower Factory Path (0)/Enemy",
+                        "name": "Isles Enemy: Lower Factory Path (0)"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Isles Enemy: Lower Factory Path (1)/Enemy",
+                        "name": "Isles Enemy: Lower Factory Path (1)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 591,
+                        "y": 73
+                    }
+                ]
+            },
+            {
                 "name": "Isles Blueprints",
                 "sections": [
                     {
@@ -492,6 +552,158 @@
                 {
                     "ref": "Jungle Japes/Japes Crate: In the Rambi Cave/Crate",
                     "name": "Japes Crate: In the Rambi Cave"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Start/Enemy",
+                    "name": "Jungle Japes Enemy: Start"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Diddy Cavern/Enemy",
+                    "name": "Jungle Japes Enemy: Diddy Cavern"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Tunnel (0)/Enemy",
+                    "name": "Jungle Japes Enemy: Tunnel (0)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Tunnel (1)/Enemy",
+                    "name": "Jungle Japes Enemy: Tunnel (1)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Storm (0)/Enemy",
+                    "name": "Jungle Japes Enemy: Storm (0)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Storm (1)/Enemy",
+                    "name": "Jungle Japes Enemy: Storm (1)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Storm (2)/Enemy",
+                    "name": "Jungle Japes Enemy: Storm (2)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Hive (0)/Enemy",
+                    "name": "Jungle Japes Enemy: Hive (0)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Hive (1)/Enemy",
+                    "name": "Jungle Japes Enemy: Hive (1)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Hive (2)/Enemy",
+                    "name": "Jungle Japes Enemy: Hive (2)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Hive (3)/Enemy",
+                    "name": "Jungle Japes Enemy: Hive (3)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Hive (4)/Enemy",
+                    "name": "Jungle Japes Enemy: Hive (4)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Killed In Demo/Enemy",
+                    "name": "Jungle Japes Enemy: Killed In Demo"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Near Underground/Enemy",
+                    "name": "Jungle Japes Enemy: Near Underground"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Near Painting (0)/Enemy",
+                    "name": "Jungle Japes Enemy: Near Painting (0)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Near Painting (1)/Enemy",
+                    "name": "Jungle Japes Enemy: Near Painting (1)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Near Painting (2)/Enemy",
+                    "name": "Jungle Japes Enemy: Near Painting (2)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Mountain/Enemy",
+                    "name": "Jungle Japes Enemy: Mountain"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Feather Tunnel/Enemy",
+                    "name": "Jungle Japes Enemy: Feather Tunnel"
+                },
+                {
+                    "ref": "Japes Dropsanity/Jungle Japes Enemy: Middle Tunnel/Enemy",
+                    "name": "Jungle Japes Enemy: Middle Tunnel"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Start (0)/Enemy",
+                    "name": "Japes Mountain Enemy: Start (0)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Start (1)/Enemy",
+                    "name": "Japes Mountain Enemy: Start (1)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Start (2)/Enemy",
+                    "name": "Japes Mountain Enemy: Start (2)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Start (3)/Enemy",
+                    "name": "Japes Mountain Enemy: Start (3)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Start (4)/Enemy",
+                    "name": "Japes Mountain Enemy: Start (4)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Near Gate Switch (0)/Enemy",
+                    "name": "Japes Mountain Enemy: Near Gate Switch (0)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Near Gate Switch (1)/Enemy",
+                    "name": "Japes Mountain Enemy: Near Gate Switch (1)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Hi Lo/Enemy",
+                    "name": "Japes Mountain Enemy: Hi Lo"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Conveyor (0)/Enemy",
+                    "name": "Japes Mountain Enemy: Conveyor (0)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Mountain Enemy: Conveyor (1)/Enemy",
+                    "name": "Japes Mountain Enemy: Conveyor (1)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Tiny Hive Enemy: First Room/Enemy",
+                    "name": "Japes Tiny Hive Enemy: First Room"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Tiny Hive Enemy: Second Room (0)/Enemy",
+                    "name": "Japes Tiny Hive Enemy: Second Room (0)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Tiny Hive Enemy: Second Room (1)/Enemy",
+                    "name": "Japes Tiny Hive Enemy: Second Room (1)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Tiny Hive Enemy: Third Room (0)/Enemy",
+                    "name": "Japes Tiny Hive Enemy: Third Room (0)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Tiny Hive Enemy: Third Room (1)/Enemy",
+                    "name": "Japes Tiny Hive Enemy: Third Room (1)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Tiny Hive Enemy: Third Room (2)/Enemy",
+                    "name": "Japes Tiny Hive Enemy: Third Room (2)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Tiny Hive Enemy: Third Room (3)/Enemy",
+                    "name": "Japes Tiny Hive Enemy: Third Room (3)"
+                },
+                {
+                    "ref": "Japes Dropsanity/Japes Tiny Hive Enemy: Main Room/Enemy",
+                    "name": "Japes Tiny Hive Enemy: Main Room"
                 }
               ],
               "map_locations": [
@@ -784,6 +996,290 @@
                     {
                         "ref": "Angry Aztec/Aztec Crate: Llama Temple/Crate",
                         "name": "Aztec Crate: Llama Temple"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Vase Room (0)/Enemy",
+                        "name": "Angry Aztec Enemy: Vase Room (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Vase Room (1)/Enemy",
+                        "name": "Angry Aztec Enemy: Vase Room (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Vase Room (2)/Enemy",
+                        "name": "Angry Aztec Enemy: Vase Room (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Tunnel Pad (0)/Enemy",
+                        "name": "Angry Aztec Enemy: Tunnel Pad (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Tunnel Cage (0)/Enemy",
+                        "name": "Angry Aztec Enemy: Tunnel Cage (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Tunnel Cage (1)/Enemy",
+                        "name": "Angry Aztec Enemy: Tunnel Cage (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Tunnel Cage (2)/Enemy",
+                        "name": "Angry Aztec Enemy: Tunnel Cage (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Starting Tunnel (0)/Enemy",
+                        "name": "Angry Aztec Enemy: Starting Tunnel (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Starting Tunnel (1)/Enemy",
+                        "name": "Angry Aztec Enemy: Starting Tunnel (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Oasis Door/Enemy",
+                        "name": "Angry Aztec Enemy: Oasis Door"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Tunnel Cage (3)/Enemy",
+                        "name": "Angry Aztec Enemy: Tunnel Cage (3)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Outside Llama/Enemy",
+                        "name": "Angry Aztec Enemy: Outside Llama"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Outside Tower/Enemy",
+                        "name": "Angry Aztec Enemy: Outside Tower"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Tunnel Pad (1)/Enemy",
+                        "name": "Angry Aztec Enemy: Tunnel Pad (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Near Candy/Enemy",
+                        "name": "Angry Aztec Enemy: Near Candy"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Around Totem/Enemy",
+                        "name": "Angry Aztec Enemy: Around Totem"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Starting Tunnel (2)/Enemy",
+                        "name": "Angry Aztec Enemy: Starting Tunnel (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Starting Tunnel (3)/Enemy",
+                        "name": "Angry Aztec Enemy: Starting Tunnel (3)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Outside Snide/Enemy",
+                        "name": "Angry Aztec Enemy: Outside Snide"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Outside 5DT/Enemy",
+                        "name": "Angry Aztec Enemy: Outside 5DT"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Angry Aztec Enemy: Near Sealed Quicksand Tunnel/Enemy",
+                        "name": "Angry Aztec Enemy: Near Sealed Quicksand Tunnel"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: Start Trap (0)/Enemy",
+                        "name": "Aztec Donkey 5DTemple Enemy: Start Trap (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: Start Trap (1)/Enemy",
+                        "name": "Aztec Donkey 5DTemple Enemy: Start Trap (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: Start Trap (2)/Enemy",
+                        "name": "Aztec Donkey 5DTemple Enemy: Start Trap (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Trap (0)/Enemy",
+                        "name": "Aztec Donkey 5DTemple Enemy: End Trap (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Trap (1)/Enemy",
+                        "name": "Aztec Donkey 5DTemple Enemy: End Trap (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Trap (2)/Enemy",
+                        "name": "Aztec Donkey 5DTemple Enemy: End Trap (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Path (0)/Enemy",
+                        "name": "Aztec Donkey 5DTemple Enemy: End Path (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Path (1)/Enemy",
+                        "name": "Aztec Donkey 5DTemple Enemy: End Path (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: Start Path/Enemy",
+                        "name": "Aztec Donkey 5DTemple Enemy: Start Path"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: End Trap (0)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: End Trap (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: End Trap (1)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: End Trap (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: End Trap (2)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: End Trap (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: Start Left (0)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: Start Left (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: Start Left (1)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: Start Left (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: Reward/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: Reward"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: Second Switch/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: Second Switch"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Lanky 5DTemple Enemy: Joining Paths/Enemy",
+                        "name": "Aztec Lanky 5DTemple Enemy: Joining Paths"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Lanky 5DTemple Enemy: End Trap/Enemy",
+                        "name": "Aztec Lanky 5DTemple Enemy: End Trap"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Lanky 5DTemple Enemy: Reward/Enemy",
+                        "name": "Aztec Lanky 5DTemple Enemy: Reward"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Start Right Front/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Start Right Front"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Start Left Back/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Start Left Back"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Start Right Back/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Start Right Back"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Start Left Front/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Start Left Front"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Reward (0)/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Reward (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Reward (1)/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Reward (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Dead End (0)/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Dead End (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Dead End (1)/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Dead End (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Start Right/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Start Right"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Start Left/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Start Left"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Second Right/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Second Right"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Second Left/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Second Left"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Reward/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Reward"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Llama Temple Enemy: Kong Free Instrument/Enemy",
+                        "name": "Aztec Llama Temple Enemy: Kong Free Instrument"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Llama Temple Enemy: Dino Instrument/Enemy",
+                        "name": "Aztec Llama Temple Enemy: Dino Instrument"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Llama Temple Enemy: Matching (0)/Enemy",
+                        "name": "Aztec Llama Temple Enemy: Matching (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Llama Temple Enemy: Matching (1)/Enemy",
+                        "name": "Aztec Llama Temple Enemy: Matching (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Llama Temple Enemy: Right/Enemy",
+                        "name": "Aztec Llama Temple Enemy: Right"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Llama Temple Enemy: Left/Enemy",
+                        "name": "Aztec Llama Temple Enemy: Left"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Llama Temple Enemy: Melon Crate/Enemy",
+                        "name": "Aztec Llama Temple Enemy: Melon Crate"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Llama Temple Enemy: Slam Switch/Enemy",
+                        "name": "Aztec Llama Temple Enemy: Slam Switch"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Guard Rotating (0)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Guard Rotating (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Guard Rotating (1)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Guard Rotating (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Main Room (0)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Main Room (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Main Room (1)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Main Room (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Main Room (2)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Main Room (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Kong Room (0)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Kong Room (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Kong Room (1)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Kong Room (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Kong Room (2)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Kong Room (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Kong Room (3)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Kong Room (3)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny Temple Enemy: Kong Room (4)/Enemy",
+                        "name": "Aztec Tiny Temple Enemy: Kong Room (4)"
                     }
                 ],
                 "map_locations": [
@@ -1087,6 +1583,86 @@
                     {
                         "ref": "Frantic Factory/Factory Crate: Near Candy/Crate",
                         "name": "Factory Crate: Near Candy"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Candy Cranky (0)/Enemy",
+                        "name": "Frantic Factory Enemy: Candy Cranky (0)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Candy Cranky (1)/Enemy",
+                        "name": "Frantic Factory Enemy: Candy Cranky (1)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Lobby Left/Enemy",
+                        "name": "Frantic Factory Enemy: Lobby Left"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Lobby Right/Enemy",
+                        "name": "Frantic Factory Enemy: Lobby Right"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Storage Room/Enemy",
+                        "name": "Frantic Factory Enemy: Storage Room"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Block Tower (0)/Enemy",
+                        "name": "Frantic Factory Enemy: Block Tower (0)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Block Tower (1)/Enemy",
+                        "name": "Frantic Factory Enemy: Block Tower (1)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Block Tower (2)/Enemy",
+                        "name": "Frantic Factory Enemy: Block Tower (2)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Tunnel To Hatch/Enemy",
+                        "name": "Frantic Factory Enemy: Tunnel To Hatch"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Tunnel To Prod (0)/Enemy",
+                        "name": "Frantic Factory Enemy: Tunnel To Prod (0)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Tunnel To Prod (1)/Enemy",
+                        "name": "Frantic Factory Enemy: Tunnel To Prod (1)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Tunnel To Block Tower/Enemy",
+                        "name": "Frantic Factory Enemy: Tunnel To Block Tower"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Tunnel To Race (0)/Enemy",
+                        "name": "Frantic Factory Enemy: Tunnel To Race (0)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Tunnel To Race (1)/Enemy",
+                        "name": "Frantic Factory Enemy: Tunnel To Race (1)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Low Warp 4/Enemy",
+                        "name": "Frantic Factory Enemy: Low Warp 4"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Diddy Switch/Enemy",
+                        "name": "Frantic Factory Enemy: Diddy Switch"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: To Block Tower Tunnel/Enemy",
+                        "name": "Frantic Factory Enemy: To Block Tower Tunnel"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Dark Room (0)/Enemy",
+                        "name": "Frantic Factory Enemy: Dark Room (0)"
+                    },
+                    {
+                        "ref": "Factory Dropsanity/Frantic Factory Enemy: Dark Room (1)/Enemy",
+                        "name": "Frantic Factory Enemy: Dark Room (1)"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Frantic Factory Lobby Enemy: Enemy (0)/Enemy",
+                        "name": "Frantic Factory Lobby Enemy (0)"
                     }
                 ],
                 "map_locations": [
@@ -1421,6 +1997,38 @@
                     {
                         "ref": "Gloomy Galleon/Treasure Chest/Treasure Chest Close Left Clam",
                         "name": "Treasure Chest Close Left Clam"
+                    },
+                    {
+                        "ref": "Galleon Dropsanity/Gloomy Galleon Enemy: Chest Room (0)/Enemy",
+                        "name": "Gloomy Galleon Enemy: Chest Room (0)"
+                    },
+                    {
+                        "ref": "Galleon Dropsanity/Gloomy Galleon Enemy: Chest Room (1)/Enemy",
+                        "name": "Gloomy Galleon Enemy: Chest Room (1)"
+                    },
+                    {
+                        "ref": "Galleon Dropsanity/Gloomy Galleon Enemy: Near Vine Cannon/Enemy",
+                        "name": "Gloomy Galleon Enemy: Near Vine Cannon"
+                    },
+                    {
+                        "ref": "Galleon Dropsanity/Gloomy Galleon Enemy: Cranky Cannon/Enemy",
+                        "name": "Gloomy Galleon Enemy: Cranky Cannon"
+                    },
+                    {
+                        "ref": "Galleon Dropsanity/Gloomy Galleon Enemy: Peanut Tunnel/Enemy",
+                        "name": "Gloomy Galleon Enemy: Peanut Tunnel"
+                    },
+                    {
+                        "ref": "Galleon Dropsanity/Gloomy Galleon Enemy: Coconut Tunnel/Enemy",
+                        "name": "Gloomy Galleon Enemy: Coconut Tunnel"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Lighthouse/Galleon Lighthouse Enemy: Enemy (0)",
+                        "name": "Galleon Lighthouse Enemy (0)"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Lighthouse/Galleon Lighthouse Enemy: Enemy (1)",
+                        "name": "Galleon Lighthouse Enemy (1)"
                     }
                 ],
                 "map_locations": [
@@ -1732,6 +2340,226 @@
                     {
                         "ref": "Fungi Forest/Forest Crate: In Thornvine Barn/Crate",
                         "name": "Forest Crate: In Thornvine Barn"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Hollow Tree (0)/Enemy",
+                        "name": "Fungi Forest Enemy: Hollow Tree (0)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Hollow Tree (1)/Enemy",
+                        "name": "Fungi Forest Enemy: Hollow Tree (1)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Hollow Tree Entrance/Enemy",
+                        "name": "Fungi Forest Enemy: Hollow Tree Entrance"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Tree Melon Crate (0)/Enemy",
+                        "name": "Fungi Forest Enemy: Tree Melon Crate (0)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Tree Melon Crate (1)/Enemy",
+                        "name": "Fungi Forest Enemy: Tree Melon Crate (1)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Tree Melon Crate (2)/Enemy",
+                        "name": "Fungi Forest Enemy: Tree Melon Crate (2)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Apple Gauntlet (0)/Enemy",
+                        "name": "Fungi Forest Enemy: Apple Gauntlet (0)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Apple Gauntlet (1)/Enemy",
+                        "name": "Fungi Forest Enemy: Apple Gauntlet (1)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Apple Gauntlet (2)/Enemy",
+                        "name": "Fungi Forest Enemy: Apple Gauntlet (2)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Apple Gauntlet (3)/Enemy",
+                        "name": "Fungi Forest Enemy: Apple Gauntlet (3)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Beanstalk (0)/Enemy",
+                        "name": "Fungi Forest Enemy: Near Beanstalk (0)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Beanstalk (1)/Enemy",
+                        "name": "Fungi Forest Enemy: Near Beanstalk (1)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Green Tunnel/Enemy",
+                        "name": "Fungi Forest Enemy: Green Tunnel"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Low Warp 5/Enemy",
+                        "name": "Fungi Forest Enemy: Near Low Warp 5"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Pink Tunnel Bounce Tag/Enemy",
+                        "name": "Fungi Forest Enemy: Near Pink Tunnel Bounce Tag"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Giant Mushroom Rocketbarrel/Enemy",
+                        "name": "Fungi Forest Enemy: Near Giant Mushroom Rocketbarrel"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Between Yellow Tunnel And RB/Enemy",
+                        "name": "Fungi Forest Enemy: Between Yellow Tunnel And RB"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Cranky/Enemy",
+                        "name": "Fungi Forest Enemy: Near Cranky"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Pink Tunnel Giant Mushroom/Enemy",
+                        "name": "Fungi Forest Enemy: Near Pink Tunnel Giant Mushroom"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Giant Mushroom Rear Tag/Enemy",
+                        "name": "Fungi Forest Enemy: Giant Mushroom Rear Tag"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Face Puzzle/Enemy",
+                        "name": "Fungi Forest Enemy: Near Face Puzzle"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Crown/Enemy",
+                        "name": "Fungi Forest Enemy: Near Crown"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near High Warp 5/Enemy",
+                        "name": "Fungi Forest Enemy: Near High Warp 5"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Top Of Mushroom/Enemy",
+                        "name": "Fungi Forest Enemy: Top Of Mushroom"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Apple Dropoff/Enemy",
+                        "name": "Fungi Forest Enemy: Near Apple Dropoff"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near DKPortal/Enemy",
+                        "name": "Fungi Forest Enemy: Near DKPortal"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Well Tag/Enemy",
+                        "name": "Fungi Forest Enemy: Near Well Tag"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Yellow Tunnel (0)/Enemy",
+                        "name": "Fungi Forest Enemy: Yellow Tunnel (0)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Yellow Tunnel (1)/Enemy",
+                        "name": "Fungi Forest Enemy: Yellow Tunnel (1)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Yellow Tunnel (2)/Enemy",
+                        "name": "Fungi Forest Enemy: Yellow Tunnel (2)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Yellow Tunnel (3)/Enemy",
+                        "name": "Fungi Forest Enemy: Yellow Tunnel (3)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Snide/Enemy",
+                        "name": "Fungi Forest Enemy: Near Snide"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near the hidden Rainbow Coin/Enemy",
+                        "name": "Fungi Forest Enemy: Near the hidden Rainbow Coin"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near BBlast/Enemy",
+                        "name": "Fungi Forest Enemy: Near BBlast"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Dark Attic/Enemy",
+                        "name": "Fungi Forest Enemy: Near Dark Attic"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Well Exit/Enemy",
+                        "name": "Fungi Forest Enemy: Near Well Exit"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Near Blue Tunnel/Enemy",
+                        "name": "Fungi Forest Enemy: Near Blue Tunnel"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Thornvine (0)/Enemy",
+                        "name": "Fungi Forest Enemy: Thornvine (0)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Thornvine (1)/Enemy",
+                        "name": "Fungi Forest Enemy: Thornvine (1)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Thornvine (2)/Enemy",
+                        "name": "Fungi Forest Enemy: Thornvine (2)"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Fungi Forest Enemy: Thornvine Entrance/Enemy",
+                        "name": "Fungi Forest Enemy: Thornvine Entrance"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Anthill/Forest Anthill Enemy: Gauntlet (0)",
+                        "name": "Forest Anthill Enemy: Gauntlet (0)"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Anthill/Forest Anthill Enemy: Gauntlet (1)",
+                        "name": "Forest Anthill Enemy: Gauntlet (1)"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Anthill/Forest Anthill Enemy: Gauntlet (2)",
+                        "name": "Forest Anthill Enemy: Gauntlet (2)"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Anthill/Forest Anthill Enemy: Gauntlet (3)",
+                        "name": "Forest Anthill Enemy: Gauntlet (3)"
+                    },
+                    {
+                        "ref": "Fungi Forest/Winch Room/Forest Winch Room Enemy: Enemy",
+                        "name": "Forest Winch Room Enemy"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Forest Thornvine Barn Enemy: Enemy/Enemy",
+                        "name": "Forest Thornvine Barn Enemy"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Forest Mill Front Enemy: Enemy/Enemy",
+                        "name": "Forest Mill Front Enemy"
+                    },
+                    {
+                        "ref": "Forest Dropsanity/Forest Mill Back Enemy: Enemy/Enemy",
+                        "name": "Forest Mill Back Enemy"
+                    },
+                    {
+                        "ref": "Fungi Forest/Inside the Mushroom/Forest Giant Mushroom Enemy: Above Night Door",
+                        "name": "Forest Giant Mushroom Enemy: Above Night Door"
+                    },
+                    {
+                        "ref": "Fungi Forest/Inside the Mushroom/Forest Giant Mushroom Enemy: Path (0)",
+                        "name": "Forest Giant Mushroom Enemy: Path (0)"
+                    },
+                    {
+                        "ref": "Fungi Forest/Inside the Mushroom/Forest Giant Mushroom Enemy: Path (1)",
+                        "name": "Forest Giant Mushroom Enemy: Path (1)"
+                    },
+                    {
+                        "ref": "Fungi Forest/Zinger Room/Forest Lanky Zingers Room Enemy: Enemy (0)",
+                        "name": "Forest Lanky Zingers Room Enemy (0)"
+                    },
+                    {
+                        "ref": "Fungi Forest/Zinger Room/Forest Lanky Zingers Room Enemy: Enemy (1)",
+                        "name": "Forest Lanky Zingers Room Enemy (1)"
+                    },
+                    {
+                        "ref": "Fungi Forest/Face Puzzle Room/Forest Chunky Face Room Enemy: Enemy",
+                        "name": "Forest Chunky Face Room Enemy"
                     }
                 ],
                 "map_locations": [
@@ -2002,7 +2830,68 @@
                     }
                 ]
             },
-            {                "name": "Caves Shops",
+            {
+                "name": "Caves Enemies",
+                "sections": [
+                    {
+                        "ref": "Caves Dropsanity/Crystal Caves Enemy: Start/Enemy",
+                        "name": "Crystal Caves Enemy: Start"
+                    },
+                    {
+                        "ref": "Caves Dropsanity/Crystal Caves Enemy: Near Ice Castle/Enemy",
+                        "name": "Crystal Caves Enemy: Near Ice Castle"
+                    },
+                    {
+                        "ref": "Caves Dropsanity/Crystal Caves Enemy: Outside 5DC/Enemy",
+                        "name": "Crystal Caves Enemy: Outside 5DC"
+                    },
+                    {
+                        "ref": "Caves Dropsanity/Crystal Caves Enemy: 1DC Waterfall/Enemy",
+                        "name": "Crystal Caves Enemy: 1DC Waterfall"
+                    },
+                    {
+                        "ref": "Caves Dropsanity/Crystal Caves Enemy: Near Funky/Enemy",
+                        "name": "Crystal Caves Enemy: Near Funky"
+                    },
+                    {
+                        "ref": "Caves Dropsanity/Crystal Caves Enemy: Near Snide/Enemy",
+                        "name": "Crystal Caves Enemy: Near Snide"
+                    },
+                    {
+                        "ref": "Caves Dropsanity/Crystal Caves Enemy: Near Bonus Room/Enemy",
+                        "name": "Crystal Caves Enemy: Near Bonus Room"
+                    },
+                    {
+                        "ref": "Caves Dropsanity/Crystal Caves Enemy: 1DC Headphones/Enemy",
+                        "name": "Crystal Caves Enemy: 1DC Headphones"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves DK 5 Door Igloo/Caves Donkey Igloo Enemy: Right",
+                        "name": "Caves Donkey Igloo Enemy: Right"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves DK 5 Door Igloo/Caves Donkey Igloo Enemy: Left",
+                        "name": "Caves Donkey Igloo Enemy: Left"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Tiny 5 Door Igloo/Caves Tiny Igloo Enemy: Big Enemy",
+                        "name": "Caves Tiny Igloo Enemy: Big Enemy"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Lanky Sprint Cabin/Caves Lanky Cabin Enemy: Near",
+                        "name": "Caves Lanky Cabin Enemy: Near"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 591,
+                        "y": 375
+                    }
+                ]
+            },
+            {
+                "name": "Caves Shops",
                 "sections": [
                     {
                         "ref": "Caves Shops/Caves Cranky/Cranky DK",
@@ -2282,6 +3171,226 @@
                     {
                         "ref": "Creepy Castle/Castle Crate: Behind Mausoleum Entrance/Crate",
                         "name": "Castle Crate: Behind Mausoleum Entrance"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Near Bridge (0)/Enemy",
+                        "name": "Creepy Castle Enemy: Near Bridge (0)"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Near Bridge (1)/Enemy",
+                        "name": "Creepy Castle Enemy: Near Bridge (1)"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Wooden Extrusion (0)/Enemy",
+                        "name": "Creepy Castle Enemy: Wooden Extrusion (0)"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Wooden Extrusion (1)/Enemy",
+                        "name": "Creepy Castle Enemy: Wooden Extrusion (1)"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Near Shed/Enemy",
+                        "name": "Creepy Castle Enemy: Near Shed"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Near Library/Enemy",
+                        "name": "Creepy Castle Enemy: Near Library"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Near Tower/Enemy",
+                        "name": "Creepy Castle Enemy: Near Tower"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Museum Steps/Enemy",
+                        "name": "Creepy Castle Enemy: Museum Steps"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Near Low Cave/Enemy",
+                        "name": "Creepy Castle Enemy: Near Low Cave"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Path To Low Kasplat/Enemy",
+                        "name": "Creepy Castle Enemy: Path To Low Kasplat"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Low TnS/Enemy",
+                        "name": "Creepy Castle Enemy: Low TnS"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Path To Dungeon/Enemy",
+                        "name": "Creepy Castle Enemy: Path To Dungeon"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Creepy Castle Enemy: Near Headphones/Enemy",
+                        "name": "Creepy Castle Enemy: Near Headphones"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Creepy Castle Lobby Enemy: Left/Enemy",
+                        "name": "Creepy Castle Lobby Enemy: Left"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Creepy Castle Lobby Enemy: Far Right/Enemy",
+                        "name": "Creepy Castle Lobby Enemy: Far Right"
+                    },
+                    {
+                        "ref": "Isles Dropsanity/Creepy Castle Lobby Enemy: Near Right/Enemy",
+                        "name": "Creepy Castle Lobby Enemy: Near Right"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Ballroom Enemy: Start/Enemy",
+                        "name": "Castle Ballroom Enemy: Start"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Dungeon Enemy: Face Room/Enemy",
+                        "name": "Castle Dungeon Enemy: Face Room"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Dungeon Enemy: Chair Room/Enemy",
+                        "name": "Castle Dungeon Enemy: Chair Room"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Dungeon Enemy: Outside Lanky Room/Enemy",
+                        "name": "Castle Dungeon Enemy: Outside Lanky Room"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Lower Cave Enemy: Near Crypt/Enemy",
+                        "name": "Castle Lower Cave Enemy: Near Crypt"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Lower Cave Enemy: Stair Right/Enemy",
+                        "name": "Castle Lower Cave Enemy: Stair Right"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Lower Cave Enemy: Stair Left/Enemy",
+                        "name": "Castle Lower Cave Enemy: Stair Left"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Lower Cave Enemy: Near Mausoleum/Enemy",
+                        "name": "Castle Lower Cave Enemy: Near Mausoleum"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Lower Cave Enemy: Near Funky/Enemy",
+                        "name": "Castle Lower Cave Enemy: Near Funky"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Lower Cave Enemy: Near Tag/Enemy",
+                        "name": "Castle Lower Cave Enemy: Near Tag"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Diddy Crypt/Castle Crypt Enemy: Diddy Coffin (0)",
+                        "name": "Castle Crypt Enemy: Diddy Coffin (0)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Diddy Crypt/Castle Crypt Enemy: Diddy Coffin (1)",
+                        "name": "Castle Crypt Enemy: Diddy Coffin (1)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Diddy Crypt/Castle Crypt Enemy: Diddy Coffin (2)",
+                        "name": "Castle Crypt Enemy: Diddy Coffin (2)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Diddy Crypt/Castle Crypt Enemy: Diddy Coffin (3)",
+                        "name": "Castle Crypt Enemy: Diddy Coffin (3)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Chunky Crypt/Castle Crypt Enemy: Chunky Coffin (0)",
+                        "name": "Castle Crypt Enemy: Chunky Coffin (0)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Chunky Crypt/Castle Crypt Enemy: Chunky Coffin (1)",
+                        "name": "Castle Crypt Enemy: Chunky Coffin (1)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Chunky Crypt/Castle Crypt Enemy: Chunky Coffin (2)",
+                        "name": "Castle Crypt Enemy: Chunky Coffin (2)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Chunky Crypt/Castle Crypt Enemy: Chunky Coffin (3)",
+                        "name": "Castle Crypt Enemy: Chunky Coffin (3)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle DK Minecart/Castle Crypt Enemy: Minecart Entry",
+                        "name": "Castle Crypt Enemy: Minecart Entry"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Crypt Enemy: Fork/Enemy",
+                        "name": "Castle Crypt Enemy: Fork"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Crypt Enemy: Near Diddy/Enemy",
+                        "name": "Castle Crypt Enemy: Near Diddy"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Crypt Enemy: Near Chunky/Enemy",
+                        "name": "Castle Crypt Enemy: Near Chunky"
+                    },
+                    {
+                        "ref": "Creepy Castle/Mausoleum/Castle Mausoleum Enemy: Tiny Path",
+                        "name": "Castle Mausoleum Enemy: Tiny Path"
+                    },
+                    {
+                        "ref": "Creepy Castle/Mausoleum/Castle Mausoleum Enemy: Lanky Path (0)",
+                        "name": "Castle Mausoleum Enemy: Lanky Path (0)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Mausoleum/Castle Mausoleum Enemy: Lanky Path (1)",
+                        "name": "Castle Mausoleum Enemy: Lanky Path (1)"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Upper Cave Enemy: Near Dungeon/Enemy",
+                        "name": "Castle Upper Cave Enemy: Near Dungeon"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Upper Cave Enemy: Near Pit/Enemy",
+                        "name": "Castle Upper Cave Enemy: Near Pit"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Upper Cave Enemy: Near Entrance/Enemy",
+                        "name": "Castle Upper Cave Enemy: Near Entrance"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle DK Library/Castle Library Enemy: Fork Left (0)",
+                        "name": "Castle Library Enemy: Fork Left (0)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle DK Library/Castle Library Enemy: Fork Left (1)",
+                        "name": "Castle Library Enemy: Fork Left (1)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle DK Library/Castle Library Enemy: Fork Center",
+                        "name": "Castle Library Enemy: Fork Center"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle DK Library/Castle Library Enemy: Fork Right",
+                        "name": "Castle Library Enemy: Fork Right"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Museum Enemy: Main Floor (0)/Enemy",
+                        "name": "Castle Museum Enemy: Main Floor (0)"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Museum Enemy: Main Floor (1)/Enemy",
+                        "name": "Castle Museum Enemy: Main Floor (1)"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Museum Enemy: Main Floor (2)/Enemy",
+                        "name": "Castle Museum Enemy: Main Floor (2)"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Museum Enemy: Main Floor (3)/Enemy",
+                        "name": "Castle Museum Enemy: Main Floor (3)"
+                    },
+                    {
+                        "ref": "Castle Dropsanity/Castle Museum Enemy: Start/Enemy",
+                        "name": "Castle Museum Enemy: Start"
+                    },
+                    {
+                        "ref": "Creepy Castle/Inside the Tree/Castle Tree Enemy: Start Room (0)",
+                        "name": "Castle Tree Enemy: Start Room (0)"
+                    },
+                    {
+                        "ref": "Creepy Castle/Inside the Tree/Castle Tree Enemy: Start Room (1)",
+                        "name": "Castle Tree Enemy: Start Room (1)"
                     }
                 ],
                 "map_locations": [
@@ -2399,7 +3508,8 @@
                     }
                 ]
             },
-            {                "name": "Helm Fairies",
+            {
+                "name": "Helm Fairies",
                 "sections": [
                     {
                         "ref": "Hideout Helm/Helm Fairy (Key 8 Room)/Fairy 1",
@@ -2430,6 +3540,94 @@
                     {
                         "map": "overview",
                         "x": 384,
+                        "y": 483
+                    }
+                ]
+            },
+            {
+                "name": "Helm Enemies",
+                "sections": [
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Start (0)/Enemy",
+                        "name": "Hideout Helm Enemy: Start (0)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Start (1)/Enemy",
+                        "name": "Hideout Helm Enemy: Start (1)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Hill/Enemy",
+                        "name": "Hideout Helm Enemy: Hill"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Switch Room (0)/Enemy",
+                        "name": "Hideout Helm Enemy: Switch Room (0)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Switch Room (1)/Enemy",
+                        "name": "Hideout Helm Enemy: Switch Room (1)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Mini Room (0)/Enemy",
+                        "name": "Hideout Helm Enemy: Mini Room (0)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Mini Room (1)/Enemy",
+                        "name": "Hideout Helm Enemy: Mini Room (1)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Mini Room (2)/Enemy",
+                        "name": "Hideout Helm Enemy: Mini Room (2)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Mini Room (3)/Enemy",
+                        "name": "Hideout Helm Enemy: Mini Room (3)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: DKRoom/Enemy",
+                        "name": "Hideout Helm Enemy: DKRoom"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Chunky Room (0)/Enemy",
+                        "name": "Hideout Helm Enemy: Chunky Room (0)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Chunky Room (1)/Enemy",
+                        "name": "Hideout Helm Enemy: Chunky Room (1)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Tiny Room/Enemy",
+                        "name": "Hideout Helm Enemy: Tiny Room"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Lanky Room (0)/Enemy",
+                        "name": "Hideout Helm Enemy: Lanky Room (0)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Lanky Room (1)/Enemy",
+                        "name": "Hideout Helm Enemy: Lanky Room (1)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Diddy Room (0)/Enemy",
+                        "name": "Hideout Helm Enemy: Diddy Room (0)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Diddy Room (1)/Enemy",
+                        "name": "Hideout Helm Enemy: Diddy Room (1)"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Nav Right/Enemy",
+                        "name": "Hideout Helm Enemy: Nav Right"
+                    },
+                    {
+                        "ref": "Helm Dropsanity/Hideout Helm Enemy: Nav Left/Enemy",
+                        "name": "Hideout Helm Enemy: Nav Left"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 591,
                         "y": 483
                     }
                 ]

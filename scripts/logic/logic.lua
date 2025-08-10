@@ -446,6 +446,18 @@ function lankyAttic()
     end
 end
 
+function enterJapesUnder()
+    return (has("chunky") and has("barrel") and has("slam")) or phaseswim()
+end
+
+function japesChunkyUnderground()
+    return (has("vine") and pineapple() and has("chunky")) or (((twirl() and has("tiny")) or (has("vine") and (has("diddy") or has("tiny"))) or (has("donkey") and avp())) and avp())
+end
+
+function japesChunkyKasplat()
+    return (has("vine") and pineapple() and has("chunky")) or (has("vine") and (has("diddy") or has("tiny")) and avp())
+end
+
 function chunkyShed()
     return punch() and ((gone() and canChangeTime()) or triangle() or bongos() or guitar() or trombone() or sax())
 end
@@ -459,7 +471,11 @@ function canGetOnCannonGamePlatform()
 end
 
 function factoryDiddyHint()
-    return canEnterFactoryLobby() and (grab() or moonkicks() or (avp() and (has("tiny") or has("diddy"))))
+    if canEnterFactoryLobby() and grab() or moonkicks() then
+        return true
+    elseif canEnterFactoryLobby() and (has("tiny") or has("diddy")) then
+        return avp()
+    end
 end
 
 function factoryLankyHint()
@@ -467,7 +483,11 @@ function factoryLankyHint()
 end
 
 function factoryTinyHint()
-    return canEnterFactoryLobby() and (grab() or moonkicks() or (avp() and (has("tiny") or has("diddy"))))
+    if canEnterFactoryLobby() and grab() or moonkicks() then
+        return true
+    elseif canEnterFactoryLobby() and (has("tiny") or has("diddy")) then
+        return avp()
+    end
 end
 
 function lankyFreeing()
@@ -1057,6 +1077,20 @@ function hasBoss(prefix)
     return false
 end
 
+function toggleShopowners()
+    if not_has("shopowners") then
+        Tracker:FindObjectForCode("cranky").Active = true
+        Tracker:FindObjectForCode("funky").Active = true
+        Tracker:FindObjectForCode("candy").Active = true
+        Tracker:FindObjectForCode("snide").Active = true
+    else
+        Tracker:FindObjectForCode("cranky").Active = false
+        Tracker:FindObjectForCode("funky").Active = false
+        Tracker:FindObjectForCode("candy").Active = false
+        Tracker:FindObjectForCode("snide").Active = false
+    end
+end
+
 -- Check if a specific boss is assigned to a level (by TNS order)
 function checkBossInLevel(levelNum, bossName)
     local bossMap = {
@@ -1423,3 +1457,4 @@ ScriptHost:AddWatchForCode("number67", "k5", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number8", "k6", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number8_k6", "k6", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number8_k7", "k7", toggleLevelOrder)
+ScriptHost:AddWatchForCode("shopowners", "shopowners", toggleShopowners)

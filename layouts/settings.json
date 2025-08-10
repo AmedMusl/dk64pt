@@ -15,7 +15,7 @@
                         "item_margin": "5, 2",
                         "h_alignment": "left",
                         "rows": [
-                            ["medalamount", "water", "time", "jetpacReq", "bfiReq"],
+                            ["medalamount", "water", "time", "jetpacReq", "bfiReq", "shopowners"],
                             ["mermaid", "openlobbies", "hintsinpool", "dropsanity", "bouldersanity"],
                             ["helmorder", "bom1", "bom2", "bom3", "bom4", "bom5"],
                             ["kroolorder", "krool", "krool2", "krool3", "krool4", "krool5"],

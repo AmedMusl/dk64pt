@@ -120,7 +120,7 @@
             },
             {
                 "name": "Crystal Caves Enemy: 1DC Headphones",
-                "access_rules": ["$applyEnemyLogic|CavesMainEnemy_1DCHeadphones, $canEnterSprintCabin"],
+                "access_rules": ["$applyEnemyLogic|CavesMainEnemy_1DCHeadphones"],
                 "sections": [
                     {
                         "name": "Enemy"

@@ -98,7 +98,7 @@
             },
             {
                 "name": "Aztec Kasplat: Behind DK Stone Door",
-                "access_rules": ["$canActivateAztecBlueprintDoor, $strong"],
+                "access_rules": ["$canActivateAztecBlueprintDoor, $strong", "$canActivateAztecBlueprintDoor, $twirl"],
                 "sections": [
                     {
                         "name": "Kasplat",

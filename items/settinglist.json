@@ -2056,5 +2056,11 @@
       "type": "toggle",
       "img": "images/settings/slope_resets.png",
       "codes": "slope_resets"
+    },
+    {
+      "name": "Shopkeepers in Pool",
+      "type": "toggle",
+      "img": "images/items/cranky.png",
+      "codes": "shopowners"
     }
 ]

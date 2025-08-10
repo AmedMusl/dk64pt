@@ -14,14 +14,20 @@
                         "vine",
                         "oranges",
                         "barrel",
-                        "dive",
-                        "slam"
+                        "dive"
                     ],
                     [
+                        "slam",
                         "camera",
                         "shockwave",
                         "sniper",
                         "homing"
+                    ],
+                    [
+                        "cranky",
+                        "candy",
+                        "funky",
+                        "snide"
                     ]
                 ]
             }

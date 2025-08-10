@@ -318,6 +318,17 @@ function processVersionGatedFeatures(slot_data)
         obj.Active = slot_data['BouldersInPool']
     end
     
+    -- HardShooting (version < 1.1.0 only)
+    if slot_data['HardShooting'] and not isNewVersion then
+        local obj = Tracker:FindObjectForCode("hard_shooting")
+        obj.Active = slot_data['HardShooting']
+    end
+
+    if slot_data['Shopkeepers'] then
+        local obj = Tracker:FindObjectForCode("shopowners")
+        obj.Active = slot_data['Shopkeepers']
+    end
+    
     -- Handle GlitchesSelected and TricksSelected
     if slot_data['GlitchesSelected'] then
         for glitch in string.gmatch(slot_data['GlitchesSelected'], "[^,%s]+") do
