@@ -337,7 +337,15 @@ function processVersionGatedFeatures(slot_data)
                 goto continue
             end
             
-            local obj = Tracker:FindObjectForCode(glitch)
+            -- Handle advanced_platforming name change in versions >= 1.1.0
+            local tracker_code = glitch
+            if not isNewVersion and glitch == "monkey_maneuvers" then
+                tracker_code = "advanced_platforming"
+            elseif isNewVersion and glitch == "advanced_platforming" then
+                tracker_code = "monkey_maneuvers"
+            end
+            
+            local obj = Tracker:FindObjectForCode(tracker_code)
             if obj then
                 obj.Active = true
             end
@@ -349,7 +357,13 @@ function processVersionGatedFeatures(slot_data)
     -- TricksSelected (version >= 1.1.0 only)
     if slot_data["TricksSelected"] and isNewVersion then
         for tricks in string.gmatch(slot_data['TricksSelected'], "[^,%s]+") do
-            local obj = Tracker:FindObjectForCode(tricks)
+            -- Handle monkey_maneuvers name change - map to advanced_platforming for tracker
+            local tracker_code = tricks
+            if tricks == "monkey_maneuvers" then
+                tracker_code = "advanced_platforming"
+            end
+            
+            local obj = Tracker:FindObjectForCode(tracker_code)
             if obj then
                 obj.Active = true
             end

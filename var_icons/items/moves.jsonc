@@ -1,0 +1,232 @@
+[
+    {
+        "name": "Coconut Gun",
+        "type": "toggle",
+        "img": "images/items/dk_gun.png",
+        "codes": "coconut"
+    },
+    {
+        "name": "Peanut Popguns",
+        "type": "toggle",
+        "img": "images/items/diddy_gun.png",
+        "codes": "peanuts"
+    },
+    {
+        "name": "Grape Shooter",
+        "type": "toggle",
+        "img": "images/items/lanky_gun.png",
+        "codes": "grape"
+    },
+    {
+        "name": "Feather Bow",
+        "type": "toggle",
+        "img": "images/items/tiny_gun.png",
+        "codes": "feather"
+    },
+    {
+        "name": "Pineapple Launcher",
+        "type": "toggle",
+        "img": "images/items/chunky_gun.png",
+        "codes": "pineapple"
+    },
+    {
+        "name": "Bongo Blast",
+        "type": "toggle",
+        "img": "images/items/dk_inst.png",
+        "codes": "bongos"
+    },
+    {
+        "name": "Guitar Gazump",
+        "type": "toggle",
+        "img": "images/items/diddy_inst.png",
+        "codes": "guitar"
+    },
+    {
+        "name": "Trombone Tremor",
+        "type": "toggle",
+        "img": "images/items/lanky_inst.png",
+        "codes": "trombone"
+    },
+    {
+        "name": "Saxophone Slam",
+        "type": "toggle",
+        "img": "images/items/tiny_inst.png",
+        "codes": "sax"
+    },
+    {
+        "name": "Triangle Trample",
+        "type": "toggle",
+        "img": "images/items/chunky_inst.png",
+        "codes": "triangle"
+    },
+    {
+        "name": "Gorilla Grab",
+        "type": "toggle",
+        "img": "images/items/dk_move.png",
+        "codes": "grab"
+    },
+    {
+        "name": "Chimpy Charge",
+        "type": "toggle",
+        "img": "images/items/diddy_move.png",
+        "codes": "charge"
+    },
+    {
+        "name": "Orangstand",
+        "type": "toggle",
+        "img": "images/items/lanky_move.png",
+        "codes": "orangstand"
+    },
+    {
+        "name": "Pony Tail Twirl",
+        "type": "toggle",
+        "img": "images/items/tiny_move.png",
+        "codes": "twirl"
+    },
+    {
+        "name": "Primate Punch",
+        "type": "toggle",
+        "img": "images/items/chunky_move.png",
+        "codes": "punch"
+    },
+    {
+        "name": "Baboon Blast",
+        "type": "toggle",
+        "img": "var_icons/images/dkpad.png",
+        "codes": "blast"
+    },
+    {
+        "name": "Simian Spring",
+        "type": "toggle",
+        "img": "var_icons/images/diddypad.png",
+        "codes": "spring"
+    },
+    {
+        "name": "Baboon Balloon",
+        "type": "toggle",
+        "img": "images/items/lankypad.png",
+        "codes": "balloon"
+    },
+    {
+        "name": "Monkeyport",
+        "type": "toggle",
+        "img": "var_icons/images/tinypad.png",
+        "codes": "port"
+    },
+    {
+        "name": "Gorilla Gone",
+        "type": "toggle",
+        "img": "var_icons/images/chunkypad.png",
+        "codes": "gone"
+    },
+    {
+        "name": "Strong Kong",
+        "type": "toggle",
+        "img": "var_icons/images/dkbarrel.png",
+        "codes": "strong"
+    },
+    {
+        "name": "RocketBarrel",
+        "type": "toggle",
+        "img": "var_icons/images/diddybarrel.png",
+        "codes": "rocket"
+    },
+    {
+        "name": "Orangstand Sprint",
+        "type": "toggle",
+        "img": "var_icons/images/lankybarrel.png",
+        "codes": "sprint"
+    },
+    {
+        "name": "Mini Monkey",
+        "type": "toggle",
+        "img": "var_icons/images/tinybarrel.png",
+        "codes": "mini"
+    },
+    {
+        "name": "Hunky Chunky",
+        "type": "toggle",
+        "img": "var_icons/images/chunkybarrel.png",
+        "codes": "big"
+    },
+    {
+        "name": "Vine Swinging",
+        "type": "toggle",
+        "img": "images/items/vine.png",
+        "codes": "vine"
+    },
+    {
+        "name": "Diving",
+        "type": "toggle",
+        "img": "images/items/swim.png",
+        "codes": "dive"
+    },
+    {
+        "name": "Orange Grenades",
+        "type": "toggle",
+        "img": "images/items/orange.png",
+        "codes": "oranges"
+    },
+    {
+        "name": "Barrel Throwing",
+        "type": "toggle",
+        "img": "images/items/tntbarrel2.png",
+        "codes": "barrel"
+    },
+    {
+        "name": "Fairy Camera",
+        "type": "toggle",
+        "img": "images/items/film.png",
+        "codes": "camera"
+    },
+    {
+        "name": "Shockwave",
+        "type": "toggle",
+        "img": "images/items/shockwave.png",
+        "codes": "shockwave"
+    },
+    {
+        "name": "Homing Ammo",
+        "type": "toggle",
+        "img": "images/items/homing.png",
+        "codes": "homing"
+    },
+    {
+        "name": "Sniper Scope",
+        "type": "toggle",
+        "img": "images/items/sniper.png",
+        "codes": "sniper"
+    },
+    {
+        "name": "Slam",
+        "type": "progressive",
+        "loop": false,
+        "allow_disabled": true,
+        "stages": [
+            {
+                "img": "images/items/slam1.png",
+                "name": "Simian Slam",
+                "codes": "slam,greenslam",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/slam2.png",
+                "name": "Super Simian Slam",
+                "codes": "slam,blueslam",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/slam3.png",
+                "name": "Super Duper Simian Slam",
+                "codes": "slam,redslam",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Climbing",
+        "type": "toggle",
+        "img": "images/items/climb.png",
+        "codes": "climb"
+    }
+]

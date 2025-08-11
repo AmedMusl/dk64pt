@@ -38,26 +38,31 @@ function getBLockerItemCount(item_type)
         local gb_count = obj and obj.AcquiredCount or 0
         
         -- Add blueprint count since turning in blueprints gives golden bananas
-        -- Only count blueprints for kongs you have
+        -- Only count blueprints for kongs you have and if you have Snide
         local blueprint_total = 0
-        local kong_blueprint_map = {
-            {"donkey", "dkbp"},
-            {"diddy", "diddybp"}, 
-            {"lanky", "lankybp"},
-            {"tiny", "tinybp"},
-            {"chunky", "chunkybp"}
-        }
+        local snide_obj = Tracker:FindObjectForCode("snide")
+        local has_snide = snide_obj and snide_obj.Active
         
-        for _, kong_bp_pair in ipairs(kong_blueprint_map) do
-            local kong_code = kong_bp_pair[1]
-            local blueprint_code = kong_bp_pair[2]
-            local kong_obj = Tracker:FindObjectForCode(kong_code)
+        if has_snide then
+            local kong_blueprint_map = {
+                {"donkey", "dkbp"},
+                {"diddy", "diddybp"}, 
+                {"lanky", "lankybp"},
+                {"tiny", "tinybp"},
+                {"chunky", "chunkybp"}
+            }
             
-            if kong_obj and kong_obj.Active then
-                local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
-                if blueprint_obj then
-                    local bp_count = blueprint_obj.AcquiredCount or 0
-                    blueprint_total = blueprint_total + bp_count
+            for _, kong_bp_pair in ipairs(kong_blueprint_map) do
+                local kong_code = kong_bp_pair[1]
+                local blueprint_code = kong_bp_pair[2]
+                local kong_obj = Tracker:FindObjectForCode(kong_code)
+                
+                if kong_obj and kong_obj.Active then
+                    local blueprint_obj = Tracker:FindObjectForCode(blueprint_code)
+                    if blueprint_obj then
+                        local bp_count = blueprint_obj.AcquiredCount or 0
+                        blueprint_total = blueprint_total + bp_count
+                    end
                 end
             end
         end

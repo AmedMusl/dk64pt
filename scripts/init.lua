@@ -5,6 +5,7 @@ ENABLE_DEBUG_LOG = true
 local variant = Tracker.ActiveVariantUID
 -- check variant info
 IS_HORIZONTAL = variant:find("horizontal")
+IS_NEWICONS = variant:find("var_icons")
 
 print("-- DK64 Poptracker --")
 print("Loaded variant: ", variant)
@@ -70,6 +71,10 @@ if IS_HORIZONTAL then
     Tracker:AddLayouts("horizontal/layouts/tracker.json")
     Tracker:AddLayouts("horizontal/layouts/shared.json")
     Tracker:AddLayouts("horizontal/layouts/items.json")
+end
+
+if IS_NEWICONS then
+    Tracker:AddItems("var_icons/items/moves.jsonc")
 end
 
 -- AutoTracking for Poptracker
