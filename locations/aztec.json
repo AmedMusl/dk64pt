@@ -429,6 +429,134 @@
                         "access_rules": ["$pineapple, shockwave"],
                         "chest_unopened_img": "images/items/rainbowcoin.png",
                         "chest_opened_img": "images/items/rainbowcoinbw.png"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: Start Trap (0)/Enemy",
+                        "name": "Aztec DK 5DTemple Enemy: Start Trap (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: Start Trap (1)/Enemy",
+                        "name": "Aztec DK 5DTemple Enemy: Start Trap (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: Start Trap (2)/Enemy",
+                        "name": "Aztec DK 5DTemple Enemy: Start Trap (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Trap (0)/Enemy",
+                        "name": "Aztec DK 5DTemple Enemy: End Trap (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Trap (1)/Enemy",
+                        "name": "Aztec DK 5DTemple Enemy: End Trap (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Trap (2)/Enemy",
+                        "name": "Aztec DK 5DTemple Enemy: End Trap (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Path (0)/Enemy",
+                        "name": "Aztec DK 5DTemple Enemy: End Path (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: End Path (1)/Enemy",
+                        "name": "Aztec DK 5DTemple Enemy: End Path (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Donkey 5DTemple Enemy: Start Path/Enemy",
+                        "name": "Aztec DK 5DTemple Enemy: Start Path"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: End Trap (0)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: End Trap (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: End Trap (1)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: End Trap (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: End Trap (2)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: End Trap (2)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: Start Left (0)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: Start Left (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: Start Left (1)/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: Start Left (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: Reward/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: Reward"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Diddy 5DTemple Enemy: Second Switch/Enemy",
+                        "name": "Aztec Diddy 5DTemple Enemy: Second Switch"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Lanky 5DTemple Enemy: Joining Paths/Enemy",
+                        "name": "Aztec Lanky 5DTemple Enemy: Joining Paths"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Lanky 5DTemple Enemy: End Trap/Enemy",
+                        "name": "Aztec Lanky 5DTemple Enemy: End Trap"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Lanky 5DTemple Enemy: Reward/Enemy",
+                        "name": "Aztec Lanky 5DTemple Enemy: Reward"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Start Right Front/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Start Right Front"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Start Left Back/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Start Left Back"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Start Right Back/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Start Right Back"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Start Left Front/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Start Left Front"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Reward (0)/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Reward (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Reward (1)/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Reward (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Dead End (0)/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Dead End (0)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Tiny 5DTemple Enemy: Dead End (1)/Enemy",
+                        "name": "Aztec Tiny 5DTemple Enemy: Dead End (1)"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Start Right/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Start Right"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Start Left/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Start Left"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Second Right/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Second Right"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Second Left/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Second Left"
+                    },
+                    {
+                        "ref": "Aztec Dropsanity/Aztec Chunky 5DTemple Enemy: Reward/Enemy",
+                        "name": "Aztec Chunky 5DTemple Enemy: Reward"
                     }
                 ],
                 "map_locations": [
@@ -603,6 +731,134 @@
                         "map": "aztec",
                         "x": 373,
                         "y": 492
+                    }
+                ]
+            },
+            {
+                "name": "DK 5DT",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec DK 5DT",
+                        "name": "Aztec DK 5DT GB"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "dk5dt",
+                        "x": 524,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Diddy 5DT",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Diddy 5DT",
+                        "name": "Aztec Diddy 5DT GB"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "diddy5dt",
+                        "x": 312,
+                        "y": 58
+                    }
+                ]
+            },
+            {
+                "name": "Lanky 5DT",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Lanky 5DT",
+                        "name": "Aztec Lanky 5DT GB"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "lanky5dt",
+                        "x": 529,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "name": "Tiny 5DT",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Tiny 5DT",
+                        "name": "Aztec Tiny 5DT GB"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tiny5dt",
+                        "x": 197,
+                        "y": 45
+                    }
+                ]
+            },
+            {
+                "name": "Chunky 5DT",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Chunky 5DT",
+                        "name": "Aztec Chunky 5DT GB"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "chunky5dt",
+                        "x": 528,
+                        "y": 44
+                    }
+                ]
+            },
+            {
+                "name": "Tiny 5DT",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Fairy (Inside Tiny 5DT)",
+                        "name": "Aztec Fairy (Inside Tiny 5DT)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "tiny5dt",
+                        "x": 79,
+                        "y": 534
+                    }
+                ]
+            },
+            {
+                "name": "Chunky 5DT",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Kasplat: Chunky 5DT",
+                        "name": "Aztec Kasplat: Chunky 5DT"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "chunky5dt",
+                        "x": 157,
+                        "y": 53
+                    }
+                ]
+            },
+            {
+                "name": "Chunky 5DT",
+                "sections": [
+                    {
+                        "ref": "Angry Aztec/5 Door Temple/Aztec Dirt: Chunky 5DT",
+                        "name": "Aztec DK 5DT GB"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "chunky5dt",
+                        "x": 287,
+                        "y": 285
                     }
                 ]
             }
