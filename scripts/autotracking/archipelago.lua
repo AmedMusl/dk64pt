@@ -58,9 +58,9 @@ function setupItemMappingForVersion(version)
             CURRENT_ITEM_MAPPING[k] = v
         end
         
-        print("Using legacy item mappings for version " .. (version or "unknown"))
-    else
-        print("Using current item mappings for version " .. (version or "latest"))
+        -- print("Using legacy item mappings for version " .. (version or "unknown"))
+    -- else
+    --     print("Using current item mappings for version " .. (version or "latest"))
     end
 end
 
@@ -97,7 +97,7 @@ function updateBLockerTrackerItems()
                 elseif obj.CurrentStage ~= nil then
                     obj.CurrentStage = count_num
                 end
-                print("Set " .. blocker_code .. " requirement to " .. count_num .. " (from " .. level_name .. ")")
+                -- print("Set " .. blocker_code .. " requirement to " .. count_num .. " (from " .. level_name .. ")")
             end
         end
     end
@@ -372,7 +372,7 @@ function processVersionGatedFeatures(slot_data)
 end
 
 function onClear(slot_data)
-    print(dump_table(slot_data))
+    -- print(dump_table(slot_data))
     SLOT_DATA = slot_data
     CUR_INDEX = -1
 
@@ -513,7 +513,7 @@ function onClear(slot_data)
 
     if slot_data['BLockerValues'] then
         BLOCKER_VALUES = slot_data['BLockerValues']
-        print("Received BLockerValues:", BLOCKER_VALUES)
+        -- print("Received BLockerValues:", BLOCKER_VALUES)
         
         -- Update blocker tracker items with the actual requirements
         updateBLockerTrackerItems()
