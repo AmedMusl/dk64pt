@@ -1276,7 +1276,7 @@
       },
       {
         "name": "Isles Boulder: Castle Lobby",
-        "access_rules":["^$canEnterCastleLobby, boulder, chunky"],
+        "access_rules":["^$canEnterCastleLobby, barrels, chunky"],
         "visibility_rules":["bouldersanity"],
         "sections": [
           {
