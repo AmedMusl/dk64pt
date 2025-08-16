@@ -170,6 +170,8 @@ local function process_removed_barriers(barriers)
 end
 
 local function process_level_order(level_order)
+    local version = SLOT_DATA['Version'] or "0.0.0"
+    local isNewVersion = isVersion110OrHigher(version)
     
     level_order = level_order:gsub(",$", "")
     local level_mapping = {
@@ -180,6 +182,7 @@ local function process_level_order(level_order)
         ["FungiForest"] = 5,
         ["CrystalCaves"] = 6,
         ["CreepyCastle"] = 7,
+        ["HideoutHelm"] = 8
     }
     
     -- Split the string by commas and process each level
@@ -190,15 +193,28 @@ local function process_level_order(level_order)
         -- Trim whitespace
         level_name = level_name:match("^%s*(.-)%s*$")
         
-        -- Skip Hideout Helm as it's always static at level8
+        -- Handle Helm based on version
         if level_name == "HideoutHelm" then
+            if not isNewVersion then
+                -- For older versions, always put Helm at level 8
+                LEVEL_POSITIONS[8] = 8
+                -- Also mark Helm lobby as visited so it shows immediately
+                VISITED_LOBBIES["HideoutHelm"] = true
+            else
+                -- For newer versions, include Helm in normal processing
+                local tracker_stage = level_mapping[level_name]
+                if tracker_stage then
+                    LEVEL_POSITIONS[level_number] = tracker_stage
+                    level_number = level_number + 1
+                end
+            end
             goto continue
         end
         
         -- Check if this is a valid level name
         local tracker_stage = level_mapping[level_name]
         if tracker_stage then
-            -- Store which level ID (1-7) should be set to this tracker_stage
+            -- Store which level ID should be set to this tracker_stage
             LEVEL_POSITIONS[level_number] = tracker_stage
             level_number = level_number + 1
         end
@@ -215,7 +231,7 @@ function update_level_display()
         return
     end
     
-    for i = 1, 7 do
+    for i = 1, 8 do
         local obj = Tracker:FindObjectForCode("level" .. i)
         if obj then
             local current_stage = obj.CurrentStage
@@ -229,7 +245,8 @@ function update_level_display()
                     ["GloomyGalleon"] = 4,
                     ["FungiForest"] = 5,
                     ["CrystalCaves"] = 6,
-                    ["CreepyCastle"] = 7
+                    ["CreepyCastle"] = 7,
+                    ["HideoutHelm"] = 8
                 }) do
                     if id == level_id and VISITED_LOBBIES[level_name] then
                         obj.CurrentStage = level_id
@@ -826,6 +843,9 @@ function onMapChange(id, value, old)
         updated = true
     elseif map_id == "193" and not VISITED_LOBBIES["CreepyCastle"] then -- Castle Lobby
         VISITED_LOBBIES["CreepyCastle"] = true
+        updated = true
+    elseif map_id == "170" and not VISITED_LOBBIES["HideoutHelm"] then
+        VISITED_LOBBIES["HideoutHelm"] = true
         updated = true
     end
     

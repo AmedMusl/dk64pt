@@ -362,13 +362,13 @@
                     },
                     {
                         "name": "Fairy",
-                        "access_rules": ["camera"],
+                        "access_rules": ["$tiny5DI, tiny, camera"],
                         "chest_unopened_img": "images/items/fairy.png",
                         "chest_opened_img": "images/items/fairybw.png"
                     },
                     {
                         "name": "Caves Tiny Igloo Enemy: Big Enemy",
-                        "access_rules":["$applyEnemyLogic|Caves5DITinyEnemy_BigEnemy"],
+                        "access_rules":["$applyEnemyLogic|Caves5DITinyEnemy_BigEnemy, $beginningTiny5DI"],
                         "visibility_rules":["dropsanity"],
                         "chest_unopened_img": "images/settings/dropsanity.png",
                         "chest_opened_img": "images/settings/dropsanitybw.png"

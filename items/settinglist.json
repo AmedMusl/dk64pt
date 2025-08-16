@@ -161,6 +161,11 @@
           "img": "images/settings/castle.png",
           "codes": "level1,l1_castle",
           "inherit_codes": false
+        },
+        {
+          "img": "images/settings/helm.png",
+          "codes": "level1, l1_helm",
+          "inherit_codes": false
         }
       ]
     },
@@ -213,6 +218,11 @@
         {
           "img": "images/settings/castle.png",
           "codes": "level2, l2_castle",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/helm.png",
+          "codes": "level2, l2_helm",
           "inherit_codes": false
         }
       ]
@@ -267,6 +277,11 @@
           "img": "images/settings/castle.png",
           "codes": "level3, l3_castle",
           "inherit_codes": false
+        },
+        {
+          "img": "images/settings/helm.png",
+          "codes": "level3, l3_helm",
+          "inherit_codes": false
         }
       ]
     },
@@ -319,6 +334,11 @@
         {
           "img": "images/settings/castle.png",
           "codes": "level4, l4_castle",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/helm.png",
+          "codes": "level4, l4_helm",
           "inherit_codes": false
         }
       ]
@@ -373,6 +393,11 @@
           "img": "images/settings/castle.png",
           "codes": "level5, l5_castle",
           "inherit_codes": false
+        },
+        {
+          "img": "images/settings/helm.png",
+          "codes": "level5, l5_helm",
+          "inherit_codes": false
         }
       ]
     },
@@ -425,6 +450,11 @@
         {
           "img": "images/settings/castle.png",
           "codes": "level6, l6_castle",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/helm.png",
+          "codes": "level6, l6_helm",
           "inherit_codes": false
         }
       ]
@@ -479,6 +509,11 @@
           "img": "images/settings/castle.png",
           "codes": "level7, l7_castle",
           "inherit_codes": false
+        },
+        {
+          "img": "images/settings/helm.png",
+          "codes": "level7, l7_helm",
+          "inherit_codes": false
         }
       ]
     },
@@ -490,9 +525,55 @@
     },
     {
       "name": "Level 8",
-      "type": "static",
-      "img": "images/settings/helm.png",
-      "codes": "level8"
+      "type": "progressive",
+      "loop": true,
+      "allow_disabled": false,
+      "stages": [
+        {
+          "img": "images/settings/unknown.png",
+          "codes": "level8"
+        },
+        {
+          "img": "images/settings/japes.png",
+          "codes": "level8, l8_japes",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/aztec.png",
+          "codes": "level8, l8_aztec",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/factory.png",
+          "codes": "level8, l8_factory",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/galleon.png",
+          "codes": "level8, l8_galleon",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/forest.png",
+          "codes": "level8, l8_forest",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/caves.png",
+          "codes": "level8, l8_caves",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/castle.png",
+          "codes": "level8, l8_castle",
+          "inherit_codes": false
+        },
+        {
+          "img": "images/settings/helm.png",
+          "codes": "level8, l8_helm",
+          "inherit_codes": false
+        }
+      ]
     },
     {
       "name": "Water Level",

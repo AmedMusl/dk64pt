@@ -333,6 +333,8 @@ function canEnterJapesLobby()
         end
     elseif has("l7_japes") then
         return has("k5") or has("openlobbies")
+    elseif has("l8_japes") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
     end
 end
 
@@ -357,6 +359,8 @@ function canEnterJapes()
         end
     elseif has("l7_japes") then
         return (has("k5") or has("openlobbies")) and bLocker1()
+    elseif has("l8_japes") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport() and bLocker1()
     end
 end
 
@@ -381,6 +385,8 @@ function canEnterAztecLobby()
         end
     elseif has("l7_aztec") then
         return has("k5") or has("openlobbies")
+    elseif has("l8_aztec") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
     end
 end
 
@@ -405,6 +411,8 @@ function canEnterAztec()
         end
     elseif has("l7_aztec") then
         return (has("k5") or has("openlobbies")) and bLocker2()
+    elseif has("l8_aztec") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport() and bLocker2()
     end
 end
 
@@ -429,6 +437,8 @@ function canEnterFactoryLobby()
         end
     elseif has("l7_factory") then
         return has("k5") or has("openlobbies")
+    elseif has("l8_factory") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
     end
 end
 
@@ -453,6 +463,8 @@ function canEnterFactory()
         end
     elseif has("l7_factory") then
         return (has("k5") or has("openlobbies")) and bLocker3()
+    elseif has("l8_factory") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport() and bLocker3()
     end
 end
 
@@ -477,6 +489,8 @@ function canEnterGalleonLobby()
         end
     elseif has("l7_galleon") then
         return has("k5") or has("openlobbies")
+    elseif has("l8_galleon") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
     end
 end
 
@@ -501,6 +515,8 @@ function canEnterGalleon()
         end
     elseif has("l7_galleon") then
         return (has("k5") or has("openlobbies")) and bLocker4()
+    elseif has("l8_galleon") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport() and bLocker4()
     end
 end
 
@@ -525,6 +541,8 @@ function canEnterForestLobby()
         end
     elseif has("l7_forest") then
         return has("k5") or has("openlobbies")
+    elseif has("l8_forest") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
     end
 end
 
@@ -549,6 +567,8 @@ function canEnterForest()
         end
     elseif has("l7_forest") then
         return (has("k5") or has("openlobbies")) and bLocker5()
+    elseif has("l8_forest") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport() and bLocker5()
     end
 end
 
@@ -573,6 +593,8 @@ function canEnterCavesLobby()
         end
     elseif has("l7_caves") then
         return has("k5") or has("openlobbies")
+    elseif has("l8_caves") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
     end
 end
 
@@ -597,6 +619,8 @@ function canEnterCaves()
         end
     elseif has("l7_caves") then
         return (has("k5") or has("openlobbies")) and bLocker6()
+    elseif has("l8_caves") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport() and bLocker6()
     end
 end
 
@@ -621,6 +645,8 @@ function canEnterCastleLobby()
         end
     elseif has("l7_castle") then
         return has("k5") or has("openlobbies")
+    elseif has("l8_castle") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
     end
 end
 
@@ -645,13 +671,59 @@ function canEnterCastle()
         end
     elseif has("l7_castle") then
         return (has("k5") or has("openlobbies")) and bLocker7()
+    elseif has("l8_castle") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport() and bLocker7()
     end
 end
 
 function canEnterHelmLobby()
-    return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
+    if has("l1_helm") then
+        return true
+    elseif has("l2_helm") then
+        return has("k1") or has("openlobbies")
+    elseif has("l3_helm") then
+        return has("k2") or has("openlobbies")
+    elseif has("l4_helm") then
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive")
+    elseif has("l5_helm") then
+        return has("k4") or has("openlobbies") or moonkicks()
+    elseif has("l6_helm") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move then
+            return AccessibilityLevel.Normal
+        elseif key and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_helm") then
+        return has("k5") or has("openlobbies")
+    elseif has("l8_helm") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport()
+    end
 end
 
 function canEnterHelm()
-    return canEnterHelmLobby() and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8()
+    if has("l1_helm") then
+        return canActivateIslesHelmLobbyGone() and has("vine") and bLocker8()
+    elseif has("l2_helm") then
+        return (has("k1") or has("openlobbies")) and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8()
+    elseif has("l3_helm") then
+        return (has("k2") or has("openlobbies")) and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8()
+    elseif has("l4_helm") then
+        return (has("k2") or has("openlobbies") or phaseswim()) and has("dive") and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8()
+    elseif has("l5_helm") then
+        return (has("k4") or has("openlobbies") or moonkicks()) and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8()
+    elseif has("l6_helm") then
+        local key = has("k5") or has("openlobbies") or moonkicks()
+        local move = twirl() or has("donkey") or has("chunky")
+        if key and move and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8() then
+            return AccessibilityLevel.Normal
+        elseif key and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8() and (has("diddy") or has("lanky") or has("tiny")) then
+            return avp()
+        end
+    elseif has("l7_helm") then
+        return (has("k5") or has("openlobbies")) and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8()
+    elseif has("l8_helm") then
+        return ((has("k6") and has("k7")) or has("openlobbies")) and canActivateIslesMonkeyport() and canActivateIslesHelmLobbyGone() and has("vine") and bLocker8()
+    end
 end

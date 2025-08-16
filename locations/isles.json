@@ -1342,7 +1342,7 @@
       },
       {
         "name": "Isles Chunky Helm Lobby Barrel",
-        "access_rules": ["$canActivateIslesHelmLobbyGone, vine, $canEnterHelmLobby", "$canEnterHelmLobby, ^$avp, $twirl"],
+        "access_rules": ["$canActivateIslesHelmLobbyGone, vine, ^$canEnterHelmLobby", "^$canEnterHelmLobby, ^$avp, $twirl"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -1359,7 +1359,7 @@
       },
       {
         "name": "Isles Kasplat: Helm Lobby",
-        "access_rules": ["$canEnterHelm, $coconut, sniper", "$canEnterHelmLobby, ^$avp, $twirl"],
+        "access_rules": ["^$canEnterHelmLobby, $coconut, sniper", "^$canEnterHelmLobby, ^$avp, $twirl"],
         "sections": [
           {
             "name": "Kasplat",

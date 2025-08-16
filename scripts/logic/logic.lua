@@ -756,7 +756,7 @@ function japesSlam()
     if has("blueslam") and (has("l5_japes") or has("l6_japes")) then
       return true
     end
-    if has("redslam") and has("l7_japes") then
+    if has("redslam") and (has("l7_japes") or has("l8_japes")) then
       return true
     end
     return false
@@ -769,7 +769,7 @@ function japesSlam()
     if has("blueslam") and (has("l5_aztec") or has("l6_aztec")) then
       return true
     end
-    if has("redslam") and has("l7_aztec") then
+    if has("redslam") and (has("l7_aztec") or has("l8_aztec")) then
       return true
     end
     return false
@@ -782,7 +782,7 @@ function japesSlam()
     if has("blueslam") and (has("l5_factory") or has("l6_factory")) then
       return true
     end
-    if has("redslam") and has("l7_factory") then
+    if has("redslam") and (has("l7_factory") or has("l8_factory")) then
       return true
     end
     return false
@@ -795,7 +795,7 @@ function japesSlam()
     if has("blueslam") and (has("l5_galleon") or has("l6_galleon")) then
       return true
     end
-    if has("redslam") and has("l7_galleon") then
+    if has("redslam") and (has("l7_galleon") or has("l8_galleon")) then
       return true
     end
     return false
@@ -808,7 +808,7 @@ function japesSlam()
     if has("blueslam") and (has("l5_forest") or has("l6_forest")) then
       return true
     end
-    if has("redslam") and has("l7_forest") then
+    if has("redslam") and (has("l7_forest") or has("l8_forest")) then
       return true
     end
     return false
@@ -821,7 +821,7 @@ function japesSlam()
   if has("blueslam") and (has("l5_caves") or has("l6_caves")) then
     return true
   end
-  if has("redslam") and has("l7_caves") then
+  if has("redslam") and (has("l7_caves") or has("l8_caves")) then
     return true
   end
   return false
@@ -834,7 +834,7 @@ function castleSlam()
     if has("blueslam") and (has("l5_castle") or has("l6_castle")) then
       return true
     end
-    if has("redslam") and has("l7_castle") then
+    if has("redslam") and (has("l7_castle") or has("l8_slam")) then
       return true
     end
     return false

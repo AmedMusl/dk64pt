@@ -216,7 +216,7 @@
             },
             {
                 "name": "Castle Ballroom Enemy: Start",
-                "access_rules": ["$applyEnemyLogic|CastleBallroomEnemy_Start"],
+                "access_rules": ["$applyEnemyLogic|CastleBallroomEnemy_Start, $castleSlam, diddy"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -371,22 +371,6 @@
                         "map": "crypthub",
                         "x": 840,
                         "y": 235
-                    }
-                ]
-            },
-            {
-                "name": "Castle Lower Cave Enemy: Near Tag",
-                "access_rules": ["$flyingEnemy"],
-                "sections": [
-                    {
-                        "name": "Enemy"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "castle",
-                        "x": 836,
-                        "y": 210
                     }
                 ]
             },

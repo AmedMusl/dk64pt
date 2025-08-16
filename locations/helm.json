@@ -1,7 +1,7 @@
 [
     {
         "name": "Hideout Helm",
-        "access_rules": ["$canEnterHelm"],
+        "access_rules": ["^$canEnterHelm"],
         "chest_unopened_img": "images/items/bananamedal.png",
         "chest_opened_img": "images/items/bananamedalbw.png",
         "children": [

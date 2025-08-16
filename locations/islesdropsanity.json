@@ -229,7 +229,7 @@
             },
             {
                 "name": "Frantic Factory Lobby Enemy: Enemy (0)",
-                "access_rules": ["^$canEnterFactoryLobby", "$flyingEnemy"],
+                "access_rules": ["^$canEnterFactoryLobby, $flyingEnemy"],
                 "sections": [
                     {
                         "name": "Enemy"

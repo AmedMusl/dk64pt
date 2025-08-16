@@ -208,7 +208,7 @@
         "codes": "homing"
     },
     {
-        "name": "Sniper Scope",
+        "name": "Sniper Sight",
         "type": "toggle",
         "img": "images/items/sniper.png",
         "codes": "sniper"
