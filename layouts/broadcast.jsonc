@@ -3,13 +3,14 @@
         "type": "array",
         "orientation": "vertical",
         "h_alignment": "center",
-        "margin": "5,5",
+        "margin": "3,3",
         "content": [
           {
             "type": "itemgrid",
             "h_alignment": "center",
-            "margin": "0,0,3,0",
-            "item_margin": "3,2",
+            "margin": "0,0,2,0",
+            "item_margin": "2,1",
+            "item_size": 24,
             "rows": [
               ["donkey", "coconut", "bongos", "grab", "blast", "strong", "dkbp"],
               ["diddy", "peanuts", "guitar", "charge", "spring", "rocket", "diddybp"],
@@ -21,13 +22,154 @@
             ]
           },
           {
-            "type": "group",
-            "dock": "top",
-            "margin": "0,0,3,0",
-            "content": {
-              "type": "layout",
-              "key": "keys_grid"
-          }
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "margin": "0,0,2,0",
+            "item_margin": "2,1",
+            "item_size": 24,
+            "rows": [
+              ["gb", "crowns", "fairies", "medals", "rainbow", "pearl"],
+              ["bean", "nintendo", "rareware", "cranky", "funky", "candy", "snide"]
+            ]
+          },
+          {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "margin": "0,0,2,0",
+            "item_margin": "2,1",
+            "item_size": 20,
+            "rows": [
+              ["k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8"],
+              ["blocker1", "blocker2", "blocker3", "blocker4", "blocker5", "blocker6", "blocker7", "blocker8"]
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "vertical",
+            "h_alignment": "center",
+            "margin": "0,0,0,0",
+            "content": [
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                  {
+                    "type": "itemgrid",
+                    "item_size": 16,
+                    "item_margin": "0,0",
+                    "rows": [["num1"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 80,
+                    "item_margin": "0,0",
+                    "rows": [["level1"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 16,
+                    "item_margin": "0,0",
+                    "rows": [["num2"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 80,
+                    "item_margin": "0,0",
+                    "rows": [["level2"]]
+                  }
+                ]
+              },
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                  {
+                    "type": "itemgrid",
+                    "item_size": 16,
+                    "item_margin": "0,0",
+                    "rows": [["num3"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 80,
+                    "item_margin": "0,0",
+                    "rows": [["level3"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 16,
+                    "item_margin": "0,0",
+                    "rows": [["num4"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 80,
+                    "item_margin": "0,0",
+                    "rows": [["level4"]]
+                  }
+                ]
+              },
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                  {
+                    "type": "itemgrid",
+                    "item_size": 16,
+                    "item_margin": "0,0",
+                    "rows": [["num5"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 80,
+                    "item_margin": "0,0",
+                    "rows": [["level5"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 16,
+                    "item_margin": "0,0",
+                    "rows": [["num6"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 80,
+                    "item_margin": "0,0",
+                    "rows": [["level6"]]
+                  }
+                ]
+              },
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                  {
+                    "type": "itemgrid",
+                    "item_size": 16,
+                    "item_margin": "0,0",
+                    "rows": [["num7"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 80,
+                    "item_margin": "0,0",
+                    "rows": [["level7"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 16,
+                    "item_margin": "0,0",
+                    "rows": [["num8"]]
+                  },
+                  {
+                    "type": "itemgrid",
+                    "item_size": 80,
+                    "item_margin": "0,0",
+                    "rows": [["level8"]]
+                  }
+                ]
+              }
+            ]
           }
         ]
     }
