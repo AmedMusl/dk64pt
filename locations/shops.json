@@ -35,7 +35,7 @@
                     },
                     {
                         "name": "Jetpac",
-                        "access_rules": ["$jetPac"],
+                        "access_rules": ["$jetPac, cranky"],
                         "chest_unopened_img": "images/items/n64rw_coin.png",
                         "chest_opened_img": "images/items/n64rwbw.png"
                     }

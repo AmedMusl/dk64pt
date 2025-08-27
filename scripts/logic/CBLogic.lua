@@ -147,7 +147,7 @@ function japesCBTotal()
             if accessible(coconutCage) and canActivateJapesRambi() and feather() then -- Fairy Pool Balloon
                 cb_total = cb_total + 10
             end
-            if accessible(shellhive) and mini() and japesSlam() and (canChangeTime() or has("orange")) then -- Third Beehive Room
+            if accessible(shellhive) and mini() and japesSlam() and (anyGun() or has("orange")) then -- Third Beehive Room
                 cb_total = cb_total + 8
             end
             if accessible(shellhive) and mini() and feather() then -- First Beehive Balloon

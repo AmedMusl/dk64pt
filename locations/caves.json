@@ -40,6 +40,36 @@
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
+                        "name": "Caves DK Half-Medal",
+                        "access_rules": ["$cavesDKHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Caves Diddy Half-Medal",
+                        "access_rules": ["$cavesDiddyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Caves Lanky Half-Medal",
+                        "access_rules": ["$cavesLankyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Caves Tiny Half-Medal",
+                        "access_rules": ["$cavesTinyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Caves Chunky Half-Medal",
+                        "access_rules": ["$cavesChunkyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
                         "name": "Boss",
                         "access_rules": ["$cavesBossLogic"],
                         "chest_unopened_img": "images/items/scoff.png",

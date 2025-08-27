@@ -1,6 +1,5 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
-ScriptHost:LoadScript("scripts/autotracking/hints_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/map_mapping.lua")
 ScriptHost:LoadScript("scripts/dropsanity.lua")
 
@@ -13,6 +12,8 @@ SAVED_LOBBIES_BY_SLOT = SAVED_LOBBIES_BY_SLOT or {}
 
 -- Slot data features
 SWITCHSANITY = nil
+MINIGAMEDATA = nil
+MEDALCBREQUIREMENTLEVEL = nil
 BLOCKER_VALUES = nil
 JUNK_LOCATIONS = nil
 ENEMY_DATA = nil
@@ -22,6 +23,16 @@ CURRENT_ITEM_MAPPING = ITEM_MAPPING
 
 -- ===== UTILITY FUNCTIONS =====
 
+HINT_STATUS_MAPPING = {}
+if Highlight then
+	HINT_STATUS_MAPPING = {
+		[20] = Highlight.Avoid,
+		[40] = Highlight.None,
+		[10] = Highlight.NoPriority,
+		[0] = Highlight.Unspecified,
+		[30] = Highlight.Priority,
+	}
+end
 -- Function to check if version is >= 1.1.0
 function isVersion110OrHigher(version)
     if not version then
@@ -36,6 +47,31 @@ function isVersion110OrHigher(version)
     
     return false
 end
+
+-- Function to check if version is > 1.1.10
+function isVersionAbove1110(version)
+    if not version then
+        return true -- Default to true for new versions if no version specified
+    end
+    
+    local major, minor, patch = version:match("(%d+)%.(%d+)%.(%d+)")
+    if major and minor and patch then
+        major, minor, patch = tonumber(major), tonumber(minor), tonumber(patch)
+        return major > 1 or (major == 1 and minor > 1) or (major == 1 and minor == 1 and patch > 10)
+    end
+    
+    return false
+end
+
+function getHintDataStorageKey()
+    if AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or Archipelago.PlayerNumber == nil or Archipelago.PlayerNumber == -1 then
+        print("Tried to call getHintDataStorageKey while not connected to AP server")
+        return nil
+    end
+    return string.format("_read_hints_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+end
+
+
 
 -- Function to set up version-appropriate item mapping
 function setupItemMappingForVersion(version)
@@ -389,7 +425,7 @@ function processVersionGatedFeatures(slot_data)
 end
 
 function onClear(slot_data)
-    -- print(dump_table(slot_data))
+    print(dump_table(slot_data))
     SLOT_DATA = slot_data
     CUR_INDEX = -1
 
@@ -490,9 +526,54 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['MedalCBRequirement'] then
+    -- Handle MedalCB requirements based on version
+    local version = slot_data['Version'] or "0.0.0"
+    
+    if isVersionAbove1110(version) and slot_data['MedalCBRequirementLevel'] then
+        -- New format: MedalCBRequirementLevel with level-specific requirements
+        local raw_data = slot_data['MedalCBRequirementLevel']
+        
+        -- Parse the string into a table if it's a string
+        if type(raw_data) == "string" then
+            MEDALCBREQUIREMENTLEVEL = {}
+            -- Parse string like "JungleJapes: 42, AngryAztec: 42, ..."
+            for level_requirement in string.gmatch(raw_data, "([^,]+)") do
+                local level_name, requirement = level_requirement:match("([^:]+):%s*(%d+)")
+                if level_name and requirement then
+                    level_name = level_name:match("^%s*(.-)%s*$") -- trim whitespace
+                    MEDALCBREQUIREMENTLEVEL[level_name] = tonumber(requirement)
+                end
+            end
+        else
+            MEDALCBREQUIREMENTLEVEL = raw_data
+        end
+        
+        -- Set individual tnsportal values for CBLogic.lua
+        local level_to_portal = {
+            ["JungleJapes"] = "tnsportal1",
+            ["AngryAztec"] = "tnsportal2", 
+            ["FranticFactory"] = "tnsportal3",
+            ["GloomyGalleon"] = "tnsportal4",
+            ["FungiForest"] = "tnsportal5",
+            ["CrystalCaves"] = "tnsportal6",
+            ["CreepyCastle"] = "tnsportal7"
+        }
+        
+        for level_name, portal_code in pairs(level_to_portal) do
+            if MEDALCBREQUIREMENTLEVEL[level_name] then
+                local obj = Tracker:FindObjectForCode(portal_code)
+                if obj then
+                    obj.AcquiredCount = MEDALCBREQUIREMENTLEVEL[level_name]
+                end
+            end
+        end
+    elseif slot_data['MedalCBRequirement'] then
+        -- Legacy format: single global requirement
+        MEDALCBREQUIREMENTLEVEL = nil
         local obj = Tracker:FindObjectForCode("medalamount")
         obj.AcquiredCount = (slot_data['MedalCBRequirement'])
+    else
+        MEDALCBREQUIREMENTLEVEL = nil
     end
 
     if slot_data['StartingKongs'] then
@@ -520,6 +601,14 @@ function onClear(slot_data)
         -- print(dump_table(SWITCHSANITY))
     else
         SWITCHSANITY = nil
+    end
+
+    if slot_data['MinigameData'] then
+        MINIGAMEDATA = slot_data['MinigameData']
+        -- print("Received MinigameData:")
+        -- print(dump_table(MINIGAMEDATA))
+    else
+        MINIGAMEDATA = nil
     end
 
     if slot_data['EnemyData'] then
@@ -702,6 +791,12 @@ function onClear(slot_data)
         local obj = Tracker:FindObjectForCode("openlobbies")
         obj.Active = (slot_data['OpenLobbies'])
     end
+    if slot_data['HalfMedals'] then
+        local obj = Tracker:FindObjectForCode("halfmedal")
+        if obj then
+            obj.Active = (slot_data['HalfMedals'])
+        end
+    end
 
     if slot_data['LevelOrder'] then
         process_level_order(slot_data['LevelOrder'])
@@ -717,6 +812,19 @@ function onClear(slot_data)
         map_id = "DK64Rando_"..TEAM_NUMBER.."_"..PLAYER_ID.."_map"
         Archipelago:SetNotify({map_id})
         Archipelago:Get({map_id})
+        
+        -- Set up version-gated hint data storage for PopTracker >= 0.32.0
+        if PopVersion >= "0.32.0" then
+            local data_storage_keys = { getHintDataStorageKey() }
+            if data_storage_keys[1] then
+                -- subscribes to the data storage keys for updates
+                -- triggers callback in the SetNotify handler on update
+                Archipelago:SetNotify(data_storage_keys)
+                -- gets the current value for the data storage keys
+                -- triggers callback in the Retrieved handler when result is received
+                Archipelago:Get(data_storage_keys)
+            end
+        end
     end
 end
 
@@ -781,37 +889,78 @@ function onLocation(location_id, location_name)
     end
 end
 
-function onNotify(key, value, old_value)
 
-    if value ~= old_value and key == HINTS_ID then
-        for _, hint in ipairs(value) do
-            if not hint.found and hint.finding_player == Archipelago.PlayerNumber then
-                updateHints(hint.location)
-            end
-        end
-    end
+-- called whenever Archipelago:Get returns data from the data storage or
+-- whenever a subscribed to (via Archipelago:SetNotify) key in data storgae is updated
+-- oldValue might be nil (always nil for "_read" prefixed keys and via retrieved handler (from Archipelago:Get))
+function onDataStorageUpdate(key, value, oldValue)
+	--if you plan to only use the hints key, you can remove this if
+	if key == getHintDataStorageKey() then
+		onHintsUpdate(value)
+	end
 end
 
-function onNotifyLaunch(key, value)
-    Tracker.BulkUpdate = false
-    if key == HINTS_ID then
-        for _, hint in ipairs(value) do
-            if not hint.found and hint.finding_player == Archipelago.PlayerNumber then
-                updateHints(hint.location)
-            end
-        end
-    end
+-- called whenever the hints key in data storage updated
+-- NOTE: this should correctly handle having multiple mapped locations in a section.
+--       if you only map sections 1 to 1 you can simplify this. for an example see
+--       https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/scripts/autotracking/archipelago.lua
+function onHintsUpdate(hints)
+	-- Highlight is only supported since version 0.32.0
+	if PopVersion < "0.32.0" or not AUTOTRACKER_ENABLE_LOCATION_TRACKING then return end
+	local player_number = Archipelago.PlayerNumber
+	-- get all new highlight values per section
+	local sections_to_update = {}
+	for _, hint in ipairs(hints) do
+		-- we only care about hints in our world
+		if hint.finding_player == player_number then
+			updateHint(hint, sections_to_update)
+		end
+	end
 end
 
-function updateHints(locationID)
-    local item_codes = HINTS_MAPPING[locationID]
-
-    for _, item_code in ipairs(item_codes) do
-        local obj = Tracker:FindObjectForCode(item_code)
-        if obj then
-            obj.Active = true
-        end
+-- update section highlight based on the hint
+function updateHint(hint, sections_to_update)
+	-- get the highlight enum value for the hint status
+	local hint_status = hint.status
+	local highlight_code = nil
+	if hint_status then
+		highlight_code = HINT_STATUS_MAPPING[hint_status]
+	end
+	if not highlight_code then
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print(string.format("updateHint: unknown hint status %s for hint on location id %s", hint.status,
+				hint.location))
+		end
+		-- try to "recover" by checking hint.found (older AP versions without hint.status)
+		if hint.found == true then
+			highlight_code = Highlight.None
+		elseif hint.found == false then
+			highlight_code = Highlight.Unspecified
+		else
+			return
+		end
+	end
+	-- get the location mapping for the location id
+	local mapping_entry = LOCATION_MAPPING[hint.location]
+	if not mapping_entry then
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print(string.format("updateHint: could not find location mapping for id %s", hint.location))
+		end
+		return
+	end
+  for _, location_code in pairs(mapping_entry) do
+    -- skip hosted items, they don't support Highlight
+    if location_code and location_code:sub(1, 1) == "@" then
+      -- find the location object
+      local obj = Tracker:FindObjectForCode(location_code)
+      -- check if we got the location and if it supports Highlight
+      if obj and obj.Highlight then
+          obj.Highlight = highlight_code
+      elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+          print(string.format("updateHint: could update section %s (obj doesn't support Highlight)", location_code))
+      end
     end
+  end
 end
 
 function onMapChange(id, value, old)
@@ -863,7 +1012,7 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
-Archipelago:AddSetReplyHandler("notify handler", onNotify)
-Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+Archipelago:AddSetReplyHandler("notify handler", onDataStorageUpdate)
+Archipelago:AddRetrievedHandler("notify launch handler", onDataStorageUpdate)
 Archipelago:AddSetReplyHandler("map_id", onMapChange)
 Archipelago:AddRetrievedHandler("map_id", onMapChange)

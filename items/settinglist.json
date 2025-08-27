@@ -2143,5 +2143,11 @@
       "type": "toggle",
       "img": "images/items/cranky.png",
       "codes": "shopowners"
+    },
+    {
+      "name": "Half Medals",
+      "type": "toggle",
+      "img": "images/items/halfbananamedal.png",
+      "codes": "halfmedal"
     }
 ]

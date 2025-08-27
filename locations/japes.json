@@ -40,6 +40,36 @@
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
+                        "name": "Japes DK Half-Medal",
+                        "access_rules": ["$japesDKHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Japes Diddy Half-Medal",
+                        "access_rules": ["$japesDiddyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Japes Lanky Half-Medal",
+                        "access_rules": ["$japesLankyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Japes Tiny Half-Medal",
+                        "access_rules": ["$japesTinyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Japes Chunky Half-Medal",
+                        "access_rules": ["$japesChunkyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
                         "name": "Boss",
                         "access_rules": ["$japesBossLogic, climb, vine", "$japesBossLogic, $canActivateJapesDiddyCave", "$japesBossLogic, ^$coconutCage, $canActivateJapesRambi", "$japesBossLogic, ^$avp, climb", "$japesBossLogic, ^$avp, $ostand"],
                         "chest_unopened_img": "images/items/scoff.png",

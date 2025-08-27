@@ -40,6 +40,36 @@
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
+                        "name": "Forest DK Half-Medal",
+                        "access_rules": ["$forestDKHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Forest Diddy Half-Medal",
+                        "access_rules": ["$forestDiddyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Forest Lanky Half-Medal",
+                        "access_rules": ["$forestLankyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Forest Tiny Half-Medal",
+                        "access_rules": ["$forestTinyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Forest Chunky Half-Medal",
+                        "access_rules": ["$forestChunkyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
                         "name": "Boss",
                         "access_rules": ["$forestBossLogic"],
                         "chest_unopened_img": "images/items/scoff.png",

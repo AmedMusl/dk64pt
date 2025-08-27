@@ -1,5 +1,22 @@
 -- Medal Logic
 
+-- Helper function to get medal CB requirement for a specific level
+function getMedalRequirement(level_key)
+    if isMedalCBRequirementLevelEnabled() then
+        local requirement = getMedalCBRequirementForLevel(level_key)
+        if requirement then
+            return requirement
+        end
+    end
+    -- Fall back to global medalamount if no level-specific requirement
+    return Tracker:ProviderCountForCode("medalamount")
+end
+
+-- Helper function to get half-medal CB requirement from a medal requirement value
+function getHalfMedalRequirement(medal_requirement)
+    return math.max(1, math.floor(medal_requirement / 2))
+end
+
 -- Helper function to convert AccessibilityLevel to boolean
 function accessible(func)
     local result = func
@@ -17,13 +34,15 @@ function accessible(func)
     end
 end
 
-function japesDKMedal()
-
+function japesDKMedal(isHalf)
     if not_has("donkey") then
         return false
     end
     local cb_total = 10 -- W3
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("japes")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if coconut() and (has("climb") or (accessible(avp) and ostand())) then -- By Snide
         cb_total = cb_total + 10
     end
@@ -53,18 +72,25 @@ function japesDKMedal()
     end
     if blast() and has("climb") and (moonkicks() or (has("vine") and (has("lanky") or has("donkey") or has("diddy")))) then -- Blast Course
         cb_total = cb_total + 10
-    end
+    end    
     return cb_total >= cb_amount
 end
 
-function japesDiddyMedal()
+function japesDKHalfMedal()
+    return japesDKMedal(true)
+end
+
+function japesDiddyMedal(isHalf)
 
     if not_has("diddy") then
         return false
     end
     local DiddyMine = peanuts() and (has("climb") or (accessible(avp) and ostand()))
     local cb_total = 5 -- Start
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("japes")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if has("dive") then -- Underwater
         cb_total = cb_total + 10
     end
@@ -101,13 +127,20 @@ function japesDiddyMedal()
     return cb_total >= cb_amount
 end
 
-function japesLankyMedal()
+function japesDiddyHalfMedal()
+    return japesDiddyMedal(true)
+end
+
+function japesLankyMedal(isHalf)
 
     if not_has("lanky") then
         return false
     end
     local cb_total = 1 -- First CB of Painting Slope
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("japes")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if has("dive") then -- Underwater
         cb_total = cb_total + 5
     end
@@ -147,20 +180,27 @@ function japesLankyMedal()
     return cb_total >= cb_amount
 end
 
-function japesTinyMedal()
+function japesLankyHalfMedal()
+    return japesLankyMedal(true)
+end
+
+function japesTinyMedal(isHalf)
 
     if not_has("tiny") then
         return false
     end
     local cb_total = 5 -- First Tunnel
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("japes")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if has("climb") and accessible(coconutCage) then -- Cranky Treetop
         cb_total = cb_total + 5
     end
     if accessible(coconutCage) then -- Before Rambi Gate
         cb_total = cb_total + 2
     end
-    if accessible(coconutCage) and canActivateJapesRambi() then
+    if accessible(coconutCage) and canActivateJapesRambi() then -- In Hutt
         cb_total = cb_total + 5
     end
     if accessible(coconutCage) and feather() then -- Hutt Balloon
@@ -181,7 +221,7 @@ function japesTinyMedal()
     if accessible(coconutCage) and canActivateJapesRambi() and feather() then -- Fairy Pool Balloon
         cb_total = cb_total + 10
     end
-    if accessible(shellhive) and mini() and japesSlam() and (canChangeTime() or has("orange")) then -- Third Beehive Room
+    if accessible(shellhive) and mini() and japesSlam() and (anyGun() or has("orange")) then -- Third Beehive Room
         cb_total = cb_total + 8
     end
     if accessible(shellhive) and mini() and feather() then -- First Beehive Balloon
@@ -190,12 +230,19 @@ function japesTinyMedal()
     return cb_total >= cb_amount
 end
 
-function japesChunkyMedal()
+function japesTinyHalfMedal()
+    return japesTinyMedal(true)
+end
+
+function japesChunkyMedal(isHalf)
     if not_has("chunky") then
         return false
     end
     local cb_total = 5 -- Around Boulder
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("japes")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if has("climb") or (ostand() and accessible(avp)) then -- Funky
         cb_total = cb_total + 10
     end
@@ -220,12 +267,19 @@ function japesChunkyMedal()
     return cb_total >= cb_amount
 end
 
-function aztecDKMedal()
+function japesChunkyHalfMedal()
+    return japesChunkyMedal(true)
+end
+
+function aztecDKMedal(isHalf)
     if not_has("donkey") then
         return false
     end
     local cb_total = 3 -- Front of Llama Cage
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("aztec")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if has("climb") then -- Top of Oasis Trees
         cb_total = cb_total + 15
     end
@@ -247,12 +301,19 @@ function aztecDKMedal()
     return cb_total >= cb_amount
 end
 
-function aztecDiddyMedal()
+function aztecDKHalfMedal()
+    return aztecDKMedal(true)
+end
+
+function aztecDiddyMedal(isHalf)
     if not_has("diddy") then
         return false
     end
     local cb_total = 5 -- Bunch Front Tiny Temple
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("aztec")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if peanuts() then -- Balloon Front Tiny Temple
         cb_total = cb_total + 10
     end
@@ -285,12 +346,19 @@ function aztecDiddyMedal()
     return result
 end
 
-function aztecLankyMedal()
+function aztecDiddyHalfMedal()
+    return aztecDiddyMedal(true)
+end
+
+function aztecLankyMedal(isHalf)
     if not_has("lanky") then
         return false
     end
     local cb_total = 5 -- Beginning
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("aztec")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if canEnterTinyTemple() and has("dive") and templeIce() then -- Vulture Room
         cb_total = cb_total + 14
     end
@@ -315,12 +383,19 @@ function aztecLankyMedal()
     return cb_total >= cb_amount
 end
 
-function aztecTinyMedal()
+function aztecLankyHalfMedal()
+    return aztecLankyMedal(true)
+end
+
+function aztecTinyMedal(isHalf)
     if not_has("tiny") then
         return false
     end
     local cb_total = 0
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("aztec")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
 
     if canEnterTinyTemple() and templeIce() and has("dive") and (mini() or phaseswim()) then -- Inside Klaptrap Gauntlet
         cb_total = cb_total + 5
@@ -349,12 +424,19 @@ function aztecTinyMedal()
     return cb_total >= cb_amount
 end
 
-function aztecChunkyMedal()
+function aztecTinyHalfMedal()
+    return aztecTinyMedal(true)
+end
+
+function aztecChunkyMedal(isHalf)
     if not_has("chunky") then
         return false
     end
     local cb_total = 5 -- Beginning
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("aztec")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if has("dive") and templeIce() and canEnterTinyTemple() and pineapple() then -- Vulture Room Balloon
         cb_total = cb_total + 10
     end
@@ -373,12 +455,19 @@ function aztecChunkyMedal()
     return cb_total >= cb_amount
 end
 
-function factoryDKMedal()
+function aztecChunkyHalfMedal()
+    return aztecChunkyMedal(true)
+end
+
+function factoryDKMedal(isHalf)
     if not_has("donkey") then
         return false
     end
     local cb_total = 15 -- 11 to Prod, 4 to storage
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("factory")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if testing() and has("climb") then -- To Numbers Game
         cb_total = cb_total + 5
     end
@@ -400,12 +489,19 @@ function factoryDKMedal()
     return cb_total >= cb_amount
 end
 
-function factoryDiddyMedal()
+function factoryDKHalfMedal()
+    return factoryDKMedal(true)
+end
+
+function factoryDiddyMedal(isHalf)
     if not_has("diddy") then
         return false
     end
     local cb_total = 12 -- Base of Prod
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("factory")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if testing() and has("climb") then -- Funkys
         cb_total = cb_total + 8
     end
@@ -424,13 +520,20 @@ function factoryDiddyMedal()
     return cb_total >= cb_amount
 end
 
-function factoryLankyMedal()
+function factoryDiddyHalfMedal()
+    return factoryDiddyMedal(true)
+end
+
+function factoryLankyMedal(isHalf)
     if not_has("lanky") then
         return false
     end
     local intest = testing() and has("climb")
     local cb_total = 11 -- 5 warp 2 5 boxes, 1 pipe
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("factory")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if intest then -- R&D
         cb_total = cb_total + 15
     end
@@ -455,13 +558,20 @@ function factoryLankyMedal()
     return cb_total >= cb_amount
 end
 
-function factoryTinyMedal()
+function factoryLankyHalfMedal()
+    return factoryLankyMedal(true)
+end
+
+function factoryTinyMedal(isHalf)
     if not_has("tiny") then
         return false
     end
     local intest = testing() and has("climb")
     local cb_total = 13 -- 3 to testing 10 Mid Hatch
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("factory")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if intest then -- 7 to testing 5 Mini Tunnel 10 to car race
         cb_total = cb_total + 22
     end
@@ -486,12 +596,19 @@ function factoryTinyMedal()
     return cb_total >= cb_amount
 end
 
-function factoryChunkyMedal()
+function factoryTinyHalfMedal()
+    return factoryTinyMedal(true)
+end
+
+function factoryChunkyMedal(isHalf)
     if not_has("chunky") then
         return false
     end
     local cb_total = 20 -- 5 Warp 1, 10 Down Pipe, 5 Warp 1
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("factory")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if pineapple() then -- Around Hatch
         cb_total = cb_total + 10
     end
@@ -516,14 +633,21 @@ function factoryChunkyMedal()
     return cb_total >= cb_amount
 end
 
+function factoryChunkyHalfMedal()
+    return factoryChunkyMedal(true)
+end
+
 -- Galleon
 
-function galleonDKMedal()
+function galleonDKMedal(isHalf)
     if not_has("donkey") then
         return false
     end
     local cb_total = 0
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("galleon")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if coconut() then -- Chest
         cb_total = cb_total + 10
     end
@@ -551,12 +675,19 @@ function galleonDKMedal()
     return cb_total >= cb_amount
 end
 
-function galleonDiddyMedal()
+function galleonDKHalfMedal()
+    return galleonDKMedal(true)
+end
+
+function galleonDiddyMedal(isHalf)
     if not_has("diddy") then
         return false
     end
     local cb_total = 10 -- To Cranky
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("galleon")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if lighthouse() and accessible(lighthousePlatform) and peanuts() then -- Seal Platform
         cb_total = cb_total + 10
     end
@@ -578,12 +709,19 @@ function galleonDiddyMedal()
     return cb_total >= cb_amount
 end
 
-function galleonLankyMedal()
+function galleonDiddyHalfMedal()
+    return galleonDiddyMedal(true)
+end
+
+function galleonLankyMedal(isHalf)
     if not_has("lanky") then
         return false
     end
     local cb_total = 5 -- To Warp 1
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("galleon")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if grape() and punch() then -- Arena Balloons
         cb_total = cb_total + 20
     end
@@ -617,12 +755,19 @@ function galleonLankyMedal()
     return cb_total >= cb_amount
 end
 
-function galleonTinyMedal()
+function galleonLankyHalfMedal()
+    return galleonLankyMedal(true)
+end
+
+function galleonTinyMedal(isHalf)
     if not_has("tiny") then
         return false
     end
     local cb_total = 9 -- Galleon Start
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("galleon")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if has("vine") or moonkicks() then -- Past Vines
         cb_total = cb_total + 8
     end
@@ -653,12 +798,19 @@ function galleonTinyMedal()
     return cb_total >= cb_amount
 end
 
-function galleonChunkyMedal()
+function galleonTinyHalfMedal()
+    return galleonTinyMedal(true)
+end
+
+function galleonChunkyMedal(isHalf)
     if not_has("chunky") then
         return false
     end
     local cb_total = 12 -- Galleon Start
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("galleon")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if has("vine") or moonkicks() then -- Past Vines
         cb_total = cb_total + 3
     end
@@ -686,12 +838,19 @@ function galleonChunkyMedal()
     return cb_total >= cb_amount
 end
 
-function forestDKMedal()
+function galleonChunkyHalfMedal()
+    return galleonChunkyMedal(true)
+end
+
+function forestDKMedal(isHalf)
     if not_has("donkey") then
         return false
     end
     local cb_total = 15 -- 5 blue 5 pink 5 warp 5
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("forest")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if coconut() and peanuts() and grape() and feather() and pineapple() then -- CoL Cannons
         cb_total = cb_total + 15
     end
@@ -725,12 +884,19 @@ function forestDKMedal()
     return cb_total >= cb_amount
 end
 
-function forestDiddyMedal()
+function forestDKHalfMedal()
+    return forestDKMedal(true)
+end
+
+function forestDiddyMedal(isHalf)
     if not_has("diddy") then
         return false
     end
     local cb_total = 28 -- Scattered throughout Forest
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("forest")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if canClimbMushroom() then -- 7 Diddy Kasplat 10 Top Mush
         cb_total = cb_total + 17
     end
@@ -755,12 +921,19 @@ function forestDiddyMedal()
     return cb_total >= cb_amount
 end
 
-function forestLankyMedal()
+function forestDiddyHalfMedal()
+    return forestDiddyMedal(true)
+end
+
+function forestLankyMedal(isHalf)
     if not_has("lanky") then
         return false
     end
     local cb_total = 21 -- Scattered
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("forest")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     if has("climb") then -- Winch Rope to Very Top of Mill
         cb_total = cb_total + 2
     end
@@ -788,12 +961,19 @@ function forestLankyMedal()
     return cb_total >= cb_amount
 end
 
-function forestTinyMedal()
+function forestLankyHalfMedal()
+    return forestLankyMedal(true)
+end
+
+function forestTinyMedal(isHalf)
     if not_has("tiny") then
         return false
     end
     local cb_total = 10
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("forest")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if greenTunnelFeather() then -- Past Feather Tunnel
         cb_total = cb_total + 4
@@ -828,12 +1008,19 @@ function forestTinyMedal()
     return cb_total >= cb_amount
 end
 
-function forestChunkyMedal()
+function forestTinyHalfMedal()
+    return forestTinyMedal(true)
+end
+
+function forestChunkyMedal(isHalf)
     if not_has("chunky") then
         return false
     end
     local cb_total = 10
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("forest")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if lowerMushroomExterior() then
         cb_total = cb_total + 16
@@ -862,12 +1049,19 @@ function forestChunkyMedal()
     return cb_total >= cb_amount
 end
 
-function cavesDKMedal()
+function forestChunkyHalfMedal()
+    return forestChunkyMedal(true)
+end
+
+function cavesDKMedal(isHalf)
     if not_has("donkey") then
         return false
     end
     local cb_total = 25 -- Around Caves
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("caves")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if coconut() and (cavesIce() or phaseswim()) then -- GG Room
         cb_total = cb_total + 10
@@ -896,12 +1090,19 @@ function cavesDKMedal()
     return cb_total >= cb_amount
 end
 
-function cavesDiddyMedal()
+function cavesDKHalfMedal()
+    return cavesDKMedal(true)
+end
+
+function cavesDiddyMedal(isHalf)
     if not_has("diddy") then
         return false
     end
     local cb_total = 5 -- Near Funky
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("caves")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if mini() and twirl() then -- Kasplat Cave
         cb_total = cb_total + 10
@@ -930,12 +1131,19 @@ function cavesDiddyMedal()
     return cb_total >= cb_amount
 end
 
-function cavesLankyMedal()
+function cavesDiddyHalfMedal()
+    return cavesDiddyMedal(true)
+end
+
+function cavesLankyMedal(isHalf)
     if not_has("lanky") then
         return false
     end
     local cb_total = 15 -- 5 Beginning 10 cabin lake
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")    
+    local cb_amount = getMedalRequirement("caves")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end    
     if (balloon() or accessible(avp)) and cavesSlam() then -- Beetle Race Entrance
         cb_total = cb_total + 5
     end
@@ -969,12 +1177,19 @@ function cavesLankyMedal()
     return cb_total >= cb_amount
 end
 
-function cavesTinyMedal()
+function cavesLankyHalfMedal()
+    return cavesLankyMedal(true)
+end
+
+function cavesTinyMedal(isHalf)
     if not_has("tiny") then
         return false
     end
     local cb_total = 15 -- 10 to Igloo 5 Warp 3
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("caves")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if mini() then -- Inner Warp 3
         cb_total = cb_total + 5
@@ -1006,12 +1221,19 @@ function cavesTinyMedal()
     return cb_total >= cb_amount
 end
 
-function cavesChunkyMedal()
+function cavesTinyHalfMedal()
+    return cavesTinyMedal(true)
+end
+
+function cavesChunkyMedal(isHalf)
     if not_has("chunky") then
         return false
     end
     local cb_total = 18 -- 10 Warp 2s 3 Bridge 5 boulder switch
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("caves")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if has("barrel") or accessible(avp) then -- Inside Small Boulder
         cb_total = cb_total + 5
@@ -1043,12 +1265,19 @@ function cavesChunkyMedal()
     return cb_total >= cb_amount
 end
 
-function castleDKMedal()
+function cavesChunkyHalfMedal()
+    return cavesChunkyMedal(true)
+end
+
+function castleDKMedal(isHalf)
     if not_has("donkey") then
         return false
     end
     local cb_total = 50 -- Castle Climb
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("castle")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if canEnterTree() and coconut() then -- Inside Tree
         cb_total = cb_total + 15
@@ -1068,12 +1297,19 @@ function castleDKMedal()
     return cb_total >= cb_amount
 end
 
-function castleDiddyMedal()
+function castleDKHalfMedal()
+    return castleDKMedal(true)
+end
+
+function castleDiddyMedal(isHalf)
     if not_has("diddy") then
         return false
     end
     local cb_total = 0
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("castle")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if cryptDoors() then -- Inside Crypt
         cb_total = cb_total + 5
@@ -1099,12 +1335,19 @@ function castleDiddyMedal()
     return cb_total >= cb_amount
 end
 
-function castleLankyMedal()
+function castleDiddyHalfMedal()
+    return castleDiddyMedal(true)
+end
+
+function castleLankyMedal(isHalf)
     if not_has("lanky") then
         return false
     end
     local cb_total = 30 -- Lower Dungeon
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("castle")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if castleSlam() then -- Greenhouse
         cb_total = cb_total + 30
@@ -1121,12 +1364,19 @@ function castleLankyMedal()
     return cb_total >= cb_amount
 end
 
-function castleTinyMedal()
+function castleLankyHalfMedal()
+    return castleLankyMedal(true)
+end
+
+function castleTinyMedal(isHalf)
     if not_has("tiny") then
         return false
     end
     local cb_total = 50 -- Castle Climb
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("castle")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if mini() then -- Trash
         cb_total = cb_total + 5
@@ -1149,12 +1399,19 @@ function castleTinyMedal()
     return cb_total >= cb_amount
 end
 
-function castleChunkyMedal()
+function castleTinyHalfMedal()
+    return castleTinyMedal(true)
+end
+
+function castleChunkyMedal(isHalf)
     if not_has("chunky") then
         return false
     end
     local cb_total = 30 -- Upper Dungeon
-    local cb_amount = Tracker:ProviderCountForCode("medalamount")
+    local cb_amount = getMedalRequirement("castle")
+    if isHalf then
+        cb_amount = getHalfMedalRequirement(cb_amount)
+    end
     
     if canEnterTree() then -- Inside Tree
         cb_total = cb_total + 5
@@ -1175,4 +1432,8 @@ function castleChunkyMedal()
         cb_total = cb_total + 10
     end
     return cb_total >= cb_amount
+end
+
+function castleChunkyHalfMedal()
+    return castleChunkyMedal(true)
 end

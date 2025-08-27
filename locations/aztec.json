@@ -40,6 +40,36 @@
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
+                        "name": "Aztec DK Half-Medal",
+                        "access_rules": ["$aztecDKHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Aztec Diddy Half-Medal",
+                        "access_rules": ["$aztecDiddyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Aztec Lanky Half-Medal",
+                        "access_rules": ["$aztecLankyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Aztec Tiny Half-Medal",
+                        "access_rules": ["$aztecTinyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Aztec Chunky Half-Medal",
+                        "access_rules": ["$aztecChunkyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
                         "name": "Boss",
                         "access_rules": ["$aztecBossLogic"],
                         "chest_unopened_img": "images/items/scoff.png",
@@ -206,7 +236,7 @@
             },
             {
                 "name": "Aztec Lanky Vulture Shooting",
-                "access_rules": ["$templeIce, $canEnterTinyTemple, dive, $canChangeTime, $aztecSlam, lanky"],
+                "access_rules": ["$templeIce, $canEnterTinyTemple, dive, $anyGun, $aztecSlam, lanky"],
                 "sections": [
                     {
                         "name": "Golden Banana"

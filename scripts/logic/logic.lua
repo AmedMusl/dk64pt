@@ -1,6 +1,8 @@
 ScriptHost:LoadScript("scripts/logic/medallogic.lua")
 ScriptHost:LoadScript("scripts/logic/logichelper.lua")
 ScriptHost:LoadScript("scripts/logic/switchsanity.lua")
+ScriptHost:LoadScript("scripts/logic/bonuslogic.lua")
+ScriptHost:LoadScript("scripts/logic/medalcbrequirement.lua")
 ScriptHost:LoadScript("scripts/logic/blocker.lua")
 ScriptHost:LoadScript("scripts/logic/CBLogic.lua")
 
@@ -158,7 +160,7 @@ function canEnterLlamaTemple()
     return canActivateAztecLlamaCoconut() or canActivateAztecLlamaGrape() or canActivateAztecLlamaFeather()
 end
 
-function canChangeTime()
+function anyGun()
     return coconut() or peanuts() or grape() or feather() or pineapple()
 end
 
@@ -192,7 +194,7 @@ function winch()
 end
 
 function winchCage()
-    return guitar() and charge() and canChangeTime() and charge()
+    return guitar() and charge() and anyGun() and charge()
 end
 
 function flyingEnemy()
@@ -291,9 +293,9 @@ end
 
 function canBeatSpider()
     if not_has("dusk") then
-        return punch() and mini() and canChangeTime()
+        return punch() and mini() and anyGun()
     elseif has("dusk") then
-        return (punch() or mini()) and canChangeTime()
+        return (punch() or mini()) and anyGun()
     end
 end
 
@@ -459,7 +461,7 @@ function japesChunkyKasplat()
 end
 
 function chunkyShed()
-    return punch() and ((gone() and canChangeTime()) or triangle() or bongos() or guitar() or trombone() or sax())
+    return punch() and ((gone() and anyGun()) or triangle() or bongos() or guitar() or trombone() or sax())
 end
 
 function powerHutPlatform()
@@ -1078,16 +1080,16 @@ function hasBoss(prefix)
 end
 
 function toggleShopowners()
-    if not_has("shopowners") then
-        Tracker:FindObjectForCode("cranky").Active = true
-        Tracker:FindObjectForCode("funky").Active = true
-        Tracker:FindObjectForCode("candy").Active = true
-        Tracker:FindObjectForCode("snide").Active = true
-    else
+    if has("shopowners") then
         Tracker:FindObjectForCode("cranky").Active = false
         Tracker:FindObjectForCode("funky").Active = false
         Tracker:FindObjectForCode("candy").Active = false
         Tracker:FindObjectForCode("snide").Active = false
+    else
+        Tracker:FindObjectForCode("cranky").Active = true
+        Tracker:FindObjectForCode("funky").Active = true
+        Tracker:FindObjectForCode("candy").Active = true
+        Tracker:FindObjectForCode("snide").Active = true
     end
 end
 

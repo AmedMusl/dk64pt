@@ -136,7 +136,7 @@ function applyKlaptrapPurpleLogic()
 end
 
 function applyKlaptrapRedLogic()
-    return heavyEnemy() or canChangeTime()
+    return heavyEnemy() or anyGun()
 end
 
 function applyKlobberLogic()
@@ -152,7 +152,7 @@ function applyRoboKremlingLogic()
 end
 
 function applyGuardLogic()
-    return heavyEnemy() or canChangeTime()
+    return heavyEnemy() or anyGun()
 end
 
 

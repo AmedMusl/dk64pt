@@ -40,6 +40,36 @@
                         "chest_opened_img": "images/items/bananamedalbw.png"
                     },
                     {
+                        "name": "Galleon DK Half-Medal",
+                        "access_rules": ["$galleonDKHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Galleon Diddy Half-Medal",
+                        "access_rules": ["$galleonDiddyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Galleon Lanky Half-Medal",
+                        "access_rules": ["$galleonLankyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Galleon Tiny Half-Medal",
+                        "access_rules": ["$galleonTinyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
+                        "name": "Galleon Chunky Half-Medal",
+                        "access_rules": ["$galleonChunkyHalfMedal"],
+                        "chest_unopened_img": "images/items/halfbananamedal.png",
+                        "chest_opened_img": "images/items/halfbananamedalbw.png"
+                    },
+                    {
                         "name": "Boss",
                         "access_rules": ["$galleonBossLogic, vine", "$galleonBossLogic, dive, $shipyard", "$galleonBossLogic, dive, $lighthouse"],
                         "chest_unopened_img": "images/items/scoff.png",
@@ -460,7 +490,7 @@
             },
             {            
                 "name": "Galleon Diddy Mechfish",
-                "access_rules": ["^$lighthousePlatform, $lighthouse, $shipyard, $rocket, $guitar, dive, $canChangeTime"],
+                "access_rules": ["^$lighthousePlatform, $lighthouse, $shipyard, $rocket, $guitar, dive, $anyGun"],
                 "sections": [
                     {
                         "name": "Golden Banana"
