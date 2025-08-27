@@ -104,7 +104,7 @@
             },
             {            
                 "name": "Forest Diddy Top of Mushroom Barrel",
-                "access_rules": ["$rocket"],
+                "access_rules": ["$canPlayForestDiddyTopofMushroom"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -129,7 +129,7 @@
                     },
                     {
                         "name": "Forest Tiny Mushroom Barrel",
-                        "access_rules": ["$forestSlam, tiny, climb"]
+                        "access_rules": ["$canPlayForestTinyMushroomBarrel"]
                     },
                     {
                         "name": "Forest Kasplat: Inside Giant Mushroom",
@@ -190,7 +190,7 @@
             },
             {            
                 "name": "Forest DK Baboon Blast",
-                "access_rules": ["$blast, $canClimbMushroom"],
+                "access_rules": ["$canPlayForestDonkeyBaboonBlast"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -301,7 +301,7 @@
             },
             {            
                 "name": "Forest Lanky Coloured Mushroom Slam",
-                "access_rules": ["$topOfMushroom, $forestSlam, lanky"],
+                "access_rules": ["$canPlayForestLankyColoredMushrooms"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -318,7 +318,7 @@
             },
             {            
                 "name": "Forest Diddy Owl Race",
-                "access_rules": ["$yellowTunnel, $rocket, $guitar, $nightTime"],
+                "access_rules": ["$canPlayForestDiddyOwlRace"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -632,7 +632,7 @@
             },
             {            
                 "name": "Forest Donkey Thornvine Barn Barrel",
-                "access_rules": ["^$canEnterThornvine, climb, vine", "^$canEnterThornvine, ^$avp, climb"],
+                "access_rules": ["^$canPlayForestDonkeyBarn"],
                 "sections": [
                     {
                         "name": "Golden Banana"

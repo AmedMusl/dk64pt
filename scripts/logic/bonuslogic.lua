@@ -222,14 +222,14 @@ function canPlayFactoryTinyProductionRoom()
     local logic = getMinigameLogic("FactoryTinyProductionRoom")
     
     if not logic.isMinigameSanity then
-        return production() and twirl() and factorySlam()
+        return production() and twirl() and factorySlam() and has("climb")
     else
         if logic.minigameType == "NoGame" then
-            return production() and twirl() and has("slam")
+            return production() and twirl() and factorySlam() and has("climb")
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return feather() and twirl() and factorySlam() and canPlayMinigame("FactoryTinyProductionRoom")
+            return production() and twirl() and factorySlam() and has("climb") and canPlayMinigame("FactoryTinyProductionRoom")
         else
-            return production() and twirl() and factorySlam() and canPlayMinigame("FactoryTinyProductionRoom")
+            return production() and twirl() and factorySlam() and has("climb") and canPlayMinigame("FactoryTinyProductionRoom")
         end
     end
 end
@@ -302,14 +302,14 @@ function canPlayJapesTinyFeatherGateBarrel()
     local logic = getMinigameLogic("JapesTinyFeatherGateBarrel")
     
     if not logic.isMinigameSanity then
-        return canActivateJapesDiddyCave() and feather()
+        return (canActivateJapesDiddyCave() or phaseswim()) and feather()
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return (canActivateJapesDiddyCave() or phaseswim()) and feather()
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return canActivateJapesDiddyCave() and feather() and canPlayMinigame("JapesTinyFeatherGateBarrel")
+            return (canActivateJapesDiddyCave() or phaseswim()) and feather() and canPlayMinigame("JapesTinyFeatherGateBarrel")
         else
-            return canActivateJapesDiddyCave() and feather() and canPlayMinigame("JapesTinyFeatherGateBarrel")
+            return (canActivateJapesDiddyCave() or phaseswim()) and feather() and canPlayMinigame("JapesTinyFeatherGateBarrel")
         end
     end
 end
@@ -350,14 +350,14 @@ function canPlayIslesLankyCastleLobby()
     local logic = getMinigameLogic("IslesLankyCastleLobby")
     
     if not logic.isMinigameSanity then
-        return balloon() and has("barrel") and has("chunky")
+        return (balloon() and has("barrel") and has("chunky")) or moonkicks() or (twirl() and avp())
     else
         if logic.minigameType == "NoGame" then
-            return balloon() and has("barrel") and has("chunky")
+            return (balloon() and has("barrel") and has("chunky")) or moonkicks() or (twirl() and avp())
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return balloon() and has("barrel") and has("chunky") and canPlayMinigame("IslesLankyCastleLobby")
+            return (balloon() and has("barrel") and has("chunky")) or moonkicks() or (twirl() and avp()) and canPlayMinigame("IslesLankyCastleLobby")
         else
-            return balloon() and has("barrel") and has("chunky") and canPlayMinigame("IslesLankyCastleLobby")
+            return (balloon() and has("barrel") and has("chunky")) or moonkicks() or (twirl() and avp()) and canPlayMinigame("IslesLankyCastleLobby")
         end
     end
 end
@@ -366,14 +366,14 @@ function canPlayGalleonTiny2DoorShip()
     local logic = getMinigameLogic("GalleonTiny2DoorShip")
     
     if not logic.isMinigameSanity then
-        return has("tiny") and galleonSlam() and has("dive")
+        return has("tiny") and has("dive") or phaseswim()
     else
         if logic.minigameType == "NoGame" then
-            return has("tiny") and galleonSlam() and has("dive")
+            return has("tiny") and has("dive") or phaseswim()
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("tiny") and galleonSlam() and has("dive") and canPlayMinigame("GalleonTiny2DoorShip")
+            return has("tiny") and has("dive") or phaseswim() and canPlayMinigame("GalleonTiny2DoorShip")
         else
-            return has("tiny") and galleonSlam() and has("dive") and canPlayMinigame("GalleonTiny2DoorShip")
+            return has("tiny") and has("dive") or phaseswim() and canPlayMinigame("GalleonTiny2DoorShip")
         end
     end
 end
@@ -382,14 +382,14 @@ function canPlayCavesDiddyJetpackBarrel()
     local logic = getMinigameLogic("CavesDiddyJetpackBarrel")
     
     if not logic.isMinigameSanity then
-        return rocket() or (has("donkey") and avp())
+        return rocket() or (has("donkey") and avp()) or (twirl() and avp())
     else
         if logic.minigameType == "NoGame" then
-            return rocket() or (has("donkey") and avp())
+            return rocket() or (has("donkey") and avp()) or (twirl() and avp())
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return (rocket() and peanuts()) or (has("donkey") and avp() and coconut()) and canPlayMinigame("CavesDiddyJetpackBarrel")
+            return (rocket() and peanuts()) or (has("donkey") and avp() and coconut()) or (twirl() and avp() and feather()) and canPlayMinigame("CavesDiddyJetpackBarrel")
         else
-            return rocket() or (has("donkey") and avp()) and canPlayMinigame("CavesDiddyJetpackBarrel")
+            return rocket() or (has("donkey") and avp()) or (twirl() and avp()) and canPlayMinigame("CavesDiddyJetpackBarrel")
         end
     end
 end
@@ -398,14 +398,14 @@ function canPlayForestDonkeyBarn()
     local logic = getMinigameLogic("ForestDonkeyBarn")
     
     if not logic.isMinigameSanity then
-        return nightTime() and strong() and forestSlam()
+        return canEnterThornvine() and has("slam")
     else
         if logic.minigameType == "NoGame" then
-            return nightTime() and strong() and forestSlam()
+            return canEnterThornvine() and has("slam")
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return nightTime() and strong() and forestSlam() and has("climb") and has("vine") and canPlayMinigame("ForestDonkeyBarn")
+            return canEnterThornvine() and has("slam") and has("vine") and has("climb") and coconut() and canPlayMinigame("ForestDonkeyBarn")
         else
-            return nightTime() and strong() and forestSlam() and has("climb") and has("vine") and canPlayMinigame("ForestDonkeyBarn")
+            return canEnterThornvine() and has("slam") and has("vine") and has("climb") and canPlayMinigame("ForestDonkeyBarn")
         end
     end
 end
@@ -446,14 +446,14 @@ function canPlayJapesLankySlope()
     local logic = getMinigameLogic("JapesLankySlope")
     
     if not logic.isMinigameSanity then
-        return coconutCage() and ostand()
+        return coconutCage() and ostand() or has("slope_resets")
     else
         if logic.minigameType == "NoGame" then
-            return coconutCage() and ostand()
+            return coconutCage() and ostand() or has("slope_resets")
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return coconutCage() and ostand() and canPlayMinigame("JapesLankySlope")
+            return coconutCage() and ostand() or has("slope_resets") and canPlayMinigame("JapesLankySlope")
         else
-            return coconutCage() and ostand() and canPlayMinigame("JapesLankySlope")
+            return coconutCage() and ostand() or has("slope_resets") and canPlayMinigame("JapesLankySlope")
         end
     end
 end
@@ -478,7 +478,7 @@ function canPlayJapesLankyGrapeGate()
     local logic = getMinigameLogic("JapesLankyGrapeGate")
     
     if not logic.isMinigameSanity then
-        return canActivateJapesDiddyCave() and grape()
+        return (canActivateJapesDiddyCave() or phaseswim()) and grape()
     else
         if logic.minigameType == "NoGame" then
             return true
@@ -543,14 +543,14 @@ function canPlayForestDiddyOwlRace()
     local logic = getMinigameLogic("ForestDiddyOwlRace")
     
     if not logic.isMinigameSanity then
-        return nightTime() and guitar() and rocket()
+        return nightTime() and guitar() and rocket() and yellowTunnel()
     else
         if logic.minigameType == "NoGame" then
-            return nightTime() and guitar() and rocket()
+            return nightTime() and guitar() and rocket() and yellowTunnel()
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return nightTime() and guitar() and rocket() and canPlayMinigame("ForestDiddyOwlRace")
+            return nightTime() and guitar() and rocket() and yellowTunnel() and canPlayMinigame("ForestDiddyOwlRace")
         else
-            return nightTime() and guitar() and rocket() and canPlayMinigame("ForestDiddyOwlRace")
+            return nightTime() and guitar() and rocket() and yellowTunnel() and canPlayMinigame("ForestDiddyOwlRace")
         end
     end
 end
@@ -575,14 +575,14 @@ function canPlayFactoryDiddyChunkyRoomBarrel()
     local logic = getMinigameLogic("FactoryDiddyChunkyRoomBarrel")
     
     if not logic.isMinigameSanity then
-        return testing() and has("climb") and factorySlam() and has("diddy")
+        return powerHutPlatform() and factorySlam() and has("diddy")
     else
         if logic.minigameType == "NoGame" then
-            return testing() and has("climb") and factorySlam() and has("diddy")
+            return powerHutPlatform() and factorySlam() and has("diddy")
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return testing() and has("climb") and factorySlam() and has("diddy") and has("vine") and peanuts() and canPlayMinigame("FactoryDiddyChunkyRoomBarrel")
+            return powerHutPlatform() and factorySlam() and peanuts() and has("vine") and canPlayMinigame("FactoryDiddyChunkyRoomBarrel")
         else
-            return testing() and has("climb") and factorySlam() and has("diddy") and has("vine") and canPlayMinigame("FactoryDiddyChunkyRoomBarrel")
+            return powerHutPlatform() and factorySlam() and has("diddy") and has("vine") and canPlayMinigame("FactoryDiddyChunkyRoomBarrel")
         end
     end
 end
@@ -623,14 +623,14 @@ function canPlayAztecChunky5DoorTemple()
     local logic = getMinigameLogic("AztecChunky5DoorTemple")
     
     if not logic.isMinigameSanity then
-        return aztec5DT() and pineapple()
+        return pineapple()
     else
         if logic.minigameType == "NoGame" then
-            return aztec5DT() and pineapple()
+            return pineapple()
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return aztec5DT() and pineapple() and canPlayMinigame("AztecChunky5DoorTemple")
+            return pineapple() and canPlayMinigame("AztecChunky5DoorTemple")
         else
-            return aztec5DT() and pineapple() and canPlayMinigame("AztecChunky5DoorTemple")
+            return pineapple() and canPlayMinigame("AztecChunky5DoorTemple")
         end
     end
 end
@@ -672,14 +672,14 @@ function canPlayCastleChunkyCrypt()
     local logic = getMinigameLogic("CastleChunkyCrypt")
     
     if not logic.isMinigameSanity then
-        return chunkyCryptDoors() and punch()
+        return punch()
     else
         if logic.minigameType == "NoGame" then
-            return chunkyCryptDoors() and punch()
+            return punch()
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return chunkyCryptDoors() and punch() and canPlayMinigame("CastleChunkyCrypt")
+            return punch() and canPlayMinigame("CastleChunkyCrypt")
         else
-            return chunkyCryptDoors() and punch() and canPlayMinigame("CastleChunkyCrypt")
+            return punch() and canPlayMinigame("CastleChunkyCrypt")
         end
     end
 end
@@ -688,14 +688,14 @@ function canPlayJapesChunkyGiantBonusBarrel()
     local logic = getMinigameLogic("JapesChunkyGiantBonusBarrel")
     
     if not logic.isMinigameSanity then
-        return canActivateJapesFeather() and hunky()
+        return canActivateJapesFeather() and hunky() and has("climb")
     else
         if logic.minigameType == "NoGame" then
-            return canActivateJapesFeather() and hunky()
+            return canActivateJapesFeather() and hunky() and has("climb")
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return canActivateJapesFeather() and hunky() and pineapple and canPlayMinigame("JapesChunkyGiantBonusBarrel")
+            return canActivateJapesFeather() and hunky() and pineapple and has("climb") and canPlayMinigame("JapesChunkyGiantBonusBarrel")
         else
-            return canActivateJapesFeather() and hunky() and canPlayMinigame("JapesChunkyGiantBonusBarrel")
+            return canActivateJapesFeather() and hunky() and has("climb") and canPlayMinigame("JapesChunkyGiantBonusBarrel")
         end
     end
 end
@@ -753,14 +753,14 @@ function canPlayFactoryDiddyBlockTower()
     local logic = getMinigameLogic("FactoryDiddyBlockTower")
     
     if not logic.isMinigameSanity then
-        return testing() and spring()
+        return testing() and (spring() or moontail()) and has("climb")
     else
         if logic.minigameType == "NoGame" then
-            return testing() and spring()
+            return testing() and (spring() or moontail()) and has("climb")
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return testing() and spring() and canPlayMinigame("FactoryDiddyBlockTower")
+            return testing() and (spring() or moontail()) and has("climb") and peanuts() and canPlayMinigame("FactoryDiddyBlockTower")
         else
-            return testing() and spring() and canPlayMinigame("FactoryDiddyBlockTower")
+            return testing() and (spring() or moontail()) and has("climb") and canPlayMinigame("FactoryDiddyBlockTower")
         end
     end
 end
@@ -897,30 +897,14 @@ function canPlayFactoryLankyTestingRoomBarrel()
     local logic = getMinigameLogic("FactoryLankyTestingRoomBarrel")
     
     if not logic.isMinigameSanity then
-        return testing() and balloon() or () and has("climb")
+        return testing() and (balloon() or (avp() and (has("diddy") or has("lanky") or has("tiny")))) and has("climb")
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return testing() and (balloon() or (avp() and (has("diddy") or has("lanky") or has("tiny")))) and has("climb")
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("lanky") and canPlayMinigame("FactoryLankyTestingRoomBarrel")
+            return testing() and ((balloon() and grape()) or (avp() and (peanuts() or grape() or feather()))) and has("climb") and canPlayMinigame("FactoryLankyTestingRoomBarrel")
         else
-            return has("lanky") and balloon() and canPlayMinigame("FactoryLankyTestingRoomBarrel")
-        end
-    end
-end
-
-function canPlayIslesSwimTrainingBarrel()
-    local logic = getMinigameLogic("IslesSwimTrainingBarrel")
-    
-    if not logic.isMinigameSanity then
-        return true
-    else
-        if logic.minigameType == "NoGame" then
-            return true
-        elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("donkey") and canPlayMinigame("IslesSwimTrainingBarrel")
-        else
-            return canPlayMinigame("IslesSwimTrainingBarrel")
+            return testing() and (balloon() or (avp() and (has("diddy") or has("lanky") or has("tiny")))) and has("climb") and canPlayMinigame("FactoryLankyTestingRoomBarrel")
         end
     end
 end
@@ -929,14 +913,14 @@ function canPlayAztecLanky5DoorTemple()
     local logic = getMinigameLogic("AztecLanky5DoorTemple")
     
     if not logic.isMinigameSanity then
-        return has("donkey")
+        return grape()
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return grape()
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("lanky") and canPlayMinigame("AztecLanky5DoorTemple")
+            return grape() and canPlayMinigame("AztecLanky5DoorTemple")
         else
-            return has("donkey") and canPlayMinigame("AztecLanky5DoorTemple")
+            return grape() and canPlayMinigame("AztecLanky5DoorTemple")
         end
     end
 end
@@ -945,14 +929,14 @@ function canPlayGalleonTinySubmarine()
     local logic = getMinigameLogic("GalleonTinySubmarine")
     
     if not logic.isMinigameSanity then
-        return has("donkey")
+        return shipyard() and has("dive") and (mini() or phaseswim() or has("swim_through_shores"))
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return shipyard() and has("dive") and (mini() or phaseswim() or has("swim_through_shores"))
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("tiny") and canPlayMinigame("GalleonTinySubmarine")
+            return shipyard() and has("dive") and (mini() or phaseswim() or has("swim_through_shores")) and canPlayMinigame("GalleonTinySubmarine")
         else
-            return has("donkey") and canPlayMinigame("GalleonTinySubmarine")
+            return shipyard() and has("dive") and (mini() or phaseswim() or has("swim_through_shores")) and canPlayMinigame("GalleonTinySubmarine")
         end
     end
 end
@@ -961,14 +945,14 @@ function canPlayCastleLankyDungeon()
     local logic = getMinigameLogic("CastleLankyDungeon")
     
     if not logic.isMinigameSanity then
-        return has("donkey")
+        return castleSlam() and trombone() and (balloon() or twirl())
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return castleSlam() and trombone() and (balloon() or twirl())
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("lanky") and canPlayMinigame("CastleLankyDungeon")
+            return castleSlam() and trombone() and (balloon() or twirl()) and canPlayMinigame("CastleLankyDungeon")
         else
-            return has("donkey") and canPlayMinigame("CastleLankyDungeon")
+            return castleSlam() and trombone() and (balloon() or twirl()) and canPlayMinigame("CastleLankyDungeon")
         end
     end
 end
@@ -977,14 +961,14 @@ function canPlayCavesDonkeyBaboonBlast()
     local logic = getMinigameLogic("CavesDonkeyBaboonBlast")
     
     if not logic.isMinigameSanity then
-        return has("tiny") and port()
+        return blast()
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return blast()
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("donkey") and canPlayMinigame("CavesDonkeyBaboonBlast")
+            return blast() and coconut() and canPlayMinigame("CavesDonkeyBaboonBlast")
         else
-            return has("tiny") and port() and canPlayMinigame("CavesDonkeyBaboonBlast")
+            return blast() and canPlayMinigame("CavesDonkeyBaboonBlast")
         end
     end
 end
@@ -993,14 +977,14 @@ function canPlayForestDonkeyBaboonBlast()
     local logic = getMinigameLogic("ForestDonkeyBaboonBlast")
     
     if not logic.isMinigameSanity then
-        return has("lanky") and grape()
+        return blast() and canClimbMushroom()
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return blast() and canClimbMushroom()
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("donkey") and canPlayMinigame("ForestDonkeyBaboonBlast")
+            return blast() and canClimbMushroom() and coconut() and canPlayMinigame("ForestDonkeyBaboonBlast")
         else
-            return has("lanky") and grape() and canPlayMinigame("ForestDonkeyBaboonBlast")
+            return blast() and canClimbMushroom() and canPlayMinigame("ForestDonkeyBaboonBlast")
         end
     end
 end
@@ -1009,14 +993,14 @@ function canPlayAztecLankyLlamaTempleBarrel()
     local logic = getMinigameLogic("AztecLankyLlamaTempleBarrel")
     
     if not logic.isMinigameSanity then
-        return has("diddy") and charge()
+        return llamaSwitches() and canEnterLlamaTemple() and trombone() and (ostand() or twirl() or moonkicks() or has("slope_resets"))
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return llamaSwitches() and canEnterLlamaTemple() and trombone() and (ostand() or twirl() or moonkicks() or has("slope_resets"))
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("lanky") and canPlayMinigame("AztecLankyLlamaTempleBarrel")
+            return llamaSwitches() and canEnterLlamaTemple() and trombone() and (ostand() or twirl() or moonkicks() or has("slope_resets")) and canPlayMinigame("AztecLankyLlamaTempleBarrel")
         else
-            return has("diddy") and charge() and canPlayMinigame("AztecLankyLlamaTempleBarrel")
+            return llamaSwitches() and canEnterLlamaTemple() and trombone() and (ostand() or twirl() or moonkicks() or has("slope_resets")) and canPlayMinigame("AztecLankyLlamaTempleBarrel")
         end
     end
 end
@@ -1025,14 +1009,14 @@ function canPlayIslesTinyAztecLobby()
     local logic = getMinigameLogic("IslesTinyAztecLobby")
     
     if not logic.isMinigameSanity then
-        return has("donkey") and blast()
+        return true
     else
         if logic.minigameType == "NoGame" then
             return true
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("tiny") and canPlayMinigame("IslesTinyAztecLobby")
+            return charge() and twirl() and feather() and canPlayMinigame("IslesTinyAztecLobby")
         else
-            return has("donkey") and blast() and canPlayMinigame("IslesTinyAztecLobby")
+            return charge() and twirl() and canPlayMinigame("IslesTinyAztecLobby")
         end
     end
 end
@@ -1041,30 +1025,31 @@ function canPlayForestLankyColoredMushrooms()
     local logic = getMinigameLogic("ForestLankyColoredMushrooms")
     
     if not logic.isMinigameSanity then
-        return has("tiny") and feather()
+        return topOfMushroom() and forestSlam() and has("lanky")
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return topOfMushroom() and forestSlam() and has("lanky")
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("lanky") and canPlayMinigame("ForestLankyColoredMushrooms")
+            return topOfMushroom() and forestSlam() and has("lanky") and canPlayMinigame("ForestLankyColoredMushrooms")
         else
-            return has("tiny") and feather() and canPlayMinigame("ForestLankyColoredMushrooms")
+            return topOfMushroom() and forestSlam() and has("lanky") and canPlayMinigame("ForestLankyColoredMushrooms")
         end
     end
 end
 
 function canPlayGalleonDiddyGoldTower()
     local logic = getMinigameLogic("GalleonDiddyGoldTower")
-    
+    local inTreasure = treasure() and has("dive")
+    local usingSpring = spring() and (raisedWater() or avp())
     if not logic.isMinigameSanity then
-        return has("lanky") and grape()
+        return inTreasure and (usingSpring or moonkicks())
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return inTreasure and (usingSpring or moonkicks())
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return has("diddy") and canPlayMinigame("GalleonDiddyGoldTower")
+            return inTreasure and (usingSpring or moonkicks()) and canPlayMinigame("GalleonDiddyGoldTower")
         else
-            return has("lanky") and grape() and canPlayMinigame("GalleonDiddyGoldTower")
+            return inTreasure and (usingSpring or moonkicks()) and canPlayMinigame("GalleonDiddyGoldTower")
         end
     end
 end

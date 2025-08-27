@@ -381,7 +381,7 @@
             },
             {            
                 "name": "Galleon Lanky Gold Tower Barrel",
-                "access_rules": ["^$lankyGold"],
+                "access_rules": ["^$canPlayGalleonLankyGoldTower"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -398,7 +398,7 @@
             },
             {            
                 "name": "Galleon Diddy Gold Tower Barrel",
-                "access_rules": ["^$diddyGold"],
+                "access_rules": ["^$canPlayGalleonDiddyGoldTower"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -473,7 +473,7 @@
             },
             {            
                 "name": "Galleon Tiny Submarine Barrel",
-                "access_rules": ["$shipyard, $mini, dive", "$shipyard, $phaseswim", "$shipyard, $sts"],
+                "access_rules": ["$canPlayGalleonTinySubmarine"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -515,7 +515,7 @@
                     },
                     {
                         "name": "Tiny 2DS",
-                        "access_rules": ["tiny, dive", "$phaseswim"]
+                        "access_rules": ["$canPlayGalleonTiny2DoorShip"]
                     }
                 ],
                 "map_locations": [
@@ -529,7 +529,7 @@
             },
             {            
                 "name": "Galleon DK 5-Door Ship",
-                "access_rules": ["$shipyard, $bongos, dive", "$shipyard, $phaseswim"],
+                "access_rules": ["$canPlayGalleonDonkey5DoorShip"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -546,7 +546,7 @@
             },
             {            
                 "name": "Galleon Diddy 5-Door Ship",
-                "access_rules": ["$shipyard, $loweredWater, $guitar, dive", "$shipyard, $phaseswim"],
+                "access_rules": ["$canPlayGalleonDiddy5DoorShip"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -603,7 +603,7 @@
             },
             {            
                 "name": "Galleon Chunky 5-Door Ship",
-                "access_rules": ["$shipyard, $lighthouse, $loweredWater, $triangle, dive", "$shipyard, $phaseswim"],
+                "access_rules": ["$canPlayGalleonChunky5DoorShip"],
                 "sections": [
                     {
                         "name": "Golden Banana"

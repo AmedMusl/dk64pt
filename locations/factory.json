@@ -104,7 +104,7 @@
             },
             {            
                 "name": "Factory Diddy Block Tower",
-                "access_rules": ["$testing, $spring, climb", "$testing, $moontail, climb"],
+                "access_rules": ["$canPlayFactoryDiddyBlockTower"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -121,7 +121,7 @@
             },
             {            
                 "name": "Factory Lanky Testing Room Barrel",
-                "access_rules": ["$testing, $balloon, climb", "$testing, ^$avp, diddy, climb", "$testing, ^$avp, lanky, climb", "$testing, ^$avp, tiny, climb"],
+                "access_rules": ["$canPlayFactoryLankyTestingRoomBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -337,7 +337,7 @@
             },
             {            
                 "name": "Factory Diddy Storage Room Barrel",
-                "access_rules": ["$powerHutPlatform, $factorySlam, diddy"],
+                "access_rules": ["$canPlayFactoryDiddyChunkyRoomBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -516,7 +516,7 @@
             },
             {            
                 "name": "Factory Chunky Barrel by Arcade",
-                "access_rules": ["$punch, climb"],
+                "access_rules": ["$canPlayFactoryChunkybyArcade"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -620,7 +620,7 @@
             },
             {            
                 "name": "Factory Tiny Production Twirl",
-                "access_rules": ["$production, $twirl, $factorySlam, climb"],
+                "access_rules": ["$canPlayFactoryTinyProductionRoom"],
                 "sections": [
                     {
                         "name": "Golden Banana"

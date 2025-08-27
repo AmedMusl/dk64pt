@@ -296,7 +296,7 @@
       },
       {
         "name": "Isles Tiny Aztec Lobby Barrel",
-        "access_rules": ["^$canEnterAztecLobby"],
+        "access_rules": ["^$canEnterAztecLobby, $canPlayIslesTinyAztecLobby"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -471,7 +471,7 @@
       },
       {
         "name": "Isles Diddy Snide Barrel",
-        "access_rules": [],
+        "access_rules": ["$canPlayIslesDiddySnidesLobby"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -822,7 +822,7 @@
       },
       {
         "name": "Isles Diddy Summit Barrel",
-        "access_rules": ["$rocket, barrel, chunky, $canActivateIslesSpawnRocketbarrel, k4"],
+        "access_rules": ["$canPlayIslesDiddySummit"],
         "sections": [
           {
             "name": "Golden Banana"
@@ -1296,11 +1296,7 @@
       },
       {
         "name": "Upper Castle Lobby",
-        "access_rules": [
-          "^$canEnterCastleLobby, barrel, $balloon, chunky",
-          "^$canEnterCastleLobby, ^$avp, $twirl",
-          "^$canEnterCastleLobby, $moonkicks"
-          ],
+        "access_rules": ["^$canPlayIslesLankyCastleLobby"],
         "sections": [
           {
             "name": "Isles Lanky Castle Lobby Barrel"
@@ -1342,7 +1338,7 @@
       },
       {
         "name": "Isles Chunky Helm Lobby Barrel",
-        "access_rules": ["$canActivateIslesHelmLobbyGone, vine, ^$canEnterHelmLobby", "^$canEnterHelmLobby, ^$avp, $twirl"],
+        "access_rules": ["$canPlayIslesChunkyHelmLobby"],
         "sections": [
           {
             "name": "Golden Banana"

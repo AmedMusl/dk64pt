@@ -87,7 +87,7 @@
             },
             {
                 "name": "Caves Diddy Jetpack Barrel",
-                "access_rules": ["$rocket", "^$avp, donkey", "^$avp, $twirl"],
+                "access_rules": ["$canPlayCavesDiddyJetpackBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -159,7 +159,7 @@
             },
             {
                 "name": "Caves Tiny Mini Cave Barrel",
-                "access_rules": ["$mini"],
+                "access_rules": ["$canPlayCavesTinyCaveBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -195,7 +195,7 @@
             },
             {
                 "name": "Caves DK Baboon Blast",
-                "access_rules": ["$blast"],
+                "access_rules": ["$canPlayCavesDonkeyBaboonBlast"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -575,7 +575,7 @@
             },
             {
                 "name": "Caves Chunky 5 Door Cabin",
-                "access_rules": ["$triangle, $gone, slam"],
+                "access_rules": ["$canPlayCavesChunky5DoorCabin"],
                 "sections": [
                     {
                         "name": "Golden Banana"

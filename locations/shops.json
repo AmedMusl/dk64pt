@@ -10,27 +10,27 @@
                 "sections": [
                     {
                         "name": "Cranky DK",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Donkey, $isShopVisible|DKIslesCrankyDonkey"],
                         "access_rules": ["donkey, cranky"]
                     },
                     {
                         "name": "Cranky Diddy",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Diddy, $isShopVisible|DKIslesCrankyDiddy"],
                         "access_rules": ["diddy, cranky"]
                     },
                     {
                         "name": "Cranky Lanky",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Lanky, $isShopVisible|DKIslesCrankyLanky"],
                         "access_rules": ["lanky, cranky"]
                     },
                     {
                         "name": "Cranky Tiny",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Tiny, $isShopVisible|DKIslesCrankyTiny"],
                         "access_rules": ["tiny, cranky"]
                     },
                     {
                         "name": "Cranky Chunky",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Chunky, $isShopVisible|DKIslesCrankyChunky"],
                         "access_rules": ["chunky, cranky"]
                     },
                     {
@@ -63,27 +63,27 @@
                 "sections": [
                     {
                         "name": "Cranky DK",
-                        "visibility_rules": ["$isLocationJunk|Japes Cranky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Japes Cranky Donkey, $isShopVisible|JungleJapesCrankyDonkey"],
                         "access_rules": ["donkey, cranky"]
                     },
                     {
                         "name": "Cranky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Japes Cranky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Japes Cranky Diddy, $isShopVisible|JungleJapesCrankyDiddy"],
                         "access_rules": ["diddy, cranky"]
                     },
                     {
                         "name": "Cranky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Japes Cranky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Japes Cranky Lanky, $isShopVisible|JungleJapesCrankyLanky"],
                         "access_rules": ["lanky, cranky"]
                     },
                     {
                         "name": "Cranky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Japes Cranky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Japes Cranky Tiny, $isShopVisible|JungleJapesCrankyTiny"],
                         "access_rules": ["tiny, cranky"]
                     },
                     {
                         "name": "Cranky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Japes Cranky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Japes Cranky Chunky, $isShopVisible|JungleJapesCrankyChunky"],
                         "access_rules": ["chunky, cranky"]
                     }
                 ],
@@ -100,31 +100,31 @@
                 "name": "Japes Funky",
                 "chest_unopened_img": "images/items/funky.png",
                 "chest_opened_img": "images/items/funkybw.png",
-                "access_rules": ["climb", "$ostand, ^$avp", "slope_resets, tiny"],
+                "access_rules": ["climb, $ostand, ^$avp, slope_resets, tiny"],
                 "sections": [
                     {
                         "name": "Funky DK",
-                        "visibility_rules": ["$isLocationJunk|Japes Funky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Japes Funky Donkey, $isShopVisible|JungleJapesFunkyDonkey"],
                         "access_rules": ["donkey, funky"]
                     },
                     {
                         "name": "Funky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Japes Funky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Japes Funky Diddy, $isShopVisible|JungleJapesFunkyDiddy"],
                         "access_rules": ["diddy, funky"]
                     },
                     {
                         "name": "Funky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Japes Funky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Japes Funky Lanky, $isShopVisible|JungleJapesFunkyLanky"],
                         "access_rules": ["lanky, funky"]
                     },
                     {
                         "name": "Funky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Japes Funky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Japes Funky Tiny, $isShopVisible|JungleJapesFunkyTiny"],
                         "access_rules": ["tiny, funky"]
                     },
                     {
                         "name": "Funky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Japes Funky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Japes Funky Chunky, $isShopVisible|JungleJapesFunkyChunky"],
                         "access_rules": ["chunky, funky"]
                     }
                 ],
@@ -151,27 +151,27 @@
                 "sections": [
                     {
                         "name": "Cranky DK",
-                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Donkey, $isShopVisible|AngryAztecCrankyDonkey"],
                         "access_rules": ["donkey, cranky"]
                     },
                     {
                         "name": "Cranky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Diddy, $isShopVisible|AngryAztecCrankyDiddy"],
                         "access_rules": ["diddy, cranky"]
                     },
                     {
                         "name": "Cranky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Lanky, $isShopVisible|AngryAztecCrankyLanky"],
                         "access_rules": ["lanky, cranky"]
                     },
                     {
                         "name": "Cranky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Tiny, $isShopVisible|AngryAztecCrankyTiny"],
                         "access_rules": ["tiny, cranky"]
                     },
                     {
                         "name": "Cranky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Cranky Chunky, $isShopVisible|AngryAztecCrankyChunky"],
                         "access_rules": ["chunky, cranky"]
                     }
                 ],
@@ -192,27 +192,27 @@
                 "sections": [
                     {
                         "name": "Funky DK",
-                        "visibility_rules": ["$isLocationJunk|Aztec Funky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Funky Donkey, $isShopVisible|AngryAztecFunkyDonkey"],
                         "access_rules": ["donkey, funky"]
                     },
                     {
                         "name": "Funky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Aztec Funky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Funky Diddy, $isShopVisible|AngryAztecFunkyDiddy"],
                         "access_rules": ["diddy, funky"]
                     },
                     {
                         "name": "Funky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Aztec Funky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Funky Lanky, $isShopVisible|AngryAztecFunkyLanky"],
                         "access_rules": ["lanky, funky"]
                     },
                     {
                         "name": "Funky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Aztec Funky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Funky Tiny, $isShopVisible|AngryAztecFunkyTiny"],
                         "access_rules": ["tiny, funky"]
                     },
                     {
                         "name": "Funky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Aztec Funky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Funky Chunky, $isShopVisible|AngryAztecFunkyChunky"],
                         "access_rules": ["chunky, funky"]
                     }
                 ],
@@ -233,27 +233,27 @@
                 "sections": [
                     {
                         "name": "Candy DK",
-                        "visibility_rules": ["$isLocationJunk|Aztec Candy Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Candy Donkey, $isShopVisible|AngryAztecCandyDonkey"],
                         "access_rules": ["donkey, candy"]
                     },
                     {
                         "name": "Candy Diddy",
-                        "visibility_rules": ["$isLocationJunk|Aztec Candy Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Candy Diddy, $isShopVisible|AngryAztecCandyDiddy"],
                         "access_rules": ["diddy, candy"]
                     },
                     {
                         "name": "Candy Lanky",
-                        "visibility_rules": ["$isLocationJunk|Aztec Candy Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Candy Lanky, $isShopVisible|AngryAztecCandyLanky"],
                         "access_rules": ["lanky, candy"]
                     },
                     {
                         "name": "Candy Tiny",
-                        "visibility_rules": ["$isLocationJunk|Aztec Candy Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Candy Tiny, $isShopVisible|AngryAztecCandyTiny"],
                         "access_rules": ["tiny, candy"]
                     },
                     {
                         "name": "Candy Chunky",
-                        "visibility_rules": ["$isLocationJunk|Aztec Candy Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Aztec Candy Chunky, $isShopVisible|AngryAztecCandyChunky"],
                         "access_rules": ["chunky, candy"]
                     }
                 ],
@@ -280,27 +280,27 @@
                 "sections": [
                     {
                         "name": "Cranky DK",
-                        "visibility_rules": ["$isLocationJunk|Factory Cranky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Factory Cranky Donkey, $isShopVisible|FranticFactoryCrankyDonkey"],
                         "access_rules": ["donkey, cranky"]
                     },
                     {
                         "name": "Cranky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Factory Cranky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Factory Cranky Diddy, $isShopVisible|FranticFactoryCrankyDiddy"],
                         "access_rules": ["diddy, cranky"]
                     },
                     {
                         "name": "Cranky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Factory Cranky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Factory Cranky Lanky, $isShopVisible|FranticFactoryCrankyLanky"],
                         "access_rules": ["lanky, cranky"]
                     },
                     {
                         "name": "Cranky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Factory Cranky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Factory Cranky Tiny, $isShopVisible|FranticFactoryCrankyTiny"],
                         "access_rules": ["tiny, cranky"]
                     },
                     {
                         "name": "Cranky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Factory Cranky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Factory Cranky Chunky, $isShopVisible|FranticFactoryCrankyChunky"],
                         "access_rules": ["chunky, cranky"]
                     }
                 ],
@@ -321,27 +321,27 @@
                 "sections": [
                     {
                         "name": "Candy DK",
-                        "visibility_rules": ["$isLocationJunk|Factory Candy Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Factory Candy Donkey, $isShopVisible|FranticFactoryCandyDonkey"],
                         "access_rules": ["donkey, candy"]
                     },
                     {
                         "name": "Candy Diddy",
-                        "visibility_rules": ["$isLocationJunk|Factory Candy Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Factory Candy Diddy, $isShopVisible|FranticFactoryCandyDiddy"],
                         "access_rules": ["diddy, candy"]
                     },
                     {
                         "name": "Candy Lanky",
-                        "visibility_rules": ["$isLocationJunk|Factory Candy Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Factory Candy Lanky, $isShopVisible|FranticFactoryCandyLanky"],
                         "access_rules": ["lanky, candy"]
                     },
                     {
                         "name": "Candy Tiny",
-                        "visibility_rules": ["$isLocationJunk|Factory Candy Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Factory Candy Tiny, $isShopVisible|FranticFactoryCandyTiny"],
                         "access_rules": ["tiny, candy"]
                     },
                     {
                         "name": "Candy Chunky",
-                        "visibility_rules": ["$isLocationJunk|Factory Candy Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Factory Candy Chunky, $isShopVisible|FranticFactoryCandyChunky"],
                         "access_rules": ["chunky, candy"]
                     }
                 ],
@@ -362,27 +362,27 @@
                 "sections": [
                     {
                         "name": "Funky DK",
-                        "visibility_rules": ["$isLocationJunk|Factory Funky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Factory Funky Donkey, $isShopVisible|FranticFactoryFunkyDonkey"],
                         "access_rules": ["donkey, funky"]
                     },
                     {
                         "name": "Funky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Factory Funky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Factory Funky Diddy, $isShopVisible|FranticFactoryFunkyDiddy"],
                         "access_rules": ["diddy, funky"]
                     },
                     {
                         "name": "Funky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Factory Funky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Factory Funky Lanky, $isShopVisible|FranticFactoryFunkyLanky"],
                         "access_rules": ["lanky, funky"]
                     },
                     {
                         "name": "Funky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Factory Funky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Factory Funky Tiny, $isShopVisible|FranticFactoryFunkyTiny"],
                         "access_rules": ["tiny, funky"]
                     },
                     {
                         "name": "Funky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Factory Funky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Factory Funky Chunky, $isShopVisible|FranticFactoryFunkyChunky"],
                         "access_rules": ["chunky, funky"]
                     }
                 ],
@@ -409,27 +409,27 @@
                 "sections": [
                     {
                         "name": "Cranky DK",
-                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Donkey, $isShopVisible|GloomyGalleonCrankyDonkey"],
                         "access_rules": ["donkey, cranky"]
                     },
                     {
                         "name": "Cranky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Diddy, $isShopVisible|GloomyGalleonCrankyDiddy"],
                         "access_rules": ["diddy, cranky"]
                     },
                     {
                         "name": "Cranky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Lanky, $isShopVisible|GloomyGalleonCrankyLanky"],
                         "access_rules": ["lanky, cranky"]
                     },
                     {
                         "name": "Cranky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Tiny, $isShopVisible|GloomyGalleonCrankyTiny"],
                         "access_rules": ["tiny, cranky"]
                     },
                     {
                         "name": "Cranky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Cranky Chunky, $isShopVisible|GloomyGalleonCrankyChunky"],
                         "access_rules": ["chunky, cranky"]
                     }
                 ],
@@ -450,27 +450,27 @@
                 "sections": [
                     {
                         "name": "Funky DK",
-                        "visibility_rules": ["$isLocationJunk|Galleon Funky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Funky Donkey, $isShopVisible|GloomyGalleonFunkyDonkey"],
                         "access_rules": ["donkey, funky"]
                     },
                     {
                         "name": "Funky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Galleon Funky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Funky Diddy, $isShopVisible|GloomyGalleonFunkyDiddy"],
                         "access_rules": ["diddy, funky"]
                     },
                     {
                         "name": "Funky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Galleon Funky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Funky Lanky, $isShopVisible|GloomyGalleonFunkyLanky"],
                         "access_rules": ["lanky, funky"]
                     },
                     {
                         "name": "Funky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Galleon Funky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Funky Tiny, $isShopVisible|GloomyGalleonFunkyTiny"],
                         "access_rules": ["tiny, funky"]
                     },
                     {
                         "name": "Funky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Galleon Funky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Funky Chunky, $isShopVisible|GloomyGalleonFunkyChunky"],
                         "access_rules": ["chunky, funky"]
                     }
                 ],
@@ -491,27 +491,27 @@
                 "sections": [
                     {
                         "name": "Candy DK",
-                        "visibility_rules": ["$isLocationJunk|Galleon Candy Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Candy Donkey, $isShopVisible|GloomyGalleonCandyDonkey"],
                         "access_rules": ["donkey, candy"]
                     },
                     {
                         "name": "Candy Diddy",
-                        "visibility_rules": ["$isLocationJunk|Galleon Candy Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Candy Diddy, $isShopVisible|GloomyGalleonCandyDiddy"],
                         "access_rules": ["diddy, candy"]
                     },
                     {
                         "name": "Candy Lanky",
-                        "visibility_rules": ["$isLocationJunk|Galleon Candy Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Candy Lanky, $isShopVisible|GloomyGalleonCandyLanky"],
                         "access_rules": ["lanky, candy"]
                     },
                     {
                         "name": "Candy Tiny",
-                        "visibility_rules": ["$isLocationJunk|Galleon Candy Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Candy Tiny, $isShopVisible|GloomyGalleonCandyTiny"],
                         "access_rules": ["tiny, candy"]
                     },
                     {
                         "name": "Candy Chunky",
-                        "visibility_rules": ["$isLocationJunk|Galleon Candy Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Galleon Candy Chunky, $isShopVisible|GloomyGalleonCandyChunky"],
                         "access_rules": ["chunky, candy"]
                     }
                 ],
@@ -538,27 +538,27 @@
                 "sections": [
                     {
                         "name": "Cranky DK",
-                        "visibility_rules": ["$isLocationJunk|Forest Cranky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Forest Cranky Donkey, $isShopVisible|FungiForestCrankyDonkey"],
                         "access_rules": ["donkey, cranky"]
                     },
                     {
                         "name": "Cranky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Forest Cranky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Forest Cranky Diddy, $isShopVisible|FungiForestCrankyDiddy"],
                         "access_rules": ["diddy, cranky"]
                     },
                     {
                         "name": "Cranky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Forest Cranky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Forest Cranky Lanky, $isShopVisible|FungiForestCrankyLanky"],
                         "access_rules": ["lanky, cranky"]
                     },
                     {
                         "name": "Cranky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Forest Cranky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Forest Cranky Tiny, $isShopVisible|FungiForestCrankyTiny"],
                         "access_rules": ["tiny, cranky"]
                     },
                     {
                         "name": "Cranky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Forest Cranky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Forest Cranky Chunky, $isShopVisible|FungiForestCrankyChunky"],
                         "access_rules": ["chunky, cranky"]
                     }
                 ],
@@ -579,27 +579,27 @@
                 "sections": [
                     {
                         "name": "Funky DK",
-                        "visibility_rules": ["$isLocationJunk|Forest Funky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Forest Funky Donkey, $isShopVisible|FungiForestFunkyDonkey"],
                         "access_rules": ["donkey, funky"]
                     },
                     {
                         "name": "Funky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Forest Funky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Forest Funky Diddy, $isShopVisible|FungiForestFunkyDiddy"],
                         "access_rules": ["diddy, funky"]
                     },
                     {
                         "name": "Funky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Forest Funky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Forest Funky Lanky, $isShopVisible|FungiForestFunkyLanky"],
                         "access_rules": ["lanky, funky"]
                     },
                     {
                         "name": "Funky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Forest Funky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Forest Funky Tiny, $isShopVisible|FungiForestFunkyTiny"],
                         "access_rules": ["tiny, funky"]
                     },
                     {
                         "name": "Funky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Forest Funky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Forest Funky Chunky, $isShopVisible|FungiForestFunkyChunky"],
                         "access_rules": ["chunky, funky"]
                     }
                 ],
@@ -626,27 +626,27 @@
                 "sections": [
                     {
                         "name": "Cranky DK",
-                        "visibility_rules": ["$isLocationJunk|Caves Cranky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Caves Cranky Donkey, $isShopVisible|CrystalCavesCrankyDonkey"],
                         "access_rules": ["donkey, cranky"]
                     },
                     {
                         "name": "Cranky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Caves Cranky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Caves Cranky Diddy, $isShopVisible|CrystalCavesCrankyDiddy"],
                         "access_rules": ["diddy, cranky"]
                     },
                     {
                         "name": "Cranky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Caves Cranky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Caves Cranky Lanky, $isShopVisible|CrystalCavesCrankyLanky"],
                         "access_rules": ["lanky, cranky"]
                     },
                     {
                         "name": "Cranky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Caves Cranky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Caves Cranky Tiny, $isShopVisible|CrystalCavesCrankyTiny"],
                         "access_rules": ["tiny, cranky"]
                     },
                     {
                         "name": "Cranky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Caves Cranky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Caves Cranky Chunky, $isShopVisible|CrystalCavesCrankyChunky"],
                         "access_rules": ["chunky, cranky"]
                     }
                 ],
@@ -667,27 +667,27 @@
                 "sections": [
                     {
                         "name": "Funky DK",
-                        "visibility_rules": ["$isLocationJunk|Caves Funky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Caves Funky Donkey, $isShopVisible|CrystalCavesFunkyDonkey"],
                         "access_rules": ["donkey, funky"]
                     },
                     {
                         "name": "Funky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Caves Funky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Caves Funky Diddy, $isShopVisible|CrystalCavesFunkyDiddy"],
                         "access_rules": ["diddy, funky"]
                     },
                     {
                         "name": "Funky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Caves Funky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Caves Funky Lanky, $isShopVisible|CrystalCavesFunkyLanky"],
                         "access_rules": ["lanky, funky"]
                     },
                     {
                         "name": "Funky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Caves Funky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Caves Funky Tiny, $isShopVisible|CrystalCavesFunkyTiny"],
                         "access_rules": ["tiny, funky"]
                     },
                     {
                         "name": "Funky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Caves Funky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Caves Funky Chunky, $isShopVisible|CrystalCavesFunkyChunky"],
                         "access_rules": ["chunky, funky"]
                     }
                 ],
@@ -708,27 +708,27 @@
                 "sections": [
                     {
                         "name": "Candy DK",
-                        "visibility_rules": ["$isLocationJunk|Caves Candy Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Caves Candy Donkey, $isShopVisible|CrystalCavesCandyDonkey"],
                         "access_rules": ["donkey, candy"]
                     },
                     {
                         "name": "Candy Diddy",
-                        "visibility_rules": ["$isLocationJunk|Caves Candy Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Caves Candy Diddy, $isShopVisible|CrystalCavesCandyDiddy"],
                         "access_rules": ["diddy, candy"]
                     },
                     {
                         "name": "Candy Lanky",
-                        "visibility_rules": ["$isLocationJunk|Caves Candy Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Caves Candy Lanky, $isShopVisible|CrystalCavesCandyLanky"],
                         "access_rules": ["lanky, candy"]
                     },
                     {
                         "name": "Candy Tiny",
-                        "visibility_rules": ["$isLocationJunk|Caves Candy Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Caves Candy Tiny, $isShopVisible|CrystalCavesCandyTiny"],
                         "access_rules": ["tiny, candy"]
                     },
                     {
                         "name": "Candy Chunky",
-                        "visibility_rules": ["$isLocationJunk|Caves Candy Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Caves Candy Chunky, $isShopVisible|CrystalCavesCandyChunky"],
                         "access_rules": ["chunky, candy"]
                     }
                 ],
@@ -755,27 +755,27 @@
                 "sections": [
                     {
                         "name": "Cranky DK",
-                        "visibility_rules": ["$isLocationJunk|Castle Cranky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Castle Cranky Donkey, $isShopVisible|CreepyCastleCrankyDonkey"],
                         "access_rules": ["donkey, cranky"]
                     },
                     {
                         "name": "Cranky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Castle Cranky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Castle Cranky Diddy, $isShopVisible|CreepyCastleCrankyDiddy"],
                         "access_rules": ["diddy, cranky"]
                     },
                     {
                         "name": "Cranky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Castle Cranky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Castle Cranky Lanky, $isShopVisible|CreepyCastleCrankyLanky"],
                         "access_rules": ["lanky, cranky"]
                     },
                     {
                         "name": "Cranky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Castle Cranky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Castle Cranky Tiny, $isShopVisible|CreepyCastleCrankyTiny"],
                         "access_rules": ["tiny, cranky"]
                     },
                     {
                         "name": "Cranky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Castle Cranky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Castle Cranky Chunky, $isShopVisible|CreepyCastleCrankyChunky"],
                         "access_rules": ["chunky, cranky"]
                     }
                 ],
@@ -796,27 +796,27 @@
                 "sections": [
                     {
                         "name": "Funky DK",
-                        "visibility_rules": ["$isLocationJunk|Castle Funky Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Castle Funky Donkey, $isShopVisible|CreepyCastleFunkyDonkey"],
                         "access_rules": ["donkey, funky"]
                     },
                     {
                         "name": "Funky Diddy",
-                        "visibility_rules": ["$isLocationJunk|Castle Funky Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Castle Funky Diddy, $isShopVisible|CreepyCastleFunkyDiddy"],
                         "access_rules": ["diddy, funky"]
                     },
                     {
                         "name": "Funky Lanky",
-                        "visibility_rules": ["$isLocationJunk|Castle Funky Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Castle Funky Lanky, $isShopVisible|CreepyCastleFunkyLanky"],
                         "access_rules": ["lanky, funky"]
                     },
                     {
                         "name": "Funky Tiny",
-                        "visibility_rules": ["$isLocationJunk|Castle Funky Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Castle Funky Tiny, $isShopVisible|CreepyCastleFunkyTiny"],
                         "access_rules": ["tiny, funky"]
                     },
                     {
                         "name": "Funky Chunky",
-                        "visibility_rules": ["$isLocationJunk|Castle Funky Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Castle Funky Chunky, $isShopVisible|CreepyCastleFunkyChunky"],
                         "access_rules": ["chunky, funky"]
                     }
                 ],
@@ -837,27 +837,27 @@
                 "sections": [
                     {
                         "name": "Candy DK",
-                        "visibility_rules": ["$isLocationJunk|Castle Candy Donkey"],
+                        "visibility_rules": ["$isLocationJunk|Castle Candy Donkey, $isShopVisible|CreepyCastleCandyDonkey"],
                         "access_rules": ["donkey, candy"]
                     },
                     {
                         "name": "Candy Diddy",
-                        "visibility_rules": ["$isLocationJunk|Castle Candy Diddy"],
+                        "visibility_rules": ["$isLocationJunk|Castle Candy Diddy, $isShopVisible|CreepyCastleCandyDiddy"],
                         "access_rules": ["diddy, candy"]
                     },
                     {
                         "name": "Candy Lanky",
-                        "visibility_rules": ["$isLocationJunk|Castle Candy Lanky"],
+                        "visibility_rules": ["$isLocationJunk|Castle Candy Lanky, $isShopVisible|CreepyCastleCandyLanky"],
                         "access_rules": ["lanky, candy"]
                     },
                     {
                         "name": "Candy Tiny",
-                        "visibility_rules": ["$isLocationJunk|Castle Candy Tiny"],
+                        "visibility_rules": ["$isLocationJunk|Castle Candy Tiny, $isShopVisible|CreepyCastleCandyTiny"],
                         "access_rules": ["tiny, candy"]
                     },
                     {
                         "name": "Candy Chunky",
-                        "visibility_rules": ["$isLocationJunk|Castle Candy Chunky"],
+                        "visibility_rules": ["$isLocationJunk|Castle Candy Chunky, $isShopVisible|CreepyCastleCandyChunky"],
                         "access_rules": ["chunky, candy"]
                     }
                 ],

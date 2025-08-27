@@ -32,6 +32,20 @@ function isLocationJunk(locationName)
     return true
 end
 
+-- Function to check if a shop is visible based on SmallerShopsData
+function isShopVisible(shopName)
+    if not SMALLSHOPSDATA then
+        return true -- Default to visible if no data
+    end
+    
+    local shopValue = SMALLSHOPSDATA[shopName]
+    if shopValue == nil then
+        return true -- Default to visible if shop not found in data
+    end
+    
+    return shopValue == 1 -- 1 means visible, 0 means not there
+end
+
 function has(item, amount)
     local count = Tracker:ProviderCountForCode(item)
     amount = tonumber(amount)
@@ -504,8 +518,7 @@ function lankyFreeing()
     elseif LANKY_FREEING_KONG == "chunky" then
         return triangle()
     end
-    -- Default case if LANKY_FREEING_KONG is not set
-    return false
+    return bongos()
 end
 
 -- Glitches
@@ -935,6 +948,13 @@ function dkHelm()
         end
     end
     
+    -- Check bonus barrel requirements based on HELMBARRELCOUNT
+    if HELMBARRELCOUNT == 1 then
+        return canPlayHelmDonkey2()
+    elseif HELMBARRELCOUNT == 2 then
+        return canPlayHelmDonkey1() and canPlayHelmDonkey2()
+    end
+    -- If HELMBARRELCOUNT is 0 or nil, return the original logic
     return true
 end
 
@@ -954,6 +974,13 @@ function diddyHelm()
         end
     end
     
+    -- Check bonus barrel requirements based on HELMBARRELCOUNT
+    if HELMBARRELCOUNT == 1 then
+        return canPlayHelmDiddy1()
+    elseif HELMBARRELCOUNT == 2 then
+        return canPlayHelmDiddy1() and canPlayHelmDiddy2()
+    end
+    -- If HELMBARRELCOUNT is 0 or nil, return the original logic
     return true
 end
 
@@ -973,6 +1000,13 @@ function lankyHelm()
         end
     end
     
+    -- Check bonus barrel requirements based on HELMBARRELCOUNT
+    if HELMBARRELCOUNT == 1 then
+        return canPlayHelmLanky1()
+    elseif HELMBARRELCOUNT == 2 then
+        return canPlayHelmLanky1() and canPlayHelmLanky2()
+    end
+    -- If HELMBARRELCOUNT is 0 or nil, return the original logic
     return true
 end
 
@@ -992,6 +1026,13 @@ function tinyHelm()
         end
     end
     
+    -- Check bonus barrel requirements based on HELMBARRELCOUNT
+    if HELMBARRELCOUNT == 1 then
+        return canPlayHelmTiny2()
+    elseif HELMBARRELCOUNT == 2 then
+        return canPlayHelmTiny1() and canPlayHelmTiny2()
+    end
+    -- If HELMBARRELCOUNT is 0 or nil, return the original logic
     return true
 end
 
@@ -1011,6 +1052,13 @@ function chunkyHelm()
         end
     end
     
+    -- Check bonus barrel requirements based on HELMBARRELCOUNT
+    if HELMBARRELCOUNT == 1 then
+        return canPlayHelmChunky1()
+    elseif HELMBARRELCOUNT == 2 then
+        return canPlayHelmChunky1() and canPlayHelmChunky2()
+    end
+    -- If HELMBARRELCOUNT is 0 or nil, return the original logic
     return true
 end
 

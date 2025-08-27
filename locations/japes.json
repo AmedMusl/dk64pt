@@ -323,7 +323,7 @@
             },
             {            
                 "name": "Japes Lanky Grape Gate Barrel",
-                "access_rules": ["$canActivateJapesDiddyCave, $grape", "$phaseswim, $grape"],
+                "access_rules": ["$canPlayJapesLankyGrapeGate"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -340,7 +340,7 @@
             },
             {            
                 "name": "Japes Tiny Feather Gate Barrel",
-                "access_rules": ["$canActivateJapesDiddyCave, $feather", "$feather, $phaseswim"],
+                "access_rules": ["$canPlayJapesTinyFeatherGateBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -418,7 +418,7 @@
             },
             {            
                 "name": "Japes Chunky Giant Bonus Barrel",
-                "access_rules": ["$shellhive, $hunky, climb"],
+                "access_rules": ["$canPlayJapesChunkyGiantBonusBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -452,7 +452,7 @@
             },
             {            
                 "name": "Japes Lanky Slope Barrel",
-                "access_rules": ["^$coconutCage, $ostand", "^$coconutCage, slope_resets"],
+                "access_rules": ["^$canPlayJapesLankySlope"],
                 "sections": [
                     {
                         "name": "Golden Banana"

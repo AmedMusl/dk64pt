@@ -289,7 +289,7 @@
             },
             {
                 "name": "Aztec Chunky Giant Caged Barrel",
-                "access_rules": ["^$tunnelDoor, $hunky, barrel"],
+                "access_rules": ["^$canPlayAztecChunkyCagedBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -397,7 +397,7 @@
             },
             {
                 "name": "Aztec DK Sealed Quicksand Tunnel Barrel",
-                "access_rules": ["^$llamaSwitches, $canEnterLlamaTemple, $canActivateAztecQuickSandSwitch, $strong"],
+                "access_rules": ["^$canPlayAztecDonkeyQuicksandCave"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -432,7 +432,7 @@
                     },
                     {
                         "name": "Aztec Lanky 5DT",
-                        "access_rules": ["$grape"]
+                        "access_rules": ["$canPlayAztecLanky5DoorTemple"]
                     },
                     {
                         "name": "Aztec Tiny 5DT",
@@ -440,7 +440,7 @@
                     },
                     {
                         "name": "Aztec Chunky 5DT",
-                        "access_rules": ["$pineapple"]
+                        "access_rules": ["$canPlayAztecChunky5DoorTemple"]
                     },
                     {
                         "name": "Aztec Fairy (Inside Tiny 5DT)",
@@ -634,12 +634,7 @@
             },
             {
                 "name": "Aztec Lanky Llama Temple Barrel",
-                "access_rules": [
-                    "^$llamaSwitches, $trombone, $ostand, $canEnterLlamaTemple", 
-                    "^$llamaSwitches, ^$avp, $twirl, $canEnterLlamaTemple, $trombone",
-                    "^$llamaSwitches, $moonkicks, $trombone, $canEnterLlamaTemple",
-                    "^$llamaSwitches, slope_resets, $trombone, $canEnterLlamaTemple"
-                ],
+                "access_rules": ["^$canPlayAztecLankyLlamaTempleBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"

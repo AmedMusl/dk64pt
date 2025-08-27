@@ -87,7 +87,7 @@
             },
             {            
                 "name": "Castle Diddy Above Castle",
-                "access_rules": ["$rocket"],
+                "access_rules": ["$canPlayCastleDiddyAboveCastle"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -169,7 +169,7 @@
                     },
                     {
                         "name": "Castle Chunky Tree Sniping Barrel",
-                        "access_rules": ["^$chunkyTree"]
+                        "access_rules": ["^$canPlayCastleChunkyTree"]
                     },
                     {
                         "name": "Castle Kasplat: Inside the Tree",
@@ -255,7 +255,7 @@
             },
             {            
                 "name": "Castle Diddy Ballroom",
-                "access_rules": ["$castleSlam, $rocket"],
+                "access_rules": ["$canPlayCastleDiddyBallroom"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -308,7 +308,7 @@
             },
             {            
                 "name": "Castle Lanky Tower",
-                "access_rules": ["^$lankyTower"],
+                "access_rules": ["^$canPlayCastleLankyTower"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -481,7 +481,7 @@
                 "sections": [
                     {
                         "name": "Golden Banana",
-                        "access_rules":["$punch"]
+                        "access_rules":["$canPlayCastleChunkyCrypt"]
                     },
                     {
                         "name": "Castle Crypt Enemy: Chunky Coffin (0)",
@@ -587,7 +587,7 @@
             },
             {            
                 "name": "Castle Tiny Over Chasm",
-                "access_rules": ["$twirl"],
+                "access_rules": ["$canPlayCastleTinyOverChasm"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -657,7 +657,7 @@
             },
             {            
                 "name": "Castle Lanky Dungeon",
-                "access_rules": ["$castleSlam, $trombone, $balloon"],
+                "access_rules": ["$canPlayCastleLankyDungeon"],
                 "sections": [
                     {
                         "name": "Golden Banana"

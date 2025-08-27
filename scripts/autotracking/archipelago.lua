@@ -17,6 +17,8 @@ MEDALCBREQUIREMENTLEVEL = nil
 BLOCKER_VALUES = nil
 JUNK_LOCATIONS = nil
 ENEMY_DATA = nil
+HELMBARRELCOUNT = nil
+SMALLSHOPSDATA = nil
 
 -- Current item mapping (version-dependent)
 CURRENT_ITEM_MAPPING = ITEM_MAPPING
@@ -615,6 +617,21 @@ function onClear(slot_data)
         ENEMY_DATA = slot_data['EnemyData']
     else
         ENEMY_DATA = nil
+    end
+
+    if slot_data['HelmBarrelCount'] then
+        HELMBARRELCOUNT = slot_data['HelmBarrelCount']
+        -- print("Received HelmBarrelCount:", HELMBARRELCOUNT)
+    else
+        HELMBARRELCOUNT = nil
+    end
+
+    if slot_data['SmallerShopsData'] then
+        SMALLSHOPSDATA = slot_data['SmallerShopsData']
+        -- print("Received SmallerShopsData:")
+        -- print(dump_table(SMALLSHOPSDATA))
+    else
+        SMALLSHOPSDATA = nil
     end
 
     if slot_data['BLockerValues'] then
