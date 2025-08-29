@@ -742,9 +742,9 @@ function canPlayIslesChunkyHelmLobby()
         if logic.minigameType == "NoGame" then
             return canEnterHelmLobby() and ((canActivateIslesHelmLobbyGone() and has("vine")) or twirl())
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return canEnterHelmLobby() and ((canActivateIslesHelmLobbyGone() and has("vine")) or twirl()) and canPlayMinigame("IslesChunkyHelmLobby")
+            return (canEnterHelmLobby() and canActivateIslesHelmLobbyGone()) and (has("vine") or twirl()) and canPlayMinigame("IslesChunkyHelmLobby")
         else
-            return canEnterHelmLobby() and ((canActivateIslesHelmLobbyGone() and has("vine")) or twirl()) and canPlayMinigame("IslesChunkyHelmLobby")
+            return (canEnterHelmLobby() and canActivateIslesHelmLobbyGone()) and (has("vine") or twirl()) and canPlayMinigame("IslesChunkyHelmLobby")
         end
     end
 end

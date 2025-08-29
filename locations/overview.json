@@ -176,6 +176,26 @@
                     {
                         "ref": "DK Isles/Upper Castle Lobby/Isles Dirt: Castle Lobby",
                         "name": "Isles Castle Lobby Patch"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Boulder: Near Level 2/Boulder",
+                        "name": "Isles Boulder: Near Level 2"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Chunky Triangle Pad/Isles Boulder: Near Level 6",
+                        "name": "Isles Boulder: Near Level 6"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Lanky Instrument Pad/Isles Boulder: Japes Lobby",
+                        "name": "Isles Boulder: Japes Lobby"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Boulder: Castle Lobby/Boulder",
+                        "name": "Isles Boulder: Castle Lobby"
+                    },
+                    {
+                        "ref": "DK Isles/Isles Boulder: Caves Lobby/Boulder",
+                        "name": "Isles Boulder: Caves Lobby"
                     }
                 ],
                 "map_locations": [
@@ -331,6 +351,158 @@
                 ]
             },
             {
+                "name": "Isles Wrinkly Doors",
+                "sections": [
+                    {
+                        "ref": "DK Isles/Japes DK Wrinkly Door/Wrinkly Door",
+                        "name": "Japes DK Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Japes Diddy Wrinkly Door/Wrinkly Door",
+                        "name": "Japes Diddy Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Japes Lanky Wrinkly Door/Wrinkly Door",
+                        "name": "Japes Lanky Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Japes Tiny Wrinkly Door/Wrinkly Door",
+                        "name": "Japes Tiny Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Japes Chunky Wrinkly Door/Wrinkly Door",
+                        "name": "Japes Chunky Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Aztec DK Wrinkly Door/Wrinkly Door",
+                        "name": "Aztec DK Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Aztec Diddy Wrinkly Door/Wrinkly Door",
+                        "name": "Aztec Diddy Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Aztec Lanky Wrinkly Door/Wrinkly Door",
+                        "name": "Aztec Lanky Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Aztec Tiny Wrinkly Door/Wrinkly Door",
+                        "name": "Aztec Tiny Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Aztec Chunky Wrinkly Door/Wrinkly Door",
+                        "name": "Aztec Chunky Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Factory DK Wrinkly Door/Wrinkly Door",
+                        "name": "Factory DK Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Factory Diddy Wrinkly Door/Wrinkly Door",
+                        "name": "Factory Diddy Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Factory Lanky Wrinkly Door/Wrinkly Door",
+                        "name": "Factory Lanky Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Factory Tiny Wrinkly Door/Wrinkly Door",
+                        "name": "Factory Tiny Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Factory Chunky Wrinkly Door/Wrinkly Door",
+                        "name": "Factory Chunky Wrinkly Door"
+                    },
+                    {
+                        "ref": "DK Isles/Galleon DK Hint Door/Wrinkly Door",
+                        "name": "Galleon DK Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Galleon Diddy Hint Door/Wrinkly Door",
+                        "name": "Galleon Diddy Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Galleon Lanky Hint Door/Wrinkly Door",
+                        "name": "Galleon Lanky Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Galleon Tiny Hint Door/Wrinkly Door",
+                        "name": "Galleon Tiny Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Galleon Chunky Hint Door/Wrinkly Door",
+                        "name": "Galleon Chunky Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Forest DK Hint Door/Wrinkly Door",
+                        "name": "Forest DK Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Forest Diddy Hint Door/Wrinkly Door",
+                        "name": "Forest Diddy Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Forest Lanky Hint Door/Wrinkly Door",
+                        "name": "Forest Lanky Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Forest Tiny Hint Door/Wrinkly Door",
+                        "name": "Forest Tiny Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Forest Chunky Hint Door/Wrinkly Door",
+                        "name": "Forest Chunky Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Caves DK Hint Door/Wrinkly Door",
+                        "name": "Caves DK Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Caves Diddy Hint Door/Wrinkly Door",
+                        "name": "Caves Diddy Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Caves Lanky Hint Door/Wrinkly Door",
+                        "name": "Caves Lanky Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Caves Tiny Hint Door/Wrinkly Door",
+                        "name": "Caves Tiny Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Caves Chunky Hint Door/Wrinkly Door",
+                        "name": "Caves Chunky Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Castle DK Hint Door/Wrinkly Door",
+                        "name": "Castle DK Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Castle Diddy Hint Door/Wrinkly Door",
+                        "name": "Castle Diddy Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Castle Lanky Hint Door/Wrinkly Door",
+                        "name": "Castle Lanky Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Castle Tiny Hint Door/Wrinkly Door",
+                        "name": "Castle Tiny Hint Door"
+                    },
+                    {
+                        "ref": "DK Isles/Castle Chunky Hint Door/Wrinkly Door",
+                        "name": "Castle Chunky Hint Door"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 233,
+                        "y": 73
+                    }
+                ]
+            },
+            {
                 "name": "Japes GBs",
                 "sections": [
                     {
@@ -444,6 +616,26 @@
                     {
                         "ref": "Jungle Japes/Medals/Japes Chunky Medal",
                         "name": "Japes Chunky Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Japes DK Half-Medal",
+                        "name": "Japes DK Half-Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Japes Diddy Half-Medal",
+                        "name": "Japes Diddy Half-Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Japes Lanky Half-Medal",
+                        "name": "Japes Lanky Half-Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Japes Tiny Half-Medal",
+                        "name": "Japes Tiny Half-Medal"
+                    },
+                    {
+                        "ref": "Jungle Japes/Medals/Japes Chunky Half-Medal",
+                        "name": "Japes Chunky Half-Medal"
                     },
                     {
                         "ref": "Jungle Japes/Medals/Boss",
@@ -882,6 +1074,26 @@
                         "name": "Aztec Chunky Medal"
                     },
                     {
+                        "ref": "Angry Aztec/Medals/Aztec DK Half-Medal",
+                        "name": "Aztec DK Half-Medal"
+                    },
+                    {
+                        "ref": "Angry Aztec/Medals/Aztec Diddy Half-Medal",
+                        "name": "Aztec Diddy Half-Medal"
+                    },
+                    {
+                        "ref": "Angry Aztec/Medals/Aztec Lanky Half-Medal",
+                        "name": "Aztec Lanky Half-Medal"
+                    },
+                    {
+                        "ref": "Angry Aztec/Medals/Aztec Tiny Half-Medal",
+                        "name": "Aztec Tiny Half-Medal"
+                    },
+                    {
+                        "ref": "Angry Aztec/Medals/Aztec Chunky Half-Medal",
+                        "name": "Aztec Chunky Half-Medal"
+                    },
+                    {
                         "ref": "Angry Aztec/Medals/Boss",
                         "name": "Aztec Boss"
                     }
@@ -940,6 +1152,10 @@
                     {
                         "ref": "Angry Aztec/5 Door Temple/Aztec Dirt: Chunky 5DT",
                         "name": "Aztec Dirt: Chunky 5DT"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Boulder: Tunnel/Boulder",
+                        "name": "Aztec Boulder: Tunnel"
                     }
                 ],
                 "map_locations": [
@@ -1477,6 +1693,26 @@
                         "name": "Factory Chunky Medal"
                     },
                     {
+                        "ref": "Frantic Factory/Medals/Factory DK Half-Medal",
+                        "name": "Factory DK Half-Medal"
+                    },
+                    {
+                        "ref": "Frantic Factory/Medals/Factory Diddy Half-Medal",
+                        "name": "Factory Diddy Half-Medal"
+                    },
+                    {
+                        "ref": "Frantic Factory/Medals/Factory Lanky Half-Medal",
+                        "name": "Factory Lanky Half-Medal"
+                    },
+                    {
+                        "ref": "Frantic Factory/Medals/Factory Tiny Half-Medal",
+                        "name": "Factory Tiny Half-Medal"
+                    },
+                    {
+                        "ref": "Frantic Factory/Medals/Factory Chunky Half-Medal",
+                        "name": "Factory Chunky Half-Medal"
+                    },
+                    {
                         "ref": "Frantic Factory/Medals/Boss",
                         "name": "Factory Boss"
                     }
@@ -1876,6 +2112,26 @@
                         "name": "Galleon Chunky Medal"
                     },
                     {
+                        "ref": "Gloomy Galleon/Medals/Galleon DK Half-Medal",
+                        "name": "Galleon DK Half-Medal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Medals/Galleon Diddy Half-Medal",
+                        "name": "Galleon Diddy Half-Medal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Medals/Galleon Lanky Half-Medal",
+                        "name": "Galleon Lanky Half-Medal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Medals/Galleon Tiny Half-Medal",
+                        "name": "Galleon Tiny Half-Medal"
+                    },
+                    {
+                        "ref": "Gloomy Galleon/Medals/Galleon Chunky Half-Medal",
+                        "name": "Galleon Chunky Half-Medal"
+                    },
+                    {
                         "ref": "Gloomy Galleon/Medals/Boss",
                         "name": "Galleon Boss"
                     }
@@ -2225,6 +2481,26 @@
                         "name": "Forest Chunky Medal"
                     },
                     {
+                        "ref": "Fungi Forest/Medals/Forest DK Half-Medal",
+                        "name": "Forest DK Half-Medal"
+                    },
+                    {
+                        "ref": "Fungi Forest/Medals/Forest Diddy Half-Medal",
+                        "name": "Forest Diddy Half-Medal"
+                    },
+                    {
+                        "ref": "Fungi Forest/Medals/Forest Lanky Half-Medal",
+                        "name": "Forest Lanky Half-Medal"
+                    },
+                    {
+                        "ref": "Fungi Forest/Medals/Forest Tiny Half-Medal",
+                        "name": "Forest Tiny Half-Medal"
+                    },
+                    {
+                        "ref": "Fungi Forest/Medals/Forest Chunky Half-Medal",
+                        "name": "Forest Chunky Half-Medal"
+                    },
+                    {
                         "ref": "Fungi Forest/Medals/Boss",
                         "name": "Forest Boss"
                     }
@@ -2281,6 +2557,18 @@
                     {
                         "ref": "Fungi Forest/Forest Dirt: Beanstalk/Rainbow Coin",
                         "name": "Forest Dirt: Beanstalk"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Keg: Mill Front Near/Boulder",
+                        "name": "Forest Keg: Mill Front Near"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Keg: Mill Front Far/Boulder",
+                        "name": "Forest Keg: Mill Front Far"
+                    },
+                    {
+                        "ref": "Fungi Forest/Forest Keg: Mill Back/Boulder",
+                        "name": "Forest Keg: Mill Back"
                     }
                 ],
                 "map_locations": [
@@ -2735,6 +3023,26 @@
                         "name": "Caves Chunky Medal"
                     },
                     {
+                        "ref": "Crystal Caves/Medals/Caves DK Half-Medal",
+                        "name": "Caves DK Half-Medal"
+                    },
+                    {
+                        "ref": "Crystal Caves/Medals/Caves Diddy Half-Medal",
+                        "name": "Caves Diddy Half-Medal"
+                    },
+                    {
+                        "ref": "Crystal Caves/Medals/Caves Lanky Half-Medal",
+                        "name": "Caves Lanky Half-Medal"
+                    },
+                    {
+                        "ref": "Crystal Caves/Medals/Caves Tiny Half-Medal",
+                        "name": "Caves Tiny Half-Medal"
+                    },
+                    {
+                        "ref": "Crystal Caves/Medals/Caves Chunky Half-Medal",
+                        "name": "Caves Chunky Half-Medal"
+                    },
+                    {
                         "ref": "Crystal Caves/Medals/Boss",
                         "name": "Caves Boss"
                     }
@@ -2788,6 +3096,14 @@
                     {
                         "ref": "Crystal Caves/Caves Dirt: Giant Kosha/Rainbow Coin",
                         "name": "Caves Dirt: Giant Kosha"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Boulder: Small/Boulder",
+                        "name": "Caves Boulder: Small"
+                    },
+                    {
+                        "ref": "Crystal Caves/Caves Boulder: Large/Boulder",
+                        "name": "Caves Boulder: Large"
                     }
                 ],
                 "map_locations": [
@@ -2999,10 +3315,12 @@
                     {
                         "ref": "Creepy Castle/Castle Lanky Tower/Golden Banana",
                         "name": "Castle Lanky Tower"
-                    },                    {
+                    },
+                    {
                         "ref": "Creepy Castle/Greenhouse/Castle Lanky Greenhouse",
                         "name": "Castle Lanky Greenhouse"
-                    },                    {
+                    },
+                    {
                         "ref": "Creepy Castle/Mausoleum/Castle Lanky Mausoleum",
                         "name": "Castle Lanky Mausoleum" 
                     },
@@ -3017,14 +3335,16 @@
                     {
                         "ref": "Creepy Castle/Castle Tiny Trashcan/Golden Banana",
                         "name": "Castle Tiny Trashcan"
-                    },                    {
+                    },
+                    {
                         "ref": "Creepy Castle/Mausoleum/Castle Tiny Mausoleum",
                         "name": "Castle Tiny Mausoleum"
                     },
                     {
                         "ref": "Creepy Castle/Castle Tiny Over Chasm/Golden Banana",
                         "name": "Castle Tiny Over Chasm"
-                    },                    {
+                    },
+                    {
                         "ref": "Creepy Castle/Inside the Tree/Castle Chunky Tree Sniping Barrel",
                         "name": "Castle Chunky Tree Sniping Barrel"
                     },
@@ -3070,6 +3390,26 @@
                     {
                         "ref": "Creepy Castle/Medals/Castle Chunky Medal",
                         "name": "Castle Chunky Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Castle DK Half-Medal",
+                        "name": "Castle DK Half-Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Castle Diddy Half-Medal",
+                        "name": "Castle Diddy Half-Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Castle Lanky Half-Medal",
+                        "name": "Castle Lanky Half-Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Castle Tiny Half-Medal",
+                        "name": "Castle Tiny Half-Medal"
+                    },
+                    {
+                        "ref": "Creepy Castle/Medals/Castle Chunky Half-Medal",
+                        "name": "Castle Chunky Half-Medal"
                     },
                     {
                         "ref": "Creepy Castle/Medals/Boss",
@@ -3124,6 +3464,10 @@
                     {
                         "ref": "Creepy Castle/Castle Dirt: Top Floor/Rainbow Coin",
                         "name": "Castle Dirt: Top Floor"
+                    },
+                    {
+                        "ref": "Creepy Castle/Castle Boulder: Museum/Boulder",
+                        "name": "Castle Boulder: Museum"
                     }
                 ],
                 "map_locations": [
