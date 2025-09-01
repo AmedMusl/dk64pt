@@ -481,11 +481,11 @@ function canPlayJapesLankyGrapeGate()
         return (canActivateJapesDiddyCave() or phaseswim()) and grape()
     else
         if logic.minigameType == "NoGame" then
-            return true
+            return (canActivateJapesDiddyCave() or phaseswim()) and grape()
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return canActivateJapesDiddyCave() and grape() and canPlayMinigame("JapesLankyGrapeGate")
+            return (canActivateJapesDiddyCave() or phaseswim()) and grape() and canPlayMinigame("JapesLankyGrapeGate")
         else
-            return canActivateJapesDiddyCave() and grape() and canPlayMinigame("JapesLankyGrapeGate")
+            return (canActivateJapesDiddyCave() or phaseswim()) and grape() and canPlayMinigame("JapesLankyGrapeGate")
         end
     end
 end
