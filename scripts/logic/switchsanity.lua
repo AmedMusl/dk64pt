@@ -54,6 +54,7 @@ function getSwitchLogic(switch_name)
             result.hasInstrument = triangle()
             result.hasSlam = has("chunky") and has("slam")
             result.hasPadMove = gone()
+            result.hasMiscAbility = punch()
         end
     end
     
@@ -81,6 +82,10 @@ function canActivateSwitch(switch_name)
     elseif logic.type == "PadMove" then
         return logic.hasPadMove
     elseif logic.type == "MiscActivator" then
+        return logic.hasMiscAbility
+    elseif logic.type == "GunInstrumentCombo" then
+        return logic.hasGun and logic.hasInstrument
+    elseif logic.type == "PushableButton" then
         return logic.hasMiscAbility
     end
     
@@ -294,5 +299,41 @@ function canActivateAztecLlamaCoconut()
         return coconut()
     else
         return canActivateSwitch("AztecLlamaCoconut")
+    end
+end
+
+function canActivateJapesFreeKong()
+    local logic = getSwitchLogic("JapesFreeKong")
+    if not logic.isSwitchsanity then
+        return coconut()
+    else
+        return canActivateSwitch("JapesFreeKong")
+    end
+end
+
+function canActivateKONGPuzzle()
+    local logic = getSwitchLogic("AztecOKONGPuzzle")
+    if not logic.isSwitchsanity then
+        return charge()
+    else
+        return canActivateSwitch("AztecOKONGPuzzle")
+    end
+end
+
+function canActivateAztecLlamaPuzzle()
+    local logic = getSwitchLogic("AztecLlamaPuzzle")
+    if not logic.isSwitchsanity then
+        return bongos() and coconut()
+    else
+        return canActivateSwitch("AztecLlamaPuzzle")
+    end
+end
+
+function canActivateFactoryFreeKong()
+    local logic = getSwitchLogic("FactoryFreeKong")
+    if not logic.isSwitchsanity then
+        return factorySlam() and has("lanky")
+    else
+        return canActivateSwitch("FactoryFreeKong")
     end
 end

@@ -370,11 +370,14 @@
                 ]
             },
             {            
-                "name": "Factory Free Chunky Item",
-                "access_rules": [],
+                "name": "Chunky's Cage",
+                "access_rules": ["$canActivateFactoryFreeKong"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Chunky Kong's Cage"
+                    },
+                    {
+                        "name": "Factory Free Chunky Item"
                     }
                 ],
                 "map_locations": [

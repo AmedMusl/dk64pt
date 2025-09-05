@@ -271,11 +271,14 @@
                 ]
             },
             {
-                "name": "Aztec Free Tiny Item",
-                "access_rules": ["$templeIce, $canEnterTinyTemple, dive"],
+                "name": "Tiny's Cage",
+                "access_rules": ["$templeIce, $canEnterTinyTemple, dive, $canActivateKONGPuzzle"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Tiny Kong's Cage"
+                    },
+                    {
+                        "name": "Aztec Free Tiny Item"
                     }
                 ],
                 "map_locations": [
@@ -616,11 +619,14 @@
                 ]
             },
             {
-                "name": "Aztec Free Lanky Item",
-                "access_rules": ["^$llamaSwitches, $canEnterLlamaTemple, $lankyFreeing, dive"],
+                "name": "Lanky's Cage",
+                "access_rules": ["^$llamaSwitches, $canEnterLlamaTemple, dive, $canActivateAztecLlamaPuzzle"],
                 "sections": [
                     {
-                        "name": "Golden Banana"
+                        "name": "Lanky Kong's Cage"
+                    },
+                    {
+                        "name": "Aztec Free Lanky Item"
                     }
                 ],
                 "map_locations": [

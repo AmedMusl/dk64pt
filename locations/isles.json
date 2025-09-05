@@ -1296,10 +1296,15 @@
       },
       {
         "name": "Upper Castle Lobby",
-        "access_rules": ["^$canPlayIslesLankyCastleLobby"],
+        "access_rules": [
+          "^$canEnterCastleLobby, barrel, $balloon, chunky",
+          "^$canEnterCastleLobby, ^$avp, $twirl",
+          "^$canEnterCastleLobby, $moonkicks"
+          ],
         "sections": [
           {
-            "name": "Isles Lanky Castle Lobby Barrel"
+            "name": "Isles Lanky Castle Lobby Barrel",
+            "access_rules":["$canPlayIslesLankyCastleLobby"]
           },
           {
             "name": "Isles Dirt: Castle Lobby",

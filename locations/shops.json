@@ -10,27 +10,27 @@
                 "sections": [
                     {
                         "name": "Cranky DK",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Donkey, $isShopVisible|DKIslesCrankyDonkey"],
+                        "visibility_rules": ["$isLocationJunk|Isles Cranky Donkey, $isShopVisible|DKIslesCrankyDonkey"],
                         "access_rules": ["donkey, cranky"]
                     },
                     {
                         "name": "Cranky Diddy",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Diddy, $isShopVisible|DKIslesCrankyDiddy"],
+                        "visibility_rules": ["$isLocationJunk|Isles Cranky Diddy, $isShopVisible|DKIslesCrankyDiddy"],
                         "access_rules": ["diddy, cranky"]
                     },
                     {
                         "name": "Cranky Lanky",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Lanky, $isShopVisible|DKIslesCrankyLanky"],
+                        "visibility_rules": ["$isLocationJunk|Isles Cranky Lanky, $isShopVisible|DKIslesCrankyLanky"],
                         "access_rules": ["lanky, cranky"]
                     },
                     {
                         "name": "Cranky Tiny",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Tiny, $isShopVisible|DKIslesCrankyTiny"],
+                        "visibility_rules": ["$isLocationJunk|Isles Cranky Tiny, $isShopVisible|DKIslesCrankyTiny"],
                         "access_rules": ["tiny, cranky"]
                     },
                     {
                         "name": "Cranky Chunky",
-                        "visibility_rules": ["$isLocationJunk|DK Isles Cranky Chunky, $isShopVisible|DKIslesCrankyChunky"],
+                        "visibility_rules": ["$isLocationJunk|Isles Cranky Chunky, $isShopVisible|DKIslesCrankyChunky"],
                         "access_rules": ["chunky, cranky"]
                     },
                     {
@@ -100,7 +100,7 @@
                 "name": "Japes Funky",
                 "chest_unopened_img": "images/items/funky.png",
                 "chest_opened_img": "images/items/funkybw.png",
-                "access_rules": ["climb, $ostand, ^$avp, slope_resets, tiny"],
+                "access_rules": ["climb", "$ostand, ^$avp", "slope_resets, tiny"],
                 "sections": [
                     {
                         "name": "Funky DK",

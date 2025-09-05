@@ -570,11 +570,11 @@ function coconutCage()
     if has("japes_coconut_gates") then
         return AccessibilityLevel.Normal
     elseif has("climb") then
-        return AccessibilityLevel.Normal
+        return AccessibilityLevel.Normal and canActivateJapesFreeKong()
     elseif ostand() then
-        return avp()
+        return avp() and canActivateJapesFreeKong()
     elseif has("slope_resets") then
-        return has("tiny")
+        return has("tiny") and canActivateJapesFreeKong()
     else
         return phaseswim()
     end

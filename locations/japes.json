@@ -138,13 +138,18 @@
             },
             {            
                 "name": "Diddy Cage",
-                "access_rules": ["climb", "^$avp, $ostand"],
+                "access_rules": ["climb", "^$avp, $ostand", "slope_resets, tiny"],
                 "sections": [
+                    {
+                        "name": "Diddy Kong's Cage",
+                        "access_rules": ["$canActivateJapesFreeKong"]
+                    },
                     {
                         "name": "Japes in Front of Diddy Cage"
                     },
                     {
-                        "name": "Japes Free Diddy Item"
+                        "name": "Japes Free Diddy Item",
+                        "access_rules": ["$canActivateJapesFreeKong"]
                     }
                 ],
                 "map_locations": [

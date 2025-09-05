@@ -350,14 +350,14 @@ function canPlayIslesLankyCastleLobby()
     local logic = getMinigameLogic("IslesLankyCastleLobby")
     
     if not logic.isMinigameSanity then
-        return (balloon() and has("barrel") and has("chunky")) or moonkicks() or (twirl() and avp())
+        return true
     else
         if logic.minigameType == "NoGame" then
-            return (balloon() and has("barrel") and has("chunky")) or moonkicks() or (twirl() and avp())
+            return true
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return (balloon() and has("barrel") and has("chunky")) or moonkicks() or (twirl() and avp()) and canPlayMinigame("IslesLankyCastleLobby")
+            return canPlayMinigame("IslesLankyCastleLobby")
         else
-            return (balloon() and has("barrel") and has("chunky")) or moonkicks() or (twirl() and avp()) and canPlayMinigame("IslesLankyCastleLobby")
+            return canPlayMinigame("IslesLankyCastleLobby")
         end
     end
 end
