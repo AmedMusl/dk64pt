@@ -136,7 +136,7 @@ function applyKlaptrapPurpleLogic()
 end
 
 function applyKlaptrapRedLogic()
-    return heavyEnemy() or anyGun()
+    return flyingEnemy() or has("oranges")
 end
 
 function applyKlobberLogic()

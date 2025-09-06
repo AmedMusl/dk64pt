@@ -1,9 +1,9 @@
 {
     "versions": [
         {
-            "package_version": "0.7.0",
-            "download_url": "https://github.com/UmedMuzl/dk64pt/releases/download/v0.7.0/dk64pt.zip",
-            "sha256": "E06F2B7CC005D751AD70864A32F34B087373636AD241E15171A068725E705FD5",
+            "package_version": "0.7.1",
+            "download_url": "https://github.com/UmedMuzl/dk64pt/releases/download/v0.7.1/dk64pt.zip",
+            "sha256": "ACC44BDC946B5710DEFEE48AA1A7905C6D166711FA0DAC118E05C08A207691E3",
             "changelog": [
                 "Check Github for the full changelog."
             ]

@@ -204,7 +204,7 @@ function pastCabinIsle()
 end
 
 function winch()
-    return (nightTime() and has("climb") and forestSlam()) or (balloon() and moonkicks())
+    return has("diddy") and forestSlam() and ((nightTime() and has("climb")) or (balloon() and moonkicks()))
 end
 
 function winchCage()
@@ -1128,16 +1128,16 @@ function hasBoss(prefix)
 end
 
 function toggleShopowners()
-    if has("shopowners") then
-        Tracker:FindObjectForCode("cranky").Active = false
-        Tracker:FindObjectForCode("funky").Active = false
-        Tracker:FindObjectForCode("candy").Active = false
-        Tracker:FindObjectForCode("snide").Active = false
-    else
+    if not_has("shopowners") then
         Tracker:FindObjectForCode("cranky").Active = true
-        Tracker:FindObjectForCode("funky").Active = true
-        Tracker:FindObjectForCode("candy").Active = true
-        Tracker:FindObjectForCode("snide").Active = true
+        Tracker:FindObjectForCode("funky").Active =  true
+        Tracker:FindObjectForCode("candy").Active =  true
+        Tracker:FindObjectForCode("snide").Active =  true
+    else
+        Tracker:FindObjectForCode("cranky").Active = false
+        Tracker:FindObjectForCode("funky").Active =  false
+        Tracker:FindObjectForCode("candy").Active =  false
+        Tracker:FindObjectForCode("snide").Active =  false
     end
 end
 
@@ -1498,6 +1498,7 @@ function castleBossLogic()
     return requirements[boss]()
 end
 
+ScriptHost:AddWatchForCode("shopowners", "shopowners", toggleShopowners)
 ScriptHost:AddWatchForCode("openlobbies", "openlobbies", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number2", "k1", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number3", "k2", toggleLevelOrder)
@@ -1507,4 +1508,5 @@ ScriptHost:AddWatchForCode("number67", "k5", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number8", "k6", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number8_k6", "k6", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number8_k7", "k7", toggleLevelOrder)
-ScriptHost:AddWatchForCode("shopowners", "shopowners", toggleShopowners)
+-- Initialize shop owners state on script load
+ScriptHost:AddWatchForCode("shopowners_init", "donkey", function() toggleShopowners() end)

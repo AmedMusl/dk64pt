@@ -87,7 +87,7 @@
             },
             {
                 "name": "Caves Diddy Jetpack Barrel",
-                "access_rules": ["$canPlayCavesDiddyJetpackBarrel"],
+                "access_rules": ["^$canPlayCavesDiddyJetpackBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
