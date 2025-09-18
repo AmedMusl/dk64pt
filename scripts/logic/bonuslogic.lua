@@ -286,14 +286,42 @@ function canPlayCastleLankyTower()
     local logic = getMinigameLogic("CastleLankyTower")
     
     if not logic.isMinigameSanity then
-        return castleSlam() and grape() and (has("sniper") or (has("homing") and hard_shooting())) and balloon()
+        local baseRequirements = castleSlam() and grape() and balloon()
+        if has("sniper") then
+            return baseRequirements
+        elseif has("homing") then
+            return baseRequirements and hard_shooting()
+        else
+            return false
+        end
     else
         if logic.minigameType == "NoGame" then
-            return castleSlam() and grape() and (has("sniper") or (has("homing") and hard_shooting())) and balloon()
+            local baseRequirements = castleSlam() and grape() and balloon()
+            if has("sniper") then
+                return baseRequirements
+            elseif has("homing") then
+                return baseRequirements and hard_shooting()
+            else
+                return false
+            end
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return castleSlam() and grape() and (has("sniper") or (has("homing") and hard_shooting())) and balloon() and canPlayMinigame("CastleLankyTower")
+            local baseRequirements = castleSlam() and grape() and balloon() and canPlayMinigame("CastleLankyTower")
+            if has("sniper") then
+                return baseRequirements
+            elseif has("homing") then
+                return baseRequirements and hard_shooting()
+            else
+                return false
+            end
         else
-            return castleSlam() and grape() and (has("sniper") or (has("homing") and hard_shooting())) and balloon() and canPlayMinigame("CastleLankyTower")
+            local baseRequirements = castleSlam() and grape() and balloon() and canPlayMinigame("CastleLankyTower")
+            if has("sniper") then
+                return baseRequirements
+            elseif has("homing") then
+                return baseRequirements and hard_shooting()
+            else
+                return false
+            end
         end
     end
 end
@@ -688,14 +716,14 @@ function canPlayJapesChunkyGiantBonusBarrel()
     local logic = getMinigameLogic("JapesChunkyGiantBonusBarrel")
     
     if not logic.isMinigameSanity then
-        return canActivateJapesFeather() and hunky() and has("climb")
+        return shellhive() and hunky() and has("climb")
     else
         if logic.minigameType == "NoGame" then
-            return canActivateJapesFeather() and hunky() and has("climb")
+            return shellhive() and hunky() and has("climb")
         elseif logic.minigameType == "BusyBarrelBarrageEasy" or logic.minigameType == "BusyBarrelBarrageNormal" or logic.minigameType == "BusyBarrelBarrageHard" then
-            return canActivateJapesFeather() and hunky() and pineapple and has("climb") and canPlayMinigame("JapesChunkyGiantBonusBarrel")
+            return shellhive() and hunky() and pineapple and has("climb") and canPlayMinigame("JapesChunkyGiantBonusBarrel")
         else
-            return canActivateJapesFeather() and hunky() and has("climb") and canPlayMinigame("JapesChunkyGiantBonusBarrel")
+            return shellhive() and hunky() and has("climb") and canPlayMinigame("JapesChunkyGiantBonusBarrel")
         end
     end
 end

@@ -365,7 +365,7 @@ function aztecLankyMedal(isHalf)
     if accessible(tunnelDoor) then -- By Cranky and Funky
         cb_total = cb_total + 10
     end
-    if accessible(tunnelDoor) and (has("climb") or rocket()) then -- Treetops
+    if accessible(tunnelDoor) and has("climb") then -- Treetops
         cb_total = cb_total + 25
     end
     if accessible(aztec5DT) and grape() then -- 5DT

@@ -35,7 +35,7 @@ function japesCBTotal()
             end
             if blast() and has("climb") and (moonkicks() or (has("vine") and (has("lanky") or has("donkey") or has("diddy")))) then -- Blast Course
                 cb_total = cb_total + 10
-            end
+            end    
     end
 
     -- Diddy bananas
@@ -126,7 +126,7 @@ function japesCBTotal()
             if accessible(coconutCage) then -- Before Rambi Gate
                 cb_total = cb_total + 2
             end
-            if accessible(coconutCage) and canActivateJapesRambi() then
+            if accessible(coconutCage) and canActivateJapesRambi() then -- In Hutt
                 cb_total = cb_total + 5
             end
             if accessible(coconutCage) and feather() then -- Hutt Balloon
@@ -251,7 +251,7 @@ function aztecCBTotal()
             if accessible(tunnelDoor) then -- By Cranky and Funky
                 cb_total = cb_total + 10
             end
-            if accessible(tunnelDoor) and (has("climb") or rocket()) then -- Treetops
+            if accessible(tunnelDoor) and has("climb") then -- Treetops
                 cb_total = cb_total + 25
             end
             if accessible(aztec5DT) and grape() then -- 5DT

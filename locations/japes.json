@@ -412,18 +412,12 @@
                         "x": 295,
                         "y": 205,
                         "size": 10
-                    },
-                    {
-                        "map": "shellhive",
-                        "x": 1246,
-                        "y": 681,
-                        "size": 16
                     }
                 ]
             },
             {            
                 "name": "Japes Chunky Giant Bonus Barrel",
-                "access_rules": ["$canPlayJapesChunkyGiantBonusBarrel"],
+                "access_rules": ["^$canPlayJapesChunkyGiantBonusBarrel"],
                 "sections": [
                     {
                         "name": "Golden Banana"
@@ -452,6 +446,12 @@
                         "x": 311,
                         "y": 336,
                         "size": 10
+                    },  
+                    {
+                        "map": "shellhive",
+                        "x": 1246,
+                        "y": 681,
+                        "size": 16
                     }
                 ]
             },

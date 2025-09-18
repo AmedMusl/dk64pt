@@ -1156,6 +1156,22 @@
                     {
                         "ref": "Angry Aztec/Aztec Boulder: Tunnel/Boulder",
                         "name": "Aztec Boulder: Tunnel"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Chunky Vases/Aztec Vase: Circle",
+                        "name": "Aztec Vase: Circle"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Chunky Vases/Aztec Vase: Colon",
+                        "name": "Aztec Vase: Colon"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Chunky Vases/Aztec Vase: Triangle",
+                        "name": "Aztec Vase: Triangle"
+                    },
+                    {
+                        "ref": "Angry Aztec/Aztec Chunky Vases/Aztec Vase: Plus",
+                        "name": "Aztec Vase: Plus"
                     }
                 ],
                 "map_locations": [
@@ -2367,7 +2383,8 @@
                     }
                 ]
             },
-            {                "name": "Forest GBs",
+            {
+                "name": "Forest GBs",
                 "sections": [
                     {
                         "ref": "Fungi Forest/Forest DK Baboon Blast/Golden Banana",
@@ -2438,7 +2455,7 @@
                         "name": "Forest Chunky Minecart"
                     },
                     {
-                        "ref": "Fungi Forest/Forest Chunky Face Puzzle/Golden Banana",
+                        "ref": "Fungi Forest/Face Puzzle Room/Forest Chunky Face Puzzle",
                         "name": "Forest Chunky Face Puzzle"
                     },
                     {
@@ -2458,7 +2475,8 @@
                     }
                 ]
             },
-            {                "name": "Forest Medals",
+            {
+                "name": "Forest Medals",
                 "sections": [
                     {
                         "ref": "Fungi Forest/Medals/Forest DK Medal",

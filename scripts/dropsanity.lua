@@ -97,6 +97,11 @@ function applyEnemyLogic(location)
     local enemy_type = enemy_data.enemy
     local map_name = enemy_data.map
     
+    -- Special case: In Caves Lanky Cabin, instruments are not allowed
+    if map_name == MAPS.CAVES_LANKY_CABIN then
+        return applyEnemyLogicNoInstruments(enemy_type)
+    end
+    
     -- Apply enemy-specific logic
     if enemy_type == ENEMY_TYPES.KLUMP then
         return applyKlumpLogic()
@@ -153,6 +158,63 @@ end
 
 function applyGuardLogic()
     return heavyEnemy() or anyGun()
+end
+
+-- Special function for locations where instruments are not allowed (e.g., Caves Lanky Cabin)
+function applyEnemyLogicNoInstruments(enemy_type)
+    if enemy_type == ENEMY_TYPES.KLUMP then
+        return applyKlumpLogicNoInstruments()
+    elseif enemy_type == ENEMY_TYPES.KOSHA then
+        return applyKoshaLogicNoInstruments()
+    elseif enemy_type == ENEMY_TYPES.KLAPTRAP_PURPLE then
+        return applyKlaptrapPurpleLogicNoInstruments()
+    elseif enemy_type == ENEMY_TYPES.KLAPTRAP_RED then
+        return applyKlaptrapRedLogicNoInstruments()
+    elseif enemy_type == ENEMY_TYPES.KLOBBER then
+        return applyKlobberLogicNoInstruments()
+    elseif enemy_type == ENEMY_TYPES.KABOOM then
+        return applyKaboomLogicNoInstruments()
+    elseif enemy_type == ENEMY_TYPES.ROBO_KREMLING then
+        return applyRoboKremlingLogicNoInstruments()
+    elseif enemy_type == ENEMY_TYPES.GUARD then
+        return applyGuardLogicNoInstruments()
+    else
+        print("Unknown enemy type: " .. tostring(enemy_type))
+        return false
+    end
+end
+
+-- Enemy-specific logic functions without instruments
+function applyKlumpLogicNoInstruments()
+    return has("shockwave") or has("oranges")
+end
+
+function applyKoshaLogicNoInstruments()
+    return has("shockwave") or has("oranges")
+end
+
+function applyKlaptrapPurpleLogicNoInstruments()
+    return has("oranges") or anyGun()
+end
+
+function applyKlaptrapRedLogicNoInstruments()
+    return anyGun() or has("oranges")
+end
+
+function applyKlobberLogicNoInstruments()
+    return has("shockwave") or has("oranges")
+end
+
+function applyKaboomLogicNoInstruments()
+    return has("shockwave") or has("oranges")
+end
+
+function applyRoboKremlingLogicNoInstruments()
+    return has("shockwave") or has("oranges") or punch()
+end
+
+function applyGuardLogicNoInstruments()
+    return has("shockwave") or has("oranges") or anyGun()
 end
 
 

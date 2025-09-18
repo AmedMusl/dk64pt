@@ -507,7 +507,7 @@
       },
       {
         "name": "Isles DK Bongo Pad",
-        "access_rules": ["^$canEnterFactoryLobby, $bongos, $grab", "^$canEnterFactoryLobby, $moonkicks, $bongos"],
+        "access_rules": ["^$factoryTinyHint, $bongos"],
         "sections": [
           {
             "name": "Golden Banana"

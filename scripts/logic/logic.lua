@@ -487,7 +487,7 @@ function canGetOnCannonGamePlatform()
 end
 
 function factoryDiddyHint()
-    if canEnterFactoryLobby() and grab() or moonkicks() then
+    if (canEnterFactoryLobby() and grab()) or moonkicks() then
         return true
     elseif canEnterFactoryLobby() and (has("tiny") or has("diddy")) then
         return avp()
@@ -499,7 +499,7 @@ function factoryLankyHint()
 end
 
 function factoryTinyHint()
-    if canEnterFactoryLobby() and grab() or moonkicks() then
+    if (canEnterFactoryLobby() and grab()) or moonkicks() then
         return true
     elseif canEnterFactoryLobby() and (has("tiny") or has("diddy")) then
         return avp()
@@ -1246,7 +1246,7 @@ function japesBossLogic()
         diddyphase = function() return rocket() and peanuts() end,
         lankyphase = function() return has("barrel") and trombone() end,
         tinyphase = function() return mini() and feather() end,
-        chunkyphase = function() return hunky() and gone() and punch() end
+        chunkyphase = function() return hunky() and gone() and punch() and has("slam") end
     }
     
     return requirements[boss]()
@@ -1287,7 +1287,7 @@ function aztecBossLogic()
         diddyphase = function() return rocket() and peanuts() end,
         lankyphase = function() return has("barrel") and trombone() end,
         tinyphase = function() return mini() and feather() end,
-        chunkyphase = function() return hunky() and gone() and punch() end
+        chunkyphase = function() return hunky() and gone() and punch() and has("slam") end
     }
     
     return requirements[boss]()
@@ -1328,7 +1328,7 @@ function factoryBossLogic()
         diddyphase = function() return rocket() and peanuts() end,
         lankyphase = function() return has("barrel") and trombone() end,
         tinyphase = function() return mini() and feather() end,
-        chunkyphase = function() return hunky() and gone() and punch() end
+        chunkyphase = function() return hunky() and gone() and punch() and has("slam") end
     }
     
     return requirements[boss]()
@@ -1369,7 +1369,7 @@ function galleonBossLogic()
         diddyphase = function() return rocket() and peanuts() end,
         lankyphase = function() return has("barrel") and trombone() end,
         tinyphase = function() return mini() and feather() end,
-        chunkyphase = function() return hunky() and gone() and punch() end
+        chunkyphase = function() return hunky() and gone() and punch() and has("slam") end
     }
     
     return requirements[boss]()
@@ -1410,7 +1410,7 @@ function forestBossLogic()
         diddyphase = function() return rocket() and peanuts() end,
         lankyphase = function() return has("barrel") and trombone() end,
         tinyphase = function() return mini() and feather() end,
-        chunkyphase = function() return hunky() and gone() and punch() end
+        chunkyphase = function() return hunky() and gone() and punch() and has("slam") end
     }
     
     return requirements[boss]()
@@ -1451,7 +1451,7 @@ function cavesBossLogic()
         diddyphase = function() return rocket() and peanuts() end,
         lankyphase = function() return has("barrel") and trombone() end,
         tinyphase = function() return mini() and feather() end,
-        chunkyphase = function() return hunky() and gone() and punch() end
+        chunkyphase = function() return hunky() and gone() and punch() and has("slam") end
     }
     
     return requirements[boss]()
@@ -1492,7 +1492,7 @@ function castleBossLogic()
         diddyphase = function() return rocket() and peanuts() end,
         lankyphase = function() return has("barrel") and trombone() end,
         tinyphase = function() return mini() and feather() end,
-        chunkyphase = function() return hunky() and gone() and punch() end
+        chunkyphase = function() return hunky() and gone() and punch() and has("slam") end
     }
     
     return requirements[boss]()
@@ -1509,4 +1509,4 @@ ScriptHost:AddWatchForCode("number8", "k6", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number8_k6", "k6", toggleLevelOrder)
 ScriptHost:AddWatchForCode("number8_k7", "k7", toggleLevelOrder)
 -- Initialize shop owners state on script load
-ScriptHost:AddWatchForCode("shopowners_init", "donkey", function() toggleShopowners() end)
+ScriptHost:AddWatchForCode("shopowners_init", "shopowners", function() toggleShopowners() end)

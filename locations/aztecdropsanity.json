@@ -328,7 +328,7 @@
             },
             {
                 "name": "Angry Aztec Enemy: Near Sealed Quicksand Tunnel",
-                "access_rules": [],
+                "access_rules": ["^$tunnelDoor"],
                 "sections": [
                     {
                         "name": "Enemy"
@@ -497,8 +497,8 @@
                 "map_locations": [
                     {
                         "map": "diddy5dt",
-                        "x": 64,
-                        "y": 444
+                        "x": 742,
+                        "y": 69
                     }
                 ]
             },
@@ -513,8 +513,8 @@
                 "map_locations": [
                     {
                         "map": "diddy5dt",
-                        "x": 101,
-                        "y": 444
+                        "x": 787,
+                        "y": 69
                     }
                 ]
             },
@@ -529,8 +529,8 @@
                 "map_locations": [
                     {
                         "map": "diddy5dt",
-                        "x": 78,
-                        "y": 431
+                        "x": 765,
+                        "y": 35
                     }
                 ]
             },
@@ -545,8 +545,8 @@
                 "map_locations": [
                     {
                         "map": "diddy5dt",
-                        "x": 417,
-                        "y": 631
+                        "x": 209,
+                        "y": 628
                     }
                 ]
             },
@@ -561,8 +561,8 @@
                 "map_locations": [
                     {
                         "map": "diddy5dt",
-                        "x": 528,
-                        "y": 618
+                        "x": 86,
+                        "y": 553
                     }
                 ]
             },

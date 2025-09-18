@@ -332,8 +332,13 @@ end
 function canActivateFactoryFreeKong()
     local logic = getSwitchLogic("FactoryFreeKong")
     if not logic.isSwitchsanity then
-        return factorySlam() and has("lanky")
+        return factorySlam() and has("lanky") and ostand()
     else
-        return canActivateSwitch("FactoryFreeKong")
+        local result = canActivateSwitch("FactoryFreeKong")
+        -- If Lanky is assigned to this switch, add orangstand requirement
+        if logic.kong == "lanky" then
+            result = result and ostand()
+        end
+        return result
     end
 end
